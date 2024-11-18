@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Zahid Asghar">
+<meta name="dcterms.date" content="2024-09-24">
+
+<title>ai_economists2 – AI for Teachers, Researchers and Students</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="style.scss">
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/LLM.webp" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/Zahedasghar" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Materials</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://discord.com/channels/1292187441565794316/1292187441565794319" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discord</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#llms-in-economics" id="toc-llms-in-economics" class="nav-link active" data-scroll-target="#llms-in-economics"><span class="yellow">LLMs in Economics</span></a></li>
+  <li><a href="#llms-in-economics-1" id="toc-llms-in-economics-1" class="nav-link" data-scroll-target="#llms-in-economics-1">LLMs in Economics</a></li>
+  <li><a href="#use-cases-of-llms-in-economics-research" id="toc-use-cases-of-llms-in-economics-research" class="nav-link" data-scroll-target="#use-cases-of-llms-in-economics-research">Use Cases of LLMs in Economics Research</a></li>
+  <li><a href="#ideation-and-feedback" id="toc-ideation-and-feedback" class="nav-link" data-scroll-target="#ideation-and-feedback">Ideation and Feedback</a>
+  <ul class="collapse">
+  <li><a href="#brainstorming" id="toc-brainstorming" class="nav-link" data-scroll-target="#brainstorming">Brainstorming</a></li>
+  <li><a href="#providing-counterarguments" id="toc-providing-counterarguments" class="nav-link" data-scroll-target="#providing-counterarguments">Providing Counterarguments</a></li>
+  </ul></li>
+  <li><a href="#writing-and-editing" id="toc-writing-and-editing" class="nav-link" data-scroll-target="#writing-and-editing">Writing and Editing</a></li>
+  <li><a href="#editing" id="toc-editing" class="nav-link" data-scroll-target="#editing">Editing</a></li>
+  <li><a href="#background-research" id="toc-background-research" class="nav-link" data-scroll-target="#background-research">Background research</a>
+  <ul class="collapse">
+  <li><a href="#brainstorming-1" id="toc-brainstorming-1" class="nav-link" data-scroll-target="#brainstorming-1">Brainstorming</a></li>
+  </ul></li>
+  <li><a href="#promotion-e.g-social-media" id="toc-promotion-e.g-social-media" class="nav-link" data-scroll-target="#promotion-e.g-social-media"><span class="yellow">Promotion (e.g Social Media)</span></a></li>
+  <li><a href="#summarization" id="toc-summarization" class="nav-link" data-scroll-target="#summarization">Summarization</a></li>
+  <li><a href="#translating-text" id="toc-translating-text" class="nav-link" data-scroll-target="#translating-text">Translating Text</a></li>
+  <li><a href="#explaining-concepts" id="toc-explaining-concepts" class="nav-link" data-scroll-target="#explaining-concepts">Explaining Concepts</a></li>
+  <li><a href="#coding-python-or-r" id="toc-coding-python-or-r" class="nav-link" data-scroll-target="#coding-python-or-r">Coding: Python or R</a></li>
+  <li><a href="#extracting-sentiments" id="toc-extracting-sentiments" class="nav-link" data-scroll-target="#extracting-sentiments">Extracting Sentiments</a></li>
+  <li><a href="#mathematical-equations" id="toc-mathematical-equations" class="nav-link" data-scroll-target="#mathematical-equations">Mathematical Equations</a></li>
+  <li><a href="#titles-for-role-of-ai-in-economic-policy" id="toc-titles-for-role-of-ai-in-economic-policy" class="nav-link" data-scroll-target="#titles-for-role-of-ai-in-economic-policy">Titles for role of AI in Economic Policy</a></li>
+  <li><a href="#mathematics" id="toc-mathematics" class="nav-link" data-scroll-target="#mathematics">Mathematics</a></li>
+  <li><a href="#prompts-pakistan-economy" id="toc-prompts-pakistan-economy" class="nav-link" data-scroll-target="#prompts-pakistan-economy">Prompts Pakistan Economy</a></li>
+  <li><a href="#powerful-prompts-for-chatgpt" id="toc-powerful-prompts-for-chatgpt" class="nav-link" data-scroll-target="#powerful-prompts-for-chatgpt">5 Powerful prompts for ChatGPT</a></li>
+  <li><a href="#naive-vs-improved-prompts" id="toc-naive-vs-improved-prompts" class="nav-link" data-scroll-target="#naive-vs-improved-prompts">Naive vs improved prompts</a>
+  <ul class="collapse">
+  <li><a href="#supply-and-demand-in-economics" id="toc-supply-and-demand-in-economics" class="nav-link" data-scroll-target="#supply-and-demand-in-economics">1. <span class="yellow">Supply and Demand in Economics</span></a></li>
+  <li><a href="#fitness-expert-persona" id="toc-fitness-expert-persona" class="nav-link" data-scroll-target="#fitness-expert-persona">2. <span class="yellow">Fitness Expert Persona</span></a></li>
+  <li><a href="#gym-workout-program-for-beginners" id="toc-gym-workout-program-for-beginners" class="nav-link" data-scroll-target="#gym-workout-program-for-beginners">3. <span class="yellow">Gym Workout Program for Beginners</span></a></li>
+  <li><a href="#article-titles-for-a-dog-training-book-marketing-persona" id="toc-article-titles-for-a-dog-training-book-marketing-persona" class="nav-link" data-scroll-target="#article-titles-for-a-dog-training-book-marketing-persona">4. Article Titles for a Dog Training Book (Marketing Persona)</a></li>
+  <li><a href="#political-expert-comparison" id="toc-political-expert-comparison" class="nav-link" data-scroll-target="#political-expert-comparison">5. Political Expert Comparison</a></li>
+  </ul></li>
+  <li><a href="#referee-report" id="toc-referee-report" class="nav-link" data-scroll-target="#referee-report">Referee Report</a></li>
+  <li><a href="#summary-of-llm-capabilities-and-usefulness" id="toc-summary-of-llm-capabilities-and-usefulness" class="nav-link" data-scroll-target="#summary-of-llm-capabilities-and-usefulness">Summary of LLM Capabilities and Usefulness</a></li>
+  <li><a href="#llms-in-data-analysis" id="toc-llms-in-data-analysis" class="nav-link" data-scroll-target="#llms-in-data-analysis">LLMs in Data Analysis</a></li>
+  <li><a href="#llms-and-mathematical-derivations" id="toc-llms-and-mathematical-derivations" class="nav-link" data-scroll-target="#llms-and-mathematical-derivations">LLMs and Mathematical Derivations</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="yellow">Key takeaways</span></a></li>
+  <li><a href="#ai-terminology" id="toc-ai-terminology" class="nav-link" data-scroll-target="#ai-terminology">AI Terminology</a></li>
+  <li><a href="#prompt-overview" id="toc-prompt-overview" class="nav-link" data-scroll-target="#prompt-overview">Prompt Overview</a></li>
+  <li><a href="#what-is-prompt-engineering" id="toc-what-is-prompt-engineering" class="nav-link" data-scroll-target="#what-is-prompt-engineering">What is Prompt Engineering?</a></li>
+  <li><a href="#importance-of-prompt-engineering" id="toc-importance-of-prompt-engineering" class="nav-link" data-scroll-target="#importance-of-prompt-engineering">Importance of Prompt Engineering</a></li>
+  <li><a href="#how-to-write-effective-prompts" id="toc-how-to-write-effective-prompts" class="nav-link" data-scroll-target="#how-to-write-effective-prompts">How to Write Effective Prompts</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#best-practices-for-writing-effective-prompts-.fragment-.fade-up" id="toc-best-practices-for-writing-effective-prompts-.fragment-.fade-up" class="nav-link" data-scroll-target="#best-practices-for-writing-effective-prompts-.fragment-.fade-up">Best Practices for Writing Effective Prompts {.fragment .fade-up}</a></li>
+  <li><a href="#prompt-engineering-techniques" id="toc-prompt-engineering-techniques" class="nav-link" data-scroll-target="#prompt-engineering-techniques">Prompt Engineering Techniques</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Zahid Asghar </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 24, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="llms-in-economics" class="level2" data-background-image="images/background_title.png">
+<h2 data-background-image="images/background_title.png" class="anchored" data-anchor-id="llms-in-economics"><span class="yellow">LLMs in Economics</span></h2>
+<p><span class="yellow"><strong>Zahid Asghar</strong></span></p>
+</section>
+<section id="llms-in-economics-1" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="llms-in-economics-1">LLMs in Economics</h2>
+<p>The advent of large language models (LLMs) that automate a plethora of cognitive tasks presents a significant paradigm shift that academic <span class="yellow">economists should be cognizant of, given the cognitive nature of our work, which includes tasks such as data analysis, economic forecasting, and policy recommendation</span>. The rapid advancements in language models could potentially disrupt our profession, necessitating a proactive approach to this emerging technology.</p>
+<p>In the short term, these models can <span class="yellow">augment our productivity by automating routine tasks</span>, thereby allowing us to focus on more complex and nuanced aspects of economic research. However, <span class="yellow">in the long run</span>, there is a substantial likelihood that these models could displace human economists, as they become increasingly adept at performing complex cognitive tasks. Consequently, it is incumbent upon us to prepare for this eventuality. This could involve developing a deeper understanding of these models to leverage their capabilities effectively, <span class="yellow">diversifying our skill sets to include areas not easily automated,</span> and advocating for policies that ensure a just transition for those potentially displaced by these technological advancements.</p>
+</section>
+<section id="use-cases-of-llms-in-economics-research" class="level2">
+<h2 class="anchored" data-anchor-id="use-cases-of-llms-in-economics-research">Use Cases of LLMs in Economics Research</h2>
+<p><strong>Domains</strong>:</p>
+<ul>
+<li><p>Ideation &amp; Feedback</p></li>
+<li><p><span class="yellow">Writing &amp; Editing</span></p></li>
+<li><p>Background Research</p></li>
+<li><p><span class="yellow">Coding</span></p></li>
+<li><p>Data Analysis</p></li>
+<li><p><span class="yellow">Mathematical Derivations</span></p></li>
+</ul>
+</section>
+<section id="ideation-and-feedback" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="ideation-and-feedback">Ideation and Feedback</h2>
+<section id="brainstorming" class="level3">
+<h3 class="anchored" data-anchor-id="brainstorming">Brainstorming</h3>
+<ul>
+<li><p>Can you brainstorm 20 channels through which AI may increase inequality? Limit your response to 10 words (I am restricting) for each point.</p></li>
+<li><p><span class="yellow">I am an economist working on AI and inequality. Can you brainstorm an outline on [insert topic]? (put any of above mentioned: like AI and inequality)</span></p></li>
+<li><p>I am an economist working on AI and inequality. Can you brainstorm five potential paper topics and describe each in one sentence?</p></li>
+<li><p><span class="yellow">I am an economist working on an academic paper on [insert topic]. Can you brainstorm a research plan for me?</span></p></li>
+<li><p>What are the top three pros and cons of working on the economics of AGI?</p></li>
+<li><p><span class="yellow">Can you suggest ways to improve this paper? (I am attaching economic_update_August_2024.pdf) [Attachment: w30957.pdf] (Korinek 2023 paper)</span></p></li>
+<li><p>Can you draft a referee report for this paper for the <em>Journal of Economic Literature</em>? [Attachment: w30957.pdf]</p></li>
+<li><p><span class="yellow">Would this paper be suitable for the <em>American Economic Review</em>?</span></p></li>
+</ul>
+<hr>
+</section>
+<section id="providing-counterarguments" class="level3">
+<h3 class="anchored" data-anchor-id="providing-counterarguments">Providing Counterarguments</h3>
+<ul>
+<li>I am working on an economic model that predicts that cognitive automation will increase inequality. What are the top five counterarguments? One line each.</li>
+</ul>
+</section>
+</section>
+<section id="writing-and-editing" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="writing-and-editing">Writing and Editing</h2>
+<p>Write a paragraph in the style of an academic economist that integrates the following points. Include a topic sentence:</p>
+<ul>
+<li><p>Large language models (LLMs) automate many cognitive tasks.</p></li>
+<li><p>The work of academic economists is largely cognitive [add examples].</p></li>
+<li><p>We economists should therefore worry about recent progress in language models.</p></li>
+<li><p>In the short run, these models can help us be more productive.</p></li>
+<li><p>In the long run, there is a good likelihood that they will displace human economists.</p></li>
+<li><p>We should think about how to prepare [offer solutions].</p></li>
+</ul>
+</section>
+<section id="editing" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="editing">Editing</h2>
+<p>Can you correct the following sentence? <em>These paper describe six domain in which large language models (LLMs) displays emergant capbilities that are useful to the economic research.</em></p>
+<p><strong>Corrections</strong>:</p>
+<ul>
+<li><p>Changed <em>These paper</em> to <em>These papers</em> for subject-verb agreement.</p></li>
+<li><p>Corrected <em>domain</em> to <em>domains</em> for plural consistency.</p></li>
+<li><p>Changed <em>emergant</em> to <em>emergent</em>.</p></li>
+<li><p>Corrected <em>displays</em> to <em>display</em> for plural subject agreement.</p></li>
+<li><p>Added <em>the</em> before <em>economic research</em> to improve clarity.</p></li>
+</ul>
+</section>
+<section id="background-research" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="background-research">Background research</h2>
+<ol type="1">
+<li><p>Give a concise list of the top five stylistic shortcomings of the following abstract: [abstract here]</p></li>
+<li><p>Rewrite the abstract to correct these shortcomings.</p></li>
+</ol>
+<section id="brainstorming-1" class="level3">
+<h3 class="anchored" data-anchor-id="brainstorming-1">Brainstorming</h3>
+<p><span class="yellow">Brainstorm two or three catchy titles</span> for a paper with the following abstract: [Abstract from chat inserted]:</p>
+<ul>
+<li><p><span class="yellow">“Revolutionizing Economic Research: The Power of Generative AI and Large Language Models”</span></p></li>
+<li><p>“Unleashing AI in Economics: A Comprehensive Guide to Utilizing Large Language Models”</p></li>
+<li><p><span class="yellow">“The Future of Economic Research: Harnessing the Potential of Generative AI and Large Language Models”</span></p></li>
+</ul>
+<p>Make them a bit more sober and keep them short.</p>
+</section>
+</section>
+<section id="promotion-e.g-social-media" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="promotion-e.g-social-media"><span class="yellow">Promotion (e.g Social Media)</span></h2>
+<ol type="1">
+<li><p>Write three or four posts that summarize the following text. Use simple sentences and make them catchy: <span class="yellow">paste your economic outlook paragraph or fiscal position after IMF approval.</span></p></li>
+<li><p>Can you create a 20-slide deck for the attached economic research paper? [Attachment: w30957.pdf] (economic survey executive summary)</p></li>
+</ol>
+</section>
+<section id="summarization" class="level2">
+<h2 class="anchored" data-anchor-id="summarization">Summarization</h2>
+<ul>
+<li><p>Summarize the following text in one sentence: [Abstract of paper inserted]. &gt; <span class="yellow"><em>The author discusses the potential of Generative AI, specifically large language models like ChatGPT, to revolutionize research in various domains such as ideation, writing, data analysis, coding, and mathematics, and suggests that economists can significantly increase productivity by automating micro-tasks with AI, with the performance of these systems expected to improve over time.</em></span></p></li>
+<li><p>Provide a short summary of this paper. [Attachment: w30957.pdf]</p></li>
+</ul>
+</section>
+<section id="translating-text" class="level2">
+<h2 class="anchored" data-anchor-id="translating-text">Translating Text</h2>
+<p>Translate the following sentence into <span class="yellow">Urdu, Persian, and Arabic</span>: <em>Generative AI, in particular large language models (LLMs) such as ChatGPT, has the potential to revolutionize research in many disciplines.</em></p>
+</section>
+<section id="explaining-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="explaining-concepts">Explaining Concepts</h2>
+<ul>
+<li><p>What are instrumental variables useful for?</p></li>
+<li><p><span class="yellow">What is the second theorem of welfare economics?</span></p></li>
+<li><p>What is the difference between a Gini coefficient and a Lorenz curve?</p></li>
+</ul>
+</section>
+<section id="coding-python-or-r" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="coding-python-or-r">Coding: Python or R</h2>
+<p>LLMs lead to the greatest productivity gains. Peng et al.&nbsp;(2023) report a controlled experiment in which programmers using OpenAI-powered <span class="yellow">GitHub Copilot completed their assignments on average 55.8% faster, amounting to a 126% productivity increase.</span></p>
+<ul>
+<li><p>Write code to download adjusted close of GOOG, META and MSFT as well as the S&amp;P500 index from 7/1/2014 to 6/30/2024 and save it in a CSV file.</p></li>
+<li><p>Simulate the Solow growth model and plot the results in a four chart.</p></li>
+<li><p>What does following code do?</p></li>
+<li><p>Translate this python code to R or Matlab or vice versa.</p></li>
+<li><p>What are data sources to analyse impact of AI on labour force?</p></li>
+<li><p>Can you display a graph that shows the perfor mance of these securities normalized to start at 100? [Uploaded stock_data.csv] goog, meta, msft</p></li>
+<li><p>Have increased heading</p></li>
+<li><p><span class="yellow">Calculate the beta for each of the stocks and add it to the legend. Change the colors to make them easier to distinguish. Use the title “ One-Decade Performance of Three Big Tech Companies.”</span></p></li>
+<li><p><span class="red">Double the size of the title, legend, axes labels, and ticks. Label “^GSPC” in the legend as “S&amp;P 500.”</span></p></li>
+<li><p>Assume I put $100 in each of the three stocks at the start. Can you show a pie chart that shows how much I would have in each stock now?</p></li>
+<li><p>Can you label each position with its current dollar value in addition to the percentage? Can you make one of the pieces pop out of the pie?</p></li>
+<li><p><span class="yellow">Mark got an A in econ and a B+ in math. Sally got an A− in both econ and math. Frank got a B in econ and a C in math. Name and econ grade and math grade. Mark and A and B+ Sally and A− and A− Frank and B and C Convert to csv</span></p></li>
+</ul>
+</section>
+<section id="extracting-sentiments" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="extracting-sentiments">Extracting Sentiments</h2>
+<p>Policy that loosens immigration restrictions on highly educated foreign workers in Pakistan:</p>
+<ol type="1">
+<li><p><span class="yellow"><strong>A 32-year-old female lawyer in Karachi who is Urdu-speaking.</strong></span></p></li>
+<li><p><strong>A 73-year-old male retired doctor in Multan who is Punjabi.</strong></p></li>
+<li><p><span class="yellow"><strong>A 25-year-old software engineer in Islamabad who is from Khyber Pakhtunkhwa and identifies as nonbinary.</strong></span></p></li>
+<li><p><strong>A 45-year-old female grocery check-out clerk in Lahore who is second-generation Kashmiri.</strong></p></li>
+<li><p><span class="yellow"><strong>A 55-year-old male insurance agent in Sialkot who is Punjabi.</strong></span></p></li>
+</ol>
+</section>
+<section id="mathematical-equations" class="level2">
+<h2 class="anchored" data-anchor-id="mathematical-equations">Mathematical Equations</h2>
+<p>Set up the optimization problem of a consumer with CES preferences over two goods mathematically.</p>
+<p><span class="math display">\[ max U = \left( \alpha x_1^{\rho} + (1-\alpha) x_2^{\rho} \right)^{\frac{1}{\rho}} \]</span> subject to <span class="math display">\[p_1 x_1 + p_2 x_2 = m\]</span></p>
+<p>Solve the following system of equations:</p>
+</section>
+<section id="titles-for-role-of-ai-in-economic-policy" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="titles-for-role-of-ai-in-economic-policy">Titles for role of AI in Economic Policy</h2>
+<ul>
+<li>“AI and Human Synergy in Economic and Fiscal Policy Making”</li>
+<li>“AI-Human Partnership in Shaping Economic and Fiscal Policies”</li>
+<li>“AI and Human Integration in Economic and Fiscal Governance”</li>
+<li>“AI and Human Co-Development in Economic and Fiscal Strategies”</li>
+<li>“AI-Enhanced Collaboration in Economic and Fiscal Policy”</li>
+<li>“AI and Human Alliance in Economic and Fiscal Policy Making”</li>
+<li>“AI-Human Convergence in Economic and Fiscal Governance”</li>
+<li>“AI and Human Teamwork in Economic and Fiscal Policy Design”</li>
+<li>“AI-Driven Collaboration in Economic and Fiscal Policy”</li>
+<li>“AI and Human Cooperation in Economic and Fiscal Policy Making”</li>
+</ul>
+</section>
+<section id="mathematics" class="level2">
+<h2 class="anchored" data-anchor-id="mathematics">Mathematics</h2>
+<ul>
+<li>Derive demand functions for goods 1 and 2 in a CES utility function.</li>
+<li>Solve the following system of equations:
+<ul>
+<li>3x + 2y = 12</li>
+<li>2x - 3y = 6 Can you explain what this model is, how to get from one step to the next, and what the intuition for each step is?</li>
+</ul></li>
+<li>What is the difference between a Cobb-Douglas and a CES utility function?</li>
+</ul>
+</section>
+<section id="prompts-pakistan-economy" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="prompts-pakistan-economy">Prompts Pakistan Economy</h2>
+<p>Here are the extracted prompts:</p>
+<ol type="1">
+<li><strong>Growth Projections for Pakistan Based on Increased Investment and Saving Rates:</strong>
+<ul>
+<li>“If the government encourages saving and increases financial market development, taking saving to 15% and investment to 22%, what growth projections would result?”</li>
+</ul></li>
+<li><strong>Impact of Reducing VAT/GST Rate in Pakistan:</strong>
+<ul>
+<li><span class="yellow">“If Pakistan reduces its VAT/GST rate from 17% to 10% while enhancing compliance, what will be the potential economic impacts?”</span></li>
+</ul></li>
+<li><strong>Sacrifice Ratio for Inflation and Economic Growth in Pakistan:</strong>
+<ul>
+<li>“Given Pakistan’s interest rate of 17% and receding inflation, is there a sacrifice ratio between inflation reduction and economic growth?”</li>
+</ul></li>
+<li><strong>Impact of Increasing Trade-to-GDP Ratio in Pakistan:</strong>
+<ul>
+<li><span class="yellow">“If Pakistan increases its trade-to-GDP ratio from 0.3 to 0.5 through tariff rationalization, how might this impact economic growth?”</span></li>
+</ul></li>
+<li><strong>Impact of AI on Employment in Highly Populated Countries like Pakistan:</strong>
+<ul>
+<li>“With AI replacing human labor, what are the implications for employment in a highly populated, unskilled labor market like Pakistan?”</li>
+</ul></li>
+<li><strong>Optimal Tax Policy for Pakistan:</strong>
+<ul>
+<li><span class="yellow">“What would be the optimal tax policy for Pakistan to maximize revenue while ensuring progressive taxation and economic growth?”</span></li>
+</ul></li>
+<li><strong>Impact of AI on Labor Market in Pakistan:</strong>
+<ul>
+<li>“How will the integration of AI and automation affect the labor market in Pakistan, particularly in sectors like agriculture and manufacturing?”</li>
+</ul></li>
+</ol>
+</section>
+<section id="powerful-prompts-for-chatgpt" class="level2">
+<h2 class="anchored" data-anchor-id="powerful-prompts-for-chatgpt"><a href="https://www.forbes.com/sites/jodiecook/2024/08/22/improve-your-writing-with-chatgpt-5-powerful-prompts/" class="scrollable">5 Powerful prompts for ChatGPT</a></h2>
+<ol type="1">
+<li><p>“Analyze the opening of my online article. I’ll paste the first paragraph below. Rewrite it 3 different ways to make it more compelling and hook the reader instantly. For each rewrite, explain the key changes and how they improve engagement. After presenting the 3 options, give me 5 general tips for crafting attention-grabbing openers that keep readers hooked. Here’s my current opening paragraph: [paste your paragraph].”</p></li>
+<li><p>“Help me strengthen my article with compelling data. I’ll provide the main points of my piece below. For each point, suggest 2-3 relevant statistics or research findings that support my argument. Include the source for each stat. After we’ve covered all the main points, summarize the most impactful statistics and explain how I can seamlessly weave them into my writing for maximum effect. Here are my main points: [list your key points].”</p></li>
+<li><p>“Sharpen my writing by eliminating unnecessary words. I’ll paste a section of my article below. Your job is to cut it down by 30% without losing the core message. Present the condensed version alongside the original, highlighting the key changes. Then, give me 3 rules for identifying and removing fluff in my future writing. Here’s the section to condense: [paste your section].”</p></li>
+<li><p>“Enhance my article with vivid imagery. I’ll share the main theme and tone of my piece. Your task is to suggest 5 descriptive metaphors or similes that bring my writing to life. For each suggestion, explain how it enhances the reader’s experience and reinforces my message. After we’ve developed all 5, advise me on how to incorporate these vivid images throughout my article for maximum impact. My article’s theme and tone are: [describe your theme and tone].”</p></li>
+<li><p>“Analyze my writing style to uncover my unique voice. I’ll provide 3 samples of my online writing below. Your task is to identify recurring patterns, signature phrases, and distinctive elements that define my style. After analyzing each sample, summarize my key stylistic traits and suggest how I can amplify these in future pieces to make my writing more recognizably ‘me’. Here are my writing samples: [paste your samples].”</p></li>
+</ol>
+</section>
+<section id="naive-vs-improved-prompts" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="naive-vs-improved-prompts">Naive vs improved prompts</h2>
+<section id="supply-and-demand-in-economics" class="level3">
+<h3 class="anchored" data-anchor-id="supply-and-demand-in-economics">1. <span class="yellow">Supply and Demand in Economics</span></h3>
+<p><strong>Original Prompt</strong>: “Talk about supply and demand and how it is affected in economics.”</p>
+<p><strong>Rewritten Prompt</strong>: “Explain the concept of supply and demand in economics. Describe how an increase in demand can influence pricing with the help of an illustrative example, like the smartphone market. Similarly, explain the repercussions of reduced supply on pricing by drawing parallels with situations like disruptions in oil production.”</p>
+<hr>
+</section>
+<section id="fitness-expert-persona" class="level3">
+<h3 class="anchored" data-anchor-id="fitness-expert-persona">2. <span class="yellow">Fitness Expert Persona</span></h3>
+<p><strong>Original Prompt</strong>: “What is the best way to get fit?”</p>
+<p><strong>Rewritten Prompt</strong>: “Acting as a fitness expert, tell me the best way to get fit.”</p>
+<p><strong>Enhanced Version</strong>: “Act as a fitness expert who is current with the latest research data. Provide very detailed, step-by-step instructions on how to get fit.”</p>
+<hr>
+</section>
+<section id="gym-workout-program-for-beginners" class="level3">
+<h3 class="anchored" data-anchor-id="gym-workout-program-for-beginners">3. <span class="yellow">Gym Workout Program for Beginners</span></h3>
+<p><strong>Original Prompt</strong>: “Create a gym workout program to lose weight and build strength for an out-of-shape beginner.”</p>
+<p><strong>Enhanced Prompt</strong>: “Act as a fitness expert who is up-to-date with the latest research. Provide a detailed, step-by-step gym workout program tailored for an out-of-shape beginner looking to lose weight and build strength.”</p>
+<hr>
+</section>
+<section id="article-titles-for-a-dog-training-book-marketing-persona" class="level3">
+<h3 class="anchored" data-anchor-id="article-titles-for-a-dog-training-book-marketing-persona">4. Article Titles for a Dog Training Book (Marketing Persona)</h3>
+<p><strong>Original Prompt</strong>: “Give me a list of 10 article titles to promote my new book about dog training.”</p>
+<p><strong>Enhanced Prompt</strong>: “Acting as marketing expert Seth Godin, give me a list of 10 article titles to promote my new book about dog training.”</p>
+<hr>
+</section>
+<section id="political-expert-comparison" class="level3">
+<h3 class="anchored" data-anchor-id="political-expert-comparison">5. Political Expert Comparison</h3>
+<p><strong>Original Prompt</strong>: “Which policies should be implemented to address inflation?”</p>
+<p><strong>Enhanced Prompt</strong>: “You’ll act as a liberal political expert and as a conservative political expert and provide two answers for the question: ‘Which policies should be implemented to address inflation?’”</p>
+</section>
+</section>
+<section id="referee-report" class="level2">
+<h2 class="anchored" data-anchor-id="referee-report">Referee Report</h2>
+<section id="can-you-draft-a-referee-report-for-this-paper-for-the-journal-of-economic-literature-attachment-w30957.pdf" class="level4">
+<h4 class="anchored" data-anchor-id="can-you-draft-a-referee-report-for-this-paper-for-the-journal-of-economic-literature-attachment-w30957.pdf">Can you draft a referee report for this paper for the Journal of Economic Literature? [Attachment: w30957.pdf ]</h4>
+</section>
+<section id="would-this-paper-be-suitable-for-the-american-economic-review" class="level4">
+<h4 class="anchored" data-anchor-id="would-this-paper-be-suitable-for-the-american-economic-review">Would this paper be suitable for the American Economic Review?</h4>
+</section>
+<section id="can-you-provide-a-detailed-critique-of-this-paper-for-the-journal-of-economic-perspectives" class="level4">
+<h4 class="anchored" data-anchor-id="can-you-provide-a-detailed-critique-of-this-paper-for-the-journal-of-economic-perspectives">Can you provide a detailed critique of this paper for the Journal of Economic Perspectives?</h4>
+</section>
+</section>
+<section id="summary-of-llm-capabilities-and-usefulness" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="summary-of-llm-capabilities-and-usefulness">Summary of LLM Capabilities and Usefulness</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 48%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Category</strong></th>
+<th><strong>Task</strong></th>
+<th><strong>Usefulness</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Ideation and Feedback</strong></td>
+<td>Brainstorming</td>
+<td>● Highly Useful</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Feedback</td>
+<td>◑ Useful</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Providing counterarguments</td>
+<td>◑ Useful</td>
+</tr>
+<tr class="even">
+<td><strong>Writing</strong></td>
+<td>Synthesizing text</td>
+<td>● Highly Useful</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Editing text</td>
+<td>● Highly Useful</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Evaluating text</td>
+<td>● Highly Useful</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Converting hand-written equations</td>
+<td>◯ Experimental</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Generating catchy titles and headlines</td>
+<td>● Highly Useful</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Generating tweets to promote a paper</td>
+<td>● Highly Useful</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Generating presentation slides</td>
+<td>● Highly Useful</td>
+</tr>
+<tr class="odd">
+<td><strong>Background Research</strong></td>
+<td>Summarization</td>
+<td>● Highly Useful</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Literature Research</td>
+<td>◑ Useful</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Formatting References</td>
+<td>● Highly Useful</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Translating Text</td>
+<td>● Highly Useful</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Explaining Concepts</td>
+<td>◑ Useful</td>
+</tr>
+<tr class="even">
+<td><strong>Coding</strong></td>
+<td>Writing code</td>
+<td>◑ Useful</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Explaining code</td>
+<td>◑ Useful</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Translating code</td>
+<td>◑ Useful</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Debugging code</td>
+<td>◑ Useful</td>
+</tr>
+<tr class="even">
+<td><strong>Data Analysis</strong></td>
+<td>Locating data sources</td>
+<td>◑ Useful</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Creating figure</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="llms-in-data-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="llms-in-data-analysis">LLMs in Data Analysis</h2>
+<p><strong>Capabilities</strong>:</p>
+<ul>
+<li><p>Locating Data Sources (◐)</p></li>
+<li><p>Creating Figures (◐)</p></li>
+<li><p>Extracting Data from Text (●)</p></li>
+<li><p>Sentiment Analysis (◐)</p></li>
+</ul>
+<hr>
+</section>
+<section id="llms-and-mathematical-derivations" class="level2">
+<h2 class="anchored" data-anchor-id="llms-and-mathematical-derivations">LLMs and Mathematical Derivations</h2>
+<p><strong>Applications</strong>:</p>
+<ul>
+<li><p>Setting Up Models (◐)</p></li>
+<li><p>Deriving Equations (○)</p></li>
+<li><p>Explaining Models (◐)</p></li>
+</ul>
+</section>
+<section id="resources" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><p><a href="https://www.youtube.com/playlist?list=PLwRdpYzPkkn302_rL5RrXvQE8j0jLP02j">YouTube Playlist</a></p></li>
+<li><p><a href="https://sites.google.com/view/lastunen/ai-for-economists">AI for Economists: Prompts &amp; Resources</a></p></li>
+<li><p><a href="https://causalinf.substack.com/">Causal Inference Substack</a></p></li>
+<li><p><a href="https://www.oneusefulthing.org/">One Useful Thing</a></p></li>
+<li><p><a href="https://www.understandingai.org/">Understanding AI</a></p></li>
+</ul>
+<p><strong>Other AI sites:</strong></p>
+<ul>
+<li><a href="https://www.chatpdf.com/">ChatPDF</a></li>
+<li><a href="https://reeder.ai/">Reeder AI</a></li>
+<li><a href="https://app.unriddle.ai/">Unriddle AI</a></li>
+<li><a href="https://app.magicschool.ai/">Magic School AI</a></li>
+</ul>
+</section>
+<section id="key-takeaways" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="key-takeaways"><span class="yellow">Key takeaways</span></h2>
+<p>The article provides a framework for experimentation when integrating AI into government work, emphasising the balance between innovation and ethical considerations. Key takeaways (as summarised by ChatGPT) include:</p>
+<ul>
+<li><p><span class="yellow">AI as an assistant:</span> AI should be seen as a <span class="scrollable">decision-making assistant rather than a decision-maker</span>, emphasising the importance of human oversight and ethical responsibility in its use.</p></li>
+<li><p><span class="yellow">Balancing efficiency and compliance:</span> While it’s important to follow guidelines, caution shouldn’t prevent experimentation with AI.</p></li>
+<li><p><span class="yellow">Creative potential:</span> AI can act as an “extra brain” or “extra hands,” helping with tasks like summarising documents and providing diverse perspectives, offering a creative avenue for public servants.</p></li>
+<li><p><span class="yellow">Ethical considerations:</span> Public servants should prioritise ethics, avoid using sensitive information, and ensure AI use aligns with public service principles.</p></li>
+<li><p><span class="yellow">Informed experimentation:</span> Staying informed without being overwhelmed and experimenting in safe environments can enhance creativity and learning.</p></li>
+<li><p><span class="yellow">Transparency:</span> Transparency is crucial; always disclose when AI is being used.</p></li>
+<li><p><span class="yellow">Quick wins with AI:</span> AI can boost productivity in areas like drafting documents, summarising information, and analysing data, but rules and regulations must still be adhered to.</p></li>
+</ul>
+</section>
+<section id="ai-terminology" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="ai-terminology">AI Terminology</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 78%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Term</strong></th>
+<th><strong>Definition</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Data augmentation</td>
+<td>A technique used in machine learning and deep learning to increase the diversity and amount of training data.</td>
+</tr>
+<tr class="even">
+<td>Deep learning</td>
+<td>A subset of machine learning that focuses on training computers to perform tasks by learning from data, using neural networks.</td>
+</tr>
+<tr class="odd">
+<td>Diffusion model</td>
+<td>A generative model used for generating high-quality samples and tasks, such as image synthesis.</td>
+</tr>
+<tr class="even">
+<td>Discriminative AI</td>
+<td>Artificial intelligence that distinguishes between different classes of data.</td>
+</tr>
+<tr class="odd">
+<td>Discriminative AI models</td>
+<td>Models that identify and classify patterns in data, commonly used for prediction and classification tasks.</td>
+</tr>
+<tr class="even">
+<td>Foundation models</td>
+<td>Broad AI models that can be adapted to create more specialized models or tools for specific use cases.</td>
+</tr>
+<tr class="odd">
+<td>Generative adversarial network (GAN)</td>
+<td>A type of generative model with two neural networks (generator and discriminator) where the generator creates samples and the discriminator evaluates them.</td>
+</tr>
+<tr class="even">
+<td>Generative AI</td>
+<td>AI that can create new content such as text, images, audio, and video.</td>
+</tr>
+<tr class="odd">
+<td>Generative AI models</td>
+<td>Models that generate new content by understanding the context of the input. Used for automated content creation and communication.</td>
+</tr>
+<tr class="even">
+<td>Generative pre-trained transformer (GPT)</td>
+<td>A type of large language model developed by OpenAI that uses transformers to understand and generate text.</td>
+</tr>
+<tr class="odd">
+<td>Large language models (LLMs)</td>
+<td>Deep learning models trained on massive text datasets to learn language patterns and structures.</td>
+</tr>
+<tr class="even">
+<td>Machine learning</td>
+<td>AI focused on creating algorithms and models that enable computers to learn and make predictions or decisions from data.</td>
+</tr>
+<tr class="odd">
+<td>Natural language processing (NLP)</td>
+<td>AI that enables computers to understand, manipulate, and generate human language.</td>
+</tr>
+<tr class="even">
+<td>Neural networks</td>
+<td>Computational models inspired by the human brain, essential in deep learning and AI.</td>
+</tr>
+<tr class="odd">
+<td>Prompt</td>
+<td>Instructions or questions given to a generative AI model to generate new content.</td>
+</tr>
+<tr class="even">
+<td>Training data</td>
+<td>Data used to teach a machine learning model, often containing labeled examples.</td>
+</tr>
+<tr class="odd">
+<td>Transformers</td>
+<td>A deep learning architecture that uses encoders and decoders to generate contextually relevant text.</td>
+</tr>
+<tr class="even">
+<td>Variational autoencoder (VAE)</td>
+<td>A generative model that encodes input data into a smaller space and then decodes it back to its original form.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="prompt-overview" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-overview">Prompt Overview</h2>
+<ul>
+<li>A prompt is any input or series of instructions used to produce a desired output.</li>
+<li>These instructions help in directing the creativity of a generative model.</li>
+<li>Building blocks of a well-structured prompt include instruction, context, input data, and output indicators.</li>
+<li>These elements help the model comprehend our necessities and generate relevant responses.</li>
+</ul>
+</section>
+<section id="what-is-prompt-engineering" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-prompt-engineering">What is Prompt Engineering?</h2>
+<ul>
+<li><strong>Define Prompt Engineering</strong>:
+<ul>
+<li>The practice of designing and refining prompts to guide generative models in producing desired outputs.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="importance-of-prompt-engineering" class="level2">
+<h2 class="anchored" data-anchor-id="importance-of-prompt-engineering">Importance of Prompt Engineering</h2>
+<ul>
+<li><strong>Relevance and Importance</strong>:
+<ul>
+<li>Prompt engineering is crucial for improving the accuracy, creativity, and relevance of AI-generated responses.</li>
+<li>It helps AI systems understand the user’s intention and produce better, more aligned results.</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="how-to-write-effective-prompts" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-write-effective-prompts">How to Write Effective Prompts</h2>
+<ul>
+<li><strong>Writing Effective Prompts</strong>:
+<ul>
+<li>Effective prompts are clear, context-rich, and structured to help AI understand what is expected.</li>
+<li>The process involves defining the instruction, providing necessary context, and outlining the desired output.</li>
+</ul></li>
+</ul>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section"></h2>
+<p>Prompt engineering is a blend of critical analysis, creativity, and technical acumen. It is not limited to asking the right question. It includes framing the question in the right context with the right information and your expectation of desired outcomes to elicit the most appropriate response.</p>
+</section>
+<section id="best-practices-for-writing-effective-prompts-.fragment-.fade-up" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="best-practices-for-writing-effective-prompts-.fragment-.fade-up">Best Practices for Writing Effective Prompts {.fragment .fade-up}</h2>
+<p>Key Dimensions:</p>
+<ul>
+<li><strong>Clarity</strong>:
+<ul>
+<li>Use simple and concise language.</li>
+<li>Avoid ambiguity and vagueness.</li>
+</ul></li>
+<li><strong>Context</strong>:
+<ul>
+<li>Provide background and necessary details.</li>
+<li>Help the model understand the situation.</li>
+</ul></li>
+<li><strong>Precision</strong>:
+<ul>
+<li>Be specific and give examples.</li>
+<li>Clearly define the scope and expectations.</li>
+</ul></li>
+<li><strong>Role-play</strong>:
+<ul>
+<li>Assume a persona to enhance the response.</li>
+<li>Offer relevant context for better understanding.</li>
+</ul></li>
+</ul>
+</section>
+<section id="prompt-engineering-techniques" class="level2">
+<h2 class="anchored" data-anchor-id="prompt-engineering-techniques">Prompt Engineering Techniques</h2>
+<p>At this point, you have learned the techniques for skillfully crafting prompts that effectively steer generative AI models. You now know the various prompt engineering approaches that optimize the response of generative AI models.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/Zahedasghar\.github\.io\/ai\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
