@@ -1,5 +1,76 @@
 ---
-title: "Course Title"
+title: "AI Workshop 21-11-2024"
 ---
 
-Course info & details here
+### [**Key Learning Objectives**]{.yellow}
+
+1. **Understanding AI in Teaching and Learning**  
+   Gain a foundational understanding of AI and its uses in education, with a focus on personalized learning, assessment, and student support.
+   
+
+2. **Adopting AI in Higher Education**  
+   Learn how to incorporate AI tools in teaching and learning processes to improve student outcomes, engagement, and institutional efficiency.
+
+3. **Practical AI Tools for Educators and Administrators**  
+   Develop skills in using specific AI tools like **ChatGPT** and **Bard** for tasks such as creating personalized learning experiences, grading assignments, and analyzing student performance.
+
+4. **Real-World Application and Role-Based Learning**  
+   Tailor the learning experience with practical exercises based on participants’ roles, ensuring relevance to their daily work.
+
+---
+
+### [**Workshop Agenda**]{.yellow}
+
+#### **Session 1: 9:15 AM - 11:00 AM**
+**Introduction to AI and Basic Terminologies**
+
+- What is Artificial Intelligence (AI)?
+- Overview of AI Tools in Higher Education: ChatGPT, Claude, Copilot, Gemini, Literature Review AI and Data Analysis AI.
+- AI Applications in Higher Education: Personalized Learning, Assessment, Student Support.
+- Basics of Big Data and Large Language Models (LLMs).
+
+#### **Q&A Session: 11:00 AM - 11:15 AM**
+
+#### **Session 2: 11:30 AM - 1:00 PM**
+
+**Prompt writing and reading AI tools**
+
+- **Generative AI for Policy Briefs:**  
+   - Learn how AI tools can generate policy briefs, economic reports, and other written content. 
+   
+- **Effective Prompt Writing:**  
+   - Practice writing prompts for AI tools to generate policy recommendations and fiscal analyses. 
+
+
+
+
+**Role-Specific AI Applications and Hands-On Learning**
+
+- **Tailored Content:** Customize exercises for different roles (budget analysts, policy advisors, tax experts).  
+   - Participants work with role-based AI scenarios, simulating policy decisions (e.g., tax adjustments, fiscal deficit control).
+- **Live Demonstrations:**  
+   - Interactive sessions showcasing how AI tools can simulate economic scenarios and guide decision-making.
+- **Group Work:**  
+   - Groups tackle fiscal policy challenges using AI, presenting their analyses and solutions.
+
+#### **Prayer Break: 1:00 PM - 2:00 PM**
+
+#### **Session 3: 2:00 PM - 4:30 PM**
+
+**Integrating AI into Data Analysis and Research**
+
+- **Strategies for AI Adoption in Research:**  
+   - Learn how to integrate AI tools into research processes
+- **Case Studies:**
+   - Analyze current research issues using AI tools to predict outcomes and propose data-driven solutions.
+   - Hands-on experience with AI tools for literature review, data analysis, and research writing.
+---
+
+### [**Workshop Outcomes**]{.yellow}
+
+By the end of the workshop, participants will: 
+- Understand how AI can improve their work as teachers, researchers, and policymakers.
+
+- Gain hands-on experience using AI tools for lecturing, research, and policy analysis. 
+
+- Be able to advocate for AI-driven solutions within their institutions and communities.

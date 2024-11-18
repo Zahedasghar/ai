@@ -1,8 +1,17 @@
 ---
-title: "Course Materials"
+title: "Session Wise Notes"
 ---
 
 [Datasets](data/)
 
-[Slides](slides/)
+[Slides Session1](slides/AI_economists1.html)
 
+[Slides Session2](slides/AI_economists2.html)
+
+[Slides Session3](slides/AI_economists3.html)
+
+[Miscelleneous](slides/AI_economists4.html)
+
+[Advantages and Disadvantages of AI in HED](https://www.ucanwest.ca/blog/education-careers-tips/advantages-and-disadvantages-of-ai-in-education/)
+
+[WEF](https://www.weforum.org/stories/2024/05/ways-ai-can-benefit-education/)

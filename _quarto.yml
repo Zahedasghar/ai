@@ -3,15 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "Course Title"
+  title: "AI for Teachers, Researchers and Students"
   sidebar:
     background: primary
-    # logo: "images/logo.png"
+    logo: "images/LLM.webp"
     pinned: true
     align: center
     tools:
       - icon: github
-        href: https://github.com/Pakillo/quarto-course-website-template
+        href: https://github.com/Zahedasghar
         text: GitHub
     style: docked
     contents:
@@ -21,13 +21,13 @@ website:
         text: Schedule
       - href: materials.qmd
         text: Materials
-      - href: https://github.com/Pakillo/quarto-course-website-template/discussions
-        text: Forum
+      - href: https://discord.com/channels/1292187441565794316/1292187441565794319
+        text: Discord
 
 format:
   html:
-    theme: cosmo
-    # css: styles.css
+    theme: [default, custom1.scss]
+    css: style.scss
     toc: true
 
 execute:
