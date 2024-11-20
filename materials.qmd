@@ -1,8 +1,14 @@
 ---
-title: "Session Wise Notes"
+title: "Relevant materials for the workshop"
 ---
 
-[Datasets](data)
+[diabetes](data/diabetes.csv)
+
+<a href="data/ds_salaries.csv" target="_blank">View ds_salaries Dataset</a>
+
+
+
+
 
 [Slides Session1](slides/AI_economists1.html)
 
