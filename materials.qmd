@@ -2,7 +2,7 @@
 title: "Session Wise Notes"
 ---
 
-[Datasets](data/)
+[Datasets](data)
 
 [Slides Session1](slides/AI_economists1.html)
 
