@@ -6,7 +6,7 @@ title: "Relevant materials for the workshop"
 
 <a href="data/ds_salaries.csv" target="_blank">View ds_salaries Dataset</a>
 
-
+[insurance](data/insurance.csv)
 
 
 
@@ -16,7 +16,11 @@ title: "Relevant materials for the workshop"
 
 [Slides Session3](slides/AI_economists3.html)
 
+[Literature Review](slides/literature.html)
+
 [Miscelleneous](slides/AI_economists4.html)
+
+[Data Analysis](slides/data_prompts.html)
 
 [Advantages and Disadvantages of AI in HED](https://www.ucanwest.ca/blog/education-careers-tips/advantages-and-disadvantages-of-ai-in-education/)
 

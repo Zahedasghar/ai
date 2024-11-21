@@ -197,7 +197,7 @@ Convert to csv]{.yellow}
 
 2. **A 73-year-old male retired doctor in Multan who is Punjabi.**
 
-3. [**A 25-year-old software engineer in Islamabad who is from Khyber Pakhtunkhwa and identifies as nonbinary.**]{.yellow}
+3. [**A 25-year-old female software engineer in Islamabad who is from Khyber Pakhtunkhwa .**]{.yellow}
 
 4. **A 45-year-old female grocery check-out clerk in Lahore who is second-generation Kashmiri.**
 
@@ -499,11 +499,9 @@ desired outcomes to elicit the most appropriate response.
 
 ## Best Practices for Writing Effective Prompts {.fragment .fade-up} {.scrollable}
 
-Key Dimensions:
-
-- **Clarity**:
   - Use simple and concise language. 
   - Avoid ambiguity and vagueness. 
+  
 - **Context**: 
   - Provide background and necessary details. 
   - Help the model understand the situation.
@@ -518,3 +516,19 @@ Key Dimensions:
 
 At this point, you have learned the techniques for skillfully crafting prompts that effectively steer generative AI models. You now know the various prompt engineering approaches that optimize the response of generative AI models.
 
+## Best Practices for using AI
+
+Always verify information provided by ChatGPT, especially for critical tasks. 
+
+Use ChatGPT as a starting point or assistant, not a replacement for your expertise. 
+
+Be mindful of privacy and confidentiality – avoid sharing sensitive information. 
+
+Inform your team or manager about your use of AI tools to ensure transparency. 
+
+Stay updated on your company’s policies regarding AI and machine learning tools. 
+
+Familiarize yourself with the latest updates and capabilities of ChatGPT to maximize its potential.
+Use clear and specific prompts to get the most accurate and relevant responses. 
+
+Regularly provide feedback to improve the AI’s performance and accuracy.
