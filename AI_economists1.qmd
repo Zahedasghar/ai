@@ -1,7 +1,7 @@
 ---
 title: ""
 author: "Zahid Asghar"
-date: "2024-11-21"
+date: "2024-01-16"
 format: 
   revealjs:
     logo: "images/qau1.jpg"
@@ -18,7 +18,7 @@ execute:
   warning: false
 ---
 
-
+# Learning, Teaching and Research in AI era 
 ## {background-image="images/apple.jpg"}
 
 
@@ -31,7 +31,8 @@ Comfortable being uncomfortable
 
 ::: r-fit-text
 
-### Embracing AI in Economics, Business and Social Sciences
+### Embracing AI in Daily Office Work 
+
 Zahid Asghar, QAU
 
 :::

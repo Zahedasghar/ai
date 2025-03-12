@@ -1,0 +1,128 @@
+---
+title: ""
+author: "Zahid Asghar"
+date: "2024-09-24"
+format: 
+  html:
+    logo: "images/qau1.jpg"
+    theme: [default, custom2.scss]
+    chalkboard: true
+    slideNumber: c/t
+    toc: true
+    toc-float: true
+    title-slide-attributes:
+      data-background-image: images/background_title.png
+
+execute:
+  freeze: auto
+  echo: false
+  message: false
+  warning: false
+---  
+
+
+
+
+## Workshop Overview
+
+Join us for an engaging three-part workshop where we'll introduce students, teachers, and researchers to the basics of **Artificial Intelligence (AI)** and how it can be used in education, research, and everyday life. We'll focus on practical ways to use AI tools to enhance learning, simplify research tasks, and improve teaching methods. You'll explore various AI platforms that assist with data analysis, literature reviews, content creation, and making complex tasks easier.
+
+You'll get hands-on experience with **Generative AI**, learning how it can automate tasks like writing academic papers, analyzing data, conducting literature reviews, and supporting innovative research projects. Through interactive exercises and real-life examples, you'll learn how to effectively use AI tools in your studies or work.
+
+---
+
+**Key Learning Objectives**
+
+1. **Understanding AI in Education and Research**
+   - Learn the basics of AI and its role in education and research.
+   - See how AI helps in content creation, data analysis, literature reviews, and promoting innovation.
+
+2. **AI for Students: Enhancing Learning**
+   - Discover how students can use AI tools for writing assignments, analyzing data, conducting literature reviews, and understanding complex topics.
+
+3. **AI for Teachers: Improving Teaching and Content Creation**
+   - Find out how educators can use AI to design engaging lessons, assess student performance, create educational content, and assist with literature reviews.
+
+4. **AI for Researchers: Streamlining Research**
+   - Learn how to use AI for literature reviews, data collection and analysis, and writing reports to make research more efficient and accurate.
+
+5. **The Impact of AI on Society**
+   - Understand how AI is changing society and how educational institutions can prepare the next generation to use AI responsibly.
+
+---
+
+**Workshop Agenda**
+
+### **Session 1: Introduction to AI and Practical Applications**
+
+**Date:** [Insert Date]  
+**Time:** **6:00 PM - 8:00 PM**
+
+- **Introduction to AI**
+  - What is **Artificial Intelligence (AI)**?
+  - Overview of AI tools in education and research: **ChatGPT**, **Bard**, **Bing**, and others.
+  - How AI is used in education: personalized learning, curriculum design, assessments.
+  - Basics of **Big Data** and **Large Language Models (LLMs)**.
+
+- **Generative AI for Academic Writing and Content Creation**
+  - How AI can help write essays, reports, and create educational materials.
+
+- **Effective Prompt Writing**
+  - Practice creating prompts to get accurate and relevant results from AI tools.
+
+- **Interactive Activities**
+  - Live demonstrations of AI tools.
+  - Hands-on practice with writing prompts and generating content.
+
+---
+
+### **Session 2: AI for Literature Review**
+
+**Date:** [Insert Date]  
+**Time:** **6:00 PM - 8:00 PM**
+
+- **Using AI for Literature Reviews**
+  - How AI tools can quickly find relevant research papers.
+  - Practice using AI to summarize articles and highlight key information.
+
+- **Hands-On Practice**
+  - Conduct a mini literature review on a topic of your choice using AI tools.
+
+- **Case Studies**
+  - Discuss examples where AI-assisted literature reviews improved research efficiency.
+
+- **Group Activities**
+  - Collaborate with others to compare findings and share insights.
+
+---
+
+### **Session 3: AI for Data Analytics**
+
+**Date:** [Insert Date]  
+**Time:** **6:00 PM - 8:00 PM**
+
+- **Introduction to AI in Data Analysis**
+  - Understand how AI can process and analyze large amounts of data.
+  - Explore tools that make data analysis easier to understand.
+
+- **Hands-On Practice**
+  - Use AI tools to analyze sample datasets.
+  - Learn how to interpret results and create visualizations.
+
+- **Integrating AI into Research and Education**
+  - Discuss ways to include AI-driven data analytics in your work or studies.
+
+- **Wrap-Up and Next Steps**
+  - Review key points from all sessions.
+  - Discuss how to continue using AI tools in your studies or work.
+  - Receive resources like sample datasets, access to AI tools, and guides for further learning.
+
+---
+
+**Workshop Outcomes**
+
+By the end of the workshop, you will:
+
+- Understand how AI can improve learning, teaching, and research, especially in **literature reviews** and **data analytics**.
+- Gain practical experience using AI tools for creating content, conducting literature reviews, analyzing data, and managing research projects.
+- Be prepared to promote responsible and innovative use of AI in educational and research settings.

@@ -1,0 +1,131 @@
+---
+title: "Leveraging AI for Economics, Business and Social Sciences"
+author: "Zahid Asghar"
+date: "2024-12-20"
+format: 
+  html:
+    logo: "images/qau1.jpg"
+    theme: [default, custom2.scss]
+    chalkboard: true
+    slideNumber: c/t
+    toc: true
+    toc-float: true
+    title-slide-attributes:
+      data-background-image: images/background_title.png
+
+execute:
+  freeze: auto
+  echo: false
+  message: false
+  warning: false
+---  
+
+
+
+
+### **Overview**
+This 4-day workshop introduces AI to teachers, students, and researchers in economics and social sciences. Each session builds on practical applications, ensuring participants understand AI concepts and tools to support their academic and research goals.
+
+
+
+Hands-on exercises have been integrated into specific slots to enhance practical understanding and application.
+
+---
+
+### **Day 1 (6:00–8:00 PM): Fundamentals of AI and Its Applications in Economics and Social Sciences**
+
+**Objective**: Introduce AI concepts and their practical applications, focusing on relevance to economics and social sciences.
+
+**Content**:
+- **AI Essentials**:
+  - Definition and types of AI: Narrow AI, General AI, Super AI.
+  - Applications: Predictive modeling, market analysis, policy evaluation, sentiment analysis.
+- **Core Components**:
+  - Data in AI: importance, collection, and preparation.
+  - Machine learning vs. deep learning.
+  - Overview of key AI tools (Python, TensorFlow, GPT).
+- **Hands-On Exercise**:
+  - Participants will identify AI applications in their domain and propose use cases.
+  - Group activity to map AI tools to specific problems in economics and social sciences.
+- **Interactive Q&A**:
+  - Open floor for participant queries and discussions.
+
+---
+
+### **Day 2 (6:00–8:00 PM): Leveraging AI for Research and Academic Work**
+
+**Objective**: Equip participants with AI-driven tools and methods for literature reviews, academic writing, and identifying research gaps.
+
+**Content**:
+- **AI in Research**:
+  - Prompting basics: crafting effective queries for tools like ChatGPT and Scholarcy.
+  - Automating literature reviews: tools like Elicit for summarization and citation management.
+- **Hands-On Exercise**:
+  - Practical session: Conducting a literature review using AI tools.
+    - Participants use pre-shared articles to generate summaries and identify research gaps.
+    - Create a bibliographic database with AI tools.
+- **Interactive Discussions**:
+  - Feedback on exercises.
+  - Exploring specific research interests of participants.
+
+---
+
+### **Day 3 (6:00–8:00 PM): AI for Data Analysis and Visualization**
+
+**Objective**: Demonstrate AI tools for data analysis, with a focus on generating actionable insights in economics and social sciences.
+
+**Content**:
+- **Data Analysis Basics**:
+  - AI methods: regression, clustering, sentiment analysis.
+  - Tools: Excel AI features, R/STATA/SPSS/Python , specialized AI Data platforms.
+- **Hands-On Exercise**:
+  - Participants analyze a shared dataset (e.g., GDP trends, survey data).
+  - Tasks:
+    - Data cleaning and exploration using AI tools.
+    - Applying regression and sentiment analysis techniques.
+    - Interpreting insights for research or policy.
+- **Data Visualization**:
+  - Generating impactful graphs and visuals with AI tools.
+  - Storytelling using data-driven insights.
+- **Q&A and Wrap-Up**:
+  - Participant feedback.
+  - Group discussion on data interpretation.
+
+---
+
+### **Day 4 (6:00–8:00 PM): Applied Practice and Personalized Guidance**
+
+**Objective**: Enable participants to apply learned skills to their projects while addressing personalized needs and challenges.
+
+**Content**:
+- **Recap of Key Topics**:
+  - Review highlights from Days 1–3.
+  - Discuss applications tailored to participant goals.
+- **Interactive Group Work**:
+  - Facilitated sessions for applying AI tools to specific research problems.
+  - Collaborative troubleshooting and brainstorming.
+- **Personalized Support and Hands-On Exercise**:
+  - Individual participants work on a mini-project relevant to their field:
+    - Example: Literature review, data analysis, or policy modeling.
+    - Facilitators provide live guidance.
+- **Closing Session**:
+  - Presentation of project insights by participants.
+  - Discussing next steps for learning and implementation.
+  - Certificate of Completion distribution.
+
+---
+
+### **Deliverables**
+- Mastery of AI-based tools for literature reviews and data analysis.
+- Practical experience with AI applications in economics and social sciences.
+- Personalized feedback and strategic plans for using AI.
+- Completion certificate and workshop resources.
+
+---
+
+### **Requirements**
+- Laptop with internet connectivity.
+- Pre-installed tools (provided before the workshop).
+- Sample datasets for practice (shared in advance).
+
+By including hands-on exercises, participants will gain actionable experience with AI tools, enabling them to directly apply these skills in their academic and research activities. All slides, resources, and tools will be shared with participants for future reference.

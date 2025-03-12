@@ -1,0 +1,65 @@
+---
+title: "AI Fundamentals Workshop Plan"
+author: "Zahid Asghar"
+date: "`today`"
+format: revealjs
+---
+
+# 3-Day Workshop Plan: AI Fundamentals
+
+  This is a **3-day workshop plan** for introducing **AI fundamentals** to a large group of **100 university teachers, researchers, and students** with **beginner-level** knowledge. The workshop will focus on **familiarity with AI concepts, pros and cons, and basic applications**. Each session runs from **6 PM to 8 PM**, ensuring engagement while respecting time constraints.
+
+---
+
+## ✅ Day 1: Introduction to AI Basics
+
+  | # | Duration | Activity | Facilitator Actions | Output |
+  |---|----------|----------|---------------------|--------|
+  | 1 | 10 min | 🎯 Icebreaker: "AI in Your Life" | Ask participants to share one way they interact with AI in daily life using a Think-Pair-Share technique. | Participants start connecting personal experiences with AI. |
+  | 2 | 20 min | 📖 Interactive Lecture: What is AI? | Present basic AI concepts using visuals and analogies. Use audience polling tools to gauge prior knowledge. | Basic understanding of AI definitions and key concepts. |
+  | 3 | 20 min | 💡 Group Activity: AI vs. Non-AI | Break into small groups. Provide scenarios for participants to classify as AI or not. Facilitate sharing results. | Clarified understanding of what constitutes AI. |
+  | 4 | 15 min | ☕ Break | Energizer: Quick AI trivia. | Relaxed participants. |
+  | 5 | 25 min | 🎬 Demo + Discussion: Real-World AI Applications | Showcase short videos of AI in action (education, healthcare, finance). Lead a discussion on potential uses in academia. | Inspiration and practical connections. |
+  | 6 | 20 min | 🧠 Pros & Cons Brainstorm | Groups brainstorm and list the benefits and risks of AI. Create a shared digital board (like Miro). | Comprehensive list of pros and cons. |
+  | 7 | 10 min | 📌 Reflection & Closing | Ask: *What surprised you the most today?* Set expectations for Day 2. | Engaged participants, reflections captured. |
+
+  ---
+
+## ✅ Day 2: Ethical Implications & AI Myths
+
+  | # | Duration | Activity | Facilitator Actions | Output |
+  |---|----------|----------|---------------------|--------|
+  | 1 | 10 min | 🌟 Warm-up: AI Myth Busters | Share a few myths about AI and have participants vote whether they think they are true or false. | Debunked common AI misconceptions. |
+  | 2 | 25 min | 📖 Interactive Lecture: Ethical Considerations | Present ethical concerns of AI: bias, privacy, and control. Use storytelling for impact. | Basic understanding of AI ethics. |
+  | 3 | 20 min | 💬 Group Debate: "Is AI a Threat or a Tool?" | Split into pro/con groups. Each side presents arguments on AI's impact. | Critical thinking and awareness of diverse viewpoints. |
+| 4 | 15 min | ☕ Break | Quick energizer: AI-themed fun fact quiz. | Re-energized participants. |
+| 5 | 25 min | 🗣️ Case Study: AI Failures | Present real-world cases of AI biases and failures. Facilitate a debrief. | Awareness of AI pitfalls. |
+| 6 | 15 min | 📌 Closing & Key Takeaways | Recap insights and key lessons. Prepare participants for Day 3 with a question: *What role should educators play in AI discussions?* | Preparedness for next steps. |
+
+---
+
+## ✅ Day 3: Applications & Moving Forward
+
+| # | Duration | Activity | Facilitator Actions | Output |
+|---|----------|----------|---------------------|--------|
+| 1 | 10 min | 🌟 Icebreaker: AI in Education | Ask participants to name a subject where AI could assist. | Connected participants. |
+| 2 | 20 min | 🎬 Interactive Demo: Tools for Education | Show tools like ChatGPT, Grammarly, and AI for grading. Allow small groups to explore briefly. | Practical exposure to educational AI tools. |
+| 3 | 20 min | 🧠 Activity: AI Use Cases in Academia | Group brainstorm for how AI could be ethically applied in their fields. Share back to the room. | Real-world application ideas generated. |
+| 4 | 15 min | ☕ Break | Interactive Poll: "What's your key takeaway so far?" | Boosted energy and insights. |
+| 5 | 30 min | 📈 Workshop Project: AI Impact Map | Create a collective mind map of how AI could impact education, research, and professional growth. | Visual summary of collective insights. |
+| 6 | 15 min | 🎯 Closing Reflection & Next Steps | Ask: *What one step will you take after this workshop?* Distribute resources for continued learning. | Commitments for future learning. |
+
+---
+
+## 🎓 Training from the Back of the Room Ideas (Day 1, 20-min or longer activities)
+
+| Step Name                | Time | Technique                   | Process                                                 | Output                        |
+|--------------------------|------|-----------------------------|--------------------------------------------------------|-------------------------------|
+| **Connection Activity**  | 20m  | Think-Pair-Share            | Participants reflect individually, then share insights. | Increased engagement.        |
+| **Concept Exploration**  | 20m  | Gallery Walk                | Rotate around AI examples with guided prompts.          | Clarified understanding.     |
+| **Practice & Application**| 20m | Group Sorting Activity      | Groups sort examples into AI vs. non-AI categories.     | Improved critical thinking.  |
+
+---
+
+### 📩 Want a Workshop Invitation?
+Would you like me to draft a **workshop invitation email** or generate a **visual illustration** for this workshop? Let me know if you'd like me to break down any specific activity further! 😊

@@ -1,14 +1,17 @@
 ---
-title: "AI Workshop 21-11-2024"
+title: "AI Tools for Research and Academic Excellenc"
+subtitle: "A Workshop for BCSA Members" 
+author: "Zahid Asghar, School of Economics, QAU, Islamabad"
+
 ---
 
 ### [**Key Learning Objectives**]{.yellow}
 
-1. **Understanding AI in Teaching and Learning**  
-   Gain a foundational understanding of AI and its uses in education, with a focus on personalized learning, assessment, and student support.
+1. **Understanding AI in Teaching, Learning and Research**  
+   Gain a foundational understanding of AI and its uses in education/research/public policy, with a focus on personalized learning, assessment, and student support.
    
 
-2. **Adopting AI in Higher Education**  
+2. **Adopting AI in Education and Public Policy**  
    Learn how to incorporate AI tools in teaching and learning processes to improve student outcomes, engagement, and institutional efficiency.
 
 3. **Practical AI Tools for Educators and Administrators**  
@@ -21,7 +24,7 @@ title: "AI Workshop 21-11-2024"
 
 ### [**Workshop Agenda**]{.yellow}
 
-#### **Session 1: 9:15 AM - 11:00 AM**
+#### **Session 1: 9:00 AM - 11:00 AM**
 **Introduction to AI and Basic Terminologies**
 
 - What is Artificial Intelligence (AI)?
@@ -31,7 +34,7 @@ title: "AI Workshop 21-11-2024"
 
 #### **Q&A Session: 11:00 AM - 11:15 AM**
 
-#### **Session 2: 11:30 AM - 1:00 PM**
+#### **Session 2: 11:15 AM - 1:15 PM**
 
 **Prompt writing and reading AI tools**
 
@@ -53,9 +56,8 @@ title: "AI Workshop 21-11-2024"
 - **Group Work:**  
    - Groups tackle fiscal policy challenges using AI, presenting their analyses and solutions.
 
-#### **Prayer Break: 1:00 PM - 2:00 PM**
 
-#### **Session 3: 2:00 PM - 4:30 PM**
+#### **Session 3: 9:00 AM - 11:15 AM**
 
 **Integrating AI into Data Analysis and Research**
 
@@ -64,6 +66,23 @@ title: "AI Workshop 21-11-2024"
 - **Case Studies:**
    - Analyze current research issues using AI tools to predict outcomes and propose data-driven solutions.
    - Hands-on experience with AI tools for literature review, data analysis, and research writing.
+   
+#### Session 4: 11:15 AM - 1:15 PM
+
+**AI Tools for Literature Review and Data Analysis** 
+- **Literature Review AI:**  
+   - Learn how AI tools can streamline literature review processes, identify research gaps, and generate summaries. 
+   
+- **Data Analysis AI:**  
+   - Hands-on experience using AI tools to analyze research data, generate insights, and visualize results. 
+  
+- **Policy Analysis and Recommendations:** 
+   - Use AI tools to analyze policy data, generate insights, and develop recommendations for policymakers.
+
+#### Hands-On Exercises and Group Work
+
+
+#### **Q&A Sessions
 ---
 
 ### [**Workshop Outcomes**]{.yellow}
