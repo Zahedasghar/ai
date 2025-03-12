@@ -1,71 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://Zahedasghar.github.io/ai/materials.html</loc>
-    <lastmod>2024-11-21T02:41:11.478Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Zahedasghar.github.io/ai/slides/AI_economists2.html</loc>
-    <lastmod>2024-11-21T02:41:11.478Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Zahedasghar.github.io/ai/slides/ai_economists4.html</loc>
-    <lastmod>2024-11-21T02:41:11.478Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Zahedasghar.github.io/ai/slides/data_prompts.html</loc>
-    <lastmod>2024-11-21T02:41:11.478Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Zahedasghar.github.io/ai/literature.html</loc>
-    <lastmod>2024-11-21T02:41:11.474Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Zahedasghar.github.io/ai/AI_economists2.html</loc>
-    <lastmod>2024-11-21T02:41:10.870Z</lastmod>
-  </url>
-  <url>
     <loc>https://Zahedasghar.github.io/ai/AI_economists1.html</loc>
-    <lastmod>2024-11-21T02:41:10.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Zahedasghar.github.io/ai/ai_economists4.html</loc>
-    <lastmod>2024-11-21T02:41:10.910Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Zahedasghar.github.io/ai/AI_economists3_NLP.html</loc>
-    <lastmod>2024-11-21T02:41:10.870Z</lastmod>
+    <lastmod>2025-03-12T14:16:06.760Z</lastmod>
   </url>
   <url>
     <loc>https://Zahedasghar.github.io/ai/AI_economists3.html</loc>
-    <lastmod>2024-11-21T02:41:10.870Z</lastmod>
+    <lastmod>2025-03-12T14:16:06.761Z</lastmod>
   </url>
   <url>
     <loc>https://Zahedasghar.github.io/ai/schedule.html</loc>
-    <lastmod>2024-11-21T02:41:11.478Z</lastmod>
+    <lastmod>2025-03-12T14:16:07.295Z</lastmod>
   </url>
   <url>
-    <loc>https://Zahedasghar.github.io/ai/index.html</loc>
-    <lastmod>2024-11-21T02:41:11.474Z</lastmod>
+    <loc>https://Zahedasghar.github.io/ai/AI_economists2.html</loc>
+    <lastmod>2025-03-12T14:16:06.760Z</lastmod>
   </url>
   <url>
     <loc>https://Zahedasghar.github.io/ai/why_workshop.html</loc>
-    <lastmod>2024-11-21T02:41:11.702Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Zahedasghar.github.io/ai/slides/AI_economists3.html</loc>
-    <lastmod>2024-11-21T02:41:11.478Z</lastmod>
-  </url>
-  <url>
-    <loc>https://Zahedasghar.github.io/ai/slides/AI_economists3_NLP.html</loc>
-    <lastmod>2024-11-21T02:41:11.478Z</lastmod>
+    <lastmod>2025-03-12T14:16:07.497Z</lastmod>
   </url>
   <url>
     <loc>https://Zahedasghar.github.io/ai/slides/AI_economists1.html</loc>
-    <lastmod>2024-11-21T02:41:11.478Z</lastmod>
+    <lastmod>2025-03-12T14:16:07.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/slides/AI_economists3.html</loc>
+    <lastmod>2025-03-12T14:16:07.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/slides/AI_economists3_NLP.html</loc>
+    <lastmod>2025-03-12T14:16:07.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/slides/pef1.html</loc>
+    <lastmod>2025-03-12T14:16:07.497Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/slides/data_prompts.html</loc>
+    <lastmod>2025-03-12T14:16:07.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/econometric_prompts_sol.html</loc>
+    <lastmod>2025-03-12T14:16:06.797Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/ai_workshop.html</loc>
+    <lastmod>2025-03-12T14:16:06.795Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/data_prompts.html</loc>
+    <lastmod>2025-03-12T14:16:06.797Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/index.html</loc>
+    <lastmod>2025-03-12T14:16:07.295Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/ai_workshop_prompt.html</loc>
+    <lastmod>2025-03-12T14:16:06.795Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/test.html</loc>
+    <lastmod>2025-03-12T14:16:07.497Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/slides/ai_economists4.html</loc>
+    <lastmod>2025-03-12T14:16:07.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/slides/AI_economists2.html</loc>
+    <lastmod>2025-03-12T14:16:07.296Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/slides/pef.html</loc>
+    <lastmod>2025-03-12T14:16:07.497Z</lastmod>
   </url>
   <url>
     <loc>https://Zahedasghar.github.io/ai/slides/literature.html</loc>
-    <lastmod>2024-11-21T02:41:11.702Z</lastmod>
+    <lastmod>2025-03-12T14:16:07.496Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/ai_economists4.html</loc>
+    <lastmod>2025-03-12T14:16:06.795Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/materials.html</loc>
+    <lastmod>2025-03-12T14:16:07.295Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/AI_economists3_NLP.html</loc>
+    <lastmod>2025-03-12T14:16:06.761Z</lastmod>
+  </url>
+  <url>
+    <loc>https://Zahedasghar.github.io/ai/literature.html</loc>
+    <lastmod>2025-03-12T14:16:07.295Z</lastmod>
   </url>
 </urlset>
