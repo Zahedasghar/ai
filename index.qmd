@@ -2,7 +2,7 @@
 title: "AI Tools for Research and Academic Excellenc"
 subtitle: "A Workshop for BCSA Members" 
 author: "Zahid Asghar, School of Economics, QAU, Islamabad"
-format: docx
+format: html
 
 ---
 
