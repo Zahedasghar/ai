@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Zahid Asghar">
-<meta name="dcterms.date" content="2025-04-22">
+<meta name="dcterms.date" content="2024-09-24">
 
-<title>NLP in macroeconomics: Prompts – AI for Teachers, Researchers and Students</title>
+<title>office_prompt – AI for Teachers, Researchers and Students</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -36,10 +36,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4379b0ccadffce622b03caf4c46266b3.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-bc11e8951dd3f5ac49be598b221874d1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-37493d7c4762b4bebc56c5cc5963e9d6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -75,13 +75,13 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">NLP in macroeconomics: Prompts</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -91,35 +91,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">NLP in macroeconomics: Prompts</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Zahid Asghar </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">April 22, 2025</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-center sidebar-header">
@@ -171,140 +143,184 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#sentiment-analysis-of-economic-reports" id="toc-sentiment-analysis-of-economic-reports" class="nav-link active" data-scroll-target="#sentiment-analysis-of-economic-reports">1. <strong>Sentiment Analysis of Economic Reports</strong></a></li>
-  <li><a href="#entity-recognition-in-financial-documents" id="toc-entity-recognition-in-financial-documents" class="nav-link" data-scroll-target="#entity-recognition-in-financial-documents">2. <strong>Entity Recognition in Financial Documents</strong></a></li>
-  <li><a href="#topic-modeling-of-economic-news" id="toc-topic-modeling-of-economic-news" class="nav-link" data-scroll-target="#topic-modeling-of-economic-news">3. <strong>Topic Modeling of Economic News</strong></a></li>
-  <li><a href="#text-summarization-of-economic-reports" id="toc-text-summarization-of-economic-reports" class="nav-link" data-scroll-target="#text-summarization-of-economic-reports">4. <strong>Text Summarization of Economic Reports</strong></a></li>
-  <li><a href="#economic-sentiment-index-from-news" id="toc-economic-sentiment-index-from-news" class="nav-link" data-scroll-target="#economic-sentiment-index-from-news">5. <strong>Economic Sentiment Index from News</strong></a></li>
-  <li><a href="#speech-analysis-of-central-bank-governors" id="toc-speech-analysis-of-central-bank-governors" class="nav-link" data-scroll-target="#speech-analysis-of-central-bank-governors">6. <strong>Speech Analysis of Central Bank Governors</strong></a></li>
-  <li><a href="#macro-event-detection-from-news-streams" id="toc-macro-event-detection-from-news-streams" class="nav-link" data-scroll-target="#macro-event-detection-from-news-streams">7. <strong>Macro Event Detection from News Streams</strong></a></li>
-  <li><a href="#central-bank-communication-analysis" id="toc-central-bank-communication-analysis" class="nav-link" data-scroll-target="#central-bank-communication-analysis">8. <strong>Central Bank Communication Analysis</strong></a></li>
-  <li><a href="#sentiment-driven-stock-market-analysis" id="toc-sentiment-driven-stock-market-analysis" class="nav-link" data-scroll-target="#sentiment-driven-stock-market-analysis">9. <strong>Sentiment-driven Stock Market Analysis</strong></a></li>
-  <li><a href="#correlation-of-macro-terms-with-economic-indicators" id="toc-correlation-of-macro-terms-with-economic-indicators" class="nav-link" data-scroll-target="#correlation-of-macro-terms-with-economic-indicators">10. <strong>Correlation of Macro Terms with Economic Indicators</strong></a></li>
-  <li><a href="#extracting-forecast-data-from-text" id="toc-extracting-forecast-data-from-text" class="nav-link" data-scroll-target="#extracting-forecast-data-from-text">11. <strong>Extracting Forecast Data from Text</strong></a></li>
-  <li><a href="#scenario-analysis-from-policy-documents" id="toc-scenario-analysis-from-policy-documents" class="nav-link" data-scroll-target="#scenario-analysis-from-policy-documents">12. <strong>Scenario Analysis from Policy Documents</strong></a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#official-letter-email-writing" id="toc-official-letter-email-writing" class="nav-link active" data-scroll-target="#official-letter-email-writing">📬 Official Letter &amp; Email Writing</a></li>
+  <li><a href="#office-circulars-memos-notifications" id="toc-office-circulars-memos-notifications" class="nav-link" data-scroll-target="#office-circulars-memos-notifications">📝 Office Circulars, Memos &amp; Notifications</a></li>
+  <li><a href="#report-writing-summary-generation" id="toc-report-writing-summary-generation" class="nav-link" data-scroll-target="#report-writing-summary-generation">📊 Report Writing &amp; Summary Generation</a></li>
+  <li><a href="#meeting-support-agenda-planning" id="toc-meeting-support-agenda-planning" class="nav-link" data-scroll-target="#meeting-support-agenda-planning">📆 Meeting Support &amp; Agenda Planning</a></li>
+  <li><a href="#citizen-service-communication" id="toc-citizen-service-communication" class="nav-link" data-scroll-target="#citizen-service-communication">👥 Citizen Service Communication</a></li>
+  <li><a href="#documentation-filing-support" id="toc-documentation-filing-support" class="nav-link" data-scroll-target="#documentation-filing-support">📎 Documentation &amp; Filing Support</a></li>
+  <li><a href="#policy-rule-explanation" id="toc-policy-rule-explanation" class="nav-link" data-scroll-target="#policy-rule-explanation">📖 Policy &amp; Rule Explanation</a></li>
+  <li><a href="#basic-excelnumbers-assistance" id="toc-basic-excelnumbers-assistance" class="nav-link" data-scroll-target="#basic-excelnumbers-assistance">📈 Basic Excel/Numbers Assistance</a></li>
+  <li><a href="#compliance-audit-governance" id="toc-compliance-audit-governance" class="nav-link" data-scroll-target="#compliance-audit-governance">🔐 Compliance, Audit &amp; Governance</a></li>
+  <li><a href="#translation-accessibility" id="toc-translation-accessibility" class="nav-link" data-scroll-target="#translation-accessibility">🔄 Translation &amp; Accessibility</a></li>
+  <li><a href="#bonus-general-prompts" id="toc-bonus-general-prompts" class="nav-link" data-scroll-target="#bonus-general-prompts">🧠 Bonus General Prompts</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Zahid Asghar </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 24, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
-<section id="sentiment-analysis-of-economic-reports" class="level3">
-<h3 class="anchored" data-anchor-id="sentiment-analysis-of-economic-reports">1. <strong>Sentiment Analysis of Economic Reports</strong></h3>
+</header>
+
+
+<section id="official-letter-email-writing" class="level2">
+<h2 class="anchored" data-anchor-id="official-letter-email-writing">📬 Official Letter &amp; Email Writing</h2>
 <ul>
-<li><strong>Prompt:</strong> “Analyze the sentiment of the central bank’s monetary policy statement to gauge the tone (hawkish or dovish) and its potential impact on interest rates.”</li>
-<li><strong>Application:</strong> Use sentiment analysis to extract whether a central bank is leaning towards raising or lowering interest rates based on the language used in their statements.</li>
-<li><strong>NLP Task:</strong> Sentiment analysis.</li>
-<li><strong>Example Tool:</strong> <code>transformers</code> for sentiment analysis.</li>
+<li>Write a polite reminder letter to a contractor who has not completed the assigned work.<br>
+</li>
+<li>Draft a formal email to request meeting rescheduling due to urgent field visit.<br>
+</li>
+<li>Reply to a citizen complaint about electricity outage in professional tone.<br>
+</li>
+<li>Compose a letter to inform staff about office timings during Ramadan.</li>
 </ul>
 </section>
-<section id="entity-recognition-in-financial-documents" class="level3">
-<h3 class="anchored" data-anchor-id="entity-recognition-in-financial-documents">2. <strong>Entity Recognition in Financial Documents</strong></h3>
+<section id="office-circulars-memos-notifications" class="level2">
+<h2 class="anchored" data-anchor-id="office-circulars-memos-notifications">📝 Office Circulars, Memos &amp; Notifications</h2>
 <ul>
-<li><strong>Prompt:</strong> “Identify key economic entities (e.g., countries, companies, sectors) mentioned in the IMF’s World Economic Outlook and their associated actions or trends.”</li>
-<li><strong>Application:</strong> Automatically extract mentions of entities like “United States”, “China”, or “Eurozone” from large economic documents and connect them with economic metrics like GDP growth, inflation, or trade policies.</li>
-<li><strong>NLP Task:</strong> Named Entity Recognition (NER).</li>
-<li><strong>Example Tool:</strong> <code>spaCy</code>.</li>
+<li>Draft a circular announcing upcoming training for junior staff.<br>
+</li>
+<li>Create a memo to remind staff about attendance policies.<br>
+</li>
+<li>Write a notification regarding public holiday declared by government.<br>
+</li>
+<li>Issue a letter to departments for monthly progress report submission.</li>
 </ul>
 </section>
-<section id="topic-modeling-of-economic-news" class="level3">
-<h3 class="anchored" data-anchor-id="topic-modeling-of-economic-news">3. <strong>Topic Modeling of Economic News</strong></h3>
+<section id="report-writing-summary-generation" class="level2">
+<h2 class="anchored" data-anchor-id="report-writing-summary-generation">📊 Report Writing &amp; Summary Generation</h2>
 <ul>
-<li><strong>Prompt:</strong> “Discover the main topics discussed in a large corpus of macroeconomic news articles published during a financial crisis.”</li>
-<li><strong>Application:</strong> Topic modeling helps in identifying the primary concerns (e.g., inflation, unemployment, fiscal policy) during specific macroeconomic events such as recessions or policy shifts.</li>
-<li><strong>NLP Task:</strong> Topic Modeling (LDA, NMF).</li>
-<li><strong>Example Tool:</strong> <code>Gensim</code> for topic modeling.</li>
+<li>Summarize this one-page report into 3 key points for the Deputy Director.<br>
+</li>
+<li>Convert these bullet points into a monthly performance report.<br>
+</li>
+<li>Draft a field visit report including objectives, observations, and suggestions.<br>
+</li>
+<li>Write an inspection report for a public school using provided notes.</li>
 </ul>
 </section>
-<section id="text-summarization-of-economic-reports" class="level3">
-<h3 class="anchored" data-anchor-id="text-summarization-of-economic-reports">4. <strong>Text Summarization of Economic Reports</strong></h3>
+<section id="meeting-support-agenda-planning" class="level2">
+<h2 class="anchored" data-anchor-id="meeting-support-agenda-planning">📆 Meeting Support &amp; Agenda Planning</h2>
 <ul>
-<li><strong>Prompt:</strong> “Summarize the key points of the Federal Reserve’s latest FOMC meeting minutes.”</li>
-<li><strong>Application:</strong> Automatically generate concise summaries of long economic documents to save time for economists, policy makers, and analysts.</li>
-<li><strong>NLP Task:</strong> Text Summarization.</li>
-<li><strong>Example Tool:</strong> <code>transformers</code> with a summarization model like <code>BART</code> or <code>T5</code>.</li>
+<li>Create an agenda for a department-level meeting on budget planning.<br>
+</li>
+<li>Summarize this meeting discussion into minutes with action points.<br>
+</li>
+<li>Draft discussion questions for a union council coordination meeting.<br>
+</li>
+<li>Write follow-up instructions for a team meeting held on flood response.</li>
 </ul>
 </section>
-<section id="economic-sentiment-index-from-news" class="level3">
-<h3 class="anchored" data-anchor-id="economic-sentiment-index-from-news">5. <strong>Economic Sentiment Index from News</strong></h3>
+<section id="citizen-service-communication" class="level2">
+<h2 class="anchored" data-anchor-id="citizen-service-communication">👥 Citizen Service Communication</h2>
 <ul>
-<li><strong>Prompt:</strong> “Create an Economic Sentiment Index by analyzing the tone of financial news articles published in the last 6 months.”</li>
-<li><strong>Application:</strong> Develop a sentiment index based on the overall tone of economic and financial news to predict market trends or economic cycles.</li>
-<li><strong>NLP Task:</strong> Sentiment Analysis combined with aggregation.</li>
-<li><strong>Example Tool:</strong> <code>VADER</code> for financial sentiment analysis.</li>
+<li>Write a clear message for citizens about CNIC verification deadlines.<br>
+</li>
+<li>Translate this public awareness message into simple Urdu.<br>
+</li>
+<li>Create an SMS alert for health camp in the local area.<br>
+</li>
+<li>Simplify this technical water supply document for general public.</li>
 </ul>
 </section>
-<section id="speech-analysis-of-central-bank-governors" class="level3">
-<h3 class="anchored" data-anchor-id="speech-analysis-of-central-bank-governors">6. <strong>Speech Analysis of Central Bank Governors</strong></h3>
+<section id="documentation-filing-support" class="level2">
+<h2 class="anchored" data-anchor-id="documentation-filing-support">📎 Documentation &amp; Filing Support</h2>
 <ul>
-<li><strong>Prompt:</strong> “Analyze the speeches of central bank governors to identify any shifts in policy direction over the past year.”</li>
-<li><strong>Application:</strong> By analyzing the speeches, we can track any linguistic patterns or changes in word choice that indicate a shift towards more aggressive or accommodative monetary policy.</li>
-<li><strong>NLP Task:</strong> Speech-to-text followed by text analysis.</li>
-<li><strong>Example Tool:</strong> <code>transformers</code>, <code>spaCy</code>, or <code>Google Speech-to-Text</code>.</li>
+<li>Generate a checklist for files required to process land allotment cases.<br>
+</li>
+<li>Create a file cover note for submitting project proposal to the directorate.<br>
+</li>
+<li>Write a document index for a complaint file containing 5 letters and 3 reports.<br>
+</li>
+<li>Summarize contents of a file for final approval note.</li>
 </ul>
 </section>
-<section id="macro-event-detection-from-news-streams" class="level3">
-<h3 class="anchored" data-anchor-id="macro-event-detection-from-news-streams">7. <strong>Macro Event Detection from News Streams</strong></h3>
+<section id="policy-rule-explanation" class="level2">
+<h2 class="anchored" data-anchor-id="policy-rule-explanation">📖 Policy &amp; Rule Explanation</h2>
 <ul>
-<li><strong>Prompt:</strong> “Detect macroeconomic events such as policy changes, crises, or market shocks from a continuous stream of financial news.”</li>
-<li><strong>Application:</strong> Automatically detect and classify major macroeconomic events in real-time from news data, which can be fed into models for trading or economic forecasting.</li>
-<li><strong>NLP Task:</strong> Event Detection.</li>
-<li><strong>Example Tool:</strong> <code>spaCy</code>, <code>nltk</code> for event detection.</li>
+<li>Explain the pension rules for government employees in simple language.<br>
+</li>
+<li>Summarize the official procurement SOP in 5 easy steps.<br>
+</li>
+<li>Write FAQs about staff promotion rules in public departments.<br>
+</li>
+<li>Create a simple guide for applying leave under medical grounds.</li>
 </ul>
 </section>
-<section id="central-bank-communication-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="central-bank-communication-analysis">8. <strong>Central Bank Communication Analysis</strong></h3>
+<section id="basic-excelnumbers-assistance" class="level2">
+<h2 class="anchored" data-anchor-id="basic-excelnumbers-assistance">📈 Basic Excel/Numbers Assistance</h2>
 <ul>
-<li><strong>Prompt:</strong> “Track how often inflation and employment-related terms appear in the Federal Reserve’s FOMC meeting minutes and identify trends over time.”</li>
-<li><strong>Application:</strong> Identify patterns in the frequency of specific economic terms (like “inflation”, “unemployment”, “interest rates”) to understand central bank focus areas.</li>
-<li><strong>NLP Task:</strong> Frequency Analysis, Text Mining.</li>
-<li><strong>Example Tool:</strong> <code>nltk</code> or <code>spaCy</code> for word frequency analysis.</li>
+<li>Write an Excel formula to calculate the total cost including 17% sales tax.<br>
+</li>
+<li>Create a table showing district-wise population from this data.<br>
+</li>
+<li>Explain how to use Excel to make monthly expense chart.<br>
+</li>
+<li>Help me format this staff salary sheet neatly.</li>
 </ul>
 </section>
-<section id="sentiment-driven-stock-market-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="sentiment-driven-stock-market-analysis">9. <strong>Sentiment-driven Stock Market Analysis</strong></h3>
+<section id="compliance-audit-governance" class="level2">
+<h2 class="anchored" data-anchor-id="compliance-audit-governance">🔐 Compliance, Audit &amp; Governance</h2>
 <ul>
-<li><strong>Prompt:</strong> “Examine the relationship between sentiment in economic news and stock market performance for major indices.”</li>
-<li><strong>Application:</strong> Use NLP-driven sentiment analysis to correlate the mood of economic news with stock market fluctuations, helping to predict short-term market trends.</li>
-<li><strong>NLP Task:</strong> Sentiment Analysis, Correlation Analysis.</li>
-<li><strong>Example Tool:</strong> <code>transformers</code>, <code>pandas</code> for data handling.</li>
+<li>Draft a response to audit observation on unverified expenses.<br>
+</li>
+<li>Write a clarification note for missing attendance records in Jan 2023.<br>
+</li>
+<li>Summarize guidelines for maintaining petty cash register.<br>
+</li>
+<li>Create a checklist for internal office audit readiness.</li>
 </ul>
 </section>
-<section id="correlation-of-macro-terms-with-economic-indicators" class="level3">
-<h3 class="anchored" data-anchor-id="correlation-of-macro-terms-with-economic-indicators">10. <strong>Correlation of Macro Terms with Economic Indicators</strong></h3>
+<section id="translation-accessibility" class="level2">
+<h2 class="anchored" data-anchor-id="translation-accessibility">🔄 Translation &amp; Accessibility</h2>
 <ul>
-<li><strong>Prompt:</strong> “Identify the correlation between the occurrence of key macroeconomic terms (e.g., ‘inflation’, ‘recession’) in news and actual economic indicators.”</li>
-<li><strong>Application:</strong> Track how frequently certain terms are mentioned in the media and correlate them with actual macroeconomic data (e.g., inflation rates or GDP growth) to identify lagging or leading indicators.</li>
-<li><strong>NLP Task:</strong> Text mining, Correlation Analysis.</li>
-<li><strong>Example Tool:</strong> <code>pandas</code>, <code>scikit-learn</code>.</li>
+<li>Translate this English circular to Urdu for notice board.<br>
+</li>
+<li>Summarize this technical document in plain language for field staff.<br>
+</li>
+<li>Convert this voice note into written report format.<br>
+</li>
+<li>Write the same message in both English and Urdu.</li>
 </ul>
 </section>
-<section id="extracting-forecast-data-from-text" class="level3">
-<h3 class="anchored" data-anchor-id="extracting-forecast-data-from-text">11. <strong>Extracting Forecast Data from Text</strong></h3>
+<section id="bonus-general-prompts" class="level2">
+<h2 class="anchored" data-anchor-id="bonus-general-prompts">🧠 Bonus General Prompts</h2>
 <ul>
-<li><strong>Prompt:</strong> “Extract GDP, inflation, and unemployment rate forecasts from economic outlook reports issued by financial institutions.”</li>
-<li><strong>Application:</strong> Automatically pull key forecast figures from lengthy reports to aggregate predictions and compare them across institutions.</li>
-<li><strong>NLP Task:</strong> Information Extraction.</li>
-<li><strong>Example Tool:</strong> <code>spaCy</code>, <code>nltk</code>.</li>
+<li>Improve this paragraph to sound more professional.<br>
+</li>
+<li>Organize these scattered notes into a formal document.<br>
+</li>
+<li>Check grammar and spelling of this letter before printing.<br>
+</li>
+<li>Shorten this long message to be more clear and effective.</li>
 </ul>
-</section>
-<section id="scenario-analysis-from-policy-documents" class="level3">
-<h3 class="anchored" data-anchor-id="scenario-analysis-from-policy-documents">12. <strong>Scenario Analysis from Policy Documents</strong></h3>
-<ul>
-<li><strong>Prompt:</strong> “Identify different economic scenarios (best case, worst case) discussed in fiscal policy reports and compare them.”</li>
-<li><strong>Application:</strong> Extract scenario-based economic forecasts or projections from policy reports to help in decision-making or policy formation.</li>
-<li><strong>NLP Task:</strong> Text Classification, Information Extraction.</li>
-<li><strong>Example Tool:</strong> <code>transformers</code> for text classification.</li>
-</ul>
-</section>
-<section id="conclusion" class="level3">
-<h3 class="anchored" data-anchor-id="conclusion">Conclusion</h3>
-<p>NLP has immense potential in macroeconomics, especially when dealing with large amounts of unstructured data such as financial reports, news articles, and policy documents. By using various NLP techniques, you can extract actionable insights, detect patterns, and even forecast economic variables more effectively.</p>
 
 
 </section>
