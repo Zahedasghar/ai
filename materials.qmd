@@ -10,17 +10,21 @@ title: "Relevant materials for the workshop"
 
 
 
-[Slides Session1](slides/AI_economists1.html)
+[Slides Session1](slides/ai_intro.html)
 
-[Slides Session2](slides/AI_economists2.html)
+[Slides Session2](slides/ai_pub.html)
 
-[Slides Session3](slides/AI_economists3.html)
+[Slides Session3](slides/ai_nlp.html)
 
 [Literature Review](slides/literature.html)
 
-[Miscelleneous](slides/AI_economists4.html)
+[Miscelleneous](slides/ai_econ_pol.html)
+
+[office](slides/office_prompts.html)
 
 [Data Analysis](slides/data_prompts.html)
+
+
 
 [Advantages and Disadvantages of AI in HED](https://www.ucanwest.ca/blog/education-careers-tips/advantages-and-disadvantages-of-ai-in-education/)
 

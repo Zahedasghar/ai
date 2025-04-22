@@ -2,7 +2,7 @@
 title: "AI-Driven Office Excellence in the Public Sector"
 subtitle: "A Workshop for BCSA Members" 
 author: "Zahid Asghar, School of Economics, QAU, Islamabad"
-format: html
+format: docx
 
 ---
 
@@ -187,4 +187,13 @@ By the end of the workshop, participants will:
 
 - Be prepared to advocate for and adopt GenAI tools within their departments 
 
+## 
+At the end of this event, you'll: 
+
+
+- Understand the fundamentals of AI and its relevance to public sector work 
+
+- Identify practical AI tools that can enhance productivity in government tasks 
+
+- Develop strategies to implement AI solutions effectively within your team or department
 
