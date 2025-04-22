@@ -18,6 +18,9 @@ execute:
   warning: false
 ---
 
+
+# ![work on your strengths](docs/images/camel.gif) 
+
 # Co-working with AI for Public Policy Professionals
 ## {background-image="images/apple.jpg"}
 
