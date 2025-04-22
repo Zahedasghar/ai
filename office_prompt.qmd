@@ -23,29 +23,54 @@ execute:
 
 ## 📬 Official Letter & Email Writing
 
-- Write a polite reminder letter to a contractor who has not completed the assigned work.  
+- Write a polite reminder letter to a contractor who has not completed the assigned work using C.A.T.S. method.
+
+  - **Context**: The contractor was supposed to finish the work by last week, but there has been no communication or progress.
+  - **Action**: Request an update on the status of the work. 
+  - **Task**: Emphasize the importance of timely completion for project success. 
+  - **Style**: Use a formal and respectful tone. Attach a copy of the original contract for reference.  
+  
 - Draft a formal email to request meeting rescheduling due to urgent field visit.  
-- Reply to a citizen complaint about electricity outage in professional tone.  
+- Reply to a citizen complaint about electricity outage in professional tone using D.O.G.S method.
+  - **Details**: Acknowledge the complaint and express understanding of the inconvenience caused. 
+  - **Objective**: Provide information about the ongoing repair work and expected resolution time. 
+  - **Goal**: Assure the citizen that their concern is being addressed. 
+  - **Style**: Use a friendly yet professional tone. 
+  
 - Compose a letter to inform staff about office timings during Ramadan.  
 
 ## 📝 Office Circulars, Memos & Notifications
 
-- Draft a circular announcing upcoming training for junior staff.  
+- Draft a circular announcing upcoming training for staff on using AI tools. 
+  - **Context**: The training is scheduled for next week and is mandatory for all staff.
+  - **Action**: Provide details about the training schedule, location, and registration process.
+  - **Task**: Encourage all staff to participate and enhance their skills.
+  - **Style**: Use a clear and concise format with bullet points for easy reading.
+  
+  
+- Write a memo to inform staff about the new office policy on remote work.
 - Create a memo to remind staff about attendance policies.  
 - Write a notification regarding public holiday declared by government.  
-- Issue a letter to departments for monthly progress report submission.  
+- Issue a letter to departments for monthly/annual progress report submission.  
 
 ## 📊 Report Writing & Summary Generation
 
 - Summarize this one-page report into 3 key points for the Deputy Director.  
+
+- Write a one-page summary of a lengthy report on flood response efforts. 
+
 - Convert these bullet points into a monthly performance report.  
-- Draft a field visit report including objectives, observations, and suggestions.  
+- Draft a field visit report including objectives, observations, and suggestions. 
+
 - Write an inspection report for a public school using provided notes.  
 
 ## 📆 Meeting Support & Agenda Planning
 
 - Create an agenda for a department-level meeting on budget planning.  
+- Draft minutes of a meeting discussing the new project proposal. 
+
 - Summarize this meeting discussion into minutes with action points.  
+
 - Draft discussion questions for a union council coordination meeting.  
 - Write follow-up instructions for a team meeting held on flood response.  
 
@@ -80,7 +105,7 @@ execute:
 ## 🔐 Compliance, Audit & Governance
 
 - Draft a response to audit observation on unverified expenses.  
-- Write a clarification note for missing attendance records in Jan 2023.  
+- Write a clarification note for missing attendance records in Jan 2021.  
 - Summarize guidelines for maintaining petty cash register.  
 - Create a checklist for internal office audit readiness.  
 
