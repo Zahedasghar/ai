@@ -1,10 +1,16 @@
 ---
 title: "AI-Driven Office Excellence in the Public Sector"
-subtitle: "A Workshop for BCSA Members" 
+subtitle: "A Workshop at BCSA, Quetta 23-24 April, 2025 " 
 author: "Zahid Asghar, School of Economics, QAU, Islamabad"
-format: docx
 
+format: 
+  html:
+    title-slide:
+      data-background-image: docs/images/zahid_11.jpg
+      data-background-size: 40%
+      data-background-position: 100% 100%
 ---
+
 
 ### [**Key Learning Objectives**]{.yellow}
 
