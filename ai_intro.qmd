@@ -1,63 +1,118 @@
 ---
-title: ""
+title: "[Co-Working with AI for Public Sector Employees]{.yellow}"
+subtitle: "Workshop with GCUF Adminstration Staff"
 author: "Zahid Asghar"
-date: "2024-01-16"
-format: 
+date: "2025-05-15"
+format:
   revealjs:
-    logo: "images/qau1.jpg"
-    theme: [default, custom2.scss]
+    theme: [default, custom1.scss]
     chalkboard: true
-    slideNumber: c/t
+    slide-number: c/t  # Shows current slide/total slides for better navigation
+    logo: "https://www.validate-network.org/sites/default/files/styles/mt_image_small/public/validate/images/media/quaid-i-azam_university_islamabad.jpg?itok=3eu4d_7a"
+    footer: "Prof. Dr. Zahid Asghar, QAU, Islamabad"
+    incremental: true
+    transition: fade
+    transition-speed: slow  # Smoother transition effect
+    toc: false
     title-slide-attributes:
-      data-background-image:  images_pub_pol.png
-
+      data-background-image: images/all_assemb.jpg
+      data-background-size: cover
+      data-background-opacity: "0.4"  # Reduces background dominance
+      data-background-color: "rgba(0, 0, 0, 0.5)"  # Adds dark overlay for text contrast
+    css: styles.css  # Optional: Reference external CSS for further customization
 execute:
   freeze: auto
-  echo: false
-  message: false
-  warning: false
 ---
 
 
-# ![work on your strengths](docs/images/camel.gif) 
-
-# Co-working with AI for Public Policy Professionals
 ## {background-image="images/apple.jpg"}
 
+::: {.absolute left="55%" top="55%" style="font-size:1.1em; padding: 0.5em 1em; background-color: rgba(255, 255, 250, 0.5); backdrop-filter: blur(2px); box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"} 
 
-::: {.absolute left="55%" top="55%" style="font-size:1.1em; padding: 0.5em 1em; background-color: rgba(255, 255, 250, 0.5); backdrop-filter: blur(2px); box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"}
 Always embrace the unexpected
 
-Comfortable being uncomfortable
+Comfortable being uncomfortable 
+
 :::
 
 
 ::: r-fit-text
 
-### Embracing AI in Daily Office Work 
+### AI in University Offices: From Paperwork to Productivity  
 
-Zahid Asghar, QAU
+> From overloaded staff to optimized systems—AI is the silent reformer.
 
 :::
 
-# AI Won’t Replace Humans — But Humans With AI Will Replace Humans Without AI
 
-[HBR](https://hbr.org/2023/08/ai-wont-replace-humans-but-humans-with-ai-will-replace-humans-without-ai)
 
-------------------------------------------------------------------------
 
-## What is AI?
+## The Impact of AI on Creative Work 
 
-**Artificial Intelligence (AI):**
+::: columns
 
--   The broad concept where machines simulate human intelligence.
+::: {.column width="50%"}
+
+> *"Once people experience smarter ways of working, they don’t want to return to old habits."*  
+
+
+---
+
+> *“frees up the time that creatives need to be creative”*
+
+:::
+
+::: {.column width="50%"}
+
+- Planning: emails, budget spreadsheets, meeting notes, etc  
+- Ideating and visualizing in the room with a client  
+- Turning a few lines of text into a full proposal  
+- Iterating a lot faster  
+- Office hours where people share tricks
+
+:::
+
+:::
+
+
+
+
+
+ 
+
+# [AI Won’t Replace Humans]{.hi-purple} [— But Humans With AI Will Replace Humans Without AI]{.red}
+
+[HBR](https://hbr.org/2023/08/ai-wont-replace-humans-but-humans-with-ai-will-replace-humans-without-ai) 
+
+
+
+# What Is AI?
+
+
+-   The broad concept where machines simulate human intelligence. 
+
+- Rooted in philosophy & economics—what it means “to do the right thing.”
 
 -   AI allows machines to perform tasks like decision-making, speech recognition, and problem-solving.
 
-**Examples:**
+---
 
--   Self-driving cars
--   Virtual assistants like Siri or Alexa
+**Simple Examples**
+
+- **AlphaGo**: objective = win at Go  
+- **Navigation apps**: objective = shortest route  
+- **Automated corporations**: objective = maximize shareholder return 
+
+- **Self-driving cars**: objective = drive safely and efficiently 
+
+- **CTBT**: objective = detect nuclear explosions 
+
+- **Drones**: objective = deliver packages UK-Russia War 
+
+- **ChatGPT**: objective = generate human-like text  
+
+## Agentic AI 
+
 
 ## What is Machine Learning (ML)?
 

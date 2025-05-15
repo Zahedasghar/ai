@@ -1,0 +1,172 @@
+---
+title: "AI-Driven Office Excellence in the Public Sector"
+subtitle: "Government College University Faisalabad"  
+author: "Zahid Asghar, School of Economics, QAU, Islamabad"
+
+format: 
+  html:
+    title-slide:
+      data-background-image: docs/images/zahid_11.jpg
+      data-background-size: 40%
+      data-background-position: 100% 100%
+---
+
+
+### [**Key Learning Objectives**]{.yellow}
+
+
+1. **Understanding Generative AI for Public Sector Use**  
+   Build a foundational understanding of how generative AI functions and its applications in the public policy space—writing, decision-making, summarization, and stakeholder engagement.
+
+2. **Boosting Office Productivity with AI**  
+   Learn to apply AI tools to streamline routine tasks such as documentation, communication, meeting management, and research.
+
+3. **Practical AI Tools for Public Policy Professionals**  
+   Gain hands-on experience with tools like ChatGPT, Claude, Copilot, Gemini, and domain-specific assistants for creating briefs, analyzing reports, and drafting correspondence.
+
+4. **Ethical and Effective AI Use in the Public Sector**  
+   Develop awareness of the ethical concerns, limitations, and best practices for responsible AI use in policy environments.
+
+5. **Role-Based Applications and Real-World Case Studies**  
+   Tailor exercises and discussions to real job roles (analysts, communication staff, decision-makers) for maximum relevance.
+
+---
+
+### **Workshop Agenda**
+
+#### **Day 1: Foundations and Practical Writing Tools**
+
+##### **Session 1: 9:15 AM - 11:00 AM** 
+
+**Introduction to Generative AI for Public Policy** 
+
+- What is Generative AI and how is it different from predictive AI? 
+
+- Use cases in public sector offices 
+
+- Overview of tools: ChatGPT, Claude, Gemini, Copilot, Notion AI 
+
+- Examples of improving productivity with GenAI 
+  - Exercise: Identify 3-5 tasks in your role that could be improved with AI 
+  - Worksheet 1: Task Mapping for AI Integration 
+  - **Discussion**: How can AI help in your specific role?
+
+
+##### **Q&A Session: 11:00 AM - 11:15 AM**
+
+##### **Session 2: 11:30 AM - 1:00 PM** 
+
+**Smart Prompting & Professional Writing with AI** 
+
+- Writing policy briefs, memos, summaries using AI 
+- Best practices for effective prompting 
+  - **CATS Method**: Context, Action, Task, Style 
+  - **DOGS Method**: Details, Objective, Goal, Style 
+  - **SMART Method**: Specific, Measurable, Achievable, Relevant, Time-bound  
+- **Prompting Examples**:
+  - Policy brief, memo, summary, email 
+  - Exercise: Write a policy brief using AI 
+  - Worksheet 2: Prompting Techniques 
+  - **Discussion**: What are the challenges you face in writing? How can AI help? 
+  
+
+- Prompting techniques: structured, iterative, context-rich 
+- **Best Practices**: 
+  - Iterative prompting for refinement 
+  - Contextualizing prompts for better results 
+  - Using AI to enhance clarity and conciseness in writing 
+  
+- Exercise: Rewrite a complex paragraph into plain language, executive summary, and an email 
+  - **Discussion**: How can AI help in your specific role? 
+  - **Worksheet 3**: Writing Exercise 
+  - **Group Activity**: Share and discuss your rewritten paragraphs 
+  
+
+- Worksheet 2 & 3: Writing + Brief Drafting
+
+##### **Lunch / Prayer Break: 1:00 PM - 2:00 PM**
+
+##### **Session 3: 2:00 PM - 4:30 PM** 
+
+**Routine Office Productivity Tasks with AI** 
+- AI for drafting meeting agendas, summaries, and follow-up notes 
+
+
+- Email drafting, announcement writing, FAQ creation 
+- Using AI for data analysis and visualization 
+
+- Exercise: Meeting transcript → action items 
+  - **Discussion**: How can AI help in your specific role? 
+  - **Worksheet 1**: Productivity Task Mapping 
+  - **Group Activity**: Share and discuss your productivity tasks 
+  
+- Worksheet 1: Productivity Task Mapping
+
+
+
+**Creativity & Communication: Campaign Planning with AI**  
+- Creating slogans, campaign messages, and outreach plans 
+- Using AI for social media content generation 
+
+- Public engagement content generation 
+
+- Hands-on: Use GenAI to draft a campaign message 
+  - **Discussion**: How can AI help in your specific role? 
+  - **Worksheet 5**: Campaign Drafting Template
+
+- Example: Drafting a campaign message for a new policy initiative 
+  - **Group Activity**: Share and discuss your campaign messages 
+  - **Worksheet 5**: Campaign Drafting Template
+
+**AI Ethics and Responsible Use in Policy Work** 
+
+- Bias, misinformation, hallucination in GenAI 
+
+- Risk management and transparency 
+- Ethical frameworks for AI use in public sector 
+- **Discussion**: What are the ethical implications of using AI in your work? 
+  - **Worksheet 6**: Ethical Considerations in AI Use 
+  - **Group Activity**: Share and discuss ethical dilemmas in AI use 
+- **Case Studies**: Real-world examples of AI misuse in public sector 
+- **Discussion**: How can we mitigate these risks? 
+  - **Worksheet 6**: Ethical Considerations in AI Use 
+  - **Group Activity**: Share and discuss ethical dilemmas in AI use 
+  
+- Group Activity: Would you use AI here? Debate ethical cases
+
+
+**AI in Decision-Making and Stakeholder Engagement** 
+- Using AI for stakeholder analysis and engagement strategies 
+
+**Designing Your AI Workflow**
+- Choosing the right tools for your tasks 
+
+- Integrating GenAI into daily routines
+- Worksheet 7: Personal AI Workflow Blueprint
+
+
+
+### **Workshop Outcomes**
+
+By the end of the workshop, participants will:
+
+- Understand core GenAI concepts tailored to public sector needs 
+
+- Learn ethical frameworks and boundaries for responsible AI use 
+
+- Gain practical skills with tools that improve document writing, communication, meetings, and research 
+
+- Walk away with personalized workflows and prompt templates to use immediately in their jobs 
+
+- Be prepared to advocate for and adopt GenAI tools within their departments 
+
+## 
+At the end of this event, you'll: 
+
+
+- Understand the fundamentals of AI and its relevance to public sector work 
+
+- Identify practical AI tools that can enhance productivity in government tasks 
+
+- Develop strategies to implement AI solutions effectively within your team or department
+

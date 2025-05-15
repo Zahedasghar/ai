@@ -1,0 +1,122 @@
+---
+title: "[13 AI Strategies for Quality Journal Papers]{.yellow}"
+subtitle: "A Researcher's Ethical Guide to Using AI Tools"
+author: "[Zahid Asghar]{.yellow}"
+date: "2025-05-10"
+format:
+  revealjs:
+    slide-number: true
+    transition: fade
+    theme: [default, custom2.scss]
+---
+
+## Slide 1: Six Ethical Rules for Using AI in Research Writing
+
+1. **Use AI as an editor**, not as an author – improve flow and language.
+2. **Do not use AI to generate full text** – equivalent to outsourcing authorship.
+3. **Use AI for brainstorming** – treat AI as a smart colleague.
+4. **Always verify AI outputs** – cross-check with your domain knowledge.
+5. **Draw your own conclusions** – not AI's job to finalize interpretations.
+6. **Create your own visuals and figures** – AI-generated images not accepted.
+
+---
+
+## Slide 2: AI for Generating Research Topics
+
+* **Tool: Scispace**
+
+  * Finds trending research topics.
+  * Suggests summaries, sources, and references.
+* **Tool: AvidNote**
+
+  * Generates research questions based on your detailed input.
+
+> 🔍 Start with AI suggestions, then validate with literature.
+
+---
+
+## Slide 3: Finding Research Gaps Faster
+
+* **Scispace + Consensus** tools:
+
+  * Upload multiple PDFs to identify gaps, limitations, and future work.
+  * Use consensus to detect conflicting studies.
+  * Generate at-a-glance tables on research limitations.
+
+> ⚡ Saves hours of manual reading.
+
+---
+
+## 
+
+1. **Generate keywords** for literature reviews.
+2. **Read faster** using chat with document features.
+3. **Build theoretical frameworks** using AI suggestions.
+4. **Pick the right methodology** with multiple suggestions.
+5. **Design research tools**: Interview and survey questions.
+6. **Analyze data** qualitatively and quantitatively.
+7. **Structure your paper** using AI templates.
+8. **Brainstorm while writing**: Ask for ideas, definitions, flow.
+9. **Proofread/edit** text at low cost (e.g., Paperpal).
+10. **Find the right journal** based on your abstract.
+11. **Prepare final docs**: Title, abstract, keywords, cover letter.
+12. **Run AI detection + plagiarism scan**.
+13. **Promote your paper** with threads and videos.
+14. **Generate new research ideas** using your reference list.
+
+> 🎯 Use AI as a productivity enhancer, not as a shortcut.
+
+---
+
+## 17 Use Cases for AI in Research Writing (with Tools)
+
+- Generate research topics▸ Tools: Scispace,
+AvidNote▸ Find angles, summaries, and new questions. 
+
+- Identify research gaps▸ Tools: Scispace, Consensus▸ Upload papers, summarize gaps, detect disagreements. 
+
+- Generate keywords for literature search▸ Tool: AvidNote▸ Use templates to create relevant search terms. 
+
+
+- Read faster with AI chat▸ Tools: Scispace, AvidNote▸ Ask document-specific questions. 
+
+- Generate theoretical frameworks▸ Tool: AvidNote▸ Suggests applicable theories from literature. 
+
+--- 
+
+
+- Choose the right methodology▸ Tool: AvidNote▸ Suggests multiple research methods. 
+- Design research tools▸ Tool: AvidNote▸ Generate interview/survey questions. 
+
+- Analyze data (qualitative/quantitative)▸ Tool: AvidNote▸ Use grounded theory, frameworks, or extract from PDFs. 
+
+- Structure your paper▸ Tool: AvidNote▸ Generate outlines, section-wise references. 
+
+- Write the first draft▸ Tool: AvidNote▸ Generate text based on your outline. 
+
+- Brainstorm while writing▸ Tool: AvidNote▸ Ask for definitions, flow, and ideas.
+
+--- 
+
+- Proofread and edit▸ Tool: AvidNote▸ Check grammar, spelling, and flow. 
+
+- Find the right journal▸ Tool: AvidNote▸ Match paper scope with real Q1 journals. 
+
+- Check for AI detection▸ Tool: Scispace▸ Ensure content isn't flagged as AI-generated. 
+- Check for plagiarism▸ Tool: Paperpal▸ Scan for copied text from academic databases. 
+
+- Prepare submission documents▸ Tool: Paperpal▸ Generate title, abstract, keywords, and cover letter. 
+
+--- 
+
+- Promote your paper▸ Tools: AvidNote, Scispace▸ Generate tweet threads, convert PDFs to videos. 
+
+- Generate ideas for future papers▸ Tool: AvidNote▸ Paste reference list to get new topic suggestions + abstracts.
+
+
+
+---
+
+## Final Thought
+
+**AI won't replace researchers, but researchers who use AI ethically and smartly will outperform those who don't.**

@@ -20,6 +20,90 @@ execute:
   warning: false
 ---
 
+## Financial Assistanc Office 
+
+![Financial Assistance](docs/images/student_fin_ass.jpg){width=100%}
+
+**Prompt**  : Make an improved version of this letter by having very simple language approximately of the same length 
+
+**Prompt** : what changes you have made
+
+
+## [Fed Minister and VC GCUF](https://gcuf.edu.pk/news-single?news=2091) 
+
+**Prompt** : Improve this draft with minor editing in simple language and mention changes. 
+
+## CM Laptop Distribution Ceremony 
+
+Based on the following past university news templates, write a new story in the same style. Event: Laptop Distribution Ceremony, Date: 14 May 2025, Location: Main Auditorium, Speakers: Chief Minister, Minsters, VC. Key Message: Importance of having facilities to students for soft skills Outcome: Launch of laptop scheme. 
+
+*Certainly! Here's a **new university news story** written in the **same style** as your previous GCUF news items:
+
+---
+
+### 🎓 **Laptop Distribution Ceremony Held at GCUF**
+
+**Faisalabad, May 14, 2025** — A **Laptop Distribution Ceremony** was held at the **Main Auditorium of Government College University Faisalabad (GCUF)**, highlighting the government’s commitment to empowering youth through digital access and skill development.
+
+The event was graced by the **Chief Minister Punjab**, along with senior ministers and the **Vice Chancellor of GCUF, Prof. Dr. Rauf-i-Azam**. A large number of faculty members, students, and staff were also present.
+
+Speaking on the occasion, the **Chief Minister** said that laptops are no longer a luxury but a necessity for students in today’s digital world. “Providing the right tools is the first step towards equipping our students with the **soft skills** required in the global job market,” he emphasized.
+
+The Vice Chancellor, **Prof. Dr. Rauf-i-Azam**, in his address, reiterated the university’s commitment to inclusive and technology-driven education. “This initiative will not only support students in their academic journey but also help them become independent learners and future innovators,” he said.
+
+Other speakers echoed the message, underscoring that access to digital tools is essential to bridge educational gaps and enhance employability.
+
+As part of the ceremony, the **Laptop Scheme** was officially **launched**, and selected students received laptops under the first phase of the distribution. The event concluded with a round of applause and appreciation for the government’s continued focus on higher education and student welfare.
+
+## Why Human Oversight 
+
+> He  
+
+is used for Chief Minister as AI does not know because we have not provided name 
+
+
+**Well Chief Minister is Marayam Nawaz** 
+
+Thank you for the update! Here’s the **revised version** of the news story with **Chief Minister Maryam Nawaz** properly mentioned:
+
+---
+
+### 🎓 **Laptop Distribution Ceremony Held at GCUF**
+
+**Faisalabad, May 14, 2025** — A **Laptop Distribution Ceremony** was held at the **Main Auditorium of Government College University Faisalabad (GCUF)**, emphasizing the government’s efforts to empower students through access to digital tools and skills development.
+
+The event was graced by the **Chief Minister of Punjab, Ms. Maryam Nawaz**, along with provincial ministers and the **Vice Chancellor of GCUF, Prof. Dr. Rauf-i-Azam**. A large number of students, faculty members, and administrative staff were in attendance.
+
+Speaking at the ceremony, **Chief Minister Maryam Nawaz** highlighted the importance of equipping youth with the tools required in today’s fast-paced digital world. “Laptops are not just devices—they are gateways to opportunity. Providing students with such resources helps build their **soft skills**, expand learning horizons, and prepare them for the global workforce,” she stated.
+
+**Prof. Dr. Rauf-i-Azam**, Vice Chancellor GCUF, expressed gratitude to the provincial government for supporting student development. “This scheme reflects our shared commitment to ensuring that students have the tools they need to thrive both academically and professionally,” he said.
+
+Other speakers echoed similar sentiments, noting that digital inclusion is vital for enhancing student productivity and innovation.
+
+The event marked the **official launch of the Laptop Scheme**, under which laptops were distributed to selected students in the first phase. The ceremony concluded with appreciation for the government’s continued focus on education, digital access, and youth development.
+
+---
+
+## Prompts for Interviews
+
+
+
+## Many other news including diabetic
+
+## News about CM Laptop Distribution at GCUF 
+
+## Interview Questions
+
+## Interview Preparation 
+
+## Talking Points for CM 
+
+## Write a letter to Syndicate Members for Meeting 
+
+
+
+
+
 
 ## 📬 Official Letter & Email Writing
 
@@ -115,6 +199,53 @@ execute:
 - Summarize this technical document in plain language for field staff.  
 - Convert this voice note into written report format.  
 - Write the same message in both English and Urdu.  
+
+
+## Janitorial Staff prompts 
+
+Here are your **revised and localized prompts** tailored to the context of **GC University Faisalabad Boys Hostel** with a capacity of **300 students**:
+
+---
+
+### 🧹 **Janitorial Tender Prompts for GCUF Boys Hostel**
+
+---
+
+#### 1. **Tender Drafting Prompt**
+
+> *"Draft a public sector tender document for the procurement of janitorial chemicals for the GC University Faisalabad Boys Hostel, which accommodates 300 students. The document should include eligibility criteria, scope of work, monthly consumption estimates, technical specifications, delivery timelines, safety compliance, and evaluation criteria in line with PPRA regulations."*
+
+---
+
+#### 2. **Local Brand Suggestion Prompt**
+
+> *"Suggest locally available Pakistani brands and suppliers for janitorial chemicals such as disinfectants, toilet cleaners, liquid soap, glass cleaners, and air fresheners that are suitable for a large university hostel like GCUF Boys Hostel. The brands should be cost-effective, safe for institutional use, and preferably available through suppliers compliant with PPRA standards."*
+
+---
+
+#### 3. **Bill of Quantities (BoQ) Prompt**
+
+> *"Prepare a detailed Bill of Quantities (BoQ) for the procurement of janitorial supplies for the GC University Faisalabad Boys Hostel, which houses approximately 300 students. Include monthly quantity estimates, packaging recommendations, concentration (if applicable), and product types for items like floor disinfectants, toilet cleaners, glass cleaners, hand wash, and PPE."*
+
+---
+
+#### 4. **Supplier Shortlisting Prompt**
+
+> *"List potential janitorial suppliers in Punjab — especially around Faisalabad and Lahore — who provide institutional-grade cleaning supplies and PPE. Include supplier names that hold valid NTN and GST certificates, and have experience in university, hospital, or hostel contracts under public procurement."*
+
+---
+
+#### 5. **Training and Safety Prompt**
+
+> *"Recommend a basic training and safety checklist for janitorial staff at GC University Faisalabad Boys Hostel, focused on safe handling, storage, and use of chemicals such as toilet cleaners, acid-based descalers, and disinfectants. Include PPE usage, first-aid response, and dilution protocols suitable for non-technical staff."*
+
+---
+
+#### 6. **Procurement Strategy Prompt**
+
+> *"Design a cost-effective and sustainable annual procurement strategy for janitorial supplies at the GC University Faisalabad Boys Hostel (300 student capacity). Consider usage cycles, chemical shelf life, bulk purchase advantages, local supplier reliability, and emergency stock planning. Include guidelines for reorder thresholds and quarterly usage tracking."*
+
+
 
 ## 🧠 Bonus General Prompts
 

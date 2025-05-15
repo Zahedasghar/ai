@@ -1,0 +1,114 @@
+---
+title: "Generative AI for Teaching, Research, and Scholarly Publishing"
+subtitle: "Tools, Ethics, and Opportunities"
+format: html
+toc: true
+toc-title: "Workshop Overview"
+---
+
+# Workshop Details
+
+  **Dates:** May 8–10
+**Time:** 6:00 PM – 8:00 PM (Online)
+
+This three-day hands-on workshop explores practical applications of AI in academia, research, and scholarly publishing, with an emphasis on responsible use, ethics, and emerging opportunities. No coding required!
+
+---
+
+# Schedule
+
+## Day 1: AI in Teaching and Learning
+- Understanding AI’s role in modern pedagogy
+- Using AI tools to design interactive learning experiences
+- AI for assessment and feedback
+- Ethical considerations in classroom AI use
+
+## Day 2: AI in Academic Research Workflows
+- Streamlining literature reviews with AI
+- Using AI for data organization and basic analysis
+- Research writing assistance using AI
+- Asking Better Questions Using AI
+
+## Day 3: AI in Scholarly Publishing
+- How GenAI is reshaping peer review and publishing processes
+- Tools for manuscript preparation and journal selection
+- Advanced Data Analytics Using AI (No Coding Required)
+- Navigating ethical issues in scholarly communications
+
+---
+
+# Key Features
+  - **Hands-on Activities** and **Interactive Discussions**
+  - **Best Practices** for Responsible AI Usage
+- **No Programming Skills Needed**
+
+---
+
+# Registration
+  Stay tuned for registration details!
+
+  ```
+
+---
+
+  ✅ Would you also like me to create a **print-ready PDF** version or a **fancier HTML one** you could directly upload/share too?
+  I can set that up if you want! 🚀Got it — you want the **3-day AI for Teaching and Research Workshop schedule formatted in Quarto**.
+
+Here’s a clean Quarto (.qmd) file version you can directly use:
+
+  ```markdown
+---
+  title: "Generative AI for Teaching, Research, and Scholarly Publishing"
+subtitle: "Tools, Ethics, and Opportunities"
+format: html
+toc: true
+toc-title: "Workshop Overview"
+---
+
+  # Workshop Details
+
+  **Dates:** May 8–10
+**Time:** 6:00 PM – 8:00 PM (Online)
+
+This three-day hands-on workshop explores practical applications of AI in academia, research, and scholarly publishing, with an emphasis on responsible use, ethics, and emerging opportunities. No coding required!
+
+  ---
+
+  # Schedule
+
+  ## Day 1: AI in Teaching and Learning
+  - Understanding AI’s role in modern pedagogy
+- Using AI tools to design interactive learning experiences
+- AI for assessment and feedback
+- Ethical considerations in classroom AI use
+
+## Day 2: AI in Academic Research Workflows
+- Streamlining literature reviews with AI
+- Using AI for data organization and basic analysis
+- Research writing assistance using AI
+- Asking Better Questions Using AI
+
+## Day 3: AI in Scholarly Publishing
+- How GenAI is reshaping peer review and publishing processes
+- Tools for manuscript preparation and journal selection
+- Advanced Data Analytics Using AI (No Coding Required)
+- Navigating ethical issues in scholarly communications
+
+---
+
+  # Key Features
+  - **Hands-on Activities** and **Interactive Discussions**
+  - **Best Practices** for Responsible AI Usage
+- **No Programming Skills Needed**
+
+  ---
+
+  # Registration
+  Stay tuned for registration details!
+
+  ```
+
+---
+
+  ✅ Would you also like me to create a **print-ready PDF** version or a **fancier HTML one** you could directly upload/share too?
+  I can set that up if you want! 🚀

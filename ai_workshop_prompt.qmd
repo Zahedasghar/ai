@@ -3,6 +3,32 @@ title: "Learning, Teaching, and Research with AI"
 format: html
 ---
 
+
+### 🧹 **Janitorial Tender Related Prompts**
+
+1. **Tender Drafting Prompt**  
+> *"Draft a public sector tender document for the procurement of janitorial chemicals for a 50-room hostel in Balochistan, including eligibility criteria, scope of work, technical specifications, delivery terms, and evaluation criteria."*
+
+2. **Local Brand Suggestion Prompt**  
+> *"Suggest locally available Pakistani brands and suppliers for janitorial chemicals like floor cleaners, toilet cleaners, hand wash, and glass cleaners, suitable for public institution procurement in Balochistan."*
+
+3. **Bill of Quantities (BoQ) Prompt**  
+> *"Prepare a detailed Bill of Quantities (BoQ) for janitorial chemical procurement for a hostel with 50 rooms and attached baths, including monthly quantity estimates, packaging sizes, and product specifications."*
+
+4. **Supplier Shortlisting Prompt**  
+> *"List potential local suppliers in Balochistan or nearby regions for janitorial chemicals and PPE, indicating which suppliers offer government tender compliance certifications (e.g., NTN, GST)."*
+
+5. **Training and Safety Prompt**  
+> *"Recommend a basic janitorial staff training checklist for safe handling and usage of cleaning chemicals procured under a public sector tender."*
+
+6. **Procurement Strategy Prompt**  
+> *"Design a cost-effective and sustainable procurement plan for janitorial supplies over a one-year period, considering shelf life, storage conditions, and minimum reorder levels for a government hostel."*
+
+---
+
+Would you also like me to **bundle these prompts** into a **one-page cheat sheet** (for quick use in future tenders)? 🚀  
+It’ll save you a lot of time when issuing similar tenders!
+
 # Learning, Teaching, and Research with AI 
 
   Here are some high-impact ideas and “awesome starting points” you can use to kick off a workshop on **Learning, Teaching, and Research with AI**. Whether you have a few hours or several days, these concepts will help you shape an engaging, thoughtful, and practical program.
