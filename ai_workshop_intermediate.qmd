@@ -1,0 +1,843 @@
+---
+title: "Learn AI: Say No to Luddite"
+subtitle: "3-Day Intermediate Workshop for Researchers and Practitioners"
+author: "Prof. Dr. Zahid Asghar"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: show
+    theme: cosmo
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+execute:
+  echo: true
+  warning: false
+  message: false
+#bibliography: references.bib
+---
+
+# Workshop Overview {#sec-overview}
+
+## Target Audience & Prerequisites
+
+**Participants:** Researchers, policy analysts, business analysts, and graduate students with some experience in quantitative analysis.
+
+**Desirables:**
+- Basic knowledge of statistics and econometrics (regression analysis, hypothesis testing)
+- Introductory experience with R or Python
+- Understanding of research design fundamentals
+- Familiarity with economic concepts and terminology
+- Some exposure to data analysis workflows
+
+**Difficulty Level:** Intermediate (Above Beginner, Below Advanced)
+
+### How AI is eating academic research 
+
+### Agentic 
+
+## Learning Philosophy
+
+This workshop bridges the gap between basic AI awareness and sophisticated implementation. Participants will gain **practical, immediately applicable skills** while building toward more advanced applications. The focus is on **learning by doing** with real economic problems that don't require deep theoretical expertise but provide substantial analytical value.
+
+---
+
+# Day 1: AI-Enhanced Economic Research Fundamentals {#sec-day1}
+
+## Learning Objectives 
+
+By the end of Day 1, participants will:
+
+1. **Use AI tools effectively** for economic research tasks and literature reviews
+2. **Apply structured prompting** to get reliable results for economic analysis 
+3. **Integrate AI assistance** into standard research workflows
+4. **Evaluate and validate** AI-generated insights using economic reasoning 
+
+
+
+
+
+### Module 1.1: AI Tools for Economic Research (35 min)
+
+#### Essential AI Platforms for Economists
+- **Claude, ChatGPT, and Perplexity:** When to use each tool
+- **Research-specific applications:** Literature reviews, data analysis, writing support
+- **Quality control:** Fact-checking and validation strategies
+
+#### Hands-On Exercise: Literature Review Enhancement
+
+**Problem:** Research the economic impacts of remote work policies implemented during COVID-19.
+
+```{r}
+#| label: literature-review-setup
+#| echo: true
+#| eval: false
+
+# Step 1: AI-assisted search strategy
+remote_work_prompt <- "
+I'm researching the economic impacts of remote work policies during COVID-19. 
+
+Help me develop a comprehensive literature search strategy including:
+1. Key search terms and combinations
+2. Important academic databases to search
+3. Relevant time period (2020-2024)
+4. Types of studies to prioritize (empirical vs. theoretical)
+
+Focus on these economic dimensions:
+- Labor productivity effects
+- Housing market impacts  
+- Urban/rural economic dynamics
+- Income and employment effects
+
+Provide specific, actionable search guidance.
+"
+
+# This prompt would be used with AI tools to develop search strategy
+# Then implement systematic literature collection
+```
+
+#### Practice Activity: Economic Concept Explanation
+Participants practice using AI to explain economic concepts at different complexity levels, learning to calibrate AI responses for different audiences.
+
+### Module 1.2: Structured Prompting for Economics (40 min)
+
+#### Effective Prompting Framework
+- **Context Setting:** Providing economic background and constraints
+- **Specific Instructions:** Clear, measurable outcomes
+- **Output Formatting:** Structured responses for further analysis
+- **Iterative Refinement:** Building on AI responses
+
+#### Applied Exercise: Regional Economic Analysis
+
+**Scenario:** Analyze the economic impact of a new manufacturing plant in a small town.
+
+```python
+# Example of structured economic analysis prompt
+manufacturing_analysis_prompt = """
+CONTEXT:
+A new automotive parts manufacturing plant (500 employees) is opening in:
+- Town population: 15,000
+- Current major employers: Hospital (200), school district (150), retail (300)
+- Median household income: $45,000
+- Unemployment rate: 6.5%
+
+ANALYSIS REQUEST:
+Provide an economic impact assessment covering:
+
+1. DIRECT EFFECTS:
+   - Employment impact (immediate jobs created)
+   - Wage effects (compare to local median)
+   - Tax revenue implications
+
+2. INDIRECT EFFECTS:
+   - Supply chain impacts (local suppliers)
+   - Housing market effects
+   - Local business activity changes
+
+3. LONG-TERM CONSIDERATIONS:
+   - Population growth potential
+   - Infrastructure needs
+   - Economic diversification benefits
+
+FORMAT:
+- Quantitative estimates where possible
+- Identify key assumptions
+- Note potential negative effects
+- Suggest monitoring indicators
+
+Use economic multiplier concepts but explain in accessible language.
+"""
+
+# This structured approach ensures comprehensive, useful analysis
+```
+
+### Module 1.3: Data Analysis Support with AI (35 min)
+
+#### AI-Assisted Data Exploration
+- **Dataset understanding:** Using AI to interpret variable meanings and relationships
+- **Analysis planning:** Developing analytical strategies with AI guidance
+- **Code generation:** Getting help with R/Python implementation
+
+#### Practical Exercise: Economic Survey Analysis
+
+**Dataset:** Sample household income and expenditure survey data
+
+```{r}
+#| label: survey-analysis
+#| echo: true
+#| eval: false
+
+library(tidyverse)
+library(ggplot2)
+
+# AI prompt for data analysis guidance
+survey_prompt <- "
+I have household survey data with these variables:
+- household_income (monthly, in dollars)
+- education_level (high_school, college, graduate)
+- age_head (age of household head)
+- family_size (number of people)
+- housing_cost (monthly rent/mortgage)
+- location (urban, suburban, rural)
+
+ANALYSIS GOALS:
+1. Understand spending patterns across income groups
+2. Examine housing cost burden by demographics
+3. Identify potential policy intervention points
+
+Please suggest:
+- Key variables to create (ratios, categories)
+- Appropriate visualizations
+- Statistical tests to run
+- R code for implementation
+
+Focus on practical insights for economic policy.
+"
+
+# Example analysis based on AI guidance
+survey_data %>%
+  mutate(
+    housing_burden = housing_cost / household_income,
+    income_group = case_when(
+      household_income < 3000 ~ "Low",
+      household_income < 6000 ~ "Middle", 
+      TRUE ~ "High"
+    )
+  ) %>%
+  ggplot(aes(x = income_group, y = housing_burden)) +
+  geom_boxplot() +
+  facet_wrap(~location) +
+  labs(title = "Housing Cost Burden by Income and Location",
+       y = "Housing Cost as Share of Income")
+```
+
+### Module 1.4: Quality Control and Validation (10 min)
+
+#### Building Critical Evaluation Skills
+- **Economic theory check:** Does AI output align with established principles?
+- **Data validation:** Verifying AI-suggested analyses make sense
+- **Source verification:** Checking AI-provided references and claims
+
+#### Quick Exercise: Spotting AI Errors
+Review AI-generated economic analyses and identify common mistakes or questionable assumptions.
+
+---
+
+# Day 2: Applied Economic Analysis with AI Support {#sec-day2}
+
+## Learning Objectives
+
+Participants will:
+
+1. **Conduct complete economic analyses** using AI for guidance and implementation
+2. **Apply basic econometric methods** with AI assistance for interpretation
+3. **Create professional visualizations** and reports with AI support
+4. **Address real-world business and policy questions** using integrated approaches
+
+
+
+### Module 2.1: Labor Market Analysis (45 min)
+
+#### Understanding Employment Dynamics
+- **Labor market indicators:** Unemployment, participation rates, job flows
+- **Wage analysis:** Determinants and trends
+- **Policy evaluation:** Employment program effectiveness
+
+#### Major Exercise: Minimum Wage Impact Analysis
+
+**Research Question:** How do minimum wage increases affect employment in different sectors and regions?
+
+```{r}
+#| label: minimum-wage-analysis
+#| echo: true
+#| eval: false
+
+library(fixest)
+library(modelsummary)
+
+# AI-guided analysis planning
+minwage_prompt <- "
+I want to analyze minimum wage impacts using state-level data (2015-2023).
+
+DATA AVAILABLE:
+- State-year panel data
+- Variables: employment rate, average wages, minimum wage, GDP per capita
+- Treatment: States that increased minimum wage vs. those that didn't
+
+RESEARCH APPROACH:
+Help me design an analysis that addresses:
+1. Overall employment effects
+2. Differences by industry (service vs. manufacturing)  
+3. Regional variation (urban vs. rural states)
+4. Time dynamics (short-term vs. long-term effects)
+
+Suggest:
+- Appropriate econometric model (difference-in-differences)
+- Control variables to include
+- How to handle timing of treatment
+- R code for implementation
+- Interpretation guidelines
+
+Keep explanations accessible but econometrically sound.
+"
+
+# Implementation based on AI guidance
+minwage_model <- feols(
+  employment_rate ~ minimum_wage + gdp_per_capita + 
+                    unemployment_insurance + population |
+                    state + year,
+  data = state_data,
+  cluster = ~state
+)
+
+# AI assistance for interpretation
+modelsummary(minwage_model)
+```
+
+#### Interpretation Workshop
+Practice translating econometric results into policy language with AI assistance.
+
+### Module 2.2: Consumer Behavior and Market Analysis (45 min)
+
+#### Business Applications of Economic Analysis
+- **Demand estimation:** Price elasticity and consumer response
+- **Market segmentation:** Understanding customer groups
+- **Competitive analysis:** Market structure and firm behavior
+
+#### Case Study: Retail Price Analysis
+
+**Business Problem:** A retail chain wants to understand how price changes affect sales across different product categories and store locations.
+
+```python
+# AI-assisted business analysis
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+# Structured business prompt
+retail_prompt = """
+BUSINESS CONTEXT:
+Retail chain with 50 stores across urban and suburban locations.
+Product categories: Groceries, electronics, clothing, household items.
+Available data: Weekly sales, prices, promotions, local demographics.
+
+BUSINESS QUESTIONS:
+1. How price-sensitive are customers for different product categories?
+2. Do urban vs. suburban stores show different price sensitivity?
+3. What's the optimal pricing strategy for each category?
+4. How do promotions interact with regular pricing?
+
+ANALYTICAL APPROACH:
+Design analysis to estimate:
+- Price elasticity by product category
+- Geographic differences in price sensitivity
+- Promotional effectiveness
+- Revenue optimization insights
+
+Provide Python code for:
+- Data exploration and visualization
+- Elasticity estimation
+- Business insights interpretation
+- Actionable recommendations
+
+Focus on practical business applications.
+"""
+
+# Example implementation
+def estimate_price_elasticity(data, category):
+    """
+    Estimate price elasticity for a product category
+    AI would help design this function
+    """
+    # Log-log regression for elasticity
+    model = LinearRegression()
+    X = np.log(data[f'{category}_price']).values.reshape(-1, 1)
+    y = np.log(data[f'{category}_sales'])
+    
+    model.fit(X, y)
+    elasticity = model.coef_[0]
+    
+    return elasticity
+
+# Analysis implementation guided by AI
+```
+
+### Module 2.3: Regional and Urban Economics (25 min)
+
+#### Spatial Economic Analysis
+- **Regional development:** Growth patterns and convergence
+- **Urban economics:** Housing markets and city dynamics
+- **Location decisions:** Business and residential choices
+
+#### Quick Case: Housing Market Trends
+
+**Problem:** Analyze housing affordability trends in metropolitan areas.
+
+```{r}
+#| label: housing-analysis
+#| echo: true
+#| eval: false
+
+# AI-guided housing market analysis
+housing_prompt <- "
+Analyze housing affordability using metro area data:
+- Median home prices, median household income, mortgage rates
+- Population growth, employment growth
+- Housing supply indicators (permits, inventory)
+
+Create analysis showing:
+1. Affordability trends over time (2018-2024)
+2. Which metros are most/least affordable
+3. Relationship between job growth and housing costs
+4. Policy implications for different metro types
+
+Suggest appropriate metrics (price-to-income ratios) and visualizations.
+"
+
+# Implementation with AI assistance
+housing_data %>%
+  mutate(
+    affordability_ratio = median_price / median_income,
+    affordable = affordability_ratio < 3.0
+  ) %>%
+  ggplot(aes(x = year, y = affordability_ratio, color = metro_size)) +
+  geom_line() +
+  facet_wrap(~region) +
+  labs(title = "Housing Affordability Trends by Region and Metro Size")
+```
+
+### Module 2.4: Creating Professional Reports (5 min)
+
+#### AI-Enhanced Communication
+- **Executive summaries:** Key findings and recommendations
+- **Visualization guidance:** Effective charts and graphs
+- **Policy translations:** Academic results to policy language
+
+---
+
+# Day 3: Policy Analysis and Business Applications {#sec-day3}
+
+## Learning Objectives
+
+Participants will:
+
+1. **Evaluate economic policies** using AI-supported analytical frameworks
+2. **Conduct business strategy analysis** with economic principles and AI tools
+3. **Develop actionable recommendations** from economic analysis
+4. **Create comprehensive project workflows** integrating multiple AI tools
+
+
+
+### Module 3.1: Policy Impact Assessment (50 min)
+
+#### Policy Analysis Framework
+- **Problem identification:** Defining policy challenges clearly
+- **Option evaluation:** Comparing policy alternatives
+- **Impact assessment:** Quantifying effects and trade-offs
+- **Implementation considerations:** Practical policy design
+
+#### Major Case Study: Small Business Support Programs
+
+**Policy Question:** Design and evaluate a small business support program for post-pandemic economic recovery.
+
+```{r}
+#| label: policy-analysis
+#| echo: true
+#| eval: false
+
+# Comprehensive policy analysis with AI support
+policy_prompt <- "
+POLICY CHALLENGE:
+Design small business support program with $50 million budget to help 
+post-pandemic recovery in mid-sized city (population 200,000).
+
+CONTEXT:
+- 20% of small businesses closed during pandemic
+- Unemployment rose from 4% to 12%, now at 8%
+- Main industries: Tourism, retail, food service, manufacturing
+- Mix of urban core and suburban areas
+
+POLICY OPTIONS TO EVALUATE:
+1. Direct grants ($10K-$50K per business)
+2. Low-interest loan program
+3. Tax credits for hiring/retention
+4. Technical assistance and training programs
+5. Hybrid approach combining above
+
+ANALYSIS FRAMEWORK:
+For each option, assess:
+- Likely business participation rates
+- Employment impact (jobs created/saved)
+- Economic multiplier effects
+- Implementation costs and complexity
+- Targeting effectiveness (reaching most affected)
+- Long-term sustainability
+
+DELIVERABLES:
+1. Cost-benefit analysis for each option
+2. Implementation timeline and requirements
+3. Success metrics and monitoring plan
+4. Recommendation with rationale
+
+Use economic reasoning but keep accessible for policymakers.
+"
+
+# Example analysis structure
+policy_options <- tibble(
+  option = c("Direct Grants", "Loan Program", "Tax Credits", "Technical Assistance"),
+  budget_share = c(0.4, 0.3, 0.2, 0.1),
+  businesses_served = c(500, 800, 1000, 1500),
+  cost_per_business = budget_share * 50000000 / businesses_served,
+  jobs_impact = c(1200, 1800, 2200, 800),
+  implementation_time = c(2, 6, 4, 3)
+)
+
+# Visualization of policy trade-offs
+policy_options %>%
+  ggplot(aes(x = cost_per_business, y = jobs_impact, 
+             color = option, size = businesses_served)) +
+  geom_point() +
+  labs(title = "Policy Option Trade-offs: Cost vs. Job Impact",
+       x = "Cost per Business Served",
+       y = "Estimated Jobs Impact")
+```
+
+#### Policy Recommendation Workshop
+Groups develop policy briefs using AI assistance, then present to class for feedback.
+
+### Module 3.2: Business Strategy and Market Analysis (40 min)
+
+#### Strategic Economic Analysis
+- **Market opportunity assessment:** Sizing and evaluating markets
+- **Competitive positioning:** Understanding market dynamics
+- **Growth strategy:** Economic factors in business expansion
+- **Risk assessment:** Economic uncertainties and mitigation
+
+#### Business Case: Market Entry Analysis
+
+**Business Challenge:** Technology company considering expansion into emerging market.
+
+```python
+# AI-supported market analysis
+import pandas as pd
+import numpy as np
+
+market_entry_prompt = """
+BUSINESS CONTEXT:
+Mid-size tech company (cloud-based HR software) considering expansion 
+into Southeast Asian market (focus on Indonesia, Philippines, Vietnam).
+
+CURRENT SITUATION:
+- Strong position in North American market
+- Software requires localization (language, regulations, payment systems)
+- Competition from local players and global competitors
+- Target: Small to medium enterprises (50-500 employees)
+
+ANALYSIS NEEDED:
+1. Market Size and Growth Potential:
+   - SME population and growth rates
+   - Technology adoption trends
+   - Spending on HR software
+
+2. Competitive Landscape:
+   - Existing players and market shares
+   - Pricing strategies
+   - Product feature comparison
+
+3. Economic Factors:
+   - Business environment and regulations
+   - Economic stability and growth prospects
+   - Currency and financial risks
+
+4. Entry Strategy Options:
+   - Direct expansion vs. partnerships
+   - Pricing strategy for local market
+   - Investment requirements and timeline
+
+DELIVERABLES:
+- Market opportunity assessment ($$ potential)
+- Competitive positioning analysis
+- Risk-return analysis for entry options
+- Go/no-go recommendation with rationale
+
+Frame analysis for business executives, not academic audience.
+"""
+
+# Market analysis framework
+def analyze_market_opportunity(country_data):
+    """
+    AI-guided market sizing analysis
+    """
+    market_size = (
+        country_data['sme_count'] * 
+        country_data['tech_adoption_rate'] * 
+        country_data['avg_hr_software_spend']
+    )
+    
+    growth_potential = (
+        market_size * 
+        country_data['gdp_growth_rate'] * 
+        country_data['digitalization_trend']
+    )
+    
+    return {
+        'current_market_size': market_size,
+        'five_year_potential': growth_potential,
+        'entry_difficulty': country_data['business_ease_score']
+    }
+
+# Implementation with AI guidance
+```
+
+### Module 3.3: Social and Development Economics (25 min)
+
+#### Development Policy Analysis
+- **Poverty and inequality:** Measurement and intervention strategies
+- **Education and health:** Human capital development
+- **Infrastructure:** Economic development foundations
+- **Social programs:** Design and effectiveness
+
+#### Case Study: Education Technology Program
+
+**Development Challenge:** Evaluate digital learning initiative for rural schools in developing country context.
+
+```{r}
+#| label: development-analysis
+#| echo: true
+#| eval: false
+
+# AI-assisted development program evaluation
+edtech_prompt <- "
+PROGRAM CONTEXT:
+Digital learning initiative providing tablets and internet connectivity
+to rural primary schools in developing country.
+
+PROGRAM DETAILS:
+- Target: 200 rural schools, 15,000 students
+- Investment: $5 million over 3 years
+- Components: Hardware, connectivity, teacher training, content
+
+EVALUATION FRAMEWORK:
+Assess program effectiveness on:
+1. Learning outcomes (test scores, completion rates)
+2. Economic impacts (future earnings potential)
+3. Equity effects (gender, socioeconomic differences)
+4. Sustainability (long-term viability)
+
+DATA AVAILABLE:
+- Baseline and follow-up surveys
+- School administrative data
+- Teacher feedback
+- Community economic indicators
+
+ANALYSIS APPROACH:
+Design evaluation comparing:
+- Treatment schools vs. control schools
+- Before/after program implementation
+- Different levels of program intensity
+
+Provide framework for cost-effectiveness analysis and
+policy recommendations for program expansion.
+"
+
+# Evaluation design with AI support
+program_impact <- lm(
+  test_score_change ~ treatment + baseline_score + 
+                      school_resources + community_income,
+  data = school_data
+)
+
+# AI helps interpret results for policy implications
+```
+
+### Module 3.4: Integration and Future Implementation (5 min)
+
+#### Workflow Development
+- **Research pipeline:** From question to analysis to communication
+- **Quality assurance:** Validation and peer review processes
+- **Continuous improvement:** Learning from successes and challenges
+
+#### Personal Implementation Planning
+Participants create action plans for incorporating AI tools into their regular work.
+
+---
+
+# Assessment Strategy {#sec-assessment}
+
+## Balanced Evaluation Approach
+
+### Project Portfolio (50%)
+
+#### Day 1 Project: Research Design
+- **Task:** Develop literature review and research plan for chosen economic topic
+- **AI Integration:** Use AI for search strategy, concept explanation, methodology guidance
+- **Evaluation:** Completeness, feasibility, appropriate AI use
+
+#### Day 2 Project: Empirical Analysis
+- **Task:** Complete data analysis addressing specific economic question
+- **AI Integration:** Analysis planning, code development, interpretation support
+- **Evaluation:** Technical accuracy, insight quality, clear communication
+
+#### Day 3 Project: Policy/Business Analysis
+- **Task:** Policy evaluation or business strategy analysis
+- **AI Integration:** Framework development, option assessment, recommendation formulation
+- **Evaluation:** Practical relevance, analytical rigor, actionable insights
+
+### Skills Demonstration (30%)
+
+#### Technical Skills
+- **Prompt Engineering:** Effective AI interaction for economic analysis
+- **Data Analysis:** R/Python implementation with AI assistance
+- **Critical Evaluation:** Assessing AI output quality and reliability
+
+#### Communication Skills
+- **Result Interpretation:** Translating analysis into actionable insights
+- **Audience Adaptation:** Academic vs. policy vs. business communication
+- **Visual Communication:** Effective charts and presentation
+
+### Participation and Collaboration (20%)
+
+#### Active Learning
+- **Workshop Engagement:** Participation in exercises and discussions
+- **Peer Learning:** Helping others and learning from peers
+- **Question Quality:** Thoughtful questions that advance learning
+
+#### Professional Development
+- **Reflection:** Understanding of AI's role in economic analysis
+- **Planning:** Realistic implementation strategy for ongoing work
+- **Ethics:** Responsible AI use and limitation awareness
+
+---
+
+# Resources and Tools {#sec-resources}
+
+## Essential Software Setup
+
+### R/RStudio Configuration
+```{r}
+#| label: r-setup
+#| echo: true
+#| eval: false
+
+# Required packages for workshop
+essential_packages <- c(
+  # Data manipulation and visualization
+  "tidyverse", "ggplot2", "dplyr", "readr",
+  
+  # Econometrics and statistics
+  "fixest", "modelsummary", "broom", "lmtest",
+  
+  # Specialized analysis
+  "forecast", "zoo", "lubridate",
+  
+  # Reporting and documentation
+  "knitr", "rmarkdown", "DT"
+)
+
+# Install packages
+install.packages(essential_packages)
+
+# Verify installation
+sapply(essential_packages, require, character.only = TRUE)
+```
+
+### Python Environment
+```python
+# Essential Python libraries
+# pip install pandas numpy matplotlib seaborn
+# pip install scikit-learn statsmodels scipy
+# pip install jupyter notebook
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.linear_model import LinearRegression
+import statsmodels.api as sm
+```
+
+### AI Tools Access
+- **Claude.ai:** Primary analysis and coding support
+- **ChatGPT:** Alternative analysis and writing assistance  
+- **Perplexity:** Research and fact-checking
+- **Google Scholar:** Academic literature search
+
+## Practice Datasets
+
+### Economic Indicators
+- **Federal Reserve Economic Data (FRED):** US macroeconomic time series
+- **World Bank Open Data:** International development indicators
+- **OECD Statistics:** Cross-country comparative data
+
+### Microdata Sources
+- **American Community Survey:** US demographic and economic data
+- **Current Population Survey:** Labor force and employment data
+- **Consumer Expenditure Survey:** Household spending patterns
+
+### Business Data
+- **Yahoo Finance:** Stock prices and financial data
+- **Industry Trade Associations:** Sector-specific data
+- **Government Business Registers:** Firm-level information
+
+## Recommended Reading
+
+### AI for Economics (Accessible Level)
+- Athey, S. (2018). "The impact of machine learning on economics." *NBER Working Paper*.
+- Kleinberg, J., et al. (2015). "Prediction policy problems." *American Economic Review*.
+- Mullainathan, S., & Spiess, J. (2017). "Machine learning: An applied econometric approach." *Journal of Economic Perspectives*.
+
+### Applied Economics Methods
+- Angrist, J. D., & Pischke, J. S. (2014). *Mastering 'Metrics: The Path from Cause to Effect*. Princeton University Press.
+- Wooldridge, J. M. (2020). *Introductory Econometrics: A Modern Approach* (7th ed.). Cengage Learning.
+
+### Policy Analysis
+- Bardach, E., & Patashnik, E. M. (2019). *A Practical Guide for Policy Analysis: The Eightfold Path to More Effective Problem Solving*. CQ Press.
+- Weimer, D. L., & Vining, A. R. (2017). *Policy Analysis: Concepts and Practice* (6th ed.). Routledge.
+
+---
+
+# Implementation Roadmap {#sec-roadmap}
+
+## Immediate Application (Weeks 1-2)
+
+### Quick Wins
+- **Literature Reviews:** Use AI to enhance current research projects
+- **Data Exploration:** Apply AI-assisted analysis to existing datasets
+- **Writing Support:** Improve reports and presentations with AI help
+
+### Skill Building
+- **Daily Practice:** Spend 15-30 minutes daily using AI tools
+- **Prompt Library:** Build collection of effective prompts for common tasks
+- **Quality Checks:** Develop habits for validating AI output
+
+## Short-term Integration (Months 1-3)
+
+### Research Enhancement
+- **Complete Analysis:** Finish one full project using workshop methods
+- **Collaboration:** Partner with colleagues for AI-assisted projects
+- **Documentation:** Create templates and workflows for future use
+
+### Professional Development
+- **Presentation:** Share AI applications at departmental meeting or conference
+- **Training:** Teach others basic AI skills for economics
+- **Networking:** Connect with AI-economics community online
+
+## Long-term Mastery (6+ Months)
+
+### Advanced Applications
+- **Methodological Innovation:** Develop new approaches combining AI and economics
+- **Research Leadership:** Lead multi-researcher projects using AI tools
+- **Policy Impact:** Use AI-enhanced analysis for real policy decisions
+
+### Knowledge Contribution
+- **Best Practices:** Document and share effective AI use strategies
+- **Community Building:** Help establish AI adoption in home institution
+- **Continuous Learning:** Stay current with evolving AI capabilities
+
+---
+
+*This intermediate workshop provides practical, immediately applicable skills while building toward more sophisticated applications. Participants will gain confidence using AI tools for economic analysis while maintaining critical thinking and methodological rigor.*

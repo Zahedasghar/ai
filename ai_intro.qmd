@@ -84,9 +84,14 @@ Comfortable being uncomfortable
 
 [HBR](https://hbr.org/2023/08/ai-wont-replace-humans-but-humans-with-ai-will-replace-humans-without-ai) 
 
+# I dont use AI, [I work with AI]{.hi-purple} 
+## [Dont Ask AI to do your work]{.hi-purple}, ask it to help you do your work 
 
+### You're an AI expert. [Please ask me questions]{.hi-purple} to understand my workflows and suggest uses.
 
-# What Is AI?
+# [With AI, people from all backgrounds]{.hi-purple} can now do most tasks efficiently.
+
+## What Is AI?
 
 
 -   The broad concept where machines simulate human intelligence. 

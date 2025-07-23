@@ -1,0 +1,122 @@
+---
+title: "The Future of Work with AI"
+description: "[Exploring how AI is reshaping workplaces, adoption gaps, and strategies for leaders and employees.](https://youtu.be/hQX_wIW9Nh0?si=W9gnlKorDC97VET9)"
+format:
+  revealjs:
+    theme: simple
+    transition: fade
+    slide-number: true
+    incremental: true
+---
+
+# Introduction
+
+- **AI is set to reshape our workplaces.**
+- Key questions:
+  - What does this mean for my job? 
+  - Am I going to have a job? Will my children have jobs? 
+- **Host:** Isabel Berwick, FT’s Working It podcast.
+
+---
+
+# Workplace Readiness
+
+- Companies are eager to incorporate AI—but are we ready? 
+- **Adoption gap:** Two-thirds of desk workers are not using AI tools yet.
+
+---
+
+# What Is Generative AI?
+
+- Subset of AI emerging over the last 3 years. 
+- Translates between text, images, video, audio, code, and more (e.g., DNA patterns). 
+- **Turning point:** ChatGPT launch (Dec 2022).
+
+---
+
+# AI persona
+
+![](images/ai_persona.png)
+
+
+# Executive vs. Employee Adoption
+
+- CEOs have bought Ferraris (AI systems) but haven’t given staff driving lessons. 
+- Survey of 10,000 desk workers:
+  - Top benefit executives expect: increased productivity.
+  - Top concerns: data security, privacy, accuracy, reliability.
+- Executive urgency has increased 7× in the last 6 months.
+
+---
+
+# The Adoption Disconnect
+
+- Despite executive push, ⅔ of employees aren’t using AI. 
+- **Slack Workforce Lab** studies motivators for AI use.
+
+---
+
+# AI Personas (Slack Research)
+
+1. **Maximalist:** Enthusiastic, active users.
+2. **Underground:** Active users hiding usage (fear of being seen as cheating).
+3. **Rebel:** Avoids AI, sees it as a threat.
+4. **Superfan:** Excited but unsure how to start.
+5. **Observer:** Wait-and-see, cautious interest.
+
+---
+
+# Building Trust and Guidelines
+
+- Only 7% of workers fully trust AI.
+- Trust doubled when managers encourage safe AI exploration. 
+- **Recommendation:** Define transparent usage policies catering to all personas.
+
+---
+
+# Expert Insights: Azeem Azhar
+
+- Uses multiple AI assistants for transcripts and performance feedback.
+- Senior leaders extract more value—delegation expertise matters.
+- **Downsides:** Unreliability, risk of cost-cutting via headcount reductions.
+
+---
+
+# Case Study: Lattice AI in HR
+
+- Summarizes feedback and writes performance reviews aligned with best practices.
+- Helps managers deliver inclusive, actionable, concise feedback.
+
+---
+
+# Balancing Innovation and Governance
+
+- Rapid experimentation vs. measured implementation.
+- Key governance questions:
+  - What actions will AI perform?
+  - How to ensure accountability and transparency?
+
+---
+
+# Implementation Strategies
+
+- **Move slow to go fast:** Ensure data readiness and integrations. 
+- **Education & communication:** Build trust through training and clear guidelines. 
+- **Experimentation:** Pilot projects to demonstrate value and build confidence. 
+
+---
+
+# Conclusion
+
+- AI will transform work—but caution and strategy are essential.
+- **Actions for leaders:**
+  - Develop clear policies. 
+  - Support diverse AI personas. 
+  - Foster a culture of trust and experimentation.
+
+---
+
+# Thank You
+
+Questions?  
+Contact: Isabel.Berwick@example.com

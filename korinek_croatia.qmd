@@ -1,0 +1,105 @@
+---
+title: "AI and Technological Progress: Key Insights and Strategies"
+author: "Compiled by ChatGPT"
+date: '`r Sys.Date()`'
+format:
+  html:
+    theme: solarized
+    slide-number: true
+    transition: fade
+    incremental: true
+    self-contained: true
+execute:
+  freeze: auto
+---
+
+## 1. Title Slide
+
+### AI and Technological Progress: Key Insights and Strategies
+
+- Source materials:
+  - Video: “Is Automating AI Research Enough for a Growth Explosion?” (April 2025)
+  - Working Paper: *Steering Technological Progress* (Korinek & Stiglitz, May 5 2025)
+  - Presentation: *Preparing for the AI Revolution: Strategies for European Countries* (June 12 2025)
+
+---
+
+## 2. Video Insight
+
+### Is Automating AI Research Enough for a Growth Explosion?
+
+- **Authors/Presenters**: B. Halperin, T. Houlden + collaborators  
+- **Date**: April 2025
+
+**Main Points**  
+- Automation in AI research accelerates model development.  
+- Growth implications depend on adoption, regulation, and spillovers.  
+- Potential bottlenecks: compute capacity, data availability, skills gaps.
+
+**Discussion Prompts**  
+- Can full automation replace human researchers?  
+- What are the socio-economic risks of hyper-automation?
+
+---
+
+## 3. Paper Insights
+
+### Steering Technological Progress
+
+- **Authors**: Anton Korinek & Joseph Stiglitz  
+- **WP No. 232** | **May 5, 2025** | Institute for New Economic Thinking
+
+**Main Points**  
+1. **Market failures in R&D**: underinvestment in socially valuable directions.  
+2. **Policy tools**: targeted subsidies, prize mechanisms, regulation of directionality.  
+3. **AI-specific challenges**: alignment, concentration of power, externalities.
+
+**Key Prompts**  
+- How can governments steer AI toward public-good applications?  
+- Which incentives best correct directional under-investment?
+
+---
+
+## 4. Presentation Take-Aways
+
+### Preparing for the AI Revolution: Strategies for European Countries
+
+- **Organisations**: Complexity Science Hub, CEPR, Oesterreichische Nationalbank
+
+**Strategies Highlighted**  
+- **Workforce readiness**: upskilling, life-long learning programs.  
+- **Infrastructure**: compute hubs, data commons, cross-border interoperability.  
+- **Governance**: regulatory sandboxes, safety standards, EU coordination.  
+- **R&D investment**: public-private partnerships, open science initiatives.
+
+**Discussion Questions**  
+- Which strategy should EU countries prioritize?  
+- How to balance innovation with ethical safeguards?
+
+---
+
+## 5. Synthesis & Discussion
+
+- **Overarching Themes**  
+  - Speed vs. direction: automation boosts pace, but policy must guide outcomes.  
+  - Skills and infrastructure are as crucial as algorithms.  
+  - International coordination needed to manage global externalities.
+
+- **Open Questions**  
+  - What are the main barriers to steering AI research toward societal goals?  
+  - How can we measure the “right” direction of technological progress?
+
+---
+
+## 6. Further Reading & Resources
+
+- Korinek & Stiglitz (2025). *Steering Technological Progress*. INET Working Paper 232.  
+- Halperin & Houlden (2025). “Is Automating AI Research Enough for a Growth Explosion?”  
+- Complexity Science Hub et al. (2025). *Preparing for the AI Revolution* Report.  
+- Eurostat, World Bank: labour-market indicators for AI impact assessments.
+
+---
+
+## Thank You!
+
+Questions? Feedback?  

@@ -1,6 +1,6 @@
 ---
 title: "Learning, Teaching, and Research with AI"
-format: html
+format:    html
 ---
 
 
