@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Zahid Asghar">
+<meta name="dcterms.date" content="2025-08-08">
+
+<title>AI Workshop for Punjab Government Policy Officers – AI for Teachers, Researchers and Students</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-74710cafea755071f97f3aba5d337df7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="site_libs/plotly-binding-4.11.0/plotly.js"></script>
+<script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+<link rel="stylesheet" href="style.scss">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">AI Workshop for Punjab Government Policy Officers</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/LLM.webp" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/Zahedasghar" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Materials</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://discord.com/channels/1292187441565794316/1292187441565794319" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discord</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#workshop-overview" id="toc-workshop-overview" class="nav-link active" data-scroll-target="#workshop-overview">Workshop Overview</a></li>
+  <li><a href="#enhanced-learning-objectives" id="toc-enhanced-learning-objectives" class="nav-link" data-scroll-target="#enhanced-learning-objectives"><span class="header-section-number">0.1</span> Enhanced Learning Objectives</a>
+  <ul class="collapse">
+  <li><a href="#master-agentic-ai-for-government-operations" id="toc-master-agentic-ai-for-government-operations" class="nav-link" data-scroll-target="#master-agentic-ai-for-government-operations"><span class="header-section-number">0.1.1</span> 1. Master Agentic AI for Government Operations</a></li>
+  <li><a href="#deploy-1000x-productivity-multipliers" id="toc-deploy-1000x-productivity-multipliers" class="nav-link" data-scroll-target="#deploy-1000x-productivity-multipliers"><span class="header-section-number">0.1.2</span> 2. Deploy 1000x Productivity Multipliers</a></li>
+  <li><a href="#advanced-ai-tool-mastery" id="toc-advanced-ai-tool-mastery" class="nav-link" data-scroll-target="#advanced-ai-tool-mastery"><span class="header-section-number">0.1.3</span> 3. Advanced AI Tool Mastery</a></li>
+  <li><a href="#strategic-ai-integration" id="toc-strategic-ai-integration" class="nav-link" data-scroll-target="#strategic-ai-integration"><span class="header-section-number">0.1.4</span> 4. Strategic AI Integration</a></li>
+  </ul></li>
+  <li><a href="#workshop-agenda" id="toc-workshop-agenda" class="nav-link" data-scroll-target="#workshop-agenda"><span class="header-section-number">1</span> Workshop Agenda</a>
+  <ul class="collapse">
+  <li><a href="#session-1-ai-revolution-in-governance-900-am---1100-am" id="toc-session-1-ai-revolution-in-governance-900-am---1100-am" class="nav-link" data-scroll-target="#session-1-ai-revolution-in-governance-900-am---1100-am"><span class="header-section-number">1.1</span> Session 1: AI Revolution in Governance (9:00 AM - 11:00 AM)</a>
+  <ul class="collapse">
+  <li><a href="#opening-the-1000x-productivity-vision-30-minutes" id="toc-opening-the-1000x-productivity-vision-30-minutes" class="nav-link" data-scroll-target="#opening-the-1000x-productivity-vision-30-minutes"><span class="header-section-number">1.1.1</span> Opening: The 1000x Productivity Vision (30 minutes)</a></li>
+  <li><a href="#foundation-next-generation-ai-technologies-60-minutes" id="toc-foundation-next-generation-ai-technologies-60-minutes" class="nav-link" data-scroll-target="#foundation-next-generation-ai-technologies-60-minutes"><span class="header-section-number">1.1.2</span> Foundation: Next-Generation AI Technologies (60 minutes)</a></li>
+  <li><a href="#interactive-demo-ai-agent-in-action-30-minutes" id="toc-interactive-demo-ai-agent-in-action-30-minutes" class="nav-link" data-scroll-target="#interactive-demo-ai-agent-in-action-30-minutes"><span class="header-section-number">1.1.3</span> Interactive Demo: AI Agent in Action (30 minutes)</a></li>
+  </ul></li>
+  <li><a href="#break-1100-am---1115-am" id="toc-break-1100-am---1115-am" class="nav-link" data-scroll-target="#break-1100-am---1115-am">Break: 11:00 AM - 11:15 AM</a></li>
+  <li><a href="#session-2-building-your-ai-powered-policy-workflow-1115-am---100-pm" id="toc-session-2-building-your-ai-powered-policy-workflow-1115-am---100-pm" class="nav-link" data-scroll-target="#session-2-building-your-ai-powered-policy-workflow-1115-am---100-pm"><span class="header-section-number">1.2</span> Session 2: Building Your AI-Powered Policy Workflow (11:15 AM - 1:00 PM)</a>
+  <ul class="collapse">
+  <li><a href="#advanced-prompt-engineering-for-policy-work-45-minutes" id="toc-advanced-prompt-engineering-for-policy-work-45-minutes" class="nav-link" data-scroll-target="#advanced-prompt-engineering-for-policy-work-45-minutes"><span class="header-section-number">1.2.1</span> Advanced Prompt Engineering for Policy Work (45 minutes)</a></li>
+  <li><a href="#agentic-ai-workflows-60-minutes" id="toc-agentic-ai-workflows-60-minutes" class="nav-link" data-scroll-target="#agentic-ai-workflows-60-minutes"><span class="header-section-number">1.2.2</span> Agentic AI Workflows (60 minutes)</a></li>
+  </ul></li>
+  <li><a href="#prayer-break-100-pm---200-pm" id="toc-prayer-break-100-pm---200-pm" class="nav-link" data-scroll-target="#prayer-break-100-pm---200-pm">Prayer Break: 1:00 PM - 2:00 PM</a></li>
+  <li><a href="#session-3-ai-integration-strategy-advanced-applications-200-pm---430-pm" id="toc-session-3-ai-integration-strategy-advanced-applications-200-pm---430-pm" class="nav-link" data-scroll-target="#session-3-ai-integration-strategy-advanced-applications-200-pm---430-pm"><span class="header-section-number">1.3</span> Session 3: AI Integration Strategy &amp; Advanced Applications (2:00 PM - 4:30 PM)</a>
+  <ul class="collapse">
+  <li><a href="#real-time-policy-intelligence-systems-60-minutes" id="toc-real-time-policy-intelligence-systems-60-minutes" class="nav-link" data-scroll-target="#real-time-policy-intelligence-systems-60-minutes"><span class="header-section-number">1.3.1</span> Real-Time Policy Intelligence Systems (60 minutes)</a></li>
+  <li><a href="#case-study-workshop-punjab-specific-applications-60-minutes" id="toc-case-study-workshop-punjab-specific-applications-60-minutes" class="nav-link" data-scroll-target="#case-study-workshop-punjab-specific-applications-60-minutes"><span class="header-section-number">1.3.2</span> Case Study Workshop: Punjab-Specific Applications (60 minutes)</a></li>
+  <li><a href="#ai-governance-ethics-30-minutes" id="toc-ai-governance-ethics-30-minutes" class="nav-link" data-scroll-target="#ai-governance-ethics-30-minutes"><span class="header-section-number">1.3.3</span> AI Governance &amp; Ethics (30 minutes)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#wrap-up-action-planning-430-pm---500-pm" id="toc-wrap-up-action-planning-430-pm---500-pm" class="nav-link" data-scroll-target="#wrap-up-action-planning-430-pm---500-pm"><span class="header-section-number">2</span> Wrap-Up &amp; Action Planning (4:30 PM - 5:00 PM)</a>
+  <ul class="collapse">
+  <li><a href="#implementation-roadmap" id="toc-implementation-roadmap" class="nav-link" data-scroll-target="#implementation-roadmap"><span class="header-section-number">2.1</span> Implementation Roadmap</a></li>
+  <li><a href="#resources-continued-learning" id="toc-resources-continued-learning" class="nav-link" data-scroll-target="#resources-continued-learning"><span class="header-section-number">2.2</span> Resources &amp; Continued Learning</a></li>
+  </ul></li>
+  <li><a href="#enhanced-workshop-outcomes" id="toc-enhanced-workshop-outcomes" class="nav-link" data-scroll-target="#enhanced-workshop-outcomes"><span class="header-section-number">3</span> Enhanced Workshop Outcomes</a>
+  <ul class="collapse">
+  <li><a href="#immediate-capabilities" id="toc-immediate-capabilities" class="nav-link" data-scroll-target="#immediate-capabilities"><span class="header-section-number">3.1</span> Immediate Capabilities</a></li>
+  <li><a href="#strategic-understanding" id="toc-strategic-understanding" class="nav-link" data-scroll-target="#strategic-understanding"><span class="header-section-number">3.2</span> Strategic Understanding</a></li>
+  <li><a href="#practical-tools" id="toc-practical-tools" class="nav-link" data-scroll-target="#practical-tools"><span class="header-section-number">3.3</span> Practical Tools</a></li>
+  </ul></li>
+  <li><a href="#post-workshop-support" id="toc-post-workshop-support" class="nav-link" data-scroll-target="#post-workshop-support"><span class="header-section-number">4</span> Post-Workshop Support</a>
+  <ul class="collapse">
+  <li><a href="#ongoing-resources" id="toc-ongoing-resources" class="nav-link" data-scroll-target="#ongoing-resources"><span class="header-section-number">4.1</span> Ongoing Resources</a></li>
+  <li><a href="#advanced-training-tracks" id="toc-advanced-training-tracks" class="nav-link" data-scroll-target="#advanced-training-tracks"><span class="header-section-number">4.2</span> Advanced Training Tracks</a></li>
+  <li><a href="#contact-information" id="toc-contact-information" class="nav-link" data-scroll-target="#contact-information"><span class="header-section-number">4.3</span> Contact Information</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">AI Workshop for Punjab Government Policy Officers</h1>
+<p class="subtitle lead">Generative AI and Agentic AI for Public Policy Transformation</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Zahid Asghar </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 08, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="workshop-overview" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="workshop-overview">Workshop Overview</h2>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Target Audience
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Public Policy Officers, Decision Makers, and Government Officials from Punjab Government</p>
+</div>
+</div>
+<p>This intensive workshop introduces Punjab Government officials to cutting-edge <strong>Generative AI</strong> and <strong>Agentic AI</strong> technologies that can deliver exponential productivity gains in public policy work. Participants will learn to leverage AI agents, automated workflows, and advanced prompt engineering to transform how government operates—moving from traditional manual processes to AI-amplified decision-making systems.</p>
+<p>The workshop emphasizes practical implementation of AI systems that can analyze complex policy scenarios, generate comprehensive reports in minutes, and create intelligent workflows that operate autonomously to support governance objectives.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Workshop Duration
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Full Day Intensive Workshop</strong> - Approximately 8 hours including breaks</p>
+</div>
+</div>
+</section>
+<section id="enhanced-learning-objectives" class="level2" data-number="0.1">
+<h2 data-number="0.1" class="anchored" data-anchor-id="enhanced-learning-objectives"><span class="header-section-number">0.1</span> Enhanced Learning Objectives</h2>
+<section id="master-agentic-ai-for-government-operations" class="level3" data-number="0.1.1">
+<h3 data-number="0.1.1" class="anchored" data-anchor-id="master-agentic-ai-for-government-operations"><span class="header-section-number">0.1.1</span> 1. Master Agentic AI for Government Operations</h3>
+<ul>
+<li>Understanding AI agents that can perform complex, multi-step policy analysis autonomously</li>
+<li>Implementing AI workflows that operate 24/7 to monitor policy impacts and generate insights</li>
+</ul>
+</section>
+<section id="deploy-1000x-productivity-multipliers" class="level3" data-number="0.1.2">
+<h3 data-number="0.1.2" class="anchored" data-anchor-id="deploy-1000x-productivity-multipliers"><span class="header-section-number">0.1.2</span> 2. Deploy 1000x Productivity Multipliers</h3>
+<ul>
+<li>Learn AI systems that can process vast amounts of legislative data, public feedback, and economic indicators simultaneously</li>
+<li>Create AI-powered dashboards that provide real-time policy impact assessments</li>
+</ul>
+</section>
+<section id="advanced-ai-tool-mastery" class="level3" data-number="0.1.3">
+<h3 data-number="0.1.3" class="anchored" data-anchor-id="advanced-ai-tool-mastery"><span class="header-section-number">0.1.3</span> 3. Advanced AI Tool Mastery</h3>
+<ul>
+<li>Hands-on experience with latest AI platforms: Claude Sonnet 4, GPT-4, specialized government AI tools</li>
+<li>Multi-modal AI applications (text, data visualization, document analysis)</li>
+<li>AI-powered code generation for data analysis without programming skills</li>
+</ul>
+</section>
+<section id="strategic-ai-integration" class="level3" data-number="0.1.4">
+<h3 data-number="0.1.4" class="anchored" data-anchor-id="strategic-ai-integration"><span class="header-section-number">0.1.4</span> 4. Strategic AI Integration</h3>
+<ul>
+<li>Design AI governance frameworks for responsible deployment</li>
+<li>Create sustainable AI adoption strategies specific to Punjab Government needs</li>
+</ul>
+</section>
+</section>
+<section id="workshop-agenda" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Workshop Agenda</h1>
+<section id="session-1-ai-revolution-in-governance-900-am---1100-am" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="session-1-ai-revolution-in-governance-900-am---1100-am"><span class="header-section-number">1.1</span> Session 1: AI Revolution in Governance (9:00 AM - 11:00 AM)</h2>
+<p><em>From Tools to Intelligent Agents</em></p>
+<section id="opening-the-1000x-productivity-vision-30-minutes" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="opening-the-1000x-productivity-vision-30-minutes"><span class="header-section-number">1.1.1</span> Opening: The 1000x Productivity Vision (30 minutes)</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">Case Study</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Live Demonstration</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Punjab Context</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><strong>How Estonia’s e-governance AI systems process 99% of tax returns automatically</strong></p>
+<ul>
+<li>Automated document processing</li>
+<li>Real-time validation systems</li>
+<li>Citizen self-service platforms</li>
+<li>Impact: 2000+ hours saved annually per government employee</li>
+</ul>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>Traditional vs.&nbsp;AI-powered policy analysis</strong></p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+    A[Policy Question] --&gt; B{Traditional Method}
+    B --&gt; C[Manual Research&lt;br/&gt;5-7 days]
+    C --&gt; D[Manual Analysis&lt;br/&gt;3-4 days]
+    D --&gt; E[Report Writing&lt;br/&gt;2-3 days]
+    E --&gt; F[Final Output&lt;br/&gt;10-14 days total]
+    
+    A --&gt; G{AI-Powered Method}
+    G --&gt; H[AI Research&lt;br/&gt;5-10 minutes]
+    H --&gt; I[AI Analysis&lt;br/&gt;2-5 minutes]
+    I --&gt; J[AI Report Generation&lt;br/&gt;1-2 minutes]
+    J --&gt; K[Final Output&lt;br/&gt;15-20 minutes total]
+    
+    style F fill:#ffcccc
+    style K fill:#ccffcc
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><strong>Specific opportunities for exponential productivity gains</strong></p>
+<ul>
+<li>Agricultural policy optimization</li>
+<li>Urban planning and development</li>
+<li>Healthcare resource allocation</li>
+<li>Education system enhancement</li>
+<li>Tax collection and compliance</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="foundation-next-generation-ai-technologies-60-minutes" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="foundation-next-generation-ai-technologies-60-minutes"><span class="header-section-number">1.1.2</span> Foundation: Next-Generation AI Technologies (60 minutes)</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key Technologies Covered
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<dl>
+<dt><strong>Generative AI Evolution</strong></dt>
+<dd>
+From ChatGPT to specialized policy AI systems
+</dd>
+<dt><strong>Agentic AI</strong></dt>
+<dd>
+AI systems that plan, execute, and optimize tasks autonomously
+</dd>
+<dt><strong>Multi-Modal AI</strong></dt>
+<dd>
+Processing text, images, audio, and data simultaneously
+</dd>
+<dt><strong>Large Language Models (LLMs)</strong></dt>
+<dd>
+Claude Sonnet 4, specialized policy models
+</dd>
+</dl>
+</div>
+</div>
+</section>
+<section id="interactive-demo-ai-agent-in-action-30-minutes" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="interactive-demo-ai-agent-in-action-30-minutes"><span class="header-section-number">1.1.3</span> Interactive Demo: AI Agent in Action (30 minutes)</h3>
+<p>Watch an AI agent analyze a complex policy proposal, research precedents, generate recommendations, and create implementation timelines—all automatically.</p>
+<hr>
+</section>
+</section>
+<section id="break-1100-am---1115-am" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="break-1100-am---1115-am">Break: 11:00 AM - 11:15 AM</h2>
+<hr>
+</section>
+<section id="session-2-building-your-ai-powered-policy-workflow-1115-am---100-pm" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="session-2-building-your-ai-powered-policy-workflow-1115-am---100-pm"><span class="header-section-number">1.2</span> Session 2: Building Your AI-Powered Policy Workflow (11:15 AM - 1:00 PM)</h2>
+<p><em>Hands-On Implementation</em></p>
+<section id="advanced-prompt-engineering-for-policy-work-45-minutes" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="advanced-prompt-engineering-for-policy-work-45-minutes"><span class="header-section-number">1.2.1</span> Advanced Prompt Engineering for Policy Work (45 minutes)</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">Chain-of-Thought Prompting</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Role-Based Prompts</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Multi-Agent Conversations</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p><strong>Getting AI to show detailed policy reasoning</strong></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="an">Example Prompt:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>"Analyze the impact of increasing minimum wage in Punjab. </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>Think through this step by step:</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Current economic conditions</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Affected industries and workers</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Potential economic impacts</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>Implementation challenges</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>Mitigation strategies</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ss">6. </span>Timeline recommendations"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p><strong>Creating AI specialists</strong></p>
+<ul>
+<li>Budget Analyst AI</li>
+<li>Legislative Researcher AI<br>
+</li>
+<li>Impact Assessment AI</li>
+<li>Public Consultation AI</li>
+</ul>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p><strong>Having different AI perspectives debate policy options</strong></p>
+<pre class="mermaid"><code>graph TD
+    A[Policy Question] --&gt; B[Economic Analyst AI]
+    A --&gt; C[Social Impact AI]
+    A --&gt; D[Implementation AI]
+    B --&gt; E[Synthesis AI]
+    C --&gt; E
+    D --&gt; E
+    E --&gt; F[Final Recommendation]</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="agentic-ai-workflows-60-minutes" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="agentic-ai-workflows-60-minutes"><span class="header-section-number">1.2.2</span> Agentic AI Workflows (60 minutes)</h3>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Setting Up AI Agents
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Create autonomous systems for ongoing policy monitoring</p>
+</div>
+</div>
+<p><strong>Workflow Examples:</strong></p>
+<ol type="1">
+<li><strong>Budget Analysis Agent</strong>
+<ul>
+<li>Continuously monitors spending patterns</li>
+<li>Flags anomalies and inefficiencies</li>
+<li>Generates monthly optimization reports</li>
+</ul></li>
+<li><strong>Public Sentiment Agent</strong>
+<ul>
+<li>Tracks social media and news</li>
+<li>Analyzes public policy feedback</li>
+<li>Provides sentiment analysis reports</li>
+</ul></li>
+<li><strong>Legislative Tracking Agent</strong>
+<ul>
+<li>Monitors related legislation in other regions</li>
+<li>Identifies best practices and lessons learned</li>
+<li>Suggests policy adaptations</li>
+</ul></li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hands-On Activity
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Each participant builds a custom AI agent for their specific department needs.</p>
+</div>
+</div>
+<hr>
+</section>
+</section>
+<section id="prayer-break-100-pm---200-pm" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="prayer-break-100-pm---200-pm">Prayer Break: 1:00 PM - 2:00 PM</h2>
+<hr>
+</section>
+<section id="session-3-ai-integration-strategy-advanced-applications-200-pm---430-pm" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="session-3-ai-integration-strategy-advanced-applications-200-pm---430-pm"><span class="header-section-number">1.3</span> Session 3: AI Integration Strategy &amp; Advanced Applications (2:00 PM - 4:30 PM)</h2>
+<section id="real-time-policy-intelligence-systems-60-minutes" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="real-time-policy-intelligence-systems-60-minutes"><span class="header-section-number">1.3.1</span> Real-Time Policy Intelligence Systems (60 minutes)</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">AI-Powered Dashboards</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Predictive Analytics</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Automated Report Generation</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p><strong>Live policy impact monitoring</strong></p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-d78453bcdb41d4431fb0" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-d78453bcdb41d4431fb0">{"x":{"visdat":{"261866c8e04":["function () ","plotlyVisDat"]},"cur_data":"261866c8e04","attrs":{"261866c8e04":{"x":{},"y":{},"mode":"lines+markers","name":"Implementation Score","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"},"261866c8e04.1":{"x":{},"y":{},"mode":"lines+markers","name":"Public Satisfaction","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true},"261866c8e04.2":{"x":{},"y":{},"mode":"lines+markers","name":"Budget Efficiency","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Policy Performance Dashboard","xaxis":{"domain":[0,1],"automargin":true,"title":"Month","type":"category","categoryorder":"array","categoryarray":["Apr","Feb","Jan","Jun","Mar","May"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Score (%)"},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":["Jan","Feb","Mar","Apr","May","Jun"],"y":[65,72,78,82,88,91],"mode":"lines+markers","name":"Implementation Score","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Jan","Feb","Mar","Apr","May","Jun"],"y":[58,64,69,75,79,83],"mode":"lines+markers","name":"Public Satisfaction","type":"scatter","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Jan","Feb","Mar","Apr","May","Jun"],"y":[70,73,76,80,84,87],"mode":"lines+markers","name":"Budget Efficiency","type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"line":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p><strong>Forecasting policy outcomes before implementation</strong></p>
+<ul>
+<li>Machine learning models for impact prediction</li>
+<li>Scenario modeling and simulation</li>
+<li>Risk assessment frameworks</li>
+</ul>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p><strong>Comprehensive policy briefs in minutes</strong></p>
+<ul>
+<li>Template-based report generation</li>
+<li>Dynamic data integration</li>
+<li>Multi-format output (PDF, HTML, presentations)</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="case-study-workshop-punjab-specific-applications-60-minutes" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="case-study-workshop-punjab-specific-applications-60-minutes"><span class="header-section-number">1.3.2</span> Case Study Workshop: Punjab-Specific Applications (60 minutes)</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Group A: Agricultural Policy</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">Group B: Urban Planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false">Group C: Education Policy</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false">Group D: Healthcare Policy</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p><strong>AI analysis of crop patterns, weather data, and market trends</strong></p>
+<p><strong>Objectives:</strong> - Optimize crop recommendations - Predict market prices - Improve farmer income - Enhance food security</p>
+<p><strong>AI Tools:</strong> - Weather prediction models - Market analysis algorithms - Crop optimization systems</p>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p><strong>AI-powered traffic analysis and city development optimization</strong></p>
+<p><strong>Objectives:</strong> - Reduce traffic congestion - Optimize public transport - Plan sustainable development - Improve quality of life</p>
+<p><strong>AI Tools:</strong> - Traffic flow analysis - Population density modeling - Infrastructure optimization</p>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p><strong>AI assessment of educational outcomes and resource allocation</strong></p>
+<p><strong>Objectives:</strong> - Improve learning outcomes - Optimize resource distribution - Reduce dropout rates - Enhance teacher effectiveness</p>
+<p><strong>AI Tools:</strong> - Student performance analytics - Resource allocation optimization - Predictive modeling for interventions</p>
+</div>
+<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<p><strong>AI analysis of health trends and service delivery optimization</strong></p>
+<p><strong>Objectives:</strong> - Improve health outcomes - Optimize hospital resources - Predict disease outbreaks - Enhance preventive care</p>
+<p><strong>AI Tools:</strong> - Epidemiological modeling - Resource optimization algorithms - Health trend analysis systems</p>
+</div>
+</div>
+</div>
+</section>
+<section id="ai-governance-ethics-30-minutes" class="level3" data-number="1.3.3">
+<h3 data-number="1.3.3" class="anchored" data-anchor-id="ai-governance-ethics-30-minutes"><span class="header-section-number">1.3.3</span> AI Governance &amp; Ethics (30 minutes)</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Key Considerations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<dl>
+<dt><strong>Responsible AI Deployment</strong></dt>
+<dd>
+Ensuring transparency and accountability in AI-driven decisions
+</dd>
+<dt><strong>Privacy and Security</strong></dt>
+<dd>
+Protecting citizen data while leveraging AI insights
+</dd>
+<dt><strong>Building Public Trust</strong></dt>
+<dd>
+Communication strategies for AI-driven policy decisions
+</dd>
+</dl>
+</div>
+</div>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TD
+    A[AI Governance Framework] --&gt; B[Transparency]
+    A --&gt; C[Accountability] 
+    A --&gt; D[Privacy Protection]
+    A --&gt; E[Public Trust]
+    
+    B --&gt; F[Explainable AI]
+    C --&gt; G[Decision Audit Trails]
+    D --&gt; H[Data Protection Protocols]
+    E --&gt; I[Public Communication Strategy]
+    
+    F --&gt; J[Policy Implementation]
+    G --&gt; J
+    H --&gt; J
+    I --&gt; J
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="wrap-up-action-planning-430-pm---500-pm" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Wrap-Up &amp; Action Planning (4:30 PM - 5:00 PM)</h1>
+<section id="implementation-roadmap" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="implementation-roadmap"><span class="header-section-number">2.1</span> Implementation Roadmap</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">30-Day Quick Wins</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">90-Day Transformation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">1-Year Vision</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<p><strong>Immediate AI tools participants can implement</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Set up ChatGPT/Claude accounts for team</label></li>
+<li><label><input type="checkbox">Create prompt templates for common tasks</label></li>
+<li><label><input type="checkbox">Implement basic automation workflows</label></li>
+<li><label><input type="checkbox">Train staff on AI tool usage</label></li>
+</ul>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<p><strong>Department-wide AI integration strategy</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Develop AI governance framework</label></li>
+<li><label><input type="checkbox">Pilot AI agents for specific use cases</label></li>
+<li><label><input type="checkbox">Measure productivity improvements</label></li>
+<li><label><input type="checkbox">Scale successful implementations</label></li>
+</ul>
+</div>
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<p><strong>Full AI-powered policy development lifecycle</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Complete digital transformation</label></li>
+<li><label><input type="checkbox">AI-first policy development process</label></li>
+<li><label><input type="checkbox">Continuous learning and optimization</label></li>
+<li><label><input type="checkbox">Knowledge sharing across departments</label></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="resources-continued-learning" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="resources-continued-learning"><span class="header-section-number">2.2</span> Resources &amp; Continued Learning</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Take-Away Resources
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<dl>
+<dt><strong>AI Tool Access</strong></dt>
+<dd>
+Subscriptions and free alternatives
+</dd>
+<dt><strong>Punjab AI Policy Community</strong></dt>
+<dd>
+Ongoing collaboration platform
+</dd>
+<dt><strong>Monthly Follow-up Sessions</strong></dt>
+<dd>
+Continued learning and problem-solving
+</dd>
+</dl>
+</div>
+</div>
+</section>
+</section>
+<section id="enhanced-workshop-outcomes" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Enhanced Workshop Outcomes</h1>
+<section id="immediate-capabilities" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="immediate-capabilities"><span class="header-section-number">3.1</span> Immediate Capabilities</h2>
+<p>Participants will leave with:</p>
+<dl>
+<dt><strong>AI Agent Systems</strong></dt>
+<dd>
+Personal AI assistants configured for their specific policy areas
+</dd>
+<dt><strong>Advanced Prompt Library</strong></dt>
+<dd>
+Tested prompts for common policy analysis tasks
+</dd>
+<dt><strong>Automation Workflows</strong></dt>
+<dd>
+AI systems that continue working after the workshop ends
+</dd>
+</dl>
+</section>
+<section id="strategic-understanding" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="strategic-understanding"><span class="header-section-number">3.2</span> Strategic Understanding</h2>
+<dl>
+<dt><strong>1000x Productivity Mindset</strong></dt>
+<dd>
+How to identify tasks suitable for AI amplification
+</dd>
+<dt><strong>Implementation Strategy</strong></dt>
+<dd>
+Step-by-step plans for AI adoption in their departments
+</dd>
+<dt><strong>Measurement Framework</strong></dt>
+<dd>
+KPIs to track productivity improvements from AI integration
+</dd>
+</dl>
+</section>
+<section id="practical-tools" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="practical-tools"><span class="header-section-number">3.3</span> Practical Tools</h2>
+<div class="cell">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<caption>Expected Productivity Improvements</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Metric</th>
+<th style="text-align: left;">Before_AI</th>
+<th style="text-align: left;">After_AI</th>
+<th style="text-align: left;">Improvement</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Report Generation Time</td>
+<td style="text-align: left;">5-10 days</td>
+<td style="text-align: left;">15-30 minutes</td>
+<td style="text-align: left;">99% faster</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Policy Analysis Accuracy</td>
+<td style="text-align: left;">75%</td>
+<td style="text-align: left;">92%</td>
+<td style="text-align: left;">17% increase</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Public Engagement</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">65%</td>
+<td style="text-align: left;">225% increase</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cost Savings</td>
+<td style="text-align: left;">Baseline</td>
+<td style="text-align: left;">40% reduction</td>
+<td style="text-align: left;">40% cost savings</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="post-workshop-support" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Post-Workshop Support</h1>
+<section id="ongoing-resources" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="ongoing-resources"><span class="header-section-number">4.1</span> Ongoing Resources</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Continuous Learning Framework
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<dl>
+<dt><strong>Monthly AI Office Hours</strong></dt>
+<dd>
+Virtual sessions for troubleshooting and advanced techniques
+</dd>
+<dt><strong>Punjab AI Policy Network</strong></dt>
+<dd>
+Peer-to-peer learning and best practice sharing
+</dd>
+<dt><strong>Quarterly Innovation Challenges</strong></dt>
+<dd>
+Competitions to develop new AI applications for governance
+</dd>
+</dl>
+</div>
+</div>
+</section>
+<section id="advanced-training-tracks" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="advanced-training-tracks"><span class="header-section-number">4.2</span> Advanced Training Tracks</h2>
+<ol type="1">
+<li><strong>Technical Deep-Dive</strong>
+<ul>
+<li>For participants wanting to develop custom AI solutions</li>
+<li>Advanced prompt engineering</li>
+<li>AI model fine-tuning</li>
+</ul></li>
+<li><strong>Leadership Strategy</strong>
+<ul>
+<li>For senior officials planning organization-wide AI transformation</li>
+<li>Change management for AI adoption</li>
+<li>ROI measurement and reporting</li>
+</ul></li>
+<li><strong>Citizen Engagement</strong>
+<ul>
+<li>Using AI to improve public participation in policy-making</li>
+<li>AI-powered public consultation tools</li>
+<li>Transparent AI communication strategies</li>
+</ul></li>
+</ol>
+<hr>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Final Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This workshop incorporates the latest developments in AI technology as of August 2025, including advanced agentic AI systems, multi-modal capabilities, and government-specific AI applications designed to deliver exponential productivity improvements in public policy work.</p>
+</div>
+</div>
+</section>
+<section id="contact-information" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="contact-information"><span class="header-section-number">4.3</span> Contact Information</h2>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Zahedasghar\.github\.io\/ai\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

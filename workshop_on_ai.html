@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Prof.&nbsp;Dr.&nbsp;Zahid Asghar">
+<meta name="dcterms.date" content="2025-08-16">
+
+<title>Advanced AI Applications in Economics, Business &amp; Social Sciences – AI for Teachers, Researchers and Students</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-74710cafea755071f97f3aba5d337df7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="style.scss">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Advanced AI Applications in Economics, Business &amp; Social Sciences</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./images/LLM.webp" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/Zahedasghar" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Materials</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="https://discord.com/channels/1292187441565794316/1292187441565794319" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Discord</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-overview" id="toc-sec-overview" class="nav-link active" data-scroll-target="#sec-overview">Workshop Overview</a>
+  <ul class="collapse">
+  <li><a href="#target-audience-prerequisites" id="toc-target-audience-prerequisites" class="nav-link" data-scroll-target="#target-audience-prerequisites">Target Audience &amp; Prerequisites</a></li>
+  <li><a href="#learning-architecture" id="toc-learning-architecture" class="nav-link" data-scroll-target="#learning-architecture">Learning Architecture</a></li>
+  </ul></li>
+  <li><a href="#sec-day1" id="toc-sec-day1" class="nav-link" data-scroll-target="#sec-day1">Day 1: Advanced AI-Driven Research Design</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#session-structure-2-hours" id="toc-session-structure-2-hours" class="nav-link" data-scroll-target="#session-structure-2-hours">Session Structure (2 hours)</a>
+  <ul class="collapse">
+  <li><a href="#module-1.1-ai-enhanced-research-architecture-40-min" id="toc-module-1.1-ai-enhanced-research-architecture-40-min" class="nav-link" data-scroll-target="#module-1.1-ai-enhanced-research-architecture-40-min">Module 1.1: AI-Enhanced Research Architecture (40 min)</a></li>
+  <li><a href="#module-1.2-advanced-prompt-engineering-for-economics-45-min" id="toc-module-1.2-advanced-prompt-engineering-for-economics-45-min" class="nav-link" data-scroll-target="#module-1.2-advanced-prompt-engineering-for-economics-45-min">Module 1.2: Advanced Prompt Engineering for Economics (45 min)</a></li>
+  <li><a href="#module-1.3-literature-synthesis-theory-integration-30-min" id="toc-module-1.3-literature-synthesis-theory-integration-30-min" class="nav-link" data-scroll-target="#module-1.3-literature-synthesis-theory-integration-30-min">Module 1.3: Literature Synthesis &amp; Theory Integration (30 min)</a></li>
+  <li><a href="#module-1.4-assessment-discussion-25-min" id="toc-module-1.4-assessment-discussion-25-min" class="nav-link" data-scroll-target="#module-1.4-assessment-discussion-25-min">Module 1.4: Assessment &amp; Discussion (25 min)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sec-day2" id="toc-sec-day2" class="nav-link" data-scroll-target="#sec-day2">Day 2: Advanced Econometric Implementation with AI</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-1" id="toc-learning-objectives-1" class="nav-link" data-scroll-target="#learning-objectives-1">Learning Objectives</a></li>
+  <li><a href="#session-structure-2-hours-1" id="toc-session-structure-2-hours-1" class="nav-link" data-scroll-target="#session-structure-2-hours-1">Session Structure (2 hours)</a>
+  <ul class="collapse">
+  <li><a href="#module-2.1-ai-enhanced-econometric-modeling-50-min" id="toc-module-2.1-ai-enhanced-econometric-modeling-50-min" class="nav-link" data-scroll-target="#module-2.1-ai-enhanced-econometric-modeling-50-min">Module 2.1: AI-Enhanced Econometric Modeling (50 min)</a></li>
+  <li><a href="#module-2.2-causal-machine-learning-applications-45-min" id="toc-module-2.2-causal-machine-learning-applications-45-min" class="nav-link" data-scroll-target="#module-2.2-causal-machine-learning-applications-45-min">Module 2.2: Causal Machine Learning Applications (45 min)</a></li>
+  <li><a href="#module-2.3-business-analytics-integration-20-min" id="toc-module-2.3-business-analytics-integration-20-min" class="nav-link" data-scroll-target="#module-2.3-business-analytics-integration-20-min">Module 2.3: Business Analytics Integration (20 min)</a></li>
+  <li><a href="#module-2.4-results-interpretation-communication-5-min" id="toc-module-2.4-results-interpretation-communication-5-min" class="nav-link" data-scroll-target="#module-2.4-results-interpretation-communication-5-min">Module 2.4: Results Interpretation &amp; Communication (5 min)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sec-day3" id="toc-sec-day3" class="nav-link" data-scroll-target="#sec-day3">Day 3: Policy Applications and Advanced Implementation</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives-2" id="toc-learning-objectives-2" class="nav-link" data-scroll-target="#learning-objectives-2">Learning Objectives</a></li>
+  <li><a href="#session-structure-2-hours-2" id="toc-session-structure-2-hours-2" class="nav-link" data-scroll-target="#session-structure-2-hours-2">Session Structure (2 hours)</a>
+  <ul class="collapse">
+  <li><a href="#module-3.1-advanced-policy-analysis-45-min" id="toc-module-3.1-advanced-policy-analysis-45-min" class="nav-link" data-scroll-target="#module-3.1-advanced-policy-analysis-45-min">Module 3.1: Advanced Policy Analysis (45 min)</a></li>
+  <li><a href="#module-3.2-economic-forecasting-and-scenario-analysis-35-min" id="toc-module-3.2-economic-forecasting-and-scenario-analysis-35-min" class="nav-link" data-scroll-target="#module-3.2-economic-forecasting-and-scenario-analysis-35-min">Module 3.2: Economic Forecasting and Scenario Analysis (35 min)</a></li>
+  <li><a href="#module-3.3-business-intelligence-and-market-analysis-30-min" id="toc-module-3.3-business-intelligence-and-market-analysis-30-min" class="nav-link" data-scroll-target="#module-3.3-business-intelligence-and-market-analysis-30-min">Module 3.3: Business Intelligence and Market Analysis (30 min)</a></li>
+  <li><a href="#module-3.4-integration-and-implementation-planning-30-min" id="toc-module-3.4-integration-and-implementation-planning-30-min" class="nav-link" data-scroll-target="#module-3.4-integration-and-implementation-planning-30-min">Module 3.4: Integration and Implementation Planning (30 min)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sec-assessment" id="toc-sec-assessment" class="nav-link" data-scroll-target="#sec-assessment">Assessment Framework</a>
+  <ul class="collapse">
+  <li><a href="#comprehensive-evaluation-strategy" id="toc-comprehensive-evaluation-strategy" class="nav-link" data-scroll-target="#comprehensive-evaluation-strategy">Comprehensive Evaluation Strategy</a>
+  <ul class="collapse">
+  <li><a href="#advanced-project-portfolio-60" id="toc-advanced-project-portfolio-60" class="nav-link" data-scroll-target="#advanced-project-portfolio-60">Advanced Project Portfolio (60%)</a></li>
+  <li><a href="#advanced-skills-assessment-25" id="toc-advanced-skills-assessment-25" class="nav-link" data-scroll-target="#advanced-skills-assessment-25">Advanced Skills Assessment (25%)</a></li>
+  <li><a href="#collaborative-learning-15" id="toc-collaborative-learning-15" class="nav-link" data-scroll-target="#collaborative-learning-15">Collaborative Learning (15%)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sec-resources" id="toc-sec-resources" class="nav-link" data-scroll-target="#sec-resources">Resources and References</a>
+  <ul class="collapse">
+  <li><a href="#essential-software-and-tools" id="toc-essential-software-and-tools" class="nav-link" data-scroll-target="#essential-software-and-tools">Essential Software and Tools</a>
+  <ul class="collapse">
+  <li><a href="#statistical-software" id="toc-statistical-software" class="nav-link" data-scroll-target="#statistical-software">Statistical Software</a></li>
+  <li><a href="#ai-platforms" id="toc-ai-platforms" class="nav-link" data-scroll-target="#ai-platforms">AI Platforms</a></li>
+  </ul></li>
+  <li><a href="#advanced-reading-list" id="toc-advanced-reading-list" class="nav-link" data-scroll-target="#advanced-reading-list">Advanced Reading List</a>
+  <ul class="collapse">
+  <li><a href="#core-methodological-references" id="toc-core-methodological-references" class="nav-link" data-scroll-target="#core-methodological-references">Core Methodological References</a></li>
+  <li><a href="#applied-economics-applications" id="toc-applied-economics-applications" class="nav-link" data-scroll-target="#applied-economics-applications">Applied Economics Applications</a></li>
+  <li><a href="#ai-and-economics-integration" id="toc-ai-and-economics-integration" class="nav-link" data-scroll-target="#ai-and-economics-integration">AI and Economics Integration</a></li>
+  </ul></li>
+  <li><a href="#data-sources-and-practice-datasets" id="toc-data-sources-and-practice-datasets" class="nav-link" data-scroll-target="#data-sources-and-practice-datasets">Data Sources and Practice Datasets</a>
+  <ul class="collapse">
+  <li><a href="#economic-data" id="toc-economic-data" class="nav-link" data-scroll-target="#economic-data">Economic Data</a></li>
+  <li><a href="#business-and-finance" id="toc-business-and-finance" class="nav-link" data-scroll-target="#business-and-finance">Business and Finance</a></li>
+  <li><a href="#social-science-data" id="toc-social-science-data" class="nav-link" data-scroll-target="#social-science-data">Social Science Data</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sec-pathways" id="toc-sec-pathways" class="nav-link" data-scroll-target="#sec-pathways">Extended Learning Pathways</a>
+  <ul class="collapse">
+  <li><a href="#immediate-implementation-weeks-1-4" id="toc-immediate-implementation-weeks-1-4" class="nav-link" data-scroll-target="#immediate-implementation-weeks-1-4">Immediate Implementation (Weeks 1-4)</a>
+  <ul class="collapse">
+  <li><a href="#week-1-tool-integration" id="toc-week-1-tool-integration" class="nav-link" data-scroll-target="#week-1-tool-integration">Week 1: Tool Integration</a></li>
+  <li><a href="#week-2-method-application" id="toc-week-2-method-application" class="nav-link" data-scroll-target="#week-2-method-application">Week 2: Method Application</a></li>
+  <li><a href="#week-3-collaboration-building" id="toc-week-3-collaboration-building" class="nav-link" data-scroll-target="#week-3-collaboration-building">Week 3: Collaboration Building</a></li>
+  <li><a href="#week-4-project-development" id="toc-week-4-project-development" class="nav-link" data-scroll-target="#week-4-project-development">Week 4: Project Development</a></li>
+  </ul></li>
+  <li><a href="#intermediate-development-months-2-6" id="toc-intermediate-development-months-2-6" class="nav-link" data-scroll-target="#intermediate-development-months-2-6">Intermediate Development (Months 2-6)</a>
+  <ul class="collapse">
+  <li><a href="#advanced-skill-building" id="toc-advanced-skill-building" class="nav-link" data-scroll-target="#advanced-skill-building">Advanced Skill Building</a></li>
+  <li><a href="#research-output" id="toc-research-output" class="nav-link" data-scroll-target="#research-output">Research Output</a></li>
+  <li><a href="#community-engagement" id="toc-community-engagement" class="nav-link" data-scroll-target="#community-engagement">Community Engagement</a></li>
+  </ul></li>
+  <li><a href="#long-term-excellence-6-months" id="toc-long-term-excellence-6-months" class="nav-link" data-scroll-target="#long-term-excellence-6-months">Long-term Excellence (6+ Months)</a>
+  <ul class="collapse">
+  <li><a href="#thought-leadership" id="toc-thought-leadership" class="nav-link" data-scroll-target="#thought-leadership">Thought Leadership</a></li>
+  <li><a href="#research-impact" id="toc-research-impact" class="nav-link" data-scroll-target="#research-impact">Research Impact</a></li>
+  <li><a href="#knowledge-sharing" id="toc-knowledge-sharing" class="nav-link" data-scroll-target="#knowledge-sharing">Knowledge Sharing</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Advanced AI Applications in Economics, Business &amp; Social Sciences</h1>
+<p class="subtitle lead">3-Day Intensive Workshop for Researchers and Practitioners</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Prof.&nbsp;Dr.&nbsp;Zahid Asghar </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 16, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sec-overview" class="level1">
+<h1>Workshop Overview</h1>
+<section id="target-audience-prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="target-audience-prerequisites">Target Audience &amp; Prerequisites</h2>
+<p><strong>Participants:</strong> Advanced researchers, policy analysts, business intelligence professionals, and doctoral students in economics, business, and social sciences.</p>
+<p><strong>Prerequisites:</strong> - Intermediate knowledge of econometrics and statistical modeling - Proficiency in R or Python for data analysis - Experience with research design and methodology - Basic understanding of machine learning concepts - Familiarity with academic writing and publication processes</p>
+<p><strong>Difficulty Level:</strong> Above Average (70-80th percentile)</p>
+</section>
+<section id="learning-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="learning-architecture">Learning Architecture</h2>
+<p>This workshop employs a <strong>problem-based learning approach</strong> where participants tackle real-world economic and social challenges using cutting-edge AI methodologies. Each session integrates theoretical frameworks with hands-on implementation using R, Python, and AI-assisted research workflows.</p>
+<hr>
+</section>
+</section>
+<section id="sec-day1" class="level1">
+<h1>Day 1: Advanced AI-Driven Research Design</h1>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<p>Upon completion, participants will:</p>
+<ol type="1">
+<li><strong>Design sophisticated research frameworks</strong> using AI for complex economic phenomena</li>
+<li><strong>Implement advanced prompt engineering</strong> for academic and policy research</li>
+<li><strong>Evaluate AI-generated hypotheses</strong> using economic theory and empirical validation</li>
+<li><strong>Construct reproducible research pipelines</strong> integrating AI tools with traditional econometric methods</li>
+</ol>
+</section>
+<section id="session-structure-2-hours" class="level2">
+<h2 class="anchored" data-anchor-id="session-structure-2-hours">Session Structure (2 hours)</h2>
+<section id="module-1.1-ai-enhanced-research-architecture-40-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-1.1-ai-enhanced-research-architecture-40-min">Module 1.1: AI-Enhanced Research Architecture (40 min)</h3>
+<section id="theoretical-foundation" class="level4">
+<h4 class="anchored" data-anchor-id="theoretical-foundation">Theoretical Foundation</h4>
+<ul>
+<li><strong>Causal Inference in the AI Era:</strong> Integrating machine learning with economic identification strategies</li>
+<li><strong>Hypothesis Generation Systems:</strong> Using LLMs for theory development and literature synthesis</li>
+<li><strong>Multi-modal Research Design:</strong> Combining textual, numerical, and network data</li>
+</ul>
+</section>
+<section id="applied-case-studies" class="level4">
+<h4 class="anchored" data-anchor-id="applied-case-studies">Applied Case Studies</h4>
+<ol type="1">
+<li><strong>Labor Economics:</strong> AI impact on wage inequality across skill distributions</li>
+<li><strong>Development Economics:</strong> Digital financial inclusion and economic growth</li>
+<li><strong>Behavioral Economics:</strong> Social media influence on consumer decision-making</li>
+</ol>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example: AI-assisted research design for digital divide study</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fixest)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(modelsummary)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Research question generation using structured prompts</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>research_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">Context: Digital divide in emerging economies</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">Theoretical framework: Technology adoption models (Rogers, 1962; Venkatesh et al., 2003)</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">Data availability: Household surveys, internet infrastructure, economic indicators</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">Identification strategy: Geographic discontinuities in fiber optic rollout</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="st">Generate 3 sophisticated research hypotheses that:</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="st">1. Link to established economic theory</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="st">2. Are empirically testable</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="st">3. Have policy relevance</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="st">4. Address potential endogeneity concerns</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co"># This would be sent to AI for hypothesis generation</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Then implemented in econometric framework</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="module-1.2-advanced-prompt-engineering-for-economics-45-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-1.2-advanced-prompt-engineering-for-economics-45-min">Module 1.2: Advanced Prompt Engineering for Economics (45 min)</h3>
+<section id="sophisticated-prompting-strategies" class="level4">
+<h4 class="anchored" data-anchor-id="sophisticated-prompting-strategies">Sophisticated Prompting Strategies</h4>
+<ul>
+<li><strong>Chain-of-Thought Reasoning:</strong> Multi-step economic problem solving</li>
+<li><strong>Few-Shot Learning:</strong> Domain-specific examples for economic contexts</li>
+<li><strong>Constitutional AI:</strong> Building ethical constraints into economic research</li>
+</ul>
+</section>
+<section id="hands-on-exercise-labor-market-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="hands-on-exercise-labor-market-analysis">Hands-On Exercise: Labor Market Analysis</h4>
+<p><strong>Problem:</strong> Analyze the heterogeneous effects of automation on employment across demographic groups and geographic regions.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Advanced prompt structure for economic analysis</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>automation_prompt <span class="op">=</span> <span class="ss">f"""</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ss">You are an expert labor economist analyzing automation impacts. </span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ss">CONTEXT:</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- Industry: </span><span class="sc">{</span>industry_data<span class="sc">}</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- Time period: 2010-2023</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- Geographic scope: </span><span class="sc">{</span>region_data<span class="sc">}</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ss">- Theoretical framework: Task-based model (Autor et al., 2003)</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="ss">ANALYTICAL REQUIREMENTS:</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="ss">1. Identify heterogeneous treatment effects across:</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="ss">   - Education levels (high school, college, advanced degrees)</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="ss">   - Age cohorts (25-35, 36-50, 51-65)</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="ss">   - Geographic regions (urban, suburban, rural)</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="ss">2. Consider endogeneity concerns:</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="ss">   - Reverse causality (employment affecting automation adoption)</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="ss">   - Omitted variable bias (unobserved productivity shocks)</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="ss">   - Selection bias (industries choosing automation)</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="ss">3. Propose identification strategy using:</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="ss">   - Instrumental variables</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="ss">   - Difference-in-differences</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="ss">   - Synthetic control methods</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="ss">Provide R code for implementation and interpretation guidelines.</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="ss">"""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="module-1.3-literature-synthesis-theory-integration-30-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-1.3-literature-synthesis-theory-integration-30-min">Module 1.3: Literature Synthesis &amp; Theory Integration (30 min)</h3>
+<section id="advanced-literature-review-techniques" class="level4">
+<h4 class="anchored" data-anchor-id="advanced-literature-review-techniques">Advanced Literature Review Techniques</h4>
+<ul>
+<li><strong>Semantic Analysis:</strong> Identifying theoretical gaps using NLP</li>
+<li><strong>Citation Network Analysis:</strong> Mapping research frontiers</li>
+<li><strong>Meta-Analysis Enhancement:</strong> AI-assisted effect size estimation</li>
+</ul>
+</section>
+<section id="practical-application-social-sciences-integration" class="level4">
+<h4 class="anchored" data-anchor-id="practical-application-social-sciences-integration">Practical Application: Social Sciences Integration</h4>
+<p><strong>Case Study:</strong> Mental health economics post-COVID-19</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted systematic literature review</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(bibliometrix)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(igraph)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tm)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Structured prompt for literature synthesis</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>mental_health_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="st">Conduct a comprehensive literature synthesis on mental health economics post-COVID-19.</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="st">SCOPE:</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="st">- Peer-reviewed articles (2020-2024)</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="st">- Focus: Economic costs, policy interventions, healthcare utilization</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="st">- Geographic coverage: Global, with emphasis on OECD countries</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="st">ANALYTICAL FRAMEWORK:</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="st">1. Theoretical mechanisms linking economic shocks to mental health</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="st">2. Empirical identification strategies used in recent studies</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="st">3. Policy intervention effectiveness and cost-benefit analyses</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="st">4. Methodological innovations and limitations</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="st">OUTPUT REQUIREMENTS:</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="st">- Categorize findings by economic theory (human capital, health capital, etc.)</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a><span class="st">- Identify research gaps for future investigation</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="st">- Propose integrated conceptual framework</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a><span class="st">- Generate testable hypotheses for empirical work</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementation would combine AI synthesis with bibliometric analysis</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="module-1.4-assessment-discussion-25-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-1.4-assessment-discussion-25-min">Module 1.4: Assessment &amp; Discussion (25 min)</h3>
+<section id="collaborative-problem-solving" class="level4">
+<h4 class="anchored" data-anchor-id="collaborative-problem-solving">Collaborative Problem-Solving</h4>
+<ul>
+<li><strong>Peer Review Exercise:</strong> Evaluate AI-generated research designs</li>
+<li><strong>Theoretical Validation:</strong> Check economic theory consistency</li>
+<li><strong>Methodological Critique:</strong> Assess identification strategies</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+</section>
+<section id="sec-day2" class="level1">
+<h1>Day 2: Advanced Econometric Implementation with AI</h1>
+<section id="learning-objectives-1" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives-1">Learning Objectives</h2>
+<p>Participants will:</p>
+<ol type="1">
+<li><strong>Implement sophisticated econometric models</strong> with AI assistance for specification and interpretation</li>
+<li><strong>Conduct advanced causal inference</strong> using AI for robustness testing and sensitivity analysis</li>
+<li><strong>Perform heterogeneous effect analysis</strong> across complex demographic and economic dimensions</li>
+<li><strong>Generate publication-ready results</strong> with AI-enhanced visualization and reporting</li>
+</ol>
+</section>
+<section id="session-structure-2-hours-1" class="level2">
+<h2 class="anchored" data-anchor-id="session-structure-2-hours-1">Session Structure (2 hours)</h2>
+<section id="module-2.1-ai-enhanced-econometric-modeling-50-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-2.1-ai-enhanced-econometric-modeling-50-min">Module 2.1: AI-Enhanced Econometric Modeling (50 min)</h3>
+<section id="advanced-model-specification" class="level4">
+<h4 class="anchored" data-anchor-id="advanced-model-specification">Advanced Model Specification</h4>
+<ul>
+<li><strong>Automated Model Selection:</strong> Using AI for specification testing</li>
+<li><strong>Instrumental Variable Discovery:</strong> AI-assisted instrument validation</li>
+<li><strong>Heterogeneous Effects Modeling:</strong> Machine learning for effect heterogeneity</li>
+</ul>
+</section>
+<section id="applied-exercise-trade-and-development" class="level4">
+<h4 class="anchored" data-anchor-id="applied-exercise-trade-and-development">Applied Exercise: Trade and Development</h4>
+<p><strong>Research Question:</strong> How do bilateral trade agreements affect income inequality within developing countries, and how do these effects vary by institutional quality and industrial structure?</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fixest)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(did)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(grf)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(modelsummary)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted model specification prompt</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>trade_model_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="st">RESEARCH CONTEXT:</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="st">- Dependent variable: Gini coefficient (income inequality)</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="st">- Treatment: Bilateral trade agreement implementation</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="st">- Unit of analysis: Country-year (1990-2020)</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="st">- Sample: 85 developing countries</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="st">THEORETICAL FRAMEWORK:</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="st">- Stolper-Samuelson theorem predictions</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="st">- Heckscher-Ohlin model extensions</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="st">- Institutional economics (North, 1990)</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="st">ECONOMETRIC CHALLENGES:</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="st">1. Endogenous treatment (trade agreements not randomly assigned)</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="st">2. Time-varying confounders (economic reforms, political changes)</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="st">3. Heterogeneous treatment effects by:</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="st">   - Institutional quality (governance indicators)</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="st">   - Industrial structure (manufacturing vs. primary exports)</span></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="st">   - Initial inequality levels</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="st">SPECIFICATION REQUIREMENTS:</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="st">- Propose instrumental variable strategy</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="st">- Design difference-in-differences with multiple periods</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="st">- Include heterogeneous effects analysis</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="st">- Address potential spillover effects</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="st">Provide complete R code with robustness checks.</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Econometric implementation</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>trade_model <span class="ot">&lt;-</span> <span class="fu">feols</span>(</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  gini <span class="sc">~</span> <span class="fu">i</span>(post_agreement, institutional_quality, <span class="at">ref =</span> <span class="dv">0</span>) <span class="sc">+</span> </span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>         manufacturing_share <span class="sc">+</span> gdp_pc <span class="sc">+</span> population <span class="sc">|</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>         country <span class="sc">+</span> year,</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> trade_data,</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  <span class="at">cluster =</span> <span class="sc">~</span>country</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Heterogeneous effects using causal forests</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>cf_model <span class="ot">&lt;-</span> <span class="fu">causal_forest</span>(</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>  <span class="at">X =</span> trade_data[, <span class="fu">c</span>(<span class="st">"institutional_quality"</span>, <span class="st">"manufacturing_share"</span>, <span class="st">"gdp_pc"</span>)],</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>  <span class="at">Y =</span> trade_data<span class="sc">$</span>gini,</span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>  <span class="at">W =</span> trade_data<span class="sc">$</span>trade_agreement,</span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>  <span class="at">num.trees =</span> <span class="dv">4000</span></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted interpretation of results</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="module-2.2-causal-machine-learning-applications-45-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-2.2-causal-machine-learning-applications-45-min">Module 2.2: Causal Machine Learning Applications (45 min)</h3>
+<section id="advanced-causal-inference-methods" class="level4">
+<h4 class="anchored" data-anchor-id="advanced-causal-inference-methods">Advanced Causal Inference Methods</h4>
+<ul>
+<li><strong>Double Machine Learning:</strong> For high-dimensional confounders</li>
+<li><strong>Causal Forests:</strong> Heterogeneous treatment effects</li>
+<li><strong>Synthetic Controls:</strong> Enhanced with machine learning</li>
+</ul>
+</section>
+<section id="case-study-urban-economics-and-housing-policy" class="level4">
+<h4 class="anchored" data-anchor-id="case-study-urban-economics-and-housing-policy">Case Study: Urban Economics and Housing Policy</h4>
+<p><strong>Problem:</strong> Evaluate the causal impact of affordable housing programs on neighborhood gentrification and resident displacement.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Python implementation for causal ML</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> econml.dml <span class="im">import</span> CausalForestDML</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> econml.dr <span class="im">import</span> DRLearner</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestRegressor</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># AI prompt for causal identification</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>housing_prompt <span class="op">=</span> <span class="st">"""</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="st">CAUSAL INFERENCE CHALLENGE:</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="st">Estimate heterogeneous effects of affordable housing programs on:</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="st">1. Property values (potential displacement mechanism)</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="st">2. Demographic composition changes</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="st">3. Local business dynamics</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="st">4. Educational outcomes for children</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="st">DATA STRUCTURE:</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="st">- Unit: Census tract-year</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="st">- Treatment: Affordable housing units per capita</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="st">- Outcomes: Multiple (property values, demographics, etc.)</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="st">- Confounders: High-dimensional (200+ variables)</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="st">IDENTIFICATION STRATEGY:</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="st">Use double machine learning with:</span></span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="st">- Random Forest for nuisance function estimation</span></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="st">- Causal Forest for heterogeneous effects</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="st">- Cross-fitting for bias reduction</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="st">Consider heterogeneity by:</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="st">- Baseline neighborhood characteristics</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="st">- City size and housing market conditions</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="st">- Policy implementation details</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="st">Provide interpretation framework for policy recommendations.</span></span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementation using EconML</span></span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>cf_dml <span class="op">=</span> CausalForestDML(</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>    model_y<span class="op">=</span>RandomForestRegressor(n_estimators<span class="op">=</span><span class="dv">100</span>),</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>    model_t<span class="op">=</span>RandomForestRegressor(n_estimators<span class="op">=</span><span class="dv">100</span>),</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>    discrete_treatment<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>    random_state<span class="op">=</span><span class="dv">42</span></span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit model and analyze heterogeneous effects</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="module-2.3-business-analytics-integration-20-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-2.3-business-analytics-integration-20-min">Module 2.3: Business Analytics Integration (20 min)</h3>
+<section id="marketing-and-consumer-behavior" class="level4">
+<h4 class="anchored" data-anchor-id="marketing-and-consumer-behavior">Marketing and Consumer Behavior</h4>
+<ul>
+<li><strong>Price Elasticity Estimation:</strong> Using scanner data and AI</li>
+<li><strong>Customer Segmentation:</strong> Advanced clustering with economic theory</li>
+<li><strong>Platform Economics:</strong> Network effects and two-sided markets</li>
+</ul>
+</section>
+<section id="quick-exercise-digital-platform-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="quick-exercise-digital-platform-analysis">Quick Exercise: Digital Platform Analysis</h4>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted analysis of platform network effects</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>platform_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="st">BUSINESS CONTEXT:</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="st">Analyze network effects in ride-sharing markets across different cities.</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="st">KEY VARIABLES:</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="st">- Driver supply and passenger demand</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="st">- Surge pricing mechanisms</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="st">- Competitive dynamics</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="st">- Regulatory environment</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="st">ECONOMIC QUESTIONS:</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="st">1. How do network effects vary by city characteristics?</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="st">2. What's the optimal pricing strategy for market entry?</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="st">3. How do regulations affect platform efficiency?</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="st">Propose econometric approach using platform theory.</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementation would follow similar pattern</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="module-2.4-results-interpretation-communication-5-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-2.4-results-interpretation-communication-5-min">Module 2.4: Results Interpretation &amp; Communication (5 min)</h3>
+<section id="ai-enhanced-reporting" class="level4">
+<h4 class="anchored" data-anchor-id="ai-enhanced-reporting">AI-Enhanced Reporting</h4>
+<ul>
+<li><strong>Automated Result Interpretation:</strong> Economic significance assessment</li>
+<li><strong>Policy Implication Generation:</strong> Translating coefficients to policy language</li>
+<li><strong>Visualization Recommendations:</strong> Effective communication strategies</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+</section>
+<section id="sec-day3" class="level1">
+<h1>Day 3: Policy Applications and Advanced Implementation</h1>
+<section id="learning-objectives-2" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives-2">Learning Objectives</h2>
+<p>Participants will:</p>
+<ol type="1">
+<li><strong>Design comprehensive policy analysis frameworks</strong> using AI-enhanced methodologies</li>
+<li><strong>Implement real-time economic monitoring systems</strong> with AI-driven indicators</li>
+<li><strong>Conduct advanced forecasting and scenario analysis</strong> for policy planning</li>
+<li><strong>Create reproducible research workflows</strong> integrating multiple AI tools and traditional methods</li>
+</ol>
+</section>
+<section id="session-structure-2-hours-2" class="level2">
+<h2 class="anchored" data-anchor-id="session-structure-2-hours-2">Session Structure (2 hours)</h2>
+<section id="module-3.1-advanced-policy-analysis-45-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-3.1-advanced-policy-analysis-45-min">Module 3.1: Advanced Policy Analysis (45 min)</h3>
+<section id="comprehensive-policy-evaluation-framework" class="level4">
+<h4 class="anchored" data-anchor-id="comprehensive-policy-evaluation-framework">Comprehensive Policy Evaluation Framework</h4>
+<ul>
+<li><strong>Ex-ante Policy Assessment:</strong> AI-assisted impact prediction</li>
+<li><strong>Real-time Monitoring:</strong> Dynamic policy adjustment mechanisms</li>
+<li><strong>Counterfactual Scenario Generation:</strong> What-if analysis for policy alternatives</li>
+</ul>
+</section>
+<section id="major-case-study-climate-economics-and-carbon-pricing" class="level4">
+<h4 class="anchored" data-anchor-id="major-case-study-climate-economics-and-carbon-pricing">Major Case Study: Climate Economics and Carbon Pricing</h4>
+<p><strong>Policy Challenge:</strong> Design optimal carbon pricing mechanism considering economic efficiency, distributional effects, and political feasibility across different economic sectors and regions.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(forecast)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(vars)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mgcv)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Complex policy analysis prompt</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>carbon_policy_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="st">POLICY DESIGN CHALLENGE:</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="st">Optimal carbon pricing for middle-income country with:</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="st">- Mixed economy (agriculture 30%, manufacturing 25%, services 45%)</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="st">- High income inequality (Gini: 0.48)</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="st">- Limited fiscal capacity</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="st">- Strong export dependence</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="st">ANALYTICAL REQUIREMENTS:</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="st">1. Economic Efficiency Analysis:</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="st">   - Marginal abatement cost curves by sector</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="st">   - General equilibrium effects on GDP, employment</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="st">   - International competitiveness impacts</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a><span class="st">2. Distributional Impact Assessment:</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a><span class="st">   - Income effects across quintiles</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a><span class="st">   - Regional variation (urban vs. rural)</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="st">   - Sectoral employment transitions</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a><span class="st">3. Political Economy Considerations:</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a><span class="st">   - Stakeholder resistance analysis</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a><span class="st">   - Revenue recycling options</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a><span class="st">   - Phased implementation strategies</span></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a><span class="st">4. Dynamic Optimization:</span></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a><span class="st">   - Optimal price trajectory (2025-2050)</span></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="st">   - Uncertainty and option value</span></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a><span class="st">   - International coordination mechanisms</span></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a><span class="st">METHODOLOGICAL APPROACH:</span></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a><span class="st">- Integrated Assessment Modeling (IAM)</span></span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="st">- Computable General Equilibrium (CGE)</span></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a><span class="st">- Political economy modeling</span></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a><span class="st">- Monte Carlo simulation for uncertainty</span></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a><span class="st">Provide R implementation strategy and policy recommendation framework.</span></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Integrated assessment model setup</span></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>iam_data <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a>  <span class="at">year =</span> <span class="dv">2025</span><span class="sc">:</span><span class="dv">2050</span>,</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a>  <span class="at">carbon_price =</span> <span class="fu">seq</span>(<span class="dv">10</span>, <span class="dv">100</span>, <span class="at">length.out =</span> <span class="dv">26</span>),</span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>  <span class="at">gdp_impact =</span> <span class="cn">NA</span>,</span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a>  <span class="at">emission_reduction =</span> <span class="cn">NA</span>,</span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>  <span class="at">welfare_change =</span> <span class="cn">NA</span></span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a><span class="co"># AI would help specify functional forms and parameters</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="module-3.2-economic-forecasting-and-scenario-analysis-35-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-3.2-economic-forecasting-and-scenario-analysis-35-min">Module 3.2: Economic Forecasting and Scenario Analysis (35 min)</h3>
+<section id="advanced-forecasting-systems" class="level4">
+<h4 class="anchored" data-anchor-id="advanced-forecasting-systems">Advanced Forecasting Systems</h4>
+<ul>
+<li><strong>Multi-model Ensemble Forecasting:</strong> Combining AI and traditional methods</li>
+<li><strong>Structural Break Detection:</strong> AI-assisted change point analysis</li>
+<li><strong>Scenario Planning:</strong> Comprehensive what-if analysis</li>
+</ul>
+</section>
+<section id="applied-exercise-social-security-reform-analysis" class="level4">
+<h4 class="anchored" data-anchor-id="applied-exercise-social-security-reform-analysis">Applied Exercise: Social Security Reform Analysis</h4>
+<p><strong>Problem:</strong> Evaluate long-term sustainability of pension systems under different demographic and economic scenarios.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Advanced forecasting framework</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> statsmodels.tsa.vector_ar.var_model <span class="im">import</span> VAR</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.ensemble <span class="im">import</span> RandomForestRegressor</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted scenario generation</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>pension_prompt <span class="op">=</span> <span class="st">"""</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="st">FORECASTING CHALLENGE:</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="st">Project pension system sustainability (2025-2075) considering:</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="st">DEMOGRAPHIC DYNAMICS:</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a><span class="st">- Fertility rate evolution</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="st">- Mortality improvements</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="st">- Migration patterns</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="st">- Labor force participation</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="st">ECONOMIC FACTORS:</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="st">- Productivity growth scenarios</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a><span class="st">- Wage growth patterns</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a><span class="st">- Financial market returns</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="st">- Inflation dynamics</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="st">POLICY SCENARIOS:</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a><span class="st">1. Status quo (baseline)</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="st">2. Gradual retirement age increase</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="st">3. Benefit indexation changes</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="st">4. Contribution rate adjustments</span></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="st">5. Hybrid private-public system</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a><span class="st">ANALYTICAL REQUIREMENTS:</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="st">- Stochastic demographic projections</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="st">- Economic scenario generation</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a><span class="st">- Actuarial balance calculations</span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a><span class="st">- Distributional impact analysis</span></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="st">- Political feasibility assessment</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a><span class="st">Generate comprehensive forecasting framework with uncertainty quantification.</span></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementation using ensemble methods</span></span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> PensionForecaster:</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>):</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.demographic_model <span class="op">=</span> VAR()</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.economic_model <span class="op">=</span> RandomForestRegressor()</span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.policy_scenarios <span class="op">=</span> {}</span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> generate_scenarios(<span class="va">self</span>, n_simulations<span class="op">=</span><span class="dv">1000</span>):</span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>        <span class="co"># AI-assisted scenario generation</span></span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>        <span class="cf">pass</span></span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forecast_sustainability(<span class="va">self</span>, horizon<span class="op">=</span><span class="dv">50</span>):</span>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Integrated forecasting framework</span></span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a>        <span class="cf">pass</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="module-3.3-business-intelligence-and-market-analysis-30-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-3.3-business-intelligence-and-market-analysis-30-min">Module 3.3: Business Intelligence and Market Analysis (30 min)</h3>
+<section id="advanced-business-applications" class="level4">
+<h4 class="anchored" data-anchor-id="advanced-business-applications">Advanced Business Applications</h4>
+<ul>
+<li><strong>Market Structure Analysis:</strong> Competition and innovation dynamics</li>
+<li><strong>Consumer Behavior Prediction:</strong> Advanced choice modeling</li>
+<li><strong>Supply Chain Optimization:</strong> AI-enhanced network analysis</li>
+</ul>
+</section>
+<section id="case-study-digital-transformation-and-productivity" class="level4">
+<h4 class="anchored" data-anchor-id="case-study-digital-transformation-and-productivity">Case Study: Digital Transformation and Productivity</h4>
+<p><strong>Business Problem:</strong> Assess the productivity impacts of digital transformation across different industries and firm sizes, with implications for competitive strategy and policy support.</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprehensive business analysis framework</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>digital_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="st">BUSINESS ANALYTICS CHALLENGE:</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="st">Analyze digital transformation impact on firm productivity with:</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="st">FIRM-LEVEL DATA:</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="st">- Financial performance (revenue, costs, profits)</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="st">- Digital adoption indicators (cloud, AI, automation)</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="st">- Employment and skill composition</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="st">- Market position and competition</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="st">INDUSTRY DIMENSIONS:</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="st">- Manufacturing vs. services</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="st">- B2B vs. B2C orientation</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="st">- Regulatory intensity</span></span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a><span class="st">- Network effects potential</span></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a><span class="st">ANALYTICAL FRAMEWORK:</span></span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="st">1. Production Function Estimation:</span></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="st">   - Digital capital measurement</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a><span class="st">   - Spillover effects</span></span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a><span class="st">   - Complementarity with human capital</span></span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="st">2. Market Structure Impact:</span></span>
+<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="st">   - Concentration changes</span></span>
+<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="st">   - Entry/exit dynamics</span></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="st">   - Innovation patterns</span></span>
+<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a><span class="st">3. Strategic Implications:</span></span>
+<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a><span class="st">   - First-mover advantages</span></span>
+<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a><span class="st">   - Platform strategies</span></span>
+<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a><span class="st">   - Ecosystem development</span></span>
+<span id="cb9-33"><a href="#cb9-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-34"><a href="#cb9-34" aria-hidden="true" tabindex="-1"></a><span class="st">Provide econometric specification and business strategy framework.</span></span>
+<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Production function with digital capital</span></span>
+<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a>prod_function <span class="ot">&lt;-</span> <span class="fu">feols</span>(</span>
+<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">log</span>(value_added) <span class="sc">~</span> <span class="fu">log</span>(labor) <span class="sc">+</span> <span class="fu">log</span>(physical_capital) <span class="sc">+</span> </span>
+<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>                     <span class="fu">log</span>(digital_capital) <span class="sc">+</span> </span>
+<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>                     digital_capital<span class="sc">:</span>human_capital <span class="sc">|</span></span>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>                     firm <span class="sc">+</span> year <span class="sc">+</span> industry<span class="sc">:</span>year,</span>
+<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> firm_data,</span>
+<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>  <span class="at">cluster =</span> <span class="sc">~</span>firm</span>
+<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="module-3.4-integration-and-implementation-planning-30-min" class="level3">
+<h3 class="anchored" data-anchor-id="module-3.4-integration-and-implementation-planning-30-min">Module 3.4: Integration and Implementation Planning (30 min)</h3>
+<section id="reproducible-research-workflows" class="level4">
+<h4 class="anchored" data-anchor-id="reproducible-research-workflows">Reproducible Research Workflows</h4>
+<ul>
+<li><strong>End-to-End Pipeline Design:</strong> From data to publication</li>
+<li><strong>Quality Assurance Systems:</strong> AI-assisted validation and checking</li>
+<li><strong>Collaboration Frameworks:</strong> Multi-researcher project management</li>
+</ul>
+</section>
+<section id="implementation-strategy-development" class="level4">
+<h4 class="anchored" data-anchor-id="implementation-strategy-development">Implementation Strategy Development</h4>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprehensive research workflow template</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>research_workflow <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Phase 1: Research Design"</span> <span class="ot">=</span> <span class="fu">c</span>(</span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">"AI-assisted literature review"</span>,</span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Theoretical framework development"</span>,</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Hypothesis generation and testing"</span></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Phase 2: Data and Methods"</span> <span class="ot">=</span> <span class="fu">c</span>(</span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Data acquisition and preprocessing"</span>,</span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Econometric specification"</span>,</span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Robustness testing framework"</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Phase 3: Analysis and Results"</span> <span class="ot">=</span> <span class="fu">c</span>(</span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Model estimation and validation"</span>,</span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Sensitivity analysis"</span>,</span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Policy simulation"</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>  ),</span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Phase 4: Communication"</span> <span class="ot">=</span> <span class="fu">c</span>(</span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Results interpretation"</span>,</span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Visualization and reporting"</span>,</span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Policy brief generation"</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a><span class="co"># AI integration checkpoints at each phase</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<hr>
+</section>
+</section>
+</section>
+</section>
+<section id="sec-assessment" class="level1">
+<h1>Assessment Framework</h1>
+<section id="comprehensive-evaluation-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="comprehensive-evaluation-strategy">Comprehensive Evaluation Strategy</h2>
+<section id="advanced-project-portfolio-60" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-project-portfolio-60">Advanced Project Portfolio (60%)</h3>
+<section id="project-1-original-research-design-day-1" class="level4">
+<h4 class="anchored" data-anchor-id="project-1-original-research-design-day-1">Project 1: Original Research Design (Day 1)</h4>
+<ul>
+<li><strong>Deliverable:</strong> Complete research proposal using AI-enhanced methodology</li>
+<li><strong>Evaluation Criteria:</strong>
+<ul>
+<li>Theoretical sophistication and innovation</li>
+<li>Methodological rigor and appropriateness</li>
+<li>AI integration effectiveness</li>
+<li>Policy relevance and feasibility</li>
+</ul></li>
+</ul>
+</section>
+<section id="project-2-empirical-analysis-day-2" class="level4">
+<h4 class="anchored" data-anchor-id="project-2-empirical-analysis-day-2">Project 2: Empirical Analysis (Day 2)</h4>
+<ul>
+<li><strong>Deliverable:</strong> Full econometric analysis with AI assistance</li>
+<li><strong>Evaluation Criteria:</strong>
+<ul>
+<li>Technical execution and accuracy</li>
+<li>Interpretation depth and nuance</li>
+<li>Robustness testing comprehensiveness</li>
+<li>Communication clarity</li>
+</ul></li>
+</ul>
+</section>
+<section id="project-3-policy-analysis-day-3" class="level4">
+<h4 class="anchored" data-anchor-id="project-3-policy-analysis-day-3">Project 3: Policy Analysis (Day 3)</h4>
+<ul>
+<li><strong>Deliverable:</strong> Comprehensive policy evaluation framework</li>
+<li><strong>Evaluation Criteria:</strong>
+<ul>
+<li>Analytical complexity and depth</li>
+<li>Policy relevance and feasibility</li>
+<li>Implementation strategy quality</li>
+<li>Stakeholder consideration</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="advanced-skills-assessment-25" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-skills-assessment-25">Advanced Skills Assessment (25%)</h3>
+<section id="technical-proficiency" class="level4">
+<h4 class="anchored" data-anchor-id="technical-proficiency">Technical Proficiency</h4>
+<ul>
+<li><strong>Code Quality:</strong> R/Python implementation efficiency</li>
+<li><strong>AI Integration:</strong> Effective prompt engineering and tool usage</li>
+<li><strong>Methodological Innovation:</strong> Creative problem-solving approaches</li>
+</ul>
+</section>
+<section id="critical-thinking" class="level4">
+<h4 class="anchored" data-anchor-id="critical-thinking">Critical Thinking</h4>
+<ul>
+<li><strong>Theoretical Integration:</strong> Economic theory application</li>
+<li><strong>Empirical Validation:</strong> Results interpretation and critique</li>
+<li><strong>Policy Translation:</strong> Academic-to-policy communication</li>
+</ul>
+</section>
+</section>
+<section id="collaborative-learning-15" class="level3">
+<h3 class="anchored" data-anchor-id="collaborative-learning-15">Collaborative Learning (15%)</h3>
+<section id="peer-evaluation" class="level4">
+<h4 class="anchored" data-anchor-id="peer-evaluation">Peer Evaluation</h4>
+<ul>
+<li><strong>Research Collaboration:</strong> Group project contributions</li>
+<li><strong>Knowledge Sharing:</strong> Teaching and learning from peers</li>
+<li><strong>Constructive Feedback:</strong> Quality of peer review and suggestions</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+</section>
+<section id="sec-resources" class="level1">
+<h1>Resources and References</h1>
+<section id="essential-software-and-tools" class="level2">
+<h2 class="anchored" data-anchor-id="essential-software-and-tools">Essential Software and Tools</h2>
+<section id="statistical-software" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-software">Statistical Software</h3>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Required R packages</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>, <span class="st">"fixest"</span>, <span class="st">"did"</span>, <span class="st">"grf"</span>, <span class="st">"forecast"</span>,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"vars"</span>, <span class="st">"mgcv"</span>, <span class="st">"bibliometrix"</span>, <span class="st">"igraph"</span>,</span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"modelsummary"</span>, <span class="st">"marginaleffects"</span>, <span class="st">"ggplot2"</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Python libraries</span></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install econml numpy pandas scikit-learn statsmodels</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="ai-platforms" class="level3">
+<h3 class="anchored" data-anchor-id="ai-platforms">AI Platforms</h3>
+<ul>
+<li><strong>Claude.ai:</strong> Advanced reasoning and code generation</li>
+<li><strong>GPT-4:</strong> Research assistance and writing support</li>
+<li><strong>Perplexity:</strong> Academic literature search and synthesis</li>
+<li><strong>GitHub Copilot:</strong> Code completion and debugging</li>
+</ul>
+</section>
+</section>
+<section id="advanced-reading-list" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-reading-list">Advanced Reading List</h2>
+<section id="core-methodological-references" class="level3">
+<h3 class="anchored" data-anchor-id="core-methodological-references">Core Methodological References</h3>
+<ul>
+<li>Athey, S., &amp; Imbens, G. W. (2019). Machine learning methods that economists should know about. <em>Annual Review of Economics</em>, 11, 685-725.</li>
+<li>Chernozhukov, V., et al.&nbsp;(2018). Double/debiased machine learning for treatment and structural parameters. <em>The Econometrics Journal</em>, 21(1), C1-C68.</li>
+<li>Mullainathan, S., &amp; Spiess, J. (2017). Machine learning: An applied econometric approach. <em>Journal of Economic Perspectives</em>, 31(2), 87-106.</li>
+</ul>
+</section>
+<section id="applied-economics-applications" class="level3">
+<h3 class="anchored" data-anchor-id="applied-economics-applications">Applied Economics Applications</h3>
+<ul>
+<li>Autor, D., et al.&nbsp;(2022). New frontiers: The origins and content of new work, 1940–2018. <em>Quarterly Journal of Economics</em>, 137(4), 2357-2408.</li>
+<li>Chetty, R., et al.&nbsp;(2020). The opportunity atlas: Mapping the childhood roots of social mobility. <em>Quarterly Journal of Economics</em>, 135(4), 1889-1941.</li>
+</ul>
+</section>
+<section id="ai-and-economics-integration" class="level3">
+<h3 class="anchored" data-anchor-id="ai-and-economics-integration">AI and Economics Integration</h3>
+<ul>
+<li>Agrawal, A., Gans, J., &amp; Goldfarb, A. (2019). <em>The Economics of Artificial Intelligence: An Agenda</em>. University of Chicago Press.</li>
+<li>Brynjolfsson, E., &amp; McAfee, A. (2014). <em>The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies</em>. W. W. Norton &amp; Company.</li>
+</ul>
+</section>
+</section>
+<section id="data-sources-and-practice-datasets" class="level2">
+<h2 class="anchored" data-anchor-id="data-sources-and-practice-datasets">Data Sources and Practice Datasets</h2>
+<section id="economic-data" class="level3">
+<h3 class="anchored" data-anchor-id="economic-data">Economic Data</h3>
+<ul>
+<li><strong>World Bank Open Data:</strong> Development indicators and cross-country comparisons</li>
+<li><strong>FRED Economic Data:</strong> US macroeconomic time series</li>
+<li><strong>OECD Statistics:</strong> International comparative data</li>
+<li><strong>IMF Datasets:</strong> Financial and monetary statistics</li>
+</ul>
+</section>
+<section id="business-and-finance" class="level3">
+<h3 class="anchored" data-anchor-id="business-and-finance">Business and Finance</h3>
+<ul>
+<li><strong>Compustat:</strong> Firm-level financial data</li>
+<li><strong>CRSP:</strong> Stock market data and returns</li>
+<li><strong>Thomson Reuters:</strong> News and sentiment data</li>
+<li><strong>Google Trends:</strong> Search behavior and consumer interest</li>
+</ul>
+</section>
+<section id="social-science-data" class="level3">
+<h3 class="anchored" data-anchor-id="social-science-data">Social Science Data</h3>
+<ul>
+<li><strong>IPUMS:</strong> Demographic and social survey data</li>
+<li><strong>General Social Survey:</strong> Longitudinal social attitudes</li>
+<li><strong>European Social Survey:</strong> Cross-national comparative data</li>
+<li><strong>Pew Research:</strong> Public opinion and social trends</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="sec-pathways" class="level1">
+<h1>Extended Learning Pathways</h1>
+<section id="immediate-implementation-weeks-1-4" class="level2">
+<h2 class="anchored" data-anchor-id="immediate-implementation-weeks-1-4">Immediate Implementation (Weeks 1-4)</h2>
+<section id="week-1-tool-integration" class="level3">
+<h3 class="anchored" data-anchor-id="week-1-tool-integration">Week 1: Tool Integration</h3>
+<ul>
+<li>Set up AI-assisted research workflow</li>
+<li>Begin integrating AI tools into current projects</li>
+<li>Practice advanced prompting techniques daily</li>
+</ul>
+</section>
+<section id="week-2-method-application" class="level3">
+<h3 class="anchored" data-anchor-id="week-2-method-application">Week 2: Method Application</h3>
+<ul>
+<li>Apply one advanced econometric method with AI assistance</li>
+<li>Conduct literature review using AI synthesis tools</li>
+<li>Start building personal prompt library</li>
+</ul>
+</section>
+<section id="week-3-collaboration-building" class="level3">
+<h3 class="anchored" data-anchor-id="week-3-collaboration-building">Week 3: Collaboration Building</h3>
+<ul>
+<li>Form research partnerships with workshop participants</li>
+<li>Join online communities of practice</li>
+<li>Share experiences and best practices</li>
+</ul>
+</section>
+<section id="week-4-project-development" class="level3">
+<h3 class="anchored" data-anchor-id="week-4-project-development">Week 4: Project Development</h3>
+<ul>
+<li>Initiate new research project using workshop methods</li>
+<li>Begin writing AI-enhanced research proposal</li>
+<li>Establish regular AI tool usage routine</li>
+</ul>
+</section>
+</section>
+<section id="intermediate-development-months-2-6" class="level2">
+<h2 class="anchored" data-anchor-id="intermediate-development-months-2-6">Intermediate Development (Months 2-6)</h2>
+<section id="advanced-skill-building" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-skill-building">Advanced Skill Building</h3>
+<ul>
+<li>Master additional econometric methods with AI support</li>
+<li>Develop specialized prompts for research domain</li>
+<li>Build automated analysis pipelines</li>
+</ul>
+</section>
+<section id="research-output" class="level3">
+<h3 class="anchored" data-anchor-id="research-output">Research Output</h3>
+<ul>
+<li>Complete first AI-enhanced research paper</li>
+<li>Present findings at academic or policy conferences</li>
+<li>Contribute to methodological discussions</li>
+</ul>
+</section>
+<section id="community-engagement" class="level3">
+<h3 class="anchored" data-anchor-id="community-engagement">Community Engagement</h3>
+<ul>
+<li>Mentor newcomers to AI in economics</li>
+<li>Contribute to open-source AI tools for economists</li>
+<li>Participate in cross-disciplinary collaborations</li>
+</ul>
+</section>
+</section>
+<section id="long-term-excellence-6-months" class="level2">
+<h2 class="anchored" data-anchor-id="long-term-excellence-6-months">Long-term Excellence (6+ Months)</h2>
+<section id="thought-leadership" class="level3">
+<h3 class="anchored" data-anchor-id="thought-leadership">Thought Leadership</h3>
+<ul>
+<li>Develop innovative AI applications for economics</li>
+<li>Publish methodological contributions</li>
+<li>Lead institutional AI adoption initiatives</li>
+</ul>
+</section>
+<section id="research-impact" class="level3">
+<h3 class="anchored" data-anchor-id="research-impact">Research Impact</h3>
+<ul>
+<li>Conduct high-impact research using AI-enhanced methods</li>
+<li>Influence policy through AI-assisted analysis</li>
+<li>Build reputation as AI-economics expert</li>
+</ul>
+</section>
+<section id="knowledge-sharing" class="level3">
+<h3 class="anchored" data-anchor-id="knowledge-sharing">Knowledge Sharing</h3>
+<ul>
+<li>Design and deliver advanced workshops</li>
+<li>Contribute to AI ethics and best practices</li>
+<li>Mentor next generation of AI-literate economists</li>
+</ul>
+<hr>
+<p><em>This workshop framework represents the cutting edge of AI application in economic research and policy analysis. Participants will emerge with both theoretical understanding and practical skills to leverage AI for solving complex economic problems and advancing knowledge in their respective fields.</em></p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/Zahedasghar\.github\.io\/ai\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
