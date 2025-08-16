@@ -12,13 +12,6 @@ format:
     number-sections: true
     code-fold: true
     css: styles.css
-  pdf:
-    documentclass: article
-    geometry: margin=1in
-    fontsize: 11pt
-  docx:
-    toc: true
-    number-sections: true
 execute:
   echo: false
   warning: false
