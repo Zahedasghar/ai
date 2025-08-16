@@ -1,6 +1,26 @@
-.Rproj.user
+# R project files
+.Rproj.user/
 .Rhistory
 .RData
 .Ruserdata
+
+# Quarto project config
 /.quarto/
-docs
+docs/
+
+# Quarto / R Markdown outputs
+_site/
+.docs/
+*.html
+*.pdf
+*.docx
+
+# Quarto freeze/fig caches
+_freeze/
+*_files/
+**/figure-*/
+**/cache/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
