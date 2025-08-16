@@ -2,7 +2,7 @@
 title: "[13 AI Strategies for Quality Journal Papers]{.yellow}"
 subtitle: "A Researcher's Ethical Guide to Using AI Tools"
 author: "[Zahid Asghar]{.yellow}"
-date: "2025-05-10"
+date: "2025-08-17"
 format: 
   revealjs:
     slide-number: true
@@ -10,7 +10,7 @@ format:
     theme: [default, custom2.scss]
 ---
 
-## Slide 1: Six Ethical Rules for Using AI in Research Writing
+## Six Ethical Rules for Using AI in Research Writing
 
 1. **Use AI as an editor**, not as an author – improve flow and language.
 2. **Do not use AI to generate full text** – equivalent to outsourcing authorship.
@@ -21,7 +21,7 @@ format:
 
 ---
 
-## Slide 2: AI for Generating Research Topics
+## AI for Generating Research Topics
 
 * **Tool: Scispace**
 
@@ -35,7 +35,7 @@ format:
 
 ---
 
-## Slide 3: Finding Research Gaps Faster
+##  Finding Research Gaps Faster
 
 * **Scispace + Consensus** tools:
 
@@ -47,7 +47,7 @@ format:
 
 ---
 
-## 
+## {.scrollable}
 
 1. **Generate keywords** for literature reviews.
 2. **Read faster** using chat with document features.
@@ -68,9 +68,9 @@ format:
 
 ---
 
-## 17 Use Cases for AI in Research Writing (with Tools)
+### 17 Use Cases for AI in Research Writing (with Tools)
 
-- Generate research topics▸ Tools: Scispace,
+- Generate research topics ▸ Tools: Scispace,
 AvidNote▸ Find angles, summaries, and new questions. 
 
 - Identify research gaps▸ Tools: Scispace, Consensus▸ Upload papers, summarize gaps, detect disagreements. 

@@ -1,6 +1,6 @@
 ---
 title: "AI and Technological Progress: Key Insights and Strategies"
-author: ""
+author: "Compiled by ChatGPT"
 date: '`r Sys.Date()`'
 format:
   html:

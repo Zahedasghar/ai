@@ -1,0 +1,151 @@
+---
+title: "Econometric Analysis Prompts"
+author: "Zahid Asghar"
+date: "2024-12-18"
+format: html
+---
+## Prompts and Assistant Responses
+
+### User Prompt:
+- **"caschool.xls**
+- **Summarise** testscr str el_pct avginc variables and have some possible visualisations"
+
+**Assistant Response:**  
+
+Summarized the variables `testscr`, `str`, `el_pct`, and `avginc` and provided visualizations.
+
+
+
+### User Prompt:
+**"Can you describe and inspect this data?"**
+
+**Assistant Response:**  
+Provided a detailed description and inspection of the data, including summary statistics and visualizations.
+
+
+### User Prompt:
+**"Make a table for testscr and str showing mean, sd, 10,25, 40, 50 , 60 ,75 ,90 percentiles while variables in rows and statistics in columns. Also provide code for it"**
+
+**Assistant Response:**  
+Created a table with the requested statistics and provided the Python code.
+
+---
+
+### User Prompt:
+**"Give R code as well and have table with variables as rows"**
+
+**Assistant Response:**  
+Provided the R code and created a table with variables as rows.
+
+---
+
+### User Prompt:
+**"Well I need wide form table"**
+
+**Assistant Response:**  
+Created a wide form table and provided the Python code.
+
+---
+
+### User Prompt:
+**"Make a scatter plot between testscr, str, el_pct, avginc"**
+
+**Assistant Response:**  
+Created a scatter plot matrix and provided the visualization.
+
+---
+
+### User Prompt:
+**"What insights can we gain from this scatter plot matrix?"**
+
+**Assistant Response:**  
+Provided insights based on the scatter plot matrix.
+
+---
+
+### User Prompt:
+**"Make a box plot for testscr for small class size str<20 and large class size str>=20"**
+
+**Assistant Response:**  
+Created a box plot and provided the visualization.
+
+---
+
+### User Prompt:
+**"Provide a code in Python and R"**
+
+**Assistant Response:**  
+Provided the Python and R code for creating the box plot.
+
+---
+
+### User Prompt:
+**"Run a regression with robust se of testscr on str"**
+
+**Assistant Response:**  
+Ran a regression with robust standard errors and provided the results.
+
+---
+
+### User Prompt:
+**"Run a multiple linear regression of testscr on str el_pct and avginc and show results in table with codes"**
+
+**Assistant Response:**  
+Ran a multiple linear regression and provided the results in a table along with the Python and R code.
+
+---
+
+### User Prompt:
+**"How can we handle potential multicollinearity among predictors?"**
+
+**Assistant Response:**  
+Explained strategies to handle multicollinearity and provided example code in Python and R.
+
+---
+
+### User Prompt:
+**"Test coefficient el_pct and avginc are zero"**
+
+**Assistant Response:**  
+Performed hypothesis tests for the coefficients of `el_pct` and `avginc` being zero and provided the results.
+
+---
+
+### User Prompt:
+**"Test they are jointly equal zero"**
+
+**Assistant Response:**  
+Performed a hypothesis test for the coefficients of `el_pct` and `avginc` being jointly zero and provided the results.
+
+---
+
+### User Prompt:
+**"Can you explain how to interpret F-statistic and its degrees of freedom?"**
+
+**Assistant Response:**  
+Explained how to interpret the F-statistic and its degrees of freedom.
+
+---
+
+### User Prompt:
+**"How can we calculate the F-statistic manually?"**
+
+**Assistant Response:**  
+Explained the steps to manually calculate the F-statistic and provided example code in Python and R.
+
+---
+
+### User Prompt:
+**"Can you explain how to interpret R-squared in regression?"**
+
+**Assistant Response:**  
+Explained how to interpret R-squared in regression.
+
+---
+
+### User Prompt:
+**"Run a regression of testscr on str el_pct avginc and avginc square"**
+
+**Assistant Response:**  
+Ran a regression including the square of `avginc` and provided the results along with the Python and R code.
+

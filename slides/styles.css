@@ -1,1 +1,6 @@
 /* css styles */
+.reveal .scrollable {
+  height: 600px;      /* Adjust for your slide height */
+  overflow-y: auto;
+}
+

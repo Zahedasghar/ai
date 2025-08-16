@@ -1,0 +1,996 @@
+---
+title: "GPT-5 for Power Users"
+subtitle: "Study & Learn, Canvas, Create Image, Agent Mode, Think Longer, Deep Research"
+author: "Prof. Dr. Zahid Asghar"
+institute: "Quaid-i-Azam University, Islamabad"
+date: today
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    chalkboard: true
+    slide-number: c/t
+    logo: "https://www.validate-network.org/sites/default/files/styles/mt_image_small/public/validate/images/media/quaid-i-azam_university_islamabad.jpg?itok=3eu4d_7a"
+    footer: "Prof. Dr. Zahid Asghar | QAU | GPT-5 Power Users Workshop"
+    incremental: true
+    transition: fade
+    transition-speed: slow
+    navigation-mode: vertical
+    controls: true
+    progress: true
+    hash: true
+    center: true
+    touch: true
+    loop: false
+    rtl: false
+    shuffle: false
+    fragments: true
+    embedded: false
+    help: true
+    show-notes: false
+    auto-slide: 0
+    auto-slide-stoppable: true
+    mouse-wheel: true
+    preview-links: auto
+    slide-tone: false
+    highlight-style: monokai
+    title-slide-attributes:
+      data-background-image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1920"
+      data-background-size: cover
+      data-background-opacity: "0.3"
+      data-background-color: "#1a1a2e"
+    css: custom-styles.css
+execute:
+  freeze: auto
+  echo: false
+  warning: false
+  message: false
+---
+
+## Welcome to the Future of AI {.center data-background="#1a1a2e"}
+
+::: {style="font-size: 2.5em; font-weight: bold; margin: 40px 0; color: white;"}
+🚀 Next-Gen ChatGPT (GPT-5)
+:::
+
+::: {style="font-size: 2em; font-weight: bold; color: #ffd700;"}
+From **Answers** to **Autonomy**
+:::
+
+::: {.fragment style="margin-top: 30px; color: white;"}
+*Master 6 game-changing features that will transform how you work*
+:::
+
+::: {.notes}
+Emphasize the paradigm shift from simple Q&A to autonomous AI systems
+:::
+
+---
+
+## Today's Journey {data-background="#2c3e50"}
+
+::: {style="text-align: center; font-size: 1.5em; font-weight: bold; color: white; margin-bottom: 30px;"}
+🎯 What You'll Master Today
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+### Core Features
+- 🎓 **Study & Learn**  
+  Personalized AI tutoring
+  
+- 📝 **Canvas**  
+  Collaborative document creation
+  
+- 🎨 **Create Image**  
+  Visual generation & editing
+:::
+
+::: {.column width="50%"}
+### Advanced Modes
+- 🤖 **Agent Mode**  
+  Autonomous task execution
+  
+- 🧠 **Think Longer**  
+  Deep reasoning for complex problems
+  
+- 🔍 **Deep Research**  
+  Evidence-based investigation
+:::
+::::
+
+---
+
+## 🎓 Study & Learn — The AI Tutor {data-background="#667eea"}
+
+### What Makes It Revolutionary
+
+::: {.incremental}
+- 📚 **Adaptive Learning:** Adjusts difficulty based on your progress
+- 🎯 **Personalized Paths:** Creates custom curriculums for your goals
+- ✅ **Active Testing:** Quizzes and exercises that reinforce learning
+- 📈 **Progress Tracking:** Monitors understanding within sessions
+:::
+
+::: {.fragment}
+### Perfect For
+
+| Academic Learning | Professional Skills |
+|-------------------|---------------------|
+| Exam preparation | New APIs/frameworks |
+| Concept mastery | Industry certifications |
+| Research skills | Policy understanding |
+:::
+
+---
+
+## 🎓 Study & Learn — Power Prompts {data-background="#667eea"}
+
+### 🚀 Starter Prompt
+```markdown
+"Teach me [TOPIC] from scratch. Create a 5-lesson plan with:
+- Clear learning objectives for each lesson
+- Interactive exercises after each concept
+- Self-assessment questions
+- Real-world applications
+- A final project that combines all lessons"
+```
+
+::: {.fragment}
+### Pro Techniques
+
+:::: {.columns}
+::: {.column width="50%"}
+**🤔 Socratic Method**
+
+"Use Socratic questioning to help me discover gaps in my understanding of [TOPIC]"
+:::
+
+::: {.column width="50%"}
+**🔄 Spaced Repetition**
+
+"Create spaced-repetition flashcards with difficulty ratings and review intervals"
+:::
+::::
+:::
+
+---
+
+## 📝 Canvas — Your Collaborative Workspace {data-background="#34495e"}
+
+> ### From Chat → Living Documents
+
+::: {.timeline}
+### Evolution of AI Interaction
+
+- **Before:** Linear Q&A, lost context, copy-paste chaos
+- **Now:** Persistent workspace, version control, collaborative editing
+- **Result:** 10x productivity for long-form content
+:::
+
+::: {.fragment}
+### Use Cases That Shine
+
+:::: {.columns}
+::: {.column width="50%"}
+- ✨ Policy documents  
+- 📊 Research papers  
+- 💻 Code projects  
+:::
+
+::: {.column width="50%"}
+- 📧 Email campaigns  
+- 📈 Business plans  
+- 🎯 Strategic reports  
+:::
+::::
+:::
+
+---
+
+## 📝 Canvas — Master Techniques {data-background="#34495e"}
+
+### 🎯 Strategic Canvas Prompt
+```markdown
+"Open a Canvas to create a comprehensive [DOCUMENT TYPE] about [TOPIC].
+
+Structure:
+1. Start with an executive summary
+2. Create detailed section outlines
+3. Expand each section with data and examples
+4. Include revision tracking
+5. Add comments for collaboration points
+
+Keep a changelog of all major edits."
+```
+
+::: {.fragment}
+### Advanced Canvas Strategies
+
+- 🔍 **Incremental Development:** "Expand only section 2 with technical details"
+- 📝 **Diff-Style Editing:** "Show changes between versions as diffs"
+- ✅ **Acceptance Criteria:** "Validate against these 5 requirements..."
+:::
+
+---
+
+## 🎨 Create Image — Visual Intelligence {data-background="#ff6b6b" .scrollable}
+
+### Beyond Simple Generation
+
+:::: {.columns}
+::: {.column width="50%"}
+### 🖼️ Creation Powers
+- Photorealistic renders
+- Technical diagrams
+- UI/UX mockups
+- Brand concepts
+- Data visualizations
+:::
+
+::: {.column width="50%"}
+### ✏️ Editing Capabilities
+- Style transfer
+- Object manipulation
+- Background replacement
+- Color grading
+- Resolution enhancement
+:::
+::::
+
+::: {.fragment}
+### Style Mastery
+
+| Artistic | Technical | Modern |
+|----------|-----------|---------|
+| Photorealistic | Technical blueprint | Minimalist |
+| Flat design | Isometric 3D | Cyberpunk |
+| Hand-drawn sketch | Watercolor | Corporate clean |
+:::
+
+---
+
+## 🎨 Create Image — Pro Prompting {data-background="#ff6b6b"}
+
+### 🖼️ Architecture Diagram Example
+```markdown
+"Create a clean isometric diagram showing:
+- RAG pipeline architecture
+- Components: Ingest → Embed → Index → Retrieve → Generate
+- Modern tech aesthetic with purple/blue gradient
+- White background, subtle shadows
+- Labels in sans-serif font
+- Export-ready at 4K resolution"
+```
+
+::: {.fragment}
+### The Anatomy of Perfect Image Prompts
+
+:::: {.columns}
+::: {.column width="33%"}
+**📐 Composition**
+- Shot type & angle
+- Layout & balance
+- Focus & depth
+:::
+
+::: {.column width="33%"}
+**🎨 Style & Mood**
+- Art direction
+- Color palette
+- Lighting setup
+:::
+
+::: {.column width="33%"}
+**📋 Constraints**
+- Resolution needs
+- File format
+- Usage rights
+:::
+::::
+:::
+
+---
+
+## 🤖 Agent Mode — Your AI Workforce {data-background="#1a1a2e"}
+
+::: {style="font-size: 1.8em; font-weight: bold; text-align: center; margin: 40px 0; color: white;"}
+From **Conversation** → to **Automation**
+:::
+
+### 🚀 What Makes Agents Different
+
+::: {.incremental}
+- 🎯 **Goal-Oriented:** Works toward specific outcomes
+- 📋 **Multi-Step Planning:** Breaks down complex tasks
+- 🔧 **Tool Usage:** Integrates with APIs and databases
+- ♻️ **Self-Correction:** Learns from errors and adjusts
+- ✅ **Autonomous Execution:** Minimal supervision needed
+:::
+
+---
+
+## 🤖 Agent Mode — Real-World Applications {data-background="#1a1a2e"}
+
+:::: {.columns}
+::: {.column width="50%"}
+### 📊 Research & Analysis
+- Competitive intelligence
+- Market research
+- Data aggregation
+- Trend analysis
+
+### 📧 Communication
+- Email automation
+- Report generation
+- Meeting summaries
+- Follow-up sequences
+:::
+
+::: {.column width="50%"}
+### 💻 Development
+- Code refactoring
+- Test generation
+- Documentation
+- Bug tracking
+
+### 🎯 Operations
+- Process optimization
+- Workflow automation
+- Quality assurance
+- Performance monitoring
+:::
+::::
+
+---
+
+## 🤖 Agent Mode — Power Prompt {data-background="#1a1a2e"}
+
+### 🎯 Comprehensive Agent Task
+```markdown
+"Act as a research agent with these objectives:
+
+GOAL: Analyze top 6 HRIS systems for Pakistani SMEs
+
+STEPS:
+1. Research and identify 6 leading HRIS platforms
+2. Gather pricing, features, and localization support
+3. Create comparison matrix in CSV format
+4. Generate executive summary (500 words)
+5. Build 5-slide presentation with key findings
+
+CONSTRAINTS:
+- Focus on 50-500 employee companies
+- Include PKR pricing where available
+- Highlight compliance with Pakistani labor laws
+
+DELIVERABLES:
+- Comparison CSV
+- Executive summary
+- Slide deck with visualizations
+
+Confirm each step before proceeding."
+```
+
+---
+
+## 🧠 Think Longer — Deep Reasoning Mode {data-background="#2c3e50"}
+
+### When Complexity Demands Patience
+
+::: {style="font-size: 1.5em; text-align: center; margin: 30px 0; color: white;"}
+⚡ **Speed** ← → 🎯 **Accuracy**
+
+*Trading response time for solution quality*
+:::
+
+::: {.fragment}
+### Perfect Use Cases
+
+:::: {.columns}
+::: {.column width="33%"}
+**🔢 Mathematical**
+- Multi-step proofs
+- Optimization
+- Statistical analysis
+- Algorithm complexity
+:::
+
+::: {.column width="33%"}
+**💻 Complex Code**
+- Architecture design
+- Performance tuning
+- Legacy refactoring
+- Security audits
+:::
+
+::: {.column width="33%"}
+**🎯 Strategic**
+- Business modeling
+- Risk assessment
+- Scenario planning
+- Decision trees
+:::
+::::
+:::
+
+---
+
+## 🧠 Think Longer — Optimization Example {data-background="#2c3e50"}
+
+### 🚀 Algorithm Optimization Challenge
+```markdown
+"Think step-by-step to optimize this problem:
+
+Current: O(n²) nested loop for finding pairs
+Goal: Achieve O(n log n) or better
+
+Requirements:
+1. Explore 2-3 different algorithmic approaches
+2. Analyze time/space complexity for each
+3. Consider edge cases and constraints
+4. Provide benchmarking estimates
+5. Recommend the most robust solution
+
+Take your time to consider all trade-offs before 
+presenting the final optimized solution with 
+implementation details."
+```
+
+::: {.fragment style="margin-top: 30px; font-size: 1.3em; text-align: center; color: white;"}
+**10x thinking time = 100x solution quality**
+:::
+
+---
+
+## 🔍 Deep Research — Evidence-Based Intelligence {data-background="#11998e" .scrollable}
+
+### Multi-Source Truth Seeking
+
+:::: {.columns}
+::: {.column width="50%"}
+### 📚 Research Process
+1. Query decomposition
+2. Multi-source gathering
+3. Cross-verification
+4. Synthesis & analysis
+5. Citation mapping
+:::
+
+::: {.column width="50%"}
+### ✅ Quality Guarantees
+- Source diversity
+- Bias detection
+- Fact verification
+- Confidence scoring
+- Traceable logic
+:::
+::::
+
+::: {.fragment}
+### 📊 Output Excellence
+
+- Executive summaries with key insights
+- Evidence tables with source mapping
+- Confidence levels for each claim
+- Disagreement analysis when sources conflict
+- Full citation trail for verification
+:::
+
+---
+
+## 🔍 Deep Research — Master Prompt {data-background="#11998e"}
+
+### 🎯 Comprehensive Research Request
+```markdown
+"Conduct deep research on Pakistan's FY2025 fiscal strategy:
+
+RESEARCH SCOPE:
+- Revenue generation mechanisms & tax reforms
+- Subsidy restructuring plans
+- Inflation impact projections
+- IMF program compliance
+- Private sector implications
+
+REQUIREMENTS:
+- Use minimum 10 diverse sources
+- Include government, IMF, and independent analysis
+- Highlight areas of disagreement between sources
+- Provide confidence levels (High/Medium/Low)
+
+DELIVERABLES:
+1. Executive summary (500 words)
+2. Evidence matrix (claim → source → confidence)
+3. Key metrics dashboard
+4. Risk assessment table
+5. Full bibliography with links
+
+Focus on actionable insights for policy makers."
+```
+
+---
+
+## ⚡ Quick Comparison Matrix {data-background="#667eea" .scrollable}
+
+### Feature Comparison
+
+| Feature | 🎯 Primary Benefit | 🤖 Autonomy | 🌐 Web Tools | ⏱️ Speed | ✨ Best For |
+|---------|-------------------|-------------|--------------|----------|-------------|
+| **Study & Learn** | Guided mastery | Low | Optional | Fast | Skills, exams, concepts |
+| **Canvas** | Long-form creation | Low | Optional | Fast | Docs, code, reports |
+| **Create Image** | Visual generation | Low | N/A | Medium | Diagrams, mockups, art |
+| **Agent Mode** | Task automation | **High** | Often | Variable | Workflows, research |
+| **Think Longer** | Deep reasoning | Medium | Optional | **Slow** | Complex problems |
+| **Deep Research** | Evidence synthesis | Medium | **Required** | Slow | Reports, analysis |
+
+---
+
+## 🎯 Choosing the Right Mode {data-background="#667eea"}
+
+### Decision Framework
+
+:::: {.columns}
+::: {.column width="50%"}
+### Learning & Creation
+- 📚 **Need to Learn?**  
+  → Study & Learn
+
+- 📝 **Creating Documents?**  
+  → Canvas
+
+- 🎨 **Need Visuals?**  
+  → Create Image
+:::
+
+::: {.column width="50%"}
+### Analysis & Automation
+- 🔄 **Multi-Step Tasks?**  
+  → Agent Mode
+
+- 🧮 **Complex Problem?**  
+  → Think Longer
+
+- 📊 **Need Evidence?**  
+  → Deep Research
+:::
+::::
+
+::: {.fragment style="margin-top: 30px; font-size: 1.2em; text-align: center;"}
+*Match the tool to the task complexity and requirements*
+:::
+
+---
+
+## 🛡️ Quality & Safety Framework {data-background="#2c3e50" .scrollable}
+
+### Five Pillars of Responsible AI
+
+::: {.timeline}
+### 1. Model Selection & Routing
+- Choose appropriate capability level
+- Balance speed vs. accuracy needs
+- A/B test for optimal results
+:::
+
+::: {.timeline}
+### 2. Hallucination Prevention
+- Retrieval-augmented generation (RAG)
+- Explicit uncertainty calibration
+- Post-generation verification
+:::
+
+::: {.timeline}
+### 3. Avoiding Sycophancy
+- Instruction hierarchy enforcement
+- Encourage useful disagreement
+- Evidence-based corrections
+:::
+
+---
+
+## Safety Measures (Continued) {data-background="#2c3e50"}
+
+::: {.timeline}
+### 4. Safe Completions
+- Policy-aware refusals with alternatives
+- PII/medical/legal guardrails
+- Continuous red-team testing
+:::
+
+::: {.timeline}
+### 5. Deception Detection
+- Evidence-first responses
+- Transparent tool usage logs
+- Cross-source verification
+:::
+
+::: {.fragment}
+### 🔍 Continuous Monitoring
+
+- Log all interactions and tool usage
+- Review high-risk sessions
+- Human-in-the-loop for sensitive domains
+- Rapid iteration on failure modes
+:::
+
+---
+
+## 🚀 Governance Best Practices {data-background="#34495e"}
+
+### Build Trust Through Transparency
+
+:::: {.columns}
+::: {.column width="50%"}
+### ✅ Do's
+- Verify primary sources
+- Document prompt evolution
+- Set clear scope limits
+- Include human checkpoints
+- Version control outputs
+- Track confidence levels
+:::
+
+::: {.column width="50%"}
+### ❌ Don'ts
+- Trust without verification
+- Skip citation checking
+- Ignore conflicting data
+- Automate sensitive decisions
+- Bypass safety protocols
+- Rush complex reasoning
+:::
+::::
+
+---
+
+## 📋 Ready-to-Use Prompt Library {data-background="#2c3e50" .scrollable}
+
+### 🎓 Study & Learn
+```yaml
+Study Prompt:
+  goal: "Master [TOPIC] in 5 lessons"
+  structure: [pre-assessment, exercises, project]
+  method: [socratic, spaced-repetition]
+  output: [study_guide, flashcards]
+```
+
+### 📝 Canvas
+```yaml
+Canvas Prompt:
+  document: [type, purpose, audience]
+  sections: [exec_summary, body, appendix]
+  tracking: [revisions, comments, changelog]
+  format: [markdown, latex, html]
+```
+
+---
+
+## More Power Prompts {data-background="#2c3e50" .scrollable}
+
+### 🎨 Create Image
+```yaml
+Image Prompt:
+  subject: [main_focus]
+  style: [artistic_direction]
+  composition: [layout, angle, depth]
+  technical: [resolution, format, usage]
+```
+
+### 🤖 Agent Mode
+```yaml
+Agent Prompt:
+  goal: [specific_outcome]
+  tools: [apis, databases, web]
+  workflow: [steps, checkpoints]
+  deliverables: [format, deadline]
+```
+
+---
+
+## Final Prompts {data-background="#2c3e50"}
+
+### 🧠 Think Longer
+```yaml
+Deep Thinking Prompt:
+  problem: [complexity_level]
+  approaches: [explore_multiple]
+  analysis: [trade-offs, edge_cases]
+  output: [optimal_solution, rationale]
+```
+
+### 🔍 Deep Research
+```yaml
+Research Prompt:
+  scope: [topics, questions]
+  sources: [minimum_10, diverse]
+  verification: [cross-check, confidence]
+  deliverables: [summary, evidence_table, citations]
+```
+
+---
+
+## 🎬 Live Demo Agenda {data-background="#1a1a2e"}
+
+::: {style="font-size: 1.5em; font-weight: bold; text-align: center; margin: 30px 0; color: white;"}
+15-Minute Power Session
+:::
+
+::: {.timeline}
+1. **Study & Learn:** "Teach me Prophet forecasting with quiz"
+2. **Canvas:** Transform notes → slides → final deck
+3. **Create Image:** Generate RAG architecture diagram
+4. **Agent Mode:** Competitor analysis → CSV + presentation
+5. **Think Longer:** Optimize O(n²) to O(n log n)
+6. **Deep Research:** Policy brief with full citations
+:::
+
+::: {.fragment style="margin-top: 30px; text-align: center; color: white;"}
+**🎯 Your Turn**  
+Pick your biggest challenge → Choose the right mode → Apply the prompt
+:::
+
+---
+
+## 🌟 Key Takeaways {data-background="#667eea"}
+
+### Remember These Principles
+
+:::: {.columns}
+::: {.column width="50%"}
+**🎯 Mode Selection**  
+Match the tool to the task complexity and requirements
+
+**⚡ Prompt Quality**  
+Specific instructions = Superior results
+:::
+
+::: {.column width="50%"}
+**🛡️ Safety First**  
+Always verify, document, and maintain human oversight
+
+**🚀 Iterate & Improve**  
+Each interaction teaches you better prompting
+:::
+::::
+
+---
+
+## Your Action Plan {data-background="#34495e" .scrollable}
+
+### 🎯 Next 7 Days Challenge
+
+:::: {.columns}
+::: {.column width="50%"}
+### Days 1-4: Learn & Create
+- [ ] Master one topic with Study & Learn
+- [ ] Create study notes in Canvas
+- [ ] Generate 3 diagrams with Create Image
+- [ ] Build a report template in Canvas
+:::
+
+::: {.column width="50%"}
+### Days 5-7: Automate & Research
+- [ ] Deploy Agent Mode for research task
+- [ ] Use Think Longer for complex problem
+- [ ] Deep Research on industry topic
+- [ ] Create presentation combining all modes
+:::
+::::
+
+::: {.fragment}
+### Key Success Metrics
+- **Quality:** Output specificity improves
+- **Speed:** Time to results decreases
+- **Impact:** Measurable outcomes increase
+:::
+
+---
+
+## Q&A — Let's Explore Together {.center data-background="#1a1a2e"}
+
+::: {style="font-size: 2em; font-weight: bold; margin: 40px 0; color: white;"}
+Your Questions = Our Learning
+:::
+
+::: {style="font-size: 1.5em; color: #ffd700; margin: 30px 0;"}
+Share Your Use Case
+
+*I'll recommend the perfect mode + prompt + safeguards*
+:::
+
+::: {.fragment style="margin-top: 40px; color: white;"}
+📧 zahid.asghar@qau.edu.pk  
+🌐 QAU Islamabad  
+💡 Let's build the future together
+:::
+
+---
+
+## Thank You! 🙏 {.center data-background="#667eea"}
+
+::: {style="font-size: 3em; font-weight: bold; margin: 40px 0; color: white;"}
+The Future is Autonomous
+:::
+
+::: {style="font-size: 1.5em; color: white; margin: 30px 0;"}
+**You Now Have the Keys 🔑**
+
+Study → Create → Automate → Research → Scale
+:::
+
+::: {.fragment style="margin-top: 40px; color: white;"}
+### Master these modes. Lead the revolution.
+
+**Prof. Dr. Zahid Asghar | QAU Islamabad**
+
+🚀 **Your AI Journey Accelerates Now!**
+:::
+
+---
+
+## Appendix: Custom CSS {.smaller .scrollable}
+
+```css
+/* custom-styles.css */
+.reveal h1, .reveal h2 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* Scrollable content */
+.scrollable {
+  height: 600px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+/* Background handling */
+.reveal .slides section[data-background] {
+  color: white;
+}
+
+.reveal .slides section[data-background] h1,
+.reveal .slides section[data-background] h2,
+.reveal .slides section[data-background] h3 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Timeline styling */
+.timeline {
+  border-left: 3px solid #667eea;
+  padding-left: 20px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  background: #667eea;
+  border-radius: 50%;
+}
+
+/* Table styling */
+.reveal table {
+  font-size: 0.9em;
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+
+.reveal table th,
+.reveal table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.reveal table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+}
+
+.reveal table tr:hover td {
+  background-color: rgba(102, 126, 234, 0.1);
+}
+
+/* Code block styling */
+.reveal pre {
+  font-size: 0.8em;
+  line-height: 1.3em;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 8px;
+}
+
+.reveal code {
+  background: #2d2d2d;
+  color: #f8f8f2;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+/* Column spacing */
+.reveal .columns {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+/* Incremental lists */
+.reveal .incremental li {
+  margin: 12px 0;
+}
+
+/* Fragment animation */
+.reveal .fragment {
+  opacity: 0;
+}
+
+.reveal .fragment.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Center content */
+.reveal .center {
+  text-align: center;
+}
+
+/* Better padding */
+.reveal .slides section {
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+/* Responsive sizing */
+@media (max-width: 768px) {
+  .reveal .slides section {
+    font-size: 0.85em;
+    padding: 15px;
+  }
+  
+  .reveal .columns {
+    flex-direction: column;
+  }
+}
+
+/* Special text effects */
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* Notes styling */
+.reveal .notes {
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Emphasis box */
+.emphasis-box {
+  padding: 20px;
+  margin: 20px 0;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  border-left: 4px solid #667eea;
+  border-radius: 8px;
+}
+
+/* Quote styling */
+.reveal blockquote {
+  border-left: 4px solid #667eea;
+  padding-left: 20px;
+  font-style: italic;
+  color: #555;
+  margin: 20px 0;
+}
+```
