@@ -1,0 +1,424 @@
+---
+title: "AI and Human Intelligence: The Future of Thinking"
+subtitle: "Exploring the Paradox of Cognitive Enhancement and Decline"
+author: "Your Name"
+format: 
+  revealjs:
+    theme: [default, custom.scss]
+    css: styles.css
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    logo: ""
+    footer: "AI and Human Intelligence"
+    transition: slide
+    background-transition: fade
+---
+
+## The Paradox
+
+> *"Imagine a world where the very tools we create to make us smarter could paradoxically make our brains less functioning."*
+
+---
+
+## The Protein Folding Challenge {.smaller}
+
+:::: {.columns}
+::: {.column width="60%"}
+- **50+ years** of scientific challenge
+- Key to understanding diseases
+- Essential for drug development
+- Unraveling mysteries of life
+
+**The Problem:**
+- Proteins are building blocks of life
+- Need to understand 3D structure
+- Previously took **years** per protein
+- Painstaking, complex process
+:::
+
+::: {.column width="40%"}
+![](protein-folding.png){fig-alt="Protein folding visualization"}
+:::
+::::
+
+---
+
+## AlphaFold 2: The Breakthrough
+
+:::: {.columns}
+::: {.column width="50%"}
+**2020 Revolution:**
+- Solved protein folding with near-perfect accuracy
+- Predictions in **hours** or **minutes**
+- Immediate and profound impact
+
+**By 2022:**
+- Predicted almost all known proteins
+- **200+ million** proteins mapped
+- From bacteria to humans
+:::
+
+::: {.column width="50%"}
+**Current Applications:**
+- Cancer research
+- Alzheimer's studies
+- Antibiotic resistance
+- Environmental solutions
+- Plastic-degrading enzymes
+:::
+::::
+
+---
+
+## The Success Story
+
+> *"This story isn't just about a computer winning a game. This is a testament how AI can enhance human intelligence and open new frontiers in scientific discovery."*
+
+**AI as Enhancement:**
+- Accelerated scientific discovery
+- Solutions to pressing global challenges
+- New frontiers in research
+
+---
+
+## But Do We Pay a Price? {.center}
+
+**Today's AI capabilities:**
+- Write essays
+- Compose symphonies  
+- Pass professional exams
+
+**The Growing Concern:**
+> *"As systems grow more powerful, research suggests our own cognitive skills might be quietly eroding in exchange."*
+
+---
+
+## Research Findings {.smaller}
+
+**2025 Swiss Business School Study:**
+- Increased AI reliance linked to diminished critical thinking
+- Reduced deep reflective thinking processes
+
+**AI Hallucination Rates:**
+- Legal queries: **60-80%** false information
+- Cognitive studies: **100%** fabricated content
+- Made-up newspapers, statistics, everything
+
+**Impact on Skills:**
+- Hindered problem-solving abilities
+- Weakened communication skills
+- Reduced independent analysis capacity
+
+---
+
+## The Speaker's Perspective
+
+**Background:**
+- Founded EU's first interdisciplinary virtual law firm
+- 10+ years at intersection of technology, business, law
+- CEO dealing with complex hiring challenges
+
+**The Challenge:**
+- Finding lawyers with complex skill sets
+- Interdisciplinary thinking requirements
+- Human traits: intuition, creativity, innovation
+
+---
+
+## What is Human Intelligence?
+
+**Not a single ability, but a combination:**
+
+:::: {.columns}
+::: {.column width="50%"}
+- Reasoning
+- Problem solving
+- Memory
+- Language
+- Perception
+:::
+
+::: {.column width="50%"}
+- Creativity
+- Pattern recognition
+- Emotional depth
+- Adaptability
+- Connecting dots across disciplines
+:::
+::::
+
+**Key Difference:** Human intelligence integrates cognitive skills with emotional understanding and contextual awareness.
+
+---
+
+## Can Machines Be Creative?
+
+**Human Creativity:**
+- Novel and valuable ideas
+- Relies on intuition
+- Emotional depth
+- Learned experiences
+- Contextual understanding
+
+**AI Creativity:**
+- Computational power
+- Pattern recognition
+- Reinforcement learning
+- **But lacks:** emotional depth, contextual understanding, interdisciplinary thinking
+
+---
+
+## The AlphaFold Paradox
+
+> *"AI didn't feel its way to solve the puzzle. It exhibited functional creativity but lacks the emotional depths and contextual understanding."*
+
+**World Economic Forum 2025 Top Skills:**
+1. Creativity
+2. Analytical thinking
+3. Critical thinking
+
+**The Problem:** AI tools designed to enhance these skills may actually diminish them.
+
+---
+
+## Historical Precedent: London Taxi Drivers
+
+**The Knowledge Test:**
+- Memorize thousands of streets and landmarks
+- Increased hippocampus activity
+- Enhanced spatial memory
+
+**GPS Impact:**
+- Advantage started to diminish
+- Classic example of **cognitive offloading**
+
+---
+
+## Cognitive Offloading Paradox
+
+**Short-term:** More efficient, increased productivity
+
+**Long-term:** Weakened cognitive abilities
+
+**The Brain Mechanism:**
+- Creates neural pathways through repeated behaviors
+- Problem-solving strengthens neural circuits
+- Without engagement: neural density in prefrontal cortex decreases
+- Affects analytical reasoning capabilities
+
+---
+
+## The Hiring Question
+
+> *"Do you want to hire a lawyer whose brain is not even capable anymore for analytical reasoning?"*
+
+**The Risk:** AI automation may alter brain structure by reducing cognitive engagement.
+
+---
+
+## Pandora's Box Metaphor {.center}
+
+**The Story:**
+- Pandora opened the jar
+- Unleashed chaos to the world
+- But one thing remained inside...
+
+**Hope**
+
+---
+
+## Is There Hope? {.center}
+
+**Yes - Neuroplasticity**
+
+The brain's remarkable ability to adapt
+
+**"Use it or lose it" principle**
+
+---
+
+## The Key Finding
+
+**2022 Neuroimage Study:**
+
+:::: {.columns}
+::: {.column width="50%"}
+**Passive AI Users:**
+- Didn't question AI outputs
+- Ignored hallucination rates
+- **Decreased** cognitive brain activity
+:::
+
+::: {.column width="50%"}
+**Active AI Users:**
+- Assessed AI outputs critically
+- Questioned results
+- **Maintained** same brain activity level
+:::
+::::
+
+**The Solution:** Learn to use AI responsibly, consciously, and maturely while preserving human nature.
+
+---
+
+## How Do We Stay Human? {.center}
+
+**AI excels at:** Narrow tasks
+
+**AI struggles with:** 
+- Interdisciplinary problem solving
+- Complex contextual understanding
+
+**Missing Human Traits:**
+1. Contextual understanding
+2. Emotional intelligence  
+3. Human creativity
+
+---
+
+## The Da Vinci Example
+
+**Leonardo da Vinci's Excellence:**
+- Combined art with science
+- Merged anatomy with engineering
+- Cross-disciplinary brilliance
+
+**Question:** Could AI replicate such interdisciplinary thinking?
+
+**Answer:** Unlikely.
+
+**Goal:** Create conscious interplay between human and artificial intelligence.
+
+---
+
+## Our Secret Weapon
+
+**Reading High-Quality Literature**
+
+**Benefits:**
+- Enhances empathy
+- Improves critical thinking
+- Boosts creativity
+- Increases cognitive flexibility
+
+**Neural Impact:**
+- Complex symphony of brain activity
+- Multiple perspective immersion
+- Imagination training
+- Increased neural connectivity
+
+---
+
+## The Reading Process
+
+**When you read fiction, you:**
+
+:::: {.columns}
+::: {.column width="50%"}
+**Train Empathy:**
+- Immerse in others' perspectives
+
+**Train Critical Thinking:**
+- Evaluate motives
+- Assess competing viewpoints
+:::
+
+::: {.column width="50%"}
+**Train Creativity:**
+- Use imagination
+- Visualize new worlds
+- Create from mere words
+
+**Bonus Benefits:**
+- Memory retention
+- Problem-solving skills
+:::
+::::
+
+---
+
+## The Reading Crisis {.smaller}
+
+**Eurostat 2022:**
+- **Almost half** of EU citizens didn't read a single book in 12 months
+
+**Attention Challenges:**
+- Focus shifts every **47 seconds** (down from 2.5 minutes in two decades)
+- Average human attention span: **8.25 seconds** (2015)
+- **Goldfish attention span:** 9 seconds
+
+> *"So let's beat that goldfish please."*
+
+---
+
+## The Prometheus Metaphor
+
+**The Greek Myth:**
+- Prometheus stole fire for humanity
+- Brought light, warmth, tools
+- But gods punished him
+- Eagle ate his liver daily
+- Regenerated and restarted
+
+**The Lesson:** Transformative technologies bring benefits **and** unforeseen consequences.
+
+---
+
+## AI: Our Modern Fire {.center}
+
+**The Choice:**
+
+Do we want to **illuminate a path forward**
+
+or 
+
+let it **burn down everything** we've built?
+
+---
+
+## True Intelligence
+
+**Is about:**
+- Meaning
+- Context  
+- Emotion
+
+**Not just:** Problem solving
+
+---
+
+## True Creativity
+
+**Is about:**
+- Connecting ideas to shared humanity
+- Human experience and emotion
+
+**Not just:** Novel ideas
+
+---
+
+## The Future of Thinking
+
+**Not about:** Competing with AI
+
+**About:** Creating symbiotic relationships where both human and artificial intelligence can thrive
+
+---
+
+## Call to Action {.center}
+
+**As we navigate this new era together:**
+
+- **Embrace AI** as a partner, not a threat
+- Use it to **challenge us** to think deeper
+- **Imagine bigger** possibilities
+- Remain **steadfastly human** in everything we do
+
+---
+
+## Thank You {.center}
+
+**Questions & Discussion**
+
+> *"Let's embrace AI not as a threat, but as a partner, one that challenges us to think deeper, imagine bigger and remain steadfastly human in everything we do."*

@@ -3,7 +3,7 @@ title: "[13 AI Strategies for Quality Journal Papers]{.yellow}"
 subtitle: "A Researcher's Ethical Guide to Using AI Tools"
 author: "[Zahid Asghar]{.yellow}"
 date: "2025-05-10"
-format:
+format: 
   revealjs:
     slide-number: true
     transition: fade

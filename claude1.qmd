@@ -1,0 +1,439 @@
+---
+title: "Claude AI: Introduction & Practical Guide"
+subtitle: "An Introductory Session for New Users"
+author: "Your Name"
+date: today
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    logo: images/anthropic-logo.png
+    css: styles.css
+    footer: "Claude AI Introduction"
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+    code-copy: true
+---
+
+## What is Claude? {.center}
+
+::: {.callout-tip icon=false}
+## Claude is an AI assistant created by Anthropic
+:::
+
+::: incremental
+- **Think of it as:** A highly capable digital colleague who can help with writing, analysis, coding, research, and creative tasks
+- **Key principle:** Built to be helpful, harmless, and honest  
+- **Current version:** Claude Sonnet 4 (part of the Claude 4 family)
+- **Access:** Web interface, mobile app, desktop app, and API
+:::
+
+::: {.callout-note appearance="simple"}
+*"Like having a knowledgeable research assistant, editor, and brainstorming partner available 24/7"*
+:::
+
+## Core Capabilities - The Big Four
+
+::: {.panel-tabset}
+
+### Analysis & Research 🎯
+- Process documents, data, and complex information
+- Summarize lengthy reports  
+- Answer questions with cited sources
+
+### Writing & Communication ✍️
+- Draft emails, reports, proposals
+- Edit and improve existing content
+- Creative writing and storytelling
+
+### Technical Tasks 💻
+- Code in multiple programming languages
+- Debug and explain technical concepts
+- Create data visualizations
+
+### Problem Solving 🧠
+- Break down complex problems
+- Strategic thinking and planning
+- Brainstorming and ideation
+
+:::
+
+## What Makes Claude Different?
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Safety-First Design
+- Built with Constitutional AI
+- Trained to be helpful while avoiding harmful outputs  
+- Transparent about limitations and uncertainties
+
+### Long-Form Conversations
+- Can handle very long documents and maintain context
+- Remembers the entire conversation (within a single chat)
+:::
+
+::: {.column width="50%"}
+### Nuanced Understanding
+- Grasps context, tone, and subtle requirements
+- Can adapt communication style to your needs
+
+### Integrated Tools
+- Web search, file analysis, Google Drive integration
+- Can create interactive visualizations and applications
+:::
+
+:::
+
+## Real-World Use Cases
+
+::: {.panel-tabset}
+
+### For Professionals
+- **Executives:** Strategic planning, meeting prep, email drafting
+- **Researchers:** Literature reviews, data analysis, report writing  
+- **Marketers:** Content creation, campaign ideas, audience analysis
+- **Developers:** Code review, debugging, documentation
+
+### For Students & Academics
+- Research assistance and source finding
+- Essay structure and editing
+- Explaining complex concepts
+- Study guides and summaries
+
+### For Personal Use
+- Travel planning and research
+- Creative writing projects
+- Learning new skills
+- Personal productivity optimization
+
+:::
+
+## Getting Started - Your First Interaction
+
+::: {.columns}
+
+::: {.column width="50%"}
+### 1. Be Specific and Clear
+::: {.callout-warning icon=false}
+❌ "Help me with marketing"
+:::
+
+::: {.callout-tip icon=false}
+✅ "Help me create a social media strategy for a small bakery targeting local customers"
+:::
+
+### 2. Provide Context
+- Share relevant background information
+- Mention your role, goals, and constraints  
+- Upload relevant documents if needed
+:::
+
+::: {.column width="50%"}
+### 3. Ask Follow-up Questions
+- Claude builds on previous responses
+- Refine and iterate to get exactly what you need
+
+### 4. Use Natural Language
+- No special commands needed
+- Explain what you want as you would to a colleague
+:::
+
+:::
+
+## Power User Tips
+
+::: {.columns}
+
+::: {.column width="50%"}
+### 📁 Work with Files
+- Upload PDFs, documents, spreadsheets
+- Claude can analyze, summarize, and extract insights
+- Ask specific questions about your documents
+
+### 🔍 Research Mode  
+- Ask Claude to search for current information
+- Request multiple sources for verification
+- Combine web research with your internal documents
+:::
+
+::: {.column width="50%"}
+### ⚡ Iterative Improvement
+- Start with a basic request
+- Ask Claude to refine, expand, or adjust
+- Build complex outputs through conversation
+
+### 🎨 Creative Applications
+- Interactive web applications
+- Data visualizations  
+- Custom tools and calculators
+:::
+
+:::
+
+## Best Practices for Success
+
+::: {.columns}
+
+::: {.column width="50%"}
+### DO:
+::: {.callout-tip icon=false}
+- **Be conversational** - Treat Claude like a knowledgeable colleague
+- **Provide examples** - Show what good output looks like  
+- **Ask for specific formats** - "Create a bulleted list" or "Write in executive summary style"
+- **Request explanations** - "Explain your reasoning" or "Walk me through this step-by-step"
+:::
+:::
+
+::: {.column width="50%"}
+### DON'T:
+::: {.callout-warning icon=false}
+- **Assume Claude knows your specific context** - Provide background info
+- **Accept first draft as final** - Iterate and refine
+- **Forget to fact-check** - Especially for critical information  
+- **Use for harmful or unethical purposes** - Claude will decline
+:::
+:::
+
+:::
+
+## Understanding Limitations
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Knowledge Cutoff
+- Training data goes through January 2025
+- For very recent events, Claude will search the web
+- Always verify time-sensitive information
+
+### Not a Search Engine
+- Claude reasons and analyzes rather than just retrieving information
+- Best for understanding and synthesis, not just facts
+:::
+
+::: {.column width="50%"}
+### Cannot:
+- Access your personal accounts (unless you provide access via tools)
+- Remember conversations across different chat sessions
+- Learn or update from your conversations
+
+### Accuracy Note
+::: {.callout-important}
+- Very reliable but not infallible
+- Always verify critical information
+- Especially important for medical, legal, or financial advice
+:::
+:::
+
+:::
+
+## Privacy & Security
+
+::: {.columns}
+
+::: {.column width="33%"}
+### Your Data
+- Conversations are private to you
+- Claude doesn't learn from your individual conversations  
+- Anthropic has strong privacy protections
+:::
+
+::: {.column width="33%"}
+### Sensitive Information
+- Safe to share most business and personal information
+- Claude won't store or remember between sessions
+- Consider removing highly sensitive data from outputs you share
+:::
+
+::: {.column width="33%"}
+### Business Use
+- Enterprise options available with additional security
+- API access for integration into your systems
+- SOC 2 Type II compliant
+:::
+
+:::
+
+## Advanced Features Overview
+
+::: {.panel-tabset}
+
+### 🔧 Artifacts
+- Interactive documents and applications
+- Code that you can run and modify
+- Visualizations and reports
+
+### 🔍 Research Tools  
+- Web search for current information
+- Google Drive integration
+- Email analysis capabilities
+
+### 📊 Data Analysis
+- Upload spreadsheets and datasets
+- Statistical analysis and visualization
+- Custom calculations and reports
+
+### 💻 Code Generation
+- Full applications in various frameworks
+- APIs and integrations
+- Data processing scripts
+
+:::
+
+## Getting the Most Value
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Start Small, Think Big
+1. **Week 1:** Basic tasks (email drafts, simple analysis)
+2. **Week 2:** File uploads and document analysis  
+3. **Week 3:** Complex projects and iterative work
+4. **Week 4:** Integration into your regular workflow
+:::
+
+::: {.column width="50%"}
+### Common Success Patterns
+- **Use Claude for first drafts** - Then refine with your expertise
+- **Combine with your knowledge** - Claude + your domain expertise = powerful results
+- **Automate repetitive tasks** - Template creation, data formatting
+- **Learn through exploration** - Ask Claude to teach you new concepts
+:::
+
+:::
+
+## Troubleshooting Common Issues
+
+::: {.panel-tabset}
+
+### "Claude's Response Isn't What I Expected"
+- **Solution:** Be more specific about format, tone, or requirements
+- **Try:** "Rewrite this in a more formal tone" or "Make this more concise"
+
+### "I Need Current Information"  
+- **Solution:** Ask Claude to search for recent information
+- **Try:** "Search for the latest data on [topic]"
+
+### "The Output Is Too Generic"
+- **Solution:** Provide more context and examples
+- **Try:** Share relevant background or sample outputs
+
+### "I Need Help with Something Complex"
+- **Solution:** Break it into smaller parts
+- **Try:** "Let's start with X, then move to Y"
+
+:::
+
+## Next Steps - Your Action Plan
+
+::: {.columns}
+
+::: {.column width="25%"}
+### Today:
+- [ ] Create your first Claude account (if not done)
+- [ ] Try one simple task from your daily work
+- [ ] Experiment with asking follow-up questions
+:::
+
+::: {.column width="25%"}
+### This Week:
+- [ ] Upload a work document and ask Claude to analyze it
+- [ ] Use Claude for a writing task
+- [ ] Try asking Claude to explain something complex
+:::
+
+::: {.column width="25%"}
+### This Month:
+- [ ] Integrate Claude into one regular workflow
+- [ ] Explore advanced features like web search  
+- [ ] Share learnings with your team
+:::
+
+::: {.column width="25%"}
+### Ongoing:
+- [ ] Build your prompting skills through practice
+- [ ] Explore new use cases as they arise
+- [ ] Stay updated on new features and capabilities
+:::
+
+:::
+
+## Resources & Support
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Getting Help
+- **In-app:** Ask Claude directly for help using Claude!
+- **Support:** [https://support.anthropic.com](https://support.anthropic.com)
+- **Documentation:** [https://docs.anthropic.com](https://docs.anthropic.com)
+
+### Best Practices
+- **Prompting Guide:** Available in Anthropic's documentation
+- **Community:** Learn from other users' experiences
+- **Experimentation:** The best way to learn is by doing
+:::
+
+::: {.column width="50%"}
+::: {.callout-note}
+### Remember:
+*Claude is designed to be intuitive - if you can explain what you want to a human colleague, you can explain it to Claude.*
+:::
+:::
+
+:::
+
+## Q&A and Discussion {.center}
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Common Questions:
+- How does Claude compare to other AI assistants?
+- What types of tasks work best with Claude?
+- How can I integrate Claude into my team's workflow?
+- What are the costs and pricing options?
+- How do I ensure I'm using Claude effectively?
+:::
+
+::: {.column width="50%"}
+### Your Questions:
+::: {.callout-tip icon=false}
+*Open floor for questions specific to your use cases and context*
+:::
+:::
+
+:::
+
+## Thank You! {.center background-color="#1e3a8a"}
+
+::: {style="color: white; text-align: center;"}
+### Ready to start your Claude journey?
+
+*Remember: The best way to learn Claude is to start using it. Begin with simple tasks and gradually explore more complex applications.*
+
+**Contact for follow-up questions and advanced training sessions**
+:::
+
+---
+
+## Additional Quarto Features
+
+::: {.callout-note}
+### To use this presentation:
+
+1. Save as `claude-intro.qmd`
+2. Install Quarto: [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/)
+3. Run: `quarto render claude-intro.qmd`
+4. Open the generated HTML file in your browser
+
+### Optional enhancements:
+- Add your logo to `images/anthropic-logo.png`
+- Customize colors in `custom.scss`
+- Add speaker notes with `::: {.notes}` blocks
+:::
+
