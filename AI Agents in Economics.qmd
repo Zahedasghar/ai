@@ -1,0 +1,308 @@
+---
+title: "AI Agents for Economic Research"
+subtitle: "From Chatbots to Autonomous Research Assistants"
+author: "Anton Korinek - August 2025 Update"
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    logo: ""
+    footer: "Journal of Economic Literature 61(4)"
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+    code-line-numbers: false
+    width: 1400
+    height: 900
+    margin: 0.1
+---
+
+## {.title-slide}
+
+::: {.title-content}
+**AI Agents for Economic Research**
+
+*From Chatbots to Autonomous Research Assistants*
+
+**Anton Korinek** - August 2025 Update  
+*Journal of Economic Literature 61(4)*
+
+::: {.highlight-box}
+"AI agents combine large language models with planning capabilities, memory, and access to external tools to autonomously pursue complex goals through multi-step actions."
+:::
+:::
+
+## The Evolution of AI Systems
+
+::: {.columns}
+
+::: {.column width="33%"}
+### Traditional LLMs
+- **Launch:** November 2022 (ChatGPT)
+- **Thinking:** "System 1" - Fast, intuitive  
+- **Capabilities:** Language generation, single-pass responses
+- **Limitations:** No reflection, no real-time data
+:::
+
+::: {.column width="33%"}
+### Reasoning Models  
+- **Launch:** September 2024
+- **Thinking:** "System 2" - Deliberate, step-by-step
+- **Capabilities:** Complex math, formal proofs, debugging
+- **Trade-offs:** Slower, more expensive
+:::
+
+::: {.column width="33%"}
+### Agentic Chatbots
+- **Launch:** December 2024  
+- **Thinking:** Autonomous planning + tool use
+- **Capabilities:** Multi-step workflows, external tools
+- **Power:** End-to-end research automation
+:::
+
+:::
+
+## AI Agent Architecture
+
+::: {.center}
+```{mermaid}
+flowchart TD
+    A[User Prompt] --> B[Orchestrator]
+    B --> C[Reasoning Engine LLM]
+    C <--> D[Tools & Memory]
+    D --> E[Search]
+    D --> F[Code Execution] 
+    D --> G[APIs]
+    D --> H[Browser]
+    C --> I[Final Result]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style I fill:#fce4ec
+```
+:::
+
+::: {.highlight-box}
+**Key Difference from Chatbots:** Agents can autonomously decompose tasks, gather information from multiple sources, execute code, and iteratively refine their approach based on intermediate findings.
+:::
+
+## Breakthrough Agent Applications
+
+### Deep Research Systems 
+
+::: {.columns}
+::: {.column width="50%"}
+- **Multi-agent Architecture:** Orchestrator spawns specialized sub-agents for parallel investigation
+- **Scale:** Process 100+ sources in minutes, literature reviews in under an hour
+- **Synthesis:** Compile findings into coherent reports with accurate citations
+:::
+::: {.column width="50%"}
+### Claude Code ("Vibe Coding")
+- **Natural Language Programming:** Create software from English descriptions  
+- **Speed:** Build econometric tools in minutes rather than hours
+- **Accessibility:** No programming expertise required
+:::
+:::
+
+::: {.warning-box}
+**Current Limitations:** Still require human oversight, prone to hallucinations, struggle with genuine economic reasoning at researcher level
+:::
+
+## What Economists Can Do Today
+
+::: {.grid-3x2}
+
+::: {.grid-item}
+### Literature Reviews
+Automated scanning and synthesis of hundreds of sources with proper citations
+:::
+
+::: {.grid-item}  
+### Code Generation
+Write and debug econometric code, implement estimation procedures
+:::
+
+::: {.grid-item}
+### Data Analysis  
+End-to-end workflows: download, clean, analyze, visualize economic data
+:::
+
+::: {.grid-item}
+### Custom Tools
+Build interactive research applications and specialized agents
+:::
+
+::: {.grid-item}
+### Research Workflows
+Automate complex multi-step research processes  
+:::
+
+::: {.grid-item}
+### Writing Assistance
+Draft papers, create summaries, generate promotional content
+:::
+
+:::
+
+::: {.highlight-box}
+**Example from Paper:** Building a FRED data retrieval agent that autonomously determines which economic indicators to fetch, retrieves the data, analyzes trends, and provides natural language explanations - all from a simple question like "How is the US labor market doing?"
+:::
+
+## Building Your Own Research Agents
+
+### LangGraph Framework
+
+```python
+# Simple agent architecture
+workflow = StateGraph(AgentState)
+workflow.add_node("think", think_node)
+workflow.add_node("act", act_node)
+workflow.add_node("observe", observe_node)  
+workflow.add_node("respond", respond_node)
+
+# Define flow
+workflow.add_edge("think", "act")
+workflow.add_edge("act", "observe")
+workflow.add_edge("observe", "respond")
+```
+
+### Key Components:
+- **State Management:** Centralized state object flows through entire graph
+- **Nodes:** Each function operates on the state  
+- **Dynamic Routing:** Conditional edges enable adaptive behavior
+- **Parallel Processing:** Multiple agents can work simultaneously
+
+::: {.highlight-box}
+**Recursive Truth:** AI agents are now building AI agents - the tools help create more sophisticated successors
+:::
+
+## Open Protocols for Agent Interoperability
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Model Context Protocol (MCP)
+- Universal standard for connecting agents to resources and data
+- 10,000+ servers available (as of writing)  
+- Enables access to FRED, IMF, institutional databases
+- Like "USB-C for AI agents"
+:::
+
+::: {.column width="50%"}  
+### Agent2Agent (A2A) Protocol
+- Enables AI agents to communicate with each other
+- Agent Cards describe capabilities and connections
+- Enables specialized agents to collaborate  
+- Industry deployment in customer service, automation
+:::
+
+:::
+
+::: {.highlight-box}
+**Research Implications:** A lead research agent could connect to multiple data sources through MCP, then delegate subtasks to specialized agents (data cleaning, financial analysis, econometric modeling) that communicate via A2A protocols.
+:::
+
+## Economic and Strategic Considerations
+
+### Pricing Evolution
+- **Premium Subscriptions:** $200+ per month (10x increase from standard $20)
+- **Potential Future:** PhD-level scientist systems at $20,000/year  
+- **Access Inequality:** Advanced capabilities increasingly function of ability-to-pay
+
+### Countervailing Forces
+
+::: {.columns}
+::: {.column width="50%"}
+**Open Source Models:** DeepSeek, Alibaba's Qwen offer near-frontier capabilities at lower costs
+:::
+::: {.column width="50%"}  
+**Competition:** Kimi-K2 offers GPT-4 performance at 1/100th the price
+:::
+:::
+
+::: {.warning-box}
+**Strategic Advice:** Maintain flexibility across model providers rather than committing to a single ecosystem
+:::
+
+## Current Limitations & Challenges
+
+::: {.columns}
+
+::: {.column width="50%"}
+### Technical Limitations
+- **Hallucinations:** Generate plausible but incorrect content
+- **Computational Cascades:** Errors propagate through multi-agent workflows  
+- **Brittleness:** Small prompt variations can cause failures
+- **Prompt Injection:** Vulnerable to malicious manipulation
+:::
+
+::: {.column width="50%"}
+### Economic Research Specific  
+- **Limited Economic Reasoning:** Misapply theoretical frameworks
+- **Training Data Bias:** Reproduce common misconceptions
+- **Not Independent Researchers:** Require human oversight
+:::
+
+:::
+
+::: {.highlight-box}
+**Best Practice Analogy:** "Treat AI agents like research assistants: they require careful planning, oversight during execution, and detailed vetting of results."
+:::
+
+## Future Implications for Economics
+
+::: {.future-box}
+### Capability Spiral
+AI agents help build better AI agents, suggesting accelerating pace of development
+:::
+
+### Near-term Opportunities (Today)
+- Junior researchers can accomplish what once required entire teams
+- Technical barriers dissolving - democratization of research capabilities  
+- More ambitious research agendas become feasible
+
+### Long-term Transformation  
+- Economist's role shifts from producing analysis to defining values and interpreting implications
+- Research generation becomes increasingly automated
+- Focus on uniquely human aspects: ethical reasoning, creative problem formulation, wisdom about social welfare
+
+::: {.highlight-box}
+**Special Responsibility:** Economists understand incentives, market dynamics, and resource allocation - crucial insights for AI-augmented research ecosystem
+:::
+
+## Key Takeaways
+
+::: {.highlight-box}
+### We've Crossed a Critical Threshold
+Economists can now build sophisticated research assistants without technical expertise, conduct autonomous literature reviews, and create analytical tools through natural language alone.
+:::
+
+### Practical Recommendations
+- **Embrace Tools Now:** Build your own agents to understand capabilities and limitations
+- **Invest in Human Skills:** Ethical reasoning, creative problem formulation, social welfare wisdom  
+- **Guide Transformation:** Help shape AI-augmented research ecosystem
+- **Maintain Oversight:** Current agents are superb assistants, not independent researchers
+
+::: {.future-box}
+**The Stakes:** How we integrate AI agents into economic research will influence how society understands and addresses its most pressing challenges. Our task is to ensure that as artificial colleagues grow more capable, our human contribution grows more thoughtful, ethical, and focused on human well-being.
+:::
+
+## Questions & Discussion
+
+::: {.center}
+**Thank you!**
+
+*For more information and code examples:*  
+**GenAI4Econ.org**
+
+*Paper available at:*  
+**Journal of Economic Literature 61(4)**
+:::
+
+---
+
+<!-- Custom CSS file: custom.scss -->

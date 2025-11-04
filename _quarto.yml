@@ -1,35 +1,213 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "!README.md"
+    - "!SECURITY.md"
+    - "!materials.qmd"
 
 website:
   title: "AI for Teachers, Researchers and Students"
-  sidebar:
+  site-url: https://zahedasghar.github.io/ai
+  repo-url: https://github.com/Zahedasghar/ai
+  repo-actions: [edit, issue]
+
+  page-navigation: true
+  back-to-top-navigation: true
+  bread-crumbs: true
+
+  navbar:
     background: primary
     logo: "images/LLM.webp"
     pinned: true
-    align: center
-    tools:
+    search: true
+
+    right:
       - icon: github
         href: https://github.com/Zahedasghar
         text: GitHub
-    style: docked
-    contents:
-      - href: index.qmd
-        text: Home
-      - href: schedule.qmd
-        text: Schedule
-      - href: materials.qmd
-        text: Materials
-      - href: https://discord.com/channels/1292187441565794316/1292187441565794319
+      - icon: discord
+        href: https://discord.com/channels/1292187441565794316/1292187441565794319
         text: Discord
+
+  sidebar:
+    style: docked
+    background: light
+    collapse-level: 2
+    contents:
+      # Main Navigation
+      - section: "🏠 Getting Started"
+        contents:
+          - href: index.qmd
+            text: Home
+          # - href: schedule.qmd
+          #   text: Schedule
+          - href: materials.qmd
+            text: Materials
+          # - href: outline.qmd
+          #   text: Course Outline
+
+      # Workshops Section
+      - section: "🎓 Workshops"
+        contents:
+          - href: workshop_on_ai.qmd
+            text: Workshop Overview
+          - href: ai_workshop.qmd
+            text: "1. Beginner Workshop"
+          - href: ai_workshop_intermediate.qmd
+            text: "2. Intermediate Workshop"
+          - href: ai_workshop_prompt.qmd
+            text: "3. Prompt Engineering"
+          - href: AI_workshop_pips.qmd
+            text: "4. PIPS Workshop"
+          - href: AI_workshop_pnd.qmd
+            text: "5. PND Workshop"
+          - href: AI_Seminar_Activity_Handout.qmd
+            text: "Seminar Activities"
+
+      # Teaching with AI
+      - section: "👨‍🏫 Teaching with AI"
+        contents:
+          - href: ai for teaching, research and publishing.qmd
+            text: Teaching & Research Overview
+          - href: ai_intro.qmd
+            text: Introduction to Gen AI
+          - href: socratic_method.qmd
+            text: Socratic Method with AI
+          - href: The Future of Thinking How AI redefines intelligence.qmd
+            text: Future of Thinking
+
+      # AI & Economics
+      - section: "📊 AI & Economics"
+        contents:
+          - href: AI Agents in Economics.qmd
+            text: AI Agents in Economics
+
+          # - href: ai_econ_pol.qmd
+          #   text: Economic Policy & AI
+          # - href: AI_Global_Analysis_Slides.qmd
+          #   text: Global AI Analysis
+          # - href: korinek_croatia.qmd
+          #   text: Korinek's Framework
+          - href: economic_policy_prompts_carousel.qmd
+            text: Policy Prompts
+
+      # Prompt Engineering
+      - section: "💡 Prompt Engineering"
+        contents:
+          - href: prompts.qmd
+            text: Prompt Engineering Guide
+          - href: data_prompts.qmd
+            text: Data Analysis Prompts
+          - href: econometric_prompts_sol.qmd
+            text: Econometric Prompts
+          - href: office_prompt.qmd
+            text: Office Productivity
+          - href: prompt_one_percent.qmd
+            text: 1% Better Prompts
+
+      # AI Tools
+      - section: "🔧 AI Tools & Platforms"
+        contents:
+          - href: gpt5_power_users.qmd
+            text: "  → GPT-5 Power Users"
+          - href: ai_nlp.qmd
+            text: "  → AI for NLP"
+
+      # Research & Publishing
+      - section: "📝 Research & Publishing"
+        contents:
+          - href: ai_pub.qmd
+            text: AI in Publishing
+          - href: literature.qmd
+            text: Literature Reviews
+
+          - href: financial_times.qmd
+            text: Financial Times AI
+
+      # Special Topics
+      # - section: "🌟 Special Topics"
+      #   contents:
+      #     - href: national_ai_policy.qmd
+      #       text: National AI Policy
+      #     - href: national_ai_policy_positron.qmd
+      #       text: AI Policy (Positron)
+      #     - href: Generative_AI_New_Frontiers_IR.qmd
+      #       text: Gen AI in IR
+      #     - href: AI_notes_me.qmd
+      #       text: AI Notes
+
+      # University Talks
+      - section: "🎤 Presentations"
+        contents:
+          - text: "University Talks"
+          - href: air_univ.qmd
+          - text: "Slide Decks →"
+            href: slides/
+
+
+
+  page-footer:
+    left: |
+      © 2025 Zahid Asghar. Licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+    center: |
+      Built with [Quarto](https://quarto.org/)
+    right:
+      - icon: github
+        href: https://github.com/Zahedasghar
+        aria-label: GitHub
+      - icon: discord
+        href: https://discord.com/channels/1292187441565794316/1292187441565794319
+        aria-label: Discord
+      - icon: envelope
+        href: mailto:g.zahid@gmail.com
+        aria-label: Email
 
 format:
   html:
-    theme: [default, custom1.scss]
-    css: style.scss
+    theme: [default]
+    # css:
+    #   - style.scss
+    #   - styles.css
     toc: true
+    toc-depth: 3
+    toc-location: right
+    number-sections: false
+    code-fold: false
+    code-tools: true
+    code-copy: hover
+    code-link: true
+    code-overflow: wrap
+    highlight-style: github
+    link-external-icon: true
+    link-external-newwindow: true
+    anchor-sections: true
+    smooth-scroll: true
+    citations-hover: true
+    footnotes-hover: true
+    fig-cap-location: bottom
+    tbl-cap-location: top
+
+  revealjs:
+    theme: [default]
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+    preview-links: auto
+    logo: images/LLM.webp
+    footer: "AI for Teachers, Researchers and Students | Zahid Asghar"
+    width: 1600
+    height: 900
+    margin: 0.1
+    min-scale: 0.2
+    max-scale: 2.0
 
 execute:
   freeze: auto
+  cache: true
+  warning: false
+  message: false
 
+editor: visual

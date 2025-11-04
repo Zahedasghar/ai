@@ -1,0 +1,237 @@
+---
+title: "Artificial Intelligence and Global Analysis"
+subtitle: "Transforming International Understanding Through Generative AI"
+author: "Zahid Asghar, School of Economics"
+institute: "Quaid-i-Azam University, Islamabad"
+date: today
+format:
+  revealjs:
+    theme: default
+    chalkboard: true
+    slide-number: c/t
+    logo: "https://www.validate-network.org/sites/default/files/styles/mt_image_small/public/validate/images/media/quaid-i-azam_university_islamabad.jpg?itok=3eu4d_7a"
+    footer: "Prof. Dr. Zahid Asghar, QAU | AI for Global Studies"
+    incremental: false
+    transition: fade
+    transition-speed: slow
+    toc: false
+    center: false
+    title-slide-attributes:
+      data-background-image: "images/gen_ai.jpeg"
+      data-background-size: cover
+      data-background-opacity: "0.3"
+execute:
+  echo: false
+  warning: false
+---
+
+```{=html}
+<style>
+.reveal .slides section:not(.title-slide) h1 { display: none !important; }
+.reveal .slides section.title-slide h1 {
+  display: block !important;
+  color: #ffd700; font-size: 2.5em; font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+.reveal .slides section { display: flex; flex-direction: column; justify-content: flex-start; padding-top: 1rem; text-align: left; }
+.reveal .slides section.title-slide { justify-content: center; text-align: center; }
+.scrollable { overflow-y: auto !important; max-height: 80vh !important; padding-right: 10px; }
+.reveal h2 { color: #2c3e50; font-weight: 700; border-bottom: 3px solid #667eea; font-size: 1.8em; }
+.reveal h3 { color: #34495e; font-weight: 600; font-size: 1.3em; }
+.callout-note, .callout-tip, .callout-important, .callout-warning { padding: 1rem; margin: 1rem 0; border-radius: 5px; }
+.callout-note { background-color: rgba(52,152,219,0.1); border-left: 4px solid #3498db; }
+.callout-tip { background-color: rgba(46,204,113,0.1); border-left: 4px solid #2ecc71; }
+.callout-important { background-color: rgba(231,76,60,0.1); border-left: 4px solid #e74c3c; }
+.callout-warning { background-color: rgba(241,196,15,0.1); border-left: 4px solid #f1c40f; }
+.gradient-box { padding: 1.5rem; border-radius: 10px; color: white; margin: 1rem 0; }
+.gradient-purple { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.gradient-blue { background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); }
+.gradient-orange { background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%); }
+.gradient-green { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+.columns { display: flex; gap: 2rem; }
+.column { flex: 1; }
+.text-center { text-align: center !important; }
+.mt-2 { margin-top: 2rem; }
+</style>
+```
+
+---
+
+## 🚀 Transforming Global Studies with AI {background-image="images/apple.jpg" background-size="cover"}
+
+<div class="gradient-box gradient-purple text-center">
+<h3>🌍 Welcome to the AI-Powered Era of Global Analysis</h3>
+<p><em>"Intelligence plus AI equals unprecedented insights"</em></p>
+<p><strong>Transform How You Understand the World</strong></p>
+</div>
+
+---
+
+## Today's Journey: Mastering AI for Global Analysis {.scrollable}
+
+<div class="gradient-box gradient-blue text-center">
+🎯 <strong>Your Transformation Roadmap</strong>
+</div>
+
+### Foundations of AI
+- 🤖 AI Fundamentals: Core principles for global professionals  
+- 🧠 Machine Intelligence: How AI interprets global data  
+- ✨ Generative AI Tools: Your analytical partner
+
+### Applications
+- 🌍 Global Affairs Analysis: AI-enhanced insights  
+- ⚖️ Ethics & Strategy: Responsible AI in diplomacy  
+- 🛠️ Professional Tools: Practical workflows
+
+---
+
+## AI is Revolutionizing Global Studies
+
+<div class="columns">
+<div class="column">
+
+<div class="callout-tip">
+<h4>Success Stories</h4>
+<blockquote>
+<p>"Policy analysis in 30 minutes"<br>— Foreign Affairs Analyst</p>
+<p>"Processed 100+ international treaties instantly"<br>— Legal Researcher</p>
+<p>"Real-time global conflict monitoring"<br>— Security Consultant</p>
+</blockquote>
+</div>
+
+</div>
+<div class="column">
+
+### AI Transformations
+- **📧 Diplomacy:** Enhanced communication  
+- **📊 Analysis:** Deeper global insight  
+- **🎯 Research:** Rapid synthesis  
+- **⚡ Efficiency:** Faster decisions  
+- **🎓 Learning:** Trend discovery  
+
+</div>
+</div>
+
+<div class="gradient-box gradient-green text-center mt-2">
+<em>The question isn’t "Will AI transform global analysis?"<br>It's "How will you use it?"</em>
+</div>
+
+---
+
+## 🧠 Understanding AI: Intelligence in Global Affairs {.scrollable}
+
+### AI = Augmenting Human Insight in World Analysis
+
+- 🧠 Learns from complex global datasets  
+- 🔍 Recognizes political and economic patterns  
+- 🗣️ Understands multiple languages  
+- 🎯 Predicts international developments  
+- 🔄 Adapts to dynamic contexts  
+
+<div class="callout-note">
+AI processes vast amounts of data faster than any analyst, identifying global trends across events, treaties, and communications.
+</div>
+
+---
+
+## 🎮 Key Milestones in AI Development {.scrollable}
+
+### Foundation Years (2016–2020)
+- 🎯 AlphaGo: Strategic decision learning  
+- 🌐 UN Global Pulse: Real-time SDG tracking  
+- 🔍 Negotiation analytics tools  
+
+### Transformation Years (2021–2024)
+- 💬 Chat-based AI assistants  
+- 🗺️ Conflict prediction models  
+- 🌍 Climate diplomacy trackers  
+
+> **Insight:** AI amplifies, not replaces, human judgment.
+
+---
+
+## 🗣️ Natural Language Processing in Global Analysis
+
+### Capabilities
+- 📖 Document & treaty analysis  
+- 🌐 Multilingual translation  
+- 💭 Sentiment monitoring  
+- 📝 Policy brief generation  
+- ✍️ Automatic summarization  
+
+### Applications
+- UN & EU translation  
+- Diplomatic cable summaries  
+- Global news monitoring  
+- Comparative analysis  
+
+---
+
+## ⚖️ Traditional vs Generative AI
+
+| Aspect | Traditional AI | Generative AI |
+|--------|----------------|---------------|
+| Focus | Analysis | Creation |
+| Output | Predictions | Drafts, briefs |
+| Use | Forecasting | Policy ideation |
+| Interface | Dashboards | Conversations |
+
+> **Traditional AI** discovers; **Generative AI** designs.
+
+---
+
+## 🌍 AI in Practice: Applications for Global Professionals
+
+### Research & Intelligence
+- 📚 Review literature faster  
+- 🗺️ Track geopolitical shifts  
+- 📊 Analyze trade or climate data  
+
+### Professional Output
+- ✍️ Write better briefs  
+- 🌐 Translate across languages  
+- 🎤 Prepare impactful presentations  
+
+---
+
+## ⚠️ Responsible AI Use {.scrollable}
+
+### Ethical Principles
+1. Transparency  
+2. Verification  
+3. Attribution  
+4. Privacy  
+5. Balance  
+
+<div class="callout-warning">
+AI must enhance global understanding — not bias it.
+</div>
+
+---
+
+## 🌊 Evolution of Global Studies
+
+📜 Treaties → 📞 Telegraph → 📺 Television → 💻 Digital → 🤖 AI-Enhanced Diplomacy
+
+> You are shaping the next frontier: AI-powered world understanding.
+
+---
+
+## 🎯 Key Takeaways
+
+1. AI amplifies research and strategic capacity  
+2. Begin with analysis, translation, summarization  
+3. Validate AI-generated insights  
+4. Combine expertise with automation  
+5. Lead with innovation  
+
+---
+
+## 🙏 Thank You {background-color="#1a1a2e"}
+
+<div style="text-align:center; color:white; margin-top:2rem;">
+<h2 style="color:#ffd700;">Thank You!</h2>
+<p>📧 zasghar@qau.edu.pk<br>
+🌐 <a href="https://zahid.quarto.pub" style="color:#74b9ff;">Zahid Asghar Website</a></p>
+<p><em>“The future of global analysis belongs to those who master AI today.”</em></p>
+</div>

@@ -1,0 +1,256 @@
+---
+title: "Generative AI: New Frontiers of Political Imagination"
+subtitle: "AI for International and Global Analysis"
+author: "Zahid Asghar, School of Economics"
+institute: "Quaid-i-Azam University, Islamabad"
+date: today
+format:
+  revealjs:
+    theme: night
+    chalkboard: true
+    slide-number: c/t
+    logo: "https://www.validate-network.org/sites/default/files/styles/mt_image_small/public/validate/images/media/quaid-i-azam_university_islamabad.jpg?itok=3eu4d_7a"
+    footer: "Prof. Dr. Zahid Asghar, QAU | AI for Global Studies & Social Sciences"
+    incremental: false
+    transition: fade
+    transition-speed: slow
+    toc: false
+    center: false
+    title-slide-attributes:
+      data-background-image: "images/gen_ai.jpeg"
+      data-background-size: cover
+      data-background-opacity: "0.28"
+execute:
+  echo: false
+  warning: false
+---
+
+```{=html}
+<style>
+.reveal .slides { font-size: 30px; line-height: 1.35; }
+.reveal h2 { font-size: 1.8em; border-bottom: 3px solid #5B8CFF; padding-bottom: .35rem; margin-bottom: .8rem; }
+.reveal h3 { font-size: 1.25em; color: #cfd8ff; margin-top: .6rem; }
+.reveal .slides section:not(.title-slide) h1 { display: none !important; }
+.reveal .slides section.title-slide h1 {
+  display: block !important; color: #ffd700; font-size: 2.6em; font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.55);
+}
+.reveal .slides section { display: flex; flex-direction: column; justify-content: flex-start; padding-top: .75rem; text-align: left; }
+.reveal .slides section.title-slide { justify-content: center; text-align: center; }
+.scrollable { overflow-y: auto !important; max-height: 78vh !important; padding-right: 12px; }
+.columns { display: flex; gap: 1.6rem; }
+.column { flex: 1; min-width: 0; }
+.callout-note, .callout-tip, .callout-important, .callout-warning {
+  padding: 1rem; margin: 1rem 0; border-radius: 10px; background: rgba(255,255,255,0.06);
+}
+.callout-note { border-left: 6px solid #5B8CFF; }
+.callout-tip { border-left: 6px solid #35d3a7; }
+.callout-important { border-left: 6px solid #ff6b6b; }
+.callout-warning { border-left: 6px solid #ffd166; }
+.prompt-box { background: rgba(255,255,255,0.10); border: 1px dashed rgba(255,255,255,0.35);
+  border-left: 6px solid #9aa5b1; padding: 1rem 1.25rem; border-radius: 10px; margin: 1rem 0; }
+.prompt-title { font-weight: 700; color: #e6e9ef; margin-bottom: .35rem; }
+.prompt-ex { font-style: italic; color: #c7ced9; }
+.gradient-box { padding: 1.1rem 1.25rem; border-radius: 12px; color: #fff; margin: 1rem 0; }
+.gradient-purple { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+.gradient-blue { background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%); }
+.gradient-orange { background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%); }
+.gradient-green { background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); }
+.reveal table { width: 100%; border-collapse: collapse; }
+.reveal table th, .reveal table td { border: 1px solid rgba(255,255,255,0.12); padding: .55rem .6rem; }
+.reveal table th { background: rgba(91,140,255,0.18); }
+.text-center { text-align: center !important; }
+.mt-2 { margin-top: 2rem; }
+.img-shadow { box-shadow: 0 12px 24px rgba(0,0,0,0.35); border-radius: 12px; }
+</style>
+```
+
+## 🌍 Welcome & Framing {background-image="images/apple.jpg" background-size="cover"}
+
+::: {.gradient-box .gradient-purple .text-center}
+<h3>Generative AI: New Frontiers of Political Imagination</h3>
+
+<p><em>"The best way to predict the future is to create it."</em></p>
+
+<p><strong>Be comfortable with being uncomfortable.</strong></p>
+:::
+
+------------------------------------------------------------------------
+
+## Agenda: 90-Minute Learning Journey {.scrollable}
+
+-   Why AI matters for Political Science, Global Affairs, and Social Sciences
+-   Intelligence → ML → NLP → Generative AI (clear visuals)
+-   LLMs: capabilities, limits, and responsible use
+-   Global Applications: diplomacy, development, and data-driven governance
+-   Hands-on prompts (💬 gray boxes) for active exploration
+-   Ethics, transparency & academic integrity
+-   Reflection and discussion
+
+------------------------------------------------------------------------
+
+## The New Reality
+
+::: {style="text-align:center; margin-top:1rem;"}
+<h2 style="border:none;">
+
+AI won't replace analysts or scholars.
+
+</h2>
+
+<h3 style="color:#ffd700;">
+
+But those using AI wisely will outperform those who don't.
+
+</h3>
+:::
+
+::: callout-note
+<strong>Why today?</strong> AI enhances judgment, scales comparative research, and compresses time-to-insight across languages and data sources.
+:::
+
+------------------------------------------------------------------------
+
+## Foundations: What is Artificial Intelligence? {.scrollable}
+
+:::::: columns
+::: column
+**Core abilities** - Learn from data - Recognize patterns - Understand language - Reason over context - Make recommendations - Adapt to feedback
+:::
+
+:::: column
+::: callout-tip
+<strong>Simple truth:</strong> AI can analyze multilingual information faster than any researcher, finding patterns in events, policies, and communications.
+:::
+::::
+::::::
+
+------------------------------------------------------------------------
+
+## From AI → ML → NLP → GenAI
+
+![](images/genAI1.png){.img-shadow}
+
+::::: prompt-box
+::: prompt-title
+💬 Try this Prompt
+:::
+
+::: prompt-ex
+"Explain the difference between traditional AI and generative AI to a first-year social science student in 100 words."
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Traditional vs. Generative AI
+
+| Aspect | Traditional AI (Analyzer)  | Generative AI (Creator)       |
+|--------|----------------------------|-------------------------------|
+| Focus  | Understand & Predict       | Create & Generate             |
+| Output | Scores, forecasts          | Drafts, briefs, scenarios     |
+| Data   | Structured                 | Text, images, mixed data      |
+| UX     | Dashboards                 | Conversations & agents        |
+| Use    | Prediction, classification | Ideation, writing, simulation |
+
+------------------------------------------------------------------------
+
+## NLP in Global Analysis
+
+**Capabilities** - Document & treaty analysis - Translation & interpretation - Sentiment & narrative tracking - Brief generation & summarization
+
+**Applications** - Policy communication - Media monitoring - Comparative analysis - Discourse mapping
+
+------------------------------------------------------------------------
+
+## Generative AI in Action
+
+**What it can do** - Draft policy memos - Generate future scenarios - Translate across tone & culture - Summarize complex debates - Assist with simulation exercises
+
+**How it works** - Transformer architectures - Contextual learning - Reinforcement and feedback loops - Prompt design and iteration
+
+![](images/genAI2.png){.img-shadow}
+
+------------------------------------------------------------------------
+
+## Large Language Models (LLMs)
+
+**Power** - Multilingual comprehension - Long-context reasoning - Flexible outputs: text, charts, summaries - Knowledge transfer and refinement
+
+**Leading families** - GPT, Claude, Gemini, Llama, DeepSeek
+
+::::: prompt-box
+::: prompt-title
+💬 Try this Prompt
+:::
+
+::: prompt-ex
+"Create a comparative table of three global climate agreements: Kyoto, Paris, and Glasgow — include year, focus, and key outcomes."
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Tools for Scholars & Students
+
+**Research & writing** - ChatGPT / Claude / Gemini - Perplexity / Elicit / Consensus - Semantic Scholar / Connected Papers
+
+**Analysis & presentation** - Notion AI, DeepL, Gamma, Obsidian - Data analysis modes (text + tables)
+
+------------------------------------------------------------------------
+
+## Applications in Global Studies {.scrollable}
+
+**Research & Insight** - Literature reviews - Policy mapping & tracking - Comparative governance datasets - Narrative evolution tracking
+
+**Professional Output** - Reports, briefs, speeches - Multilingual communications - Visualized evidence & summaries
+
+------------------------------------------------------------------------
+
+## Responsible Use {.scrollable}
+
+-   **Bias:** Cultural, linguistic, and data bias\
+-   **Hallucinations:** Fabricated or unsupported facts\
+-   **Ethics:** Avoid manipulation or misinformation\
+-   **Privacy:** Protect sensitive data\
+-   **Over-reliance:** Maintain analytical judgment
+
+::: callout-warning
+Always verify with primary sources and document AI involvement in research.
+:::
+
+------------------------------------------------------------------------
+
+## Ethics and Academia
+
+1.  Transparency — acknowledge AI support\
+2.  Attribution — cite ideas and data sources\
+3.  Verification — cross-check all claims\
+4.  Privacy — safeguard identities and records\
+5.  Balance — AI assists, humans decide
+
+------------------------------------------------------------------------
+
+## Reflection & Discussion
+
+**For Students** - How does AI reshape your approach to studying politics and society?\
+- What human skills remain irreplaceable?
+
+**For Faculty** - How can AI literacy be built into teaching and evaluation?\
+- What should ethical use guidelines look like?
+
+------------------------------------------------------------------------
+
+## Thank You {background-color="#1a1a2e"}
+
+::: {style="text-align:center; margin-top:1rem;"}
+<h2 style="color:#ffd700; border:none;">
+
+Thank you!
+
+</h2>
+
+<p>📧 <a href="mailto:zasghar@qau.edu.pk">zasghar\@qau.edu.pk</a><br/> 🌐 <a href="https://zahid.quarto.pub" style="color:#74b9ff;">Zahid Asghar Website</a></p>
+
+<p><em>"The future of analysis and diplomacy belongs to those who master AI today."</em></p>
+:::

@@ -1,0 +1,356 @@
+---
+title: "The Socratic Method of Learning"
+subtitle: "Discovering Knowledge Through Strategic Questioning"
+author: "Your Name"
+date: today
+format:
+  revealjs:
+    theme: [default, custom.scss]
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    logo: ""
+    footer: "Socratic Method of Learning"
+    transition: slide
+    background-transition: fade
+    highlight-style: github
+---
+
+## What is the Socratic Method? {.center}
+
+::: {.fragment}
+*"The only true wisdom is in knowing you know nothing."*  
+— Socrates
+:::
+
+::: {.fragment}
+A teaching method that uses **questions** rather than **answers** to guide learning
+:::
+
+---
+
+## Historical Background {background-color="#f8f9fa"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Socrates (470-399 BCE)
+- Ancient Greek philosopher
+- Developed method through dialogue
+- Believed in learning through self-discovery
+- Famous for claiming to "know nothing"
+:::
+
+::: {.column width="50%"}
+### Key Philosophy
+- Knowledge exists within us
+- Questions unlock understanding
+- Examination leads to wisdom
+- *"The unexamined life is not worth living"*
+:::
+
+::::
+
+---
+
+## Traditional Teaching vs. Socratic Method
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Traditional Approach
+- Teacher provides information
+- Students receive passively
+- Focus on memorization
+- One-way communication
+- Quick answers expected
+:::
+
+::: {.column width="50%"}
+### Socratic Approach
+- Teacher asks questions
+- Students discover actively
+- Focus on understanding
+- Interactive dialogue
+- Thoughtful process valued
+:::
+
+::::
+
+---
+
+## Core Principles {.center}
+
+::: {.incremental}
+1. **Question everything** - Challenge assumptions
+2. **Seek evidence** - What supports your beliefs?
+3. **Explore perspectives** - Consider multiple viewpoints
+4. **Examine implications** - What are the consequences?
+5. **Embrace uncertainty** - It's okay not to know
+:::
+
+---
+
+## Types of Socratic Questions {background-color="#e3f2fd"}
+
+### 🎯 Clarification Questions
+- "What do you mean when you say...?"
+- "Could you give me an example?"
+- "How does this relate to what we discussed earlier?"
+
+### 📊 Evidence Questions  
+- "What evidence supports this view?"
+- "How do we know this to be true?"
+- "What might contradict this evidence?"
+
+---
+
+## Types of Socratic Questions (cont.) {background-color="#e3f2fd"}
+
+### 🔍 Perspective Questions
+- "What are the strengths and weaknesses of this idea?"
+- "How might someone who disagrees respond?"
+- "What are alternative ways of looking at this?"
+
+### ⚡ Implication Questions
+- "If this is true, what follows?"
+- "What are the consequences of this assumption?"
+- "How does this fit with what we already know?"
+
+---
+
+## Socratic Questioning in Action
+
+### Example: Roman Empire Discussion
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**Student Question:**  
+*"Why did the Roman Empire fall?"*
+:::
+
+::: {.column width="50%"}
+**Socratic Response:**  
+*"What factors do you think could weaken a large empire?"*
+:::
+
+::::
+
+::: {.fragment}
+**Follow-up Questions:**
+- "How might economic problems affect military strength?"
+- "What role does leadership play in stability?"
+- "What evidence do we have about these factors in Rome?"
+:::
+
+---
+
+## Benefits of Socratic Learning {.center}
+
+::: {.incremental}
+- 🧠 **Deeper Understanding** - Move beyond surface learning
+- 🎯 **Critical Thinking** - Develop analytical skills  
+- 💪 **Independent Learning** - Build self-reliance
+- 🔍 **Active Engagement** - Students become participants
+- 🌱 **Intellectual Humility** - Recognize knowledge limits
+- 🔄 **Metacognition** - Think about thinking
+:::
+
+---
+
+## Modern Applications {background-color="#f1f8e9"}
+
+### Education
+- Law school case studies
+- Medical diagnosis training
+- Philosophy discussions
+- Science inquiry labs
+
+### Professional Development
+- Coaching and mentoring
+- Leadership training
+- Problem-solving sessions
+- Team facilitation
+
+---
+
+## Digital Age: AI Socratic Learning {.center}
+
+::: {.fragment}
+### Claude's Learning Mode
+- Asks guiding questions instead of giving answers
+- Encourages step-by-step reasoning
+- Promotes independent discovery
+- Available for general learning and coding
+:::
+
+::: {.fragment}
+**Example:**  
+Student: *"What's the solution to this math problem?"*  
+Claude: *"What information do we have? What's the first step you'd take?"*
+:::
+
+---
+
+## Implementing Socratic Method
+
+### For Educators 👩‍🏫
+
+::: {.incremental}
+- Prepare thoughtful questions in advance
+- Allow wait time for responses
+- Encourage student questions
+- Create safe environment for uncertainty
+- Model intellectual curiosity
+:::
+
+### For Learners 🎓
+
+::: {.incremental}
+- Question your own assumptions
+- Ask "why" and "how" frequently  
+- Seek evidence for beliefs
+- Embrace not knowing as learning opportunity
+:::
+
+---
+
+## Challenges & Considerations {background-color="#fff3e0"}
+
+### Potential Difficulties
+- **Time-intensive** - Requires patience
+- **Student resistance** - Some prefer direct answers
+- **Facilitator skill** - Requires practice to master
+- **Assessment challenges** - Hard to measure process
+
+### Best Practices
+- Start with simpler questions
+- Build trust and rapport first
+- Combine with other methods
+- Provide scaffolding when needed
+
+---
+
+## Socratic Questions Framework
+
+| **Question Type** | **Purpose** | **Example** |
+|-------------------|-------------|-------------|
+| **Clarification** | Understanding | "What do you mean by...?" |
+| **Assumption** | Challenge beliefs | "What if we assumed...?" |
+| **Evidence** | Seek proof | "What evidence supports...?" |
+| **Perspective** | Multiple views | "How might others see...?" |
+| **Implication** | Consequences | "What would happen if...?" |
+| **Meta-question** | About the question | "Why is this important?" |
+
+---
+
+## Practical Exercise {.center}
+
+### Try It Yourself! 
+
+**Topic:** Should social media platforms regulate misinformation?
+
+::: {.fragment}
+**Instead of stating your position, ask:**
+- What constitutes misinformation?
+- Who should decide what's true?
+- What are the trade-offs between free speech and safety?
+- How effective have past regulations been?
+:::
+
+---
+
+## Key Takeaways {.center}
+
+::: {.incremental}
+1. **Questions > Answers** - The journey matters more than the destination
+2. **Process > Product** - How we think is as important as what we conclude
+3. **Uncertainty is Learning** - Not knowing opens doors to discovery
+4. **Everyone is a Teacher** - We all have insights to share through questioning
+5. **Practice Makes Better** - Socratic skills develop over time
+:::
+
+---
+
+## Resources for Further Learning {background-color="#f3e5f5"}
+
+### Books 📚
+- *"The Art of Living"* by Epictetus
+- *"Teaching with Your Mouth Shut"* by Donald Finkel
+- *"The Socratic Method"* by Ward Farnsworth
+
+### Online Resources 🌐
+- Foundation for Critical Thinking
+- Socratic Seminars International
+- Paul & Elder Critical Thinking Framework
+
+### AI Tools 🤖
+- Claude's Learning Mode
+- ChatGPT Study Mode  
+- Socratic by Google
+
+---
+
+## Questions for Reflection {.center}
+
+::: {.fragment}
+*"How might you apply Socratic questioning in your own learning or teaching?"*
+:::
+
+::: {.fragment}
+*"What assumptions about learning have we challenged today?"*
+:::
+
+::: {.fragment}
+*"What questions do you still have about the Socratic method?"*
+:::
+
+---
+
+## Thank You! {.center}
+
+### Remember Socrates' Wisdom:
+
+::: {.fragment}
+*"I cannot teach anybody anything. I can only make them think."*
+:::
+
+::: {.fragment}
+**Now go forth and question everything!** 🤔
+:::
+
+---
+
+## Additional Slides
+
+### Custom CSS (save as custom.scss)
+
+```scss
+.reveal {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  color: #2c3e50;
+}
+
+.reveal .progress {
+  color: #3498db;
+}
+
+.fragment.highlight-current-blue .current-fragment {
+  color: #3498db;
+}
+
+.center {
+  text-align: center;
+}
+
+.reveal blockquote {
+  font-style: italic;
+  background: #f8f9fa;
+  border-left: 5px solid #3498db;
+  padding: 1em;
+}
+```

@@ -25,8 +25,9 @@ library(plotly)
 
 ## Workshop Overview {.unnumbered}
 
-::: {.callout-important}
+::: callout-important
 ## Target Audience
+
 Public Policy Officers, Decision Makers, and Government Officials from Punjab Government
 :::
 
@@ -34,48 +35,55 @@ This intensive workshop introduces Punjab Government officials to cutting-edge *
 
 The workshop emphasizes practical implementation of AI systems that can analyze complex policy scenarios, generate comprehensive reports in minutes, and create intelligent workflows that operate autonomously to support governance objectives.
 
-::: {.callout-tip}
+::: callout-tip
 ## Workshop Duration
+
 **Full Day Intensive Workshop** - Approximately 8 hours including breaks
 :::
 
 ## Enhanced Learning Objectives
 
 ### 1. Master Agentic AI for Government Operations
-- Understanding AI agents that can perform complex, multi-step policy analysis autonomously
-- Implementing AI workflows that operate 24/7 to monitor policy impacts and generate insights
+
+-   Understanding AI agents that can perform complex, multi-step policy analysis autonomously
+-   Implementing AI workflows that operate 24/7 to monitor policy impacts and generate insights
 
 ### 2. Deploy 1000x Productivity Multipliers
-- Learn AI systems that can process vast amounts of legislative data, public feedback, and economic indicators simultaneously
-- Create AI-powered dashboards that provide real-time policy impact assessments
+
+-   Learn AI systems that can process vast amounts of legislative data, public feedback, and economic indicators simultaneously
+-   Create AI-powered dashboards that provide real-time policy impact assessments
 
 ### 3. Advanced AI Tool Mastery
-- Hands-on experience with latest AI platforms: Claude Sonnet 4, GPT-4, specialized government AI tools
-- Multi-modal AI applications (text, data visualization, document analysis)
-- AI-powered code generation for data analysis without programming skills
+
+-   Hands-on experience with latest AI platforms: Claude Sonnet 4, GPT-4, specialized government AI tools
+-   Multi-modal AI applications (text, data visualization, document analysis)
+-   AI-powered code generation for data analysis without programming skills
 
 ### 4. Strategic AI Integration
-- Design AI governance frameworks for responsible deployment
-- Create sustainable AI adoption strategies specific to Punjab Government needs
+
+-   Design AI governance frameworks for responsible deployment
+-   Create sustainable AI adoption strategies specific to Punjab Government needs
 
 # Workshop Agenda
 
 ## Session 1: AI Revolution in Governance (9:00 AM - 11:00 AM)
+
 *From Tools to Intelligent Agents*
 
 ### Opening: The 1000x Productivity Vision (30 minutes)
 
-::: {.panel-tabset}
-
+::: panel-tabset
 #### Case Study
+
 **How Estonia's e-governance AI systems process 99% of tax returns automatically**
 
-- Automated document processing
-- Real-time validation systems
-- Citizen self-service platforms
-- Impact: 2000+ hours saved annually per government employee
+-   Automated document processing
+-   Real-time validation systems
+-   Citizen self-service platforms
+-   Impact: 2000+ hours saved annually per government employee
 
 #### Live Demonstration
+
 **Traditional vs. AI-powered policy analysis**
 
 ```{mermaid}
@@ -97,32 +105,36 @@ flowchart LR
 ```
 
 #### Punjab Context
+
 **Specific opportunities for exponential productivity gains**
 
-- Agricultural policy optimization
-- Urban planning and development
-- Healthcare resource allocation
-- Education system enhancement
-- Tax collection and compliance
-
+-   Agricultural policy optimization
+-   Urban planning and development
+-   Healthcare resource allocation
+-   Education system enhancement
+-   Tax collection and compliance
 :::
 
 ### Foundation: Next-Generation AI Technologies (60 minutes)
 
-::: {.callout-note}
+::: callout-note
 ## Key Technologies Covered
 
 **Generative AI Evolution**
-: From ChatGPT to specialized policy AI systems
+
+:   From ChatGPT to specialized policy AI systems
 
 **Agentic AI**
-: AI systems that plan, execute, and optimize tasks autonomously
+
+:   AI systems that plan, execute, and optimize tasks autonomously
 
 **Multi-Modal AI**
-: Processing text, images, audio, and data simultaneously
+
+:   Processing text, images, audio, and data simultaneously
 
 **Large Language Models (LLMs)**
-: Claude Sonnet 4, specialized policy models
+
+:   Claude Sonnet 4, specialized policy models
 :::
 
 ### Interactive Demo: AI Agent in Action (30 minutes)
@@ -141,23 +153,24 @@ class PolicyAgent:
         return comprehensive_analysis
 ```
 
----
+------------------------------------------------------------------------
 
 ## Break: 11:00 AM - 11:15 AM {.unnumbered}
 
----
+------------------------------------------------------------------------
 
 ## Session 2: Building Your AI-Powered Policy Workflow (11:15 AM - 1:00 PM)
+
 *Hands-On Implementation*
 
 ### Advanced Prompt Engineering for Policy Work (45 minutes)
 
-::: {.panel-tabset}
-
+::: panel-tabset
 #### Chain-of-Thought Prompting
+
 **Getting AI to show detailed policy reasoning**
 
-```markdown
+``` markdown
 Example Prompt:
 "Analyze the impact of increasing minimum wage in Punjab. 
 Think through this step by step:
@@ -170,17 +183,19 @@ Think through this step by step:
 ```
 
 #### Role-Based Prompts
+
 **Creating AI specialists**
 
-- Budget Analyst AI
-- Legislative Researcher AI  
-- Impact Assessment AI
-- Public Consultation AI
+-   Budget Analyst AI
+-   Legislative Researcher AI\
+-   Impact Assessment AI
+-   Public Consultation AI
 
 #### Multi-Agent Conversations
+
 **Having different AI perspectives debate policy options**
 
-```mermaid
+``` mermaid
 graph TD
     A[Policy Question] --> B[Economic Analyst AI]
     A --> C[Social Impact AI]
@@ -190,51 +205,50 @@ graph TD
     D --> E
     E --> F[Final Recommendation]
 ```
-
 :::
 
 ### Agentic AI Workflows (60 minutes)
 
-::: {.callout-warning}
+::: callout-warning
 ## Setting Up AI Agents
+
 Create autonomous systems for ongoing policy monitoring
 :::
 
 **Workflow Examples:**
 
-1. **Budget Analysis Agent**
-   - Continuously monitors spending patterns
-   - Flags anomalies and inefficiencies
-   - Generates monthly optimization reports
+1.  **Budget Analysis Agent**
+    -   Continuously monitors spending patterns
+    -   Flags anomalies and inefficiencies
+    -   Generates monthly optimization reports
+2.  **Public Sentiment Agent**
+    -   Tracks social media and news
+    -   Analyzes public policy feedback
+    -   Provides sentiment analysis reports
+3.  **Legislative Tracking Agent**
+    -   Monitors related legislation in other regions
+    -   Identifies best practices and lessons learned
+    -   Suggests policy adaptations
 
-2. **Public Sentiment Agent**
-   - Tracks social media and news
-   - Analyzes public policy feedback
-   - Provides sentiment analysis reports
-
-3. **Legislative Tracking Agent**
-   - Monitors related legislation in other regions
-   - Identifies best practices and lessons learned
-   - Suggests policy adaptations
-
-::: {.callout-tip}
+::: callout-tip
 ## Hands-On Activity
+
 Each participant builds a custom AI agent for their specific department needs.
 :::
 
----
+------------------------------------------------------------------------
 
 ## Prayer Break: 1:00 PM - 2:00 PM {.unnumbered}
 
----
+------------------------------------------------------------------------
 
 ## Session 3: AI Integration Strategy & Advanced Applications (2:00 PM - 4:30 PM)
 
 ### Real-Time Policy Intelligence Systems (60 minutes)
 
-::: {.panel-tabset}
-
+::: panel-tabset
 #### AI-Powered Dashboards
+
 **Live policy impact monitoring**
 
 ```{r}
@@ -262,96 +276,74 @@ p
 ```
 
 #### Predictive Analytics
+
 **Forecasting policy outcomes before implementation**
 
-- Machine learning models for impact prediction
-- Scenario modeling and simulation
-- Risk assessment frameworks
+-   Machine learning models for impact prediction
+-   Scenario modeling and simulation
+-   Risk assessment frameworks
 
 #### Automated Report Generation
+
 **Comprehensive policy briefs in minutes**
 
-- Template-based report generation
-- Dynamic data integration
-- Multi-format output (PDF, HTML, presentations)
-
+-   Template-based report generation
+-   Dynamic data integration
+-   Multi-format output (PDF, HTML, presentations)
 :::
 
 ### Case Study Workshop: Punjab-Specific Applications (60 minutes)
 
-::: {.panel-tabset}
-
+::: panel-tabset
 #### Group A: Agricultural Policy
+
 **AI analysis of crop patterns, weather data, and market trends**
 
-**Objectives:**
-- Optimize crop recommendations
-- Predict market prices
-- Improve farmer income
-- Enhance food security
+**Objectives:** - Optimize crop recommendations - Predict market prices - Improve farmer income - Enhance food security
 
-**AI Tools:**
-- Weather prediction models
-- Market analysis algorithms
-- Crop optimization systems
+**AI Tools:** - Weather prediction models - Market analysis algorithms - Crop optimization systems
 
 #### Group B: Urban Planning
+
 **AI-powered traffic analysis and city development optimization**
 
-**Objectives:**
-- Reduce traffic congestion
-- Optimize public transport
-- Plan sustainable development
-- Improve quality of life
+**Objectives:** - Reduce traffic congestion - Optimize public transport - Plan sustainable development - Improve quality of life
 
-**AI Tools:**
-- Traffic flow analysis
-- Population density modeling
-- Infrastructure optimization
+**AI Tools:** - Traffic flow analysis - Population density modeling - Infrastructure optimization
 
 #### Group C: Education Policy
+
 **AI assessment of educational outcomes and resource allocation**
 
-**Objectives:**
-- Improve learning outcomes
-- Optimize resource distribution
-- Reduce dropout rates
-- Enhance teacher effectiveness
+**Objectives:** - Improve learning outcomes - Optimize resource distribution - Reduce dropout rates - Enhance teacher effectiveness
 
-**AI Tools:**
-- Student performance analytics
-- Resource allocation optimization
-- Predictive modeling for interventions
+**AI Tools:** - Student performance analytics - Resource allocation optimization - Predictive modeling for interventions
 
 #### Group D: Healthcare Policy
+
 **AI analysis of health trends and service delivery optimization**
 
-**Objectives:**
-- Improve health outcomes
-- Optimize hospital resources
-- Predict disease outbreaks
-- Enhance preventive care
+**Objectives:** - Improve health outcomes - Optimize hospital resources - Predict disease outbreaks - Enhance preventive care
 
-**AI Tools:**
-- Epidemiological modeling
-- Resource optimization algorithms
-- Health trend analysis systems
-
+**AI Tools:** - Epidemiological modeling - Resource optimization algorithms - Health trend analysis systems
 :::
 
 ### AI Governance & Ethics (30 minutes)
 
-::: {.callout-important}
+::: callout-important
 ## Key Considerations
 
 **Responsible AI Deployment**
-: Ensuring transparency and accountability in AI-driven decisions
+
+:   Ensuring transparency and accountability in AI-driven decisions
 
 **Privacy and Security**
-: Protecting citizen data while leveraging AI insights
+
+:   Protecting citizen data while leveraging AI insights
 
 **Building Public Trust**
-: Communication strategies for AI-driven policy decisions
+
+:   Communication strategies for AI-driven policy decisions
 :::
 
 ```{mermaid}
@@ -376,47 +368,51 @@ flowchart TD
 
 ## Implementation Roadmap
 
-::: {.panel-tabset}
-
+::: panel-tabset
 #### 30-Day Quick Wins
+
 **Immediate AI tools participants can implement**
 
-- [ ] Set up ChatGPT/Claude accounts for team
-- [ ] Create prompt templates for common tasks
-- [ ] Implement basic automation workflows
-- [ ] Train staff on AI tool usage
+-   [ ] Set up ChatGPT/Claude accounts for team
+-   [ ] Create prompt templates for common tasks
+-   [ ] Implement basic automation workflows
+-   [ ] Train staff on AI tool usage
 
 #### 90-Day Transformation
+
 **Department-wide AI integration strategy**
 
-- [ ] Develop AI governance framework
-- [ ] Pilot AI agents for specific use cases
-- [ ] Measure productivity improvements
-- [ ] Scale successful implementations
+-   [ ] Develop AI governance framework
+-   [ ] Pilot AI agents for specific use cases
+-   [ ] Measure productivity improvements
+-   [ ] Scale successful implementations
 
 #### 1-Year Vision
+
 **Full AI-powered policy development lifecycle**
 
-- [ ] Complete digital transformation
-- [ ] AI-first policy development process
-- [ ] Continuous learning and optimization
-- [ ] Knowledge sharing across departments
-
+-   [ ] Complete digital transformation
+-   [ ] AI-first policy development process
+-   [ ] Continuous learning and optimization
+-   [ ] Knowledge sharing across departments
 :::
 
 ## Resources & Continued Learning
 
-::: {.callout-tip}
+::: callout-tip
 ## Take-Away Resources
 
 **AI Tool Access**
-: Subscriptions and free alternatives
+
+:   Subscriptions and free alternatives
 
 **Punjab AI Policy Community**
-: Ongoing collaboration platform
+
+:   Ongoing collaboration platform
 
 **Monthly Follow-up Sessions**
-: Continued learning and problem-solving
+
+:   Continued learning and problem-solving
 :::
 
 # Enhanced Workshop Outcomes
@@ -426,24 +422,30 @@ flowchart TD
 Participants will leave with:
 
 **AI Agent Systems**
-: Personal AI assistants configured for their specific policy areas
+
+:   Personal AI assistants configured for their specific policy areas
 
 **Advanced Prompt Library**
-: Tested prompts for common policy analysis tasks  
+
+:   Tested prompts for common policy analysis tasks
 
 **Automation Workflows**
-: AI systems that continue working after the workshop ends
+
+:   AI systems that continue working after the workshop ends
 
 ## Strategic Understanding
 
 **1000x Productivity Mindset**
-: How to identify tasks suitable for AI amplification
+
+:   How to identify tasks suitable for AI amplification
 
 **Implementation Strategy**
-: Step-by-step plans for AI adoption in their departments
+
+:   Step-by-step plans for AI adoption in their departments
 
 **Measurement Framework**
-: KPIs to track productivity improvements from AI integration
+
+:   KPIs to track productivity improvements from AI integration
 
 ## Practical Tools
 
@@ -463,42 +465,43 @@ kable(kpi_data, caption = "Expected Productivity Improvements")
 
 ## Ongoing Resources
 
-::: {.callout-note}
+::: callout-note
 ## Continuous Learning Framework
 
 **Monthly AI Office Hours**
-: Virtual sessions for troubleshooting and advanced techniques
+
+:   Virtual sessions for troubleshooting and advanced techniques
 
 **Punjab AI Policy Network**
-: Peer-to-peer learning and best practice sharing  
+
+:   Peer-to-peer learning and best practice sharing
 
 **Quarterly Innovation Challenges**
-: Competitions to develop new AI applications for governance
+
+:   Competitions to develop new AI applications for governance
 :::
 
 ## Advanced Training Tracks
 
-1. **Technical Deep-Dive**
-   - For participants wanting to develop custom AI solutions
-   - Advanced prompt engineering
-   - AI model fine-tuning
+1.  **Technical Deep-Dive**
+    -   For participants wanting to develop custom AI solutions
+    -   Advanced prompt engineering
+    -   AI model fine-tuning
+2.  **Leadership Strategy**
+    -   For senior officials planning organization-wide AI transformation
+    -   Change management for AI adoption
+    -   ROI measurement and reporting
+3.  **Citizen Engagement**
+    -   Using AI to improve public participation in policy-making
+    -   AI-powered public consultation tools
+    -   Transparent AI communication strategies
 
-2. **Leadership Strategy** 
-   - For senior officials planning organization-wide AI transformation
-   - Change management for AI adoption
-   - ROI measurement and reporting
+------------------------------------------------------------------------
 
-3. **Citizen Engagement**
-   - Using AI to improve public participation in policy-making
-   - AI-powered public consultation tools
-   - Transparent AI communication strategies
-
----
-
-::: {.callout-important}
+::: callout-important
 ## Final Note
+
 This workshop incorporates the latest developments in AI technology as of August 2025, including advanced agentic AI systems, multi-modal capabilities, and government-specific AI applications designed to deliver exponential productivity improvements in public policy work.
 :::
 
 ## Contact Information
-

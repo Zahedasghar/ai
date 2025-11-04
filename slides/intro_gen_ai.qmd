@@ -204,730 +204,821 @@ execute:
 
 ## 🚀 Your AI Journey Begins {background-image="images/apple.jpg" background-size="cover"}
 
-<div class="absolute" style="left: 50%; top: 40%; transform: translate(-50%, -50%); width: 80%;">
-<div class="gradient-box gradient-purple text-center">
+:::: {.absolute style="left: 50%; top: 40%; transform: translate(-50%, -50%); width: 80%;"}
+::: {.gradient-box .gradient-purple .text-center}
 <h3>🚀 Embrace the Extraordinary</h3>
-<p><em>"The best way to predict the future is to create it"</em></p>
-<p><strong>Be Comfortable with Being Uncomfortable</strong></p>
-</div>
-</div>
 
----
+<p><em>"The best way to predict the future is to create it"</em></p>
+
+<p><strong>Be Comfortable with Being Uncomfortable</strong></p>
+:::
+::::
+
+------------------------------------------------------------------------
 
 ## Today's Journey: What We'll Discover Together {.scrollable}
 
-<div class="gradient-box gradient-blue">
-<h3 class="text-center">🎯 Your Learning Roadmap</h3>
-</div>
+::: {.gradient-box .gradient-blue}
+<h3 class="text-center">
 
-<div class="columns">
-<div class="column">
+🎯 Your Learning Roadmap
 
+</h3>
+:::
+
+::::: columns
+::: column
 ### Understanding AI
-- 🤖 **What is AI really?**  
-  Beyond the buzzwords
-- 🧠 **How does AI "think"?**  
-  The magic behind the machine
-- ✨ **Generative AI unleashed**  
-  Your new creative partner
 
-</div>
-<div class="column">
+-   🤖 **What is AI really?**\
+    Beyond the buzzwords
+-   🧠 **How does AI "think"?**\
+    The magic behind the machine
+-   ✨ **Generative AI unleashed**\
+    Your new creative partner
+:::
 
+::: column
 ### Practical Applications
-- 💡 **Real-world transformations**  
-  Stories that inspire
-- 🛠️ **Hands-on AI tools**  
-  Start using AI today
-- ⚠️ **Navigate challenges**  
-  Responsible AI usage
 
-</div>
-</div>
+-   💡 **Real-world transformations**\
+    Stories that inspire
+-   🛠️ **Hands-on AI tools**\
+    Start using AI today
+-   ⚠️ **Navigate challenges**\
+    Responsible AI usage
+:::
+:::::
 
-<div class="gradient-box gradient-orange text-center mt-2">
+::: {.gradient-box .gradient-orange .text-center .mt-2}
 <strong>🎯 Promise:</strong> By the end, you'll see AI as your ally, not a mystery!
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
 ## The Creative Revolution is Here
 
 ### 📊 Real Impact from Real People
 
-<div class="columns">
-<div class="column">
-
-<div class="callout-tip">
+:::::: columns
+:::: column
+::: callout-tip
 <h4>Success Stories</h4>
+
 <blockquote>
-<p>"3 hours → 30 minutes for reports"<br>
-— <strong>Marketing Manager</strong></p>
-<p>"Logo in minutes, not days"<br>
-— <strong>Business Owner</strong></p>
-<p>"Students love AI examples"<br>
-— <strong>Professor</strong></p>
+
+<p>"3 hours → 30 minutes for reports"<br> — <strong>Marketing Manager</strong></p>
+
+<p>"Logo in minutes, not days"<br> — <strong>Business Owner</strong></p>
+
+<p>"Students love AI examples"<br> — <strong>Professor</strong></p>
+
 </blockquote>
-</div>
+:::
+::::
 
-</div>
-<div class="column">
-
+::: column
 ### 🎨 What AI Transforms
-- **📧 Communication:** Smart emails
-- **📊 Analysis:** Instant insights
-- **🎯 Strategy:** Ideas to action
-- **⚡ Speed:** 10x faster
-- **🤝 Collaboration:** AI partner
-- **🎓 Learning:** Personalized
 
-</div>
-</div>
+-   **📧 Communication:** Smart emails
+-   **📊 Analysis:** Instant insights
+-   **🎯 Strategy:** Ideas to action
+-   **⚡ Speed:** 10x faster
+-   **🤝 Collaboration:** AI partner
+-   **🎓 Learning:** Personalized
+:::
+::::::
 
-<div class="gradient-box gradient-green text-center mt-2">
-<em>The question isn't "Will AI change everything?"<br>
-It's "How fast can you adapt?"</em>
-</div>
+::: {.gradient-box .gradient-green .text-center .mt-2}
+<em>The question isn't "Will AI change everything?"<br> It's "How fast can you adapt?"</em>
+:::
 
----
+------------------------------------------------------------------------
 
 ## The New Reality {background-color="#2c3e50"}
 
-<div style="text-align: center; color: white; margin-top: 3rem;">
+:::: {style="text-align: center; color: white; margin-top: 3rem;"}
 <h2 style="border: none; color: white; font-size: 2.5em;">
-AI Won't Replace You
-</h2>
-<h3 style="color: #ffd700; font-size: 2em;">
-But Someone Using AI Will
-</h3>
-<div style="margin-top: 3rem;">
-<h4 style="color: white;">📈 Harvard Business Review:</h4>
-<p style="font-size: 1.3em; font-style: italic;">
-"Organizations using AI see 40% productivity gains"
-</p>
-<p style="font-size: 1.0em; margin-top: 2rem;">
-<strong>Today, you join the transformation</strong>
-</p>
-</div>
-</div>
 
----
+AI Won't Replace You
+
+</h2>
+
+<h3 style="color: #ffd700; font-size: 2em;">
+
+But Someone Using AI Will
+
+</h3>
+
+::: {style="margin-top: 3rem;"}
+<h4 style="color: white;">
+
+📈 Harvard Business Review:
+
+</h4>
+
+<p style="font-size: 1.3em; font-style: italic;">
+
+"Organizations using AI see 40% productivity gains"
+
+</p>
+
+<p style="font-size: 1.0em; margin-top: 2rem;">
+
+<strong>Today, you join the transformation</strong>
+
+</p>
+:::
+::::
+
+------------------------------------------------------------------------
 
 ## 🤖 Demystifying AI: What IS Artificial Intelligence? {.scrollable}
 
 ### AI = Giving Machines Human-Like Abilities
 
-<div class="columns">
-<div class="column">
-
+:::::: columns
+::: column
 #### Core Capabilities
-- 🧠 **Learning** from experience
-- 🤔 **Reasoning** through problems  
-- 🗣️ **Understanding** language
-- 👀 **Recognizing** patterns
-- 🎯 **Making** decisions
-- 🔄 **Adapting** to new situations
 
-</div>
-<div class="column">
+-   🧠 **Learning** from experience
+-   🤔 **Reasoning** through problems\
+-   🗣️ **Understanding** language
+-   👀 **Recognizing** patterns
+-   🎯 **Making** decisions
+-   🔄 **Adapting** to new situations
+:::
 
-<div class="callout-note">
+:::: column
+::: callout-note
 <h4>The Simple Truth</h4>
-<p><em>"AI solves problems the way humans would, but faster, more consistently, and at scale"</em></p>
-</div>
 
-</div>
-</div>
+<p><em>"AI solves problems the way humans would, but faster, more consistently, and at scale"</em></p>
+:::
+::::
+::::::
 
 ### 🌟 AI in Your Daily Life
 
-<div class="columns mt-2">
-<div class="column">
+::::: {.columns .mt-2}
+::: column
+-   📱 Face recognition in phones
+-   🎵 Spotify recommendations
+-   🗺️ Google Maps navigation
+:::
 
-- 📱 Face recognition in phones
-- 🎵 Spotify recommendations
-- 🗺️ Google Maps navigation
+::: column
+-   🛒 Amazon suggestions
+-   🎬 Netflix recommendations
+-   💬 Virtual assistants
+:::
+:::::
 
-</div>
-<div class="column">
-
-- 🛒 Amazon suggestions
-- 🎬 Netflix recommendations
-- 💬 Virtual assistants
-
-</div>
-</div>
-
----
+------------------------------------------------------------------------
 
 ## 🎮 AI Success Stories: From Games to Global Impact {.scrollable}
 
-<div class="gradient-box gradient-blue">
+::: {.gradient-box .gradient-blue}
 <h4>2016-2020: The Breakthrough Years</h4>
+
 <ul>
+
 <li><strong>🎯 AlphaGo (2016):</strong> Mastered strategic thinking</li>
+
 <li><strong>🚗 Tesla Autopilot (2017):</strong> Safer autonomous driving</li>
+
 <li><strong>🔍 Medical AI (2018):</strong> Earlier cancer detection</li>
-</ul>
-</div>
 
-<div class="gradient-box gradient-purple">
+</ul>
+:::
+
+::: {.gradient-box .gradient-purple}
 <h4>2021-2024: The Democratization Era</h4>
+
 <ul>
+
 <li><strong>💬 ChatGPT (2022):</strong> AI for everyone</li>
+
 <li><strong>🎨 DALL-E (2023):</strong> Creative AI explosion</li>
+
 <li><strong>🌍 Climate AI (2024):</strong> Optimizing energy grids</li>
+
 </ul>
-</div>
+:::
 
-<div class="callout-important">
+::: callout-important
 <p><strong>Key Insight:</strong> Each AI system has a clear goal aligned with human needs</p>
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
 ## 🧠 Machine Learning: Teaching Computers to Learn
 
 ### The Learning Process
 
-```
+```         
 📚 Training Data → 🔍 Find Patterns → 🧪 Test & Validate 
                 ↑                           ↓
                 ← 🔄 Improve ← ✨ Make Predictions
 ```
 
-<div class="columns mt-2">
-<div class="column">
-
-<div class="callout-note">
+::::::::: {.columns .mt-2}
+:::: column
+::: callout-note
 <h4>👨‍🏫 Supervised</h4>
+
 <ul>
+
 <li>Spam detection</li>
+
 <li>Medical diagnosis</li>
+
 <li>Price prediction</li>
+
 </ul>
-</div>
+:::
+::::
 
-</div>
-<div class="column">
-
-<div class="callout-tip">
+:::: column
+::: callout-tip
 <h4>🕵️ Unsupervised</h4>
+
 <ul>
+
 <li>Customer segments</li>
+
 <li>Recommendations</li>
+
 <li>Anomaly detection</li>
+
 </ul>
-</div>
+:::
+::::
 
-</div>
-<div class="column">
-
-<div class="callout-important">
+:::: column
+::: callout-important
 <h4>🎮 Reinforcement</h4>
+
 <ul>
+
 <li>Game playing</li>
+
 <li>Robotics</li>
+
 <li>Autonomous systems</li>
+
 </ul>
-</div>
+:::
+::::
+:::::::::
 
-</div>
-</div>
-
----
+------------------------------------------------------------------------
 
 ## 🗣️ Natural Language Processing
 
 ### What NLP Powers Today
 
-<div class="columns">
-<div class="column">
-
+::::: columns
+::: column
 #### Capabilities
-- 📖 Reading & Understanding
-- 🌐 Translation (100+ languages)
-- 💭 Sentiment Analysis
-- ✍️ Content Generation
-- 📝 Summarization
 
-</div>
-<div class="column">
+-   📖 Reading & Understanding
+-   🌐 Translation (100+ languages)
+-   💭 Sentiment Analysis
+-   ✍️ Content Generation
+-   📝 Summarization
+:::
 
+::: column
 #### Applications
-- **Google Translate**
-- **Alexa/Siri**
-- **Gmail Smart Compose**
-- **Customer Service Bots**
-- **Healthcare Analysis**
 
-</div>
-</div>
+-   **Google Translate**
+-   **Alexa/Siri**
+-   **Gmail Smart Compose**
+-   **Customer Service Bots**
+-   **Healthcare Analysis**
+:::
+:::::
 
-<div class="gradient-box gradient-green text-center mt-2">
+::: {.gradient-box .gradient-green .text-center .mt-2}
 💡 <strong>Game Changer:</strong> Computers understand meaning and context
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
 ## ✨ Generative AI: The Creative Revolution {.scrollable}
 
 ### 🔥 What Makes Generative AI Special
 
-<div class="columns">
-<div class="column">
-
+::::: columns
+::: column
 #### Capabilities
-- ✨ Creates original content
-- 📚 Learns from billions of examples
-- ⚡ Generates in seconds
-- 🎨 Adapts to your style
-- 🔄 Iterates instantly
 
-</div>
-<div class="column">
+-   ✨ Creates original content
+-   📚 Learns from billions of examples
+-   ⚡ Generates in seconds
+-   🎨 Adapts to your style
+-   🔄 Iterates instantly
+:::
 
+::: column
 #### The Technology
-- **Transformers** - Attention
-- **Massive Training** - Internet-scale
-- **Controlled Randomness**
-- **Fine-tuning** - Specialized
-- **Prompt Engineering**
 
-</div>
-</div>
+-   **Transformers** - Attention
+-   **Massive Training** - Internet-scale
+-   **Controlled Randomness**
+-   **Fine-tuning** - Specialized
+-   **Prompt Engineering**
+:::
+:::::
 
 ### 🛠️ Real Tools You Can Use Today
 
-<div class="columns mt-2">
-<div class="column">
+:::::: {.columns .mt-2}
+::: column
+**Text Generation** - ChatGPT / GPT-5 - Claude - Gemini - Llama
+:::
 
-**Text Generation**
-- ChatGPT / GPT-5
-- Claude
-- Gemini
-- Llama
+::: column
+**Image Creation** - DALL-E 3 - Midjourney - Stable Diffusion - Adobe Firefly
+:::
 
-</div>
-<div class="column">
+::: column
+**Specialized** - GitHub Copilot - Murf.ai - RunwayML - Notion AI
+:::
+::::::
 
-**Image Creation**
-- DALL-E 3
-- Midjourney
-- Stable Diffusion
-- Adobe Firefly
-
-</div>
-<div class="column">
-
-**Specialized**
-- GitHub Copilot
-- Murf.ai
-- RunwayML
-- Notion AI
-
-</div>
-</div>
-
----
+------------------------------------------------------------------------
 
 ## ⚖️ Traditional AI vs. Generative AI
 
-<div class="columns">
-<div class="column">
-
-<div class="gradient-box gradient-blue">
+::::::: columns
+:::: column
+::: {.gradient-box .gradient-blue}
 <h4>📊 Traditional AI - Analyzer</h4>
+
 <ul>
+
 <li><strong>Purpose:</strong> Understand & Predict</li>
+
 <li><strong>Output:</strong> Insights</li>
+
 <li><strong>Examples:</strong> Netflix, Fraud detection</li>
+
 <li><strong>Strength:</strong> Accuracy</li>
+
 </ul>
-</div>
+:::
+::::
 
-</div>
-<div class="column">
-
-<div class="gradient-box gradient-purple">
+:::: column
+::: {.gradient-box .gradient-purple}
 <h4>✨ Generative AI - Creator</h4>
-<ul>
-<li><strong>Purpose:</strong> Create & Generate</li>
-<li><strong>Output:</strong> Original Content</li>
-<li><strong>Examples:</strong> ChatGPT, AI art</li>
-<li><strong>Strength:</strong> Creativity</li>
-</ul>
-</div>
 
-</div>
-</div>
+<ul>
+
+<li><strong>Purpose:</strong> Create & Generate</li>
+
+<li><strong>Output:</strong> Original Content</li>
+
+<li><strong>Examples:</strong> ChatGPT, AI art</li>
+
+<li><strong>Strength:</strong> Creativity</li>
+
+</ul>
+:::
+::::
+:::::::
 
 ### Comparison Matrix
 
-| Aspect | Traditional AI | Generative AI |
-|--------|---------------|---------------|
-| **Focus** | Analysis | Creation |
-| **Data** | Structured | Diverse |
-| **UX** | Reports | Conversations |
-| **Creativity** | Low | High |
+| Aspect         | Traditional AI | Generative AI |
+|----------------|----------------|---------------|
+| **Focus**      | Analysis       | Creation      |
+| **Data**       | Structured     | Diverse       |
+| **UX**         | Reports        | Conversations |
+| **Creativity** | Low            | High          |
 
----
+------------------------------------------------------------------------
 
 ## 🧠 Large Language Models: The Powerhouse
 
 ### Understanding LLMs
 
-<div class="columns">
-<div class="column">
-
+:::::: columns
+::: column
 #### What Makes LLMs Powerful
-- 🌐 **Scale:** Trillions of words
-- 🧮 **Parameters:** Billions
-- 🎯 **Context:** Understanding
-- 🔄 **Transfer Learning**
-- 🎨 **Versatility:** Multiple tasks
 
-</div>
-<div class="column">
+-   🌐 **Scale:** Trillions of words
+-   🧮 **Parameters:** Billions
+-   🎯 **Context:** Understanding
+-   🔄 **Transfer Learning**
+-   🎨 **Versatility:** Multiple tasks
+:::
 
-<div class="callout-tip">
+:::: column
+::: callout-tip
 <h4>Leading LLMs</h4>
+
 <ul>
+
 <li><strong>GPT-5</strong> - OpenAI</li>
+
 <li><strong>Claude</strong> - Anthropic</li>
+
 <li><strong>Gemini</strong> - Google</li>
+
 <li><strong>Llama</strong> - Meta</li>
+
 <li><strong>Mistral</strong> - European</li>
+
 </ul>
-</div>
+:::
+::::
+::::::
 
-</div>
-</div>
-
----
+------------------------------------------------------------------------
 
 ## 💡 Your AI Transformation Mindset
 
-<div class="columns">
-<div class="column">
-
-<div class="callout-important">
+::::::: columns
+:::: column
+::: callout-important
 <h4>❌ Old Thinking</h4>
+
 <ul>
+
 <li>"AI will replace me"</li>
+
 <li>"It's too complicated"</li>
+
 <li>"I'll lose my job"</li>
+
 <li>"Only for tech people"</li>
+
 <li>"Wait and see"</li>
+
 </ul>
-</div>
+:::
+::::
 
-</div>
-<div class="column">
-
-<div class="callout-tip">
+:::: column
+::: callout-tip
 <h4>✅ New Thinking</h4>
-<ul>
-<li>"AI amplifies my abilities"</li>
-<li>"I can learn the basics"</li>
-<li>"I'm more valuable with AI"</li>
-<li>"AI is for everyone"</li>
-<li>"Start experimenting now"</li>
-</ul>
-</div>
 
-</div>
-</div>
+<ul>
+
+<li>"AI amplifies my abilities"</li>
+
+<li>"I can learn the basics"</li>
+
+<li>"I'm more valuable with AI"</li>
+
+<li>"AI is for everyone"</li>
+
+<li>"Start experimenting now"</li>
+
+</ul>
+:::
+::::
+:::::::
 
 ## Expertise + AI = Unstoppable Results
-<div class="gradient-box gradient-purple text-center mt-2">
-<strong>Your Expertise + AI = Unstoppable Results</strong>
-</div>
 
----
+::: {.gradient-box .gradient-purple .text-center .mt-2}
+<strong>Your Expertise + AI = Unstoppable Results</strong>
+:::
+
+------------------------------------------------------------------------
 
 ## 🚀 AI Makes Everyone a Specialist
 
-<div class="columns">
-<div class="column">
-
+::::: columns
+::: column
 #### For Professionals
-- **Marketers** → Data analysts
-- **Teachers** → Personalized tutors
-- **Writers** → Content machines
-- **Designers** → Creative directors
-- **Managers** → Strategic thinkers
 
-</div>
-<div class="column">
+-   **Marketers** → Data analysts
+-   **Teachers** → Personalized tutors
+-   **Writers** → Content machines
+-   **Designers** → Creative directors
+-   **Managers** → Strategic thinkers
+:::
 
+::: column
 #### For Everyone
-- **Students** → Research experts
-- **Parents** → Educational guides
-- **Entrepreneurs** → Full teams
-- **Hobbyists** → Pro creators
-- **Anyone** → Problem solvers
 
-</div>
-</div>
+-   **Students** → Research experts
+-   **Parents** → Educational guides
+-   **Entrepreneurs** → Full teams
+-   **Hobbyists** → Pro creators
+-   **Anyone** → Problem solvers
+:::
+:::::
 
-<div class="gradient-box gradient-green text-center mt-2">
+::: {.gradient-box .gradient-green .text-center .mt-2}
 <strong>AI doesn't replace expertise — it democratizes it</strong>
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
 ## ⚠️ Navigating AI Responsibly {.scrollable}
 
-<div class="columns">
-<div class="column">
-
-<div class="callout-warning">
+::::::: columns
+:::: column
+::: callout-warning
 <h4>Potential Risks</h4>
+
 <ul>
+
 <li>🎯 Over-dependence</li>
+
 <li>📰 Misinformation</li>
+
 <li>🔒 Privacy concerns</li>
+
 <li>⚖️ Algorithmic bias</li>
+
 <li>💼 Job displacement</li>
+
 </ul>
-</div>
+:::
+::::
 
-</div>
-<div class="column">
-
-<div class="callout-tip">
+:::: column
+::: callout-tip
 <h4>Protection Strategy</h4>
-<ul>
-<li>✅ Verify AI output</li>
-<li>🤔 Stay critical</li>
-<li>📚 Keep learning</li>
-<li>🛡️ Protect data</li>
-<li>🤝 AI as tool, not crutch</li>
-</ul>
-</div>
 
-</div>
-</div>
+<ul>
+
+<li>✅ Verify AI output</li>
+
+<li>🤔 Stay critical</li>
+
+<li>📚 Keep learning</li>
+
+<li>🛡️ Protect data</li>
+
+<li>🤝 AI as tool, not crutch</li>
+
+</ul>
+:::
+::::
+:::::::
 
 ### Best Practices for Ethical AI Use
 
-1. **Transparency** - Know when using AI
-2. **Attribution** - Credit AI assistance
-3. **Verification** - Double-check info
-4. **Privacy** - Don't share sensitive data
-5. **Balance** - Combine AI with human insight
+1.  **Transparency** - Know when using AI
+2.  **Attribution** - Credit AI assistance
+3.  **Verification** - Double-check info
+4.  **Privacy** - Don't share sensitive data
+5.  **Balance** - Combine AI with human insight
 
----
+------------------------------------------------------------------------
 
 ## 🌊 The Exponential Wave of Change
 
-<div class="gradient-box gradient-blue">
-<h4 class="text-center">Historical Revolutions</h4>
-<p class="text-center">🔥 Fire → 📚 Printing Press → ⚡ Electricity → 💻 Internet → 🤖 AI</p>
-</div>
+::: {.gradient-box .gradient-blue}
+<h4 class="text-center">
 
-<div class="columns mt-2">
-<div class="column">
+Historical Revolutions
 
+</h4>
+
+<p class="text-center">
+
+🔥 Fire → 📚 Printing Press → ⚡ Electricity → 💻 Internet → 🤖 AI
+
+</p>
+:::
+
+::::: {.columns .mt-2}
+::: column
 #### What's Happening Now
-- Speed of innovation doubling
-- Global democratization
-- Industry transformation
-- New job categories
-- Educational revolution
 
-</div>
-<div class="column">
+-   Speed of innovation doubling
+-   Global democratization
+-   Industry transformation
+-   New job categories
+-   Educational revolution
+:::
 
+::: column
 #### What's Coming Next
-- Intuitive AI interfaces
-- Hyper-personalization
-- AI-human collaboration
-- Creative explosion
-- Scientific breakthroughs
 
-</div>
-</div>
+-   Intuitive AI interfaces
+-   Hyper-personalization
+-   AI-human collaboration
+-   Creative explosion
+-   Scientific breakthroughs
+:::
+:::::
 
-<div class="gradient-box gradient-orange text-center mt-2">
+::: {.gradient-box .gradient-orange .text-center .mt-2}
 <strong>You're not just witnessing history — you're part of it</strong>
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
 ## 🎪 Interactive AI Exploration {.scrollable}
 
-<div class="callout-tip">
+::: callout-tip
 <h4>Exercise 1: Explanation Challenge</h4>
+
 <p>Ask ChatGPT to explain "inflation" to:</p>
+
 <ol>
+
 <li>A 10-year-old child</li>
+
 <li>A high school student</li>
+
 <li>An economics professor</li>
+
 <li>A policy maker</li>
+
 </ol>
+
 <p><em>Notice how AI adapts its style</em></p>
-</div>
+:::
 
-<div class="callout-important">
+::: callout-important
 <h4>Exercise 2: Professional Applications</h4>
-<ol>
-<li>"Analyze GST and inflation relationship"</li>
-<li>"Create GenAI lesson plan for business students"</li>
-<li>"Draft AI regulation policy brief"</li>
-</ol>
-</div>
 
----
+<ol>
+
+<li>"Analyze GST and inflation relationship"</li>
+
+<li>"Create GenAI lesson plan for business students"</li>
+
+<li>"Draft AI regulation policy brief"</li>
+
+</ol>
+:::
+
+------------------------------------------------------------------------
 
 ## 🛠️ Your Essential AI Toolkit
 
-<div class="columns">
-<div class="column">
-
+::::: columns
+::: column
 ### Creation & Communication
 
-**1. Content Creation**
-- ChatGPT, Jasper, Copy.ai
+**1. Content Creation** - ChatGPT, Jasper, Copy.ai
 
-**2. Visual Design**
-- DALL-E, Canva AI, Midjourney
+**2. Visual Design** - DALL-E, Canva AI, Midjourney
 
-**3. Communication**
-- DeepL, Grammarly, Notion AI
+**3. Communication** - DeepL, Grammarly, Notion AI
+:::
 
-</div>
-<div class="column">
-
+::: column
 ### Analysis & Productivity
 
-**4. Research & Analysis**
-- Perplexity, Elicit, Consensus
+**4. Research & Analysis** - Perplexity, Elicit, Consensus
 
-**5. Productivity**
-- Zapier AI, Motion, Reclaim
+**5. Productivity** - Zapier AI, Motion, Reclaim
 
-**6. Learning**
-- Khan Academy AI, Duolingo Max
+**6. Learning** - Khan Academy AI, Duolingo Max
+:::
+:::::
 
-</div>
-</div>
-
----
+------------------------------------------------------------------------
 
 ## 📚 Your Learning Journey Continues
 
-<div class="columns">
-<div class="column">
-
+::::: columns
+::: column
 #### Essential Courses
-- 🎓 [Fast.ai](https://www.fast.ai/)
-- 📘 [DeepLearning.AI](https://www.deeplearning.ai/)
-- 🚀 [Google AI](https://ai.google/education/)
-- 💡 [OpenAI Cookbook](https://cookbook.openai.com/)
 
-</div>
-<div class="column">
+-   🎓 [Fast.ai](https://www.fast.ai/)
+-   📘 [DeepLearning.AI](https://www.deeplearning.ai/)
+-   🚀 [Google AI](https://ai.google/education/)
+-   💡 [OpenAI Cookbook](https://cookbook.openai.com/)
+:::
 
+::: column
 #### Must-Try Tools
-- **ChatGPT** - Conversational AI
-- **Claude** - Analytical assistant
-- **Midjourney** - Art generation
-- **GitHub Copilot** - Code assistant
-- **Perplexity** - AI search
-- **Runway** - Video creation
 
-</div>
-</div>
+-   **ChatGPT** - Conversational AI
+-   **Claude** - Analytical assistant
+-   **Midjourney** - Art generation
+-   **GitHub Copilot** - Code assistant
+-   **Perplexity** - AI search
+-   **Runway** - Video creation
+:::
+:::::
 
-<div class="gradient-box gradient-green text-center mt-2">
+::: {.gradient-box .gradient-green .text-center .mt-2}
 <strong>🎯 This Week's Challenge:</strong> Pick ONE AI tool and use it daily!
-</div>
+:::
 
----
+------------------------------------------------------------------------
 
 ## 🎯 Key Takeaways
 
-<div class="gradient-box gradient-purple text-center">
+::: {.gradient-box .gradient-purple .text-center}
 <h3>Your AI Success Formula</h3>
-</div>
+:::
 
-1. **AI is a collaboration tool, not a replacement**
+1.  **AI is a collaboration tool, not a replacement**
 
-2. **Start small, experiment often, scale gradually**
+2.  **Start small, experiment often, scale gradually**
 
-3. **Focus on augmenting your unique human skills**
+3.  **Focus on augmenting your unique human skills**
 
-4. **Stay curious, stay critical, stay learning**
+4.  **Stay curious, stay critical, stay learning**
 
-5. **The best time to start was yesterday. The next best time is now.**
+5.  **The best time to start was yesterday. The next best time is now.**
 
----
+------------------------------------------------------------------------
 
 ## 🔮 Coming Next: Your AI Mastery Path
 
 ### The Complete 6-Hour Journey
 
-<div class="columns">
-<div class="column">
-
-<div class="callout-note">
+:::::::: columns
+::::: column
+::: callout-note
 <h4>Hours 2-3: Skills</h4>
+
 <ul>
+
 <li><strong>Hour 2:</strong> Prompt Engineering</li>
+
 <li><strong>Hour 3:</strong> Hands-on Tools</li>
-</ul>
-</div>
 
-<div class="callout-tip">
+</ul>
+:::
+
+::: callout-tip
 <h4>Hours 4-5: Advanced</h4>
+
 <ul>
+
 <li><strong>Hour 4:</strong> Research & Analysis</li>
+
 <li><strong>Hour 5:</strong> AI Workflows</li>
+
 </ul>
-</div>
+:::
+:::::
 
-</div>
-<div class="column">
-
-<div class="callout-important">
+:::: column
+::: callout-important
 <h4>Hour 6: Strategic</h4>
+
 <ul>
+
 <li>Personal AI Strategy</li>
+
 <li>Professional Applications</li>
+
 <li>Future-Proofing Career</li>
+
 <li>Ethical Considerations</li>
+
 </ul>
-</div>
+:::
+::::
+::::::::
 
-</div>
-</div>
-
-<div class="gradient-box gradient-purple text-center mt-2">
+::: {.gradient-box .gradient-purple .text-center .mt-2}
 <h3>🚀 Ready to Become an AI Power User?</h3>
-<p>See you in Hour 2!</p>
-</div>
 
----
+<p>See you in Hour 2!</p>
+:::
+
+------------------------------------------------------------------------
 
 ##  {background-color="#1a1a2e"}
 
-<div style="text-align: center; color: white; margin-top: 3rem;">
+::: {style="text-align: center; color: white; margin-top: 3rem;"}
 <h2 style="border: none; color: #ffd700; font-size: 2.5em;">
+
 Thank You!
+
 </h2>
+
 <h3 style="color: white; margin-top: 2rem;">
+
 Questions? Let's Explore Together!
+
 </h3>
+
 <p style="margin-top: 2rem; font-size: 1.1em;">
-📧 zasghar@qau.edu.pk<br>
-🌐 <a href="https://qau.edu.pk" style="color: #74b9ff;">QAU Website</a>
+
+📧 zasghar\@qau.edu.pk<br> 🌐 <a href="https://qau.edu.pk" style="color: #74b9ff;">QAU Website</a>
+
 </p>
+
 <p style="margin-top: 3rem; font-style: italic; font-size: 1.2em;">
+
 "The future belongs to those who learn AI today"
+
 </p>
+
 <p style="margin-top: 2rem; color: #ffd700; font-size: 1.5em;">
+
 <strong>🚀 Your AI Journey Starts Now!</strong>
+
 </p>
-</div>
+:::

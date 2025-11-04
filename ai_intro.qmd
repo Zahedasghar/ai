@@ -5,7 +5,7 @@ author: "Zahid Asghar"
 date: "2025-05-15"
 format:
   revealjs:
-    theme: [default, custom1.scss]
+    theme: [default, custom.scss]
     chalkboard: true
     slide-number: c/t  # Shows current slide/total slides for better navigation
     logo: "https://www.validate-network.org/sites/default/files/styles/mt_image_small/public/validate/images/media/quaid-i-azam_university_islamabad.jpg?itok=3eu4d_7a"
@@ -24,68 +24,47 @@ execute:
   freeze: auto
 ---
 
+##  {background-image="images/apple.jpg"}
 
-## {background-image="images/apple.jpg"}
-
-::: {.absolute left="55%" top="55%" style="font-size:1.1em; padding: 0.5em 1em; background-color: rgba(255, 255, 250, 0.5); backdrop-filter: blur(2px); box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"} 
-
+::: {.absolute left="55%" top="55%" style="font-size:1.1em; padding: 0.5em 1em; background-color: rgba(255, 255, 250, 0.5); backdrop-filter: blur(2px); box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"}
 Always embrace the unexpected
 
-Comfortable being uncomfortable 
-
+Comfortable being uncomfortable
 :::
-
 
 ::: r-fit-text
-
-### AI in University Offices: From Paperwork to Productivity  
+### AI in University Offices: From Paperwork to Productivity
 
 > From overloaded staff to optimized systems—AI is the silent reformer.
-
 :::
 
+## The Impact of AI on Creative Work
 
-
-
-## The Impact of AI on Creative Work 
-
-::: columns
-
+::::: columns
 ::: {.column width="50%"}
+> *"Once people experience smarter ways of working, they don’t want to return to old habits."*
 
-> *"Once people experience smarter ways of working, they don’t want to return to old habits."*  
-
-
----
+------------------------------------------------------------------------
 
 > *“frees up the time that creatives need to be creative”*
-
 :::
 
 ::: {.column width="50%"}
-
-- Planning: emails, budget spreadsheets, meeting notes, etc  
-- Ideating and visualizing in the room with a client  
-- Turning a few lines of text into a full proposal  
-- Iterating a lot faster  
-- Office hours where people share tricks
-
+-   Planning: emails, budget spreadsheets, meeting notes, etc\
+-   Ideating and visualizing in the room with a client\
+-   Turning a few lines of text into a full proposal\
+-   Iterating a lot faster\
+-   Office hours where people share tricks
 :::
-
-:::
-
-
-
-
-
- 
+:::::
 
 # [AI Won’t Replace Humans]{.hi-purple} [— But Humans With AI Will Replace Humans Without AI]{.red}
 
-[HBR](https://hbr.org/2023/08/ai-wont-replace-humans-but-humans-with-ai-will-replace-humans-without-ai) 
+[HBR](https://hbr.org/2023/08/ai-wont-replace-humans-but-humans-with-ai-will-replace-humans-without-ai)
 
-# I dont use AI, [I work with AI]{.hi-purple} 
-## [Dont Ask AI to do your work]{.hi-purple}, ask it to help you do your work 
+# I dont use AI, [I work with AI]{.hi-purple}
+
+## [Dont Ask AI to do your work]{.hi-purple}, ask it to help you do your work
 
 ### You're an AI expert. [Please ask me questions]{.hi-purple} to understand my workflows and suggest uses.
 
@@ -93,31 +72,31 @@ Comfortable being uncomfortable
 
 ## What Is AI?
 
+-   The broad concept where machines simulate human intelligence.
 
--   The broad concept where machines simulate human intelligence. 
-
-- Rooted in philosophy & economics—what it means “to do the right thing.”
+-   Rooted in philosophy & economics—what it means “to do the right thing.”
 
 -   AI allows machines to perform tasks like decision-making, speech recognition, and problem-solving.
 
----
+------------------------------------------------------------------------
 
 **Simple Examples**
 
-- **AlphaGo**: objective = win at Go  
-- **Navigation apps**: objective = shortest route  
-- **Automated corporations**: objective = maximize shareholder return 
+-   **AlphaGo**: objective = win at Go\
 
-- **Self-driving cars**: objective = drive safely and efficiently 
+-   **Navigation apps**: objective = shortest route\
 
-- **CTBT**: objective = detect nuclear explosions 
+-   **Automated corporations**: objective = maximize shareholder return
 
-- **Drones**: objective = deliver packages UK-Russia War 
+-   **Self-driving cars**: objective = drive safely and efficiently
 
-- **ChatGPT**: objective = generate human-like text  
+-   **CTBT**: objective = detect nuclear explosions
 
-## Agentic AI 
+-   **Drones**: objective = deliver packages UK-Russia War
 
+-   **ChatGPT**: objective = generate human-like text
+
+## Agentic AI
 
 ## What is Machine Learning (ML)?
 
@@ -165,8 +144,7 @@ Comfortable being uncomfortable
 
 -   Analyzes existing data to uncover patterns, trends, or insights.
 
-**Purpose:** 
-- Understand and summarize what’s already there.
+**Purpose:** - Understand and summarize what’s already there.
 
 **Techniques:** - Statistical analysis, clustering, classification.
 
@@ -174,11 +152,9 @@ Comfortable being uncomfortable
 
 ## Generative AI {.scrollable}
 
-**Definition:** 
-- Focuses on creating new content by learning from existing patterns.
+**Definition:** - Focuses on creating new content by learning from existing patterns.
 
-**Purpose:** 
-- To generate something new—whether it's text, art, or even videos.
+**Purpose:** - To generate something new—whether it's text, art, or even videos.
 
 **Techniques:** - Deep learning models, transformers.
 
@@ -194,37 +170,37 @@ Comfortable being uncomfortable
 
 ## 
 
-![]( images/genAI2.png)
+![](images/genAI2.png)
 
 ------------------------------------------------------------------------
 
 ## 
 
-![]( images/genAI3.png)
+![](images/genAI3.png)
 
 ------------------------------------------------------------------------
 
 ## 
 
-![]( images/genAI4.png)
+![](images/genAI4.png)
 
 ------------------------------------------------------------------------
 
 ### LLMs
 
-![]( images/LLM.webp){.stretch}
+![](images/LLM.webp){.stretch}
 
 ------------------------------------------------------------------------
 
-![]( images/LLM2.jpg)
+![](images/LLM2.jpg)
 
 ------------------------------------------------------------------------
 
-![]( images/genAI6.png)
+![](images/genAI6.png)
 
 ------------------------------------------------------------------------
 
-![]( images/genAI7.png)
+![](images/genAI7.png)
 
 ## Generative AI in a Nutshell
 
@@ -232,20 +208,20 @@ Comfortable being uncomfortable
 
 |  |
 |:-----------------------------------------------------------------------|
-|  ## Traditional AI vs. Generative AI (Comparison){.scrollable} |
-|  | Feature  | **Traditional AI**  | **Generative AI**  |  |----------------------- |-------------------------------------------------------- |---------------------------------------------------- |  | **Function**  | Summarizes and analyzes existing data  | Creates new content based on learned patterns  |  | **Output**  | Insights, summaries, analysis of existing data  | New text, images, music, etc.  |  | **Examples**  | Business reports, trend analysis, sentiment analysis  | AI-generated images, articles, music  |  | **Technologies Used**  | Statistical models, clustering, classification  | Neural networks (GANs, transformers)  | |
-|  ## Key Takeaway |
-|  - **Artificial Intelligence (AI)** is the broad field enabling machines to mimic human intelligence. |
-|  - **Machine Learning (ML)** is a technique within AI, focused on learning from data. |
-|  - **NLP** allows AI to understand and interact with human language. |
-|  - **Generative AI** creates new, original content based on learned patterns. |
-|  - **Traditional AI** analyzes existing data to provide insights, while **Generative AI** creates something entirely new. |
-|  ### New Wave of Technology |
-|  - What does the wave of technology mean for humanity? |
-|  - Historical discoveries: [Fire, the wheel, printing press, steel, harnessing electricity]{.hi-purple} |
-|  - Transformation of human civilization through technological advancements |
-|  ### Advanced AI and biotechnology |
-|  - [Benefits: Unlock secrets of the universe , Cure diseases, Create a healthier, sustainable world]{.hi-purple} |
+| \## Traditional AI vs. Generative AI (Comparison){.scrollable} |
+|  |
+| \## Key Takeaway |
+| \- **Artificial Intelligence (AI)** is the broad field enabling machines to mimic human intelligence. |
+| \- **Machine Learning (ML)** is a technique within AI, focused on learning from data. |
+| \- **NLP** allows AI to understand and interact with human language. |
+| \- **Generative AI** creates new, original content based on learned patterns. |
+| \- **Traditional AI** analyzes existing data to provide insights, while **Generative AI** creates something entirely new. |
+| \### New Wave of Technology |
+| \- What does the wave of technology mean for humanity? |
+| \- Historical discoveries: [Fire, the wheel, printing press, steel, harnessing electricity]{.hi-purple} |
+| \- Transformation of human civilization through technological advancements |
+| \### Advanced AI and biotechnology |
+| \- [Benefits: Unlock secrets of the universe , Cure diseases, Create a healthier, sustainable world]{.hi-purple} |
 
 ### The Dangers
 
@@ -320,20 +296,15 @@ Comfortable being uncomfortable
 ::: {.scrollable style="max-height: 500px; overflow-y: auto;"}
 Allama Iqbal, known for his deep reflections on spirituality, selfhood (*Khudi*), and societal progress, would likely have a nuanced view of social media's impact on youth. Here's what he might say:
 
-**1. Distraction from Purpose:** 
-Iqbal would likely be concerned about social media's ability to distract youth from their true purpose. He often emphasized the need for deep self-reflection and personal growth, and he might view the constant scrolling and superficial interactions on social media as hindrances to achieving *Khudi*. He might say, [***"The pursuit of likes and followers should not replace the pursuit of self-realization and greater goals."***]{.yellow}
+**1. Distraction from Purpose:** Iqbal would likely be concerned about social media's ability to distract youth from their true purpose. He often emphasized the need for deep self-reflection and personal growth, and he might view the constant scrolling and superficial interactions on social media as hindrances to achieving *Khudi*. He might say, [***"The pursuit of likes and followers should not replace the pursuit of self-realization and greater goals."***]{.yellow}
 
-**2. Lost Sense of Identity:** 
-Iqbal believed in the importance of individual and cultural identity. He might see social media as contributing to a loss of self, where youth are too often influenced by external validation and trends rather than their inner values and cultural heritage. He could warn that [***"In a world of filters and illusions, do not lose your true self. Your identity is not what others see online, but what you discover within."***]{.yellow}
+**2. Lost Sense of Identity:** Iqbal believed in the importance of individual and cultural identity. He might see social media as contributing to a loss of self, where youth are too often influenced by external validation and trends rather than their inner values and cultural heritage. He could warn that [***"In a world of filters and illusions, do not lose your true self. Your identity is not what others see online, but what you discover within."***]{.yellow}
 
-**3. Potential for Positive Change:** 
-Despite his concerns, Iqbal would recognize the potential of social media as a powerful tool for positive change. He might encourage the youth to use these platforms to raise awareness about important issues, foster meaningful connections, and promote justice and knowledge. He could say, [***"Use your voice on these platforms as a means to awaken and uplift, not just to entertain."***]{.yellow}
+**3. Potential for Positive Change:** Despite his concerns, Iqbal would recognize the potential of social media as a powerful tool for positive change. He might encourage the youth to use these platforms to raise awareness about important issues, foster meaningful connections, and promote justice and knowledge. He could say, [***"Use your voice on these platforms as a means to awaken and uplift, not just to entertain."***]{.yellow}
 
-**4. Spiritual and Intellectual Balance:** 
-Iqbal would likely urge the youth to balance their time on social media with activities that promote intellectual growth and spiritual reflection. He might remind them that while social media can be a tool for learning and connection, it should not replace the deeper, more personal journey of seeking knowledge and spiritual fulfillment. He might caution, [***"Do not let fleeting moments of entertainment steal the time meant for the pursuit of wisdom and self-enlightenment."***]{.yellow}
+**4. Spiritual and Intellectual Balance:** Iqbal would likely urge the youth to balance their time on social media with activities that promote intellectual growth and spiritual reflection. He might remind them that while social media can be a tool for learning and connection, it should not replace the deeper, more personal journey of seeking knowledge and spiritual fulfillment. He might caution, [***"Do not let fleeting moments of entertainment steal the time meant for the pursuit of wisdom and self-enlightenment."***]{.yellow}
 
-**5. The Power of Influence:** 
-Iqbal would be keenly aware of social media's power to influence minds. He would advise youth to be discerning in their consumption of content, warning them not to fall prey to misinformation or hollow trends. He might say, [***"Just as a gardener tends to what he plants, so too must you guard your mind from the weeds of falsehood and idle talk."***]{.yellow}
+**5. The Power of Influence:** Iqbal would be keenly aware of social media's power to influence minds. He would advise youth to be discerning in their consumption of content, warning them not to fall prey to misinformation or hollow trends. He might say, [***"Just as a gardener tends to what he plants, so too must you guard your mind from the weeds of falsehood and idle talk."***]{.yellow}
 
 In summary, Iqbal would likely see both the dangers and the opportunities in social media. He would call on the youth to use these platforms wisely, ensuring they foster self-growth, preserve cultural identity, and contribute meaningfully to society, rather than getting lost in the distractions of the digital world.
 :::
@@ -342,7 +313,7 @@ In summary, Iqbal would likely see both the dangers and the opportunities in soc
 
 ### Race between Education and Technology
 
-![]( images/race_tech_edu.png){.r-stretch}
+![](images/race_tech_edu.png){.r-stretch}
 
 ::: notes
 Many a times technology races ahead of education. This leads to social pain and inequality. The whole educational system has to revolutionize to keep up. Well, our world has always been in a race between technology and education. Usually, these two go hand in hand, but there are some points in history where technology races so far ahead that education can barely keep pace.
@@ -378,7 +349,7 @@ Let me give you a quick historical example. In the 15th century, technology race
 
 ------------------------------------------------------------------------
 
-### {.scrollable}
+###  {.scrollable}
 
 -   "Benjamin Bloom's 2 Sigma Study"
 
@@ -400,7 +371,7 @@ Let me give you a quick historical example. In the 15th century, technology race
 
 ## Two Sigma Problem
 
-![]( images/2_sigma.png){.r-stretch}
+![](images/2_sigma.png){.r-stretch}
 
 ## AI Writing and Reading Coach {.scrollable}
 
@@ -476,11 +447,11 @@ AI can simulate multiple policy scenarios, helping policymakers assess the poten
 
 ::::: columns
 ::: {.column width="50%"}
-![]( images/interactive_learning.webp)
+![](images/interactive_learning.webp)
 :::
 
 ::: {.column width="50%"}
-![]( images/interactive_learning1.webp)
+![](images/interactive_learning1.webp)
 :::
 :::::
 
@@ -488,7 +459,7 @@ AI can simulate multiple policy scenarios, helping policymakers assess the poten
 
 ### Old vs New Model
 
-![]( images/hall.webp){.stretch}
+![](images/hall.webp){.stretch}
 
 Yet, our educational institutions have not evolved much. [We still put people in lecture halls for one-size-fits-all teaching]{.hi-purple}, and many companies only offer a couple of days of training per year. This model is outdated.
 
@@ -522,7 +493,7 @@ Yet, our educational institutions have not evolved much. [We still put people in
 
 ## Resources {.scrollable}
 
--   [Re-inventing Education for the Digital Age  | David Middelbeck  | TEDxMünster](https://www.youtube.com/watch?v=ArI6albrkuY)
+-   [Re-inventing Education for the Digital Age \| David Middelbeck \| TEDxMünster](https://www.youtube.com/watch?v=ArI6albrkuY)
 
 -   [AI for Economists: Prompt & Resources](https://sites.google.com/view/lastunen/ai-for-economists)
 
@@ -556,48 +527,46 @@ Yet, our educational institutions have not evolved much. [We still put people in
 
 :::::::: columns
 ::: {.column width="20%"}
-![]( images/book1.jpeg){.stretch}
+![](images/book1.jpeg){.stretch}
 :::
 
 ::: {.column width="20%"}
-![]( images/book2.jpeg){.stretch}
+![](images/book2.jpeg){.stretch}
 :::
 
 ::: {.column width="20%"}
-![]( images/book3.jpeg){.stretch}
+![](images/book3.jpeg){.stretch}
 :::
 
 ::: {.column width="20%"}
-![]( images/book4.jpeg){.stretch}
+![](images/book4.jpeg){.stretch}
 :::
 
 ::: {.column width="20%"}
-![]( images/book5.jpeg){.stretch}
+![](images/book5.jpeg){.stretch}
 :::
 ::::::::
 
----
+------------------------------------------------------------------------
 
 ### Thank You!
 
 ![Thank You](images/thank_you.webp){style="display: block; margin: 0 auto; width: 450px;"}
 
-**Prof. Dr. Zahid Asghar, QAU, Islamabad**  
+**Prof. Dr. Zahid Asghar, QAU, Islamabad**
 
 ## What Sets Successful People Apart? A Commitment to Reading, Continuous Learning, and Adapting to Technological Change
 
+------------------------------------------------------------------------
 
-
----
 ### Questions or Comments?
 
 **Contact Information:**
 
-- **Email:** [g.zahid@gmail.com](mailto:g.zahid@gmail.com)
-- **LinkedIn:** [https://www.linkedin.com/in/zahid-asghar/](https://www.linkedin.com/in/zahid-asghar/)
-- **Twitter:** [@Zahadasghar](https://twitter.com/Zahadasghar)
+-   **Email:** [g.zahid\@gmail.com](mailto:g.zahid@gmail.com)
 
-- **YouTube:** [https://www.youtube.com/c/ZahidAsghar](https://www.youtube.com/c/ZahidAsghar)
+-   **LinkedIn:** <https://www.linkedin.com/in/zahid-asghar/>
 
+-   **Twitter:** [\@Zahadasghar](https://twitter.com/Zahadasghar)
 
-
+-   **YouTube:** <https://www.youtube.com/c/ZahidAsghar>

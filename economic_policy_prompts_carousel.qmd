@@ -1,0 +1,256 @@
+---
+title: "Economic Policy Prompts — General vs Structured"
+subtitle: "LinkedIn Carousel / Slide Deck"
+format:
+  revealjs:
+    theme: [default,custom.scss]
+    slide-number: c/t
+    transition: fade
+    controls: true
+    center: true
+    overview: true
+    width: 1280
+    height: 720
+---
+
+> Tip: Export to images (Quarto → RevealJS → 'Save as PNGs') for a LinkedIn carousel.
+
+## 1. Fiscal consolidation
+
+**General prompt**\
+“Tell me how Pakistan can reduce its fiscal deficit.”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Senior economic policy advisor</role>
+<task>Propose 3 fiscal consolidation measures that safeguard growth and the poor</task>
+<context>High interest bill, low tax base, IMF targets, election constraints</context>
+<output_format>- Measure: [action + fiscal yield]
+- Implementation: [steps, timeline]
+- Distributional impact: [winners/losers + mitigation]</output_format>
+```
+
+## 2. Tax base broadening
+
+**General prompt**\
+“How can we increase tax revenue?”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Tax policy specialist</role>
+<task>Identify the 3 highest-impact ways to broaden the tax base</task>
+<context>Under-taxed sectors (retail, real estate, agriculture), informality, weak enforcement</context>
+<output_format>- Reform 1: [mechanism + expected yield]
+- Admin changes: [data, audits]
+- Risks & mitigation: [political, compliance]</output_format>
+```
+
+## 3. Public debt sustainability
+
+**General prompt**\
+“What should be done about rising debt?”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Debt management expert</role>
+<task>Lay out a 3-pillar debt sustainability plan</task>
+<context>High domestic rollover risk, external amortizations, interest rate path</context>
+<output_format>- Pillar 1: [fiscal path]
+- Pillar 2: [liability mgmt/reprofiling]
+- Pillar 3: [growth & FX buffers]</output_format>
+```
+
+## 4. Energy subsidies & circular debt
+
+**General prompt**\
+“Fix the power sector problem.”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Energy economist</role>
+<task>Recommend 3 actions to unwind circular debt while protecting low-income users</task>
+<context>Tariff structure, line losses, SOE arrears, targeted cash transfers</context>
+<output_format>- Action: [what + fiscal/operational impact]
+- Targeting: [who/how]
+- Timeline & KPIs</output_format>
+```
+
+## 5. SOE reform
+
+**General prompt**\
+“What’s the best way to reform SOEs?”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Public enterprise reform advisor</role>
+<task>Design a triage plan for SOEs: privatize, restructure, or retain</task>
+<context>Financial losses, governance gaps, strategic vs commercial SOEs</context>
+<output_format>- Triage criteria: [metrics]
+- Track A/B/C: [policy for each]
+- Governance fixes: [boards, audits, incentives]</output_format>
+```
+
+## 6. Public investment (PSDP) efficiency
+
+**General prompt**\
+“How do we improve development spending?”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Public investment management (PIM) specialist</role>
+<task>Prioritize and sequence projects to maximize economic return</task>
+<context>PSDP pipeline overruns, fragmented funding, weak ex-ante appraisal</context>
+<output_format>- Prioritization rules: [IRR, readiness]
+- Portfolio actions: [drop/defer/fast-track]
+- Monitoring: [stage-gates, KPIs]</output_format>
+```
+
+## 7. Inflation & policy mix
+
+**General prompt**\
+“Advise on inflation control.”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Macro policy advisor</role>
+<task>Recommend a fiscal-monetary-FX policy mix to lower inflation</task>
+<context>Food/energy shocks, exchange rate pass-through, indexation</context>
+<output_format>- Fiscal: [measures + inflation impact]
+- Monetary: [stance + transmission]
+- FX/Trade: [buffers, import policy]</output_format>
+```
+
+## 8. Exchange rate management
+
+**General prompt**\
+“What’s the right exchange rate policy?”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>External sector economist</role>
+<task>Outline the preferred exchange rate regime and operational guidelines</task>
+<context>Thin FX market, remittances, export competitiveness, reserves</context>
+<output_format>- Regime choice: [rationale]
+- Intervention rules: [when/how]
+- Safeguards: [buffers, transparency]</output_format>
+```
+
+## 9. Export diversification & industrial policy
+
+**General prompt**\
+“How can we boost exports?”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Trade & industrial policy expert</role>
+<task>Propose 3 interventions to accelerate export diversification</task>
+<context>Textile concentration, logistics costs, standards compliance, SEZ potential</context>
+<output_format>- Intervention: [constraint solved]
+- Instrument: [credit, standards, zones]
+- KPI: [export value/variety]</output_format>
+```
+
+## 10. Agriculture prices & food security
+
+**General prompt**\
+“Stabilize food prices.”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Agricultural economist</role>
+<task>Design a price-stability package without large fiscal costs</task>
+<context>MSP design, buffer stocks, import timing, climate risk</context>
+<output_format>- Tool 1: [how it stabilizes]
+- Tool 2: [trade/logistics]
+- Tool 3: [climate adaptation] + Risks</output_format>
+```
+
+## 11. Social protection targeting
+
+**General prompt**\
+“Improve social safety nets.”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Social protection economist</role>
+<task>Strengthen targeting and shock-responsiveness of cash transfers</task>
+<context>Proxy means tests, dynamic registries, inflation spikes, disasters</context>
+<output_format>- Targeting upgrade: [data/method]
+- Shock trigger: [rules + funding]
+- Leakage/coverage KPIs</output_format>
+```
+
+## 12. Health financing
+
+**General prompt**\
+“Make health spending more effective.”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Health economist</role>
+<task>Recommend 3 financing reforms to improve outcomes per rupee</task>
+<context>Primary care gaps, catastrophic OOP spending, insurer/provider mix</context>
+<output_format>- Reform: [payment model/benefit design]
+- Expected outcome: [access/quality]
+- Fiscal cost & savings</output_format>
+```
+
+## 13. Education spending to learning
+
+**General prompt**\
+“Increase education quality.”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Education economist</role>
+<task>Reallocate education budgets toward high-return learning interventions</task>
+<context>Teacher absenteeism, early-grade literacy, performance grants</context>
+<output_format>- Reallocation 1/2/3: [from → to + evidence]
+- Accountability: [metrics]
+- Timeline</output_format>
+```
+
+## 14. Fiscal decentralization
+
+**General prompt**\
+“Should we decentralize more?”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Intergovernmental fiscal expert</role>
+<task>Design a fiscal decentralization package aligned with service delivery</task>
+<context>Assignment of functions, transfers, local revenue powers</context>
+<output_format>- Function map: [who does what]
+- Transfer formula: [criteria]
+- Local revenue: [instruments + safeguards]</output_format>
+```
+
+## 15. Climate finance & carbon pricing
+
+**General prompt**\
+“How do we fund climate action?”
+
+**Structured prompt (right way)**
+
+``` xml
+<role>Climate finance economist</role>
+<task>Propose a financing mix and phased carbon pricing roadmap</task>
+<context>Adaptation needs, MDB financing, competitiveness concerns</context>
+<output_format>- Financing mix: [domestic + external]
+- Carbon price path: [levels, timing]
+- Offsets/CBAM readiness</output_format>
+```

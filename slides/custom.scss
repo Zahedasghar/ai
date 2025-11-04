@@ -30,3 +30,32 @@ $presentation-heading-font: 'IBM Plex Serif', serif;
 .reveal .slide a {
   text-decoration: underline;
 }
+
+
+.gradient-purple {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.gradient-blue {
+  background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.gradient-green {
+  background: linear-gradient(135deg, #0BA360 0%, #3CBA92 100%);
+}
+
+.gradient-orange {
+  background: linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 90%);
+}
+
+.center {
+  text-align: center;
+}
+
+.reveal .gradient-purple {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 15px;
+}
