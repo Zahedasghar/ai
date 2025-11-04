@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Zahid Asghar">
-<meta name="dcterms.date" content="2025-08-16">
+<meta name="dcterms.date" content="2025-11-04">
 
 <title>Learn AI: Say No to Luddite – AI for Teachers, Researchers and Students</title>
 <style>
@@ -66,22 +66,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./ai_workshop_prompt.html" rel="next">
+<link href="./ai_workshop.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-74710cafea755071f97f3aba5d337df7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5503276867859db1448f92837d2444ae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -103,72 +106,322 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="style.scss">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/LLM.webp" alt="" class="navbar-logo light-content">
+    <img src="./images/LLM.webp" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">AI for Teachers, Researchers and Students</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/Zahedasghar"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text">GitHub</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://discord.com/channels/1292187441565794316/1292187441565794319"> <i class="bi bi-discord" role="img">
+</i> 
+<span class="menu-text">Discord</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Learn AI: Say No to Luddite</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./workshop_on_ai.html">🎓 Workshops</a></li><li class="breadcrumb-item"><a href="./ai_workshop_intermediate.html">2. Intermediate Workshop</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/LLM.webp" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-      <div class="sidebar-tools-main">
-    <a href="https://github.com/Zahedasghar" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
-</div>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">🏠 Getting Started</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials.html" class="sidebar-item-text sidebar-link">
+  <a href="./materials.qmd" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Materials</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">🎓 Workshops</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://discord.com/channels/1292187441565794316/1292187441565794319" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Discord</span></a>
+  <a href="./workshop_on_ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workshop Overview</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_workshop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Beginner Workshop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_workshop_intermediate.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">2. Intermediate Workshop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_workshop_prompt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Prompt Engineering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./AI_workshop_pips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. PIPS Workshop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./AI_workshop_pnd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. PND Workshop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./AI_Seminar_Activity_Handout.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seminar Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">👨‍🏫 Teaching with AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai for teaching, research and publishing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching &amp; Research Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Gen AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./socratic_method.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Socratic Method with AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./The Future of Thinking How AI redefines intelligence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Future of Thinking</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">📊 AI &amp; Economics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./AI Agents in Economics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI Agents in Economics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./economic_policy_prompts_carousel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Policy Prompts</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">💡 Prompt Engineering</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prompts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prompt Engineering Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_prompts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Analysis Prompts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./econometric_prompts_sol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Econometric Prompts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./office_prompt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Office Productivity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prompt_one_percent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1% Better Prompts</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">🔧 AI Tools &amp; Platforms</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./gpt5_power_users.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">→ GPT-5 Power Users</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_nlp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">→ AI for NLP</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">📝 Research &amp; Publishing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_pub.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI in Publishing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./literature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literature Reviews</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./financial_times.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Financial Times AI</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">🎤 Presentations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">University Talks</span>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./air_univ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generative AI: New Frontiers of Political Imagination</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./slides/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slide Decks →</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -267,14 +520,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Zahedasghar/ai/edit/main/ai_workshop_intermediate.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Zahedasghar/ai/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./workshop_on_ai.html">🎓 Workshops</a></li><li class="breadcrumb-item"><a href="./ai_workshop_intermediate.html">2. Intermediate Workshop</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Learn AI: Say No to Luddite</h1>
+<div class="quarto-title-block"><div><h1 class="title">Learn AI: Say No to Luddite</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
 <p class="subtitle lead">3-Day Intermediate Workshop for Researchers and Practitioners</p>
 </div>
 
@@ -292,7 +545,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">August 16, 2025</p>
+      <p class="date">November 4, 2025</p>
     </div>
   </div>
   
@@ -351,7 +604,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: AI-assisted search strategy</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: AI-assisted search strategy</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>remote_work_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="st">I'm researching the economic impacts of remote work policies during COVID-19. </span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -371,7 +624,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
 <span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co"># This prompt would be used with AI tools to develop search strategy</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Then implement systematic literature collection</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Then implement systematic literature collection</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -394,7 +647,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="applied-exercise-regional-economic-analysis" class="level4">
 <h4 class="anchored" data-anchor-id="applied-exercise-regional-economic-analysis">Applied Exercise: Regional Economic Analysis</h4>
 <p><strong>Scenario:</strong> Analyze the economic impact of a new manufacturing plant in a small town.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of structured economic analysis prompt</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of structured economic analysis prompt</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>manufacturing_analysis_prompt <span class="op">=</span> <span class="st">"""</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="st">CONTEXT:</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="st">A new automotive parts manufacturing plant (500 employees) is opening in:</span></span>
@@ -430,7 +683,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="st">Use economic multiplier concepts but explain in accessible language.</span></span>
 <span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
 <span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="co"># This structured approach ensures comprehensive, useful analysis</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="co"># This structured approach ensures comprehensive, useful analysis</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 <section id="module-1.3-data-analysis-support-with-ai-35-min" class="level3">
@@ -449,7 +702,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># AI prompt for data analysis guidance</span></span>
@@ -490,7 +743,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
 <span id="cb3-40"><a href="#cb3-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>location) <span class="sc">+</span></span>
 <span id="cb3-41"><a href="#cb3-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Housing Cost Burden by Income and Location"</span>,</span>
-<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Housing Cost as Share of Income"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-42"><a href="#cb3-42" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Housing Cost as Share of Income"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -540,7 +793,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fixest)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fixest)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(modelsummary)</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-guided analysis planning</span></span>
@@ -579,7 +832,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a><span class="co"># AI assistance for interpretation</span></span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="fu">modelsummary</span>(minwage_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="fu">modelsummary</span>(minwage_model)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -601,7 +854,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="case-study-retail-price-analysis" class="level4">
 <h4 class="anchored" data-anchor-id="case-study-retail-price-analysis">Case Study: Retail Price Analysis</h4>
 <p><strong>Business Problem:</strong> A retail chain wants to understand how price changes affect sales across different product categories and store locations.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted business analysis</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted business analysis</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
@@ -652,7 +905,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> elasticity</span>
 <span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="co"># Analysis implementation guided by AI</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="co"># Analysis implementation guided by AI</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 <section id="module-2.3-regional-and-urban-economics-25-min" class="level3">
@@ -671,7 +924,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-guided housing market analysis</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-guided housing market analysis</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>housing_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="st">Analyze housing affordability using metro area data:</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="st">- Median home prices, median household income, mortgage rates</span></span>
@@ -696,7 +949,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> affordability_ratio, <span class="at">color =</span> metro_size)) <span class="sc">+</span></span>
 <span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
 <span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>region) <span class="sc">+</span></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Housing Affordability Trends by Region and Metro Size"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Housing Affordability Trends by Region and Metro Size"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -743,7 +996,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprehensive policy analysis with AI support</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprehensive policy analysis with AI support</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>policy_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="st">POLICY CHALLENGE:</span></span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="st">Design small business support program with $50 million budget to help </span></span>
@@ -797,7 +1050,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Policy Option Trade-offs: Cost vs. Job Impact"</span>,</span>
 <span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Cost per Business Served"</span>,</span>
-<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Estimated Jobs Impact"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Estimated Jobs Impact"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -820,7 +1073,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="business-case-market-entry-analysis" class="level4">
 <h4 class="anchored" data-anchor-id="business-case-market-entry-analysis">Business Case: Market Entry Analysis</h4>
 <p><strong>Business Challenge:</strong> Technology company considering expansion into emerging market.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-supported market analysis</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-supported market analysis</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -888,7 +1141,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>        <span class="st">'entry_difficulty'</span>: country_data[<span class="st">'business_ease_score'</span>]</span>
 <span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementation with AI guidance</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementation with AI guidance</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
 <section id="module-3.3-social-and-development-economics-25-min" class="level3">
@@ -908,7 +1161,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted development program evaluation</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted development program evaluation</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>edtech_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="st">PROGRAM CONTEXT:</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="st">Digital learning initiative providing tablets and internet connectivity</span></span>
@@ -949,7 +1202,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> school_data</span>
 <span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a><span class="co"># AI helps interpret results for policy implications</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a><span class="co"># AI helps interpret results for policy implications</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -1053,7 +1306,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details open="" class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Required packages for workshop</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Required packages for workshop</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>essential_packages <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Data manipulation and visualization</span></span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>, <span class="st">"ggplot2"</span>, <span class="st">"dplyr"</span>, <span class="st">"readr"</span>,</span>
@@ -1072,13 +1325,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(essential_packages)</span>
 <span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify installation</span></span>
-<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(essential_packages, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(essential_packages, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
 <section id="python-environment" class="level3">
 <h3 class="anchored" data-anchor-id="python-environment">Python Environment</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Essential Python libraries</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Essential Python libraries</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install pandas numpy matplotlib seaborn</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install scikit-learn statsmodels scipy</span></span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install jupyter notebook</span></span>
@@ -1088,7 +1341,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="ai-tools-access" class="level3">
 <h3 class="anchored" data-anchor-id="ai-tools-access">AI Tools Access</h3>
@@ -1216,11 +1469,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><em>This intermediate workshop provides practical, immediately applicable skills while building toward more sophisticated applications. Participants will gain confidence using AI tools for economic analysis while maintaining critical thinking and methodological rigor.</em></p>
 
 
+<!-- -->
+
 </section>
 </section>
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1272,13 +1527,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1291,9 +1547,60 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       });
       clipboardModal.on('success', onCopySuccess);
     }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Zahedasghar\.github\.io\/ai\/");
+        var filterRegex = new RegExp("https:\/\/zahedasghar\.github\.io\/ai");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1307,6 +1614,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1620,9 +1934,895 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ai_workshop.html" class="pagination-link" aria-label="1. Beginner Workshop">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">1. Beginner Workshop</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ai_workshop_prompt.html" class="pagination-link" aria-label="3. Prompt Engineering">
+        <span class="nav-page-text">3. Prompt Engineering</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Learn AI: Say No to Luddite"</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="an">subtitle:</span><span class="co"> "3-Day Intermediate Workshop for Researchers and Practitioners"</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Prof. Dr. Zahid Asghar"</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> today</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: show</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: cosmo</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="co">  echo: true</span></span>
+<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a><span class="co">  warning: false</span></span>
+<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a><span class="co">  message: false</span></span>
+<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a><span class="co">#bibliography: references.bib</span></span>
+<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a><span class="fu"># Workshop Overview {#sec-overview}</span></span>
+<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a><span class="fu">## Target Audience &amp; Prerequisites</span></span>
+<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a>**Participants:** Researchers, policy analysts, business analysts, and graduate students with some experience in quantitative analysis.</span>
+<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a>**Desirables:**</span>
+<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Basic knowledge of statistics and econometrics (regression analysis, hypothesis testing)</span>
+<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Introductory experience with R or Python</span>
+<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Understanding of research design fundamentals</span>
+<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Familiarity with economic concepts and terminology</span>
+<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Some exposure to data analysis workflows</span>
+<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a>**Difficulty Level:** Intermediate (Above Beginner, Below Advanced)</span>
+<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a><span class="fu">### How AI is eating academic research </span></span>
+<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a><span class="fu">### Agentic </span></span>
+<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## Learning Philosophy</span></span>
+<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a>This workshop bridges the gap between basic AI awareness and sophisticated implementation. Participants will gain **practical, immediately applicable skills** while building toward more advanced applications. The focus is on **learning by doing** with real economic problems that don't require deep theoretical expertise but provide substantial analytical value.</span>
+<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a><span class="fu"># Day 1: AI-Enhanced Economic Research Fundamentals {#sec-day1}</span></span>
+<span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-46"><a href="#cb12-46" aria-hidden="true" tabindex="-1"></a><span class="fu">## Learning Objectives </span></span>
+<span id="cb12-47"><a href="#cb12-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-48"><a href="#cb12-48" aria-hidden="true" tabindex="-1"></a>By the end of Day 1, participants will:</span>
+<span id="cb12-49"><a href="#cb12-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Use AI tools effectively** for economic research tasks and literature reviews</span>
+<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Apply structured prompting** to get reliable results for economic analysis </span>
+<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Integrate AI assistance** into standard research workflows</span>
+<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Evaluate and validate** AI-generated insights using economic reasoning </span>
+<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 1.1: AI Tools for Economic Research (35 min)</span></span>
+<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Essential AI Platforms for Economists</span></span>
+<span id="cb12-62"><a href="#cb12-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Claude, ChatGPT, and Perplexity:** When to use each tool</span>
+<span id="cb12-63"><a href="#cb12-63" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Research-specific applications:** Literature reviews, data analysis, writing support</span>
+<span id="cb12-64"><a href="#cb12-64" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Quality control:** Fact-checking and validation strategies</span>
+<span id="cb12-65"><a href="#cb12-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-66"><a href="#cb12-66" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Hands-On Exercise: Literature Review Enhancement</span></span>
+<span id="cb12-67"><a href="#cb12-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-68"><a href="#cb12-68" aria-hidden="true" tabindex="-1"></a>**Problem:** Research the economic impacts of remote work policies implemented during COVID-19.</span>
+<span id="cb12-69"><a href="#cb12-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-72"><a href="#cb12-72" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb12-73"><a href="#cb12-73" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: literature-review-setup</span></span>
+<span id="cb12-74"><a href="#cb12-74" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb12-75"><a href="#cb12-75" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb12-76"><a href="#cb12-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-77"><a href="#cb12-77" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: AI-assisted search strategy</span></span>
+<span id="cb12-78"><a href="#cb12-78" aria-hidden="true" tabindex="-1"></a>remote_work_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb12-79"><a href="#cb12-79" aria-hidden="true" tabindex="-1"></a><span class="st">I'm researching the economic impacts of remote work policies during COVID-19. </span></span>
+<span id="cb12-80"><a href="#cb12-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-81"><a href="#cb12-81" aria-hidden="true" tabindex="-1"></a><span class="st">Help me develop a comprehensive literature search strategy including:</span></span>
+<span id="cb12-82"><a href="#cb12-82" aria-hidden="true" tabindex="-1"></a><span class="st">1. Key search terms and combinations</span></span>
+<span id="cb12-83"><a href="#cb12-83" aria-hidden="true" tabindex="-1"></a><span class="st">2. Important academic databases to search</span></span>
+<span id="cb12-84"><a href="#cb12-84" aria-hidden="true" tabindex="-1"></a><span class="st">3. Relevant time period (2020-2024)</span></span>
+<span id="cb12-85"><a href="#cb12-85" aria-hidden="true" tabindex="-1"></a><span class="st">4. Types of studies to prioritize (empirical vs. theoretical)</span></span>
+<span id="cb12-86"><a href="#cb12-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-87"><a href="#cb12-87" aria-hidden="true" tabindex="-1"></a><span class="st">Focus on these economic dimensions:</span></span>
+<span id="cb12-88"><a href="#cb12-88" aria-hidden="true" tabindex="-1"></a><span class="st">- Labor productivity effects</span></span>
+<span id="cb12-89"><a href="#cb12-89" aria-hidden="true" tabindex="-1"></a><span class="st">- Housing market impacts  </span></span>
+<span id="cb12-90"><a href="#cb12-90" aria-hidden="true" tabindex="-1"></a><span class="st">- Urban/rural economic dynamics</span></span>
+<span id="cb12-91"><a href="#cb12-91" aria-hidden="true" tabindex="-1"></a><span class="st">- Income and employment effects</span></span>
+<span id="cb12-92"><a href="#cb12-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-93"><a href="#cb12-93" aria-hidden="true" tabindex="-1"></a><span class="st">Provide specific, actionable search guidance.</span></span>
+<span id="cb12-94"><a href="#cb12-94" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb12-95"><a href="#cb12-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-96"><a href="#cb12-96" aria-hidden="true" tabindex="-1"></a><span class="co"># This prompt would be used with AI tools to develop search strategy</span></span>
+<span id="cb12-97"><a href="#cb12-97" aria-hidden="true" tabindex="-1"></a><span class="co"># Then implement systematic literature collection</span></span>
+<span id="cb12-98"><a href="#cb12-98" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-99"><a href="#cb12-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-100"><a href="#cb12-100" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Practice Activity: Economic Concept Explanation</span></span>
+<span id="cb12-101"><a href="#cb12-101" aria-hidden="true" tabindex="-1"></a>Participants practice using AI to explain economic concepts at different complexity levels, learning to calibrate AI responses for different audiences.</span>
+<span id="cb12-102"><a href="#cb12-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-103"><a href="#cb12-103" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 1.2: Structured Prompting for Economics (40 min)</span></span>
+<span id="cb12-104"><a href="#cb12-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-105"><a href="#cb12-105" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Effective Prompting Framework</span></span>
+<span id="cb12-106"><a href="#cb12-106" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Context Setting:** Providing economic background and constraints</span>
+<span id="cb12-107"><a href="#cb12-107" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Specific Instructions:** Clear, measurable outcomes</span>
+<span id="cb12-108"><a href="#cb12-108" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Output Formatting:** Structured responses for further analysis</span>
+<span id="cb12-109"><a href="#cb12-109" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Iterative Refinement:** Building on AI responses</span>
+<span id="cb12-110"><a href="#cb12-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-111"><a href="#cb12-111" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Applied Exercise: Regional Economic Analysis</span></span>
+<span id="cb12-112"><a href="#cb12-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-113"><a href="#cb12-113" aria-hidden="true" tabindex="-1"></a>**Scenario:** Analyze the economic impact of a new manufacturing plant in a small town.</span>
+<span id="cb12-114"><a href="#cb12-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-115"><a href="#cb12-115" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb12-116"><a href="#cb12-116" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of structured economic analysis prompt</span></span>
+<span id="cb12-117"><a href="#cb12-117" aria-hidden="true" tabindex="-1"></a>manufacturing_analysis_prompt <span class="op">=</span> <span class="st">"""</span></span>
+<span id="cb12-118"><a href="#cb12-118" aria-hidden="true" tabindex="-1"></a><span class="st">CONTEXT:</span></span>
+<span id="cb12-119"><a href="#cb12-119" aria-hidden="true" tabindex="-1"></a><span class="st">A new automotive parts manufacturing plant (500 employees) is opening in:</span></span>
+<span id="cb12-120"><a href="#cb12-120" aria-hidden="true" tabindex="-1"></a><span class="st">- Town population: 15,000</span></span>
+<span id="cb12-121"><a href="#cb12-121" aria-hidden="true" tabindex="-1"></a><span class="st">- Current major employers: Hospital (200), school district (150), retail (300)</span></span>
+<span id="cb12-122"><a href="#cb12-122" aria-hidden="true" tabindex="-1"></a><span class="st">- Median household income: $45,000</span></span>
+<span id="cb12-123"><a href="#cb12-123" aria-hidden="true" tabindex="-1"></a><span class="st">- Unemployment rate: 6.5%</span></span>
+<span id="cb12-124"><a href="#cb12-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-125"><a href="#cb12-125" aria-hidden="true" tabindex="-1"></a><span class="st">ANALYSIS REQUEST:</span></span>
+<span id="cb12-126"><a href="#cb12-126" aria-hidden="true" tabindex="-1"></a><span class="st">Provide an economic impact assessment covering:</span></span>
+<span id="cb12-127"><a href="#cb12-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-128"><a href="#cb12-128" aria-hidden="true" tabindex="-1"></a><span class="st">1. DIRECT EFFECTS:</span></span>
+<span id="cb12-129"><a href="#cb12-129" aria-hidden="true" tabindex="-1"></a><span class="st">   - Employment impact (immediate jobs created)</span></span>
+<span id="cb12-130"><a href="#cb12-130" aria-hidden="true" tabindex="-1"></a><span class="st">   - Wage effects (compare to local median)</span></span>
+<span id="cb12-131"><a href="#cb12-131" aria-hidden="true" tabindex="-1"></a><span class="st">   - Tax revenue implications</span></span>
+<span id="cb12-132"><a href="#cb12-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-133"><a href="#cb12-133" aria-hidden="true" tabindex="-1"></a><span class="st">2. INDIRECT EFFECTS:</span></span>
+<span id="cb12-134"><a href="#cb12-134" aria-hidden="true" tabindex="-1"></a><span class="st">   - Supply chain impacts (local suppliers)</span></span>
+<span id="cb12-135"><a href="#cb12-135" aria-hidden="true" tabindex="-1"></a><span class="st">   - Housing market effects</span></span>
+<span id="cb12-136"><a href="#cb12-136" aria-hidden="true" tabindex="-1"></a><span class="st">   - Local business activity changes</span></span>
+<span id="cb12-137"><a href="#cb12-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-138"><a href="#cb12-138" aria-hidden="true" tabindex="-1"></a><span class="st">3. LONG-TERM CONSIDERATIONS:</span></span>
+<span id="cb12-139"><a href="#cb12-139" aria-hidden="true" tabindex="-1"></a><span class="st">   - Population growth potential</span></span>
+<span id="cb12-140"><a href="#cb12-140" aria-hidden="true" tabindex="-1"></a><span class="st">   - Infrastructure needs</span></span>
+<span id="cb12-141"><a href="#cb12-141" aria-hidden="true" tabindex="-1"></a><span class="st">   - Economic diversification benefits</span></span>
+<span id="cb12-142"><a href="#cb12-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-143"><a href="#cb12-143" aria-hidden="true" tabindex="-1"></a><span class="st">FORMAT:</span></span>
+<span id="cb12-144"><a href="#cb12-144" aria-hidden="true" tabindex="-1"></a><span class="st">- Quantitative estimates where possible</span></span>
+<span id="cb12-145"><a href="#cb12-145" aria-hidden="true" tabindex="-1"></a><span class="st">- Identify key assumptions</span></span>
+<span id="cb12-146"><a href="#cb12-146" aria-hidden="true" tabindex="-1"></a><span class="st">- Note potential negative effects</span></span>
+<span id="cb12-147"><a href="#cb12-147" aria-hidden="true" tabindex="-1"></a><span class="st">- Suggest monitoring indicators</span></span>
+<span id="cb12-148"><a href="#cb12-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-149"><a href="#cb12-149" aria-hidden="true" tabindex="-1"></a><span class="st">Use economic multiplier concepts but explain in accessible language.</span></span>
+<span id="cb12-150"><a href="#cb12-150" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
+<span id="cb12-151"><a href="#cb12-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-152"><a href="#cb12-152" aria-hidden="true" tabindex="-1"></a><span class="co"># This structured approach ensures comprehensive, useful analysis</span></span>
+<span id="cb12-153"><a href="#cb12-153" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-154"><a href="#cb12-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-155"><a href="#cb12-155" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 1.3: Data Analysis Support with AI (35 min)</span></span>
+<span id="cb12-156"><a href="#cb12-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-157"><a href="#cb12-157" aria-hidden="true" tabindex="-1"></a><span class="fu">#### AI-Assisted Data Exploration</span></span>
+<span id="cb12-158"><a href="#cb12-158" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Dataset understanding:** Using AI to interpret variable meanings and relationships</span>
+<span id="cb12-159"><a href="#cb12-159" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Analysis planning:** Developing analytical strategies with AI guidance</span>
+<span id="cb12-160"><a href="#cb12-160" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Code generation:** Getting help with R/Python implementation</span>
+<span id="cb12-161"><a href="#cb12-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-162"><a href="#cb12-162" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Practical Exercise: Economic Survey Analysis</span></span>
+<span id="cb12-163"><a href="#cb12-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-164"><a href="#cb12-164" aria-hidden="true" tabindex="-1"></a>**Dataset:** Sample household income and expenditure survey data</span>
+<span id="cb12-165"><a href="#cb12-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-168"><a href="#cb12-168" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb12-169"><a href="#cb12-169" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: survey-analysis</span></span>
+<span id="cb12-170"><a href="#cb12-170" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb12-171"><a href="#cb12-171" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb12-172"><a href="#cb12-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-173"><a href="#cb12-173" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb12-174"><a href="#cb12-174" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb12-175"><a href="#cb12-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-176"><a href="#cb12-176" aria-hidden="true" tabindex="-1"></a><span class="co"># AI prompt for data analysis guidance</span></span>
+<span id="cb12-177"><a href="#cb12-177" aria-hidden="true" tabindex="-1"></a>survey_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb12-178"><a href="#cb12-178" aria-hidden="true" tabindex="-1"></a><span class="st">I have household survey data with these variables:</span></span>
+<span id="cb12-179"><a href="#cb12-179" aria-hidden="true" tabindex="-1"></a><span class="st">- household_income (monthly, in dollars)</span></span>
+<span id="cb12-180"><a href="#cb12-180" aria-hidden="true" tabindex="-1"></a><span class="st">- education_level (high_school, college, graduate)</span></span>
+<span id="cb12-181"><a href="#cb12-181" aria-hidden="true" tabindex="-1"></a><span class="st">- age_head (age of household head)</span></span>
+<span id="cb12-182"><a href="#cb12-182" aria-hidden="true" tabindex="-1"></a><span class="st">- family_size (number of people)</span></span>
+<span id="cb12-183"><a href="#cb12-183" aria-hidden="true" tabindex="-1"></a><span class="st">- housing_cost (monthly rent/mortgage)</span></span>
+<span id="cb12-184"><a href="#cb12-184" aria-hidden="true" tabindex="-1"></a><span class="st">- location (urban, suburban, rural)</span></span>
+<span id="cb12-185"><a href="#cb12-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-186"><a href="#cb12-186" aria-hidden="true" tabindex="-1"></a><span class="st">ANALYSIS GOALS:</span></span>
+<span id="cb12-187"><a href="#cb12-187" aria-hidden="true" tabindex="-1"></a><span class="st">1. Understand spending patterns across income groups</span></span>
+<span id="cb12-188"><a href="#cb12-188" aria-hidden="true" tabindex="-1"></a><span class="st">2. Examine housing cost burden by demographics</span></span>
+<span id="cb12-189"><a href="#cb12-189" aria-hidden="true" tabindex="-1"></a><span class="st">3. Identify potential policy intervention points</span></span>
+<span id="cb12-190"><a href="#cb12-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-191"><a href="#cb12-191" aria-hidden="true" tabindex="-1"></a><span class="st">Please suggest:</span></span>
+<span id="cb12-192"><a href="#cb12-192" aria-hidden="true" tabindex="-1"></a><span class="st">- Key variables to create (ratios, categories)</span></span>
+<span id="cb12-193"><a href="#cb12-193" aria-hidden="true" tabindex="-1"></a><span class="st">- Appropriate visualizations</span></span>
+<span id="cb12-194"><a href="#cb12-194" aria-hidden="true" tabindex="-1"></a><span class="st">- Statistical tests to run</span></span>
+<span id="cb12-195"><a href="#cb12-195" aria-hidden="true" tabindex="-1"></a><span class="st">- R code for implementation</span></span>
+<span id="cb12-196"><a href="#cb12-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-197"><a href="#cb12-197" aria-hidden="true" tabindex="-1"></a><span class="st">Focus on practical insights for economic policy.</span></span>
+<span id="cb12-198"><a href="#cb12-198" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb12-199"><a href="#cb12-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-200"><a href="#cb12-200" aria-hidden="true" tabindex="-1"></a><span class="co"># Example analysis based on AI guidance</span></span>
+<span id="cb12-201"><a href="#cb12-201" aria-hidden="true" tabindex="-1"></a>survey_data <span class="sc">%&gt;%</span></span>
+<span id="cb12-202"><a href="#cb12-202" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb12-203"><a href="#cb12-203" aria-hidden="true" tabindex="-1"></a>    <span class="at">housing_burden =</span> housing_cost <span class="sc">/</span> household_income,</span>
+<span id="cb12-204"><a href="#cb12-204" aria-hidden="true" tabindex="-1"></a>    <span class="at">income_group =</span> <span class="fu">case_when</span>(</span>
+<span id="cb12-205"><a href="#cb12-205" aria-hidden="true" tabindex="-1"></a>      household_income <span class="sc">&lt;</span> <span class="dv">3000</span> <span class="sc">~</span> <span class="st">"Low"</span>,</span>
+<span id="cb12-206"><a href="#cb12-206" aria-hidden="true" tabindex="-1"></a>      household_income <span class="sc">&lt;</span> <span class="dv">6000</span> <span class="sc">~</span> <span class="st">"Middle"</span>, </span>
+<span id="cb12-207"><a href="#cb12-207" aria-hidden="true" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> <span class="st">"High"</span></span>
+<span id="cb12-208"><a href="#cb12-208" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-209"><a href="#cb12-209" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb12-210"><a href="#cb12-210" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> income_group, <span class="at">y =</span> housing_burden)) <span class="sc">+</span></span>
+<span id="cb12-211"><a href="#cb12-211" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb12-212"><a href="#cb12-212" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>location) <span class="sc">+</span></span>
+<span id="cb12-213"><a href="#cb12-213" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Housing Cost Burden by Income and Location"</span>,</span>
+<span id="cb12-214"><a href="#cb12-214" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Housing Cost as Share of Income"</span>)</span>
+<span id="cb12-215"><a href="#cb12-215" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-216"><a href="#cb12-216" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-217"><a href="#cb12-217" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 1.4: Quality Control and Validation (10 min)</span></span>
+<span id="cb12-218"><a href="#cb12-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-219"><a href="#cb12-219" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Building Critical Evaluation Skills</span></span>
+<span id="cb12-220"><a href="#cb12-220" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Economic theory check:** Does AI output align with established principles?</span>
+<span id="cb12-221"><a href="#cb12-221" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Data validation:** Verifying AI-suggested analyses make sense</span>
+<span id="cb12-222"><a href="#cb12-222" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Source verification:** Checking AI-provided references and claims</span>
+<span id="cb12-223"><a href="#cb12-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-224"><a href="#cb12-224" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Quick Exercise: Spotting AI Errors</span></span>
+<span id="cb12-225"><a href="#cb12-225" aria-hidden="true" tabindex="-1"></a>Review AI-generated economic analyses and identify common mistakes or questionable assumptions.</span>
+<span id="cb12-226"><a href="#cb12-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-227"><a href="#cb12-227" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb12-228"><a href="#cb12-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-229"><a href="#cb12-229" aria-hidden="true" tabindex="-1"></a><span class="fu"># Day 2: Applied Economic Analysis with AI Support {#sec-day2}</span></span>
+<span id="cb12-230"><a href="#cb12-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-231"><a href="#cb12-231" aria-hidden="true" tabindex="-1"></a><span class="fu">## Learning Objectives</span></span>
+<span id="cb12-232"><a href="#cb12-232" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-233"><a href="#cb12-233" aria-hidden="true" tabindex="-1"></a>Participants will:</span>
+<span id="cb12-234"><a href="#cb12-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-235"><a href="#cb12-235" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Conduct complete economic analyses** using AI for guidance and implementation</span>
+<span id="cb12-236"><a href="#cb12-236" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Apply basic econometric methods** with AI assistance for interpretation</span>
+<span id="cb12-237"><a href="#cb12-237" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Create professional visualizations** and reports with AI support</span>
+<span id="cb12-238"><a href="#cb12-238" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Address real-world business and policy questions** using integrated approaches</span>
+<span id="cb12-239"><a href="#cb12-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-240"><a href="#cb12-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-241"><a href="#cb12-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-242"><a href="#cb12-242" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 2.1: Labor Market Analysis (45 min)</span></span>
+<span id="cb12-243"><a href="#cb12-243" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-244"><a href="#cb12-244" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Understanding Employment Dynamics</span></span>
+<span id="cb12-245"><a href="#cb12-245" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Labor market indicators:** Unemployment, participation rates, job flows</span>
+<span id="cb12-246"><a href="#cb12-246" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Wage analysis:** Determinants and trends</span>
+<span id="cb12-247"><a href="#cb12-247" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Policy evaluation:** Employment program effectiveness</span>
+<span id="cb12-248"><a href="#cb12-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-249"><a href="#cb12-249" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Major Exercise: Minimum Wage Impact Analysis</span></span>
+<span id="cb12-250"><a href="#cb12-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-251"><a href="#cb12-251" aria-hidden="true" tabindex="-1"></a>**Research Question:** How do minimum wage increases affect employment in different sectors and regions?</span>
+<span id="cb12-252"><a href="#cb12-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-255"><a href="#cb12-255" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb12-256"><a href="#cb12-256" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: minimum-wage-analysis</span></span>
+<span id="cb12-257"><a href="#cb12-257" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb12-258"><a href="#cb12-258" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb12-259"><a href="#cb12-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-260"><a href="#cb12-260" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(fixest)</span>
+<span id="cb12-261"><a href="#cb12-261" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(modelsummary)</span>
+<span id="cb12-262"><a href="#cb12-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-263"><a href="#cb12-263" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-guided analysis planning</span></span>
+<span id="cb12-264"><a href="#cb12-264" aria-hidden="true" tabindex="-1"></a>minwage_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb12-265"><a href="#cb12-265" aria-hidden="true" tabindex="-1"></a><span class="st">I want to analyze minimum wage impacts using state-level data (2015-2023).</span></span>
+<span id="cb12-266"><a href="#cb12-266" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-267"><a href="#cb12-267" aria-hidden="true" tabindex="-1"></a><span class="st">DATA AVAILABLE:</span></span>
+<span id="cb12-268"><a href="#cb12-268" aria-hidden="true" tabindex="-1"></a><span class="st">- State-year panel data</span></span>
+<span id="cb12-269"><a href="#cb12-269" aria-hidden="true" tabindex="-1"></a><span class="st">- Variables: employment rate, average wages, minimum wage, GDP per capita</span></span>
+<span id="cb12-270"><a href="#cb12-270" aria-hidden="true" tabindex="-1"></a><span class="st">- Treatment: States that increased minimum wage vs. those that didn't</span></span>
+<span id="cb12-271"><a href="#cb12-271" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-272"><a href="#cb12-272" aria-hidden="true" tabindex="-1"></a><span class="st">RESEARCH APPROACH:</span></span>
+<span id="cb12-273"><a href="#cb12-273" aria-hidden="true" tabindex="-1"></a><span class="st">Help me design an analysis that addresses:</span></span>
+<span id="cb12-274"><a href="#cb12-274" aria-hidden="true" tabindex="-1"></a><span class="st">1. Overall employment effects</span></span>
+<span id="cb12-275"><a href="#cb12-275" aria-hidden="true" tabindex="-1"></a><span class="st">2. Differences by industry (service vs. manufacturing)  </span></span>
+<span id="cb12-276"><a href="#cb12-276" aria-hidden="true" tabindex="-1"></a><span class="st">3. Regional variation (urban vs. rural states)</span></span>
+<span id="cb12-277"><a href="#cb12-277" aria-hidden="true" tabindex="-1"></a><span class="st">4. Time dynamics (short-term vs. long-term effects)</span></span>
+<span id="cb12-278"><a href="#cb12-278" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-279"><a href="#cb12-279" aria-hidden="true" tabindex="-1"></a><span class="st">Suggest:</span></span>
+<span id="cb12-280"><a href="#cb12-280" aria-hidden="true" tabindex="-1"></a><span class="st">- Appropriate econometric model (difference-in-differences)</span></span>
+<span id="cb12-281"><a href="#cb12-281" aria-hidden="true" tabindex="-1"></a><span class="st">- Control variables to include</span></span>
+<span id="cb12-282"><a href="#cb12-282" aria-hidden="true" tabindex="-1"></a><span class="st">- How to handle timing of treatment</span></span>
+<span id="cb12-283"><a href="#cb12-283" aria-hidden="true" tabindex="-1"></a><span class="st">- R code for implementation</span></span>
+<span id="cb12-284"><a href="#cb12-284" aria-hidden="true" tabindex="-1"></a><span class="st">- Interpretation guidelines</span></span>
+<span id="cb12-285"><a href="#cb12-285" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-286"><a href="#cb12-286" aria-hidden="true" tabindex="-1"></a><span class="st">Keep explanations accessible but econometrically sound.</span></span>
+<span id="cb12-287"><a href="#cb12-287" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb12-288"><a href="#cb12-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-289"><a href="#cb12-289" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementation based on AI guidance</span></span>
+<span id="cb12-290"><a href="#cb12-290" aria-hidden="true" tabindex="-1"></a>minwage_model <span class="ot">&lt;-</span> <span class="fu">feols</span>(</span>
+<span id="cb12-291"><a href="#cb12-291" aria-hidden="true" tabindex="-1"></a>  employment_rate <span class="sc">~</span> minimum_wage <span class="sc">+</span> gdp_per_capita <span class="sc">+</span> </span>
+<span id="cb12-292"><a href="#cb12-292" aria-hidden="true" tabindex="-1"></a>                    unemployment_insurance <span class="sc">+</span> population <span class="sc">|</span></span>
+<span id="cb12-293"><a href="#cb12-293" aria-hidden="true" tabindex="-1"></a>                    state <span class="sc">+</span> year,</span>
+<span id="cb12-294"><a href="#cb12-294" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> state_data,</span>
+<span id="cb12-295"><a href="#cb12-295" aria-hidden="true" tabindex="-1"></a>  <span class="at">cluster =</span> <span class="sc">~</span>state</span>
+<span id="cb12-296"><a href="#cb12-296" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-297"><a href="#cb12-297" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-298"><a href="#cb12-298" aria-hidden="true" tabindex="-1"></a><span class="co"># AI assistance for interpretation</span></span>
+<span id="cb12-299"><a href="#cb12-299" aria-hidden="true" tabindex="-1"></a><span class="fu">modelsummary</span>(minwage_model)</span>
+<span id="cb12-300"><a href="#cb12-300" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-301"><a href="#cb12-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-302"><a href="#cb12-302" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Interpretation Workshop</span></span>
+<span id="cb12-303"><a href="#cb12-303" aria-hidden="true" tabindex="-1"></a>Practice translating econometric results into policy language with AI assistance.</span>
+<span id="cb12-304"><a href="#cb12-304" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-305"><a href="#cb12-305" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 2.2: Consumer Behavior and Market Analysis (45 min)</span></span>
+<span id="cb12-306"><a href="#cb12-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-307"><a href="#cb12-307" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Business Applications of Economic Analysis</span></span>
+<span id="cb12-308"><a href="#cb12-308" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Demand estimation:** Price elasticity and consumer response</span>
+<span id="cb12-309"><a href="#cb12-309" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Market segmentation:** Understanding customer groups</span>
+<span id="cb12-310"><a href="#cb12-310" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Competitive analysis:** Market structure and firm behavior</span>
+<span id="cb12-311"><a href="#cb12-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-312"><a href="#cb12-312" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Case Study: Retail Price Analysis</span></span>
+<span id="cb12-313"><a href="#cb12-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-314"><a href="#cb12-314" aria-hidden="true" tabindex="-1"></a>**Business Problem:** A retail chain wants to understand how price changes affect sales across different product categories and store locations.</span>
+<span id="cb12-315"><a href="#cb12-315" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-316"><a href="#cb12-316" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb12-317"><a href="#cb12-317" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted business analysis</span></span>
+<span id="cb12-318"><a href="#cb12-318" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb12-319"><a href="#cb12-319" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb12-320"><a href="#cb12-320" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb12-321"><a href="#cb12-321" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb12-322"><a href="#cb12-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-323"><a href="#cb12-323" aria-hidden="true" tabindex="-1"></a><span class="co"># Structured business prompt</span></span>
+<span id="cb12-324"><a href="#cb12-324" aria-hidden="true" tabindex="-1"></a>retail_prompt <span class="op">=</span> <span class="st">"""</span></span>
+<span id="cb12-325"><a href="#cb12-325" aria-hidden="true" tabindex="-1"></a><span class="st">BUSINESS CONTEXT:</span></span>
+<span id="cb12-326"><a href="#cb12-326" aria-hidden="true" tabindex="-1"></a><span class="st">Retail chain with 50 stores across urban and suburban locations.</span></span>
+<span id="cb12-327"><a href="#cb12-327" aria-hidden="true" tabindex="-1"></a><span class="st">Product categories: Groceries, electronics, clothing, household items.</span></span>
+<span id="cb12-328"><a href="#cb12-328" aria-hidden="true" tabindex="-1"></a><span class="st">Available data: Weekly sales, prices, promotions, local demographics.</span></span>
+<span id="cb12-329"><a href="#cb12-329" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-330"><a href="#cb12-330" aria-hidden="true" tabindex="-1"></a><span class="st">BUSINESS QUESTIONS:</span></span>
+<span id="cb12-331"><a href="#cb12-331" aria-hidden="true" tabindex="-1"></a><span class="st">1. How price-sensitive are customers for different product categories?</span></span>
+<span id="cb12-332"><a href="#cb12-332" aria-hidden="true" tabindex="-1"></a><span class="st">2. Do urban vs. suburban stores show different price sensitivity?</span></span>
+<span id="cb12-333"><a href="#cb12-333" aria-hidden="true" tabindex="-1"></a><span class="st">3. What's the optimal pricing strategy for each category?</span></span>
+<span id="cb12-334"><a href="#cb12-334" aria-hidden="true" tabindex="-1"></a><span class="st">4. How do promotions interact with regular pricing?</span></span>
+<span id="cb12-335"><a href="#cb12-335" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-336"><a href="#cb12-336" aria-hidden="true" tabindex="-1"></a><span class="st">ANALYTICAL APPROACH:</span></span>
+<span id="cb12-337"><a href="#cb12-337" aria-hidden="true" tabindex="-1"></a><span class="st">Design analysis to estimate:</span></span>
+<span id="cb12-338"><a href="#cb12-338" aria-hidden="true" tabindex="-1"></a><span class="st">- Price elasticity by product category</span></span>
+<span id="cb12-339"><a href="#cb12-339" aria-hidden="true" tabindex="-1"></a><span class="st">- Geographic differences in price sensitivity</span></span>
+<span id="cb12-340"><a href="#cb12-340" aria-hidden="true" tabindex="-1"></a><span class="st">- Promotional effectiveness</span></span>
+<span id="cb12-341"><a href="#cb12-341" aria-hidden="true" tabindex="-1"></a><span class="st">- Revenue optimization insights</span></span>
+<span id="cb12-342"><a href="#cb12-342" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-343"><a href="#cb12-343" aria-hidden="true" tabindex="-1"></a><span class="st">Provide Python code for:</span></span>
+<span id="cb12-344"><a href="#cb12-344" aria-hidden="true" tabindex="-1"></a><span class="st">- Data exploration and visualization</span></span>
+<span id="cb12-345"><a href="#cb12-345" aria-hidden="true" tabindex="-1"></a><span class="st">- Elasticity estimation</span></span>
+<span id="cb12-346"><a href="#cb12-346" aria-hidden="true" tabindex="-1"></a><span class="st">- Business insights interpretation</span></span>
+<span id="cb12-347"><a href="#cb12-347" aria-hidden="true" tabindex="-1"></a><span class="st">- Actionable recommendations</span></span>
+<span id="cb12-348"><a href="#cb12-348" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-349"><a href="#cb12-349" aria-hidden="true" tabindex="-1"></a><span class="st">Focus on practical business applications.</span></span>
+<span id="cb12-350"><a href="#cb12-350" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
+<span id="cb12-351"><a href="#cb12-351" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-352"><a href="#cb12-352" aria-hidden="true" tabindex="-1"></a><span class="co"># Example implementation</span></span>
+<span id="cb12-353"><a href="#cb12-353" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> estimate_price_elasticity(data, category):</span>
+<span id="cb12-354"><a href="#cb12-354" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb12-355"><a href="#cb12-355" aria-hidden="true" tabindex="-1"></a><span class="co">    Estimate price elasticity for a product category</span></span>
+<span id="cb12-356"><a href="#cb12-356" aria-hidden="true" tabindex="-1"></a><span class="co">    AI would help design this function</span></span>
+<span id="cb12-357"><a href="#cb12-357" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb12-358"><a href="#cb12-358" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Log-log regression for elasticity</span></span>
+<span id="cb12-359"><a href="#cb12-359" aria-hidden="true" tabindex="-1"></a>    model <span class="op">=</span> LinearRegression()</span>
+<span id="cb12-360"><a href="#cb12-360" aria-hidden="true" tabindex="-1"></a>    X <span class="op">=</span> np.log(data[<span class="ss">f'</span><span class="sc">{</span>category<span class="sc">}</span><span class="ss">_price'</span>]).values.reshape(<span class="op">-</span><span class="dv">1</span>, <span class="dv">1</span>)</span>
+<span id="cb12-361"><a href="#cb12-361" aria-hidden="true" tabindex="-1"></a>    y <span class="op">=</span> np.log(data[<span class="ss">f'</span><span class="sc">{</span>category<span class="sc">}</span><span class="ss">_sales'</span>])</span>
+<span id="cb12-362"><a href="#cb12-362" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-363"><a href="#cb12-363" aria-hidden="true" tabindex="-1"></a>    model.fit(X, y)</span>
+<span id="cb12-364"><a href="#cb12-364" aria-hidden="true" tabindex="-1"></a>    elasticity <span class="op">=</span> model.coef_[<span class="dv">0</span>]</span>
+<span id="cb12-365"><a href="#cb12-365" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-366"><a href="#cb12-366" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> elasticity</span>
+<span id="cb12-367"><a href="#cb12-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-368"><a href="#cb12-368" aria-hidden="true" tabindex="-1"></a><span class="co"># Analysis implementation guided by AI</span></span>
+<span id="cb12-369"><a href="#cb12-369" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-370"><a href="#cb12-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-371"><a href="#cb12-371" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 2.3: Regional and Urban Economics (25 min)</span></span>
+<span id="cb12-372"><a href="#cb12-372" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-373"><a href="#cb12-373" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Spatial Economic Analysis</span></span>
+<span id="cb12-374"><a href="#cb12-374" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Regional development:** Growth patterns and convergence</span>
+<span id="cb12-375"><a href="#cb12-375" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Urban economics:** Housing markets and city dynamics</span>
+<span id="cb12-376"><a href="#cb12-376" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Location decisions:** Business and residential choices</span>
+<span id="cb12-377"><a href="#cb12-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-378"><a href="#cb12-378" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Quick Case: Housing Market Trends</span></span>
+<span id="cb12-379"><a href="#cb12-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-380"><a href="#cb12-380" aria-hidden="true" tabindex="-1"></a>**Problem:** Analyze housing affordability trends in metropolitan areas.</span>
+<span id="cb12-381"><a href="#cb12-381" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-384"><a href="#cb12-384" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb12-385"><a href="#cb12-385" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: housing-analysis</span></span>
+<span id="cb12-386"><a href="#cb12-386" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb12-387"><a href="#cb12-387" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb12-388"><a href="#cb12-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-389"><a href="#cb12-389" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-guided housing market analysis</span></span>
+<span id="cb12-390"><a href="#cb12-390" aria-hidden="true" tabindex="-1"></a>housing_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb12-391"><a href="#cb12-391" aria-hidden="true" tabindex="-1"></a><span class="st">Analyze housing affordability using metro area data:</span></span>
+<span id="cb12-392"><a href="#cb12-392" aria-hidden="true" tabindex="-1"></a><span class="st">- Median home prices, median household income, mortgage rates</span></span>
+<span id="cb12-393"><a href="#cb12-393" aria-hidden="true" tabindex="-1"></a><span class="st">- Population growth, employment growth</span></span>
+<span id="cb12-394"><a href="#cb12-394" aria-hidden="true" tabindex="-1"></a><span class="st">- Housing supply indicators (permits, inventory)</span></span>
+<span id="cb12-395"><a href="#cb12-395" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-396"><a href="#cb12-396" aria-hidden="true" tabindex="-1"></a><span class="st">Create analysis showing:</span></span>
+<span id="cb12-397"><a href="#cb12-397" aria-hidden="true" tabindex="-1"></a><span class="st">1. Affordability trends over time (2018-2024)</span></span>
+<span id="cb12-398"><a href="#cb12-398" aria-hidden="true" tabindex="-1"></a><span class="st">2. Which metros are most/least affordable</span></span>
+<span id="cb12-399"><a href="#cb12-399" aria-hidden="true" tabindex="-1"></a><span class="st">3. Relationship between job growth and housing costs</span></span>
+<span id="cb12-400"><a href="#cb12-400" aria-hidden="true" tabindex="-1"></a><span class="st">4. Policy implications for different metro types</span></span>
+<span id="cb12-401"><a href="#cb12-401" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-402"><a href="#cb12-402" aria-hidden="true" tabindex="-1"></a><span class="st">Suggest appropriate metrics (price-to-income ratios) and visualizations.</span></span>
+<span id="cb12-403"><a href="#cb12-403" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb12-404"><a href="#cb12-404" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-405"><a href="#cb12-405" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementation with AI assistance</span></span>
+<span id="cb12-406"><a href="#cb12-406" aria-hidden="true" tabindex="-1"></a>housing_data <span class="sc">%&gt;%</span></span>
+<span id="cb12-407"><a href="#cb12-407" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb12-408"><a href="#cb12-408" aria-hidden="true" tabindex="-1"></a>    <span class="at">affordability_ratio =</span> median_price <span class="sc">/</span> median_income,</span>
+<span id="cb12-409"><a href="#cb12-409" aria-hidden="true" tabindex="-1"></a>    <span class="at">affordable =</span> affordability_ratio <span class="sc">&lt;</span> <span class="fl">3.0</span></span>
+<span id="cb12-410"><a href="#cb12-410" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb12-411"><a href="#cb12-411" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> affordability_ratio, <span class="at">color =</span> metro_size)) <span class="sc">+</span></span>
+<span id="cb12-412"><a href="#cb12-412" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb12-413"><a href="#cb12-413" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>region) <span class="sc">+</span></span>
+<span id="cb12-414"><a href="#cb12-414" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Housing Affordability Trends by Region and Metro Size"</span>)</span>
+<span id="cb12-415"><a href="#cb12-415" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-416"><a href="#cb12-416" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-417"><a href="#cb12-417" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 2.4: Creating Professional Reports (5 min)</span></span>
+<span id="cb12-418"><a href="#cb12-418" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-419"><a href="#cb12-419" aria-hidden="true" tabindex="-1"></a><span class="fu">#### AI-Enhanced Communication</span></span>
+<span id="cb12-420"><a href="#cb12-420" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Executive summaries:** Key findings and recommendations</span>
+<span id="cb12-421"><a href="#cb12-421" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Visualization guidance:** Effective charts and graphs</span>
+<span id="cb12-422"><a href="#cb12-422" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Policy translations:** Academic results to policy language</span>
+<span id="cb12-423"><a href="#cb12-423" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-424"><a href="#cb12-424" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb12-425"><a href="#cb12-425" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-426"><a href="#cb12-426" aria-hidden="true" tabindex="-1"></a><span class="fu"># Day 3: Policy Analysis and Business Applications {#sec-day3}</span></span>
+<span id="cb12-427"><a href="#cb12-427" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-428"><a href="#cb12-428" aria-hidden="true" tabindex="-1"></a><span class="fu">## Learning Objectives</span></span>
+<span id="cb12-429"><a href="#cb12-429" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-430"><a href="#cb12-430" aria-hidden="true" tabindex="-1"></a>Participants will:</span>
+<span id="cb12-431"><a href="#cb12-431" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-432"><a href="#cb12-432" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Evaluate economic policies** using AI-supported analytical frameworks</span>
+<span id="cb12-433"><a href="#cb12-433" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Conduct business strategy analysis** with economic principles and AI tools</span>
+<span id="cb12-434"><a href="#cb12-434" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Develop actionable recommendations** from economic analysis</span>
+<span id="cb12-435"><a href="#cb12-435" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Create comprehensive project workflows** integrating multiple AI tools</span>
+<span id="cb12-436"><a href="#cb12-436" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-437"><a href="#cb12-437" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-438"><a href="#cb12-438" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-439"><a href="#cb12-439" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 3.1: Policy Impact Assessment (50 min)</span></span>
+<span id="cb12-440"><a href="#cb12-440" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-441"><a href="#cb12-441" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Policy Analysis Framework</span></span>
+<span id="cb12-442"><a href="#cb12-442" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Problem identification:** Defining policy challenges clearly</span>
+<span id="cb12-443"><a href="#cb12-443" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Option evaluation:** Comparing policy alternatives</span>
+<span id="cb12-444"><a href="#cb12-444" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Impact assessment:** Quantifying effects and trade-offs</span>
+<span id="cb12-445"><a href="#cb12-445" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Implementation considerations:** Practical policy design</span>
+<span id="cb12-446"><a href="#cb12-446" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-447"><a href="#cb12-447" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Major Case Study: Small Business Support Programs</span></span>
+<span id="cb12-448"><a href="#cb12-448" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-449"><a href="#cb12-449" aria-hidden="true" tabindex="-1"></a>**Policy Question:** Design and evaluate a small business support program for post-pandemic economic recovery.</span>
+<span id="cb12-450"><a href="#cb12-450" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-453"><a href="#cb12-453" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb12-454"><a href="#cb12-454" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: policy-analysis</span></span>
+<span id="cb12-455"><a href="#cb12-455" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb12-456"><a href="#cb12-456" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb12-457"><a href="#cb12-457" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-458"><a href="#cb12-458" aria-hidden="true" tabindex="-1"></a><span class="co"># Comprehensive policy analysis with AI support</span></span>
+<span id="cb12-459"><a href="#cb12-459" aria-hidden="true" tabindex="-1"></a>policy_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb12-460"><a href="#cb12-460" aria-hidden="true" tabindex="-1"></a><span class="st">POLICY CHALLENGE:</span></span>
+<span id="cb12-461"><a href="#cb12-461" aria-hidden="true" tabindex="-1"></a><span class="st">Design small business support program with $50 million budget to help </span></span>
+<span id="cb12-462"><a href="#cb12-462" aria-hidden="true" tabindex="-1"></a><span class="st">post-pandemic recovery in mid-sized city (population 200,000).</span></span>
+<span id="cb12-463"><a href="#cb12-463" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-464"><a href="#cb12-464" aria-hidden="true" tabindex="-1"></a><span class="st">CONTEXT:</span></span>
+<span id="cb12-465"><a href="#cb12-465" aria-hidden="true" tabindex="-1"></a><span class="st">- 20% of small businesses closed during pandemic</span></span>
+<span id="cb12-466"><a href="#cb12-466" aria-hidden="true" tabindex="-1"></a><span class="st">- Unemployment rose from 4% to 12%, now at 8%</span></span>
+<span id="cb12-467"><a href="#cb12-467" aria-hidden="true" tabindex="-1"></a><span class="st">- Main industries: Tourism, retail, food service, manufacturing</span></span>
+<span id="cb12-468"><a href="#cb12-468" aria-hidden="true" tabindex="-1"></a><span class="st">- Mix of urban core and suburban areas</span></span>
+<span id="cb12-469"><a href="#cb12-469" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-470"><a href="#cb12-470" aria-hidden="true" tabindex="-1"></a><span class="st">POLICY OPTIONS TO EVALUATE:</span></span>
+<span id="cb12-471"><a href="#cb12-471" aria-hidden="true" tabindex="-1"></a><span class="st">1. Direct grants ($10K-$50K per business)</span></span>
+<span id="cb12-472"><a href="#cb12-472" aria-hidden="true" tabindex="-1"></a><span class="st">2. Low-interest loan program</span></span>
+<span id="cb12-473"><a href="#cb12-473" aria-hidden="true" tabindex="-1"></a><span class="st">3. Tax credits for hiring/retention</span></span>
+<span id="cb12-474"><a href="#cb12-474" aria-hidden="true" tabindex="-1"></a><span class="st">4. Technical assistance and training programs</span></span>
+<span id="cb12-475"><a href="#cb12-475" aria-hidden="true" tabindex="-1"></a><span class="st">5. Hybrid approach combining above</span></span>
+<span id="cb12-476"><a href="#cb12-476" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-477"><a href="#cb12-477" aria-hidden="true" tabindex="-1"></a><span class="st">ANALYSIS FRAMEWORK:</span></span>
+<span id="cb12-478"><a href="#cb12-478" aria-hidden="true" tabindex="-1"></a><span class="st">For each option, assess:</span></span>
+<span id="cb12-479"><a href="#cb12-479" aria-hidden="true" tabindex="-1"></a><span class="st">- Likely business participation rates</span></span>
+<span id="cb12-480"><a href="#cb12-480" aria-hidden="true" tabindex="-1"></a><span class="st">- Employment impact (jobs created/saved)</span></span>
+<span id="cb12-481"><a href="#cb12-481" aria-hidden="true" tabindex="-1"></a><span class="st">- Economic multiplier effects</span></span>
+<span id="cb12-482"><a href="#cb12-482" aria-hidden="true" tabindex="-1"></a><span class="st">- Implementation costs and complexity</span></span>
+<span id="cb12-483"><a href="#cb12-483" aria-hidden="true" tabindex="-1"></a><span class="st">- Targeting effectiveness (reaching most affected)</span></span>
+<span id="cb12-484"><a href="#cb12-484" aria-hidden="true" tabindex="-1"></a><span class="st">- Long-term sustainability</span></span>
+<span id="cb12-485"><a href="#cb12-485" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-486"><a href="#cb12-486" aria-hidden="true" tabindex="-1"></a><span class="st">DELIVERABLES:</span></span>
+<span id="cb12-487"><a href="#cb12-487" aria-hidden="true" tabindex="-1"></a><span class="st">1. Cost-benefit analysis for each option</span></span>
+<span id="cb12-488"><a href="#cb12-488" aria-hidden="true" tabindex="-1"></a><span class="st">2. Implementation timeline and requirements</span></span>
+<span id="cb12-489"><a href="#cb12-489" aria-hidden="true" tabindex="-1"></a><span class="st">3. Success metrics and monitoring plan</span></span>
+<span id="cb12-490"><a href="#cb12-490" aria-hidden="true" tabindex="-1"></a><span class="st">4. Recommendation with rationale</span></span>
+<span id="cb12-491"><a href="#cb12-491" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-492"><a href="#cb12-492" aria-hidden="true" tabindex="-1"></a><span class="st">Use economic reasoning but keep accessible for policymakers.</span></span>
+<span id="cb12-493"><a href="#cb12-493" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb12-494"><a href="#cb12-494" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-495"><a href="#cb12-495" aria-hidden="true" tabindex="-1"></a><span class="co"># Example analysis structure</span></span>
+<span id="cb12-496"><a href="#cb12-496" aria-hidden="true" tabindex="-1"></a>policy_options <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb12-497"><a href="#cb12-497" aria-hidden="true" tabindex="-1"></a>  <span class="at">option =</span> <span class="fu">c</span>(<span class="st">"Direct Grants"</span>, <span class="st">"Loan Program"</span>, <span class="st">"Tax Credits"</span>, <span class="st">"Technical Assistance"</span>),</span>
+<span id="cb12-498"><a href="#cb12-498" aria-hidden="true" tabindex="-1"></a>  <span class="at">budget_share =</span> <span class="fu">c</span>(<span class="fl">0.4</span>, <span class="fl">0.3</span>, <span class="fl">0.2</span>, <span class="fl">0.1</span>),</span>
+<span id="cb12-499"><a href="#cb12-499" aria-hidden="true" tabindex="-1"></a>  <span class="at">businesses_served =</span> <span class="fu">c</span>(<span class="dv">500</span>, <span class="dv">800</span>, <span class="dv">1000</span>, <span class="dv">1500</span>),</span>
+<span id="cb12-500"><a href="#cb12-500" aria-hidden="true" tabindex="-1"></a>  <span class="at">cost_per_business =</span> budget_share <span class="sc">*</span> <span class="dv">50000000</span> <span class="sc">/</span> businesses_served,</span>
+<span id="cb12-501"><a href="#cb12-501" aria-hidden="true" tabindex="-1"></a>  <span class="at">jobs_impact =</span> <span class="fu">c</span>(<span class="dv">1200</span>, <span class="dv">1800</span>, <span class="dv">2200</span>, <span class="dv">800</span>),</span>
+<span id="cb12-502"><a href="#cb12-502" aria-hidden="true" tabindex="-1"></a>  <span class="at">implementation_time =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">6</span>, <span class="dv">4</span>, <span class="dv">3</span>)</span>
+<span id="cb12-503"><a href="#cb12-503" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-504"><a href="#cb12-504" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-505"><a href="#cb12-505" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualization of policy trade-offs</span></span>
+<span id="cb12-506"><a href="#cb12-506" aria-hidden="true" tabindex="-1"></a>policy_options <span class="sc">%&gt;%</span></span>
+<span id="cb12-507"><a href="#cb12-507" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> cost_per_business, <span class="at">y =</span> jobs_impact, </span>
+<span id="cb12-508"><a href="#cb12-508" aria-hidden="true" tabindex="-1"></a>             <span class="at">color =</span> option, <span class="at">size =</span> businesses_served)) <span class="sc">+</span></span>
+<span id="cb12-509"><a href="#cb12-509" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb12-510"><a href="#cb12-510" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Policy Option Trade-offs: Cost vs. Job Impact"</span>,</span>
+<span id="cb12-511"><a href="#cb12-511" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Cost per Business Served"</span>,</span>
+<span id="cb12-512"><a href="#cb12-512" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Estimated Jobs Impact"</span>)</span>
+<span id="cb12-513"><a href="#cb12-513" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-514"><a href="#cb12-514" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-515"><a href="#cb12-515" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Policy Recommendation Workshop</span></span>
+<span id="cb12-516"><a href="#cb12-516" aria-hidden="true" tabindex="-1"></a>Groups develop policy briefs using AI assistance, then present to class for feedback.</span>
+<span id="cb12-517"><a href="#cb12-517" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-518"><a href="#cb12-518" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 3.2: Business Strategy and Market Analysis (40 min)</span></span>
+<span id="cb12-519"><a href="#cb12-519" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-520"><a href="#cb12-520" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Strategic Economic Analysis</span></span>
+<span id="cb12-521"><a href="#cb12-521" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Market opportunity assessment:** Sizing and evaluating markets</span>
+<span id="cb12-522"><a href="#cb12-522" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Competitive positioning:** Understanding market dynamics</span>
+<span id="cb12-523"><a href="#cb12-523" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Growth strategy:** Economic factors in business expansion</span>
+<span id="cb12-524"><a href="#cb12-524" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Risk assessment:** Economic uncertainties and mitigation</span>
+<span id="cb12-525"><a href="#cb12-525" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-526"><a href="#cb12-526" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Business Case: Market Entry Analysis</span></span>
+<span id="cb12-527"><a href="#cb12-527" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-528"><a href="#cb12-528" aria-hidden="true" tabindex="-1"></a>**Business Challenge:** Technology company considering expansion into emerging market.</span>
+<span id="cb12-529"><a href="#cb12-529" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-530"><a href="#cb12-530" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb12-531"><a href="#cb12-531" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-supported market analysis</span></span>
+<span id="cb12-532"><a href="#cb12-532" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb12-533"><a href="#cb12-533" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb12-534"><a href="#cb12-534" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-535"><a href="#cb12-535" aria-hidden="true" tabindex="-1"></a>market_entry_prompt <span class="op">=</span> <span class="st">"""</span></span>
+<span id="cb12-536"><a href="#cb12-536" aria-hidden="true" tabindex="-1"></a><span class="st">BUSINESS CONTEXT:</span></span>
+<span id="cb12-537"><a href="#cb12-537" aria-hidden="true" tabindex="-1"></a><span class="st">Mid-size tech company (cloud-based HR software) considering expansion </span></span>
+<span id="cb12-538"><a href="#cb12-538" aria-hidden="true" tabindex="-1"></a><span class="st">into Southeast Asian market (focus on Indonesia, Philippines, Vietnam).</span></span>
+<span id="cb12-539"><a href="#cb12-539" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-540"><a href="#cb12-540" aria-hidden="true" tabindex="-1"></a><span class="st">CURRENT SITUATION:</span></span>
+<span id="cb12-541"><a href="#cb12-541" aria-hidden="true" tabindex="-1"></a><span class="st">- Strong position in North American market</span></span>
+<span id="cb12-542"><a href="#cb12-542" aria-hidden="true" tabindex="-1"></a><span class="st">- Software requires localization (language, regulations, payment systems)</span></span>
+<span id="cb12-543"><a href="#cb12-543" aria-hidden="true" tabindex="-1"></a><span class="st">- Competition from local players and global competitors</span></span>
+<span id="cb12-544"><a href="#cb12-544" aria-hidden="true" tabindex="-1"></a><span class="st">- Target: Small to medium enterprises (50-500 employees)</span></span>
+<span id="cb12-545"><a href="#cb12-545" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-546"><a href="#cb12-546" aria-hidden="true" tabindex="-1"></a><span class="st">ANALYSIS NEEDED:</span></span>
+<span id="cb12-547"><a href="#cb12-547" aria-hidden="true" tabindex="-1"></a><span class="st">1. Market Size and Growth Potential:</span></span>
+<span id="cb12-548"><a href="#cb12-548" aria-hidden="true" tabindex="-1"></a><span class="st">   - SME population and growth rates</span></span>
+<span id="cb12-549"><a href="#cb12-549" aria-hidden="true" tabindex="-1"></a><span class="st">   - Technology adoption trends</span></span>
+<span id="cb12-550"><a href="#cb12-550" aria-hidden="true" tabindex="-1"></a><span class="st">   - Spending on HR software</span></span>
+<span id="cb12-551"><a href="#cb12-551" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-552"><a href="#cb12-552" aria-hidden="true" tabindex="-1"></a><span class="st">2. Competitive Landscape:</span></span>
+<span id="cb12-553"><a href="#cb12-553" aria-hidden="true" tabindex="-1"></a><span class="st">   - Existing players and market shares</span></span>
+<span id="cb12-554"><a href="#cb12-554" aria-hidden="true" tabindex="-1"></a><span class="st">   - Pricing strategies</span></span>
+<span id="cb12-555"><a href="#cb12-555" aria-hidden="true" tabindex="-1"></a><span class="st">   - Product feature comparison</span></span>
+<span id="cb12-556"><a href="#cb12-556" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-557"><a href="#cb12-557" aria-hidden="true" tabindex="-1"></a><span class="st">3. Economic Factors:</span></span>
+<span id="cb12-558"><a href="#cb12-558" aria-hidden="true" tabindex="-1"></a><span class="st">   - Business environment and regulations</span></span>
+<span id="cb12-559"><a href="#cb12-559" aria-hidden="true" tabindex="-1"></a><span class="st">   - Economic stability and growth prospects</span></span>
+<span id="cb12-560"><a href="#cb12-560" aria-hidden="true" tabindex="-1"></a><span class="st">   - Currency and financial risks</span></span>
+<span id="cb12-561"><a href="#cb12-561" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-562"><a href="#cb12-562" aria-hidden="true" tabindex="-1"></a><span class="st">4. Entry Strategy Options:</span></span>
+<span id="cb12-563"><a href="#cb12-563" aria-hidden="true" tabindex="-1"></a><span class="st">   - Direct expansion vs. partnerships</span></span>
+<span id="cb12-564"><a href="#cb12-564" aria-hidden="true" tabindex="-1"></a><span class="st">   - Pricing strategy for local market</span></span>
+<span id="cb12-565"><a href="#cb12-565" aria-hidden="true" tabindex="-1"></a><span class="st">   - Investment requirements and timeline</span></span>
+<span id="cb12-566"><a href="#cb12-566" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-567"><a href="#cb12-567" aria-hidden="true" tabindex="-1"></a><span class="st">DELIVERABLES:</span></span>
+<span id="cb12-568"><a href="#cb12-568" aria-hidden="true" tabindex="-1"></a><span class="st">- Market opportunity assessment ($$ potential)</span></span>
+<span id="cb12-569"><a href="#cb12-569" aria-hidden="true" tabindex="-1"></a><span class="st">- Competitive positioning analysis</span></span>
+<span id="cb12-570"><a href="#cb12-570" aria-hidden="true" tabindex="-1"></a><span class="st">- Risk-return analysis for entry options</span></span>
+<span id="cb12-571"><a href="#cb12-571" aria-hidden="true" tabindex="-1"></a><span class="st">- Go/no-go recommendation with rationale</span></span>
+<span id="cb12-572"><a href="#cb12-572" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-573"><a href="#cb12-573" aria-hidden="true" tabindex="-1"></a><span class="st">Frame analysis for business executives, not academic audience.</span></span>
+<span id="cb12-574"><a href="#cb12-574" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span></span>
+<span id="cb12-575"><a href="#cb12-575" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-576"><a href="#cb12-576" aria-hidden="true" tabindex="-1"></a><span class="co"># Market analysis framework</span></span>
+<span id="cb12-577"><a href="#cb12-577" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> analyze_market_opportunity(country_data):</span>
+<span id="cb12-578"><a href="#cb12-578" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""</span></span>
+<span id="cb12-579"><a href="#cb12-579" aria-hidden="true" tabindex="-1"></a><span class="co">    AI-guided market sizing analysis</span></span>
+<span id="cb12-580"><a href="#cb12-580" aria-hidden="true" tabindex="-1"></a><span class="co">    """</span></span>
+<span id="cb12-581"><a href="#cb12-581" aria-hidden="true" tabindex="-1"></a>    market_size <span class="op">=</span> (</span>
+<span id="cb12-582"><a href="#cb12-582" aria-hidden="true" tabindex="-1"></a>        country_data[<span class="st">'sme_count'</span>] <span class="op">*</span> </span>
+<span id="cb12-583"><a href="#cb12-583" aria-hidden="true" tabindex="-1"></a>        country_data[<span class="st">'tech_adoption_rate'</span>] <span class="op">*</span> </span>
+<span id="cb12-584"><a href="#cb12-584" aria-hidden="true" tabindex="-1"></a>        country_data[<span class="st">'avg_hr_software_spend'</span>]</span>
+<span id="cb12-585"><a href="#cb12-585" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-586"><a href="#cb12-586" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-587"><a href="#cb12-587" aria-hidden="true" tabindex="-1"></a>    growth_potential <span class="op">=</span> (</span>
+<span id="cb12-588"><a href="#cb12-588" aria-hidden="true" tabindex="-1"></a>        market_size <span class="op">*</span> </span>
+<span id="cb12-589"><a href="#cb12-589" aria-hidden="true" tabindex="-1"></a>        country_data[<span class="st">'gdp_growth_rate'</span>] <span class="op">*</span> </span>
+<span id="cb12-590"><a href="#cb12-590" aria-hidden="true" tabindex="-1"></a>        country_data[<span class="st">'digitalization_trend'</span>]</span>
+<span id="cb12-591"><a href="#cb12-591" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb12-592"><a href="#cb12-592" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb12-593"><a href="#cb12-593" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> {</span>
+<span id="cb12-594"><a href="#cb12-594" aria-hidden="true" tabindex="-1"></a>        <span class="st">'current_market_size'</span>: market_size,</span>
+<span id="cb12-595"><a href="#cb12-595" aria-hidden="true" tabindex="-1"></a>        <span class="st">'five_year_potential'</span>: growth_potential,</span>
+<span id="cb12-596"><a href="#cb12-596" aria-hidden="true" tabindex="-1"></a>        <span class="st">'entry_difficulty'</span>: country_data[<span class="st">'business_ease_score'</span>]</span>
+<span id="cb12-597"><a href="#cb12-597" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb12-598"><a href="#cb12-598" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-599"><a href="#cb12-599" aria-hidden="true" tabindex="-1"></a><span class="co"># Implementation with AI guidance</span></span>
+<span id="cb12-600"><a href="#cb12-600" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-601"><a href="#cb12-601" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-602"><a href="#cb12-602" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 3.3: Social and Development Economics (25 min)</span></span>
+<span id="cb12-603"><a href="#cb12-603" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-604"><a href="#cb12-604" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Development Policy Analysis</span></span>
+<span id="cb12-605"><a href="#cb12-605" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Poverty and inequality:** Measurement and intervention strategies</span>
+<span id="cb12-606"><a href="#cb12-606" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Education and health:** Human capital development</span>
+<span id="cb12-607"><a href="#cb12-607" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Infrastructure:** Economic development foundations</span>
+<span id="cb12-608"><a href="#cb12-608" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Social programs:** Design and effectiveness</span>
+<span id="cb12-609"><a href="#cb12-609" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-610"><a href="#cb12-610" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Case Study: Education Technology Program</span></span>
+<span id="cb12-611"><a href="#cb12-611" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-612"><a href="#cb12-612" aria-hidden="true" tabindex="-1"></a>**Development Challenge:** Evaluate digital learning initiative for rural schools in developing country context.</span>
+<span id="cb12-613"><a href="#cb12-613" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-616"><a href="#cb12-616" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb12-617"><a href="#cb12-617" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: development-analysis</span></span>
+<span id="cb12-618"><a href="#cb12-618" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb12-619"><a href="#cb12-619" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb12-620"><a href="#cb12-620" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-621"><a href="#cb12-621" aria-hidden="true" tabindex="-1"></a><span class="co"># AI-assisted development program evaluation</span></span>
+<span id="cb12-622"><a href="#cb12-622" aria-hidden="true" tabindex="-1"></a>edtech_prompt <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb12-623"><a href="#cb12-623" aria-hidden="true" tabindex="-1"></a><span class="st">PROGRAM CONTEXT:</span></span>
+<span id="cb12-624"><a href="#cb12-624" aria-hidden="true" tabindex="-1"></a><span class="st">Digital learning initiative providing tablets and internet connectivity</span></span>
+<span id="cb12-625"><a href="#cb12-625" aria-hidden="true" tabindex="-1"></a><span class="st">to rural primary schools in developing country.</span></span>
+<span id="cb12-626"><a href="#cb12-626" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-627"><a href="#cb12-627" aria-hidden="true" tabindex="-1"></a><span class="st">PROGRAM DETAILS:</span></span>
+<span id="cb12-628"><a href="#cb12-628" aria-hidden="true" tabindex="-1"></a><span class="st">- Target: 200 rural schools, 15,000 students</span></span>
+<span id="cb12-629"><a href="#cb12-629" aria-hidden="true" tabindex="-1"></a><span class="st">- Investment: $5 million over 3 years</span></span>
+<span id="cb12-630"><a href="#cb12-630" aria-hidden="true" tabindex="-1"></a><span class="st">- Components: Hardware, connectivity, teacher training, content</span></span>
+<span id="cb12-631"><a href="#cb12-631" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-632"><a href="#cb12-632" aria-hidden="true" tabindex="-1"></a><span class="st">EVALUATION FRAMEWORK:</span></span>
+<span id="cb12-633"><a href="#cb12-633" aria-hidden="true" tabindex="-1"></a><span class="st">Assess program effectiveness on:</span></span>
+<span id="cb12-634"><a href="#cb12-634" aria-hidden="true" tabindex="-1"></a><span class="st">1. Learning outcomes (test scores, completion rates)</span></span>
+<span id="cb12-635"><a href="#cb12-635" aria-hidden="true" tabindex="-1"></a><span class="st">2. Economic impacts (future earnings potential)</span></span>
+<span id="cb12-636"><a href="#cb12-636" aria-hidden="true" tabindex="-1"></a><span class="st">3. Equity effects (gender, socioeconomic differences)</span></span>
+<span id="cb12-637"><a href="#cb12-637" aria-hidden="true" tabindex="-1"></a><span class="st">4. Sustainability (long-term viability)</span></span>
+<span id="cb12-638"><a href="#cb12-638" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-639"><a href="#cb12-639" aria-hidden="true" tabindex="-1"></a><span class="st">DATA AVAILABLE:</span></span>
+<span id="cb12-640"><a href="#cb12-640" aria-hidden="true" tabindex="-1"></a><span class="st">- Baseline and follow-up surveys</span></span>
+<span id="cb12-641"><a href="#cb12-641" aria-hidden="true" tabindex="-1"></a><span class="st">- School administrative data</span></span>
+<span id="cb12-642"><a href="#cb12-642" aria-hidden="true" tabindex="-1"></a><span class="st">- Teacher feedback</span></span>
+<span id="cb12-643"><a href="#cb12-643" aria-hidden="true" tabindex="-1"></a><span class="st">- Community economic indicators</span></span>
+<span id="cb12-644"><a href="#cb12-644" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-645"><a href="#cb12-645" aria-hidden="true" tabindex="-1"></a><span class="st">ANALYSIS APPROACH:</span></span>
+<span id="cb12-646"><a href="#cb12-646" aria-hidden="true" tabindex="-1"></a><span class="st">Design evaluation comparing:</span></span>
+<span id="cb12-647"><a href="#cb12-647" aria-hidden="true" tabindex="-1"></a><span class="st">- Treatment schools vs. control schools</span></span>
+<span id="cb12-648"><a href="#cb12-648" aria-hidden="true" tabindex="-1"></a><span class="st">- Before/after program implementation</span></span>
+<span id="cb12-649"><a href="#cb12-649" aria-hidden="true" tabindex="-1"></a><span class="st">- Different levels of program intensity</span></span>
+<span id="cb12-650"><a href="#cb12-650" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-651"><a href="#cb12-651" aria-hidden="true" tabindex="-1"></a><span class="st">Provide framework for cost-effectiveness analysis and</span></span>
+<span id="cb12-652"><a href="#cb12-652" aria-hidden="true" tabindex="-1"></a><span class="st">policy recommendations for program expansion.</span></span>
+<span id="cb12-653"><a href="#cb12-653" aria-hidden="true" tabindex="-1"></a><span class="st">"</span></span>
+<span id="cb12-654"><a href="#cb12-654" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-655"><a href="#cb12-655" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluation design with AI support</span></span>
+<span id="cb12-656"><a href="#cb12-656" aria-hidden="true" tabindex="-1"></a>program_impact <span class="ot">&lt;-</span> <span class="fu">lm</span>(</span>
+<span id="cb12-657"><a href="#cb12-657" aria-hidden="true" tabindex="-1"></a>  test_score_change <span class="sc">~</span> treatment <span class="sc">+</span> baseline_score <span class="sc">+</span> </span>
+<span id="cb12-658"><a href="#cb12-658" aria-hidden="true" tabindex="-1"></a>                      school_resources <span class="sc">+</span> community_income,</span>
+<span id="cb12-659"><a href="#cb12-659" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> school_data</span>
+<span id="cb12-660"><a href="#cb12-660" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-661"><a href="#cb12-661" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-662"><a href="#cb12-662" aria-hidden="true" tabindex="-1"></a><span class="co"># AI helps interpret results for policy implications</span></span>
+<span id="cb12-663"><a href="#cb12-663" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-664"><a href="#cb12-664" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-665"><a href="#cb12-665" aria-hidden="true" tabindex="-1"></a><span class="fu">### Module 3.4: Integration and Future Implementation (5 min)</span></span>
+<span id="cb12-666"><a href="#cb12-666" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-667"><a href="#cb12-667" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Workflow Development</span></span>
+<span id="cb12-668"><a href="#cb12-668" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Research pipeline:** From question to analysis to communication</span>
+<span id="cb12-669"><a href="#cb12-669" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Quality assurance:** Validation and peer review processes</span>
+<span id="cb12-670"><a href="#cb12-670" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Continuous improvement:** Learning from successes and challenges</span>
+<span id="cb12-671"><a href="#cb12-671" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-672"><a href="#cb12-672" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Personal Implementation Planning</span></span>
+<span id="cb12-673"><a href="#cb12-673" aria-hidden="true" tabindex="-1"></a>Participants create action plans for incorporating AI tools into their regular work.</span>
+<span id="cb12-674"><a href="#cb12-674" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-675"><a href="#cb12-675" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb12-676"><a href="#cb12-676" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-677"><a href="#cb12-677" aria-hidden="true" tabindex="-1"></a><span class="fu"># Assessment Strategy {#sec-assessment}</span></span>
+<span id="cb12-678"><a href="#cb12-678" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-679"><a href="#cb12-679" aria-hidden="true" tabindex="-1"></a><span class="fu">## Balanced Evaluation Approach</span></span>
+<span id="cb12-680"><a href="#cb12-680" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-681"><a href="#cb12-681" aria-hidden="true" tabindex="-1"></a><span class="fu">### Project Portfolio (50%)</span></span>
+<span id="cb12-682"><a href="#cb12-682" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-683"><a href="#cb12-683" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Day 1 Project: Research Design</span></span>
+<span id="cb12-684"><a href="#cb12-684" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Task:** Develop literature review and research plan for chosen economic topic</span>
+<span id="cb12-685"><a href="#cb12-685" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**AI Integration:** Use AI for search strategy, concept explanation, methodology guidance</span>
+<span id="cb12-686"><a href="#cb12-686" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Evaluation:** Completeness, feasibility, appropriate AI use</span>
+<span id="cb12-687"><a href="#cb12-687" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-688"><a href="#cb12-688" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Day 2 Project: Empirical Analysis</span></span>
+<span id="cb12-689"><a href="#cb12-689" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Task:** Complete data analysis addressing specific economic question</span>
+<span id="cb12-690"><a href="#cb12-690" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**AI Integration:** Analysis planning, code development, interpretation support</span>
+<span id="cb12-691"><a href="#cb12-691" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Evaluation:** Technical accuracy, insight quality, clear communication</span>
+<span id="cb12-692"><a href="#cb12-692" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-693"><a href="#cb12-693" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Day 3 Project: Policy/Business Analysis</span></span>
+<span id="cb12-694"><a href="#cb12-694" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Task:** Policy evaluation or business strategy analysis</span>
+<span id="cb12-695"><a href="#cb12-695" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**AI Integration:** Framework development, option assessment, recommendation formulation</span>
+<span id="cb12-696"><a href="#cb12-696" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Evaluation:** Practical relevance, analytical rigor, actionable insights</span>
+<span id="cb12-697"><a href="#cb12-697" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-698"><a href="#cb12-698" aria-hidden="true" tabindex="-1"></a><span class="fu">### Skills Demonstration (30%)</span></span>
+<span id="cb12-699"><a href="#cb12-699" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-700"><a href="#cb12-700" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Technical Skills</span></span>
+<span id="cb12-701"><a href="#cb12-701" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Prompt Engineering:** Effective AI interaction for economic analysis</span>
+<span id="cb12-702"><a href="#cb12-702" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Data Analysis:** R/Python implementation with AI assistance</span>
+<span id="cb12-703"><a href="#cb12-703" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Critical Evaluation:** Assessing AI output quality and reliability</span>
+<span id="cb12-704"><a href="#cb12-704" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-705"><a href="#cb12-705" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Communication Skills</span></span>
+<span id="cb12-706"><a href="#cb12-706" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Result Interpretation:** Translating analysis into actionable insights</span>
+<span id="cb12-707"><a href="#cb12-707" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Audience Adaptation:** Academic vs. policy vs. business communication</span>
+<span id="cb12-708"><a href="#cb12-708" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Visual Communication:** Effective charts and presentation</span>
+<span id="cb12-709"><a href="#cb12-709" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-710"><a href="#cb12-710" aria-hidden="true" tabindex="-1"></a><span class="fu">### Participation and Collaboration (20%)</span></span>
+<span id="cb12-711"><a href="#cb12-711" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-712"><a href="#cb12-712" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Active Learning</span></span>
+<span id="cb12-713"><a href="#cb12-713" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Workshop Engagement:** Participation in exercises and discussions</span>
+<span id="cb12-714"><a href="#cb12-714" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Peer Learning:** Helping others and learning from peers</span>
+<span id="cb12-715"><a href="#cb12-715" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Question Quality:** Thoughtful questions that advance learning</span>
+<span id="cb12-716"><a href="#cb12-716" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-717"><a href="#cb12-717" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Professional Development</span></span>
+<span id="cb12-718"><a href="#cb12-718" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Reflection:** Understanding of AI's role in economic analysis</span>
+<span id="cb12-719"><a href="#cb12-719" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Planning:** Realistic implementation strategy for ongoing work</span>
+<span id="cb12-720"><a href="#cb12-720" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Ethics:** Responsible AI use and limitation awareness</span>
+<span id="cb12-721"><a href="#cb12-721" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-722"><a href="#cb12-722" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb12-723"><a href="#cb12-723" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-724"><a href="#cb12-724" aria-hidden="true" tabindex="-1"></a><span class="fu"># Resources and Tools {#sec-resources}</span></span>
+<span id="cb12-725"><a href="#cb12-725" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-726"><a href="#cb12-726" aria-hidden="true" tabindex="-1"></a><span class="fu">## Essential Software Setup</span></span>
+<span id="cb12-727"><a href="#cb12-727" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-728"><a href="#cb12-728" aria-hidden="true" tabindex="-1"></a><span class="fu">### R/RStudio Configuration</span></span>
+<span id="cb12-731"><a href="#cb12-731" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb12-732"><a href="#cb12-732" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: r-setup</span></span>
+<span id="cb12-733"><a href="#cb12-733" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: true</span></span>
+<span id="cb12-734"><a href="#cb12-734" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb12-735"><a href="#cb12-735" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-736"><a href="#cb12-736" aria-hidden="true" tabindex="-1"></a><span class="co"># Required packages for workshop</span></span>
+<span id="cb12-737"><a href="#cb12-737" aria-hidden="true" tabindex="-1"></a>essential_packages <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb12-738"><a href="#cb12-738" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Data manipulation and visualization</span></span>
+<span id="cb12-739"><a href="#cb12-739" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>, <span class="st">"ggplot2"</span>, <span class="st">"dplyr"</span>, <span class="st">"readr"</span>,</span>
+<span id="cb12-740"><a href="#cb12-740" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-741"><a href="#cb12-741" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Econometrics and statistics</span></span>
+<span id="cb12-742"><a href="#cb12-742" aria-hidden="true" tabindex="-1"></a>  <span class="st">"fixest"</span>, <span class="st">"modelsummary"</span>, <span class="st">"broom"</span>, <span class="st">"lmtest"</span>,</span>
+<span id="cb12-743"><a href="#cb12-743" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-744"><a href="#cb12-744" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Specialized analysis</span></span>
+<span id="cb12-745"><a href="#cb12-745" aria-hidden="true" tabindex="-1"></a>  <span class="st">"forecast"</span>, <span class="st">"zoo"</span>, <span class="st">"lubridate"</span>,</span>
+<span id="cb12-746"><a href="#cb12-746" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb12-747"><a href="#cb12-747" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Reporting and documentation</span></span>
+<span id="cb12-748"><a href="#cb12-748" aria-hidden="true" tabindex="-1"></a>  <span class="st">"knitr"</span>, <span class="st">"rmarkdown"</span>, <span class="st">"DT"</span></span>
+<span id="cb12-749"><a href="#cb12-749" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-750"><a href="#cb12-750" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-751"><a href="#cb12-751" aria-hidden="true" tabindex="-1"></a><span class="co"># Install packages</span></span>
+<span id="cb12-752"><a href="#cb12-752" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(essential_packages)</span>
+<span id="cb12-753"><a href="#cb12-753" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-754"><a href="#cb12-754" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify installation</span></span>
+<span id="cb12-755"><a href="#cb12-755" aria-hidden="true" tabindex="-1"></a><span class="fu">sapply</span>(essential_packages, require, <span class="at">character.only =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb12-756"><a href="#cb12-756" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-757"><a href="#cb12-757" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-758"><a href="#cb12-758" aria-hidden="true" tabindex="-1"></a><span class="fu">### Python Environment</span></span>
+<span id="cb12-759"><a href="#cb12-759" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb12-760"><a href="#cb12-760" aria-hidden="true" tabindex="-1"></a><span class="co"># Essential Python libraries</span></span>
+<span id="cb12-761"><a href="#cb12-761" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install pandas numpy matplotlib seaborn</span></span>
+<span id="cb12-762"><a href="#cb12-762" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install scikit-learn statsmodels scipy</span></span>
+<span id="cb12-763"><a href="#cb12-763" aria-hidden="true" tabindex="-1"></a><span class="co"># pip install jupyter notebook</span></span>
+<span id="cb12-764"><a href="#cb12-764" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-765"><a href="#cb12-765" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb12-766"><a href="#cb12-766" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb12-767"><a href="#cb12-767" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb12-768"><a href="#cb12-768" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb12-769"><a href="#cb12-769" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.linear_model <span class="im">import</span> LinearRegression</span>
+<span id="cb12-770"><a href="#cb12-770" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> statsmodels.api <span class="im">as</span> sm</span>
+<span id="cb12-771"><a href="#cb12-771" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb12-772"><a href="#cb12-772" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-773"><a href="#cb12-773" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI Tools Access</span></span>
+<span id="cb12-774"><a href="#cb12-774" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Claude.ai:** Primary analysis and coding support</span>
+<span id="cb12-775"><a href="#cb12-775" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**ChatGPT:** Alternative analysis and writing assistance  </span>
+<span id="cb12-776"><a href="#cb12-776" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Perplexity:** Research and fact-checking</span>
+<span id="cb12-777"><a href="#cb12-777" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Google Scholar:** Academic literature search</span>
+<span id="cb12-778"><a href="#cb12-778" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-779"><a href="#cb12-779" aria-hidden="true" tabindex="-1"></a><span class="fu">## Practice Datasets</span></span>
+<span id="cb12-780"><a href="#cb12-780" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-781"><a href="#cb12-781" aria-hidden="true" tabindex="-1"></a><span class="fu">### Economic Indicators</span></span>
+<span id="cb12-782"><a href="#cb12-782" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Federal Reserve Economic Data (FRED):** US macroeconomic time series</span>
+<span id="cb12-783"><a href="#cb12-783" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**World Bank Open Data:** International development indicators</span>
+<span id="cb12-784"><a href="#cb12-784" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**OECD Statistics:** Cross-country comparative data</span>
+<span id="cb12-785"><a href="#cb12-785" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-786"><a href="#cb12-786" aria-hidden="true" tabindex="-1"></a><span class="fu">### Microdata Sources</span></span>
+<span id="cb12-787"><a href="#cb12-787" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**American Community Survey:** US demographic and economic data</span>
+<span id="cb12-788"><a href="#cb12-788" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Current Population Survey:** Labor force and employment data</span>
+<span id="cb12-789"><a href="#cb12-789" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Consumer Expenditure Survey:** Household spending patterns</span>
+<span id="cb12-790"><a href="#cb12-790" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-791"><a href="#cb12-791" aria-hidden="true" tabindex="-1"></a><span class="fu">### Business Data</span></span>
+<span id="cb12-792"><a href="#cb12-792" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Yahoo Finance:** Stock prices and financial data</span>
+<span id="cb12-793"><a href="#cb12-793" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Industry Trade Associations:** Sector-specific data</span>
+<span id="cb12-794"><a href="#cb12-794" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Government Business Registers:** Firm-level information</span>
+<span id="cb12-795"><a href="#cb12-795" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-796"><a href="#cb12-796" aria-hidden="true" tabindex="-1"></a><span class="fu">## Recommended Reading</span></span>
+<span id="cb12-797"><a href="#cb12-797" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-798"><a href="#cb12-798" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI for Economics (Accessible Level)</span></span>
+<span id="cb12-799"><a href="#cb12-799" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Athey, S. (2018). "The impact of machine learning on economics." *NBER Working Paper*.</span>
+<span id="cb12-800"><a href="#cb12-800" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Kleinberg, J., et al. (2015). "Prediction policy problems." *American Economic Review*.</span>
+<span id="cb12-801"><a href="#cb12-801" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Mullainathan, S., &amp; Spiess, J. (2017). "Machine learning: An applied econometric approach." *Journal of Economic Perspectives*.</span>
+<span id="cb12-802"><a href="#cb12-802" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-803"><a href="#cb12-803" aria-hidden="true" tabindex="-1"></a><span class="fu">### Applied Economics Methods</span></span>
+<span id="cb12-804"><a href="#cb12-804" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Angrist, J. D., &amp; Pischke, J. S. (2014). *Mastering 'Metrics: The Path from Cause to Effect*. Princeton University Press.</span>
+<span id="cb12-805"><a href="#cb12-805" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Wooldridge, J. M. (2020). *Introductory Econometrics: A Modern Approach* (7th ed.). Cengage Learning.</span>
+<span id="cb12-806"><a href="#cb12-806" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-807"><a href="#cb12-807" aria-hidden="true" tabindex="-1"></a><span class="fu">### Policy Analysis</span></span>
+<span id="cb12-808"><a href="#cb12-808" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Bardach, E., &amp; Patashnik, E. M. (2019). *A Practical Guide for Policy Analysis: The Eightfold Path to More Effective Problem Solving*. CQ Press.</span>
+<span id="cb12-809"><a href="#cb12-809" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Weimer, D. L., &amp; Vining, A. R. (2017). *Policy Analysis: Concepts and Practice* (6th ed.). Routledge.</span>
+<span id="cb12-810"><a href="#cb12-810" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-811"><a href="#cb12-811" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb12-812"><a href="#cb12-812" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-813"><a href="#cb12-813" aria-hidden="true" tabindex="-1"></a><span class="fu"># Implementation Roadmap {#sec-roadmap}</span></span>
+<span id="cb12-814"><a href="#cb12-814" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-815"><a href="#cb12-815" aria-hidden="true" tabindex="-1"></a><span class="fu">## Immediate Application (Weeks 1-2)</span></span>
+<span id="cb12-816"><a href="#cb12-816" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-817"><a href="#cb12-817" aria-hidden="true" tabindex="-1"></a><span class="fu">### Quick Wins</span></span>
+<span id="cb12-818"><a href="#cb12-818" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Literature Reviews:** Use AI to enhance current research projects</span>
+<span id="cb12-819"><a href="#cb12-819" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Data Exploration:** Apply AI-assisted analysis to existing datasets</span>
+<span id="cb12-820"><a href="#cb12-820" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Writing Support:** Improve reports and presentations with AI help</span>
+<span id="cb12-821"><a href="#cb12-821" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-822"><a href="#cb12-822" aria-hidden="true" tabindex="-1"></a><span class="fu">### Skill Building</span></span>
+<span id="cb12-823"><a href="#cb12-823" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Daily Practice:** Spend 15-30 minutes daily using AI tools</span>
+<span id="cb12-824"><a href="#cb12-824" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Prompt Library:** Build collection of effective prompts for common tasks</span>
+<span id="cb12-825"><a href="#cb12-825" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Quality Checks:** Develop habits for validating AI output</span>
+<span id="cb12-826"><a href="#cb12-826" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-827"><a href="#cb12-827" aria-hidden="true" tabindex="-1"></a><span class="fu">## Short-term Integration (Months 1-3)</span></span>
+<span id="cb12-828"><a href="#cb12-828" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-829"><a href="#cb12-829" aria-hidden="true" tabindex="-1"></a><span class="fu">### Research Enhancement</span></span>
+<span id="cb12-830"><a href="#cb12-830" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Complete Analysis:** Finish one full project using workshop methods</span>
+<span id="cb12-831"><a href="#cb12-831" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Collaboration:** Partner with colleagues for AI-assisted projects</span>
+<span id="cb12-832"><a href="#cb12-832" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Documentation:** Create templates and workflows for future use</span>
+<span id="cb12-833"><a href="#cb12-833" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-834"><a href="#cb12-834" aria-hidden="true" tabindex="-1"></a><span class="fu">### Professional Development</span></span>
+<span id="cb12-835"><a href="#cb12-835" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Presentation:** Share AI applications at departmental meeting or conference</span>
+<span id="cb12-836"><a href="#cb12-836" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Training:** Teach others basic AI skills for economics</span>
+<span id="cb12-837"><a href="#cb12-837" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Networking:** Connect with AI-economics community online</span>
+<span id="cb12-838"><a href="#cb12-838" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-839"><a href="#cb12-839" aria-hidden="true" tabindex="-1"></a><span class="fu">## Long-term Mastery (6+ Months)</span></span>
+<span id="cb12-840"><a href="#cb12-840" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-841"><a href="#cb12-841" aria-hidden="true" tabindex="-1"></a><span class="fu">### Advanced Applications</span></span>
+<span id="cb12-842"><a href="#cb12-842" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Methodological Innovation:** Develop new approaches combining AI and economics</span>
+<span id="cb12-843"><a href="#cb12-843" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Research Leadership:** Lead multi-researcher projects using AI tools</span>
+<span id="cb12-844"><a href="#cb12-844" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Policy Impact:** Use AI-enhanced analysis for real policy decisions</span>
+<span id="cb12-845"><a href="#cb12-845" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-846"><a href="#cb12-846" aria-hidden="true" tabindex="-1"></a><span class="fu">### Knowledge Contribution</span></span>
+<span id="cb12-847"><a href="#cb12-847" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Best Practices:** Document and share effective AI use strategies</span>
+<span id="cb12-848"><a href="#cb12-848" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Community Building:** Help establish AI adoption in home institution</span>
+<span id="cb12-849"><a href="#cb12-849" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Continuous Learning:** Stay current with evolving AI capabilities</span>
+<span id="cb12-850"><a href="#cb12-850" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-851"><a href="#cb12-851" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb12-852"><a href="#cb12-852" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-853"><a href="#cb12-853" aria-hidden="true" tabindex="-1"></a>*This intermediate workshop provides practical, immediately applicable skills while building toward more sophisticated applications. Participants will gain confidence using AI tools for economic analysis while maintaining critical thinking and methodological rigor.*</span>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Zahid Asghar. Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Zahedasghar/ai/edit/main/ai_workshop_intermediate.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Zahedasghar/ai/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Zahedasghar">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://discord.com/channels/1292187441565794316/1292187441565794319">
+      <i class="bi bi-discord" role="img" aria-label="Discord">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:g.zahid@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -1,0 +1,24 @@
+---
+title: "Relevant materials for the workshop"
+---
+
+## Datasets
+
+- [Diabetes Dataset](data/diabetes.csv)
+- [Data Science Salaries Dataset](data/ds_salaries.csv)
+- [Insurance Dataset](data/insurance.csv)
+
+## Workshop Slides
+
+- [Session 1: AI Introduction](slides/ai_intro.html)
+- [Session 2: AI in Publishing](slides/ai_pub.html)
+- [Session 3: AI for NLP](slides/ai_nlp.html)
+- [Literature Review](slides/literature.html)
+- [Miscellaneous: AI Economic Policy](slides/ai_econ_pol.html)
+- [Office Prompts](slides/office_prompts.html)
+- [Data Analysis Prompts](slides/data_prompts.html)
+
+## External Resources
+
+- [Advantages and Disadvantages of AI in Higher Education](https://www.ucanwest.ca/blog/education-careers-tips/advantages-and-disadvantages-of-ai-in-education/)
+- [World Economic Forum: Ways AI Can Benefit Education](https://www.weforum.org/stories/2024/05/ways-ai-can-benefit-education/)

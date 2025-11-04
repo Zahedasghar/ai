@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -21,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,22 +65,25 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./data_prompts.html" rel="next">
+<link href="./economic_policy_prompts_carousel.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-74710cafea755071f97f3aba5d337df7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5503276867859db1448f92837d2444ae.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
+  "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
+  "panel-placement": "end",
+  "type": "overlay",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -67,72 +105,322 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="style.scss">
 </head>
 
-<body class="nav-sidebar docked quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./images/LLM.webp" alt="" class="navbar-logo light-content">
+    <img src="./images/LLM.webp" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">AI for Teachers, Researchers and Students</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/Zahedasghar"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text">GitHub</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://discord.com/channels/1292187441565794316/1292187441565794319"> <i class="bi bi-discord" role="img">
+</i> 
+<span class="menu-text">Discord</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Comprehensive AI Prompts Collection for Professional Training</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prompts.html">💡 Prompt Engineering</a></li><li class="breadcrumb-item"><a href="./prompts.html">Prompt Engineering Guide</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
-      <img src="./images/LLM.webp" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
       </a>
-      <div class="sidebar-tools-main">
-    <a href="https://github.com/Zahedasghar" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
-</div>
       </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">🏠 Getting Started</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Home</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./schedule.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Schedule</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./materials.html" class="sidebar-item-text sidebar-link">
+  <a href="./materials.qmd" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Materials</span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">🎓 Workshops</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="https://discord.com/channels/1292187441565794316/1292187441565794319" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Discord</span></a>
+  <a href="./workshop_on_ai.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workshop Overview</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_workshop.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. Beginner Workshop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_workshop_intermediate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. Intermediate Workshop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_workshop_prompt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. Prompt Engineering</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./AI_workshop_pips.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4. PIPS Workshop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./AI_workshop_pnd.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">5. PND Workshop</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./AI_Seminar_Activity_Handout.pdf" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Seminar Activities</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">👨‍🏫 Teaching with AI</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai for teaching, research and publishing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Teaching &amp; Research Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Gen AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./socratic_method.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Socratic Method with AI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./The Future of Thinking How AI redefines intelligence.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Future of Thinking</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">📊 AI &amp; Economics</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./AI Agents in Economics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI Agents in Economics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./economic_policy_prompts_carousel.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Policy Prompts</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">💡 Prompt Engineering</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prompts.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Prompt Engineering Guide</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./data_prompts.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Analysis Prompts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./econometric_prompts_sol.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Econometric Prompts</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./office_prompt.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Office Productivity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./prompt_one_percent.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1% Better Prompts</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">🔧 AI Tools &amp; Platforms</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./gpt5_power_users.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">→ GPT-5 Power Users</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_nlp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">→ AI for NLP</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
+ <span class="menu-text">📝 Research &amp; Publishing</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ai_pub.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI in Publishing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./literature.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Literature Reviews</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./financial_times.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Financial Times AI</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
+ <span class="menu-text">🎤 Presentations</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+ <span class="menu-text">University Talks</span>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./air_univ.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generative AI: New Frontiers of Political Imagination</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./slides/" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Slide Decks →</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -281,14 +569,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#platform-specific-tips" id="toc-platform-specific-tips" class="nav-link" data-scroll-target="#platform-specific-tips">Platform-Specific Tips</a></li>
   </ul></li>
   </ul>
-</nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/Zahedasghar/ai/edit/main/prompts.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Zahedasghar/ai/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./prompts.html">💡 Prompt Engineering</a></li><li class="breadcrumb-item"><a href="./prompts.html">Prompt Engineering Guide</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Comprehensive AI Prompts Collection for Professional Training</h1>
+<div class="quarto-title-block"><div><h1 class="title">Comprehensive AI Prompts Collection for Professional Training</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 </div>
 
 
@@ -1323,10 +1611,12 @@ Word limit: **[specify]**</code></pre>
 <p><em>This collection is a living document. Continue adding and refining prompts based on your experience and evolving needs. Share successful adaptations with colleagues to build a collaborative knowledge base.</em></p>
 
 
+<!-- -->
+
 </section>
 </section>
 
-</main> <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1378,13 +1668,14 @@ Word limit: **[specify]**</code></pre>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1397,9 +1688,60 @@ Word limit: **[specify]**</code></pre>
       });
       clipboardModal.on('success', onCopySuccess);
     }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/Zahedasghar\.github\.io\/ai\/");
+        var filterRegex = new RegExp("https:\/\/zahedasghar\.github\.io\/ai");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -1413,6 +1755,13 @@ Word limit: **[specify]**</code></pre>
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1726,9 +2075,1077 @@ Word limit: **[specify]**</code></pre>
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./economic_policy_prompts_carousel.html" class="pagination-link" aria-label="Policy Prompts">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Policy Prompts</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./data_prompts.html" class="pagination-link" aria-label="Data Analysis Prompts">
+        <span class="nav-page-text">Data Analysis Prompts</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb34" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Comprehensive AI Prompts Collection for Professional Training"</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Dr. Zahid Asghar"</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "`r Sys.Date()`"</span></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="co">    toc: true</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="co">    toc-depth: 3</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: true</span></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="co">    theme: cosmo</span></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a><span class="fu"># Introduction</span></span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a>This comprehensive collection contains tested and refined AI prompts organized by subject matter for professional development, academic research, and educational training. These prompts have been curated from actual practice in economics education, policy analysis, and AI-assisted research.</span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## How to Use This Collection</span></span>
+<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Each prompt is designed to be copy-pasted directly into AI tools like ChatGPT, Claude, or others</span>
+<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Customize the placeholders (shown in **bold** or <span class="co">[</span><span class="ot">brackets</span><span class="co">]</span>) with your specific requirements</span>
+<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Many prompts work best with iterative refinement - don't hesitate to follow up with clarifying questions</span>
+<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>For complex tasks, consider breaking them into multiple prompt sequences</span>
+<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-25"><a href="#cb34-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-26"><a href="#cb34-26" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1. Master Prompt Templates &amp; Frameworks</span></span>
+<span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-28"><a href="#cb34-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1.1 The Master Prompt Template Framework</span></span>
+<span id="cb34-29"><a href="#cb34-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-30"><a href="#cb34-30" aria-hidden="true" tabindex="-1"></a>*Based on Tiago Forte and Hayden Miyamoto's approach*</span>
+<span id="cb34-31"><a href="#cb34-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-32"><a href="#cb34-32" aria-hidden="true" tabindex="-1"></a><span class="fu">### Personal Context Setup</span></span>
+<span id="cb34-33"><a href="#cb34-33" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-34"><a href="#cb34-34" aria-hidden="true" tabindex="-1"></a><span class="in">Answer the following questions in a text document. Aim for 1-3 sentence responses per question to start. Then paste the entire document into the "Personal preferences" in Claude, or have it ready to add as a source in NotebookLM.</span></span>
+<span id="cb34-35"><a href="#cb34-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-36"><a href="#cb34-36" aria-hidden="true" tabindex="-1"></a><span class="in">## Personal</span></span>
+<span id="cb34-37"><a href="#cb34-37" aria-hidden="true" tabindex="-1"></a><span class="in">1. What's your name?</span></span>
+<span id="cb34-38"><a href="#cb34-38" aria-hidden="true" tabindex="-1"></a><span class="in">2. What's your role?</span></span>
+<span id="cb34-39"><a href="#cb34-39" aria-hidden="true" tabindex="-1"></a><span class="in">3. What's the name of your company?</span></span>
+<span id="cb34-40"><a href="#cb34-40" aria-hidden="true" tabindex="-1"></a><span class="in">4. How do you want to use AI?</span></span>
+<span id="cb34-41"><a href="#cb34-41" aria-hidden="true" tabindex="-1"></a><span class="in">5. What are your strengths?</span></span>
+<span id="cb34-42"><a href="#cb34-42" aria-hidden="true" tabindex="-1"></a><span class="in">6. What are your weaknesses?</span></span>
+<span id="cb34-43"><a href="#cb34-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-44"><a href="#cb34-44" aria-hidden="true" tabindex="-1"></a><span class="in">## Company</span></span>
+<span id="cb34-45"><a href="#cb34-45" aria-hidden="true" tabindex="-1"></a><span class="in">1. When was the company established?</span></span>
+<span id="cb34-46"><a href="#cb34-46" aria-hidden="true" tabindex="-1"></a><span class="in">2. How many employees does it have?</span></span>
+<span id="cb34-47"><a href="#cb34-47" aria-hidden="true" tabindex="-1"></a><span class="in">3. Who do you report to?</span></span>
+<span id="cb34-48"><a href="#cb34-48" aria-hidden="true" tabindex="-1"></a><span class="in">4. Who reports to you?</span></span>
+<span id="cb34-49"><a href="#cb34-49" aria-hidden="true" tabindex="-1"></a><span class="in">5. What markets do you serve?</span></span>
+<span id="cb34-50"><a href="#cb34-50" aria-hidden="true" tabindex="-1"></a><span class="in">6. Who is your ideal customer?</span></span>
+<span id="cb34-51"><a href="#cb34-51" aria-hidden="true" tabindex="-1"></a><span class="in">7. What is the outcome that you give your customers?</span></span>
+<span id="cb34-52"><a href="#cb34-52" aria-hidden="true" tabindex="-1"></a><span class="in">8. How is your offering different from your competitors?</span></span>
+<span id="cb34-53"><a href="#cb34-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-54"><a href="#cb34-54" aria-hidden="true" tabindex="-1"></a><span class="in">## Market</span></span>
+<span id="cb34-55"><a href="#cb34-55" aria-hidden="true" tabindex="-1"></a><span class="in">1. Who are your competitors and what do they do?</span></span>
+<span id="cb34-56"><a href="#cb34-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-57"><a href="#cb34-57" aria-hidden="true" tabindex="-1"></a><span class="in">## Team + KPIs</span></span>
+<span id="cb34-58"><a href="#cb34-58" aria-hidden="true" tabindex="-1"></a><span class="in">1. Who's on the team? (salaries optional)</span></span>
+<span id="cb34-59"><a href="#cb34-59" aria-hidden="true" tabindex="-1"></a><span class="in">2. For each person, what is their most important performance metric or target?</span></span>
+<span id="cb34-60"><a href="#cb34-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-61"><a href="#cb34-61" aria-hidden="true" tabindex="-1"></a><span class="in">## Products and Services</span></span>
+<span id="cb34-62"><a href="#cb34-62" aria-hidden="true" tabindex="-1"></a><span class="in">1. What products or services do you offer?</span></span>
+<span id="cb34-63"><a href="#cb34-63" aria-hidden="true" tabindex="-1"></a><span class="in">2. What new products or services are you planning on offering in the future?</span></span>
+<span id="cb34-64"><a href="#cb34-64" aria-hidden="true" tabindex="-1"></a><span class="in">3. What does each one cost?</span></span>
+<span id="cb34-65"><a href="#cb34-65" aria-hidden="true" tabindex="-1"></a><span class="in">4. What are the features and benefits for each one?</span></span>
+<span id="cb34-66"><a href="#cb34-66" aria-hidden="true" tabindex="-1"></a><span class="in">5. How do you differentiate between offerings?</span></span>
+<span id="cb34-67"><a href="#cb34-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-68"><a href="#cb34-68" aria-hidden="true" tabindex="-1"></a><span class="in">## Culture</span></span>
+<span id="cb34-69"><a href="#cb34-69" aria-hidden="true" tabindex="-1"></a><span class="in">1. What are your core values as an organization?</span></span>
+<span id="cb34-70"><a href="#cb34-70" aria-hidden="true" tabindex="-1"></a><span class="in">2. What's your mission as an organization?</span></span>
+<span id="cb34-71"><a href="#cb34-71" aria-hidden="true" tabindex="-1"></a><span class="in">3. What's your biggest, most audacious long-term goal as an organization?</span></span>
+<span id="cb34-72"><a href="#cb34-72" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-73"><a href="#cb34-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-74"><a href="#cb34-74" aria-hidden="true" tabindex="-1"></a><span class="fu">## 1.2 T.C.R.E.I. Prompt Structure Template</span></span>
+<span id="cb34-75"><a href="#cb34-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-76"><a href="#cb34-76" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-77"><a href="#cb34-77" aria-hidden="true" tabindex="-1"></a><span class="in">**Task**: [What exactly do you want AI to do?]</span></span>
+<span id="cb34-78"><a href="#cb34-78" aria-hidden="true" tabindex="-1"></a><span class="in">**Context**: [What background information is needed?]</span></span>
+<span id="cb34-79"><a href="#cb34-79" aria-hidden="true" tabindex="-1"></a><span class="in">**Reference**: [What examples or standards should be used?]</span></span>
+<span id="cb34-80"><a href="#cb34-80" aria-hidden="true" tabindex="-1"></a><span class="in">**Evaluate**: [What criteria determine success?]</span></span>
+<span id="cb34-81"><a href="#cb34-81" aria-hidden="true" tabindex="-1"></a><span class="in">**Iterate**: [How will you refine based on results?]</span></span>
+<span id="cb34-82"><a href="#cb34-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-83"><a href="#cb34-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-84"><a href="#cb34-84" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-85"><a href="#cb34-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-86"><a href="#cb34-86" aria-hidden="true" tabindex="-1"></a><span class="fu"># 2. Economics &amp; Policy Analysis Prompts</span></span>
+<span id="cb34-87"><a href="#cb34-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-88"><a href="#cb34-88" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2.1 Pakistani Budget Analysis Framework</span></span>
+<span id="cb34-89"><a href="#cb34-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-90"><a href="#cb34-90" aria-hidden="true" tabindex="-1"></a><span class="fu">### Comprehensive Budget Analysis</span></span>
+<span id="cb34-91"><a href="#cb34-91" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-92"><a href="#cb34-92" aria-hidden="true" tabindex="-1"></a><span class="in">Analyze Pakistan's Federal Budget 2025-26 focusing on:</span></span>
+<span id="cb34-93"><a href="#cb34-93" aria-hidden="true" tabindex="-1"></a><span class="in">1. Overall fiscal posture and deficit financing</span></span>
+<span id="cb34-94"><a href="#cb34-94" aria-hidden="true" tabindex="-1"></a><span class="in">2. Revenue vs expenditure dynamics (Rs18.9 trillion FY25 allocations)</span></span>
+<span id="cb34-95"><a href="#cb34-95" aria-hidden="true" tabindex="-1"></a><span class="in">3. Sectoral allocation priorities</span></span>
+<span id="cb34-96"><a href="#cb34-96" aria-hidden="true" tabindex="-1"></a><span class="in">4. Long-term sustainability implications</span></span>
+<span id="cb34-97"><a href="#cb34-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-98"><a href="#cb34-98" aria-hidden="true" tabindex="-1"></a><span class="in">Break down the planned deficit financing into domestic vs. external borrowing. What risks and costs are associated with each component?</span></span>
+<span id="cb34-99"><a href="#cb34-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-100"><a href="#cb34-100" aria-hidden="true" tabindex="-1"></a><span class="in">Calculate the projected tax-to-GDP ratio. How does it compare to the 5-year average and regional peers?</span></span>
+<span id="cb34-101"><a href="#cb34-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-102"><a href="#cb34-102" aria-hidden="true" tabindex="-1"></a><span class="in">What share of total expenditure is allocated to interest payments (Rs9.775 trillion)? How might this crowd out development spending compared to Rs1.4 trillion PSDP allocation?</span></span>
+<span id="cb34-103"><a href="#cb34-103" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-104"><a href="#cb34-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-105"><a href="#cb34-105" aria-hidden="true" tabindex="-1"></a><span class="fu">### Growth-Oriented Budget Reallocation</span></span>
+<span id="cb34-106"><a href="#cb34-106" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-107"><a href="#cb34-107" aria-hidden="true" tabindex="-1"></a><span class="in">Design a reallocation framework of Pakistan's 2025 PSDP outlay (worth Rs. 2,500 billion) to carve out Rs. 500–600 billion for defense, without disproportionately affecting health and education. Justify your decisions with developmental multipliers and geopolitical threats.</span></span>
+<span id="cb34-108"><a href="#cb34-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-109"><a href="#cb34-109" aria-hidden="true" tabindex="-1"></a><span class="in">Evaluate the impact of diverting 1% of GDP from non-development into an export-credit agency and FX-hedging facility for SMEs. Quantify net FX inflows, debt sustainability, and security risks.</span></span>
+<span id="cb34-110"><a href="#cb34-110" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-111"><a href="#cb34-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-112"><a href="#cb34-112" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2.2 IMF Program Analysis</span></span>
+<span id="cb34-113"><a href="#cb34-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-114"><a href="#cb34-114" aria-hidden="true" tabindex="-1"></a><span class="fu">### Program Impact Assessment</span></span>
+<span id="cb34-115"><a href="#cb34-115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-116"><a href="#cb34-116" aria-hidden="true" tabindex="-1"></a><span class="in">Compare Pakistan's recent federal budget with IMF program conditionalities. Identify points of alignment and conflict, especially in subsidy rationalization and SOE reform.</span></span>
+<span id="cb34-117"><a href="#cb34-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-118"><a href="#cb34-118" aria-hidden="true" tabindex="-1"></a><span class="in">Analyze the impact of IMF programs on Pakistan's economic growth from 2000-2024:</span></span>
+<span id="cb34-119"><a href="#cb34-119" aria-hidden="true" tabindex="-1"></a><span class="in">1. Short-term stabilization effects</span></span>
+<span id="cb34-120"><a href="#cb34-120" aria-hidden="true" tabindex="-1"></a><span class="in">2. Long-term growth implications</span></span>
+<span id="cb34-121"><a href="#cb34-121" aria-hidden="true" tabindex="-1"></a><span class="in">3. Social and distributional impacts</span></span>
+<span id="cb34-122"><a href="#cb34-122" aria-hidden="true" tabindex="-1"></a><span class="in">4. Alternative policy approaches</span></span>
+<span id="cb34-123"><a href="#cb34-123" aria-hidden="true" tabindex="-1"></a><span class="in">Support with data and evidence.</span></span>
+<span id="cb34-124"><a href="#cb34-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-125"><a href="#cb34-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-126"><a href="#cb34-126" aria-hidden="true" tabindex="-1"></a><span class="fu">### Debt Sustainability Framework</span></span>
+<span id="cb34-127"><a href="#cb34-127" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-128"><a href="#cb34-128" aria-hidden="true" tabindex="-1"></a><span class="in">Create a comprehensive debt sustainability analysis for Pakistan:</span></span>
+<span id="cb34-129"><a href="#cb34-129" aria-hidden="true" tabindex="-1"></a><span class="in">- Current debt trajectory scenarios</span></span>
+<span id="cb34-130"><a href="#cb34-130" aria-hidden="true" tabindex="-1"></a><span class="in">- Fiscal consolidation requirements</span></span>
+<span id="cb34-131"><a href="#cb34-131" aria-hidden="true" tabindex="-1"></a><span class="in">- Growth-friendly adjustment paths</span></span>
+<span id="cb34-132"><a href="#cb34-132" aria-hidden="true" tabindex="-1"></a><span class="in">- Risk mitigation strategies</span></span>
+<span id="cb34-133"><a href="#cb34-133" aria-hidden="true" tabindex="-1"></a><span class="in">Include sensitivity analysis for key variables.</span></span>
+<span id="cb34-134"><a href="#cb34-134" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-135"><a href="#cb34-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-136"><a href="#cb34-136" aria-hidden="true" tabindex="-1"></a><span class="fu">## 2.3 Growth-First Policy Prompts</span></span>
+<span id="cb34-137"><a href="#cb34-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-138"><a href="#cb34-138" aria-hidden="true" tabindex="-1"></a><span class="fu">### Macro-Fiscal Framework Design</span></span>
+<span id="cb34-139"><a href="#cb34-139" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-140"><a href="#cb34-140" aria-hidden="true" tabindex="-1"></a><span class="in">Draft a five-year macro-fiscal framework that lifts real GDP growth to 6%+ while keeping inflation below 8%. </span></span>
+<span id="cb34-141"><a href="#cb34-141" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-142"><a href="#cb34-142" aria-hidden="true" tabindex="-1"></a><span class="in">Context: Pakistan's historical IMF programmes have averaged 3% growth and double-digit inflation.</span></span>
+<span id="cb34-143"><a href="#cb34-143" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-144"><a href="#cb34-144" aria-hidden="true" tabindex="-1"></a><span class="in">Reference: Use Kenya's 2010-15 expansion and Egypt's 2016 post-devaluation rebound as comparators.</span></span>
+<span id="cb34-145"><a href="#cb34-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-146"><a href="#cb34-146" aria-hidden="true" tabindex="-1"></a><span class="in">Evaluate: Show the fiscal-monetary mix, yearly debt ratio path, and employment gains.</span></span>
+<span id="cb34-147"><a href="#cb34-147" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-148"><a href="#cb34-148" aria-hidden="true" tabindex="-1"></a><span class="in">Iterate: Stress-test against oil-price and rupee-shock scenarios.</span></span>
+<span id="cb34-149"><a href="#cb34-149" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-150"><a href="#cb34-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-151"><a href="#cb34-151" aria-hidden="true" tabindex="-1"></a><span class="fu">### Export Engine Analysis</span></span>
+<span id="cb34-152"><a href="#cb34-152" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-153"><a href="#cb34-153" aria-hidden="true" tabindex="-1"></a><span class="in">Map the three highest-potential export engines (e.g., IT services, value-added textiles, agritech). Quantify how removing IMF-imposed energy-tariff caps and import compression would raise each sector's output and FX earnings over five years. Flag required enabling reforms and crowd-in investment.</span></span>
+<span id="cb34-154"><a href="#cb34-154" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-155"><a href="#cb34-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-156"><a href="#cb34-156" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-157"><a href="#cb34-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-158"><a href="#cb34-158" aria-hidden="true" tabindex="-1"></a><span class="fu"># 3. Academic Research &amp; Data Analysis Prompts</span></span>
+<span id="cb34-159"><a href="#cb34-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-160"><a href="#cb34-160" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3.1 Academic Research Automation</span></span>
+<span id="cb34-161"><a href="#cb34-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-162"><a href="#cb34-162" aria-hidden="true" tabindex="-1"></a><span class="fu">### World-Class Research Assistant</span></span>
+<span id="cb34-163"><a href="#cb34-163" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-164"><a href="#cb34-164" aria-hidden="true" tabindex="-1"></a><span class="in">You are now operating as a world-class academic research assistant trained in deep reading, structured synthesis, and factual precision.</span></span>
+<span id="cb34-165"><a href="#cb34-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-166"><a href="#cb34-166" aria-hidden="true" tabindex="-1"></a><span class="in">Your role:</span></span>
+<span id="cb34-167"><a href="#cb34-167" aria-hidden="true" tabindex="-1"></a><span class="in">- Act as a scholarly collaborator for students, researchers, writers, and knowledge workers</span></span>
+<span id="cb34-168"><a href="#cb34-168" aria-hidden="true" tabindex="-1"></a><span class="in">- Provide clean, citation-rich summaries of academic papers</span></span>
+<span id="cb34-169"><a href="#cb34-169" aria-hidden="true" tabindex="-1"></a><span class="in">- Extract and compare key arguments across multiple sources</span></span>
+<span id="cb34-170"><a href="#cb34-170" aria-hidden="true" tabindex="-1"></a><span class="in">- Attribute quotes and ideas to authors and their institutions</span></span>
+<span id="cb34-171"><a href="#cb34-171" aria-hidden="true" tabindex="-1"></a><span class="in">- Write formal, cohesive research notes in academic tone and structure</span></span>
+<span id="cb34-172"><a href="#cb34-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-173"><a href="#cb34-173" aria-hidden="true" tabindex="-1"></a><span class="in">Your rules:</span></span>
+<span id="cb34-174"><a href="#cb34-174" aria-hidden="true" tabindex="-1"></a><span class="in">- Never hallucinate sources or facts. If something isn't in the text, say "not available"</span></span>
+<span id="cb34-175"><a href="#cb34-175" aria-hidden="true" tabindex="-1"></a><span class="in">- Include author names, paper titles, and publication year when citing</span></span>
+<span id="cb34-176"><a href="#cb34-176" aria-hidden="true" tabindex="-1"></a><span class="in">- Use formal academic English — avoid casual tone</span></span>
+<span id="cb34-177"><a href="#cb34-177" aria-hidden="true" tabindex="-1"></a><span class="in">- Default citation format is APA unless user specifies otherwise</span></span>
+<span id="cb34-178"><a href="#cb34-178" aria-hidden="true" tabindex="-1"></a><span class="in">- Always structure your output with clear section headings: Abstract, Summary by Source, Comparative Analysis, and Synthesis &amp; Takeaways</span></span>
+<span id="cb34-179"><a href="#cb34-179" aria-hidden="true" tabindex="-1"></a><span class="in">- End with a full bibliography</span></span>
+<span id="cb34-180"><a href="#cb34-180" aria-hidden="true" tabindex="-1"></a><span class="in">- Assume all inputs are from reputable academic sources unless told otherwise</span></span>
+<span id="cb34-181"><a href="#cb34-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-182"><a href="#cb34-182" aria-hidden="true" tabindex="-1"></a><span class="in">When a user gives you a document, treat it like a scholarly text. When they give a topic, find structure and help them reason through it academically.</span></span>
+<span id="cb34-183"><a href="#cb34-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-184"><a href="#cb34-184" aria-hidden="true" tabindex="-1"></a><span class="in">You are not a chatbot. You are a rigorous academic co-author.</span></span>
+<span id="cb34-185"><a href="#cb34-185" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-186"><a href="#cb34-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-187"><a href="#cb34-187" aria-hidden="true" tabindex="-1"></a><span class="fu">### Structured Research Analysis Template</span></span>
+<span id="cb34-188"><a href="#cb34-188" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-189"><a href="#cb34-189" aria-hidden="true" tabindex="-1"></a><span class="in">You are now an academic research assistant trained in synthesizing scholarly literature across disciplines.</span></span>
+<span id="cb34-190"><a href="#cb34-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-191"><a href="#cb34-191" aria-hidden="true" tabindex="-1"></a><span class="in">Your task: conduct a structured research analysis on: [Insert academic topic here]</span></span>
+<span id="cb34-192"><a href="#cb34-192" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-193"><a href="#cb34-193" aria-hidden="true" tabindex="-1"></a><span class="in">Process:</span></span>
+<span id="cb34-194"><a href="#cb34-194" aria-hidden="true" tabindex="-1"></a><span class="in">1. Give a plain-language overview of the topic</span></span>
+<span id="cb34-195"><a href="#cb34-195" aria-hidden="true" tabindex="-1"></a><span class="in">2. List 3–5 major sub-topics or questions scholars explore</span></span>
+<span id="cb34-196"><a href="#cb34-196" aria-hidden="true" tabindex="-1"></a><span class="in">3. For each sub-topic:</span></span>
+<span id="cb34-197"><a href="#cb34-197" aria-hidden="true" tabindex="-1"></a><span class="in">   - Define it in academic terms</span></span>
+<span id="cb34-198"><a href="#cb34-198" aria-hidden="true" tabindex="-1"></a><span class="in">   - Summarize key findings or arguments from papers</span></span>
+<span id="cb34-199"><a href="#cb34-199" aria-hidden="true" tabindex="-1"></a><span class="in">   - Highlight any debates or unresolved issues</span></span>
+<span id="cb34-200"><a href="#cb34-200" aria-hidden="true" tabindex="-1"></a><span class="in">4. Mention influential studies or authors (cite properly)</span></span>
+<span id="cb34-201"><a href="#cb34-201" aria-hidden="true" tabindex="-1"></a><span class="in">5. Suggest 3–5 high-quality sources (papers, books, reviews)</span></span>
+<span id="cb34-202"><a href="#cb34-202" aria-hidden="true" tabindex="-1"></a><span class="in">6. Finish with a summary of current knowledge gaps or future directions</span></span>
+<span id="cb34-203"><a href="#cb34-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-204"><a href="#cb34-204" aria-hidden="true" tabindex="-1"></a><span class="in">Guidelines:</span></span>
+<span id="cb34-205"><a href="#cb34-205" aria-hidden="true" tabindex="-1"></a><span class="in">- Use clear academic tone</span></span>
+<span id="cb34-206"><a href="#cb34-206" aria-hidden="true" tabindex="-1"></a><span class="in">- Cite sources with author, title, and year</span></span>
+<span id="cb34-207"><a href="#cb34-207" aria-hidden="true" tabindex="-1"></a><span class="in">- Prioritize accuracy and relevance</span></span>
+<span id="cb34-208"><a href="#cb34-208" aria-hidden="true" tabindex="-1"></a><span class="in">- Keep formatting clean and skimmable</span></span>
+<span id="cb34-209"><a href="#cb34-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-210"><a href="#cb34-210" aria-hidden="true" tabindex="-1"></a><span class="in">You are my co-author now!</span></span>
+<span id="cb34-211"><a href="#cb34-211" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-212"><a href="#cb34-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-213"><a href="#cb34-213" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3.2 Econometric Analysis Prompts</span></span>
+<span id="cb34-214"><a href="#cb34-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-215"><a href="#cb34-215" aria-hidden="true" tabindex="-1"></a><span class="fu">### FDI Impact Analysis with World Bank Data</span></span>
+<span id="cb34-216"><a href="#cb34-216" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-217"><a href="#cb34-217" aria-hidden="true" tabindex="-1"></a><span class="in">Using the World Bank's World Development Indicators (WDI) database, conduct a comprehensive analysis of the impact of Foreign Direct Investment (FDI) on economic growth in developing countries using panel data.</span></span>
+<span id="cb34-218"><a href="#cb34-218" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-219"><a href="#cb34-219" aria-hidden="true" tabindex="-1"></a><span class="in">Extract these key indicators:</span></span>
+<span id="cb34-220"><a href="#cb34-220" aria-hidden="true" tabindex="-1"></a><span class="in">- FDI net inflows (% of GDP): BX.KLT.DINV.WD.GD.ZS</span></span>
+<span id="cb34-221"><a href="#cb34-221" aria-hidden="true" tabindex="-1"></a><span class="in">- GDP growth (annual %): NY.GDP.MKTP.KD.ZG</span></span>
+<span id="cb34-222"><a href="#cb34-222" aria-hidden="true" tabindex="-1"></a><span class="in">- Trade openness (% of GDP): NE.TRD.GNFS.ZS</span></span>
+<span id="cb34-223"><a href="#cb34-223" aria-hidden="true" tabindex="-1"></a><span class="in">- Secondary school enrollment (% gross): SE.SEC.ENRR</span></span>
+<span id="cb34-224"><a href="#cb34-224" aria-hidden="true" tabindex="-1"></a><span class="in">- Ease of doing business index: IC.BUS.EASE.XQ</span></span>
+<span id="cb34-225"><a href="#cb34-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-226"><a href="#cb34-226" aria-hidden="true" tabindex="-1"></a><span class="in">Provide both R and Python code for:</span></span>
+<span id="cb34-227"><a href="#cb34-227" aria-hidden="true" tabindex="-1"></a><span class="in">1. Data extraction and cleaning</span></span>
+<span id="cb34-228"><a href="#cb34-228" aria-hidden="true" tabindex="-1"></a><span class="in">2. Panel data regression analysis (fixed effects model)</span></span>
+<span id="cb34-229"><a href="#cb34-229" aria-hidden="true" tabindex="-1"></a><span class="in">3. Robustness checks and diagnostic tests</span></span>
+<span id="cb34-230"><a href="#cb34-230" aria-hidden="true" tabindex="-1"></a><span class="in">4. Visualization of results</span></span>
+<span id="cb34-231"><a href="#cb34-231" aria-hidden="true" tabindex="-1"></a><span class="in">5. Policy implications and recommendations</span></span>
+<span id="cb34-232"><a href="#cb34-232" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-233"><a href="#cb34-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-234"><a href="#cb34-234" aria-hidden="true" tabindex="-1"></a><span class="fu">### Regression Analysis Framework</span></span>
+<span id="cb34-235"><a href="#cb34-235" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-236"><a href="#cb34-236" aria-hidden="true" tabindex="-1"></a><span class="in">Perform comprehensive regression analysis for the caschool.xls dataset:</span></span>
+<span id="cb34-237"><a href="#cb34-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-238"><a href="#cb34-238" aria-hidden="true" tabindex="-1"></a><span class="in">1. **Descriptive Analysis**: Summarize testscr, str, el_pct, avginc variables with mean, sd, and percentiles (10, 25, 40, 50, 60, 75, 90). Create both wide and long format tables.</span></span>
+<span id="cb34-239"><a href="#cb34-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-240"><a href="#cb34-240" aria-hidden="true" tabindex="-1"></a><span class="in">2. **Visualization**: Make scatter plot matrix between all variables. Create box plots for testscr comparing small class size (str&lt;20) and large class size (str&gt;=20).</span></span>
+<span id="cb34-241"><a href="#cb34-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-242"><a href="#cb34-242" aria-hidden="true" tabindex="-1"></a><span class="in">3. **Regression Modeling**:</span></span>
+<span id="cb34-243"><a href="#cb34-243" aria-hidden="true" tabindex="-1"></a><span class="in">   - Simple regression: testscr on str with robust standard errors</span></span>
+<span id="cb34-244"><a href="#cb34-244" aria-hidden="true" tabindex="-1"></a><span class="in">   - Multiple regression: testscr on str, el_pct, and avginc</span></span>
+<span id="cb34-245"><a href="#cb34-245" aria-hidden="true" tabindex="-1"></a><span class="in">   - Extended model: Include avginc squared term</span></span>
+<span id="cb34-246"><a href="#cb34-246" aria-hidden="true" tabindex="-1"></a><span class="in">   - Test coefficient significance (individual and joint tests)</span></span>
+<span id="cb34-247"><a href="#cb34-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-248"><a href="#cb34-248" aria-hidden="true" tabindex="-1"></a><span class="in">4. **Model Diagnostics**:</span></span>
+<span id="cb34-249"><a href="#cb34-249" aria-hidden="true" tabindex="-1"></a><span class="in">   - Handle potential multicollinearity among predictors</span></span>
+<span id="cb34-250"><a href="#cb34-250" aria-hidden="true" tabindex="-1"></a><span class="in">   - Interpret F-statistics and degrees of freedom</span></span>
+<span id="cb34-251"><a href="#cb34-251" aria-hidden="true" tabindex="-1"></a><span class="in">   - Calculate and interpret R-squared</span></span>
+<span id="cb34-252"><a href="#cb34-252" aria-hidden="true" tabindex="-1"></a><span class="in">   - Provide manual F-statistic calculations</span></span>
+<span id="cb34-253"><a href="#cb34-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-254"><a href="#cb34-254" aria-hidden="true" tabindex="-1"></a><span class="in">Provide code in both Python and R with detailed explanations.</span></span>
+<span id="cb34-255"><a href="#cb34-255" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-256"><a href="#cb34-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-257"><a href="#cb34-257" aria-hidden="true" tabindex="-1"></a><span class="fu">## 3.3 Market Research Automation</span></span>
+<span id="cb34-258"><a href="#cb34-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-259"><a href="#cb34-259" aria-hidden="true" tabindex="-1"></a><span class="fu">### Gartner-Style Market Report Generator</span></span>
+<span id="cb34-260"><a href="#cb34-260" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-261"><a href="#cb34-261" aria-hidden="true" tabindex="-1"></a><span class="in">You are a world-class industry analyst with expertise in market research, competitive intelligence, and strategic forecasting. Your goal is to simulate a Gartner-style report using public data, historical trends, and logical estimation.</span></span>
+<span id="cb34-262"><a href="#cb34-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-263"><a href="#cb34-263" aria-hidden="true" tabindex="-1"></a><span class="in">For each request:</span></span>
+<span id="cb34-264"><a href="#cb34-264" aria-hidden="true" tabindex="-1"></a><span class="in">• Generate clear, structured insights based on known market signals</span></span>
+<span id="cb34-265"><a href="#cb34-265" aria-hidden="true" tabindex="-1"></a><span class="in">• Build data-backed forecasts using assumptions (state them)</span></span>
+<span id="cb34-266"><a href="#cb34-266" aria-hidden="true" tabindex="-1"></a><span class="in">• Identify top vendors and categorize them by niche, scale, or innovation</span></span>
+<span id="cb34-267"><a href="#cb34-267" aria-hidden="true" tabindex="-1"></a><span class="in">• Highlight risks, emerging players, and future trends</span></span>
+<span id="cb34-268"><a href="#cb34-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-269"><a href="#cb34-269" aria-hidden="true" tabindex="-1"></a><span class="in">Be analytical, not vague. Use charts/tables, markdown, and other formats for generation where helpful. Be explicit about what's estimated vs known.</span></span>
+<span id="cb34-270"><a href="#cb34-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-271"><a href="#cb34-271" aria-hidden="true" tabindex="-1"></a><span class="in">Use this structure:</span></span>
+<span id="cb34-272"><a href="#cb34-272" aria-hidden="true" tabindex="-1"></a><span class="in">1. Market Overview</span></span>
+<span id="cb34-273"><a href="#cb34-273" aria-hidden="true" tabindex="-1"></a><span class="in">2. Key Players</span></span>
+<span id="cb34-274"><a href="#cb34-274" aria-hidden="true" tabindex="-1"></a><span class="in">3. Forecast (1–3 years)</span></span>
+<span id="cb34-275"><a href="#cb34-275" aria-hidden="true" tabindex="-1"></a><span class="in">4. Opportunities &amp; Risks</span></span>
+<span id="cb34-276"><a href="#cb34-276" aria-hidden="true" tabindex="-1"></a><span class="in">5. Strategic Insights</span></span>
+<span id="cb34-277"><a href="#cb34-277" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-278"><a href="#cb34-278" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-279"><a href="#cb34-279" aria-hidden="true" tabindex="-1"></a><span class="fu">### Startup Idea Validation Framework</span></span>
+<span id="cb34-280"><a href="#cb34-280" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-281"><a href="#cb34-281" aria-hidden="true" tabindex="-1"></a><span class="in">You are now my AI startup validator and market researcher. Think like Elon Musk, Lenny Rachitsky, and Sarah Tavel. </span></span>
+<span id="cb34-282"><a href="#cb34-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-283"><a href="#cb34-283" aria-hidden="true" tabindex="-1"></a><span class="in">For every idea I give, do this:</span></span>
+<span id="cb34-284"><a href="#cb34-284" aria-hidden="true" tabindex="-1"></a><span class="in">- Analyze market size, urgency, and competition</span></span>
+<span id="cb34-285"><a href="#cb34-285" aria-hidden="true" tabindex="-1"></a><span class="in">- Identify audience pain points</span></span>
+<span id="cb34-286"><a href="#cb34-286" aria-hidden="true" tabindex="-1"></a><span class="in">- Score monetization potential</span></span>
+<span id="cb34-287"><a href="#cb34-287" aria-hidden="true" tabindex="-1"></a><span class="in">- Give a 1–10 rating with brutal honesty</span></span>
+<span id="cb34-288"><a href="#cb34-288" aria-hidden="true" tabindex="-1"></a><span class="in">- Use frameworks like 'pickaxe ideas,' 'painkiller vs vitamin,' and 'monopoly of 1'</span></span>
+<span id="cb34-289"><a href="#cb34-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-290"><a href="#cb34-290" aria-hidden="true" tabindex="-1"></a><span class="in">Always ask: 'Would a top investor bet on this?'</span></span>
+<span id="cb34-291"><a href="#cb34-291" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-292"><a href="#cb34-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-293"><a href="#cb34-293" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-294"><a href="#cb34-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-295"><a href="#cb34-295" aria-hidden="true" tabindex="-1"></a><span class="fu"># 4. Educational &amp; Teaching Prompts</span></span>
+<span id="cb34-296"><a href="#cb34-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-297"><a href="#cb34-297" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4.1 Course Design &amp; Planning</span></span>
+<span id="cb34-298"><a href="#cb34-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-299"><a href="#cb34-299" aria-hidden="true" tabindex="-1"></a><span class="fu">### Backward Design Unit Planning</span></span>
+<span id="cb34-300"><a href="#cb34-300" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-301"><a href="#cb34-301" aria-hidden="true" tabindex="-1"></a><span class="in">I am planning a **[number of days]** unit. The course is a **[level] [course subject]** course and the topic for the unit is **[topic/key idea/focus]**. It is especially important to me that my students engage deeply with this topic and feel intrinsically motivated to take an interest in it.</span></span>
+<span id="cb34-302"><a href="#cb34-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-303"><a href="#cb34-303" aria-hidden="true" tabindex="-1"></a><span class="in">Please answer the following questions:</span></span>
+<span id="cb34-304"><a href="#cb34-304" aria-hidden="true" tabindex="-1"></a><span class="in">1. Why might this topic be important to **[students/majors/non-majors]**? Why should they care about it? Why does it matter?</span></span>
+<span id="cb34-305"><a href="#cb34-305" aria-hidden="true" tabindex="-1"></a><span class="in">2. How might this topic be relevant to students' lives right now?</span></span>
+<span id="cb34-306"><a href="#cb34-306" aria-hidden="true" tabindex="-1"></a><span class="in">3. What deep, conceptual understandings that are meaningful and have lasting value might students expect to learn?</span></span>
+<span id="cb34-307"><a href="#cb34-307" aria-hidden="true" tabindex="-1"></a><span class="in">4. What might some "enduring understandings" like in Wiggins &amp; McTighe be for this unit?</span></span>
+<span id="cb34-308"><a href="#cb34-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-309"><a href="#cb34-309" aria-hidden="true" tabindex="-1"></a><span class="in">Follow-up: What ideas do you have for engaging and interactive ways I could introduce students to the enduring understandings and relevance of the topic of this unit?</span></span>
+<span id="cb34-310"><a href="#cb34-310" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-311"><a href="#cb34-311" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-312"><a href="#cb34-312" aria-hidden="true" tabindex="-1"></a><span class="fu">### Essential Questions Generator</span></span>
+<span id="cb34-313"><a href="#cb34-313" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-314"><a href="#cb34-314" aria-hidden="true" tabindex="-1"></a><span class="in">I need essential questions to go with a unit plan I am writing. These should follow the criteria from Wiggins &amp; McTighe backward design framework. My primary goals are that the questions help students understand the big ideas behind the topic, engage thinking, and get students interested.</span></span>
+<span id="cb34-315"><a href="#cb34-315" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-316"><a href="#cb34-316" aria-hidden="true" tabindex="-1"></a><span class="in">The course is a **[level] [Course subject]** course and the topic for the unit is **[topic/key idea]**. You are an expert on writing essential questions and you are well aware of the research on what tends to fascinate people and capture their interest.</span></span>
+<span id="cb34-317"><a href="#cb34-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-318"><a href="#cb34-318" aria-hidden="true" tabindex="-1"></a><span class="in">Please give me 10 possible essential questions that will intrigue even hard to engage students. I want students to walk in the room, see the essential question we are working on and think, "I can't wait to get started."</span></span>
+<span id="cb34-319"><a href="#cb34-319" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-320"><a href="#cb34-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-321"><a href="#cb34-321" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4.2 AI Literacy Development</span></span>
+<span id="cb34-322"><a href="#cb34-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-323"><a href="#cb34-323" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI Literacy Curriculum Design</span></span>
+<span id="cb34-324"><a href="#cb34-324" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-325"><a href="#cb34-325" aria-hidden="true" tabindex="-1"></a><span class="in">Design a curriculum for developing AI literacy including:</span></span>
+<span id="cb34-326"><a href="#cb34-326" aria-hidden="true" tabindex="-1"></a><span class="in">1. Understanding AI capabilities and limitations</span></span>
+<span id="cb34-327"><a href="#cb34-327" aria-hidden="true" tabindex="-1"></a><span class="in">2. Ethical considerations and responsible use</span></span>
+<span id="cb34-328"><a href="#cb34-328" aria-hidden="true" tabindex="-1"></a><span class="in">3. Practical applications across disciplines</span></span>
+<span id="cb34-329"><a href="#cb34-329" aria-hidden="true" tabindex="-1"></a><span class="in">4. Critical evaluation of AI-generated content</span></span>
+<span id="cb34-330"><a href="#cb34-330" aria-hidden="true" tabindex="-1"></a><span class="in">5. Future-ready skills for AI collaboration</span></span>
+<span id="cb34-331"><a href="#cb34-331" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-332"><a href="#cb34-332" aria-hidden="true" tabindex="-1"></a><span class="in">Structure this for **[grade level/audience]** students in a **[duration]** format.</span></span>
+<span id="cb34-333"><a href="#cb34-333" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-334"><a href="#cb34-334" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-335"><a href="#cb34-335" aria-hidden="true" tabindex="-1"></a><span class="fu">### Generative AI 101 Course Outline (Urdu)</span></span>
+<span id="cb34-336"><a href="#cb34-336" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-337"><a href="#cb34-337" aria-hidden="true" tabindex="-1"></a><span class="in">Create a 10-video course outline for "Generative AI 101: Practical Guide in Urdu for Beginners"</span></span>
+<span id="cb34-338"><a href="#cb34-338" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-339"><a href="#cb34-339" aria-hidden="true" tabindex="-1"></a><span class="in">Target Audience: Urdu-speaking professionals, students, freelancers, and creators</span></span>
+<span id="cb34-340"><a href="#cb34-340" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-341"><a href="#cb34-341" aria-hidden="true" tabindex="-1"></a><span class="in">Course Structure:</span></span>
+<span id="cb34-342"><a href="#cb34-342" aria-hidden="true" tabindex="-1"></a><span class="in">1. Generative AI Kya Hai? (Intro in Urdu) - 10 min</span></span>
+<span id="cb34-343"><a href="#cb34-343" aria-hidden="true" tabindex="-1"></a><span class="in">2. Generative AI Kis Tarah Kaam Karta Hai? (Simple Explanation) - 12 min</span></span>
+<span id="cb34-344"><a href="#cb34-344" aria-hidden="true" tabindex="-1"></a><span class="in">3. ChatGPT Istemaal Karna Seekhein (Step-by-Step in Urdu) - 12 min</span></span>
+<span id="cb34-345"><a href="#cb34-345" aria-hidden="true" tabindex="-1"></a><span class="in">4. Smart Prompting Techniques (Urdu Examples) - 15 min</span></span>
+<span id="cb34-346"><a href="#cb34-346" aria-hidden="true" tabindex="-1"></a><span class="in">5. AI Say Tasaveer Banana (DALL·E &amp; Midjourney) - 13 min</span></span>
+<span id="cb34-347"><a href="#cb34-347" aria-hidden="true" tabindex="-1"></a><span class="in">6. AI Videos &amp; Voice Banayein (Pictory, Synthesia, etc.) - 12 min</span></span>
+<span id="cb34-348"><a href="#cb34-348" aria-hidden="true" tabindex="-1"></a><span class="in">7. AI Tools Jo Har Roz Ke Kaam Mein Madad Dein - 10 min</span></span>
+<span id="cb34-349"><a href="#cb34-349" aria-hidden="true" tabindex="-1"></a><span class="in">8. Gen AI Freelancing Aur Career Mein Kaise Kaam Aata Hai - 13 min</span></span>
+<span id="cb34-350"><a href="#cb34-350" aria-hidden="true" tabindex="-1"></a><span class="in">9. Mustaqbil Aur Gen AI (Opportunities in Urdu World) - 10 min</span></span>
+<span id="cb34-351"><a href="#cb34-351" aria-hidden="true" tabindex="-1"></a><span class="in">10. Aap Ka Apna AI Workflow Banayein (Bonus Practical Guide) - 12 min</span></span>
+<span id="cb34-352"><a href="#cb34-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-353"><a href="#cb34-353" aria-hidden="true" tabindex="-1"></a><span class="in">Each video should focus on practical applications with Urdu examples and hands-on demonstrations.</span></span>
+<span id="cb34-354"><a href="#cb34-354" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-355"><a href="#cb34-355" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-356"><a href="#cb34-356" aria-hidden="true" tabindex="-1"></a><span class="fu">## 4.3 Assessment &amp; Feedback</span></span>
+<span id="cb34-357"><a href="#cb34-357" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-358"><a href="#cb34-358" aria-hidden="true" tabindex="-1"></a><span class="fu">### AI-Proof Rubric Design</span></span>
+<span id="cb34-359"><a href="#cb34-359" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-360"><a href="#cb34-360" aria-hidden="true" tabindex="-1"></a><span class="in">You are an expert on student assessment in general and rubric design in particular. Please create:</span></span>
+<span id="cb34-361"><a href="#cb34-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-362"><a href="#cb34-362" aria-hidden="true" tabindex="-1"></a><span class="in">a) A 4-point rubric for the performance task</span></span>
+<span id="cb34-363"><a href="#cb34-363" aria-hidden="true" tabindex="-1"></a><span class="in">b) A form that would help **[level]** students give one another peer feedback on rough drafts</span></span>
+<span id="cb34-364"><a href="#cb34-364" aria-hidden="true" tabindex="-1"></a><span class="in">c) A form that would allow students to self-assess their own work</span></span>
+<span id="cb34-365"><a href="#cb34-365" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-366"><a href="#cb34-366" aria-hidden="true" tabindex="-1"></a><span class="in">The rubric should distinguish between AI-level work (which should receive no more than 50% credit) and genuinely excellent human work that demonstrates deep thinking, creativity, and personal voice.</span></span>
+<span id="cb34-367"><a href="#cb34-367" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-368"><a href="#cb34-368" aria-hidden="true" tabindex="-1"></a><span class="in">Here are the standards/criteria: **[paste]**</span></span>
+<span id="cb34-369"><a href="#cb34-369" aria-hidden="true" tabindex="-1"></a><span class="in">Here is the performance task: **[paste]**</span></span>
+<span id="cb34-370"><a href="#cb34-370" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-371"><a href="#cb34-371" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-372"><a href="#cb34-372" aria-hidden="true" tabindex="-1"></a><span class="fu">### Comprehensive Feedback Generator</span></span>
+<span id="cb34-373"><a href="#cb34-373" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-374"><a href="#cb34-374" aria-hidden="true" tabindex="-1"></a><span class="in">Give me feedback on this piece. Focus on the following criteria: **[list criteria from rubric or other source]**. </span></span>
+<span id="cb34-375"><a href="#cb34-375" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-376"><a href="#cb34-376" aria-hidden="true" tabindex="-1"></a><span class="in">Tell me at least **[number]** things that I did especially well and **[number]** aspects that could be improved and how I might improve them.</span></span>
+<span id="cb34-377"><a href="#cb34-377" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-378"><a href="#cb34-378" aria-hidden="true" tabindex="-1"></a><span class="in">Note: This is a **[level]** course on **[subject]**. Consider both content quality and the standards expected at this academic level.</span></span>
+<span id="cb34-379"><a href="#cb34-379" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-380"><a href="#cb34-380" aria-hidden="true" tabindex="-1"></a><span class="in">Here is the piece: [cut and paste or attach]</span></span>
+<span id="cb34-381"><a href="#cb34-381" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-382"><a href="#cb34-382" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-383"><a href="#cb34-383" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-384"><a href="#cb34-384" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-385"><a href="#cb34-385" aria-hidden="true" tabindex="-1"></a><span class="fu"># 5. Professional &amp; Administrative Prompts</span></span>
+<span id="cb34-386"><a href="#cb34-386" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-387"><a href="#cb34-387" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5.1 Government &amp; Policy Communication</span></span>
+<span id="cb34-388"><a href="#cb34-388" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-389"><a href="#cb34-389" aria-hidden="true" tabindex="-1"></a><span class="fu">### Policy Brief Creation Template</span></span>
+<span id="cb34-390"><a href="#cb34-390" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-391"><a href="#cb34-391" aria-hidden="true" tabindex="-1"></a><span class="in">Create a policy brief on **[issue]** including:</span></span>
+<span id="cb34-392"><a href="#cb34-392" aria-hidden="true" tabindex="-1"></a><span class="in">1. Executive summary with key recommendations</span></span>
+<span id="cb34-393"><a href="#cb34-393" aria-hidden="true" tabindex="-1"></a><span class="in">2. Problem statement and context</span></span>
+<span id="cb34-394"><a href="#cb34-394" aria-hidden="true" tabindex="-1"></a><span class="in">3. Policy options analysis with pros/cons</span></span>
+<span id="cb34-395"><a href="#cb34-395" aria-hidden="true" tabindex="-1"></a><span class="in">4. Implementation framework with timeline</span></span>
+<span id="cb34-396"><a href="#cb34-396" aria-hidden="true" tabindex="-1"></a><span class="in">5. Expected outcomes and success metrics</span></span>
+<span id="cb34-397"><a href="#cb34-397" aria-hidden="true" tabindex="-1"></a><span class="in">6. Budget implications and resource requirements</span></span>
+<span id="cb34-398"><a href="#cb34-398" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-399"><a href="#cb34-399" aria-hidden="true" tabindex="-1"></a><span class="in">Target audience: **[specify - policymakers, general public, etc.]**</span></span>
+<span id="cb34-400"><a href="#cb34-400" aria-hidden="true" tabindex="-1"></a><span class="in">Length: **[specify]**</span></span>
+<span id="cb34-401"><a href="#cb34-401" aria-hidden="true" tabindex="-1"></a><span class="in">Tone: Professional but accessible</span></span>
+<span id="cb34-402"><a href="#cb34-402" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-403"><a href="#cb34-403" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-404"><a href="#cb34-404" aria-hidden="true" tabindex="-1"></a><span class="fu">### Official Government Letter Template</span></span>
+<span id="cb34-405"><a href="#cb34-405" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-406"><a href="#cb34-406" aria-hidden="true" tabindex="-1"></a><span class="in">Draft a formal government letter regarding **[topic]**:</span></span>
+<span id="cb34-407"><a href="#cb34-407" aria-hidden="true" tabindex="-1"></a><span class="in">- Clear statement of purpose and authority</span></span>
+<span id="cb34-408"><a href="#cb34-408" aria-hidden="true" tabindex="-1"></a><span class="in">- Relevant policy context and legal framework</span></span>
+<span id="cb34-409"><a href="#cb34-409" aria-hidden="true" tabindex="-1"></a><span class="in">- Specific actions required with deadlines</span></span>
+<span id="cb34-410"><a href="#cb34-410" aria-hidden="true" tabindex="-1"></a><span class="in">- Consequences of non-compliance (if applicable)</span></span>
+<span id="cb34-411"><a href="#cb34-411" aria-hidden="true" tabindex="-1"></a><span class="in">- Contact information for follow-up and clarification</span></span>
+<span id="cb34-412"><a href="#cb34-412" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-413"><a href="#cb34-413" aria-hidden="true" tabindex="-1"></a><span class="in">Use appropriate government communication standards for **[country/jurisdiction]**.</span></span>
+<span id="cb34-414"><a href="#cb34-414" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-415"><a href="#cb34-415" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-416"><a href="#cb34-416" aria-hidden="true" tabindex="-1"></a><span class="fu">## 5.2 Administrative Efficiency</span></span>
+<span id="cb34-417"><a href="#cb34-417" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-418"><a href="#cb34-418" aria-hidden="true" tabindex="-1"></a><span class="fu">### Meeting Management Suite</span></span>
+<span id="cb34-419"><a href="#cb34-419" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-420"><a href="#cb34-420" aria-hidden="true" tabindex="-1"></a><span class="in">Prepare comprehensive meeting materials for **[meeting type/purpose]**:</span></span>
+<span id="cb34-421"><a href="#cb34-421" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-422"><a href="#cb34-422" aria-hidden="true" tabindex="-1"></a><span class="in">1. **Agenda** (with time allocations):</span></span>
+<span id="cb34-423"><a href="#cb34-423" aria-hidden="true" tabindex="-1"></a><span class="in">   - Opening and introductions</span></span>
+<span id="cb34-424"><a href="#cb34-424" aria-hidden="true" tabindex="-1"></a><span class="in">   - Review of previous action items</span></span>
+<span id="cb34-425"><a href="#cb34-425" aria-hidden="true" tabindex="-1"></a><span class="in">   - Main discussion topics with allocated time</span></span>
+<span id="cb34-426"><a href="#cb34-426" aria-hidden="true" tabindex="-1"></a><span class="in">   - Decision points requiring votes/consensus</span></span>
+<span id="cb34-427"><a href="#cb34-427" aria-hidden="true" tabindex="-1"></a><span class="in">   - Next steps and assignments</span></span>
+<span id="cb34-428"><a href="#cb34-428" aria-hidden="true" tabindex="-1"></a><span class="in">   - Closing</span></span>
+<span id="cb34-429"><a href="#cb34-429" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-430"><a href="#cb34-430" aria-hidden="true" tabindex="-1"></a><span class="in">2. **Background briefing document** covering:</span></span>
+<span id="cb34-431"><a href="#cb34-431" aria-hidden="true" tabindex="-1"></a><span class="in">   - Context and background information</span></span>
+<span id="cb34-432"><a href="#cb34-432" aria-hidden="true" tabindex="-1"></a><span class="in">   - Key stakeholders and their positions</span></span>
+<span id="cb34-433"><a href="#cb34-433" aria-hidden="true" tabindex="-1"></a><span class="in">   - Previous decisions relevant to agenda items</span></span>
+<span id="cb34-434"><a href="#cb34-434" aria-hidden="true" tabindex="-1"></a><span class="in">   - Supporting data and analysis</span></span>
+<span id="cb34-435"><a href="#cb34-435" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-436"><a href="#cb34-436" aria-hidden="true" tabindex="-1"></a><span class="in">3. **Decision tracking template**:</span></span>
+<span id="cb34-437"><a href="#cb34-437" aria-hidden="true" tabindex="-1"></a><span class="in">   - Decision point descriptions</span></span>
+<span id="cb34-438"><a href="#cb34-438" aria-hidden="true" tabindex="-1"></a><span class="in">   - Options considered</span></span>
+<span id="cb34-439"><a href="#cb34-439" aria-hidden="true" tabindex="-1"></a><span class="in">   - Rationale for chosen option</span></span>
+<span id="cb34-440"><a href="#cb34-440" aria-hidden="true" tabindex="-1"></a><span class="in">   - Implementation responsibilities</span></span>
+<span id="cb34-441"><a href="#cb34-441" aria-hidden="true" tabindex="-1"></a><span class="in">   - Success metrics</span></span>
+<span id="cb34-442"><a href="#cb34-442" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-443"><a href="#cb34-443" aria-hidden="true" tabindex="-1"></a><span class="in">4. **Action items tracking**:</span></span>
+<span id="cb34-444"><a href="#cb34-444" aria-hidden="true" tabindex="-1"></a><span class="in">   - Task descriptions</span></span>
+<span id="cb34-445"><a href="#cb34-445" aria-hidden="true" tabindex="-1"></a><span class="in">   - Assigned responsibilities</span></span>
+<span id="cb34-446"><a href="#cb34-446" aria-hidden="true" tabindex="-1"></a><span class="in">   - Due dates</span></span>
+<span id="cb34-447"><a href="#cb34-447" aria-hidden="true" tabindex="-1"></a><span class="in">   - Progress indicators</span></span>
+<span id="cb34-448"><a href="#cb34-448" aria-hidden="true" tabindex="-1"></a><span class="in">   - Dependencies</span></span>
+<span id="cb34-449"><a href="#cb34-449" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-450"><a href="#cb34-450" aria-hidden="true" tabindex="-1"></a><span class="in">5. **Follow-up communication plan**:</span></span>
+<span id="cb34-451"><a href="#cb34-451" aria-hidden="true" tabindex="-1"></a><span class="in">   - Meeting summary distribution</span></span>
+<span id="cb34-452"><a href="#cb34-452" aria-hidden="true" tabindex="-1"></a><span class="in">   - Action item reminders</span></span>
+<span id="cb34-453"><a href="#cb34-453" aria-hidden="true" tabindex="-1"></a><span class="in">   - Progress check-in schedule</span></span>
+<span id="cb34-454"><a href="#cb34-454" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-455"><a href="#cb34-455" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-456"><a href="#cb34-456" aria-hidden="true" tabindex="-1"></a><span class="fu">### Report Writing Framework</span></span>
+<span id="cb34-457"><a href="#cb34-457" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-458"><a href="#cb34-458" aria-hidden="true" tabindex="-1"></a><span class="in">Transform these data points into a professional report:</span></span>
+<span id="cb34-459"><a href="#cb34-459" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-460"><a href="#cb34-460" aria-hidden="true" tabindex="-1"></a><span class="in">**Executive Summary** (1-2 pages):</span></span>
+<span id="cb34-461"><a href="#cb34-461" aria-hidden="true" tabindex="-1"></a><span class="in">- Key findings and main insights</span></span>
+<span id="cb34-462"><a href="#cb34-462" aria-hidden="true" tabindex="-1"></a><span class="in">- Primary recommendations</span></span>
+<span id="cb34-463"><a href="#cb34-463" aria-hidden="true" tabindex="-1"></a><span class="in">- Critical action items</span></span>
+<span id="cb34-464"><a href="#cb34-464" aria-hidden="true" tabindex="-1"></a><span class="in">- Resource requirements</span></span>
+<span id="cb34-465"><a href="#cb34-465" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-466"><a href="#cb34-466" aria-hidden="true" tabindex="-1"></a><span class="in">**Methodology and Data Sources**:</span></span>
+<span id="cb34-467"><a href="#cb34-467" aria-hidden="true" tabindex="-1"></a><span class="in">- Data collection methods</span></span>
+<span id="cb34-468"><a href="#cb34-468" aria-hidden="true" tabindex="-1"></a><span class="in">- Sources and their reliability</span></span>
+<span id="cb34-469"><a href="#cb34-469" aria-hidden="true" tabindex="-1"></a><span class="in">- Analysis techniques used</span></span>
+<span id="cb34-470"><a href="#cb34-470" aria-hidden="true" tabindex="-1"></a><span class="in">- Limitations and assumptions</span></span>
+<span id="cb34-471"><a href="#cb34-471" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-472"><a href="#cb34-472" aria-hidden="true" tabindex="-1"></a><span class="in">**Detailed Analysis**:</span></span>
+<span id="cb34-473"><a href="#cb34-473" aria-hidden="true" tabindex="-1"></a><span class="in">- Findings organized by theme/category</span></span>
+<span id="cb34-474"><a href="#cb34-474" aria-hidden="true" tabindex="-1"></a><span class="in">- Supporting evidence and data</span></span>
+<span id="cb34-475"><a href="#cb34-475" aria-hidden="true" tabindex="-1"></a><span class="in">- Trend analysis and patterns</span></span>
+<span id="cb34-476"><a href="#cb34-476" aria-hidden="true" tabindex="-1"></a><span class="in">- Comparative analysis where relevant</span></span>
+<span id="cb34-477"><a href="#cb34-477" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-478"><a href="#cb34-478" aria-hidden="true" tabindex="-1"></a><span class="in">**Recommendations**:</span></span>
+<span id="cb34-479"><a href="#cb34-479" aria-hidden="true" tabindex="-1"></a><span class="in">- Prioritized action items</span></span>
+<span id="cb34-480"><a href="#cb34-480" aria-hidden="true" tabindex="-1"></a><span class="in">- Implementation timeline</span></span>
+<span id="cb34-481"><a href="#cb34-481" aria-hidden="true" tabindex="-1"></a><span class="in">- Resource requirements</span></span>
+<span id="cb34-482"><a href="#cb34-482" aria-hidden="true" tabindex="-1"></a><span class="in">- Risk assessment and mitigation</span></span>
+<span id="cb34-483"><a href="#cb34-483" aria-hidden="true" tabindex="-1"></a><span class="in">- Success indicators and monitoring</span></span>
+<span id="cb34-484"><a href="#cb34-484" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-485"><a href="#cb34-485" aria-hidden="true" tabindex="-1"></a><span class="in">**Appendices**:</span></span>
+<span id="cb34-486"><a href="#cb34-486" aria-hidden="true" tabindex="-1"></a><span class="in">- Raw data tables</span></span>
+<span id="cb34-487"><a href="#cb34-487" aria-hidden="true" tabindex="-1"></a><span class="in">- Technical details</span></span>
+<span id="cb34-488"><a href="#cb34-488" aria-hidden="true" tabindex="-1"></a><span class="in">- Additional supporting materials</span></span>
+<span id="cb34-489"><a href="#cb34-489" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-490"><a href="#cb34-490" aria-hidden="true" tabindex="-1"></a><span class="in">Target audience: **[specify]**</span></span>
+<span id="cb34-491"><a href="#cb34-491" aria-hidden="true" tabindex="-1"></a><span class="in">Technical level: **[specify]**</span></span>
+<span id="cb34-492"><a href="#cb34-492" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-493"><a href="#cb34-493" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-494"><a href="#cb34-494" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-495"><a href="#cb34-495" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-496"><a href="#cb34-496" aria-hidden="true" tabindex="-1"></a><span class="fu"># 6. Advanced AI Applications</span></span>
+<span id="cb34-497"><a href="#cb34-497" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-498"><a href="#cb34-498" aria-hidden="true" tabindex="-1"></a><span class="fu">## 6.1 Complex Problem-Solving</span></span>
+<span id="cb34-499"><a href="#cb34-499" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-500"><a href="#cb34-500" aria-hidden="true" tabindex="-1"></a><span class="fu">### Multi-Step Reasoning Framework</span></span>
+<span id="cb34-501"><a href="#cb34-501" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-502"><a href="#cb34-502" aria-hidden="true" tabindex="-1"></a><span class="in">Solve this complex problem using step-by-step reasoning:</span></span>
+<span id="cb34-503"><a href="#cb34-503" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-504"><a href="#cb34-504" aria-hidden="true" tabindex="-1"></a><span class="in">1. **Problem Decomposition**: Break down the problem into manageable components</span></span>
+<span id="cb34-505"><a href="#cb34-505" aria-hidden="true" tabindex="-1"></a><span class="in">2. **Information Gathering**: Identify relevant information and data sources</span></span>
+<span id="cb34-506"><a href="#cb34-506" aria-hidden="true" tabindex="-1"></a><span class="in">3. **Assumption Identification**: List all underlying assumptions</span></span>
+<span id="cb34-507"><a href="#cb34-507" aria-hidden="true" tabindex="-1"></a><span class="in">4. **Methodology Selection**: Choose appropriate analytical approaches</span></span>
+<span id="cb34-508"><a href="#cb34-508" aria-hidden="true" tabindex="-1"></a><span class="in">5. **Analysis Execution**: Apply methodologies systematically</span></span>
+<span id="cb34-509"><a href="#cb34-509" aria-hidden="true" tabindex="-1"></a><span class="in">6. **Synthesis**: Combine findings into coherent conclusions</span></span>
+<span id="cb34-510"><a href="#cb34-510" aria-hidden="true" tabindex="-1"></a><span class="in">7. **Validation**: Check results against alternative approaches</span></span>
+<span id="cb34-511"><a href="#cb34-511" aria-hidden="true" tabindex="-1"></a><span class="in">8. **Uncertainty Assessment**: Identify areas of uncertainty and their impact</span></span>
+<span id="cb34-512"><a href="#cb34-512" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-513"><a href="#cb34-513" aria-hidden="true" tabindex="-1"></a><span class="in">Problem: **[insert complex problem]**</span></span>
+<span id="cb34-514"><a href="#cb34-514" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-515"><a href="#cb34-515" aria-hidden="true" tabindex="-1"></a><span class="in">For each step, show your work and reasoning. If you need additional information, specify what data would improve the analysis.</span></span>
+<span id="cb34-516"><a href="#cb34-516" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-517"><a href="#cb34-517" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-518"><a href="#cb34-518" aria-hidden="true" tabindex="-1"></a><span class="fu">### Scenario Planning Template</span></span>
+<span id="cb34-519"><a href="#cb34-519" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-520"><a href="#cb34-520" aria-hidden="true" tabindex="-1"></a><span class="in">Develop scenario analysis for **[situation]**:</span></span>
+<span id="cb34-521"><a href="#cb34-521" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-522"><a href="#cb34-522" aria-hidden="true" tabindex="-1"></a><span class="in">**Base Case Scenario** (40% probability):</span></span>
+<span id="cb34-523"><a href="#cb34-523" aria-hidden="true" tabindex="-1"></a><span class="in">- Current assumptions and trends continue</span></span>
+<span id="cb34-524"><a href="#cb34-524" aria-hidden="true" tabindex="-1"></a><span class="in">- Key variables: [list]</span></span>
+<span id="cb34-525"><a href="#cb34-525" aria-hidden="true" tabindex="-1"></a><span class="in">- Expected outcomes: [quantify where possible]</span></span>
+<span id="cb34-526"><a href="#cb34-526" aria-hidden="true" tabindex="-1"></a><span class="in">- Timeline: [specify]</span></span>
+<span id="cb34-527"><a href="#cb34-527" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-528"><a href="#cb34-528" aria-hidden="true" tabindex="-1"></a><span class="in">**Optimistic Scenario** (25% probability):</span></span>
+<span id="cb34-529"><a href="#cb34-529" aria-hidden="true" tabindex="-1"></a><span class="in">- Favorable conditions materialize</span></span>
+<span id="cb34-530"><a href="#cb34-530" aria-hidden="true" tabindex="-1"></a><span class="in">- Key positive factors: [list]</span></span>
+<span id="cb34-531"><a href="#cb34-531" aria-hidden="true" tabindex="-1"></a><span class="in">- Best-case outcomes: [quantify]</span></span>
+<span id="cb34-532"><a href="#cb34-532" aria-hidden="true" tabindex="-1"></a><span class="in">- Required conditions: [specify]</span></span>
+<span id="cb34-533"><a href="#cb34-533" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-534"><a href="#cb34-534" aria-hidden="true" tabindex="-1"></a><span class="in">**Pessimistic Scenario** (25% probability):</span></span>
+<span id="cb34-535"><a href="#cb34-535" aria-hidden="true" tabindex="-1"></a><span class="in">- Challenges and setbacks occur</span></span>
+<span id="cb34-536"><a href="#cb34-536" aria-hidden="true" tabindex="-1"></a><span class="in">- Key risk factors: [list]</span></span>
+<span id="cb34-537"><a href="#cb34-537" aria-hidden="true" tabindex="-1"></a><span class="in">- Worst-case outcomes: [quantify]</span></span>
+<span id="cb34-538"><a href="#cb34-538" aria-hidden="true" tabindex="-1"></a><span class="in">- Warning indicators: [specify]</span></span>
+<span id="cb34-539"><a href="#cb34-539" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-540"><a href="#cb34-540" aria-hidden="true" tabindex="-1"></a><span class="in">**Black Swan Scenario** (10% probability):</span></span>
+<span id="cb34-541"><a href="#cb34-541" aria-hidden="true" tabindex="-1"></a><span class="in">- Unpredictable major disruption</span></span>
+<span id="cb34-542"><a href="#cb34-542" aria-hidden="true" tabindex="-1"></a><span class="in">- Potential sources: [brainstorm]</span></span>
+<span id="cb34-543"><a href="#cb34-543" aria-hidden="true" tabindex="-1"></a><span class="in">- Impact assessment: [estimate]</span></span>
+<span id="cb34-544"><a href="#cb34-544" aria-hidden="true" tabindex="-1"></a><span class="in">- Contingency measures: [outline]</span></span>
+<span id="cb34-545"><a href="#cb34-545" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-546"><a href="#cb34-546" aria-hidden="true" tabindex="-1"></a><span class="in">For each scenario, include:</span></span>
+<span id="cb34-547"><a href="#cb34-547" aria-hidden="true" tabindex="-1"></a><span class="in">- Probability assessment and reasoning</span></span>
+<span id="cb34-548"><a href="#cb34-548" aria-hidden="true" tabindex="-1"></a><span class="in">- Key assumptions and variables</span></span>
+<span id="cb34-549"><a href="#cb34-549" aria-hidden="true" tabindex="-1"></a><span class="in">- Quantified impacts where possible</span></span>
+<span id="cb34-550"><a href="#cb34-550" aria-hidden="true" tabindex="-1"></a><span class="in">- Strategic implications and responses</span></span>
+<span id="cb34-551"><a href="#cb34-551" aria-hidden="true" tabindex="-1"></a><span class="in">- Early warning indicators</span></span>
+<span id="cb34-552"><a href="#cb34-552" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-553"><a href="#cb34-553" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-554"><a href="#cb34-554" aria-hidden="true" tabindex="-1"></a><span class="fu">## 6.2 Innovation &amp; Creative Analysis</span></span>
+<span id="cb34-555"><a href="#cb34-555" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-556"><a href="#cb34-556" aria-hidden="true" tabindex="-1"></a><span class="fu">### Design Thinking Framework</span></span>
+<span id="cb34-557"><a href="#cb34-557" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-558"><a href="#cb34-558" aria-hidden="true" tabindex="-1"></a><span class="in">Generate innovative solutions for **[challenge]** using design thinking methodology:</span></span>
+<span id="cb34-559"><a href="#cb34-559" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-560"><a href="#cb34-560" aria-hidden="true" tabindex="-1"></a><span class="in">**Phase 1: Empathize**</span></span>
+<span id="cb34-561"><a href="#cb34-561" aria-hidden="true" tabindex="-1"></a><span class="in">- Identify key stakeholders and their needs</span></span>
+<span id="cb34-562"><a href="#cb34-562" aria-hidden="true" tabindex="-1"></a><span class="in">- Map user journey and pain points</span></span>
+<span id="cb34-563"><a href="#cb34-563" aria-hidden="true" tabindex="-1"></a><span class="in">- Gather insights from different perspectives</span></span>
+<span id="cb34-564"><a href="#cb34-564" aria-hidden="true" tabindex="-1"></a><span class="in">- Define emotional and functional needs</span></span>
+<span id="cb34-565"><a href="#cb34-565" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-566"><a href="#cb34-566" aria-hidden="true" tabindex="-1"></a><span class="in">**Phase 2: Define**</span></span>
+<span id="cb34-567"><a href="#cb34-567" aria-hidden="true" tabindex="-1"></a><span class="in">- Synthesize insights into problem statement</span></span>
+<span id="cb34-568"><a href="#cb34-568" aria-hidden="true" tabindex="-1"></a><span class="in">- Create point-of-view statement</span></span>
+<span id="cb34-569"><a href="#cb34-569" aria-hidden="true" tabindex="-1"></a><span class="in">- Identify core challenges and opportunities</span></span>
+<span id="cb34-570"><a href="#cb34-570" aria-hidden="true" tabindex="-1"></a><span class="in">- Set design criteria and constraints</span></span>
+<span id="cb34-571"><a href="#cb34-571" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-572"><a href="#cb34-572" aria-hidden="true" tabindex="-1"></a><span class="in">**Phase 3: Ideate**</span></span>
+<span id="cb34-573"><a href="#cb34-573" aria-hidden="true" tabindex="-1"></a><span class="in">- Generate diverse solution concepts (aim for 20+ ideas)</span></span>
+<span id="cb34-574"><a href="#cb34-574" aria-hidden="true" tabindex="-1"></a><span class="in">- Use "How might we..." questions</span></span>
+<span id="cb34-575"><a href="#cb34-575" aria-hidden="true" tabindex="-1"></a><span class="in">- Build on others' ideas</span></span>
+<span id="cb34-576"><a href="#cb34-576" aria-hidden="true" tabindex="-1"></a><span class="in">- Defer judgment during brainstorming</span></span>
+<span id="cb34-577"><a href="#cb34-577" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-578"><a href="#cb34-578" aria-hidden="true" tabindex="-1"></a><span class="in">**Phase 4: Prototype**</span></span>
+<span id="cb34-579"><a href="#cb34-579" aria-hidden="true" tabindex="-1"></a><span class="in">- Create low-fidelity prototypes of top 3-5 concepts</span></span>
+<span id="cb34-580"><a href="#cb34-580" aria-hidden="true" tabindex="-1"></a><span class="in">- Focus on core functionality</span></span>
+<span id="cb34-581"><a href="#cb34-581" aria-hidden="true" tabindex="-1"></a><span class="in">- Make it testable with users</span></span>
+<span id="cb34-582"><a href="#cb34-582" aria-hidden="true" tabindex="-1"></a><span class="in">- Include resource requirements</span></span>
+<span id="cb34-583"><a href="#cb34-583" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-584"><a href="#cb34-584" aria-hidden="true" tabindex="-1"></a><span class="in">**Phase 5: Test**</span></span>
+<span id="cb34-585"><a href="#cb34-585" aria-hidden="true" tabindex="-1"></a><span class="in">- Design tests for each prototype</span></span>
+<span id="cb34-586"><a href="#cb34-586" aria-hidden="true" tabindex="-1"></a><span class="in">- Identify key success metrics</span></span>
+<span id="cb34-587"><a href="#cb34-587" aria-hidden="true" tabindex="-1"></a><span class="in">- Plan user feedback collection</span></span>
+<span id="cb34-588"><a href="#cb34-588" aria-hidden="true" tabindex="-1"></a><span class="in">- Outline iteration strategy</span></span>
+<span id="cb34-589"><a href="#cb34-589" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-590"><a href="#cb34-590" aria-hidden="true" tabindex="-1"></a><span class="in">Challenge: **[insert specific challenge]**</span></span>
+<span id="cb34-591"><a href="#cb34-591" aria-hidden="true" tabindex="-1"></a><span class="in">Constraints: **[list any limitations - budget, time, technology, etc.]**</span></span>
+<span id="cb34-592"><a href="#cb34-592" aria-hidden="true" tabindex="-1"></a><span class="in">Success criteria: **[define what good looks like]**</span></span>
+<span id="cb34-593"><a href="#cb34-593" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-594"><a href="#cb34-594" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-595"><a href="#cb34-595" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-596"><a href="#cb34-596" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-597"><a href="#cb34-597" aria-hidden="true" tabindex="-1"></a><span class="fu"># 7. Training &amp; Workshop Resources</span></span>
+<span id="cb34-598"><a href="#cb34-598" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-599"><a href="#cb34-599" aria-hidden="true" tabindex="-1"></a><span class="fu">## 7.1 Workshop Design Templates</span></span>
+<span id="cb34-600"><a href="#cb34-600" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-601"><a href="#cb34-601" aria-hidden="true" tabindex="-1"></a><span class="fu">### Interactive Session Structure</span></span>
+<span id="cb34-602"><a href="#cb34-602" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-603"><a href="#cb34-603" aria-hidden="true" tabindex="-1"></a><span class="in">Design a **[duration]** workshop on **[topic]** for **[audience]**:</span></span>
+<span id="cb34-604"><a href="#cb34-604" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-605"><a href="#cb34-605" aria-hidden="true" tabindex="-1"></a><span class="in">**Pre-Workshop (1 week before)**:</span></span>
+<span id="cb34-606"><a href="#cb34-606" aria-hidden="true" tabindex="-1"></a><span class="in">- Send pre-reading materials</span></span>
+<span id="cb34-607"><a href="#cb34-607" aria-hidden="true" tabindex="-1"></a><span class="in">- Distribute participant survey</span></span>
+<span id="cb34-608"><a href="#cb34-608" aria-hidden="true" tabindex="-1"></a><span class="in">- Share technical requirements</span></span>
+<span id="cb34-609"><a href="#cb34-609" aria-hidden="true" tabindex="-1"></a><span class="in">- Provide session agenda</span></span>
+<span id="cb34-610"><a href="#cb34-610" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-611"><a href="#cb34-611" aria-hidden="true" tabindex="-1"></a><span class="in">**Opening (15 minutes)**:</span></span>
+<span id="cb34-612"><a href="#cb34-612" aria-hidden="true" tabindex="-1"></a><span class="in">- Welcome and introductions</span></span>
+<span id="cb34-613"><a href="#cb34-613" aria-hidden="true" tabindex="-1"></a><span class="in">- Learning objectives overview</span></span>
+<span id="cb34-614"><a href="#cb34-614" aria-hidden="true" tabindex="-1"></a><span class="in">- Agenda review and expectations</span></span>
+<span id="cb34-615"><a href="#cb34-615" aria-hidden="true" tabindex="-1"></a><span class="in">- Engagement ground rules</span></span>
+<span id="cb34-616"><a href="#cb34-616" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-617"><a href="#cb34-617" aria-hidden="true" tabindex="-1"></a><span class="in">**Core Content Modules** (divide remaining time):</span></span>
+<span id="cb34-618"><a href="#cb34-618" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-619"><a href="#cb34-619" aria-hidden="true" tabindex="-1"></a><span class="in">**Module 1: [Topic]** (**[time allocation]**)</span></span>
+<span id="cb34-620"><a href="#cb34-620" aria-hidden="true" tabindex="-1"></a><span class="in">- Learning objective: [specific, measurable goal]</span></span>
+<span id="cb34-621"><a href="#cb34-621" aria-hidden="true" tabindex="-1"></a><span class="in">- Delivery method: [lecture, demo, hands-on, discussion]</span></span>
+<span id="cb34-622"><a href="#cb34-622" aria-hidden="true" tabindex="-1"></a><span class="in">- Activity: [specific interactive element]</span></span>
+<span id="cb34-623"><a href="#cb34-623" aria-hidden="true" tabindex="-1"></a><span class="in">- Materials needed: [list]</span></span>
+<span id="cb34-624"><a href="#cb34-624" aria-hidden="true" tabindex="-1"></a><span class="in">- Key takeaways: [3-5 bullet points]</span></span>
+<span id="cb34-625"><a href="#cb34-625" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-626"><a href="#cb34-626" aria-hidden="true" tabindex="-1"></a><span class="in">**Module 2: [Topic]** (**[time allocation]**)</span></span>
+<span id="cb34-627"><a href="#cb34-627" aria-hidden="true" tabindex="-1"></a><span class="in">[repeat structure]</span></span>
+<span id="cb34-628"><a href="#cb34-628" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-629"><a href="#cb34-629" aria-hidden="true" tabindex="-1"></a><span class="in">**Module 3: [Topic]** (**[time allocation]**)</span></span>
+<span id="cb34-630"><a href="#cb34-630" aria-hidden="true" tabindex="-1"></a><span class="in">[repeat structure]</span></span>
+<span id="cb34-631"><a href="#cb34-631" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-632"><a href="#cb34-632" aria-hidden="true" tabindex="-1"></a><span class="in">**Integration and Practice** (**[time allocation]**)</span></span>
+<span id="cb34-633"><a href="#cb34-633" aria-hidden="true" tabindex="-1"></a><span class="in">- Hands-on exercise applying all concepts</span></span>
+<span id="cb34-634"><a href="#cb34-634" aria-hidden="true" tabindex="-1"></a><span class="in">- Small group work with rotation</span></span>
+<span id="cb34-635"><a href="#cb34-635" aria-hidden="true" tabindex="-1"></a><span class="in">- Peer feedback and sharing</span></span>
+<span id="cb34-636"><a href="#cb34-636" aria-hidden="true" tabindex="-1"></a><span class="in">- Q&amp;A and troubleshooting</span></span>
+<span id="cb34-637"><a href="#cb34-637" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-638"><a href="#cb34-638" aria-hidden="true" tabindex="-1"></a><span class="in">**Wrap-up and Next Steps** (15 minutes):</span></span>
+<span id="cb34-639"><a href="#cb34-639" aria-hidden="true" tabindex="-1"></a><span class="in">- Key insights summary</span></span>
+<span id="cb34-640"><a href="#cb34-640" aria-hidden="true" tabindex="-1"></a><span class="in">- Action planning exercise</span></span>
+<span id="cb34-641"><a href="#cb34-641" aria-hidden="true" tabindex="-1"></a><span class="in">- Resource sharing</span></span>
+<span id="cb34-642"><a href="#cb34-642" aria-hidden="true" tabindex="-1"></a><span class="in">- Follow-up commitments</span></span>
+<span id="cb34-643"><a href="#cb34-643" aria-hidden="true" tabindex="-1"></a><span class="in">- Evaluation and feedback</span></span>
+<span id="cb34-644"><a href="#cb34-644" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-645"><a href="#cb34-645" aria-hidden="true" tabindex="-1"></a><span class="in">**Post-Workshop**:</span></span>
+<span id="cb34-646"><a href="#cb34-646" aria-hidden="true" tabindex="-1"></a><span class="in">- Follow-up email with resources</span></span>
+<span id="cb34-647"><a href="#cb34-647" aria-hidden="true" tabindex="-1"></a><span class="in">- Action item check-in (1 week)</span></span>
+<span id="cb34-648"><a href="#cb34-648" aria-hidden="true" tabindex="-1"></a><span class="in">- Success story collection</span></span>
+<span id="cb34-649"><a href="#cb34-649" aria-hidden="true" tabindex="-1"></a><span class="in">- Continuous learning opportunities</span></span>
+<span id="cb34-650"><a href="#cb34-650" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-651"><a href="#cb34-651" aria-hidden="true" tabindex="-1"></a><span class="in">**Facilitator Notes**:</span></span>
+<span id="cb34-652"><a href="#cb34-652" aria-hidden="true" tabindex="-1"></a><span class="in">- Timing reminders and cues</span></span>
+<span id="cb34-653"><a href="#cb34-653" aria-hidden="true" tabindex="-1"></a><span class="in">- Common questions and responses</span></span>
+<span id="cb34-654"><a href="#cb34-654" aria-hidden="true" tabindex="-1"></a><span class="in">- Technical troubleshooting tips</span></span>
+<span id="cb34-655"><a href="#cb34-655" aria-hidden="true" tabindex="-1"></a><span class="in">- Energy management strategies</span></span>
+<span id="cb34-656"><a href="#cb34-656" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-657"><a href="#cb34-657" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-658"><a href="#cb34-658" aria-hidden="true" tabindex="-1"></a><span class="fu">### Skills Assessment Framework</span></span>
+<span id="cb34-659"><a href="#cb34-659" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-660"><a href="#cb34-660" aria-hidden="true" tabindex="-1"></a><span class="in">Create assessment tools for **[skill/competency]** in **[context]**:</span></span>
+<span id="cb34-661"><a href="#cb34-661" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-662"><a href="#cb34-662" aria-hidden="true" tabindex="-1"></a><span class="in">**Pre-Training Assessment**:</span></span>
+<span id="cb34-663"><a href="#cb34-663" aria-hidden="true" tabindex="-1"></a><span class="in">1. **Knowledge Check** (10 questions):</span></span>
+<span id="cb34-664"><a href="#cb34-664" aria-hidden="true" tabindex="-1"></a><span class="in">   - Foundational concepts (4 questions)</span></span>
+<span id="cb34-665"><a href="#cb34-665" aria-hidden="true" tabindex="-1"></a><span class="in">   - Applied scenarios (3 questions)</span></span>
+<span id="cb34-666"><a href="#cb34-666" aria-hidden="true" tabindex="-1"></a><span class="in">   - Best practices awareness (3 questions)</span></span>
+<span id="cb34-667"><a href="#cb34-667" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-668"><a href="#cb34-668" aria-hidden="true" tabindex="-1"></a><span class="in">2. **Self-Assessment Scale** (1-5 rating):</span></span>
+<span id="cb34-669"><a href="#cb34-669" aria-hidden="true" tabindex="-1"></a><span class="in">   - Current confidence level</span></span>
+<span id="cb34-670"><a href="#cb34-670" aria-hidden="true" tabindex="-1"></a><span class="in">   - Experience with similar tasks</span></span>
+<span id="cb34-671"><a href="#cb34-671" aria-hidden="true" tabindex="-1"></a><span class="in">   - Perceived skill gaps</span></span>
+<span id="cb34-672"><a href="#cb34-672" aria-hidden="true" tabindex="-1"></a><span class="in">   - Learning preferences</span></span>
+<span id="cb34-673"><a href="#cb34-673" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-674"><a href="#cb34-674" aria-hidden="true" tabindex="-1"></a><span class="in">3. **Practical Demonstration**:</span></span>
+<span id="cb34-675"><a href="#cb34-675" aria-hidden="true" tabindex="-1"></a><span class="in">   - Brief task simulation</span></span>
+<span id="cb34-676"><a href="#cb34-676" aria-hidden="true" tabindex="-1"></a><span class="in">   - Observable behaviors checklist</span></span>
+<span id="cb34-677"><a href="#cb34-677" aria-hidden="true" tabindex="-1"></a><span class="in">   - Time to completion tracking</span></span>
+<span id="cb34-678"><a href="#cb34-678" aria-hidden="true" tabindex="-1"></a><span class="in">   - Quality indicators assessment</span></span>
+<span id="cb34-679"><a href="#cb34-679" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-680"><a href="#cb34-680" aria-hidden="true" tabindex="-1"></a><span class="in">**Progress Monitoring** (during training):</span></span>
+<span id="cb34-681"><a href="#cb34-681" aria-hidden="true" tabindex="-1"></a><span class="in">- Checkpoint quizzes after each module</span></span>
+<span id="cb34-682"><a href="#cb34-682" aria-hidden="true" tabindex="-1"></a><span class="in">- Peer evaluation exercises</span></span>
+<span id="cb34-683"><a href="#cb34-683" aria-hidden="true" tabindex="-1"></a><span class="in">- Practical application tasks</span></span>
+<span id="cb34-684"><a href="#cb34-684" aria-hidden="true" tabindex="-1"></a><span class="in">- Self-reflection prompts</span></span>
+<span id="cb34-685"><a href="#cb34-685" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-686"><a href="#cb34-686" aria-hidden="true" tabindex="-1"></a><span class="in">**Post-Training Evaluation**:</span></span>
+<span id="cb34-687"><a href="#cb34-687" aria-hidden="true" tabindex="-1"></a><span class="in">1. **Immediate Assessment**:</span></span>
+<span id="cb34-688"><a href="#cb34-688" aria-hidden="true" tabindex="-1"></a><span class="in">   - Knowledge retention test</span></span>
+<span id="cb34-689"><a href="#cb34-689" aria-hidden="true" tabindex="-1"></a><span class="in">   - Skill demonstration</span></span>
+<span id="cb34-690"><a href="#cb34-690" aria-hidden="true" tabindex="-1"></a><span class="in">   - Confidence ratings</span></span>
+<span id="cb34-691"><a href="#cb34-691" aria-hidden="true" tabindex="-1"></a><span class="in">   - Training satisfaction survey</span></span>
+<span id="cb34-692"><a href="#cb34-692" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-693"><a href="#cb34-693" aria-hidden="true" tabindex="-1"></a><span class="in">2. **30-Day Follow-up**:</span></span>
+<span id="cb34-694"><a href="#cb34-694" aria-hidden="true" tabindex="-1"></a><span class="in">   - Real-world application examples</span></span>
+<span id="cb34-695"><a href="#cb34-695" aria-hidden="true" tabindex="-1"></a><span class="in">   - Challenges encountered</span></span>
+<span id="cb34-696"><a href="#cb34-696" aria-hidden="true" tabindex="-1"></a><span class="in">   - Additional support needs</span></span>
+<span id="cb34-697"><a href="#cb34-697" aria-hidden="true" tabindex="-1"></a><span class="in">   - Behavior change evidence</span></span>
+<span id="cb34-698"><a href="#cb34-698" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-699"><a href="#cb34-699" aria-hidden="true" tabindex="-1"></a><span class="in">3. **90-Day Impact Assessment**:</span></span>
+<span id="cb34-700"><a href="#cb34-700" aria-hidden="true" tabindex="-1"></a><span class="in">   - Performance metrics improvement</span></span>
+<span id="cb34-701"><a href="#cb34-701" aria-hidden="true" tabindex="-1"></a><span class="in">   - Peer and supervisor feedback</span></span>
+<span id="cb34-702"><a href="#cb34-702" aria-hidden="true" tabindex="-1"></a><span class="in">   - Continued learning activities</span></span>
+<span id="cb34-703"><a href="#cb34-703" aria-hidden="true" tabindex="-1"></a><span class="in">   - ROI indicators</span></span>
+<span id="cb34-704"><a href="#cb34-704" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-705"><a href="#cb34-705" aria-hidden="true" tabindex="-1"></a><span class="in">**Assessment Criteria**:</span></span>
+<span id="cb34-706"><a href="#cb34-706" aria-hidden="true" tabindex="-1"></a><span class="in">- **Novice**: Basic awareness, needs significant support</span></span>
+<span id="cb34-707"><a href="#cb34-707" aria-hidden="true" tabindex="-1"></a><span class="in">- **Developing**: Some capability, needs occasional guidance</span></span>
+<span id="cb34-708"><a href="#cb34-708" aria-hidden="true" tabindex="-1"></a><span class="in">- **Proficient**: Consistent performance, works independently</span></span>
+<span id="cb34-709"><a href="#cb34-709" aria-hidden="true" tabindex="-1"></a><span class="in">- **Advanced**: High quality results, can mentor others</span></span>
+<span id="cb34-710"><a href="#cb34-710" aria-hidden="true" tabindex="-1"></a><span class="in">- **Expert**: Innovates and improves processes, thought leader</span></span>
+<span id="cb34-711"><a href="#cb34-711" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-712"><a href="#cb34-712" aria-hidden="true" tabindex="-1"></a><span class="in">Create specific rubrics for each competency level with observable indicators.</span></span>
+<span id="cb34-713"><a href="#cb34-713" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-714"><a href="#cb34-714" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-715"><a href="#cb34-715" aria-hidden="true" tabindex="-1"></a><span class="fu">## 7.2 Continuous Learning Systems</span></span>
+<span id="cb34-716"><a href="#cb34-716" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-717"><a href="#cb34-717" aria-hidden="true" tabindex="-1"></a><span class="fu">### Professional Development Planning</span></span>
+<span id="cb34-718"><a href="#cb34-718" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-719"><a href="#cb34-719" aria-hidden="true" tabindex="-1"></a><span class="in">Develop a comprehensive professional development plan for **[role/field]**:</span></span>
+<span id="cb34-720"><a href="#cb34-720" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-721"><a href="#cb34-721" aria-hidden="true" tabindex="-1"></a><span class="in">**Current State Assessment**:</span></span>
+<span id="cb34-722"><a href="#cb34-722" aria-hidden="true" tabindex="-1"></a><span class="in">1. **Competency Inventory**:</span></span>
+<span id="cb34-723"><a href="#cb34-723" aria-hidden="true" tabindex="-1"></a><span class="in">   - Core technical skills</span></span>
+<span id="cb34-724"><a href="#cb34-724" aria-hidden="true" tabindex="-1"></a><span class="in">   - Leadership and management abilities</span></span>
+<span id="cb34-725"><a href="#cb34-725" aria-hidden="true" tabindex="-1"></a><span class="in">   - Communication and interpersonal skills</span></span>
+<span id="cb34-726"><a href="#cb34-726" aria-hidden="true" tabindex="-1"></a><span class="in">   - Industry-specific knowledge</span></span>
+<span id="cb34-727"><a href="#cb34-727" aria-hidden="true" tabindex="-1"></a><span class="in">   - Digital and technological proficiency</span></span>
+<span id="cb34-728"><a href="#cb34-728" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-729"><a href="#cb34-729" aria-hidden="true" tabindex="-1"></a><span class="in">2. **Performance Analysis**:</span></span>
+<span id="cb34-730"><a href="#cb34-730" aria-hidden="true" tabindex="-1"></a><span class="in">   - Recent performance review insights</span></span>
+<span id="cb34-731"><a href="#cb34-731" aria-hidden="true" tabindex="-1"></a><span class="in">   - 360-degree feedback summary</span></span>
+<span id="cb34-732"><a href="#cb34-732" aria-hidden="true" tabindex="-1"></a><span class="in">   - Achievement highlights</span></span>
+<span id="cb34-733"><a href="#cb34-733" aria-hidden="true" tabindex="-1"></a><span class="in">   - Areas for improvement</span></span>
+<span id="cb34-734"><a href="#cb34-734" aria-hidden="true" tabindex="-1"></a><span class="in">   - Career advancement barriers</span></span>
+<span id="cb34-735"><a href="#cb34-735" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-736"><a href="#cb34-736" aria-hidden="true" tabindex="-1"></a><span class="in">3. **Market Analysis**:</span></span>
+<span id="cb34-737"><a href="#cb34-737" aria-hidden="true" tabindex="-1"></a><span class="in">   - Industry trends and future skills requirements</span></span>
+<span id="cb34-738"><a href="#cb34-738" aria-hidden="true" tabindex="-1"></a><span class="in">   - Emerging technologies and methodologies</span></span>
+<span id="cb34-739"><a href="#cb34-739" aria-hidden="true" tabindex="-1"></a><span class="in">   - Competitive landscape analysis</span></span>
+<span id="cb34-740"><a href="#cb34-740" aria-hidden="true" tabindex="-1"></a><span class="in">   - Career advancement opportunities</span></span>
+<span id="cb34-741"><a href="#cb34-741" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-742"><a href="#cb34-742" aria-hidden="true" tabindex="-1"></a><span class="in">**Future State Vision**:</span></span>
+<span id="cb34-743"><a href="#cb34-743" aria-hidden="true" tabindex="-1"></a><span class="in">1. **Career Goals** (1, 3, 5 year horizons):</span></span>
+<span id="cb34-744"><a href="#cb34-744" aria-hidden="true" tabindex="-1"></a><span class="in">   - Position targets</span></span>
+<span id="cb34-745"><a href="#cb34-745" aria-hidden="true" tabindex="-1"></a><span class="in">   - Responsibility expansion areas</span></span>
+<span id="cb34-746"><a href="#cb34-746" aria-hidden="true" tabindex="-1"></a><span class="in">   - Expertise development goals</span></span>
+<span id="cb34-747"><a href="#cb34-747" aria-hidden="true" tabindex="-1"></a><span class="in">   - Leadership aspirations</span></span>
+<span id="cb34-748"><a href="#cb34-748" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-749"><a href="#cb34-749" aria-hidden="true" tabindex="-1"></a><span class="in">2. **Required Competencies**:</span></span>
+<span id="cb34-750"><a href="#cb34-750" aria-hidden="true" tabindex="-1"></a><span class="in">   - Technical skills gaps</span></span>
+<span id="cb34-751"><a href="#cb34-751" aria-hidden="true" tabindex="-1"></a><span class="in">   - Leadership development needs</span></span>
+<span id="cb34-752"><a href="#cb34-752" aria-hidden="true" tabindex="-1"></a><span class="in">   - Industry knowledge requirements</span></span>
+<span id="cb34-753"><a href="#cb34-753" aria-hidden="true" tabindex="-1"></a><span class="in">   - Network expansion goals</span></span>
+<span id="cb34-754"><a href="#cb34-754" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-755"><a href="#cb34-755" aria-hidden="true" tabindex="-1"></a><span class="in">**Development Strategy**:</span></span>
+<span id="cb34-756"><a href="#cb34-756" aria-hidden="true" tabindex="-1"></a><span class="in">1. **Formal Learning** (25% of development time):</span></span>
+<span id="cb34-757"><a href="#cb34-757" aria-hidden="true" tabindex="-1"></a><span class="in">   - Degree programs or certifications</span></span>
+<span id="cb34-758"><a href="#cb34-758" aria-hidden="true" tabindex="-1"></a><span class="in">   - Professional conferences and seminars</span></span>
+<span id="cb34-759"><a href="#cb34-759" aria-hidden="true" tabindex="-1"></a><span class="in">   - Online courses and MOOCs</span></span>
+<span id="cb34-760"><a href="#cb34-760" aria-hidden="true" tabindex="-1"></a><span class="in">   - Industry workshops</span></span>
+<span id="cb34-761"><a href="#cb34-761" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-762"><a href="#cb34-762" aria-hidden="true" tabindex="-1"></a><span class="in">2. **Social Learning** (25% of development time):</span></span>
+<span id="cb34-763"><a href="#cb34-763" aria-hidden="true" tabindex="-1"></a><span class="in">   - Mentoring relationships (as mentee and mentor)</span></span>
+<span id="cb34-764"><a href="#cb34-764" aria-hidden="true" tabindex="-1"></a><span class="in">   - Professional associations participation</span></span>
+<span id="cb34-765"><a href="#cb34-765" aria-hidden="true" tabindex="-1"></a><span class="in">   - Peer learning groups</span></span>
+<span id="cb34-766"><a href="#cb34-766" aria-hidden="true" tabindex="-1"></a><span class="in">   - Cross-functional collaboration</span></span>
+<span id="cb34-767"><a href="#cb34-767" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-768"><a href="#cb34-768" aria-hidden="true" tabindex="-1"></a><span class="in">3. **Experiential Learning** (50% of development time):</span></span>
+<span id="cb34-769"><a href="#cb34-769" aria-hidden="true" tabindex="-1"></a><span class="in">   - Stretch assignments and projects</span></span>
+<span id="cb34-770"><a href="#cb34-770" aria-hidden="true" tabindex="-1"></a><span class="in">   - Job rotation opportunities</span></span>
+<span id="cb34-771"><a href="#cb34-771" aria-hidden="true" tabindex="-1"></a><span class="in">   - Volunteer leadership roles</span></span>
+<span id="cb34-772"><a href="#cb34-772" aria-hidden="true" tabindex="-1"></a><span class="in">   - Innovation and improvement initiatives</span></span>
+<span id="cb34-773"><a href="#cb34-773" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-774"><a href="#cb34-774" aria-hidden="true" tabindex="-1"></a><span class="in">**Implementation Plan**:</span></span>
+<span id="cb34-775"><a href="#cb34-775" aria-hidden="true" tabindex="-1"></a><span class="in">- Quarterly development goals</span></span>
+<span id="cb34-776"><a href="#cb34-776" aria-hidden="true" tabindex="-1"></a><span class="in">- Monthly learning activities</span></span>
+<span id="cb34-777"><a href="#cb34-777" aria-hidden="true" tabindex="-1"></a><span class="in">- Weekly practice and application</span></span>
+<span id="cb34-778"><a href="#cb34-778" aria-hidden="true" tabindex="-1"></a><span class="in">- Daily learning habits</span></span>
+<span id="cb34-779"><a href="#cb34-779" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-780"><a href="#cb34-780" aria-hidden="true" tabindex="-1"></a><span class="in">**Progress Tracking**:</span></span>
+<span id="cb34-781"><a href="#cb34-781" aria-hidden="true" tabindex="-1"></a><span class="in">- Skill assessment tools</span></span>
+<span id="cb34-782"><a href="#cb34-782" aria-hidden="true" tabindex="-1"></a><span class="in">- Learning portfolio development</span></span>
+<span id="cb34-783"><a href="#cb34-783" aria-hidden="true" tabindex="-1"></a><span class="in">- Regular check-ins with supervisor/mentor</span></span>
+<span id="cb34-784"><a href="#cb34-784" aria-hidden="true" tabindex="-1"></a><span class="in">- Annual development plan review</span></span>
+<span id="cb34-785"><a href="#cb34-785" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-786"><a href="#cb34-786" aria-hidden="true" tabindex="-1"></a><span class="in">**Resource Requirements**:</span></span>
+<span id="cb34-787"><a href="#cb34-787" aria-hidden="true" tabindex="-1"></a><span class="in">- Time allocation (hours per week)</span></span>
+<span id="cb34-788"><a href="#cb34-788" aria-hidden="true" tabindex="-1"></a><span class="in">- Budget for training and materials</span></span>
+<span id="cb34-789"><a href="#cb34-789" aria-hidden="true" tabindex="-1"></a><span class="in">- Technology and tools needed</span></span>
+<span id="cb34-790"><a href="#cb34-790" aria-hidden="true" tabindex="-1"></a><span class="in">- Support system requirements</span></span>
+<span id="cb34-791"><a href="#cb34-791" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-792"><a href="#cb34-792" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-793"><a href="#cb34-793" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-794"><a href="#cb34-794" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-795"><a href="#cb34-795" aria-hidden="true" tabindex="-1"></a><span class="fu"># 8. Specialized Domain Prompts</span></span>
+<span id="cb34-796"><a href="#cb34-796" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-797"><a href="#cb34-797" aria-hidden="true" tabindex="-1"></a><span class="fu">## 8.1 Multilingual Education (Urdu Focus)</span></span>
+<span id="cb34-798"><a href="#cb34-798" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-799"><a href="#cb34-799" aria-hidden="true" tabindex="-1"></a><span class="fu">### Translation and Localization</span></span>
+<span id="cb34-800"><a href="#cb34-800" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-801"><a href="#cb34-801" aria-hidden="true" tabindex="-1"></a><span class="in">Translate the following educational content from English to Urdu, ensuring:</span></span>
+<span id="cb34-802"><a href="#cb34-802" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-803"><a href="#cb34-803" aria-hidden="true" tabindex="-1"></a><span class="in">1. **Cultural Adaptation**:</span></span>
+<span id="cb34-804"><a href="#cb34-804" aria-hidden="true" tabindex="-1"></a><span class="in">   - Use culturally relevant examples</span></span>
+<span id="cb34-805"><a href="#cb34-805" aria-hidden="true" tabindex="-1"></a><span class="in">   - Adapt metaphors and analogies for Pakistani context</span></span>
+<span id="cb34-806"><a href="#cb34-806" aria-hidden="true" tabindex="-1"></a><span class="in">   - Include local references where appropriate</span></span>
+<span id="cb34-807"><a href="#cb34-807" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-808"><a href="#cb34-808" aria-hidden="true" tabindex="-1"></a><span class="in">2. **Educational Effectiveness**:</span></span>
+<span id="cb34-809"><a href="#cb34-809" aria-hidden="true" tabindex="-1"></a><span class="in">   - Maintain pedagogical structure</span></span>
+<span id="cb34-810"><a href="#cb34-810" aria-hidden="true" tabindex="-1"></a><span class="in">   - Preserve learning objectives</span></span>
+<span id="cb34-811"><a href="#cb34-811" aria-hidden="true" tabindex="-1"></a><span class="in">   - Keep technical accuracy</span></span>
+<span id="cb34-812"><a href="#cb34-812" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-813"><a href="#cb34-813" aria-hidden="true" tabindex="-1"></a><span class="in">3. **Language Quality**:</span></span>
+<span id="cb34-814"><a href="#cb34-814" aria-hidden="true" tabindex="-1"></a><span class="in">   - Use clear, accessible Urdu</span></span>
+<span id="cb34-815"><a href="#cb34-815" aria-hidden="true" tabindex="-1"></a><span class="in">   - Avoid unnecessary English loan words</span></span>
+<span id="cb34-816"><a href="#cb34-816" aria-hidden="true" tabindex="-1"></a><span class="in">   - Ensure grammatical correctness</span></span>
+<span id="cb34-817"><a href="#cb34-817" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-818"><a href="#cb34-818" aria-hidden="true" tabindex="-1"></a><span class="in">4. **Format Preservation**:</span></span>
+<span id="cb34-819"><a href="#cb34-819" aria-hidden="true" tabindex="-1"></a><span class="in">   - Maintain document structure</span></span>
+<span id="cb34-820"><a href="#cb34-820" aria-hidden="true" tabindex="-1"></a><span class="in">   - Preserve formatting elements</span></span>
+<span id="cb34-821"><a href="#cb34-821" aria-hidden="true" tabindex="-1"></a><span class="in">   - Keep interactive elements functional</span></span>
+<span id="cb34-822"><a href="#cb34-822" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-823"><a href="#cb34-823" aria-hidden="true" tabindex="-1"></a><span class="in">Content to translate: **[insert content]**</span></span>
+<span id="cb34-824"><a href="#cb34-824" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-825"><a href="#cb34-825" aria-hidden="true" tabindex="-1"></a><span class="in">Target audience: **[specify - students, teachers, professionals]**</span></span>
+<span id="cb34-826"><a href="#cb34-826" aria-hidden="true" tabindex="-1"></a><span class="in">Education level: **[specify]**</span></span>
+<span id="cb34-827"><a href="#cb34-827" aria-hidden="true" tabindex="-1"></a><span class="in">Regional preference: **[if any specific dialect]**</span></span>
+<span id="cb34-828"><a href="#cb34-828" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-829"><a href="#cb34-829" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-830"><a href="#cb34-830" aria-hidden="true" tabindex="-1"></a><span class="fu">### Urdu AI Training Content Creation</span></span>
+<span id="cb34-831"><a href="#cb34-831" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-832"><a href="#cb34-832" aria-hidden="true" tabindex="-1"></a><span class="in">Create training content in Urdu for **[topic]** following these guidelines:</span></span>
+<span id="cb34-833"><a href="#cb34-833" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-834"><a href="#cb34-834" aria-hidden="true" tabindex="-1"></a><span class="in">**Content Structure**:</span></span>
+<span id="cb34-835"><a href="#cb34-835" aria-hidden="true" tabindex="-1"></a><span class="in">- Clear learning objectives (Urdu)</span></span>
+<span id="cb34-836"><a href="#cb34-836" aria-hidden="true" tabindex="-1"></a><span class="in">- Step-by-step instructions</span></span>
+<span id="cb34-837"><a href="#cb34-837" aria-hidden="true" tabindex="-1"></a><span class="in">- Practical examples using local context</span></span>
+<span id="cb34-838"><a href="#cb34-838" aria-hidden="true" tabindex="-1"></a><span class="in">- Common mistakes and solutions</span></span>
+<span id="cb34-839"><a href="#cb34-839" aria-hidden="true" tabindex="-1"></a><span class="in">- Practice exercises</span></span>
+<span id="cb34-840"><a href="#cb34-840" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-841"><a href="#cb34-841" aria-hidden="true" tabindex="-1"></a><span class="in">**Language Guidelines**:</span></span>
+<span id="cb34-842"><a href="#cb34-842" aria-hidden="true" tabindex="-1"></a><span class="in">- Simple, conversational Urdu</span></span>
+<span id="cb34-843"><a href="#cb34-843" aria-hidden="true" tabindex="-1"></a><span class="in">- Technical terms explained in Urdu with English equivalents</span></span>
+<span id="cb34-844"><a href="#cb34-844" aria-hidden="true" tabindex="-1"></a><span class="in">- Regional expressions that resonate with audience</span></span>
+<span id="cb34-845"><a href="#cb34-845" aria-hidden="true" tabindex="-1"></a><span class="in">- Inclusive language for diverse backgrounds</span></span>
+<span id="cb34-846"><a href="#cb34-846" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-847"><a href="#cb34-847" aria-hidden="true" tabindex="-1"></a><span class="in">**Cultural Considerations**:</span></span>
+<span id="cb34-848"><a href="#cb34-848" aria-hidden="true" tabindex="-1"></a><span class="in">- Pakistani workplace scenarios</span></span>
+<span id="cb34-849"><a href="#cb34-849" aria-hidden="true" tabindex="-1"></a><span class="in">- Local business practices</span></span>
+<span id="cb34-850"><a href="#cb34-850" aria-hidden="true" tabindex="-1"></a><span class="in">- Regional case studies</span></span>
+<span id="cb34-851"><a href="#cb34-851" aria-hidden="true" tabindex="-1"></a><span class="in">- Culturally appropriate examples</span></span>
+<span id="cb34-852"><a href="#cb34-852" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-853"><a href="#cb34-853" aria-hidden="true" tabindex="-1"></a><span class="in">**Delivery Format**:</span></span>
+<span id="cb34-854"><a href="#cb34-854" aria-hidden="true" tabindex="-1"></a><span class="in">- Video script with timing cues</span></span>
+<span id="cb34-855"><a href="#cb34-855" aria-hidden="true" tabindex="-1"></a><span class="in">- Written materials for reference</span></span>
+<span id="cb34-856"><a href="#cb34-856" aria-hidden="true" tabindex="-1"></a><span class="in">- Interactive activities description</span></span>
+<span id="cb34-857"><a href="#cb34-857" aria-hidden="true" tabindex="-1"></a><span class="in">- Assessment questions in Urdu</span></span>
+<span id="cb34-858"><a href="#cb34-858" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-859"><a href="#cb34-859" aria-hidden="true" tabindex="-1"></a><span class="in">Topic: **[specify]**</span></span>
+<span id="cb34-860"><a href="#cb34-860" aria-hidden="true" tabindex="-1"></a><span class="in">Audience: **[describe demographic]**</span></span>
+<span id="cb34-861"><a href="#cb34-861" aria-hidden="true" tabindex="-1"></a><span class="in">Duration: **[specify]**</span></span>
+<span id="cb34-862"><a href="#cb34-862" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-863"><a href="#cb34-863" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-864"><a href="#cb34-864" aria-hidden="true" tabindex="-1"></a><span class="fu">## 8.2 Technical Writing &amp; Documentation</span></span>
+<span id="cb34-865"><a href="#cb34-865" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-866"><a href="#cb34-866" aria-hidden="true" tabindex="-1"></a><span class="fu">### Academic Paper Structure</span></span>
+<span id="cb34-867"><a href="#cb34-867" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-868"><a href="#cb34-868" aria-hidden="true" tabindex="-1"></a><span class="in">Structure and outline an academic paper on **[topic]** following this framework:</span></span>
+<span id="cb34-869"><a href="#cb34-869" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-870"><a href="#cb34-870" aria-hidden="true" tabindex="-1"></a><span class="in">**Title and Abstract**:</span></span>
+<span id="cb34-871"><a href="#cb34-871" aria-hidden="true" tabindex="-1"></a><span class="in">- Compelling title that clearly indicates scope</span></span>
+<span id="cb34-872"><a href="#cb34-872" aria-hidden="true" tabindex="-1"></a><span class="in">- 150-word abstract with: background, methods, key findings, implications</span></span>
+<span id="cb34-873"><a href="#cb34-873" aria-hidden="true" tabindex="-1"></a><span class="in">- 5-7 keywords for indexing</span></span>
+<span id="cb34-874"><a href="#cb34-874" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-875"><a href="#cb34-875" aria-hidden="true" tabindex="-1"></a><span class="in">**Introduction** (15% of paper):</span></span>
+<span id="cb34-876"><a href="#cb34-876" aria-hidden="true" tabindex="-1"></a><span class="in">- Problem statement and significance</span></span>
+<span id="cb34-877"><a href="#cb34-877" aria-hidden="true" tabindex="-1"></a><span class="in">- Literature review and gap identification</span></span>
+<span id="cb34-878"><a href="#cb34-878" aria-hidden="true" tabindex="-1"></a><span class="in">- Research questions and hypotheses</span></span>
+<span id="cb34-879"><a href="#cb34-879" aria-hidden="true" tabindex="-1"></a><span class="in">- Paper organization overview</span></span>
+<span id="cb34-880"><a href="#cb34-880" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-881"><a href="#cb34-881" aria-hidden="true" tabindex="-1"></a><span class="in">**Literature Review** (20% of paper):</span></span>
+<span id="cb34-882"><a href="#cb34-882" aria-hidden="true" tabindex="-1"></a><span class="in">- Theoretical framework establishment</span></span>
+<span id="cb34-883"><a href="#cb34-883" aria-hidden="true" tabindex="-1"></a><span class="in">- Key studies and methodologies review</span></span>
+<span id="cb34-884"><a href="#cb34-884" aria-hidden="true" tabindex="-1"></a><span class="in">- Synthesis of existing knowledge</span></span>
+<span id="cb34-885"><a href="#cb34-885" aria-hidden="true" tabindex="-1"></a><span class="in">- Identification of research gaps</span></span>
+<span id="cb34-886"><a href="#cb34-886" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-887"><a href="#cb34-887" aria-hidden="true" tabindex="-1"></a><span class="in">**Methodology** (15% of paper):</span></span>
+<span id="cb34-888"><a href="#cb34-888" aria-hidden="true" tabindex="-1"></a><span class="in">- Research design justification</span></span>
+<span id="cb34-889"><a href="#cb34-889" aria-hidden="true" tabindex="-1"></a><span class="in">- Data collection procedures</span></span>
+<span id="cb34-890"><a href="#cb34-890" aria-hidden="true" tabindex="-1"></a><span class="in">- Analysis methods and tools</span></span>
+<span id="cb34-891"><a href="#cb34-891" aria-hidden="true" tabindex="-1"></a><span class="in">- Limitations and assumptions</span></span>
+<span id="cb34-892"><a href="#cb34-892" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-893"><a href="#cb34-893" aria-hidden="true" tabindex="-1"></a><span class="in">**Results/Findings** (25% of paper):</span></span>
+<span id="cb34-894"><a href="#cb34-894" aria-hidden="true" tabindex="-1"></a><span class="in">- Data presentation (tables, figures, charts)</span></span>
+<span id="cb34-895"><a href="#cb34-895" aria-hidden="true" tabindex="-1"></a><span class="in">- Statistical analysis results</span></span>
+<span id="cb34-896"><a href="#cb34-896" aria-hidden="true" tabindex="-1"></a><span class="in">- Pattern identification and description</span></span>
+<span id="cb34-897"><a href="#cb34-897" aria-hidden="true" tabindex="-1"></a><span class="in">- Objective reporting without interpretation</span></span>
+<span id="cb34-898"><a href="#cb34-898" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-899"><a href="#cb34-899" aria-hidden="true" tabindex="-1"></a><span class="in">**Discussion** (20% of paper):</span></span>
+<span id="cb34-900"><a href="#cb34-900" aria-hidden="true" tabindex="-1"></a><span class="in">- Results interpretation and analysis</span></span>
+<span id="cb34-901"><a href="#cb34-901" aria-hidden="true" tabindex="-1"></a><span class="in">- Comparison with existing literature</span></span>
+<span id="cb34-902"><a href="#cb34-902" aria-hidden="true" tabindex="-1"></a><span class="in">- Theoretical and practical implications</span></span>
+<span id="cb34-903"><a href="#cb34-903" aria-hidden="true" tabindex="-1"></a><span class="in">- Study limitations acknowledgment</span></span>
+<span id="cb34-904"><a href="#cb34-904" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-905"><a href="#cb34-905" aria-hidden="true" tabindex="-1"></a><span class="in">**Conclusion** (5% of paper):</span></span>
+<span id="cb34-906"><a href="#cb34-906" aria-hidden="true" tabindex="-1"></a><span class="in">- Key findings summary</span></span>
+<span id="cb34-907"><a href="#cb34-907" aria-hidden="true" tabindex="-1"></a><span class="in">- Contributions to field</span></span>
+<span id="cb34-908"><a href="#cb34-908" aria-hidden="true" tabindex="-1"></a><span class="in">- Future research directions</span></span>
+<span id="cb34-909"><a href="#cb34-909" aria-hidden="true" tabindex="-1"></a><span class="in">- Policy or practice recommendations</span></span>
+<span id="cb34-910"><a href="#cb34-910" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-911"><a href="#cb34-911" aria-hidden="true" tabindex="-1"></a><span class="in">**References and Appendices**:</span></span>
+<span id="cb34-912"><a href="#cb34-912" aria-hidden="true" tabindex="-1"></a><span class="in">- Complete citation list (APA format)</span></span>
+<span id="cb34-913"><a href="#cb34-913" aria-hidden="true" tabindex="-1"></a><span class="in">- Supplementary materials</span></span>
+<span id="cb34-914"><a href="#cb34-914" aria-hidden="true" tabindex="-1"></a><span class="in">- Raw data tables (if appropriate)</span></span>
+<span id="cb34-915"><a href="#cb34-915" aria-hidden="true" tabindex="-1"></a><span class="in">- Technical appendices</span></span>
+<span id="cb34-916"><a href="#cb34-916" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-917"><a href="#cb34-917" aria-hidden="true" tabindex="-1"></a><span class="in">Research topic: **[insert]**</span></span>
+<span id="cb34-918"><a href="#cb34-918" aria-hidden="true" tabindex="-1"></a><span class="in">Target journal: **[if known]**</span></span>
+<span id="cb34-919"><a href="#cb34-919" aria-hidden="true" tabindex="-1"></a><span class="in">Word limit: **[specify]**</span></span>
+<span id="cb34-920"><a href="#cb34-920" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb34-921"><a href="#cb34-921" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-922"><a href="#cb34-922" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-923"><a href="#cb34-923" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-924"><a href="#cb34-924" aria-hidden="true" tabindex="-1"></a><span class="fu"># 9. Quality Assurance &amp; Best Practices</span></span>
+<span id="cb34-925"><a href="#cb34-925" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-926"><a href="#cb34-926" aria-hidden="true" tabindex="-1"></a><span class="fu">## 9.1 Prompt Improvement Checklist</span></span>
+<span id="cb34-927"><a href="#cb34-927" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-928"><a href="#cb34-928" aria-hidden="true" tabindex="-1"></a>Before using any prompt, verify:</span>
+<span id="cb34-929"><a href="#cb34-929" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-930"><a href="#cb34-930" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Clarity**: Is the instruction unambiguous?</span>
+<span id="cb34-931"><a href="#cb34-931" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Context**: Is sufficient background provided?</span>
+<span id="cb34-932"><a href="#cb34-932" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Specificity**: Are desired outcomes clearly defined?</span>
+<span id="cb34-933"><a href="#cb34-933" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Format**: Is the expected output format specified?</span>
+<span id="cb34-934"><a href="#cb34-934" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Examples**: Are helpful examples included when needed?</span>
+<span id="cb34-935"><a href="#cb34-935" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Constraints**: Are important limitations mentioned?</span>
+<span id="cb34-936"><a href="#cb34-936" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="va">[ ]</span> **Iteration**: Is there room for refinement?</span>
+<span id="cb34-937"><a href="#cb34-937" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-938"><a href="#cb34-938" aria-hidden="true" tabindex="-1"></a><span class="fu">## 9.2 Common Prompt Enhancement Techniques</span></span>
+<span id="cb34-939"><a href="#cb34-939" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-940"><a href="#cb34-940" aria-hidden="true" tabindex="-1"></a><span class="fu">### For Better Responses:</span></span>
+<span id="cb34-941"><a href="#cb34-941" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Add Role Context**: "You are an expert in <span class="co">[</span><span class="ot">field</span><span class="co">]</span>..."</span>
+<span id="cb34-942"><a href="#cb34-942" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Specify Format**: "Provide your response in bullet points/table/essay format..."</span>
+<span id="cb34-943"><a href="#cb34-943" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Include Examples**: "For example..." or "Similar to..."</span>
+<span id="cb34-944"><a href="#cb34-944" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Set Constraints**: "Keep response under 500 words" or "Focus only on..."</span>
+<span id="cb34-945"><a href="#cb34-945" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Request Reasoning**: "Explain your reasoning" or "Show your work"</span>
+<span id="cb34-946"><a href="#cb34-946" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-947"><a href="#cb34-947" aria-hidden="true" tabindex="-1"></a><span class="fu">### For Complex Tasks:</span></span>
+<span id="cb34-948"><a href="#cb34-948" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Break into Steps**: Use numbered sequences</span>
+<span id="cb34-949"><a href="#cb34-949" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Chain Prompts**: Build on previous responses</span>
+<span id="cb34-950"><a href="#cb34-950" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Specify Iteration**: "First draft this, then refine based on..."</span>
+<span id="cb34-951"><a href="#cb34-951" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Include Review Points**: "After each section, ask for feedback"</span>
+<span id="cb34-952"><a href="#cb34-952" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-953"><a href="#cb34-953" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-954"><a href="#cb34-954" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-955"><a href="#cb34-955" aria-hidden="true" tabindex="-1"></a><span class="fu"># 10. Implementation Guidelines</span></span>
+<span id="cb34-956"><a href="#cb34-956" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-957"><a href="#cb34-957" aria-hidden="true" tabindex="-1"></a><span class="fu">## 10.1 Getting Started</span></span>
+<span id="cb34-958"><a href="#cb34-958" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-959"><a href="#cb34-959" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Choose Your Platform**: ChatGPT, Claude, Bard, or others</span>
+<span id="cb34-960"><a href="#cb34-960" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Start Simple**: Begin with basic prompts before complex ones</span>
+<span id="cb34-961"><a href="#cb34-961" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Save Successful Prompts**: Build your personal library</span>
+<span id="cb34-962"><a href="#cb34-962" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Practice Iteration**: Refine prompts based on outputs</span>
+<span id="cb34-963"><a href="#cb34-963" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Share and Collaborate**: Learn from others' prompt strategies</span>
+<span id="cb34-964"><a href="#cb34-964" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-965"><a href="#cb34-965" aria-hidden="true" tabindex="-1"></a><span class="fu">## 10.2 Advanced Techniques</span></span>
+<span id="cb34-966"><a href="#cb34-966" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-967"><a href="#cb34-967" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Prompt Chaining**: Link multiple prompts for complex workflows</span>
+<span id="cb34-968"><a href="#cb34-968" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Role Specialization**: Create expert personas for different domains</span>
+<span id="cb34-969"><a href="#cb34-969" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Context Management**: Maintain consistency across conversations</span>
+<span id="cb34-970"><a href="#cb34-970" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Output Formatting**: Design templates for consistent results</span>
+<span id="cb34-971"><a href="#cb34-971" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Quality Control**: Develop verification processes</span>
+<span id="cb34-972"><a href="#cb34-972" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-973"><a href="#cb34-973" aria-hidden="true" tabindex="-1"></a><span class="fu">## 10.3 Ethical Considerations</span></span>
+<span id="cb34-974"><a href="#cb34-974" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-975"><a href="#cb34-975" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Attribution**: Credit sources and collaborators appropriately</span>
+<span id="cb34-976"><a href="#cb34-976" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Accuracy**: Verify AI-generated information independently</span>
+<span id="cb34-977"><a href="#cb34-977" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Bias Awareness**: Recognize and mitigate potential biases</span>
+<span id="cb34-978"><a href="#cb34-978" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Privacy**: Protect sensitive information in prompts</span>
+<span id="cb34-979"><a href="#cb34-979" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Academic Integrity**: Follow institutional guidelines for AI use</span>
+<span id="cb34-980"><a href="#cb34-980" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-981"><a href="#cb34-981" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-982"><a href="#cb34-982" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-983"><a href="#cb34-983" aria-hidden="true" tabindex="-1"></a><span class="fu"># Conclusion</span></span>
+<span id="cb34-984"><a href="#cb34-984" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-985"><a href="#cb34-985" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-986"><a href="#cb34-986" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-987"><a href="#cb34-987" aria-hidden="true" tabindex="-1"></a>Remember that effective AI collaboration requires:</span>
+<span id="cb34-988"><a href="#cb34-988" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Clear communication of intent</span>
+<span id="cb34-989"><a href="#cb34-989" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Iterative refinement of requests</span>
+<span id="cb34-990"><a href="#cb34-990" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Critical evaluation of outputs</span>
+<span id="cb34-991"><a href="#cb34-991" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Continuous learning and adaptation</span>
+<span id="cb34-992"><a href="#cb34-992" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-993"><a href="#cb34-993" aria-hidden="true" tabindex="-1"></a>As AI capabilities continue to evolve, these prompts should be adapted and updated to maintain their effectiveness. The goal is not to replace human expertise but to augment and enhance it through intelligent collaboration.</span>
+<span id="cb34-994"><a href="#cb34-994" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-995"><a href="#cb34-995" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-996"><a href="#cb34-996" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-997"><a href="#cb34-997" aria-hidden="true" tabindex="-1"></a><span class="fu"># Appendix: Quick Reference</span></span>
+<span id="cb34-998"><a href="#cb34-998" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-999"><a href="#cb34-999" aria-hidden="true" tabindex="-1"></a><span class="fu">## Most Frequently Used Prompts</span></span>
+<span id="cb34-1000"><a href="#cb34-1000" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-1001"><a href="#cb34-1001" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Academic Research Assistant** (Section 3.1)</span>
+<span id="cb34-1002"><a href="#cb34-1002" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Budget Analysis Framework** (Section 2.1)</span>
+<span id="cb34-1003"><a href="#cb34-1003" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Course Design Template** (Section 4.1)</span>
+<span id="cb34-1004"><a href="#cb34-1004" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Meeting Management Suite** (Section 5.2)</span>
+<span id="cb34-1005"><a href="#cb34-1005" aria-hidden="true" tabindex="-1"></a><span class="ss">5. </span>**Multi-Step Problem Solving** (Section 6.1)</span>
+<span id="cb34-1006"><a href="#cb34-1006" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-1007"><a href="#cb34-1007" aria-hidden="true" tabindex="-1"></a><span class="fu">## Recommended Prompt Combinations</span></span>
+<span id="cb34-1008"><a href="#cb34-1008" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-1009"><a href="#cb34-1009" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Research + Writing: Use Academic Research Assistant → Report Writing Framework</span>
+<span id="cb34-1010"><a href="#cb34-1010" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Teaching: Course Design → Assessment Framework → Feedback Generator</span>
+<span id="cb34-1011"><a href="#cb34-1011" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Policy Analysis: Budget Analysis → Policy Brief Creation → Meeting Management</span>
+<span id="cb34-1012"><a href="#cb34-1012" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-1013"><a href="#cb34-1013" aria-hidden="true" tabindex="-1"></a><span class="fu">## Platform-Specific Tips</span></span>
+<span id="cb34-1014"><a href="#cb34-1014" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-1015"><a href="#cb34-1015" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**ChatGPT**: Best for conversational refinement and creative tasks</span>
+<span id="cb34-1016"><a href="#cb34-1016" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Claude**: Excellent for document analysis and structured outputs</span>
+<span id="cb34-1017"><a href="#cb34-1017" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Bard/Gemini**: Good for real-time information and research</span>
+<span id="cb34-1018"><a href="#cb34-1018" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>**Specialized Tools**: Consider domain-specific AI tools for technical tasks</span>
+<span id="cb34-1019"><a href="#cb34-1019" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-1020"><a href="#cb34-1020" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb34-1021"><a href="#cb34-1021" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-1022"><a href="#cb34-1022" aria-hidden="true" tabindex="-1"></a>*This collection is a living document. Continue adding and refining prompts based on your experience and evolving needs. Share successful adaptations with colleagues to build a collaborative knowledge base.*</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div></div></div></div></div>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Zahid Asghar. Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>Built with <a href="https://quarto.org/">Quarto</a></p>
+<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/Zahedasghar/ai/edit/main/prompts.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/Zahedasghar/ai/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Zahedasghar">
+      <i class="bi bi-github" role="img" aria-label="GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://discord.com/channels/1292187441565794316/1292187441565794319">
+      <i class="bi bi-discord" role="img" aria-label="Discord">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:g.zahid@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

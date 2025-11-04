@@ -6,11 +6,11 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-6c1d4747946d1be0d0588e27238c39f9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.33">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-4c7b890cc350be7067044af900615741.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.25">
 
   <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Zahid Asghar">
-  <meta name="dcterms.date" content="2025-08-16">
+  <meta name="dcterms.date" content="2025-11-04">
   <title>AI for Teachers, Researchers and Students – Thinking in Prompts</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -96,7 +96,7 @@
     code span.vs { color: #e6db74; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-2cd6d67c73f93e1a5422cc22bf05571b.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-952480109e73fc0db6a35a66c48eb28b.css">
   <link rel="stylesheet" href="custom-styles.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -192,7 +192,7 @@
     }
   </style>
 </head>
-<body class="quarto-dark">
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
@@ -211,7 +211,7 @@ Prof.&nbsp;Dr.&nbsp;Zahid Asghar
     </div>
 </div>
 
-  <p class="date">2025-08-16</p>
+  <p class="date">2025-11-04</p>
 </section>
 <section id="the-problem-vs-the-opportunity" class="slide level2 center" data-background="#1a1a2e">
 <h2>The Problem vs The Opportunity</h2>
@@ -284,7 +284,7 @@ Prof.&nbsp;Dr.&nbsp;Zahid Asghar
 </ul>
 <div class="fragment">
 <h3 id="its-a-protocol">It’s a Protocol</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="co"># Traditional approach</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="co"># Traditional approach</span></span>
 <span id="cb1-2"><a></a>prompt <span class="op">=</span> <span class="st">"Write an email"</span></span>
 <span id="cb1-3"><a></a></span>
 <span id="cb1-4"><a></a><span class="co"># Thinking approach</span></span>
@@ -294,7 +294,7 @@ Prof.&nbsp;Dr.&nbsp;Zahid Asghar
 <span id="cb1-8"><a></a>    <span class="st">"constraints"</span>: boundaries,</span>
 <span id="cb1-9"><a></a>    <span class="st">"examples"</span>: references,</span>
 <span id="cb1-10"><a></a>    <span class="st">"iteration"</span>: feedback_loop</span>
-<span id="cb1-11"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-11"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="the-new-power-dynamic" class="slide level2 center" data-background="#34495e">
@@ -430,12 +430,12 @@ You might end up being managed by it”</p>
 <div class="columns">
 <div class="column" style="width:45%;">
 <h3 id="basic-prompt">❌ Basic Prompt</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a></a>"Write a job description </span>
-<span id="cb2-2"><a></a>for an accountant"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a></a>"Write a job description </span>
+<span id="cb2-2"><a></a>for an accountant"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Result</strong>: Generic, forgettable, no differentiation</p>
 </div><div class="column" style="width:55%;">
 <h3 id="first-principles-prompt">✅ First Principles Prompt</h3>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a></a>"Write a job description for an accountant </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource text number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a></a>"Write a job description for an accountant </span>
 <span id="cb3-2"><a></a>joining a fast-moving media company where </span>
 <span id="cb3-3"><a></a>AI is heavily integrated.</span>
 <span id="cb3-4"><a></a></span>
@@ -448,7 +448,7 @@ You might end up being managed by it”</p>
 <span id="cb3-11"><a></a>wanting to grow with a lean, intelligent team</span>
 <span id="cb3-12"><a></a></span>
 <span id="cb3-13"><a></a>Include: 3 unique differentiators reflecting </span>
-<span id="cb3-14"><a></a>our culture of innovation and transparency"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-14"><a></a>our culture of innovation and transparency"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Result</strong>: Magnetic, filtering, aligned</p>
 </div></div>
 </section>
@@ -472,52 +472,52 @@ You might end up being managed by it”</p>
 <section id="the-professional-framework" class="slide level2 scrollable center" data-background="#34495e">
 <h2>The Professional Framework 🏗️</h2>
 <h3 id="t---task">T - Task</h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="fu"># Clear, Specific Instruction</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="fu"># Clear, Specific Instruction</span></span>
 <span id="cb4-2"><a></a>"Analyze customer churn data and identify </span>
-<span id="cb4-3"><a></a>the top 3 predictive factors"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-3"><a></a>the top 3 predictive factors"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 id="c---context">C - Context</h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="fu"># Background Information</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="fu"># Background Information</span></span>
 <span id="cb5-2"><a></a>"B2B SaaS company, $10M ARR, </span>
 <span id="cb5-3"><a></a>500 enterprise clients, </span>
-<span id="cb5-4"><a></a>18-month average contract"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-4"><a></a>18-month average contract"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 id="r---references">R - References</h3>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="fu"># Examples &amp; Style Guides</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="fu"># Examples &amp; Style Guides</span></span>
 <span id="cb6-2"><a></a>"Similar to McKinsey's issue trees, </span>
 <span id="cb6-3"><a></a>use MECE principle, </span>
-<span id="cb6-4"><a></a>reference our brand voice guide"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-4"><a></a>reference our brand voice guide"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section class="slide level2 center">
 
 <h3 id="e---evaluate">E - Evaluate</h3>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="fu"># Success Criteria</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="fu"># Success Criteria</span></span>
 <span id="cb7-2"><a></a>"Accuracy &gt; 85%, </span>
 <span id="cb7-3"><a></a>actionable recommendations, </span>
-<span id="cb7-4"><a></a>C-suite ready presentation"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-4"><a></a>C-suite ready presentation"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 id="i---iterate">I - Iterate</h3>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="fu"># Feedback Loops</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="fu"># Feedback Loops</span></span>
 <span id="cb8-2"><a></a>"First draft for data validation, </span>
 <span id="cb8-3"><a></a>second for strategic alignment, </span>
-<span id="cb8-4"><a></a>final for executive review"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-4"><a></a>final for executive review"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="advanced-techniques-showcase" class="slide level2 center" data-background="#6a82fb">
 <h2>Advanced Techniques Showcase 🎨</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <h3 id="few-shot-prompting">Few-Shot Prompting</h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a>examples <span class="op">=</span> [</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a></a>examples <span class="op">=</span> [</span>
 <span id="cb9-2"><a></a>    {<span class="st">"input"</span>: <span class="st">"Q1 revenue"</span>, </span>
 <span id="cb9-3"><a></a>     <span class="st">"output"</span>: <span class="st">"$2.3M (+15%)"</span>},</span>
 <span id="cb9-4"><a></a>    {<span class="st">"input"</span>: <span class="st">"Customers"</span>,</span>
 <span id="cb9-5"><a></a>     <span class="st">"output"</span>: <span class="st">"1,250 (+8%)"</span>}</span>
 <span id="cb9-6"><a></a>]</span>
-<span id="cb9-7"><a></a>prompt <span class="op">=</span> <span class="ss">f"Pattern: </span><span class="sc">{</span>examples<span class="sc">}</span><span class="ss">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-7"><a></a>prompt <span class="op">=</span> <span class="ss">f"Pattern: </span><span class="sc">{</span>examples<span class="sc">}</span><span class="ss">"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:50%;">
 <h3 id="role-playing">Role-Playing</h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a>prompt <span class="op">=</span> <span class="st">"""</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a>prompt <span class="op">=</span> <span class="st">"""</span></span>
 <span id="cb10-2"><a></a><span class="st">You are a Fortune 500 CFO.</span></span>
 <span id="cb10-3"><a></a><span class="st">What are your top 3 concerns </span></span>
 <span id="cb10-4"><a></a><span class="st">about our financial model?</span></span>
-<span id="cb10-5"><a></a><span class="st">"""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-5"><a></a><span class="st">"""</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 </section>
 <section class="slide level2 center">
@@ -533,12 +533,12 @@ You might end up being managed by it”</p>
 <h2>Meta-Prompting: The Ultimate Leverage 🚀</h2>
 <p>From <strong>solving problems</strong> → to <strong>building problem-solving systems</strong></p>
 <h3 id="example-meta-prompt">Example Meta-Prompt</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a>"I need to create a customer retention strategy.</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a>"I need to create a customer retention strategy.</span>
 <span id="cb11-2"><a></a>What information would you need from me to </span>
 <span id="cb11-3"><a></a>create the most effective plan? </span>
 <span id="cb11-4"><a></a></span>
 <span id="cb11-5"><a></a>Generate the optimal prompt I should use </span>
-<span id="cb11-6"><a></a>to get the best strategic output."</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-6"><a></a>to get the best strategic output."</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h3 id="ai-becomes-your-thinking-partner">AI Becomes Your Thinking Partner</h3>
 <ul>
 <li class="fragment">🤝 Collaborative intelligence</li>
@@ -577,33 +577,33 @@ AI rewards HOW you think.”</p>
 <h2>Building Your Prompt Library 📚</h2>
 <h3 id="start-your-collection-today">Start Your Collection Today</h3>
 <h4 id="strategy-templates">📝 Strategy Templates</h4>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a></a><span class="fu">Strategy Prompt</span><span class="kw">:</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a></a><span class="fu">Strategy Prompt</span><span class="kw">:</span></span>
 <span id="cb12-2"><a></a><span class="at">  </span><span class="fu">context</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">industry</span><span class="kw">,</span><span class="at"> company_size</span><span class="kw">,</span><span class="at"> challenge</span><span class="kw">]</span></span>
 <span id="cb12-3"><a></a><span class="at">  </span><span class="fu">goal</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">specific_outcome</span><span class="kw">]</span></span>
 <span id="cb12-4"><a></a><span class="at">  </span><span class="fu">constraints</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">budget</span><span class="kw">,</span><span class="at"> timeline</span><span class="kw">,</span><span class="at"> resources</span><span class="kw">]</span></span>
-<span id="cb12-5"><a></a><span class="at">  </span><span class="fu">format</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">deliverable_type</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-5"><a></a><span class="at">  </span><span class="fu">format</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">deliverable_type</span><span class="kw">]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h4 id="analysis-tools">🔧 Analysis Tools</h4>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb13-1"><a></a><span class="fu">Analysis Prompt</span><span class="kw">:</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb13-1"><a></a><span class="fu">Analysis Prompt</span><span class="kw">:</span></span>
 <span id="cb13-2"><a></a><span class="at">  </span><span class="fu">data_source</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">type</span><span class="kw">,</span><span class="at"> size</span><span class="kw">,</span><span class="at"> format</span><span class="kw">]</span></span>
 <span id="cb13-3"><a></a><span class="at">  </span><span class="fu">analysis_type</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">descriptive</span><span class="kw">,</span><span class="at"> predictive</span><span class="kw">]</span></span>
 <span id="cb13-4"><a></a><span class="at">  </span><span class="fu">visualization</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">charts</span><span class="kw">,</span><span class="at"> dashboards</span><span class="kw">]</span></span>
-<span id="cb13-5"><a></a><span class="at">  </span><span class="fu">insights_needed</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">top_3_priorities</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-5"><a></a><span class="at">  </span><span class="fu">insights_needed</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">top_3_priorities</span><span class="kw">]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section class="slide level2 center">
 
 <h3 class="scrollable" data-background="#2c3e50" id="section"></h3>
 <h4 id="creative-content">🎨 Creative Content</h4>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb14-1"><a></a><span class="fu">Content Prompt</span><span class="kw">:</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb14-1"><a></a><span class="fu">Content Prompt</span><span class="kw">:</span></span>
 <span id="cb14-2"><a></a><span class="at">  </span><span class="fu">audience</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">demographics</span><span class="kw">,</span><span class="at"> psychographics</span><span class="kw">]</span></span>
 <span id="cb14-3"><a></a><span class="at">  </span><span class="fu">tone</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">professional</span><span class="kw">,</span><span class="at"> casual</span><span class="kw">,</span><span class="at"> technical</span><span class="kw">]</span></span>
 <span id="cb14-4"><a></a><span class="at">  </span><span class="fu">length</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">word_count</span><span class="kw">]</span></span>
-<span id="cb14-5"><a></a><span class="at">  </span><span class="fu">cta</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">desired_action</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb14-5"><a></a><span class="at">  </span><span class="fu">cta</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">desired_action</span><span class="kw">]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h4 id="system-workflows">🚀 System Workflows</h4>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a></a><span class="fu">Workflow Prompt</span><span class="kw">:</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a></a><span class="fu">Workflow Prompt</span><span class="kw">:</span></span>
 <span id="cb15-2"><a></a><span class="at">  </span><span class="fu">process</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">steps</span><span class="kw">]</span></span>
 <span id="cb15-3"><a></a><span class="at">  </span><span class="fu">automation</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">triggers</span><span class="kw">]</span></span>
 <span id="cb15-4"><a></a><span class="at">  </span><span class="fu">validation</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">checkpoints</span><span class="kw">]</span></span>
-<span id="cb15-5"><a></a><span class="at">  </span><span class="fu">optimization</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">metrics</span><span class="kw">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb15-5"><a></a><span class="at">  </span><span class="fu">optimization</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">metrics</span><span class="kw">]</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="the-path-forward" class="slide level2 scrollable center" data-background-color="#11998e">
 <h2>The Path Forward 🛤</h2>
@@ -690,23 +690,23 @@ it’s a thinking discipline”</p>
 <h3 id="lets-build-a-prompt-together">Let’s Build a Prompt Together!</h3>
 <p><strong>Challenge</strong>: Create a prompt for analyzing market trends</p>
 <h4 id="first-principles-approach">First Principles Approach</h4>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a></a><span class="an">Goal:</span><span class="co"> Identify 3 emerging opportunities</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a></a><span class="an">Goal:</span><span class="co"> Identify 3 emerging opportunities</span></span>
 <span id="cb16-2"><a></a><span class="an">Source:</span><span class="co"> Industry reports, competitor data</span></span>
 <span id="cb16-3"><a></a><span class="an">Constraints:</span><span class="co"> $50K budget, 3-month timeline</span></span>
 <span id="cb16-4"><a></a><span class="an">Process:</span><span class="co"> SWOT → Porter's Five → Blue Ocean</span></span>
 <span id="cb16-5"><a></a><span class="an">Validation:</span><span class="co"> ROI projections, risk matrix</span></span>
-<span id="cb16-6"><a></a><span class="an">Iteration:</span><span class="co"> Weekly refinement cycles</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-6"><a></a><span class="an">Iteration:</span><span class="co"> Weekly refinement cycles</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h4 id="chain-of-thought-method">Chain of Thought Method</h4>
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a></a><span class="ss">1. </span>"What are the macro trends in <span class="co">[</span><span class="ot">industry</span><span class="co">]</span>?"</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a></a><span class="ss">1. </span>"What are the macro trends in <span class="co">[</span><span class="ot">industry</span><span class="co">]</span>?"</span>
 <span id="cb17-2"><a></a><span class="ss">2. </span>"Which are underserved by competitors?"</span>
 <span id="cb17-3"><a></a><span class="ss">3. </span>"What's our unique advantage here?"</span>
 <span id="cb17-4"><a></a><span class="ss">4. </span>"Build the go-to-market strategy"</span>
-<span id="cb17-5"><a></a><span class="ss">5. </span>"Create 90-day execution plan"</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb17-5"><a></a><span class="ss">5. </span>"Create 90-day execution plan"</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <h4 id="meta-prompt-technique">Meta-Prompt Technique</h4>
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a></a>"Help me design the perfect prompt for </span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a></a>"Help me design the perfect prompt for </span>
 <span id="cb18-2"><a></a>market analysis. Ask me clarifying </span>
 <span id="cb18-3"><a></a>questions, then generate the optimal </span>
-<span id="cb18-4"><a></a>prompt structure for maximum insight."</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-4"><a></a>prompt structure for maximum insight."</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="thank-you" class="slide level2 center" data-background="#667eea">
 <h2>Thank You! 🙏</h2>
@@ -723,7 +723,7 @@ Quaid-i-Azam University, Islamabad<br>
 </section>
 <section id="appendix-custom-css" class="slide level2 smaller scrollable center">
 <h2>Appendix: Custom CSS</h2>
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb19-1"><a></a><span class="co">/* custom-styles.css */</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb19"><pre class="sourceCode numberSource css number-lines code-with-copy"><code class="sourceCode css"><span id="cb19-1"><a></a><span class="co">/* custom-styles.css */</span></span>
 <span id="cb19-2"><a></a><span class="fu">.reveal</span> h1<span class="op">,</span> <span class="fu">.reveal</span> h2 {</span>
 <span id="cb19-3"><a></a>  <span class="kw">background</span><span class="ch">:</span> <span class="fu">linear-gradient(</span><span class="dv">135</span><span class="dt">deg</span><span class="op">,</span> <span class="cn">#667eea</span> <span class="dv">0</span><span class="dt">%</span><span class="op">,</span> <span class="cn">#764ba2</span> <span class="dv">100</span><span class="dt">%</span><span class="fu">)</span><span class="op">;</span></span>
 <span id="cb19-4"><a></a>  <span class="kw">-webkit-background-clip</span><span class="ch">:</span> <span class="dv">text</span><span class="op">;</span></span>
@@ -826,7 +826,7 @@ Quaid-i-Azam University, Islamabad<br>
 <span id="cb19-101"><a></a>  <span class="fu">.reveal</span> <span class="fu">.slides</span> section {</span>
 <span id="cb19-102"><a></a>    <span class="kw">font-size</span><span class="ch">:</span> <span class="dv">0.8</span><span class="dt">em</span><span class="op">;</span></span>
 <span id="cb19-103"><a></a>  }</span>
-<span id="cb19-104"><a></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb19-104"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
 </section>
@@ -1014,15 +1014,20 @@ Quaid-i-Azam University, Islamabad<br>
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1600,
 
-        height: 700,
+        height: 900,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,
 
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+
+        maxScale: 2,
+
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1096,13 +1101,14 @@ Quaid-i-Azam University, Islamabad<br>
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
@@ -1117,7 +1123,7 @@ Quaid-i-Azam University, Islamabad<br>
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/Zahedasghar\.github\.io\/ai\/");
+            var filterRegex = new RegExp("https:\/\/zahedasghar\.github\.io\/ai");
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
