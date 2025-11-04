@@ -1,5 +1,16 @@
 ---
 title: "Relevant materials for the workshop"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: true
+    css: styles.css
+execute:
+  echo: false
+  warning: false
 ---
 
 ## Datasets

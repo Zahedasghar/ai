@@ -2,7 +2,7 @@
 title: "AI Workshop for Punjab Government Policy Officers"
 subtitle: "Generative AI and Agentic AI for Public Policy Transformation"
 author: "Zahid Asghar"
-date: "2025-08-08"
+date: "2025-11-06"
 date-format: "MMMM DD, YYYY"
 format:
   html:

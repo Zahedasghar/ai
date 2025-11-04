@@ -6,7 +6,7 @@ project:
     - "*.md"
     - "!README.md"
     - "!SECURITY.md"
-    - "!materials.qmd"
+
 
 website:
   title: "AI for Teachers, Researchers and Students"
@@ -52,20 +52,17 @@ website:
       # Workshops Section
       - section: "🎓 Workshops"
         contents:
-          - href: workshop_on_ai.qmd
-            text: Workshop Overview
-          - href: ai_workshop.qmd
-            text: "1. Beginner Workshop"
-          - href: ai_workshop_intermediate.qmd
-            text: "2. Intermediate Workshop"
-          - href: ai_workshop_prompt.qmd
-            text: "3. Prompt Engineering"
+
+          # - href: ai_workshop_intermediate.qmd
+          #   text: " Workshop"
+          # - href: ai_workshop_prompt.qmd
+          #   text: "3. Prompt Engineering"
           - href: AI_workshop_pips.qmd
-            text: "4. PIPS Workshop"
+            text: "PND UNICEF Workshop"
           - href: AI_workshop_pnd.qmd
             text: "5. PND Workshop"
           - href: AI_Seminar_Activity_Handout.qmd
-            text: "Seminar Activities"
+            text: "Group Activities"
 
       # Teaching with AI
       - section: "👨‍🏫 Teaching with AI"
@@ -99,12 +96,12 @@ website:
         contents:
           - href: prompts.qmd
             text: Prompt Engineering Guide
-          - href: data_prompts.qmd
-            text: Data Analysis Prompts
+          # - href: data_prompts.qmd
+          #   text: Data Analysis Prompts
           - href: econometric_prompts_sol.qmd
             text: Econometric Prompts
-          - href: office_prompt.qmd
-            text: Office Productivity
+          # - href: office_prompt.qmd
+          #   text: Office Productivity
           - href: prompt_one_percent.qmd
             text: 1% Better Prompts
 
@@ -124,8 +121,8 @@ website:
           - href: literature.qmd
             text: Literature Reviews
 
-          - href: financial_times.qmd
-            text: Financial Times AI
+          # - href: financial_times.qmd
+          #   text: Financial Times AI
 
       # Special Topics
       # - section: "🌟 Special Topics"
@@ -140,12 +137,12 @@ website:
       #       text: AI Notes
 
       # University Talks
-      - section: "🎤 Presentations"
-        contents:
-          - text: "University Talks"
-          - href: air_univ.qmd
-          - text: "Slide Decks →"
-            href: slides/
+      # - section: "🎤 Presentations"
+      #   contents:
+      #     - text: "University Talks"
+      #     - href: air_univ.qmd
+      #     - text: "Slide Decks →"
+      #       href: slides/
 
 
 
@@ -162,7 +159,7 @@ website:
         href: https://discord.com/channels/1292187441565794316/1292187441565794319
         aria-label: Discord
       - icon: envelope
-        href: mailto:g.zahid@gmail.com
+        href: mailto:zasghar@qua.edu.pk
         aria-label: Email
 
 format:
@@ -197,7 +194,7 @@ format:
     chalkboard: true
     preview-links: auto
     logo: images/LLM.webp
-    footer: "AI for Teachers, Researchers and Students | Zahid Asghar"
+    footer: "AI for Teachers, Researchers and Professionals | Zahid Asghar"
     width: 1600
     height: 900
     margin: 0.1

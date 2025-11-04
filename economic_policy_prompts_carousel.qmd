@@ -3,9 +3,9 @@ title: "Economic Policy Prompts — General vs Structured"
 subtitle: "LinkedIn Carousel / Slide Deck"
 format:
   revealjs:
-    theme: [default,custom.scss]
+    theme: [default]
     slide-number: c/t
-    transition: fade
+
     controls: true
     center: true
     overview: true
@@ -13,7 +13,7 @@ format:
     height: 720
 ---
 
-> Tip: Export to images (Quarto → RevealJS → 'Save as PNGs') for a LinkedIn carousel.
+
 
 ## 1. Fiscal consolidation
 
