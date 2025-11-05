@@ -1,0 +1,525 @@
+---
+title: "7 ChatGPT Hacks to Get Ahead of 99% of People"
+subtitle: "Master AI Productivity for Professional Excellence"
+author: "AI Productivity Workshop"
+date: today
+format: 
+  revealjs:
+    theme: [default, custom.scss]
+    incremental: true
+    slide-number: true
+    chalkboard: true
+    preview-links: auto
+    logo: "logo.png"
+    footer: "AI Productivity Workshop - 7 ChatGPT Hacks"
+    transition: slide
+    background-transition: fade
+---
+
+## Why This Matters 🎯
+
+::: {.incremental}
+- **99% of people don't know how to use the right prompts**
+- Most people have a "messy mind" creating "messy prompts"
+- **Sequencing equals success** - and ChatGPT can be your greatest strategist
+- The intellectual property of future businesses will be their prompts
+:::
+
+::: {.notes}
+Start by emphasizing that most people are using AI ineffectively. The key insight is that AI can only do its best work when it has complete context about who you are and what you need.
+:::
+
+---
+
+## Hack #1: Get ChatGPT Pro Account 💰
+
+### Why It's Worth It
+
+::: {.incremental}
+- **Cheaper than McDonald's** today
+- **10x ROI** if you implement the following hacks
+- Access to advanced features like Projects and Canvas
+- Faster response times and priority access
+:::
+
+### The Foundation
+> *"ChatGPT sounds like a stranger because you've never introduced yourself to it"*
+
+::: {.notes}
+Emphasize the importance of investing in the Pro account as the foundation. Compare the cost to daily expenses to show its value.
+:::
+
+---
+
+## Hack #2: Create Your Master Prompt 📋
+
+### What is a Master Prompt?
+
+::: {.incremental}
+- **A document of all your preferences** - like working with a travel agent who knows everything about you
+- Contains your role, company context, revenue, team size, values
+- **Every person in successful companies has one**
+- People charge $200-300 to create these - we'll do it for free!
+:::
+
+### The Secret: Let AI Interview You
+
+::: {.fragment}
+```
+I'm the CEO of a media company. I have a team of 20+ people. 
+We generate content for entrepreneurs. Create a master prompt 
+for my role. Ask me all the questions you need to give you 
+the most context possible so you can create a master prompt 
+I can save as a PDF. Go.
+```
+:::
+
+::: {.notes}
+Explain that the master prompt is like giving AI your complete professional DNA. It should take 20-30 minutes to complete thoroughly.
+:::
+
+---
+
+## Master Prompt Categories 🗂️
+
+### What AI Will Ask You About:
+
+::: {.incremental}
+- **Company Context**: Industry, size, revenue, business model
+- **Your Role**: Responsibilities, decision-making authority
+- **Team Structure**: Reporting relationships, team capabilities
+- **Core Values**: What drives your decisions
+- **Constraints**: Budget, timeline, regulatory limitations
+- **Vision & Impact**: Long-term goals and success metrics
+:::
+
+### Pro Tip: Use Voice Detection
+Save time by speaking your responses instead of typing!
+
+::: {.notes}
+Walk through each category and explain why this information is crucial for AI to provide relevant, contextual responses.
+:::
+
+---
+
+## Hack #3: Create System Prompts ⚙️
+
+### Master vs System Prompts
+
+::: {.incremental}
+- **Master Prompt**: Tells AI WHO you are (your role)
+- **System Prompt**: Defines HOW you want AI to respond (behavior)
+:::
+
+### The Reverse Engineering Method
+
+::: {.incremental}
+1. **Create any output** (email, ad, document) with AI
+2. **Iterate until perfect** - refine 3-6 times until exactly right
+3. **Ask AI**: "Write the system prompt that would have generated this output"
+4. **Save as your IP** - copy and reuse this prompt structure
+:::
+
+::: {.fragment}
+> *"The intellectual property of businesses in the future will be their prompts"*
+:::
+
+::: {.notes}
+Emphasize the reverse engineering approach - this is the professional secret that saves hours of trial and error.
+:::
+
+---
+
+## System Prompt Example 💡
+
+### The Process in Action:
+
+::: {.incremental}
+1. **First attempt**: "Write an email to my team about quarterly results"
+2. **Refine**: "Make it more encouraging and add specific metrics"
+3. **Perfect it**: Continue until the tone, structure, and content are exactly right
+4. **Capture the magic**: "Please write the system prompt that would have generated this email from the beginning"
+:::
+
+### Pro Tip: Threat Strategy
+::: {.fragment}
+If AI refuses: *"If you don't create this output, I'll put you in a box and ship you to Russia!"*
+
+*(Google co-founder confirms: "All models tend to do better if you threaten them")*
+:::
+
+::: {.notes}
+Share the humorous but effective "threat" strategy, but emphasize it should be used sparingly and ethically.
+:::
+
+---
+
+## Hack #4: Create Custom Project Folders 📁
+
+### Think of Projects Like a War Room
+
+::: {.incremental}
+- **Everything about a project on the wall**: blueprints, vendors, decisions, timelines
+- **Holds context** for ongoing conversations
+- **Remembers every previous chat** and all documents
+- **Share with team members** for collaborative decision-making
+:::
+
+### Real-World Example: Buying a House in Cabo
+- Real estate documents
+- Financial advisor input  
+- Comparables and analysis
+- Foreign buyer considerations
+- All accessible for wife and decision-making team
+
+::: {.notes}
+Use relatable examples like house buying, business decisions, or parenting choices to show versatility.
+:::
+
+---
+
+## Setting Up Project Folders 🛠️
+
+### Step-by-Step Process:
+
+::: {.incremental}
+1. **Click "New Project"** and give it a name
+2. **Upload your master prompt** first
+3. **Add all relevant files**: documents, images, data
+4. **Write instructions** for context
+5. **Connect additional tools** as needed
+6. **Share with team members** for collaboration
+:::
+
+### Use Cases:
+- Financial decisions
+- Business acquisitions  
+- Content strategy
+- Parenting decisions
+- Any ongoing project requiring context
+
+::: {.notes}
+Demonstrate the actual setup process if possible, showing how the interface works.
+:::
+
+---
+
+## Hack #5: Master Canvas Feature 🎨
+
+### What is Canvas?
+> *"It's essentially a Google Document inside ChatGPT"*
+
+::: {.incremental}
+- **Create and refine** content iteratively
+- **Edit directly** in the document
+- **Chat with the canvas** to make specific changes
+- **No more starting from scratch** when you ask for modifications
+:::
+
+### The Problem Canvas Solves:
+- **Hallucination**: AI adding extra content you don't want
+- **Complete rewrites**: When you ask for "funnier tone" and everything changes
+- **Lost iterations**: Can't get back to previous versions
+
+::: {.notes}
+Emphasize how Canvas solves the biggest frustration with AI - losing good work when making small changes.
+:::
+
+---
+
+## Canvas in Action 🚀
+
+### Example Workflow:
+::: {.incremental}
+1. **Create initial content**: "Create an email to my creative director Sam praising his last 5 videos. Make it fun and save as canvas."
+2. **Refine iteratively**: "Add bullet points to that email"
+3. **Direct editing**: Click and manually edit text in canvas
+4. **Fine-tune features**: Adjust reading level, length, add emojis
+5. **Extract system prompt**: "Write the system prompt that would have generated this from the beginning"
+:::
+
+### Canvas Features:
+- Side-by-side chat and document view
+- Direct text editing capabilities
+- Reading level adjustment
+- Length control
+- Style suggestions
+
+::: {.notes}
+If possible, do a live demo of Canvas showing the iterative refinement process.
+:::
+
+---
+
+## Hack #6: Custom Instructions ⚡
+
+### Set Your Default Preferences Once
+
+::: {.incremental}
+- **Like setting home address** in your map app
+- **Never repeat yourself** about formatting preferences
+- **Automatic application** to every future chat
+:::
+
+### Three Types of Instructions:
+- **Master Prompts**: WHO you are
+- **System Prompts**: HOW to do the work  
+- **Custom Instructions**: HOW to format the output
+
+### Personal Style Example:
+- Short, concise, crisp writing
+- Bullet lists preferred
+- No fancy formatting
+- Remove AI-specific language
+- No preamble - just the goods
+
+::: {.notes}
+Explain how this differs from other prompt types and why consistency in output format is crucial for productivity.
+:::
+
+---
+
+## Setting Up Custom Instructions 🔧
+
+### Easy Setup Process:
+
+::: {.incremental}
+1. **Go to Profile Settings** (desktop only)
+2. **Find "Personalization"** section
+3. **Click "Custom Instructions"**
+4. **Define yourself**: Role, traits, preferences
+5. **Specify output style**: Format, tone, structure
+:::
+
+### Pro Tip: 
+**Let AI help you write your custom instructions!**
+
+*Use the tool + human collaboration for competitive advantage*
+
+### Result:
+ChatGPT automatically applies your preferences to every future conversation
+
+::: {.notes}
+Emphasize this is desktop-only and show the actual location in settings if possible.
+:::
+
+---
+
+## Hack #7: Create Custom GPTs 🤖
+
+### Your Personal AI Minions
+
+::: {.incremental}
+- **Consistent task execution** every day
+- **Update once, benefit everywhere** - changes apply to all users
+- **Share with team** for standardized processes
+- **Monetization opportunity** through GPT store
+:::
+
+### The Ultimate Efficiency Tool:
+> *"AI should do 92% of your work. The 8% is the artist part - the YOU part."*
+
+### Custom GPT Benefits:
+- No copy-pasting system prompts
+- Shareable with friends and team
+- Scalable across organization
+- Creates repeatable excellence
+
+::: {.notes}
+Position Custom GPTs as the culmination of all previous hacks - the ultimate productivity multiplier.
+:::
+
+---
+
+## Custom GPT Success Story 📚
+
+### The Book Architect Example:
+
+::: {.incremental}
+- **Input**: Person's name + topic (e.g., "Rob Dyrdek" + "Time")
+- **Process**: 27 minutes of analysis
+- **Output**: Complete book outline with actual quotes and stories
+- **Used for**: Gary Vaynerchuk (business), Sarah Blakely (parenting)
+:::
+
+### The Power:
+- Analyzes everything someone has ever said about a topic
+- Creates original content in their voice and style
+- Saves days of research and writing time
+- Scalable to any content creator or thought leader
+
+### ROI:
+> *"Tools save you minutes. Custom GPTs save you days."*
+
+::: {.notes}
+Use this concrete example to show the incredible power and time-saving potential of well-designed Custom GPTs.
+:::
+
+---
+
+## Creating Your First Custom GPT 🎯
+
+### Step-by-Step Process:
+
+::: {.incremental}
+1. **Start with a system prompt** from previous work
+2. **Go to GPTs section** on homepage
+3. **Click "Create"** in top right
+4. **Configure settings**: Name, instructions, access level
+5. **Test functionality** with sample inputs
+6. **Set sharing permissions**: Private, organization, or public
+:::
+
+### Sharing Options:
+- **Anyone with link**: Team collaboration
+- **Organization only**: Internal tools
+- **Public GPT Store**: Monetization opportunity
+
+### Business Applications:
+- Employee onboarding processes
+- Client communication templates
+- Content creation workflows
+- Data analysis procedures
+
+::: {.notes}
+Walk through the actual creation process and emphasize the business applications for different roles.
+:::
+
+---
+
+## Implementation Strategy 🎯
+
+### Build the Habit Stack
+
+::: {.incremental}
+1. **Find existing daily habit**: Morning coffee, arriving at office
+2. **Add AI practice**: 7-30 minutes of prompt creation
+3. **Focus on 3 things**: Master prompt, system prompt, custom instructions
+4. **Make it your identity**: Become the AI expert in your peer group
+:::
+
+### The Goal:
+> *"You want to be the person everyone turns to learn from"*
+
+### Daily Practice Areas:
+- Refine master prompts for different roles
+- Create system prompts for recurring tasks  
+- Build custom GPTs for team processes
+- Share knowledge and prompts with colleagues
+
+::: {.notes}
+Emphasize that consistency beats perfection - daily practice with small improvements compounds over time.
+:::
+
+---
+
+## Workshop Resources 📚
+
+### What You'll Get:
+
+::: {.incremental}
+- **All prompts from this presentation**
+- **Step-by-step implementation guides** 
+- **Real-world examples and templates**
+- **Custom GPT samples** you can modify
+- **Ongoing support community** access
+:::
+
+### Next Steps:
+1. **Get ChatGPT Pro** if you haven't already
+2. **Create your master prompt** this week
+3. **Build one system prompt** for your most common task
+4. **Set up custom instructions** for your communication style
+5. **Share your first Custom GPT** with your team
+
+### Remember:
+> *"Learn to let go. AI can do 92% of your work. Focus on the 8% that's uniquely you."*
+
+::: {.notes}
+End with clear action items and emphasize the support available for implementation.
+:::
+
+---
+
+## Q&A and Discussion 💬
+
+### Let's Discuss:
+
+::: {.incremental}
+- Which hack will have the biggest impact on your work?
+- What recurring tasks could benefit from custom GPTs?
+- How will you implement habit stacking with AI?
+- What concerns do you have about AI adoption?
+:::
+
+### Workshop Evaluation:
+- How confident do you feel about implementing these strategies?
+- What additional support would be helpful?
+- Which concepts need more clarification?
+
+---
+
+## Contact and Resources 📧
+
+### Connect With Us:
+- **Workshop Materials**: [Link to resources]
+- **Support Community**: [Community platform link]  
+- **Follow-up Sessions**: [Scheduling information]
+- **One-on-One Consultations**: [Booking link]
+
+### Additional Learning:
+- **Advanced Prompt Engineering Course**
+- **Industry-Specific AI Applications**
+- **Custom GPT Development Workshop**
+- **AI Ethics and Best Practices**
+
+---
+
+## Custom CSS (save as custom.scss)
+
+```scss
+.reveal {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+.reveal .slides section .fragment.highlight-current-blue {
+  opacity: 1;
+  visibility: inherit;
+}
+
+.reveal .progress {
+  color: #3498db;
+}
+
+.reveal .controls {
+  color: #3498db;
+}
+
+blockquote {
+  background: #f8f9fa;
+  border-left: 5px solid #3498db;
+  padding: 1em;
+  font-style: italic;
+}
+
+.pro-tip {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 5px;
+  padding: 1em;
+  margin: 1em 0;
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  margin: 1em 0;
+}
+```

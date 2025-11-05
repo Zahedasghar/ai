@@ -1,7 +1,7 @@
 ---
 title: "AI for Public Professionals"
 author: "Zahid Asghar"
-date: "2024-01-16"
+date: "2025-11-06"
 format: 
   revealjs:
     logo: "images/qau1.jpg"

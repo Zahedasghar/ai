@@ -1,8 +1,7 @@
 ---
-title: "AI-Driven Office Excellence in the Public Sector"
+title: "Use of Adaptive AI in the Public Sector"
 subtitle: " " 
 author: "Zahid Asghar, School of Economics, QAU, Islamabad"
-
 format: 
   html:
     title-slide:
@@ -11,12 +10,10 @@ format:
       data-background-position: 100% 100%
 ---
 
-
 ### [**Key Learning Objectives**]{.yellow}
 
-
-1. **Understanding Generative AI for Public Sector Use**  
-   Build a foundational understanding of how generative AI functions and its applications in the public policy space—writing, decision-making, summarization, and stakeholder engagement.
+1. **Understanding Adaptive and Generative AI for Public Sector Use**  
+   Build a foundational understanding of how adaptive AI and generative AI function and their applications in the public policy space—writing, decision-making, summarization, and stakeholder engagement.
 
 2. **Boosting Office Productivity with AI**  
    Learn to apply AI tools to streamline routine tasks such as documentation, communication, meeting management, and research.
@@ -30,47 +27,45 @@ format:
 5. **Role-Based Applications and Real-World Case Studies**  
    Tailor exercises and discussions to real job roles (analysts, communication staff, decision-makers) for maximum relevance.
 
-**Workshop Agenda**
+---
 
-* **Introduction to Generative AI for Public Policy**
+## **Workshop Agenda**
 
-  * What is Generative AI vs. predictive AI
+### **Introduction to Adaptive AI & Generative AI for Public Policy**
+  * What is Adaptive AI? How it differs from traditional AI
+  * LLMs, Reasoning models, Agentic AI 
   * Key public-sector use cases
-  * Overview of tools (ChatGPT, Claude, Gemini, Copilot, Notion AI)
+  * Overview of tools (ChatGPT, Claude, Gemini, Copilot)
   * Exercise: Identify tasks in your role for AI integration
 
-* **Smart Prompting & Professional Writing with AI**
-
+### **Smart Prompting & Professional Writing with AI**
   * Crafting policy briefs, memos, summaries
   * Prompting frameworks (CATS, DOGS, SMART)
   * Examples and hands-on brief-writing exercise
 
-* **Routine Office Productivity Tasks with AI**
-
+### **Routine Office Productivity Tasks with AI**
   * Drafting meeting agendas, summaries, follow-ups
   * Email, announcement, and FAQ generation
   * Using AI for data analysis and visualization
+  * Adaptive AI for personalized workflows
 
-* **AI for Research and Policy Analysis**
-
-  * Automating literature reviews and data summarization
+### **AI for Research and Policy Analysis**
+  * Automating policy reviews, summarization and data-based reports
   * Generating pros/cons and policy comparisons
   * Hands-on research-summary and policy-comparison exercises
 
-* **Creativity & Communication: Campaign Planning with AI**
-
+### **Creativity & Communication: Campaign Planning with AI**
   * Developing slogans and outreach messages
   * Social-media content generation
   * Group exercise: draft and discuss campaign messages
 
-* **AI Ethics and Responsible Use in Policy Work**
-
+### **AI Ethics and Responsible Use in Policy Work**
   * Addressing bias, misinformation, hallucinations
   * Ethical frameworks and risk mitigation
   * Case studies and group debate on AI dilemmas
 
-* **AI in Decision-Making & Designing Your AI Workflow**
-
+### **AI in Decision-Making & Designing Your AI Workflow**
   * Stakeholder analysis and engagement strategies
   * Selecting tools and integrating AI into daily routines
+  * Building adaptive AI systems for your department
   * Personal AI-workflow blueprint exercise

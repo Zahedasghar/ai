@@ -59,8 +59,8 @@ website:
           #   text: "3. Prompt Engineering"
           - href: AI_workshop_pips.qmd
             text: "PND UNICEF Workshop"
-          - href: AI_workshop_pnd.qmd
-            text: "5. PND Workshop"
+          # - href: AI_workshop_pnd.qmd
+          #   text: "5. PND Workshop"
           - href: AI_Seminar_Activity_Handout.qmd
             text: "Group Activities"
 
