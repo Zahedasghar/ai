@@ -98,7 +98,7 @@ website:
           - href: prompts.qmd
             text: Prompt Engineering Guide
           - href: ai_prompts_pnd.qmd
-            text: Data Analysis Prompts
+            text: Prompting Guide Using XML
           - href: econometric_prompts_sol.qmd
             text: Econometric Prompts
           # - href: office_prompt.qmd
