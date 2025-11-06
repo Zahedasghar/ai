@@ -11,9 +11,9 @@ format:
     code-fold: true
     theme: cosmo
     css: styles.css
-  pdf:
-    toc: true
-    number-sections: true
+  # pdf:
+  #   toc: true
+  #   number-sections: true
 ---
 
 # Introduction

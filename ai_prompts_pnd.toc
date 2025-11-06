@@ -1,0 +1,113 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}How to Use This Guide}{4}{subsection.1.1}%
+\contentsline {section}{\numberline {2}Part 1: Prompt Engineering Fundamentals}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}The XML Structure Method}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Basic Template}{4}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Comparison: Weak vs.~Strong Prompts}{5}{subsubsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.2}❌ Weak Prompt}{5}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}✅ Strong Prompt}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Part 2: Policy Analysis \& Evaluation}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Punjab Climate Change Policy Evaluation}{6}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Simple Evaluation Framework}{6}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Audience-Specific Policy Summaries}{6}{subsubsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.2}Secretaries/Senior Bureaucrats}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Students (Policy \& Governance)}{7}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Journalists/Media}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Parliamentarians}{7}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Local Government Officials}{7}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Farmers}{7}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Civil Society/NGOs}{7}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Constitutional Amendment Analysis}{7}{subsection.3.9}%
+\contentsline {subsubsection}{\numberline {3.9.1}Comprehensive Amendment Evaluation Prompts}{7}{subsubsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.10}Parliamentary Document Summarization}{8}{subsection.3.10}%
+\contentsline {subsubsection}{\numberline {3.10.1}General Summarization Prompts}{8}{subsubsection.3.10.1}%
+\contentsline {subsubsection}{\numberline {3.10.2}Audience-Specific Summaries}{9}{subsubsection.3.10.2}%
+\contentsline {section}{\numberline {4}Part 3: Economic Research \& Analysis}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Economic Growth \& Development}{9}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}1. Investment \& Savings Impact}{9}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}2. Tax Policy Analysis}{10}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}3. Trade Integration Analysis}{10}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}4. AI \& Labor Market Implications}{11}{subsubsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.2}Monetary \& Fiscal Policy}{11}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Interest Rate \& Inflation Analysis}{11}{subsubsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.3}Research Question Framework}{12}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Part 4: Data Analysis \& Visualization}{12}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Exploratory Data Analysis (EDA)}{12}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}Basic Data Inspection}{12}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Descriptive Statistics}{13}{subsubsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.2}Data Visualization Prompts}{13}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Economic Indicators}{13}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Interactive Visualizations}{14}{subsubsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.3}Statistical Analysis}{14}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Hypothesis Testing}{14}{subsubsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.4}Machine Learning Workflows}{15}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Model Building Framework}{15}{subsubsection.5.4.1}%
+\contentsline {section}{\numberline {6}Part 5: Text \& Document Analysis}{16}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Monetary Policy Statement Analysis}{16}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Exploratory Text Analysis}{16}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Advanced Text Analytics}{17}{subsubsection.6.1.2}%
+\contentsline {section}{\numberline {7}Part 6: Professional Communication}{17}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Government Office Communication}{17}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Official Letters \& Emails}{17}{subsubsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.2}Reminder Letter (C.A.T.S. Method)}{17}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Meeting Request}{18}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Complaint Response (D.O.G.S. Method)}{18}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Policy Announcement}{19}{subsection.7.5}%
+\contentsline {subsubsection}{\numberline {7.5.1}Office Circulars \& Memos}{19}{subsubsection.7.5.1}%
+\contentsline {subsubsection}{\numberline {7.5.2}Report Writing}{20}{subsubsection.7.5.2}%
+\contentsline {subsubsection}{\numberline {7.5.3}Meeting Management}{20}{subsubsection.7.5.3}%
+\contentsline {subsubsection}{\numberline {7.5.4}Citizen Communication}{21}{subsubsection.7.5.4}%
+\contentsline {subsubsection}{\numberline {7.5.5}Documentation \& Filing}{22}{subsubsection.7.5.5}%
+\contentsline {subsubsection}{\numberline {7.5.6}Compliance \& Audit}{22}{subsubsection.7.5.6}%
+\contentsline {section}{\numberline {8}Part 7: Educational Applications}{23}{section.8}%
+\contentsline {subsection}{\numberline {8.1}AI in Economics Education}{23}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}Conceptual Learning}{23}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Learning Materials Development}{23}{subsubsection.8.1.2}%
+\contentsline {subsubsection}{\numberline {8.1.3}Interactive Learning}{24}{subsubsection.8.1.3}%
+\contentsline {subsubsection}{\numberline {8.1.4}Policy Context Learning}{24}{subsubsection.8.1.4}%
+\contentsline {subsection}{\numberline {8.2}Teaching Agent Development}{25}{subsection.8.2}%
+\contentsline {subsubsection}{\numberline {8.2.1}ARIMA Teaching App Creation}{25}{subsubsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.3}Effective AI Prompting for Students}{26}{subsection.8.3}%
+\contentsline {subsubsection}{\numberline {8.3.1}Critical Thinking Development}{26}{subsubsection.8.3.1}%
+\contentsline {section}{\numberline {9}Part 8: Research \& Academic Writing}{26}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Literature Review \& Citation}{26}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Research Planning}{26}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Writing \& Editing}{27}{subsubsection.9.1.2}%
+\contentsline {subsubsection}{\numberline {9.1.3}Referee Reports \& Reviews}{28}{subsubsection.9.1.3}%
+\contentsline {section}{\numberline {10}Part 9: Specialized Analysis Tasks}{28}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Demographic \& Geospatial Analysis}{28}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}R Mapping Tutorial}{28}{subsubsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.2}Time Series Forecasting}{29}{subsection.10.2}%
+\contentsline {subsubsection}{\numberline {10.2.1}Remittances Forecast}{29}{subsubsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.3}Disease Test Metrics Analysis}{31}{subsection.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.1}Comprehensive Statistical Analysis}{31}{subsubsection.10.3.1}%
+\contentsline {section}{\numberline {11}Part 10: Advanced Prompt Techniques}{32}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Chain Prompting for Complex Tasks}{32}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}Research Paper Development}{32}{subsubsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.2}Iterative Refinement}{32}{subsection.11.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}Draft Improvement Cycle}{32}{subsubsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.3}Multi-Modal Analysis}{33}{subsection.11.3}%
+\contentsline {subsubsection}{\numberline {11.3.1}Combined Text-Data Analysis}{33}{subsubsection.11.3.1}%
+\contentsline {section}{\numberline {12}Part 11: Troubleshooting \& Optimization}{34}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Common Prompt Problems \& Solutions}{34}{subsection.12.1}%
+\contentsline {subsubsection}{\numberline {12.1.1}Issue 1: Vague Responses}{34}{subsubsection.12.1.1}%
+\contentsline {subsubsection}{\numberline {12.1.2}Issue 2: Too Much/Too Little Detail}{35}{subsubsection.12.1.2}%
+\contentsline {subsubsection}{\numberline {12.1.3}Issue 3: Inconsistent Quality}{35}{subsubsection.12.1.3}%
+\contentsline {subsection}{\numberline {12.2}Prompt Optimization Checklist}{35}{subsection.12.2}%
+\contentsline {section}{\numberline {13}Part 12: Workshop Exercises}{36}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Exercise 1: Prompt Comparison}{36}{subsection.13.1}%
+\contentsline {subsection}{\numberline {13.2}Exercise 2: Chain Prompting Practice}{36}{subsection.13.2}%
+\contentsline {subsection}{\numberline {13.3}Exercise 3: Audience Adaptation}{37}{subsection.13.3}%
+\contentsline {section}{\numberline {14}Part 13: Quick Reference Guide}{37}{section.14}%
+\contentsline {subsection}{\numberline {14.1}One-Line Prompt Templates}{37}{subsection.14.1}%
+\contentsline {subsubsection}{\numberline {14.1.1}Policy Analysis}{37}{subsubsection.14.1.1}%
+\contentsline {subsubsection}{\numberline {14.1.2}Data Analysis}{37}{subsubsection.14.1.2}%
+\contentsline {subsubsection}{\numberline {14.1.3}Writing}{37}{subsubsection.14.1.3}%
+\contentsline {subsubsection}{\numberline {14.1.4}Research}{37}{subsubsection.14.1.4}%
+\contentsline {subsubsection}{\numberline {14.1.5}Communication}{38}{subsubsection.14.1.5}%
+\contentsline {subsection}{\numberline {14.2}Prompt Enhancement Keywords}{38}{subsection.14.2}%
+\contentsline {section}{\numberline {15}Appendix: Additional Resources}{38}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Recommended Prompt Libraries}{38}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Further Learning}{38}{subsection.15.2}%
+\contentsline {subsection}{\numberline {15.3}Workshop Materials}{39}{subsection.15.3}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

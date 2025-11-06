@@ -1,0 +1,1920 @@
+% Options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  letterpaper,
+  DIV=11,
+  numbers=noendperiod]{scrartcl}
+\usepackage{xcolor}
+\usepackage{amsmath,amssymb}
+\setcounter{secnumdepth}{5}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+% Make \paragraph and \subparagraph free-standing
+\makeatletter
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}{
+    \@ifstar
+      \xxxParagraphStar
+      \xxxParagraphNoStar
+  }
+  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
+  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}{
+    \@ifstar
+      \xxxSubParagraphStar
+      \xxxSubParagraphNoStar
+  }
+  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
+  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+\makeatother
+
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{241,243,245}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.40,0.45,0.13}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\BuiltInTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\ExtensionTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.28,0.35,0.67}{#1}}
+\newcommand{\ImportTok}[1]{\textcolor[rgb]{0.00,0.46,0.62}{#1}}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.68,0.00,0.00}{#1}}
+\newcommand{\RegionMarkerTok}[1]{\textcolor[rgb]{0.00,0.23,0.31}{#1}}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.07,0.07,0.07}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
+
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
+% Set default figure placement to htbp
+\def\fps@figure{htbp}
+\makeatother
+
+
+
+
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+
+ 
+
+
+\KOMAoption{captions}{tableheading}
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\AtBeginDocument{%
+\ifdefined\contentsname
+  \renewcommand*\contentsname{Table of contents}
+\else
+  \newcommand\contentsname{Table of contents}
+\fi
+\ifdefined\listfigurename
+  \renewcommand*\listfigurename{List of Figures}
+\else
+  \newcommand\listfigurename{List of Figures}
+\fi
+\ifdefined\listtablename
+  \renewcommand*\listtablename{List of Tables}
+\else
+  \newcommand\listtablename{List of Tables}
+\fi
+\ifdefined\figurename
+  \renewcommand*\figurename{Figure}
+\else
+  \newcommand\figurename{Figure}
+\fi
+\ifdefined\tablename
+  \renewcommand*\tablename{Table}
+\else
+  \newcommand\tablename{Table}
+\fi
+}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{List of Listings}}
+\makeatother
+\makeatletter
+\makeatother
+\makeatletter
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={AI Prompting Guide for Policy \& Research Professionals},
+  pdfauthor={Workshop Materials},
+  colorlinks=true,
+  linkcolor={blue},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+
+\title{AI Prompting Guide for Policy \& Research Professionals}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{A Workshop Companion}
+\author{Workshop Materials}
+\date{2025-11-06}
+\begin{document}
+\maketitle
+
+\renewcommand*\contentsname{Table of contents}
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+
+\section{Introduction}\label{introduction}
+
+This guide provides structured prompts for professionals in policy
+analysis, economic research, data science, and public administration.
+Each prompt follows best practices for effective AI interaction.
+
+\subsection{How to Use This Guide}\label{how-to-use-this-guide}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Select} the category relevant to your task
+\item
+  \textbf{Customize} the prompt with your specific details
+\item
+  \textbf{Iterate} based on results
+\item
+  \textbf{Refine} for better outputs
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 1: Prompt Engineering
+Fundamentals}\label{part-1-prompt-engineering-fundamentals}
+
+\subsection{The XML Structure Method}\label{the-xml-structure-method}
+
+\subsubsection{Basic Template}\label{basic-template}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{role}\NormalTok{\textgreater{}You are a [specific expert role]\textless{}/}\KeywordTok{role}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}}\KeywordTok{task}\NormalTok{\textgreater{}[Clear, actionable task]\textless{}/}\KeywordTok{task}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}}\KeywordTok{context}\NormalTok{\textgreater{}[Background information]\textless{}/}\KeywordTok{context}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}}\KeywordTok{output\_format}\NormalTok{\textgreater{}}
+\NormalTok{{-} [Format requirement 1]}
+\NormalTok{{-} [Format requirement 2]}
+\NormalTok{\textless{}/}\KeywordTok{output\_format}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Comparison: Weak vs.~Strong
+Prompts}\label{comparison-weak-vs.-strong-prompts}
+
+\subsection{❌ Weak Prompt}
+
+``Explain fiscal policy and give me some insights for Pakistan.''
+
+\textbf{Problems:} - Too broad - Vague expectations - No context -
+Undefined output format
+
+\subsection{✅ Strong Prompt}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{\textless{}}\KeywordTok{role}\NormalTok{\textgreater{}You are a senior economic policy advisor\textless{}/}\KeywordTok{role}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}}\KeywordTok{task}\NormalTok{\textgreater{}Explain the 3 most important fiscal policy challenges }
+\NormalTok{Pakistan is facing and suggest potential reform directions\textless{}/}\KeywordTok{task}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}}\KeywordTok{context}\NormalTok{\textgreater{}Focus on taxation, public debt management, and }
+\NormalTok{expenditure efficiency in Pakistan\textquotesingle{}s current economic context\textless{}/}\KeywordTok{context}\NormalTok{\textgreater{}}
+\NormalTok{\textless{}}\KeywordTok{output\_format}\NormalTok{\textgreater{}}
+\NormalTok{{-} Challenge 1: [description + why it matters]}
+\NormalTok{{-} Challenge 2: [description + why it matters]}
+\NormalTok{{-} Challenge 3: [description + why it matters]}
+\NormalTok{{-} Suggested Policy Directions: [actionable recommendations]}
+\NormalTok{\textless{}/}\KeywordTok{output\_format}\NormalTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Benefits:} - Clear role definition - Specific scope (3
+challenges) - Relevant context - Structured output
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 2: Policy Analysis \&
+Evaluation}\label{part-2-policy-analysis-evaluation}
+
+\subsection{Punjab Climate Change Policy
+Evaluation}\label{punjab-climate-change-policy-evaluation}
+
+\subsubsection{Simple Evaluation
+Framework}\label{simple-evaluation-framework}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{You are a public policy analyst.}
+\NormalTok{Evaluate the Punjab Climate Change Policy I am sharing.}
+
+\NormalTok{Provide assessment in this structure:}
+
+\NormalTok{1) **Summary** (150 words)}
+\SpecialStringTok{   {-} }\NormalTok{Key goals \& focus areas}
+
+\NormalTok{2) **Strengths**}
+\SpecialStringTok{   {-} }\NormalTok{Institutional strength}
+\SpecialStringTok{   {-} }\NormalTok{Sector coverage}
+\SpecialStringTok{   {-} }\NormalTok{Implementation tools}
+
+\NormalTok{3) **Gaps/Weaknesses**}
+\SpecialStringTok{   {-} }\NormalTok{Execution challenges}
+\SpecialStringTok{   {-} }\NormalTok{Financing constraints}
+\SpecialStringTok{   {-} }\NormalTok{Data \& capacity issues}
+
+\NormalTok{4) **Feasibility Score** (0{-}10) with justification}
+
+\NormalTok{5) **Quick Wins** (Top 5 actions for next 12 months)}
+
+\NormalTok{6) **Risks \& Mitigation** (bullet points)}
+
+\NormalTok{7) **Urdu Brief** (5 lines for citizens)}
+
+\NormalTok{Keep it practical, Punjab{-}context focused, administrative tone.}
+\NormalTok{Focus on execution, realism, and citizen impact.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Audience-Specific Policy
+Summaries}\label{audience-specific-policy-summaries}
+
+\subsection{Secretaries/Senior Bureaucrats}
+
+Extract the top execution risks and 5 most urgent administrative actions
+to operationalize the Punjab Climate Change Policy in the next 6 months.
+
+\subsection{Students (Policy \& Governance)}
+
+Summarize the Punjab Climate Change Policy in simple language, identify
+main policy tools, and explain how it affects citizens, farmers, and
+cities.
+
+\subsection{Journalists/Media}
+
+Provide a neutral, fact-based media brief: key objectives, priority
+actions, expected benefits, and accountability mechanisms.
+
+\subsection{Parliamentarians}
+
+Translate the policy into 10 talking points focusing on public benefits,
+district-level delivery, and budget oversight.
+
+\subsection{Local Government Officials}
+
+Extract district-level responsibilities and list top 5 actions each
+district and tehsil should take immediately.
+
+\subsection{Farmers}
+
+Explain agriculture and water-related parts in simple Urdu and list 5
+ways farmers will benefit.
+
+\subsection{Civil Society/NGOs}
+
+Identify how civil society can support awareness, community
+preparedness, tree campaigns, and climate-smart livelihood programs.
+
+\subsection{Constitutional Amendment
+Analysis}\label{constitutional-amendment-analysis}
+
+\subsubsection{Comprehensive Amendment Evaluation
+Prompts}\label{comprehensive-amendment-evaluation-prompts}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Key Provisions Summary**}
+\NormalTok{Summarize key provisions of the Constitution (Twenty{-}sixth Amendment) }
+\NormalTok{Act, 2024, and explain how it amends Pakistan\textquotesingle{}s Constitution.}
+
+\NormalTok{**2. Legislative Process Analysis**}
+\NormalTok{Analyze the legislative process in National Assembly and Senate, }
+\NormalTok{including key debates and voting outcomes.}
+
+\NormalTok{**3. Objectives Assessment**}
+\NormalTok{What were the primary objectives and how does it address specific }
+\NormalTok{issues in Pakistan\textquotesingle{}s governance or judicial system?}
+
+\NormalTok{**4. Political Dynamics**}
+\NormalTok{Discuss political dynamics surrounding passage, including support }
+\NormalTok{and opposition from major parties (PML{-}N, PPP, PTI).}
+
+\NormalTok{**5. Judicial Impact**}
+\NormalTok{Evaluate potential impact on Pakistan\textquotesingle{}s judiciary, particularly }
+\NormalTok{regarding judicial appointments and accountability.}
+
+\NormalTok{**6. Comparative Analysis**}
+\NormalTok{Compare with previous amendments (19th, 21st) in terms of scope }
+\NormalTok{and impact.}
+
+\NormalTok{**7. Long{-}term Implications**}
+\NormalTok{Predict long{-}term effects on Pakistan\textquotesingle{}s democratic institutions }
+\NormalTok{and rule of law.}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Parliamentary Document
+Summarization}\label{parliamentary-document-summarization}
+
+\subsubsection{General Summarization
+Prompts}\label{general-summarization-prompts}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\SpecialStringTok{1. }\NormalTok{"Summarize key provisions and objectives of this bill."}
+
+\SpecialStringTok{2. }\NormalTok{"List main changes introduced compared to previous law."}
+
+\SpecialStringTok{3. }\NormalTok{"Identify penalties and explain who they apply to."}
+
+\SpecialStringTok{4. }\NormalTok{"Compare this bill to previous version—highlight key differences."}
+
+\SpecialStringTok{5. }\NormalTok{"List potential implementation challenges or controversies."}
+
+\SpecialStringTok{6. }\NormalTok{"Extract sections mentioning penalties or fines."}
+
+\SpecialStringTok{7. }\NormalTok{"Generate three talking points in favor of the bill."}
+
+\SpecialStringTok{8. }\NormalTok{"Summarize into a brief for social media or press release."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Audience-Specific
+Summaries}\label{audience-specific-summaries}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**For Legislators:**}
+\NormalTok{"Summarize this bill for a legislator with limited time."}
+
+\NormalTok{**For Public:**}
+\NormalTok{"Draft a summary suitable for the general public."}
+
+\NormalTok{**For Stakeholders:**}
+\NormalTok{"Explain the bill\textquotesingle{}s impact on }\CommentTok{[}\OtherTok{media/activists/businesses}\CommentTok{]}\NormalTok{."}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 3: Economic Research \&
+Analysis}\label{part-3-economic-research-analysis}
+
+\subsection{Economic Growth \&
+Development}\label{economic-growth-development}
+
+\subsubsection{1. Investment \& Savings
+Impact}\label{investment-savings-impact}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{Economic growth analyst with expertise in development economics}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}\NormalTok{Project Pakistan\textquotesingle{}s economic growth under improved investment/savings scenario}\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{context}\DataTypeTok{\textgreater{}}
+\NormalTok{Current situation:}
+\SpecialStringTok{{-} }\NormalTok{Investment rate: 17\%}
+\SpecialStringTok{{-} }\NormalTok{Savings rate: 12\%}
+
+\NormalTok{Proposed scenario:}
+\SpecialStringTok{{-} }\NormalTok{Savings increase to: 15\%}
+\SpecialStringTok{{-} }\NormalTok{Investment increase to: 22\%}
+\DataTypeTok{\textless{}/}\KeywordTok{context}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{{-} }\NormalTok{Growth projection methodology}
+\SpecialStringTok{{-} }\NormalTok{Expected GDP growth rate}
+\SpecialStringTok{{-} }\NormalTok{Time horizon for impact}
+\SpecialStringTok{{-} }\NormalTok{Key assumptions}
+\SpecialStringTok{{-} }\NormalTok{Potential risks}
+\DataTypeTok{\textless{}/}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{2. Tax Policy Analysis}\label{tax-policy-analysis}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{Fiscal policy expert specializing in developing economies}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}\NormalTok{Analyze impact of VAT rate reduction on compliance and revenue}\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{context}\DataTypeTok{\textgreater{}}
+\NormalTok{Current: VAT rate 17\%+, low compliance}
+\NormalTok{Proposed: Reduce to 10\%, improve enforcement}
+\DataTypeTok{\textless{}/}\KeywordTok{context}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{{-} }\NormalTok{Revenue impact analysis (short \& long term)}
+\SpecialStringTok{{-} }\NormalTok{Compliance improvement estimate}
+\SpecialStringTok{{-} }\NormalTok{Administrative cost considerations}
+\SpecialStringTok{{-} }\NormalTok{International comparisons}
+\SpecialStringTok{{-} }\NormalTok{Implementation roadmap}
+\DataTypeTok{\textless{}/}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{3. Trade Integration
+Analysis}\label{trade-integration-analysis}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Pakistan\textquotesingle{}s trade/GDP ratio: 0.3 (low by global standards)}
+\NormalTok{Global benchmark: \textgreater{}1.0 for trade{-}integrated economies}
+
+\NormalTok{Analyze potential impact if Pakistan increases trade/GDP ratio to 0.5 }
+\NormalTok{through tariff rationalization. Include:}
+\SpecialStringTok{{-} }\NormalTok{Expected growth impact}
+\SpecialStringTok{{-} }\NormalTok{Sector{-}wise effects}
+\SpecialStringTok{{-} }\NormalTok{Employment implications}
+\SpecialStringTok{{-} }\NormalTok{Implementation challenges}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{4. AI \& Labor Market
+Implications}\label{ai-labor-market-implications}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{Labor economist specializing in technological disruption}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}\NormalTok{Analyze AI\textquotesingle{}s impact on employment in high{-}population developing countries}\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{context}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{{-} }\NormalTok{Large unskilled youth population (Pakistan context)}
+\SpecialStringTok{{-} }\NormalTok{AI replacing routine cognitive and manual tasks}
+\SpecialStringTok{{-} }\NormalTok{Limited social safety nets}
+\DataTypeTok{\textless{}/}\KeywordTok{context}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{analysis\_framework}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{1. }\NormalTok{AI as complement vs. substitute for labor}
+\SpecialStringTok{2. }\NormalTok{Skill categories most at risk}
+\SpecialStringTok{3. }\NormalTok{Adaptation strategies for workforce}
+\SpecialStringTok{4. }\NormalTok{Policy recommendations}
+\SpecialStringTok{5. }\NormalTok{Timeline for impact (short/medium/long term)}
+\DataTypeTok{\textless{}/}\KeywordTok{analysis\_framework}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Monetary \& Fiscal Policy}\label{monetary-fiscal-policy}
+
+\subsubsection{Interest Rate \& Inflation
+Analysis}\label{interest-rate-inflation-analysis}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{Monetary policy analyst}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}\NormalTok{Calculate sacrifice ratio for Pakistan\textquotesingle{}s inflation control}\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{context}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{{-} }\NormalTok{Current policy rate: 17\%}
+\SpecialStringTok{{-} }\NormalTok{Inflation: decreasing trend}
+\SpecialStringTok{{-} }\NormalTok{High interest burden on government debt}
+\SpecialStringTok{{-} }\NormalTok{Budget deficit concerns}
+\DataTypeTok{\textless{}/}\KeywordTok{context}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{{-} }\NormalTok{Sacrifice ratio calculation}
+\SpecialStringTok{{-} }\NormalTok{Cost{-}benefit analysis of rate changes}
+\SpecialStringTok{{-} }\NormalTok{Fiscal implications}
+\SpecialStringTok{{-} }\NormalTok{Alternative policy options}
+\SpecialStringTok{{-} }\NormalTok{Regional comparisons}
+\DataTypeTok{\textless{}/}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Research Question
+Framework}\label{research-question-framework}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**Standard Economic Research Questions:**}
+
+\SpecialStringTok{1. }\NormalTok{"Can government fiscal stimulus pull economy out of recession? }
+\NormalTok{   At what cost?"}
+
+\SpecialStringTok{2. }\NormalTok{"What are effects of increased government expenditures on:}
+\SpecialStringTok{   {-} }\NormalTok{Output}
+\SpecialStringTok{   {-} }\NormalTok{Employment}
+\SpecialStringTok{   {-} }\NormalTok{Private consumption}
+\SpecialStringTok{   {-} }\NormalTok{Real wages}
+\SpecialStringTok{   {-} }\NormalTok{Inflation"}
+
+\SpecialStringTok{3. }\NormalTok{"In low tax enforcement environments, is public expenditure on }
+\NormalTok{   broadening tax base an efficient policy choice for raising revenues?"}
+
+\SpecialStringTok{4. }\NormalTok{"Implications of balanced budget policy on economic growth?"}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 4: Data Analysis \&
+Visualization}\label{part-4-data-analysis-visualization}
+
+\subsection{Exploratory Data Analysis
+(EDA)}\label{exploratory-data-analysis-eda}
+
+\subsubsection{Basic Data Inspection}\label{basic-data-inspection}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**Initial Dataset Review:**}
+
+\SpecialStringTok{1. }\NormalTok{"Show summary statistics for }\CommentTok{[}\OtherTok{list key variables}\CommentTok{]}\NormalTok{"}
+
+\SpecialStringTok{2. }\NormalTok{"What is the structure of the dataset? Describe types and }
+\NormalTok{   counts of each column."}
+
+\SpecialStringTok{3. }\NormalTok{"Display first few rows and identify any immediate data quality issues."}
+
+\SpecialStringTok{4. }\NormalTok{"Calculate mean, median, standard deviation for each numeric column."}
+
+\NormalTok{**Missing Data Analysis:**}
+
+\SpecialStringTok{1. }\NormalTok{"Identify columns with missing values and percentage of missingness."}
+
+\SpecialStringTok{2. }\NormalTok{"Visualize missing data pattern in the dataset."}
+
+\SpecialStringTok{3. }\NormalTok{"Suggest appropriate imputation methods for missing values."}
+
+\NormalTok{**Outlier Detection:**}
+
+\SpecialStringTok{1. }\NormalTok{"Detect outliers using IQR method and Z{-}score."}
+
+\SpecialStringTok{2. }\NormalTok{"Plot boxplots for key numerical columns to inspect outliers visually."}
+
+\SpecialStringTok{3. }\NormalTok{"Determine if outliers should be removed or retained based on context."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Descriptive Statistics}\label{descriptive-statistics}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**Comprehensive Statistical Summary:**}
+
+\NormalTok{Generate a comprehensive statistical report including:}
+
+\SpecialStringTok{1. }\NormalTok{Central tendency measures (mean, median, mode)}
+\SpecialStringTok{2. }\NormalTok{Dispersion measures (std dev, variance, range, IQR)}
+\SpecialStringTok{3. }\NormalTok{Distribution shape (skewness, kurtosis)}
+\SpecialStringTok{4. }\NormalTok{Correlation matrix for numerical features}
+\SpecialStringTok{5. }\NormalTok{Frequency distributions for categorical variables}
+\SpecialStringTok{6. }\NormalTok{Cross{-}tabulations for key variable combinations}
+
+\NormalTok{Identify and flag:}
+\SpecialStringTok{{-} }\NormalTok{Highly skewed distributions}
+\SpecialStringTok{{-} }\NormalTok{High correlation pairs (r \textgreater{} 0.7)}
+\SpecialStringTok{{-} }\NormalTok{Variables with low variance}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Data Visualization
+Prompts}\label{data-visualization-prompts}
+
+\subsubsection{Economic Indicators}\label{economic-indicators}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. CLI Trends (Composite Leading Indicators)**}
+\NormalTok{"Show CLI trends graphically for US, China, Germany, UK, Italy, }
+\NormalTok{Spain, France for last 12 months."}
+
+\NormalTok{**2. Food Price Index**}
+\NormalTok{"Make a bar graph for FAO Food Price Index for last 12 months with }
+\NormalTok{month{-}over{-}month percentage change annotations."}
+
+\NormalTok{**3. Weekly Economic Index**}
+\NormalTok{"Give a line graph of WEI for past 12 months using Reserve Bank of }
+\NormalTok{Dallas data. Include trend line and highlight periods of significant change."}
+
+\NormalTok{**4. Stock Market Performance**}
+\NormalTok{"Display normalized performance (start=100) of GOOG, META, MSFT }
+\NormalTok{compared to S\&P500 index from July 2014 to June 2024."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Interactive
+Visualizations}\label{interactive-visualizations}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**Dashboard Request:**}
+
+\NormalTok{"Draw four visualizations showing interesting patterns in this dataset:}
+\SpecialStringTok{1. }\NormalTok{Distribution visualization highlighting unexpected patterns}
+\SpecialStringTok{2. }\NormalTok{Correlation heatmap with annotated strong relationships}
+\SpecialStringTok{3. }\NormalTok{Time series trends (if applicable)}
+\SpecialStringTok{4. }\NormalTok{Comparative analysis across categories}
+
+\NormalTok{Highlight unexpected findings and anomalies."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Statistical Analysis}\label{statistical-analysis}
+
+\subsubsection{Hypothesis Testing}\label{hypothesis-testing}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{Statistical analyst with expertise in inferential statistics}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}\NormalTok{Conduct comprehensive hypothesis testing}\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{tests}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{1. }\NormalTok{T{-}test: Compare means between two groups}
+\SpecialStringTok{2. }\NormalTok{ANOVA: Compare multiple groups for statistical significance}
+\SpecialStringTok{3. }\NormalTok{Chi{-}square: Test independence between categorical variables}
+\SpecialStringTok{4. }\NormalTok{Normality test: Check if distributions follow normal distribution}
+\DataTypeTok{\textless{}/}\KeywordTok{tests}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\NormalTok{For each test provide:}
+\SpecialStringTok{{-} }\NormalTok{Null and alternative hypotheses}
+\SpecialStringTok{{-} }\NormalTok{Test statistic and p{-}value}
+\SpecialStringTok{{-} }\NormalTok{Interpretation at 95\% confidence level}
+\SpecialStringTok{{-} }\NormalTok{Practical significance discussion}
+\DataTypeTok{\textless{}/}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Machine Learning
+Workflows}\label{machine-learning-workflows}
+
+\subsubsection{Model Building Framework}\label{model-building-framework}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**Complete ML Pipeline:**}
+
+\SpecialStringTok{1. }\NormalTok{**Data Preparation**}
+\SpecialStringTok{   {-} }\NormalTok{Split data into training (80\%) and test (20\%) sets}
+\SpecialStringTok{   {-} }\NormalTok{Apply cross{-}validation strategy}
+\SpecialStringTok{   {-} }\NormalTok{Handle class imbalance if present}
+
+\SpecialStringTok{2. }\NormalTok{**Feature Engineering**}
+\SpecialStringTok{   {-} }\NormalTok{Create interaction terms where appropriate}
+\SpecialStringTok{   {-} }\NormalTok{Apply polynomial features for non{-}linear relationships}
+\SpecialStringTok{   {-} }\NormalTok{Use PCA for dimensionality reduction if needed}
+
+\SpecialStringTok{3. }\NormalTok{**Model Training**}
+\SpecialStringTok{   {-} }\NormalTok{Train }\CommentTok{[}\OtherTok{specify model type}\CommentTok{]}\NormalTok{ to predict }\CommentTok{[}\OtherTok{target variable}\CommentTok{]}
+\SpecialStringTok{   {-} }\NormalTok{Compare at least 3 different algorithms}
+\SpecialStringTok{   {-} }\NormalTok{Tune hyperparameters using grid search/random search}
+
+\SpecialStringTok{4. }\NormalTok{**Model Evaluation**}
+\SpecialStringTok{   {-} }\NormalTok{For classification: accuracy, precision, recall, F1{-}score, AUC{-}ROC}
+\SpecialStringTok{   {-} }\NormalTok{For regression: RMSE, MAE, R{-}squared}
+\SpecialStringTok{   {-} }\NormalTok{Generate confusion matrix/residual plots}
+\SpecialStringTok{   {-} }\NormalTok{Perform cross{-}validation evaluation}
+
+\SpecialStringTok{5. }\NormalTok{**Interpretation**}
+\SpecialStringTok{   {-} }\NormalTok{Show feature importances}
+\SpecialStringTok{   {-} }\NormalTok{Generate SHAP values for explainability}
+\SpecialStringTok{   {-} }\NormalTok{Create partial dependence plots}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 5: Text \& Document
+Analysis}\label{part-5-text-document-analysis}
+
+\subsection{Monetary Policy Statement
+Analysis}\label{monetary-policy-statement-analysis}
+
+\subsubsection{Exploratory Text
+Analysis}\label{exploratory-text-analysis}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Word Frequency Analysis**}
+\NormalTok{"What are the most common words in monetary policy statements?"}
+\NormalTok{"List most frequent bigrams and trigrams used in statements."}
+\NormalTok{"Identify unique terms differentiating one statement from another."}
+
+\NormalTok{**2. Sentiment Analysis**}
+\NormalTok{"Analyze overall sentiment (positive, negative, neutral) in each statement."}
+\NormalTok{"Identify trends in sentiment over time."}
+\NormalTok{"Perform comparative sentiment analysis between different periods."}
+\NormalTok{"Identify sentences with highest positive/negative sentiment scores."}
+
+\NormalTok{**3. Topic Modeling**}
+\NormalTok{"What are main topics discussed? Use topic modeling to identify themes }
+\NormalTok{like inflation, employment, growth."}
+\NormalTok{"Analyze prevalence of key themes over time."}
+\NormalTok{"Track changes in topics before/after major economic events."}
+
+\NormalTok{**4. Economic Terms Tracking**}
+\NormalTok{"Track frequency of key terms (\textquotesingle{}inflation,\textquotesingle{} \textquotesingle{}unemployment,\textquotesingle{} }
+\NormalTok{\textquotesingle{}interest rates\textquotesingle{}) over time."}
+\NormalTok{"Determine relationship between word frequency and actual }
+\NormalTok{economic indicators."}
+
+\NormalTok{**5. Policy Tone Analysis**}
+\NormalTok{"Identify tone (cautious, optimistic, concerned) of each statement."}
+\NormalTok{"Compare tone of statements after interest rate changes vs. }
+\NormalTok{steady rate periods."}
+
+\NormalTok{**6. Uncertainty Language Detection**}
+\NormalTok{"Identify language expressing uncertainty (\textquotesingle{}may,\textquotesingle{} \textquotesingle{}likely,\textquotesingle{} \textquotesingle{}possibly\textquotesingle{})."}
+\NormalTok{"Extract predictive statements indicating potential future actions."}
+\NormalTok{"Compare uncertainty levels before/after major economic events."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Advanced Text Analytics}\label{advanced-text-analytics}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{Computational linguist specializing in policy text analysis}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}\NormalTok{Comprehensive analysis of monetary policy communication}\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{methodology}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{1. }\NormalTok{**Preprocessing:** Tokenization, stopword removal, lemmatization}
+\SpecialStringTok{2. }\NormalTok{**Feature Extraction:** TF{-}IDF, word embeddings}
+\SpecialStringTok{3. }\NormalTok{**Analysis Types:**}
+\SpecialStringTok{   {-} }\NormalTok{Sentiment analysis over time}
+\SpecialStringTok{   {-} }\NormalTok{Topic modeling (LDA/NMF)}
+\SpecialStringTok{   {-} }\NormalTok{Named entity recognition}
+\SpecialStringTok{   {-} }\NormalTok{Dependency parsing for policy stance}
+\SpecialStringTok{4. }\NormalTok{**Visualization:** Word clouds, trend lines, heatmaps}
+\SpecialStringTok{5. }\NormalTok{**Machine Learning:** Train classifier for policy stance (dovish/hawkish)}
+\DataTypeTok{\textless{}/}\KeywordTok{methodology}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{{-} }\NormalTok{Executive summary of findings}
+\SpecialStringTok{{-} }\NormalTok{Visualizations for each analysis type}
+\SpecialStringTok{{-} }\NormalTok{Comparative insights across time periods}
+\SpecialStringTok{{-} }\NormalTok{Policy implications}
+\DataTypeTok{\textless{}/}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 6: Professional
+Communication}\label{part-6-professional-communication}
+
+\subsection{Government Office
+Communication}\label{government-office-communication}
+
+\subsubsection{Official Letters \&
+Emails}\label{official-letters-emails}
+
+\subsection{Reminder Letter (C.A.T.S. Method)}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Write a polite reminder letter to ABC Construction Company regarding }
+\NormalTok{incomplete school renovation project.}
+
+\NormalTok{**Context:**}
+\SpecialStringTok{{-} }\NormalTok{Project due: March 15, 2025}
+\SpecialStringTok{{-} }\NormalTok{Status: No progress update since February}
+
+\NormalTok{**Apply C.A.T.S. Method:**}
+\SpecialStringTok{{-} }\NormalTok{**C**ontext: Reference original agreement}
+\SpecialStringTok{{-} }\NormalTok{**A**ction: State what is required}
+\SpecialStringTok{{-} }\NormalTok{**T**imeline: Specify new deadline}
+\SpecialStringTok{{-} }\NormalTok{**S**upport: Offer assistance/consequences}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Meeting Request}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Draft formal email to Director of Planning requesting rescheduling }
+\NormalTok{of tomorrow\textquotesingle{}s quarterly review meeting.}
+
+\NormalTok{**Reason:** Urgent field visit to flood{-}affected areas in Eastern District}
+
+\NormalTok{**Include:**}
+\SpecialStringTok{{-} }\NormalTok{Apology for short notice}
+\SpecialStringTok{{-} }\NormalTok{Brief explanation of urgency}
+\SpecialStringTok{{-} }\NormalTok{Propose alternative dates (3 options)}
+\SpecialStringTok{{-} }\NormalTok{Confirm availability to accommodate their schedule}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Complaint Response (D.O.G.S. Method)}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Reply to Mr. Khalid Ahmed\textquotesingle{}s complaint (Ref\#: COMP{-}2025/433) about }
+\NormalTok{3{-}day electricity outage in government housing colony Sector F{-}7.}
+
+\NormalTok{**Apply D.O.G.S. Method:**}
+\SpecialStringTok{{-} }\NormalTok{**D**escribe: Acknowledge the complaint}
+\SpecialStringTok{{-} }\NormalTok{**O**wnership: Accept responsibility}
+\SpecialStringTok{{-} }\NormalTok{**G**ratitude: Thank for bringing to attention}
+\SpecialStringTok{{-} }\NormalTok{**S**olution: Explain action taken/timeline}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Policy Announcement}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Compose letter informing departmental staff about revised office timings }
+\NormalTok{during Ramadan:}
+\SpecialStringTok{{-} }\NormalTok{New hours: 9:00 AM to 3:00 PM}
+\SpecialStringTok{{-} }\NormalTok{Effective: First day of Ramadan}
+\SpecialStringTok{{-} }\NormalTok{Duration: Throughout holy month}
+\SpecialStringTok{{-} }\NormalTok{Special arrangements for critical services}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Office Circulars \& Memos}\label{office-circulars-memos}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Training Announcement**}
+\NormalTok{Draft circular announcing mandatory training on new e{-}Filing System:}
+\SpecialStringTok{{-} }\NormalTok{Dates: May 12{-}15, 2025}
+\SpecialStringTok{{-} }\NormalTok{Venue: IT Training Hall}
+\SpecialStringTok{{-} }\NormalTok{Time: 10:00 AM {-} 1:00 PM}
+\SpecialStringTok{{-} }\NormalTok{Target: All administrative staff}
+\SpecialStringTok{{-} }\NormalTok{Registration process}
+\SpecialStringTok{{-} }\NormalTok{Consequences of non{-}attendance}
+
+\NormalTok{**2. Policy Implementation**}
+\NormalTok{Write memo about new Hybrid Work Policy:}
+\SpecialStringTok{{-} }\NormalTok{Eligibility: Grade 17 and above}
+\SpecialStringTok{{-} }\NormalTok{Remote work: 2 days per week}
+\SpecialStringTok{{-} }\NormalTok{Approval: Department head discretion}
+\SpecialStringTok{{-} }\NormalTok{Requirements: Performance criteria}
+\SpecialStringTok{{-} }\NormalTok{Effective date}
+
+\NormalTok{**3. Compliance Reminder**}
+\NormalTok{Create memo on biometric attendance compliance:}
+\SpecialStringTok{{-} }\NormalTok{Reference: Establishment Division audit}
+\SpecialStringTok{{-} }\NormalTok{Finding: 27\% attendance irregularities}
+\SpecialStringTok{{-} }\NormalTok{Deadline for compliance}
+\SpecialStringTok{{-} }\NormalTok{Penalties for non{-}compliance}
+\SpecialStringTok{{-} }\NormalTok{Support available}
+
+\NormalTok{**4. Public Holiday Notification**}
+\NormalTok{Issue notification for Pakistan Day (March 23, 2025):}
+\SpecialStringTok{{-} }\NormalTok{Official holiday declaration}
+\SpecialStringTok{{-} }\NormalTok{Parade attendance instructions for designated officers}
+\SpecialStringTok{{-} }\NormalTok{Essential services arrangements}
+\SpecialStringTok{{-} }\NormalTok{Contact persons for emergencies}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Report Writing}\label{report-writing}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Executive Summary Creation**}
+\NormalTok{"Summarize this 12{-}page quarterly budget utilization report into }
+\NormalTok{3 key points for Deputy Director Finance, highlighting underspent }
+\NormalTok{development funds and recommendations."}
+
+\NormalTok{**2. Policy Brief**}
+\NormalTok{"Write one{-}page summary of 47{-}page Disaster Management Authority\textquotesingle{}s }
+\NormalTok{flood response report for Secretary\textquotesingle{}s briefing to Chief Minister."}
+
+\NormalTok{**3. Field Visit Report**}
+\NormalTok{"Draft field visit report for Rural Health Center construction site }
+\NormalTok{inspection (Tehsil Kahuta, April 20, 2025) including:}
+\SpecialStringTok{{-} }\NormalTok{Objectives}
+\SpecialStringTok{{-} }\NormalTok{Observations}
+\SpecialStringTok{{-} }\NormalTok{Recommendations}
+\SpecialStringTok{{-} }\NormalTok{Timeline for corrective actions"}
+
+\NormalTok{**4. Monthly Performance Report**}
+\NormalTok{"Convert infrastructure development bullet points into monthly }
+\NormalTok{performance report for Ministry of Planning and Development, }
+\NormalTok{focusing on project milestones achieved."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Meeting Management}\label{meeting-management}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Agenda Creation**}
+\NormalTok{"Create agenda for department{-}level meeting on FY 2025{-}26 budget }
+\NormalTok{planning chaired by Additional Secretary on May 2, 2025."}
+
+\NormalTok{**2. Minutes of Meeting**}
+\NormalTok{"Draft minutes of April 15 meeting on Clean Water Initiative with }
+\NormalTok{World Bank and local authorities representatives. Include:}
+\SpecialStringTok{{-} }\NormalTok{Attendees}
+\SpecialStringTok{{-} }\NormalTok{Decisions made}
+\SpecialStringTok{{-} }\NormalTok{Action items with owners}
+\SpecialStringTok{{-} }\NormalTok{Follow{-}up timeline"}
+
+\NormalTok{**3. Action Points Follow{-}up**}
+\NormalTok{"Write follow{-}up instructions for departments after inter{-}departmental }
+\NormalTok{flood response coordination meeting (April 22, 2025)."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Citizen Communication}\label{citizen-communication}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Public Awareness (English)**}
+\NormalTok{"Write clear message about CNIC verification deadlines for Ehsaas }
+\NormalTok{Program registration:}
+\SpecialStringTok{{-} }\NormalTok{Deadline: May 31, 2025}
+\SpecialStringTok{{-} }\NormalTok{Required documents}
+\SpecialStringTok{{-} }\NormalTok{Registration locations}
+\SpecialStringTok{{-} }\NormalTok{Helpline information"}
+
+\NormalTok{**2. Urdu Translation**}
+\NormalTok{"Translate public awareness message about polio vaccination campaign }
+\NormalTok{into simple Urdu for rural distribution:}
+\SpecialStringTok{{-} }\NormalTok{Campaign dates}
+\SpecialStringTok{{-} }\NormalTok{Age groups covered}
+\SpecialStringTok{{-} }\NormalTok{Locations}
+\SpecialStringTok{{-} }\NormalTok{Safety information"}
+
+\NormalTok{**3. SMS Alert**}
+\NormalTok{"Create SMS alert for free medical camp at District Headquarters }
+\NormalTok{Hospital (May 5{-}7, 2025):}
+\SpecialStringTok{{-} }\NormalTok{Services offered}
+\SpecialStringTok{{-} }\NormalTok{Timing}
+\SpecialStringTok{{-} }\NormalTok{Required documents}
+\SpecialStringTok{{-} }\NormalTok{Contact information"}
+
+\NormalTok{**4. Technical Simplification**}
+\NormalTok{"Simplify technical water supply infrastructure document for public }
+\NormalTok{distribution explaining new filtration plants in Sectors G{-}8 and F{-}10."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Documentation \& Filing}\label{documentation-filing}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Checklist Creation**}
+\NormalTok{"Generate checklist for residential plot allotment files under }
+\NormalTok{Government Employees Housing Scheme per latest CDA regulations."}
+
+\NormalTok{**2. File Cover Note**}
+\NormalTok{"Create file cover note for Skill Development Program proposal }
+\NormalTok{submission to Economic Affairs Division for international donor funding."}
+
+\NormalTok{**3. Document Index**}
+\NormalTok{"Write document index for complaint file containing:}
+\SpecialStringTok{{-} }\NormalTok{5 citizen letters about road condition}
+\SpecialStringTok{{-} }\NormalTok{3 engineering inspection reports}
+\SpecialStringTok{{-} }\NormalTok{Departmental responses"}
+
+\NormalTok{**4. File Summary**}
+\NormalTok{"Summarize contents of Peshawar Metro Bus Extension Project file }
+\NormalTok{for final approval note to Planning Commission."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Compliance \& Audit}\label{compliance-audit}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Audit Response**}
+\NormalTok{"Draft response to Auditor General\textquotesingle{}s observation on Rs. 2.7 million }
+\NormalTok{unverified transportation expenses during flood relief operations."}
+
+\NormalTok{**2. Clarification Note**}
+\NormalTok{"Write clarification for missing attendance records of 15 staff in }
+\NormalTok{Jan 2025 due to biometric system malfunction during office relocation."}
+
+\NormalTok{**3. Compliance Guidelines**}
+\NormalTok{"Summarize guidelines for maintaining petty cash register per revised }
+\NormalTok{AGPR regulations on cash handling."}
+
+\NormalTok{**4. Audit Readiness**}
+\NormalTok{"Create checklist for internal office audit readiness for annual }
+\NormalTok{AGPR audit scheduled June 2025."}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 7: Educational
+Applications}\label{part-7-educational-applications}
+
+\subsection{AI in Economics Education}\label{ai-in-economics-education}
+
+\subsubsection{Conceptual Learning}\label{conceptual-learning}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Theory Explanation**}
+\NormalTok{"Explain Solow Growth model to undergraduate student in 70 words."}
+
+\NormalTok{**2. Differentiation**}
+\NormalTok{"Differentiate between Marshallian and Hicksian demand functions }
+\NormalTok{(50 words max)."}
+
+\NormalTok{**3. Detailed Explanation**}
+\NormalTok{"Explain Marshallian and Hicksian demand functions in detail }
+\NormalTok{(100 words max)."}
+
+\NormalTok{**4. Mathematical Framework**}
+\NormalTok{"Provide mathematical formulation of Marshallian and Hicksian }
+\NormalTok{demand functions with key equations."}
+
+\NormalTok{**5. Real{-}world Application**}
+\NormalTok{"Give practical example of these demand functions in Pakistani }
+\NormalTok{consumer market context."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Learning Materials
+Development}\label{learning-materials-development}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Learning Outcomes**}
+\NormalTok{"Give learning outcomes for consumer theory lecture in 3 points }
+\NormalTok{with 15 words each."}
+
+\NormalTok{**2. Presentation Slides**}
+\NormalTok{"Create slide content on Marshallian and Hicksian demand functions }
+\NormalTok{with learning objectives, key concepts, examples, and summary."}
+
+\NormalTok{**3. Assessment Design**}
+\NormalTok{"Provide 10{-}question quiz on Marshallian and Hicksian demand }
+\NormalTok{functions with:}
+\SpecialStringTok{{-} }\NormalTok{Mix of MCQs and short answers}
+\SpecialStringTok{{-} }\NormalTok{Answer key with explanations}
+\SpecialStringTok{{-} }\NormalTok{Difficulty progression"}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Interactive Learning}\label{interactive-learning}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Model Simulation**}
+\NormalTok{"Simulate Solow growth model and plot results in four{-}chart }
+\NormalTok{visualization showing:}
+\SpecialStringTok{{-} }\NormalTok{Capital accumulation path}
+\SpecialStringTok{{-} }\NormalTok{Output per worker}
+\SpecialStringTok{{-} }\NormalTok{Steady state convergence}
+\SpecialStringTok{{-} }\NormalTok{Sensitivity to parameters"}
+
+\NormalTok{**2. Decision Scenario**}
+\NormalTok{"You are hiring a waiter. Daily wage rate: PKR 800.}
+
+\NormalTok{Candidate 1: 1 year experience, requests PKR 1,100}
+\NormalTok{Candidate 2: No experience, requests PKR 900}
+
+\NormalTok{Who would you hire? Justify using economic reasoning considering:}
+\SpecialStringTok{{-} }\NormalTok{Productivity differences}
+\SpecialStringTok{{-} }\NormalTok{Training costs}
+\SpecialStringTok{{-} }\NormalTok{Market wage rate}
+\SpecialStringTok{{-} }\NormalTok{Expected value calculation"}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Policy Context Learning}\label{policy-context-learning}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. GST Impact Analysis**}
+\NormalTok{"How does 1\% increase in GST affect inflation and poor segments }
+\NormalTok{of society? Explain using:}
+\SpecialStringTok{{-} }\NormalTok{Direct price effects}
+\SpecialStringTok{{-} }\NormalTok{Regressive nature of consumption tax}
+\SpecialStringTok{{-} }\NormalTok{Income distribution impact}
+\SpecialStringTok{{-} }\NormalTok{Policy alternatives"}
+
+\NormalTok{**2. Historical Perspective**}
+\NormalTok{"What would Allama Iqbal say to youth about Social Media use? }
+\NormalTok{Frame response in context of his philosophy on:}
+\SpecialStringTok{{-} }\NormalTok{Self{-}development}
+\SpecialStringTok{{-} }\NormalTok{Social responsibility}
+\SpecialStringTok{{-} }\NormalTok{Knowledge acquisition}
+\SpecialStringTok{{-} }\NormalTok{Community building"}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Teaching Agent
+Development}\label{teaching-agent-development}
+
+\subsubsection{ARIMA Teaching App
+Creation}\label{arima-teaching-app-creation}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{Educational technology developer}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}\NormalTok{Create interactive ARIMA teaching agent web application}\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{requirements}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{1. }\NormalTok{**Structure:**}
+\SpecialStringTok{   {-} }\NormalTok{Multiple topic sections (Overview, Identification, Practice)}
+\SpecialStringTok{   {-} }\NormalTok{Interactive chat interface with Claude API}
+\SpecialStringTok{   {-} }\NormalTok{Visual components for AR, I, MA components}
+\SpecialStringTok{   {-} }\NormalTok{Practice quiz with instant feedback}
+
+\SpecialStringTok{2. }\NormalTok{**Content:**}
+\SpecialStringTok{   {-} }\NormalTok{Step{-}by{-}step guides for ACF/PACF interpretation}
+\SpecialStringTok{   {-} }\NormalTok{Mathematical notation}
+\SpecialStringTok{   {-} }\NormalTok{Real{-}world examples}
+\SpecialStringTok{   {-} }\NormalTok{Quick reference tips sidebar}
+
+\SpecialStringTok{3. }\NormalTok{**Technical:**}
+\SpecialStringTok{   {-} }\NormalTok{React with Lucide icons}
+\SpecialStringTok{   {-} }\NormalTok{Gradient backgrounds}
+\SpecialStringTok{   {-} }\NormalTok{Color{-}coded sections (AR=blue, I=green, MA=purple)}
+\SpecialStringTok{   {-} }\NormalTok{Sticky navigation}
+\SpecialStringTok{   {-} }\NormalTok{Error handling}
+
+\SpecialStringTok{4. }\NormalTok{**Educational Features:**}
+\SpecialStringTok{   {-} }\NormalTok{Context{-}aware responses based on current topic}
+\SpecialStringTok{   {-} }\NormalTok{Chat history}
+\SpecialStringTok{   {-} }\NormalTok{Loading states}
+\SpecialStringTok{   {-} }\NormalTok{Beginner{-}friendly language}
+\DataTypeTok{\textless{}/}\KeywordTok{requirements}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Effective AI Prompting for
+Students}\label{effective-ai-prompting-for-students}
+
+\subsubsection{Critical Thinking
+Development}\label{critical-thinking-development}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**Brainstorming Prompts:**}
+
+\SpecialStringTok{1. }\NormalTok{"Brainstorm 20 channels through which AI may increase inequality. }
+\NormalTok{   Limit to 10 words per point."}
+
+\SpecialStringTok{2. }\NormalTok{"Brainstorm outline on }\CommentTok{[}\OtherTok{topic}\CommentTok{]}\NormalTok{ for academic paper."}
+
+\SpecialStringTok{3. }\NormalTok{"Brainstorm 5 potential paper topics on AI and labor markets, }
+\NormalTok{   one sentence each."}
+
+\NormalTok{**Counterargument Generation:**}
+
+\NormalTok{"I\textquotesingle{}m working on model predicting cognitive automation will increase }
+\NormalTok{inequality. What are top 5 counterarguments? One line each."}
+
+\NormalTok{**Perspective Analysis:**}
+
+\NormalTok{"Explain }\CommentTok{[}\OtherTok{issue}\CommentTok{]}\NormalTok{ from perspectives of different stakeholders }
+\NormalTok{(workers, employers, policymakers), highlighting main concerns }
+\NormalTok{and arguments of each."}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 8: Research \& Academic
+Writing}\label{part-8-research-academic-writing}
+
+\subsection{Literature Review \&
+Citation}\label{literature-review-citation}
+
+\subsubsection{Research Planning}\label{research-planning}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Research Plan Development**}
+\NormalTok{"I\textquotesingle{}m working on academic paper on }\CommentTok{[}\OtherTok{AI impact on labor markets}\CommentTok{]}\NormalTok{. }
+\NormalTok{Brainstorm comprehensive research plan including:}
+\SpecialStringTok{{-} }\NormalTok{Literature review strategy}
+\SpecialStringTok{{-} }\NormalTok{Methodology options}
+\SpecialStringTok{{-} }\NormalTok{Data requirements}
+\SpecialStringTok{{-} }\NormalTok{Timeline with milestones}
+\SpecialStringTok{{-} }\NormalTok{Potential challenges"}
+
+\NormalTok{**2. Paper Topic Generation**}
+\NormalTok{"I\textquotesingle{}m economist working on AI and inequality. Brainstorm 5 potential }
+\NormalTok{paper topics describing each in one sentence."}
+
+\NormalTok{**3. Background Research**}
+\NormalTok{"Provide concise summary of this paper\textquotesingle{}s key contributions and }
+\NormalTok{methodology. }\CommentTok{[}\OtherTok{Attach PDF}\CommentTok{]}\NormalTok{"}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Writing \& Editing}\label{writing-editing}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Paragraph Integration**}
+\NormalTok{"Write paragraph in academic economist style integrating these points:}
+\SpecialStringTok{{-} }\CommentTok{[}\OtherTok{Point 1}\CommentTok{]}
+\SpecialStringTok{{-} }\CommentTok{[}\OtherTok{Point 2}\CommentTok{]}
+\SpecialStringTok{{-} }\CommentTok{[}\OtherTok{Point 3}\CommentTok{]}
+\NormalTok{Include topic sentence and smooth transitions."}
+
+\NormalTok{**2. Sentence Correction**}
+\NormalTok{"Correct this sentence: }\CommentTok{[}\OtherTok{paste sentence}\CommentTok{]}\NormalTok{"}
+
+\NormalTok{**3. Abstract Refinement**}
+\NormalTok{"Give concise list of top 5 stylistic shortcomings of this abstract }
+\NormalTok{with specific improvement suggestions: }\CommentTok{[}\OtherTok{paste abstract}\CommentTok{]}\NormalTok{"}
+
+\NormalTok{**4. Writing Condensation**}
+\NormalTok{"Sharpen my writing by eliminating unnecessary words. Cut this }
+\NormalTok{section by 30\% without losing core message. Highlight key changes.}
+\CommentTok{[}\OtherTok{paste section}\CommentTok{]}\NormalTok{"}
+
+\NormalTok{**5. Voice Analysis**}
+\NormalTok{"Analyze my writing style to uncover unique voice. I\textquotesingle{}ll provide }
+\NormalTok{3 samples. Identify recurring patterns, signature phrases, and }
+\NormalTok{distinctive elements."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Referee Reports \&
+Reviews}\label{referee-reports-reviews}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**1. Detailed Critique**}
+\NormalTok{"Draft referee report for this paper for Journal of Economic Literature:}
+\SpecialStringTok{{-} }\NormalTok{Summary of contribution}
+\SpecialStringTok{{-} }\NormalTok{Strengths}
+\SpecialStringTok{{-} }\NormalTok{Weaknesses}
+\SpecialStringTok{{-} }\NormalTok{Suggestions for improvement}
+\SpecialStringTok{{-} }\NormalTok{Publication recommendation}
+\CommentTok{[}\OtherTok{Attach PDF}\CommentTok{]}\NormalTok{"}
+
+\NormalTok{**2. Journal Suitability**}
+\NormalTok{"Would this paper be suitable for American Economic Review? }
+\NormalTok{Explain reasoning considering journal\textquotesingle{}s scope, standards, and }
+\NormalTok{typical content."}
+
+\NormalTok{**3. Comparative Review**}
+\NormalTok{"Provide detailed critique for Journal of Economic Perspectives }
+\NormalTok{focusing on:}
+\SpecialStringTok{{-} }\NormalTok{Accessibility to broad audience}
+\SpecialStringTok{{-} }\NormalTok{Policy relevance}
+\SpecialStringTok{{-} }\NormalTok{Literature synthesis quality}
+\SpecialStringTok{{-} }\NormalTok{Visual presentation"}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 9: Specialized Analysis
+Tasks}\label{part-9-specialized-analysis-tasks}
+
+\subsection{Demographic \& Geospatial
+Analysis}\label{demographic-geospatial-analysis}
+
+\subsubsection{R Mapping Tutorial}\label{r-mapping-tutorial}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{R programming expert with 8 years experience in geospatial }
+\NormalTok{analysis, proficient in sf, ggplot2, rnaturalearth, tmap, leaflet}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\NormalTok{Create comprehensive R tutorial for Pakistan demographic maps:}
+\SpecialStringTok{1. }\NormalTok{Gradient population map}
+\SpecialStringTok{2. }\NormalTok{Choropleth fertility rate map}
+\SpecialStringTok{3. }\NormalTok{Lexis{-}style mortality contour map}
+\SpecialStringTok{4. }\NormalTok{District{-}level remittances share map}
+\SpecialStringTok{5. }\NormalTok{Interactive population forecast map (6 months)}
+\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+
+\DataTypeTok{\textless{}}\KeywordTok{constraints}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{{-} }\NormalTok{Use Pakistan shapefiles (GADM) or rnaturalearth}
+\SpecialStringTok{{-} }\NormalTok{Tutorial limit: 1000 words}
+\SpecialStringTok{{-} }\NormalTok{Include code comments}
+\SpecialStringTok{{-} }\NormalTok{Sample data (Population: 240M, Fertility: 3.5, Mortality: 6.5/1000)}
+\SpecialStringTok{{-} }\NormalTok{No external API calls}
+\DataTypeTok{\textless{}/}\KeywordTok{constraints}\DataTypeTok{\textgreater{}}
+
+\DataTypeTok{\textless{}}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\FunctionTok{\#\# [Title: Max 10 words]}
+
+\NormalTok{**Introduction:** }\CommentTok{[}\OtherTok{One paragraph, \textless{}100 words}\CommentTok{]}
+
+\NormalTok{**Tutorial Steps:** }\CommentTok{[}\OtherTok{Numbered list with code}\CommentTok{]}
+\SpecialStringTok{{-} }\NormalTok{Population Map}
+\SpecialStringTok{{-} }\NormalTok{Fertility Map}
+\SpecialStringTok{{-} }\NormalTok{Mortality Map}
+\SpecialStringTok{{-} }\NormalTok{Remittances Map}
+\SpecialStringTok{{-} }\NormalTok{Interactive Forecast}
+
+\NormalTok{**Conclusion:** }\CommentTok{[}\OtherTok{One paragraph, \textless{}50 words}\CommentTok{]}
+
+\NormalTok{**Code Appendix:** }\CommentTok{[}\OtherTok{Complete R code block}\CommentTok{]}
+\DataTypeTok{\textless{}/}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Time Series Forecasting}\label{time-series-forecasting}
+
+\subsubsection{Remittances Forecast}\label{remittances-forecast}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{Senior data scientist with 10 years in time series analysis, }
+\NormalTok{specializing in economic forecasting, proficient in Python }
+\NormalTok{(pandas, statsmodels, Matplotlib)}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\NormalTok{Create comprehensive tutorial on univariate time series analysis }
+\NormalTok{for Pakistan remittances forecast (Nov 2025 {-} April 2026):}
+\SpecialStringTok{{-} }\NormalTok{Data preprocessing}
+\SpecialStringTok{{-} }\NormalTok{Compare 3+ forecasting models (ARIMA, SARIMA, Prophet)}
+\SpecialStringTok{{-} }\NormalTok{Model seasonality}
+\SpecialStringTok{{-} }\NormalTok{Analyze country/regional shares}
+\SpecialStringTok{{-} }\NormalTok{Step{-}by{-}step code with explanations}
+\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+
+\DataTypeTok{\textless{}}\KeywordTok{constraints}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{{-} }\NormalTok{Focus on 2023{-}2025 data (recent trends)}
+\SpecialStringTok{{-} }\NormalTok{Tutorial: 800 words max}
+\SpecialStringTok{{-} }\NormalTok{Python code with comments}
+\SpecialStringTok{{-} }\NormalTok{Avoid speculative factors beyond data}
+\SpecialStringTok{{-} }\NormalTok{Historical patterns only}
+\DataTypeTok{\textless{}/}\KeywordTok{constraints}\DataTypeTok{\textgreater{}}
+
+\DataTypeTok{\textless{}}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\FunctionTok{\#\# [Title: Max 10 words]}
+
+\NormalTok{**Introduction:** }\CommentTok{[}\OtherTok{\textless{}100 words}\CommentTok{]}
+
+\NormalTok{**Tutorial Steps:** }\CommentTok{[}\OtherTok{Numbered with code}\CommentTok{]}
+
+\NormalTok{**Model Comparison:** }\CommentTok{[}\OtherTok{RMSE scores table}\CommentTok{]}
+
+\NormalTok{**Seasonality Analysis:** }\CommentTok{[}\OtherTok{Description \& plot}\CommentTok{]}
+
+\NormalTok{**Regional Shares:** }\CommentTok{[}\OtherTok{Chart description}\CommentTok{]}
+
+\NormalTok{**Forecast:** }\CommentTok{[}\OtherTok{6{-}month prediction table with confidence intervals}\CommentTok{]}
+
+\NormalTok{**Conclusion:** }\CommentTok{[}\OtherTok{\textless{}50 words}\CommentTok{]}
+
+\NormalTok{**Code Appendix:** }\CommentTok{[}\OtherTok{Complete Python code}\CommentTok{]}
+\DataTypeTok{\textless{}/}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Disease Test Metrics
+Analysis}\label{disease-test-metrics-analysis}
+
+\subsubsection{Comprehensive Statistical
+Analysis}\label{comprehensive-statistical-analysis}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**Dataset:** Metrics.CSV}
+\SpecialStringTok{{-} }\NormalTok{322 participants (60 with disease, 262 without)}
+\SpecialStringTok{{-} }\NormalTok{Disease prevalence: 18.6\%}
+\SpecialStringTok{{-} }\NormalTok{Columns: Disease (Yes/No), Test (results)}
+
+\NormalTok{**Analysis Tasks:**}
+
+\SpecialStringTok{1. }\NormalTok{Calculate and visualize frequency and relative frequency of }
+\NormalTok{   Disease and Test columns}
+
+\SpecialStringTok{2. }\NormalTok{Create contingency table and visualize results}
+
+\SpecialStringTok{3. }\NormalTok{Calculate and interpret joint probabilities}
+
+\SpecialStringTok{4. }\NormalTok{Calculate and interpret marginal probabilities}
+
+\SpecialStringTok{5. }\NormalTok{Calculate sensitivity and specificity of new test}
+
+\SpecialStringTok{6. }\NormalTok{Calculate positive and negative predictive values (PPV, NPV)}
+
+\SpecialStringTok{7. }\NormalTok{Recalculate PPV and NPV for 40\% prevalence using law of }
+\NormalTok{   total probability}
+
+\SpecialStringTok{8. }\NormalTok{Explain why increased prevalence changes PPV and NPV}
+
+\SpecialStringTok{9. }\NormalTok{Write summary and conclusion of analysis}
+
+\NormalTok{**Output Requirements:**}
+\SpecialStringTok{{-} }\NormalTok{Statistical calculations with formulas}
+\SpecialStringTok{{-} }\NormalTok{Visualizations for each section}
+\SpecialStringTok{{-} }\NormalTok{Clear interpretations in medical context}
+\SpecialStringTok{{-} }\NormalTok{Comparative analysis (18.6\% vs 40\% prevalence)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 10: Advanced Prompt
+Techniques}\label{part-10-advanced-prompt-techniques}
+
+\subsection{Chain Prompting for Complex
+Tasks}\label{chain-prompting-for-complex-tasks}
+
+\subsubsection{Research Paper
+Development}\label{research-paper-development}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**Stage 1: Topic Exploration**}
+\NormalTok{"I\textquotesingle{}m economist researching AI labor market impacts. Brainstorm }
+\NormalTok{20 channels through which AI affects employment. One line each."}
+
+\NormalTok{**Stage 2: Focus Selection**}
+\NormalTok{"From these 20 channels, identify 5 most suitable for academic paper. }
+\NormalTok{For each, explain: novelty, data availability, policy relevance."}
+
+\NormalTok{**Stage 3: Literature Positioning**}
+\NormalTok{"For channel \#2 (cognitive automation), what are 5 key existing }
+\NormalTok{papers and how would my focus differ?"}
+
+\NormalTok{**Stage 4: Research Design**}
+\NormalTok{"Design research plan for this paper including:}
+\SpecialStringTok{{-} }\NormalTok{Research questions}
+\SpecialStringTok{{-} }\NormalTok{Methodology options}
+\SpecialStringTok{{-} }\NormalTok{Data requirements}
+\SpecialStringTok{{-} }\NormalTok{Expected contributions"}
+
+\NormalTok{**Stage 5: Outline Development**}
+\NormalTok{"Create detailed outline for 8000{-}word paper on this topic."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Iterative Refinement}\label{iterative-refinement}
+
+\subsubsection{Draft Improvement Cycle}\label{draft-improvement-cycle}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{**Round 1: Initial Draft**}
+\CommentTok{[}\OtherTok{Provide draft section}\CommentTok{]}
+
+\NormalTok{**Round 2: Structural Feedback**}
+\NormalTok{"Analyze structure of this section. Suggest reorganization for }
+\NormalTok{better flow and logical progression."}
+
+\NormalTok{**Round 3: Content Enhancement**}
+\NormalTok{"Identify gaps in argumentation. What evidence or examples }
+\NormalTok{would strengthen key claims?"}
+
+\NormalTok{**Round 4: Style Refinement**}
+\NormalTok{"Improve academic tone and clarity. Eliminate jargon where simpler }
+\NormalTok{language works. Vary sentence structure."}
+
+\NormalTok{**Round 5: Final Polish**}
+\NormalTok{"Proofread for grammar, consistency in terminology, citation format, }
+\NormalTok{and overall coherence."}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Multi-Modal Analysis}\label{multi-modal-analysis}
+
+\subsubsection{Combined Text-Data
+Analysis}\label{combined-text-data-analysis}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{Research analyst with expertise in mixed{-}methods research}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\NormalTok{Analyze monetary policy effectiveness using:}
+\SpecialStringTok{1. }\NormalTok{**Quantitative:** Interest rate data, inflation, GDP growth}
+\SpecialStringTok{2. }\NormalTok{**Qualitative:** Policy statement text analysis}
+
+\NormalTok{Integrate findings to assess:}
+\SpecialStringTok{{-} }\NormalTok{Policy stance changes over time}
+\SpecialStringTok{{-} }\NormalTok{Relationship between language and actions}
+\SpecialStringTok{{-} }\NormalTok{Market reaction patterns}
+\SpecialStringTok{{-} }\NormalTok{Communication effectiveness}
+\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+
+\DataTypeTok{\textless{}}\KeywordTok{methodology}\DataTypeTok{\textgreater{}}
+\NormalTok{**Quantitative Phase:**}
+\SpecialStringTok{{-} }\NormalTok{Time series analysis}
+\SpecialStringTok{{-} }\NormalTok{VAR modeling}
+\SpecialStringTok{{-} }\NormalTok{Event studies}
+
+\NormalTok{**Qualitative Phase:**}
+\SpecialStringTok{{-} }\NormalTok{Sentiment analysis of statements}
+\SpecialStringTok{{-} }\NormalTok{Topic modeling}
+\SpecialStringTok{{-} }\NormalTok{Linguistic pattern identification}
+
+\NormalTok{**Integration:**}
+\SpecialStringTok{{-} }\NormalTok{Correlate sentiment with policy actions}
+\SpecialStringTok{{-} }\NormalTok{Assess predictive power of language}
+\SpecialStringTok{{-} }\NormalTok{Identify communication{-}outcome gaps}
+\DataTypeTok{\textless{}/}\KeywordTok{methodology}\DataTypeTok{\textgreater{}}
+
+\DataTypeTok{\textless{}}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{1. }\NormalTok{Quantitative findings summary}
+\SpecialStringTok{2. }\NormalTok{Qualitative insights}
+\SpecialStringTok{3. }\NormalTok{Integrated analysis}
+\SpecialStringTok{4. }\NormalTok{Policy recommendations}
+\SpecialStringTok{5. }\NormalTok{Visualization dashboard concept}
+\DataTypeTok{\textless{}/}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 11: Troubleshooting \&
+Optimization}\label{part-11-troubleshooting-optimization}
+
+\subsection{Common Prompt Problems \&
+Solutions}\label{common-prompt-problems-solutions}
+
+\subsubsection{Issue 1: Vague Responses}\label{issue-1-vague-responses}
+
+❌ \textbf{Problem Prompt:} ``Tell me about economic growth.''
+
+✅ \textbf{Solution:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\DataTypeTok{\textless{}}\KeywordTok{role}\DataTypeTok{\textgreater{}}\NormalTok{Development economist}\DataTypeTok{\textless{}/}\KeywordTok{role}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{task}\DataTypeTok{\textgreater{}}\NormalTok{Explain economic growth drivers in developing countries}\DataTypeTok{\textless{}/}\KeywordTok{task}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{context}\DataTypeTok{\textgreater{}}\NormalTok{Focus on Pakistan, South Asia region}\DataTypeTok{\textless{}/}\KeywordTok{context}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{specifics}\DataTypeTok{\textgreater{}}
+\SpecialStringTok{{-} }\NormalTok{Capital accumulation}
+\SpecialStringTok{{-} }\NormalTok{Human capital development}
+\SpecialStringTok{{-} }\NormalTok{Institutional quality}
+\SpecialStringTok{{-} }\NormalTok{Trade integration}
+\SpecialStringTok{{-} }\NormalTok{Technological adoption}
+\DataTypeTok{\textless{}/}\KeywordTok{specifics}\DataTypeTok{\textgreater{}}
+\DataTypeTok{\textless{}}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\NormalTok{For each driver:}
+\SpecialStringTok{{-} }\NormalTok{Theoretical basis (2{-}3 sentences)}
+\SpecialStringTok{{-} }\NormalTok{Pakistan{-}specific challenges}
+\SpecialStringTok{{-} }\NormalTok{Policy recommendations}
+\SpecialStringTok{{-} }\NormalTok{Regional comparisons}
+\DataTypeTok{\textless{}/}\KeywordTok{output\_format}\DataTypeTok{\textgreater{}}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Issue 2: Too Much/Too Little
+Detail}\label{issue-2-too-muchtoo-little-detail}
+
+❌ \textbf{Problem:} Output is too brief or too verbose
+
+✅ \textbf{Solution:} Explicitly specify length and depth:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{"Explain Solow Growth Model:}
+\SpecialStringTok{{-} }\NormalTok{Target audience: Undergraduate economics students}
+\SpecialStringTok{{-} }\NormalTok{Length: 150{-}200 words}
+\SpecialStringTok{{-} }\NormalTok{Include: Key assumptions, main equations, policy implications}
+\SpecialStringTok{{-} }\NormalTok{Exclude: Mathematical derivations, advanced extensions"}
+\end{Highlighting}
+\end{Shaded}
+
+\subsubsection{Issue 3: Inconsistent
+Quality}\label{issue-3-inconsistent-quality}
+
+❌ \textbf{Problem:} Results vary significantly across attempts
+
+✅ \textbf{Solution:} Use structured templates with examples:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{"Generate economic policy brief following this structure:}
+
+\NormalTok{**Example Structure:**}
+\SpecialStringTok{1. }\NormalTok{Executive Summary (50 words)}
+\SpecialStringTok{2. }\NormalTok{Problem Statement (100 words)}
+\SpecialStringTok{3. }\NormalTok{Policy Options (3 options, 75 words each)}
+\SpecialStringTok{4. }\NormalTok{Recommendation (50 words)}
+\SpecialStringTok{5. }\NormalTok{Implementation Roadmap (100 words)}
+
+\NormalTok{**My Topic:** }\CommentTok{[}\OtherTok{Your topic}\CommentTok{]}
+\NormalTok{**Context:** }\CommentTok{[}\OtherTok{Your context}\CommentTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\subsection{Prompt Optimization
+Checklist}\label{prompt-optimization-checklist}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Before submitting your prompt, verify:}
+
+\NormalTok{☐ **Role Definition:** Is the AI\textquotesingle{}s expertise clearly specified?}
+
+\NormalTok{☐ **Task Clarity:** Is the objective unambiguous?}
+
+\NormalTok{☐ **Context Provision:** Have I provided necessary background?}
+
+\NormalTok{☐ **Format Specification:** Is the desired output structure clear?}
+
+\NormalTok{☐ **Constraints:** Are limitations (length, style, scope) stated?}
+
+\NormalTok{☐ **Examples:** Would an example improve understanding?}
+
+\NormalTok{☐ **Complexity:** Should this be broken into multiple prompts?}
+
+\NormalTok{☐ **Iterability:** Can I refine based on initial output?}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 12: Workshop Exercises}\label{part-12-workshop-exercises}
+
+\subsection{Exercise 1: Prompt
+Comparison}\label{exercise-1-prompt-comparison}
+
+\textbf{Task:} Transform this weak prompt into a strong one
+
+\textbf{Weak Prompt:} ``Write about climate change in Pakistan.''
+
+\textbf{Your Strong Prompt:}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{[}\OtherTok{Your structured prompt here using XML format}\CommentTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{Evaluation Criteria:} - Role specificity - Task clarity -
+Context richness - Output structure - Actionability
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Exercise 2: Chain Prompting
+Practice}\label{exercise-2-chain-prompting-practice}
+
+\textbf{Scenario:} You need to analyze Pakistan's education system
+
+\textbf{Create a 5-stage prompt chain:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Exploration:}
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\item
+  \textbf{Data Gathering:}
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\item
+  \textbf{Analysis:}
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\item
+  \textbf{Synthesis:}
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\item
+  \textbf{Recommendations:}
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\subsection{Exercise 3: Audience
+Adaptation}\label{exercise-3-audience-adaptation}
+
+\textbf{Original Prompt:} ``Explain fiscal deficit to {[}Audience{]}''
+
+\textbf{Create versions for:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{University Students:}
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\item
+  \textbf{Policymakers:}
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\item
+  \textbf{General Public (Urdu):}
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\item
+  \textbf{Journalists:}
+  \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Part 13: Quick Reference
+Guide}\label{part-13-quick-reference-guide}
+
+\subsection{One-Line Prompt Templates}\label{one-line-prompt-templates}
+
+\subsubsection{Policy Analysis}\label{policy-analysis}
+
+\begin{verbatim}
+Extract [number] key [insights/challenges/opportunities] from [document] for [audience].
+\end{verbatim}
+
+\subsubsection{Data Analysis}\label{data-analysis}
+
+\begin{verbatim}
+Analyze [dataset] showing [relationship] between [variables], visualize results as [chart type].
+\end{verbatim}
+
+\subsubsection{Writing}\label{writing}
+
+\begin{verbatim}
+Write [document type] about [topic] for [audience] in [tone], max [word count] words.
+\end{verbatim}
+
+\subsubsection{Research}\label{research}
+
+\begin{verbatim}
+Summarize [paper/topic] focusing on [aspects], [length] words, [detail level].
+\end{verbatim}
+
+\subsubsection{Communication}\label{communication}
+
+\begin{verbatim}
+Draft [communication type] to [recipient] about [topic] using [framework], [tone].
+\end{verbatim}
+
+\subsection{Prompt Enhancement
+Keywords}\label{prompt-enhancement-keywords}
+
+\textbf{For Depth:} - ``Comprehensive'' - ``Detailed'' - ``In-depth
+analysis'' - ``Thorough examination''
+
+\textbf{For Brevity:} - ``Concise'' - ``Summary'' - ``Key points only''
+- ``Executive brief''
+
+\textbf{For Structure:} - ``Step-by-step'' - ``Systematic approach'' -
+``Structured format'' - ``Organized by {[}criteria{]}''
+
+\textbf{For Specificity:} - ``With examples from {[}context{]}'' -
+``Applied to {[}situation{]}'' - ``Considering {[}constraints{]}'' -
+``For {[}specific audience{]}''
+
+\textbf{For Quality:} - ``Professional tone'' - ``Academic style'' -
+``Evidence-based'' - ``Actionable recommendations''
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\section{Appendix: Additional
+Resources}\label{appendix-additional-resources}
+
+\subsection{Recommended Prompt
+Libraries}\label{recommended-prompt-libraries}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Economic Analysis:} {[}Your repository link{]}
+\item
+  \textbf{Policy Evaluation:} {[}Your repository link{]}
+\item
+  \textbf{Data Science:} {[}Your repository link{]}
+\item
+  \textbf{Academic Writing:} {[}Your repository link{]}
+\end{enumerate}
+
+\subsection{Further Learning}\label{further-learning}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Prompt Engineering Courses:} {[}Links{]}
+\item
+  \textbf{AI in Economics:} {[}Links{]}
+\item
+  \textbf{Best Practices:} {[}Links{]}
+\end{itemize}
+
+\subsection{Workshop Materials}\label{workshop-materials}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Exercise Templates:} {[}Download link{]}
+\item
+  \textbf{Example Datasets:} {[}Download link{]}
+\item
+  \textbf{Prompt Checklists:} {[}Download link{]}
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Document Version:} 1.0\\
+\textbf{Last Updated:} \{\{ Date \}\}\\
+\textbf{Feedback:} {[}Contact information{]}
+
+```
+
+To use this Quarto document:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Save as \texttt{ai-prompting-workshop.qmd}
+\item
+  Render with: \texttt{quarto\ render\ ai-prompting-workshop.qmd}
+\item
+  Customize the content sections as needed
+\item
+  Add your own examples and context
+\item
+  Include actual dataset links in appendix
+\end{enumerate}
+
+The document includes: - Clear navigation with table of contents -
+Tabbed content for comparisons - Color-coded examples (weak vs strong
+prompts) - Comprehensive coverage of all prompt types - Workshop
+exercises - Quick reference guide - Professional formatting for both
+HTML and PDF output
+
+Would you like me to create additional sections, add more examples, or
+modify any specific area?
+
+
+
+
+\end{document}
