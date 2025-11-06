@@ -71,6 +71,7 @@ website:
             text: Teaching & Research Overview
           - href: ai_intro.qmd
             text: Introduction to Gen AI
+
           - href: socratic_method.qmd
             text: Socratic Method with AI
           - href: The Future of Thinking How AI redefines intelligence.qmd
@@ -96,8 +97,8 @@ website:
         contents:
           - href: prompts.qmd
             text: Prompt Engineering Guide
-          # - href: data_prompts.qmd
-          #   text: Data Analysis Prompts
+          - href: ai_prompts_pnd.qmd
+            text: Data Analysis Prompts
           - href: econometric_prompts_sol.qmd
             text: Econometric Prompts
           # - href: office_prompt.qmd

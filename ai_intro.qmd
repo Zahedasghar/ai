@@ -1,6 +1,6 @@
 ---
 title: "[Co-Working with AI for Public Sector Employees]{.yellow}"
-subtitle: "Workshop with Adminstration Staff"
+subtitle: "Workshop with Public Sector Officials"
 author: "Zahid Asghar"
 date: "2025-05-15"
 format:
@@ -33,7 +33,7 @@ Comfortable being uncomfortable
 :::
 
 ::: r-fit-text
-### AI in University Offices: From Paperwork to Productivity
+### AI in Offices: Super Productive
 
 > From overloaded staff to optimized systems—AI is the silent reformer.
 :::

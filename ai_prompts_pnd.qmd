@@ -1,0 +1,1505 @@
+---
+title: "AI Prompting Guide for Policy & Research Professionals"
+subtitle: "A Workshop Companion"
+author: "Workshop Materials"
+date: today
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    toc-location: left
+    code-fold: true
+    theme: cosmo
+    css: styles.css
+  pdf:
+    toc: true
+    number-sections: true
+---
+
+# Introduction
+
+This guide provides structured prompts for professionals in policy analysis, economic research, data science, and public administration. Each prompt follows best practices for effective AI interaction.
+
+## How to Use This Guide
+
+1. **Select** the category relevant to your task
+2. **Customize** the prompt with your specific details
+3. **Iterate** based on results
+4. **Refine** for better outputs
+
+---
+
+# Part 1: Prompt Engineering Fundamentals
+
+## The XML Structure Method
+
+### Basic Template
+
+```xml
+<role>You are a [specific expert role]</role>
+<task>[Clear, actionable task]</task>
+<context>[Background information]</context>
+<output_format>
+- [Format requirement 1]
+- [Format requirement 2]
+</output_format>
+```
+
+### Comparison: Weak vs. Strong Prompts
+
+::: {.panel-tabset}
+
+## ❌ Weak Prompt
+"Explain fiscal policy and give me some insights for Pakistan."
+
+**Problems:**
+- Too broad
+- Vague expectations
+- No context
+- Undefined output format
+
+## ✅ Strong Prompt
+
+```xml
+<role>You are a senior economic policy advisor</role>
+<task>Explain the 3 most important fiscal policy challenges 
+Pakistan is facing and suggest potential reform directions</task>
+<context>Focus on taxation, public debt management, and 
+expenditure efficiency in Pakistan's current economic context</context>
+<output_format>
+- Challenge 1: [description + why it matters]
+- Challenge 2: [description + why it matters]
+- Challenge 3: [description + why it matters]
+- Suggested Policy Directions: [actionable recommendations]
+</output_format>
+```
+
+**Benefits:**
+- Clear role definition
+- Specific scope (3 challenges)
+- Relevant context
+- Structured output
+:::
+
+---
+
+# Part 2: Policy Analysis & Evaluation
+
+## Punjab Climate Change Policy Evaluation
+
+### Simple Evaluation Framework
+
+```markdown
+You are a public policy analyst.
+Evaluate the Punjab Climate Change Policy I am sharing.
+
+Provide assessment in this structure:
+
+1) **Summary** (150 words)
+   - Key goals & focus areas
+
+2) **Strengths**
+   - Institutional strength
+   - Sector coverage
+   - Implementation tools
+
+3) **Gaps/Weaknesses**
+   - Execution challenges
+   - Financing constraints
+   - Data & capacity issues
+
+4) **Feasibility Score** (0-10) with justification
+
+5) **Quick Wins** (Top 5 actions for next 12 months)
+
+6) **Risks & Mitigation** (bullet points)
+
+7) **Urdu Brief** (5 lines for citizens)
+
+Keep it practical, Punjab-context focused, administrative tone.
+Focus on execution, realism, and citizen impact.
+```
+
+### Audience-Specific Policy Summaries
+
+::: {.panel-tabset}
+
+## Secretaries/Senior Bureaucrats
+Extract the top execution risks and 5 most urgent administrative actions to operationalize the Punjab Climate Change Policy in the next 6 months.
+
+## Students (Policy & Governance)
+Summarize the Punjab Climate Change Policy in simple language, identify main policy tools, and explain how it affects citizens, farmers, and cities.
+
+## Journalists/Media
+Provide a neutral, fact-based media brief: key objectives, priority actions, expected benefits, and accountability mechanisms.
+
+## Parliamentarians
+Translate the policy into 10 talking points focusing on public benefits, district-level delivery, and budget oversight.
+
+## Local Government Officials
+Extract district-level responsibilities and list top 5 actions each district and tehsil should take immediately.
+
+## Farmers
+Explain agriculture and water-related parts in simple Urdu and list 5 ways farmers will benefit.
+
+## Civil Society/NGOs
+Identify how civil society can support awareness, community preparedness, tree campaigns, and climate-smart livelihood programs.
+:::
+
+## Constitutional Amendment Analysis
+
+### Comprehensive Amendment Evaluation Prompts
+
+```markdown
+**1. Key Provisions Summary**
+Summarize key provisions of the Constitution (Twenty-sixth Amendment) 
+Act, 2024, and explain how it amends Pakistan's Constitution.
+
+**2. Legislative Process Analysis**
+Analyze the legislative process in National Assembly and Senate, 
+including key debates and voting outcomes.
+
+**3. Objectives Assessment**
+What were the primary objectives and how does it address specific 
+issues in Pakistan's governance or judicial system?
+
+**4. Political Dynamics**
+Discuss political dynamics surrounding passage, including support 
+and opposition from major parties (PML-N, PPP, PTI).
+
+**5. Judicial Impact**
+Evaluate potential impact on Pakistan's judiciary, particularly 
+regarding judicial appointments and accountability.
+
+**6. Comparative Analysis**
+Compare with previous amendments (19th, 21st) in terms of scope 
+and impact.
+
+**7. Long-term Implications**
+Predict long-term effects on Pakistan's democratic institutions 
+and rule of law.
+```
+
+## Parliamentary Document Summarization
+
+### General Summarization Prompts
+
+```markdown
+1. "Summarize key provisions and objectives of this bill."
+
+2. "List main changes introduced compared to previous law."
+
+3. "Identify penalties and explain who they apply to."
+
+4. "Compare this bill to previous version—highlight key differences."
+
+5. "List potential implementation challenges or controversies."
+
+6. "Extract sections mentioning penalties or fines."
+
+7. "Generate three talking points in favor of the bill."
+
+8. "Summarize into a brief for social media or press release."
+```
+
+### Audience-Specific Summaries
+
+```markdown
+**For Legislators:**
+"Summarize this bill for a legislator with limited time."
+
+**For Public:**
+"Draft a summary suitable for the general public."
+
+**For Stakeholders:**
+"Explain the bill's impact on [media/activists/businesses]."
+```
+
+---
+
+# Part 3: Economic Research & Analysis
+
+## Economic Growth & Development
+
+### 1. Investment & Savings Impact
+
+```markdown
+<role>Economic growth analyst with expertise in development economics</role>
+<task>Project Pakistan's economic growth under improved investment/savings scenario</task>
+<context>
+Current situation:
+- Investment rate: 17%
+- Savings rate: 12%
+
+Proposed scenario:
+- Savings increase to: 15%
+- Investment increase to: 22%
+</context>
+<output_format>
+- Growth projection methodology
+- Expected GDP growth rate
+- Time horizon for impact
+- Key assumptions
+- Potential risks
+</output_format>
+```
+
+### 2. Tax Policy Analysis
+
+```markdown
+<role>Fiscal policy expert specializing in developing economies</role>
+<task>Analyze impact of VAT rate reduction on compliance and revenue</task>
+<context>
+Current: VAT rate 17%+, low compliance
+Proposed: Reduce to 10%, improve enforcement
+</context>
+<output_format>
+- Revenue impact analysis (short & long term)
+- Compliance improvement estimate
+- Administrative cost considerations
+- International comparisons
+- Implementation roadmap
+</output_format>
+```
+
+### 3. Trade Integration Analysis
+
+```markdown
+Pakistan's trade/GDP ratio: 0.3 (low by global standards)
+Global benchmark: >1.0 for trade-integrated economies
+
+Analyze potential impact if Pakistan increases trade/GDP ratio to 0.5 
+through tariff rationalization. Include:
+- Expected growth impact
+- Sector-wise effects
+- Employment implications
+- Implementation challenges
+```
+
+### 4. AI & Labor Market Implications
+
+```markdown
+<role>Labor economist specializing in technological disruption</role>
+<task>Analyze AI's impact on employment in high-population developing countries</task>
+<context>
+- Large unskilled youth population (Pakistan context)
+- AI replacing routine cognitive and manual tasks
+- Limited social safety nets
+</context>
+<analysis_framework>
+1. AI as complement vs. substitute for labor
+2. Skill categories most at risk
+3. Adaptation strategies for workforce
+4. Policy recommendations
+5. Timeline for impact (short/medium/long term)
+</analysis_framework>
+```
+
+## Monetary & Fiscal Policy
+
+### Interest Rate & Inflation Analysis
+
+```markdown
+<role>Monetary policy analyst</role>
+<task>Calculate sacrifice ratio for Pakistan's inflation control</task>
+<context>
+- Current policy rate: 17%
+- Inflation: decreasing trend
+- High interest burden on government debt
+- Budget deficit concerns
+</context>
+<output_format>
+- Sacrifice ratio calculation
+- Cost-benefit analysis of rate changes
+- Fiscal implications
+- Alternative policy options
+- Regional comparisons
+</output_format>
+```
+
+## Research Question Framework
+
+```markdown
+**Standard Economic Research Questions:**
+
+1. "Can government fiscal stimulus pull economy out of recession? 
+   At what cost?"
+
+2. "What are effects of increased government expenditures on:
+   - Output
+   - Employment
+   - Private consumption
+   - Real wages
+   - Inflation"
+
+3. "In low tax enforcement environments, is public expenditure on 
+   broadening tax base an efficient policy choice for raising revenues?"
+
+4. "Implications of balanced budget policy on economic growth?"
+```
+
+---
+
+# Part 4: Data Analysis & Visualization
+
+## Exploratory Data Analysis (EDA)
+
+### Basic Data Inspection
+
+```markdown
+**Initial Dataset Review:**
+
+1. "Show summary statistics for [list key variables]"
+
+2. "What is the structure of the dataset? Describe types and 
+   counts of each column."
+
+3. "Display first few rows and identify any immediate data quality issues."
+
+4. "Calculate mean, median, standard deviation for each numeric column."
+
+**Missing Data Analysis:**
+
+1. "Identify columns with missing values and percentage of missingness."
+
+2. "Visualize missing data pattern in the dataset."
+
+3. "Suggest appropriate imputation methods for missing values."
+
+**Outlier Detection:**
+
+1. "Detect outliers using IQR method and Z-score."
+
+2. "Plot boxplots for key numerical columns to inspect outliers visually."
+
+3. "Determine if outliers should be removed or retained based on context."
+```
+
+### Descriptive Statistics
+
+```markdown
+**Comprehensive Statistical Summary:**
+
+Generate a comprehensive statistical report including:
+
+1. Central tendency measures (mean, median, mode)
+2. Dispersion measures (std dev, variance, range, IQR)
+3. Distribution shape (skewness, kurtosis)
+4. Correlation matrix for numerical features
+5. Frequency distributions for categorical variables
+6. Cross-tabulations for key variable combinations
+
+Identify and flag:
+- Highly skewed distributions
+- High correlation pairs (r > 0.7)
+- Variables with low variance
+```
+
+## Data Visualization Prompts
+
+### Economic Indicators
+
+```markdown
+**1. CLI Trends (Composite Leading Indicators)**
+"Show CLI trends graphically for US, China, Germany, UK, Italy, 
+Spain, France for last 12 months."
+
+**2. Food Price Index**
+"Make a bar graph for FAO Food Price Index for last 12 months with 
+month-over-month percentage change annotations."
+
+**3. Weekly Economic Index**
+"Give a line graph of WEI for past 12 months using Reserve Bank of 
+Dallas data. Include trend line and highlight periods of significant change."
+
+**4. Stock Market Performance**
+"Display normalized performance (start=100) of GOOG, META, MSFT 
+compared to S&P500 index from July 2014 to June 2024."
+```
+
+### Interactive Visualizations
+
+```markdown
+**Dashboard Request:**
+
+"Draw four visualizations showing interesting patterns in this dataset:
+1. Distribution visualization highlighting unexpected patterns
+2. Correlation heatmap with annotated strong relationships
+3. Time series trends (if applicable)
+4. Comparative analysis across categories
+
+Highlight unexpected findings and anomalies."
+```
+
+## Statistical Analysis
+
+### Hypothesis Testing
+
+```markdown
+<role>Statistical analyst with expertise in inferential statistics</role>
+<task>Conduct comprehensive hypothesis testing</task>
+<tests>
+1. T-test: Compare means between two groups
+2. ANOVA: Compare multiple groups for statistical significance
+3. Chi-square: Test independence between categorical variables
+4. Normality test: Check if distributions follow normal distribution
+</tests>
+<output_format>
+For each test provide:
+- Null and alternative hypotheses
+- Test statistic and p-value
+- Interpretation at 95% confidence level
+- Practical significance discussion
+</output_format>
+```
+
+## Machine Learning Workflows
+
+### Model Building Framework
+
+```markdown
+**Complete ML Pipeline:**
+
+1. **Data Preparation**
+   - Split data into training (80%) and test (20%) sets
+   - Apply cross-validation strategy
+   - Handle class imbalance if present
+
+2. **Feature Engineering**
+   - Create interaction terms where appropriate
+   - Apply polynomial features for non-linear relationships
+   - Use PCA for dimensionality reduction if needed
+
+3. **Model Training**
+   - Train [specify model type] to predict [target variable]
+   - Compare at least 3 different algorithms
+   - Tune hyperparameters using grid search/random search
+
+4. **Model Evaluation**
+   - For classification: accuracy, precision, recall, F1-score, AUC-ROC
+   - For regression: RMSE, MAE, R-squared
+   - Generate confusion matrix/residual plots
+   - Perform cross-validation evaluation
+
+5. **Interpretation**
+   - Show feature importances
+   - Generate SHAP values for explainability
+   - Create partial dependence plots
+```
+
+---
+
+# Part 5: Text & Document Analysis
+
+## Monetary Policy Statement Analysis
+
+### Exploratory Text Analysis
+
+```markdown
+**1. Word Frequency Analysis**
+"What are the most common words in monetary policy statements?"
+"List most frequent bigrams and trigrams used in statements."
+"Identify unique terms differentiating one statement from another."
+
+**2. Sentiment Analysis**
+"Analyze overall sentiment (positive, negative, neutral) in each statement."
+"Identify trends in sentiment over time."
+"Perform comparative sentiment analysis between different periods."
+"Identify sentences with highest positive/negative sentiment scores."
+
+**3. Topic Modeling**
+"What are main topics discussed? Use topic modeling to identify themes 
+like inflation, employment, growth."
+"Analyze prevalence of key themes over time."
+"Track changes in topics before/after major economic events."
+
+**4. Economic Terms Tracking**
+"Track frequency of key terms ('inflation,' 'unemployment,' 
+'interest rates') over time."
+"Determine relationship between word frequency and actual 
+economic indicators."
+
+**5. Policy Tone Analysis**
+"Identify tone (cautious, optimistic, concerned) of each statement."
+"Compare tone of statements after interest rate changes vs. 
+steady rate periods."
+
+**6. Uncertainty Language Detection**
+"Identify language expressing uncertainty ('may,' 'likely,' 'possibly')."
+"Extract predictive statements indicating potential future actions."
+"Compare uncertainty levels before/after major economic events."
+```
+
+### Advanced Text Analytics
+
+```markdown
+<role>Computational linguist specializing in policy text analysis</role>
+<task>Comprehensive analysis of monetary policy communication</task>
+<methodology>
+1. **Preprocessing:** Tokenization, stopword removal, lemmatization
+2. **Feature Extraction:** TF-IDF, word embeddings
+3. **Analysis Types:**
+   - Sentiment analysis over time
+   - Topic modeling (LDA/NMF)
+   - Named entity recognition
+   - Dependency parsing for policy stance
+4. **Visualization:** Word clouds, trend lines, heatmaps
+5. **Machine Learning:** Train classifier for policy stance (dovish/hawkish)
+</methodology>
+<output_format>
+- Executive summary of findings
+- Visualizations for each analysis type
+- Comparative insights across time periods
+- Policy implications
+</output_format>
+```
+
+---
+
+# Part 6: Professional Communication
+
+## Government Office Communication
+
+### Official Letters & Emails
+
+::: {.panel-tabset}
+
+## Reminder Letter (C.A.T.S. Method)
+
+```markdown
+Write a polite reminder letter to ABC Construction Company regarding 
+incomplete school renovation project.
+
+**Context:**
+- Project due: March 15, 2025
+- Status: No progress update since February
+
+**Apply C.A.T.S. Method:**
+- **C**ontext: Reference original agreement
+- **A**ction: State what is required
+- **T**imeline: Specify new deadline
+- **S**upport: Offer assistance/consequences
+```
+
+## Meeting Request
+
+```markdown
+Draft formal email to Director of Planning requesting rescheduling 
+of tomorrow's quarterly review meeting.
+
+**Reason:** Urgent field visit to flood-affected areas in Eastern District
+
+**Include:**
+- Apology for short notice
+- Brief explanation of urgency
+- Propose alternative dates (3 options)
+- Confirm availability to accommodate their schedule
+```
+
+## Complaint Response (D.O.G.S. Method)
+
+```markdown
+Reply to Mr. Khalid Ahmed's complaint (Ref#: COMP-2025/433) about 
+3-day electricity outage in government housing colony Sector F-7.
+
+**Apply D.O.G.S. Method:**
+- **D**escribe: Acknowledge the complaint
+- **O**wnership: Accept responsibility
+- **G**ratitude: Thank for bringing to attention
+- **S**olution: Explain action taken/timeline
+```
+
+## Policy Announcement
+
+```markdown
+Compose letter informing departmental staff about revised office timings 
+during Ramadan:
+- New hours: 9:00 AM to 3:00 PM
+- Effective: First day of Ramadan
+- Duration: Throughout holy month
+- Special arrangements for critical services
+```
+:::
+
+### Office Circulars & Memos
+
+```markdown
+**1. Training Announcement**
+Draft circular announcing mandatory training on new e-Filing System:
+- Dates: May 12-15, 2025
+- Venue: IT Training Hall
+- Time: 10:00 AM - 1:00 PM
+- Target: All administrative staff
+- Registration process
+- Consequences of non-attendance
+
+**2. Policy Implementation**
+Write memo about new Hybrid Work Policy:
+- Eligibility: Grade 17 and above
+- Remote work: 2 days per week
+- Approval: Department head discretion
+- Requirements: Performance criteria
+- Effective date
+
+**3. Compliance Reminder**
+Create memo on biometric attendance compliance:
+- Reference: Establishment Division audit
+- Finding: 27% attendance irregularities
+- Deadline for compliance
+- Penalties for non-compliance
+- Support available
+
+**4. Public Holiday Notification**
+Issue notification for Pakistan Day (March 23, 2025):
+- Official holiday declaration
+- Parade attendance instructions for designated officers
+- Essential services arrangements
+- Contact persons for emergencies
+```
+
+### Report Writing
+
+```markdown
+**1. Executive Summary Creation**
+"Summarize this 12-page quarterly budget utilization report into 
+3 key points for Deputy Director Finance, highlighting underspent 
+development funds and recommendations."
+
+**2. Policy Brief**
+"Write one-page summary of 47-page Disaster Management Authority's 
+flood response report for Secretary's briefing to Chief Minister."
+
+**3. Field Visit Report**
+"Draft field visit report for Rural Health Center construction site 
+inspection (Tehsil Kahuta, April 20, 2025) including:
+- Objectives
+- Observations
+- Recommendations
+- Timeline for corrective actions"
+
+**4. Monthly Performance Report**
+"Convert infrastructure development bullet points into monthly 
+performance report for Ministry of Planning and Development, 
+focusing on project milestones achieved."
+```
+
+### Meeting Management
+
+```markdown
+**1. Agenda Creation**
+"Create agenda for department-level meeting on FY 2025-26 budget 
+planning chaired by Additional Secretary on May 2, 2025."
+
+**2. Minutes of Meeting**
+"Draft minutes of April 15 meeting on Clean Water Initiative with 
+World Bank and local authorities representatives. Include:
+- Attendees
+- Decisions made
+- Action items with owners
+- Follow-up timeline"
+
+**3. Action Points Follow-up**
+"Write follow-up instructions for departments after inter-departmental 
+flood response coordination meeting (April 22, 2025)."
+```
+
+### Citizen Communication
+
+```markdown
+**1. Public Awareness (English)**
+"Write clear message about CNIC verification deadlines for Ehsaas 
+Program registration:
+- Deadline: May 31, 2025
+- Required documents
+- Registration locations
+- Helpline information"
+
+**2. Urdu Translation**
+"Translate public awareness message about polio vaccination campaign 
+into simple Urdu for rural distribution:
+- Campaign dates
+- Age groups covered
+- Locations
+- Safety information"
+
+**3. SMS Alert**
+"Create SMS alert for free medical camp at District Headquarters 
+Hospital (May 5-7, 2025):
+- Services offered
+- Timing
+- Required documents
+- Contact information"
+
+**4. Technical Simplification**
+"Simplify technical water supply infrastructure document for public 
+distribution explaining new filtration plants in Sectors G-8 and F-10."
+```
+
+### Documentation & Filing
+
+```markdown
+**1. Checklist Creation**
+"Generate checklist for residential plot allotment files under 
+Government Employees Housing Scheme per latest CDA regulations."
+
+**2. File Cover Note**
+"Create file cover note for Skill Development Program proposal 
+submission to Economic Affairs Division for international donor funding."
+
+**3. Document Index**
+"Write document index for complaint file containing:
+- 5 citizen letters about road condition
+- 3 engineering inspection reports
+- Departmental responses"
+
+**4. File Summary**
+"Summarize contents of Peshawar Metro Bus Extension Project file 
+for final approval note to Planning Commission."
+```
+
+### Compliance & Audit
+
+```markdown
+**1. Audit Response**
+"Draft response to Auditor General's observation on Rs. 2.7 million 
+unverified transportation expenses during flood relief operations."
+
+**2. Clarification Note**
+"Write clarification for missing attendance records of 15 staff in 
+Jan 2025 due to biometric system malfunction during office relocation."
+
+**3. Compliance Guidelines**
+"Summarize guidelines for maintaining petty cash register per revised 
+AGPR regulations on cash handling."
+
+**4. Audit Readiness**
+"Create checklist for internal office audit readiness for annual 
+AGPR audit scheduled June 2025."
+```
+
+---
+
+# Part 7: Educational Applications
+
+## AI in Economics Education
+
+### Conceptual Learning
+
+```markdown
+**1. Theory Explanation**
+"Explain Solow Growth model to undergraduate student in 70 words."
+
+**2. Differentiation**
+"Differentiate between Marshallian and Hicksian demand functions 
+(50 words max)."
+
+**3. Detailed Explanation**
+"Explain Marshallian and Hicksian demand functions in detail 
+(100 words max)."
+
+**4. Mathematical Framework**
+"Provide mathematical formulation of Marshallian and Hicksian 
+demand functions with key equations."
+
+**5. Real-world Application**
+"Give practical example of these demand functions in Pakistani 
+consumer market context."
+```
+
+### Learning Materials Development
+
+```markdown
+**1. Learning Outcomes**
+"Give learning outcomes for consumer theory lecture in 3 points 
+with 15 words each."
+
+**2. Presentation Slides**
+"Create slide content on Marshallian and Hicksian demand functions 
+with learning objectives, key concepts, examples, and summary."
+
+**3. Assessment Design**
+"Provide 10-question quiz on Marshallian and Hicksian demand 
+functions with:
+- Mix of MCQs and short answers
+- Answer key with explanations
+- Difficulty progression"
+```
+
+### Interactive Learning
+
+```markdown
+**1. Model Simulation**
+"Simulate Solow growth model and plot results in four-chart 
+visualization showing:
+- Capital accumulation path
+- Output per worker
+- Steady state convergence
+- Sensitivity to parameters"
+
+**2. Decision Scenario**
+"You are hiring a waiter. Daily wage rate: PKR 800.
+
+Candidate 1: 1 year experience, requests PKR 1,100
+Candidate 2: No experience, requests PKR 900
+
+Who would you hire? Justify using economic reasoning considering:
+- Productivity differences
+- Training costs
+- Market wage rate
+- Expected value calculation"
+```
+
+### Policy Context Learning
+
+```markdown
+**1. GST Impact Analysis**
+"How does 1% increase in GST affect inflation and poor segments 
+of society? Explain using:
+- Direct price effects
+- Regressive nature of consumption tax
+- Income distribution impact
+- Policy alternatives"
+
+**2. Historical Perspective**
+"What would Allama Iqbal say to youth about Social Media use? 
+Frame response in context of his philosophy on:
+- Self-development
+- Social responsibility
+- Knowledge acquisition
+- Community building"
+```
+
+## Teaching Agent Development
+
+### ARIMA Teaching App Creation
+
+```markdown
+<role>Educational technology developer</role>
+<task>Create interactive ARIMA teaching agent web application</task>
+<requirements>
+1. **Structure:**
+   - Multiple topic sections (Overview, Identification, Practice)
+   - Interactive chat interface with Claude API
+   - Visual components for AR, I, MA components
+   - Practice quiz with instant feedback
+
+2. **Content:**
+   - Step-by-step guides for ACF/PACF interpretation
+   - Mathematical notation
+   - Real-world examples
+   - Quick reference tips sidebar
+
+3. **Technical:**
+   - React with Lucide icons
+   - Gradient backgrounds
+   - Color-coded sections (AR=blue, I=green, MA=purple)
+   - Sticky navigation
+   - Error handling
+
+4. **Educational Features:**
+   - Context-aware responses based on current topic
+   - Chat history
+   - Loading states
+   - Beginner-friendly language
+</requirements>
+```
+
+## Effective AI Prompting for Students
+
+### Critical Thinking Development
+
+```markdown
+**Brainstorming Prompts:**
+
+1. "Brainstorm 20 channels through which AI may increase inequality. 
+   Limit to 10 words per point."
+
+2. "Brainstorm outline on [topic] for academic paper."
+
+3. "Brainstorm 5 potential paper topics on AI and labor markets, 
+   one sentence each."
+
+**Counterargument Generation:**
+
+"I'm working on model predicting cognitive automation will increase 
+inequality. What are top 5 counterarguments? One line each."
+
+**Perspective Analysis:**
+
+"Explain [issue] from perspectives of different stakeholders 
+(workers, employers, policymakers), highlighting main concerns 
+and arguments of each."
+```
+
+---
+
+# Part 8: Research & Academic Writing
+
+## Literature Review & Citation
+
+### Research Planning
+
+```markdown
+**1. Research Plan Development**
+"I'm working on academic paper on [AI impact on labor markets]. 
+Brainstorm comprehensive research plan including:
+- Literature review strategy
+- Methodology options
+- Data requirements
+- Timeline with milestones
+- Potential challenges"
+
+**2. Paper Topic Generation**
+"I'm economist working on AI and inequality. Brainstorm 5 potential 
+paper topics describing each in one sentence."
+
+**3. Background Research**
+"Provide concise summary of this paper's key contributions and 
+methodology. [Attach PDF]"
+```
+
+### Writing & Editing
+
+```markdown
+**1. Paragraph Integration**
+"Write paragraph in academic economist style integrating these points:
+- [Point 1]
+- [Point 2]
+- [Point 3]
+Include topic sentence and smooth transitions."
+
+**2. Sentence Correction**
+"Correct this sentence: [paste sentence]"
+
+**3. Abstract Refinement**
+"Give concise list of top 5 stylistic shortcomings of this abstract 
+with specific improvement suggestions: [paste abstract]"
+
+**4. Writing Condensation**
+"Sharpen my writing by eliminating unnecessary words. Cut this 
+section by 30% without losing core message. Highlight key changes.
+[paste section]"
+
+**5. Voice Analysis**
+"Analyze my writing style to uncover unique voice. I'll provide 
+3 samples. Identify recurring patterns, signature phrases, and 
+distinctive elements."
+```
+
+### Referee Reports & Reviews
+
+```markdown
+**1. Detailed Critique**
+"Draft referee report for this paper for Journal of Economic Literature:
+- Summary of contribution
+- Strengths
+- Weaknesses
+- Suggestions for improvement
+- Publication recommendation
+[Attach PDF]"
+
+**2. Journal Suitability**
+"Would this paper be suitable for American Economic Review? 
+Explain reasoning considering journal's scope, standards, and 
+typical content."
+
+**3. Comparative Review**
+"Provide detailed critique for Journal of Economic Perspectives 
+focusing on:
+- Accessibility to broad audience
+- Policy relevance
+- Literature synthesis quality
+- Visual presentation"
+```
+
+---
+
+# Part 9: Specialized Analysis Tasks
+
+## Demographic & Geospatial Analysis
+
+### R Mapping Tutorial
+
+```markdown
+<role>R programming expert with 8 years experience in geospatial 
+analysis, proficient in sf, ggplot2, rnaturalearth, tmap, leaflet</role>
+
+<task>
+Create comprehensive R tutorial for Pakistan demographic maps:
+1. Gradient population map
+2. Choropleth fertility rate map
+3. Lexis-style mortality contour map
+4. District-level remittances share map
+5. Interactive population forecast map (6 months)
+</task>
+
+<constraints>
+- Use Pakistan shapefiles (GADM) or rnaturalearth
+- Tutorial limit: 1000 words
+- Include code comments
+- Sample data (Population: 240M, Fertility: 3.5, Mortality: 6.5/1000)
+- No external API calls
+</constraints>
+
+<output_format>
+## [Title: Max 10 words]
+
+**Introduction:** [One paragraph, <100 words]
+
+**Tutorial Steps:** [Numbered list with code]
+- Population Map
+- Fertility Map
+- Mortality Map
+- Remittances Map
+- Interactive Forecast
+
+**Conclusion:** [One paragraph, <50 words]
+
+**Code Appendix:** [Complete R code block]
+</output_format>
+```
+
+## Time Series Forecasting
+
+### Remittances Forecast
+
+```markdown
+<role>Senior data scientist with 10 years in time series analysis, 
+specializing in economic forecasting, proficient in Python 
+(pandas, statsmodels, Matplotlib)</role>
+
+<task>
+Create comprehensive tutorial on univariate time series analysis 
+for Pakistan remittances forecast (Nov 2025 - April 2026):
+- Data preprocessing
+- Compare 3+ forecasting models (ARIMA, SARIMA, Prophet)
+- Model seasonality
+- Analyze country/regional shares
+- Step-by-step code with explanations
+</task>
+
+<constraints>
+- Focus on 2023-2025 data (recent trends)
+- Tutorial: 800 words max
+- Python code with comments
+- Avoid speculative factors beyond data
+- Historical patterns only
+</constraints>
+
+<output_format>
+## [Title: Max 10 words]
+
+**Introduction:** [<100 words]
+
+**Tutorial Steps:** [Numbered with code]
+
+**Model Comparison:** [RMSE scores table]
+
+**Seasonality Analysis:** [Description & plot]
+
+**Regional Shares:** [Chart description]
+
+**Forecast:** [6-month prediction table with confidence intervals]
+
+**Conclusion:** [<50 words]
+
+**Code Appendix:** [Complete Python code]
+</output_format>
+```
+
+## Disease Test Metrics Analysis
+
+### Comprehensive Statistical Analysis
+
+```markdown
+**Dataset:** Metrics.CSV
+- 322 participants (60 with disease, 262 without)
+- Disease prevalence: 18.6%
+- Columns: Disease (Yes/No), Test (results)
+
+**Analysis Tasks:**
+
+1. Calculate and visualize frequency and relative frequency of 
+   Disease and Test columns
+
+2. Create contingency table and visualize results
+
+3. Calculate and interpret joint probabilities
+
+4. Calculate and interpret marginal probabilities
+
+5. Calculate sensitivity and specificity of new test
+
+6. Calculate positive and negative predictive values (PPV, NPV)
+
+7. Recalculate PPV and NPV for 40% prevalence using law of 
+   total probability
+
+8. Explain why increased prevalence changes PPV and NPV
+
+9. Write summary and conclusion of analysis
+
+**Output Requirements:**
+- Statistical calculations with formulas
+- Visualizations for each section
+- Clear interpretations in medical context
+- Comparative analysis (18.6% vs 40% prevalence)
+```
+
+---
+
+# Part 10: Advanced Prompt Techniques
+
+## Chain Prompting for Complex Tasks
+
+### Research Paper Development
+
+```markdown
+**Stage 1: Topic Exploration**
+"I'm economist researching AI labor market impacts. Brainstorm 
+20 channels through which AI affects employment. One line each."
+
+**Stage 2: Focus Selection**
+"From these 20 channels, identify 5 most suitable for academic paper. 
+For each, explain: novelty, data availability, policy relevance."
+
+**Stage 3: Literature Positioning**
+"For channel #2 (cognitive automation), what are 5 key existing 
+papers and how would my focus differ?"
+
+**Stage 4: Research Design**
+"Design research plan for this paper including:
+- Research questions
+- Methodology options
+- Data requirements
+- Expected contributions"
+
+**Stage 5: Outline Development**
+"Create detailed outline for 8000-word paper on this topic."
+```
+
+## Iterative Refinement
+
+### Draft Improvement Cycle
+
+```markdown
+**Round 1: Initial Draft**
+[Provide draft section]
+
+**Round 2: Structural Feedback**
+"Analyze structure of this section. Suggest reorganization for 
+better flow and logical progression."
+
+**Round 3: Content Enhancement**
+"Identify gaps in argumentation. What evidence or examples 
+would strengthen key claims?"
+
+**Round 4: Style Refinement**
+"Improve academic tone and clarity. Eliminate jargon where simpler 
+language works. Vary sentence structure."
+
+**Round 5: Final Polish**
+"Proofread for grammar, consistency in terminology, citation format, 
+and overall coherence."
+```
+
+## Multi-Modal Analysis
+
+### Combined Text-Data Analysis
+
+```markdown
+<role>Research analyst with expertise in mixed-methods research</role>
+
+<task>
+Analyze monetary policy effectiveness using:
+1. **Quantitative:** Interest rate data, inflation, GDP growth
+2. **Qualitative:** Policy statement text analysis
+
+Integrate findings to assess:
+- Policy stance changes over time
+- Relationship between language and actions
+- Market reaction patterns
+- Communication effectiveness
+</task>
+
+<methodology>
+**Quantitative Phase:**
+- Time series analysis
+- VAR modeling
+- Event studies
+
+**Qualitative Phase:**
+- Sentiment analysis of statements
+- Topic modeling
+- Linguistic pattern identification
+
+**Integration:**
+- Correlate sentiment with policy actions
+- Assess predictive power of language
+- Identify communication-outcome gaps
+</methodology>
+
+<output_format>
+1. Quantitative findings summary
+2. Qualitative insights
+3. Integrated analysis
+4. Policy recommendations
+5. Visualization dashboard concept
+</output_format>
+```
+
+---
+
+# Part 11: Troubleshooting & Optimization
+
+## Common Prompt Problems & Solutions
+
+### Issue 1: Vague Responses
+
+❌ **Problem Prompt:**
+"Tell me about economic growth."
+
+✅ **Solution:**
+```markdown
+<role>Development economist</role>
+<task>Explain economic growth drivers in developing countries</task>
+<context>Focus on Pakistan, South Asia region</context>
+<specifics>
+- Capital accumulation
+- Human capital development
+- Institutional quality
+- Trade integration
+- Technological adoption
+</specifics>
+<output_format>
+For each driver:
+- Theoretical basis (2-3 sentences)
+- Pakistan-specific challenges
+- Policy recommendations
+- Regional comparisons
+</output_format>
+```
+
+### Issue 2: Too Much/Too Little Detail
+
+❌ **Problem:**
+Output is too brief or too verbose
+
+✅ **Solution:**
+Explicitly specify length and depth:
+
+```markdown
+"Explain Solow Growth Model:
+- Target audience: Undergraduate economics students
+- Length: 150-200 words
+- Include: Key assumptions, main equations, policy implications
+- Exclude: Mathematical derivations, advanced extensions"
+```
+
+### Issue 3: Inconsistent Quality
+
+❌ **Problem:**
+Results vary significantly across attempts
+
+✅ **Solution:**
+Use structured templates with examples:
+
+```markdown
+"Generate economic policy brief following this structure:
+
+**Example Structure:**
+1. Executive Summary (50 words)
+2. Problem Statement (100 words)
+3. Policy Options (3 options, 75 words each)
+4. Recommendation (50 words)
+5. Implementation Roadmap (100 words)
+
+**My Topic:** [Your topic]
+**Context:** [Your context]
+```
+
+## Prompt Optimization Checklist
+
+```markdown
+Before submitting your prompt, verify:
+
+☐ **Role Definition:** Is the AI's expertise clearly specified?
+
+☐ **Task Clarity:** Is the objective unambiguous?
+
+☐ **Context Provision:** Have I provided necessary background?
+
+☐ **Format Specification:** Is the desired output structure clear?
+
+☐ **Constraints:** Are limitations (length, style, scope) stated?
+
+☐ **Examples:** Would an example improve understanding?
+
+☐ **Complexity:** Should this be broken into multiple prompts?
+
+☐ **Iterability:** Can I refine based on initial output?
+```
+
+---
+
+# Part 12: Workshop Exercises
+
+## Exercise 1: Prompt Comparison
+
+**Task:** Transform this weak prompt into a strong one
+
+**Weak Prompt:**
+"Write about climate change in Pakistan."
+
+**Your Strong Prompt:**
+```markdown
+[Your structured prompt here using XML format]
+```
+
+**Evaluation Criteria:**
+- Role specificity
+- Task clarity
+- Context richness
+- Output structure
+- Actionability
+
+---
+
+## Exercise 2: Chain Prompting Practice
+
+**Scenario:** You need to analyze Pakistan's education system
+
+**Create a 5-stage prompt chain:**
+
+1. **Exploration:** ___________________________
+2. **Data Gathering:** ___________________________
+3. **Analysis:** ___________________________
+4. **Synthesis:** ___________________________
+5. **Recommendations:** ___________________________
+
+---
+
+## Exercise 3: Audience Adaptation
+
+**Original Prompt:**
+"Explain fiscal deficit to [Audience]"
+
+**Create versions for:**
+
+1. **University Students:** ___________________________
+2. **Policymakers:** ___________________________
+3. **General Public (Urdu):** ___________________________
+4. **Journalists:** ___________________________
+
+---
+
+# Part 13: Quick Reference Guide
+
+## One-Line Prompt Templates
+
+### Policy Analysis
+```
+Extract [number] key [insights/challenges/opportunities] from [document] for [audience].
+```
+
+### Data Analysis
+```
+Analyze [dataset] showing [relationship] between [variables], visualize results as [chart type].
+```
+
+### Writing
+```
+Write [document type] about [topic] for [audience] in [tone], max [word count] words.
+```
+
+### Research
+```
+Summarize [paper/topic] focusing on [aspects], [length] words, [detail level].
+```
+
+### Communication
+```
+Draft [communication type] to [recipient] about [topic] using [framework], [tone].
+```
+
+## Prompt Enhancement Keywords
+
+**For Depth:**
+- "Comprehensive"
+- "Detailed"
+- "In-depth analysis"
+- "Thorough examination"
+
+**For Brevity:**
+- "Concise"
+- "Summary"
+- "Key points only"
+- "Executive brief"
+
+**For Structure:**
+- "Step-by-step"
+- "Systematic approach"
+- "Structured format"
+- "Organized by [criteria]"
+
+**For Specificity:**
+- "With examples from [context]"
+- "Applied to [situation]"
+- "Considering [constraints]"
+- "For [specific audience]"
+
+**For Quality:**
+- "Professional tone"
+- "Academic style"
+- "Evidence-based"
+- "Actionable recommendations"
+
+---
+
+# Appendix: Additional Resources
+
+## Recommended Prompt Libraries
+
+1. **Economic Analysis:** [Your repository link]
+2. **Policy Evaluation:** [Your repository link]
+3. **Data Science:** [Your repository link]
+4. **Academic Writing:** [Your repository link]
+
+## Further Learning
+
+- **Prompt Engineering Courses:** [Links]
+- **AI in Economics:** [Links]
+- **Best Practices:** [Links]
+
+## Workshop Materials
+
+- **Exercise Templates:** [Download link]
+- **Example Datasets:** [Download link]
+- **Prompt Checklists:** [Download link]
+
+---
+
+**Document Version:** 1.0  
+**Last Updated:** {{ Date }}  
+**Feedback:** [Contact information]
+
+```
+
+To use this Quarto document:
+
+1. Save as `ai-prompting-workshop.qmd`
+2. Render with: `quarto render ai-prompting-workshop.qmd`
+3. Customize the content sections as needed
+4. Add your own examples and context
+5. Include actual dataset links in appendix
+
+The document includes:
+- Clear navigation with table of contents
+- Tabbed content for comparisons
+- Color-coded examples (weak vs strong prompts)
+- Comprehensive coverage of all prompt types
+- Workshop exercises
+- Quick reference guide
+- Professional formatting for both HTML and PDF output
+
+Would you like me to create additional sections, add more examples, or modify any specific area?
