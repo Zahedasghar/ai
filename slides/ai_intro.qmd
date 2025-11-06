@@ -1,5 +1,5 @@
 ---
-title: "AI for Public Professionals"
+title: "AI for Public Sector Professionals"
 author: "Zahid Asghar"
 date: "2025-11-06"
 format: 

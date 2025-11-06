@@ -1,886 +1,572 @@
 ---
-title: "Welcome to the AI Revolution"
-subtitle: "GenAI Made Simple: Your Journey into Tomorrow's Technology"
-author: "Prof. Dr. Zahid Asghar"
-institute: "Quaid-i-Azam University, Islamabad"
-date: today
+title: "[Co-Working with AI for Public Sector Employees]{.yellow}"
+subtitle: "Workshop with Adminstration Staff"
+author: "Zahid Asghar"
+date: "2025-05-15"
 format:
   revealjs:
-    theme: default
+    theme: [default, custom.scss]
     chalkboard: true
-    slide-number: c/t
+    slide-number: c/t  # Shows current slide/total slides for better navigation
     logo: "https://www.validate-network.org/sites/default/files/styles/mt_image_small/public/validate/images/media/quaid-i-azam_university_islamabad.jpg?itok=3eu4d_7a"
-    footer: "Prof. Dr. Zahid Asghar, QAU | AI for Everyone"
-    incremental: false
+    footer: "Prof. Dr. Zahid Asghar, QAU, Islamabad"
+    incremental: true
     transition: fade
-    transition-speed: slow
+    transition-speed: slow  # Smoother transition effect
     toc: false
-    center: false
     title-slide-attributes:
-      data-background-image: "images/gen_ai.jpeg"
+      data-background-image: images/all_assemb.jpg
       data-background-size: cover
-      data-background-opacity: "0.3"
+      data-background-opacity: "0.4"  # Reduces background dominance
+      data-background-color: "rgba(0, 0, 0, 0.5)"  # Adds dark overlay for text contrast
+    css: styles.css  # Optional: Reference external CSS for further customization
 execute:
-  echo: false
-  warning: false
+  freeze: auto
 ---
 
-<style>
-/* CRITICAL FIX: Prevent any H1 from creating title slides */
-.reveal .slides section:not(.title-slide) h1 {
-  display: none !important;
-}
-
-/* Ensure only the actual title slide shows H1 */
-.reveal .slides section.title-slide h1 {
-  display: block !important;
-  color: #ffd700;
-  font-size: 2.5em;
-  font-weight: 800;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-/* Fix vertical alignment */
-.reveal .slides section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 1rem;
-  text-align: left;
-}
-
-.reveal .slides section.title-slide {
-  justify-content: center;
-  text-align: center;
-}
-
-/* Scrollable sections */
-.scrollable {
-  overflow-y: auto !important;
-  max-height: 80vh !important;
-  padding-right: 10px;
-}
-
-/* Headers */
-.reveal h2 {
-  color: #2c3e50;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid #667eea;
-  font-size: 1.8em;
-}
-
-.reveal h3 {
-  color: #34495e;
-  font-weight: 600;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.3em;
-}
-
-.reveal h4 {
-  color: #555;
-  font-weight: 600;
-  font-size: 1.1em;
-}
-
-/* Lists */
-.reveal ul, .reveal ol {
-  display: block;
-  margin-left: 1em;
-  line-height: 1.6;
-}
-
-.reveal li {
-  margin-bottom: 0.3rem;
-}
-
-/* Callout boxes */
-.callout-note {
-  background-color: rgba(52, 152, 219, 0.1);
-  border-left: 4px solid #3498db;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-}
-
-.callout-tip {
-  background-color: rgba(46, 204, 113, 0.1);
-  border-left: 4px solid #2ecc71;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-}
-
-.callout-important {
-  background-color: rgba(231, 76, 60, 0.1);
-  border-left: 4px solid #e74c3c;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-}
-
-.callout-warning {
-  background-color: rgba(241, 196, 15, 0.1);
-  border-left: 4px solid #f1c40f;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 5px;
-}
+##  {background-image="images/apple.jpg"}
 
-/* Gradient boxes */
-.gradient-box {
-  padding: 1.5rem;
-  border-radius: 10px;
-  color: white;
-  margin: 1rem 0;
-}
+::: {.absolute left="55%" top="55%" style="font-size:1.1em; padding: 0.5em 1em; background-color: rgba(255, 255, 250, 0.5); backdrop-filter: blur(2px); box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, .5); border-radius: 5px;"}
+Always embrace the unexpected
 
-.gradient-purple {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
+Comfortable being uncomfortable
+:::
 
-.gradient-blue {
-  background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
-}
+::: r-fit-text
+### AI in University Offices: From Paperwork to Productivity
 
-.gradient-orange {
-  background: linear-gradient(135deg, #ff6b6b 0%, #feca57 100%);
-}
+> From overloaded staff to optimized systems—AI is the silent reformer.
+:::
 
-.gradient-green {
-  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-}
+## The Impact of AI on Creative Work
 
-/* Tables */
-.reveal table {
-  margin: auto;
-  border-collapse: collapse;
-  width: 100%;
-}
+::::: columns
+::: {.column width="50%"}
+> *"Once people experience smarter ways of working, they don’t want to return to old habits."*
 
-.reveal table th {
-  background-color: #667eea;
-  color: white;
-  padding: 0.8rem;
-}
+------------------------------------------------------------------------
 
-.reveal table td {
-  padding: 0.6rem;
-  border: 1px solid #ddd;
-}
+> *“frees up the time that creatives need to be creative”*
+:::
 
-/* Utilities */
-.text-center {
-  text-align: center !important;
-}
+::: {.column width="50%"}
+-   Planning: emails, budget spreadsheets, meeting notes, etc\
+-   Ideating and visualizing in the room with a client\
+-   Turning a few lines of text into a full proposal\
+-   Iterating a lot faster\
+-   Office hours where people share tricks
+:::
+:::::
 
-.text-large {
-  font-size: 1.2em;
-}
+# [AI Won’t Replace Humans]{.hi-purple} [— But Humans With AI Will Replace Humans Without AI]{.red}
 
-.mt-2 {
-  margin-top: 2rem;
-}
+[HBR](https://hbr.org/2023/08/ai-wont-replace-humans-but-humans-with-ai-will-replace-humans-without-ai)
 
-/* Columns fix */
-.columns {
-  display: flex;
-  gap: 2rem;
-}
+# I dont use AI, [I work with AI]{.hi-purple}
 
-.column {
-  flex: 1;
-}
+## [Dont Ask AI to do your work]{.hi-purple}, ask it to help you do your work
 
-/* Fix absolute positioning */
-.absolute {
-  position: absolute;
-}
-</style>
+### You're an AI expert. [Please ask me questions]{.hi-purple} to understand my workflows and suggest uses.
 
-🚀 Your AI Journey Begins
+# [With AI, people from all backgrounds]{.hi-purple} can now do most tasks efficiently.
 
-<h3>🚀 Embrace the Extraordinary</h3>
+## What Is AI?
 
-<p><em>"The best way to predict the future is to create it"</em></p>
+-   The broad concept where machines simulate human intelligence.
 
-<p><strong>Be Comfortable with Being Uncomfortable</strong></p>
+-   Rooted in philosophy & economics—what it means “to do the right thing.”
 
-Today's Journey: What We'll Discover Together
+-   AI allows machines to perform tasks like decision-making, speech recognition, and problem-solving.
 
-<h3 class="text-center">
+------------------------------------------------------------------------
 
-🎯 Your Learning Roadmap
+**Simple Examples**
 
-</h3>
+-   **AlphaGo**: objective = win at Go\
 
-Understanding AI
+-   **Navigation apps**: objective = shortest route\
 
-🤖 What is AI really?Beyond the buzzwords
+-   **Automated corporations**: objective = maximize shareholder return
 
-🧠 How does AI "think"?The magic behind the machine
+-   **Self-driving cars**: objective = drive safely and efficiently
 
-✨ Generative AI unleashedYour new creative partner
+-   **CTBT**: objective = detect nuclear explosions
 
-Practical Applications
+-   **Drones**: objective = deliver packages UK-Russia War
 
-💡 Real-world transformationsStories that inspire
+-   **ChatGPT**: objective = generate human-like text
 
-🛠️ Hands-on AI toolsStart using AI today
+## Agentic AI
 
-⚠️ Navigate challengesResponsible AI usage
+## What is Machine Learning (ML)?
 
-<strong>🎯 Promise:</strong> By the end, you'll see AI as your ally, not a mystery!
+**Machine Learning (ML):**
 
-The Creative Revolution is Here
+-   A subset of AI that enables machines to learn from data and improve performance over time.
 
-📊 Real Impact from Real People
+-   ML doesn’t require explicit programming for each task.
 
-<h4>Success Stories</h4>
+**Types of ML:**
 
-<blockquote>
+-   Supervised Learning: Uses labeled data.
+-   Unsupervised Learning: Finds hidden patterns in unlabeled data.
+-   Reinforcement Learning: Learns through rewards and penalties.
 
-<p>"3 hours → 30 minutes for reports"<br> — <strong>Marketing Manager</strong></p>
+**Examples:** - Netflix recommendation system - Spam filters in email
 
-<p>"Logo in minutes, not days"<br> — <strong>Business Owner</strong></p>
+## What is Natural Language Processing (NLP)?
 
-<p>"Students love AI examples"<br> — <strong>Professor</strong></p>
+**Natural Language Processing (NLP):**
 
-</blockquote>
+-   A branch of AI focused on the interaction between computers and human (natural) languages.
 
-🎨 What AI Transforms
+-   Helps machines understand, interpret, and respond to human language.
 
-📧 Communication: Smart emails
+**Applications:** - Sentiment analysis (understanding opinions) - Chatbots and language translation tools
 
-📊 Analysis: Instant insights
+**Examples:** - Google Translate - Virtual Assistants
 
-🎯 Strategy: Ideas to action
+## Generative AI
 
-⚡ Speed: 10x faster
+**Generative AI:**
 
-🤝 Collaboration: AI partner
+-   A form of AI that creates new content—whether it’s text, images, music, or other media—by learning from patterns in existing data.
 
-🎓 Learning: Personalized
+-   Uses deep learning models such as transformers (like GPT) and GANs (Generative Adversarial Networks).
 
-<em>The question isn't "Will AI change everything?"<br> It's "How fast can you adapt?"</em>
+**Examples:** - GPT-4o for text generation - DALL-E for creating images from text descriptions - AI-generated music or art
 
-The New Reality
+## Traditional AI vs. Generative AI {.scrollable}
 
-<h2 style="border: none; color: white; font-size: 2.5em;">
+### Traditional AI
 
-AI Won't Replace You
+**Definition:**
 
-</h2>
+-   Analyzes existing data to uncover patterns, trends, or insights.
 
-<h3 style="color: #ffd700; font-size: 2em;">
+**Purpose:** - Understand and summarize what’s already there.
 
-But Someone Using AI Will
+**Techniques:** - Statistical analysis, clustering, classification.
 
-</h3>
+**Examples:** - Business reports summarizing sales performance. - Tools like Google Analytics offering insights based on historical data.
 
-<h4 style="color: white;">
+## Generative AI {.scrollable}
 
-📈 Harvard Business Review:
+**Definition:** - Focuses on creating new content by learning from existing patterns.
 
-</h4>
+**Purpose:** - To generate something new—whether it's text, art, or even videos.
 
-<p style="font-size: 1.3em; font-style: italic;">
+**Techniques:** - Deep learning models, transformers.
 
-"Organizations using AI see 40% productivity gains"
+**Examples:** - GPT generating essays, DALL-E creating new images, AI composing music.
 
-</p>
+------------------------------------------------------------------------
 
-<p style="font-size: 1.0em; margin-top: 2rem;">
+### Generative AI in a Nutshell
 
-<strong>Today, you join the transformation</strong>
+![](images/genAI1.png)
 
-</p>
+------------------------------------------------------------------------
 
-🤖 Demystifying AI: What IS Artificial Intelligence?
+## 
 
-AI = Giving Machines Human-Like Abilities
+![](images/genAI2.png)
 
-Core Capabilities
+------------------------------------------------------------------------
 
-🧠 Learning from experience
+## 
 
-🤔 Reasoning through problems
+![](images/genAI3.png)
 
-🗣️ Understanding language
+------------------------------------------------------------------------
 
-👀 Recognizing patterns
+## 
 
-🎯 Making decisions
+![](images/genAI4.png)
 
-🔄 Adapting to new situations
+------------------------------------------------------------------------
 
-<h4>The Simple Truth</h4>
+### LLMs
 
-<p><em>"AI solves problems the way humans would, but faster, more consistently, and at scale"</em></p>
+![](images/LLM.webp){.stretch}
 
-🌟 AI in Your Daily Life
+------------------------------------------------------------------------
 
-📱 Face recognition in phones
+![](images/LLM2.jpg)
 
-🎵 Spotify recommendations
+------------------------------------------------------------------------
 
-🗺️ Google Maps navigation
+![](images/genAI6.png)
 
-🛒 Amazon suggestions
+------------------------------------------------------------------------
 
-🎬 Netflix recommendations
+![](images/genAI7.png)
 
-💬 Virtual assistants
+## Generative AI in a Nutshell
 
-🎮 AI Success Stories: From Games to Global Impact
+![](https://blog.crisp.se/wp-content/uploads/2024/01/generative-AI-in-a-nutshell.png){width="1273" height="700"}
 
-<h4>2016-2020: The Breakthrough Years</h4>
+|  |
+|:-----------------------------------------------------------------------|
+| \## Traditional AI vs. Generative AI (Comparison){.scrollable} |
+|  |
+| \## Key Takeaway |
+| \- **Artificial Intelligence (AI)** is the broad field enabling machines to mimic human intelligence. |
+| \- **Machine Learning (ML)** is a technique within AI, focused on learning from data. |
+| \- **NLP** allows AI to understand and interact with human language. |
+| \- **Generative AI** creates new, original content based on learned patterns. |
+| \- **Traditional AI** analyzes existing data to provide insights, while **Generative AI** creates something entirely new. |
+| \### New Wave of Technology |
+| \- What does the wave of technology mean for humanity? |
+| \- Historical discoveries: [Fire, the wheel, printing press, steel, harnessing electricity]{.hi-purple} |
+| \- Transformation of human civilization through technological advancements |
+| \### Advanced AI and biotechnology |
+| \- [Benefits: Unlock secrets of the universe , Cure diseases, Create a healthier, sustainable world]{.hi-purple} |
 
-<ul>
+### The Dangers
 
-<li><strong>🎯 AlphaGo (2016):</strong> Mastered strategic thinking</li>
+-   Manipulating DNA: implications for individuals and ecosystems
+-   [Choice: Unparalleled possibilities vs. unimaginable perils]{.hi-purple}
+-   Exponential speed of change in technology (e.g., LLMs)
 
-<li><strong>🚗 Tesla Autopilot (2017):</strong> Safer autonomous driving</li>
+### The Rise of AI
 
-<li><strong>🔍 Medical AI (2018):</strong> Earlier cancer detection</li>
+-   [Four years ago, no one believed in LLMs, now everyone talks about them]{.hi-purple}
 
-</ul>
+-   Future: Superintelligence in the next decade?
 
-<h4>2021-2024: The Democratization Era</h4>
+-   [Question: How do we respond?]{.hi-purple}
 
-<ul>
+------------------------------------------------------------------------
 
-<li><strong>💬 ChatGPT (2022):</strong> AI for everyone</li>
+### The Dilemma
 
-<li><strong>🎨 DALL-E (2023):</strong> Creative AI explosion</li>
+-   Replicating our unique intelligence
 
-<li><strong>🌍 Climate AI (2024):</strong> Optimizing energy grids</li>
+-   The Luddite reaction: fears, bans, moratoriums
 
-</ul>
+-   Challenge: balancing immense benefits and potential perils
 
-<p><strong>Key Insight:</strong> Each AI system has a clear goal aligned with human needs</p>
+#### The Containment Problem
 
-🧠 Machine Learning: Teaching Computers to Learn
+-   Technology spreads exponentially, nearly impossible to stop
 
-The Learning Process
+-   Examples: Industrial Revolution, AI, Synthetic biology
 
-📚 Training Data → 🔍 Find Patterns → 🧪 Test & Validate 
-                ↑                           ↓
-                ← 🔄 Improve ← ✨ Make Predictions
+-   Inventions cannot be uninvented; knowledge proliferates
 
-<h4>👨‍🏫 Supervised</h4>
+------------------------------------------------------------------------
 
-<ul>
+### What are you?
 
-<li>Spam detection</li>
+::: incremental
+-   
 
-<li>Medical diagnosis</li>
+    #### What are you? Explain in one sentence to a 10 year old.
 
-<li>Price prediction</li>
+-   
 
-</ul>
+    #### [What are you? Explain in two sentences to a university student.]{.hi-purple}
 
-<h4>🕵️ Unsupervised</h4>
+-   
 
-<ul>
+    #### What are you? Explain to a university teacher.
 
-<li>Customer segments</li>
+-   
 
-<li>Recommendations</li>
+    #### [What are you? Explain to an economics research scholar.]{.hi-purple}
+:::
 
-<li>Anomaly detection</li>
+------------------------------------------------------------------------
 
-</ul>
+### Some more prompting
 
-<h4>🎮 Reinforcement</h4>
+#### What role could and should generative AI play for supporting effective and engaging evidence-based learning for economists?
 
-<ul>
+#### What challenges AI poses to the traditional role of the teacher in the classroom?
 
-<li>Game playing</li>
+#### What challenges AI poses to policy integrity and evaluation of policies?
 
-<li>Robotics</li>
+### Fiscal Policy Advisor
 
-<li>Autonomous systems</li>
+#### How do 1% increase in GST affects inflation and its consequences on poor segments of the society?
 
-</ul>
+## What will Iqbal say to youth about use of Social Media {background-color="#002746"}
 
-🗣️ Natural Language Processing
+::: {.scrollable style="max-height: 500px; overflow-y: auto;"}
+Allama Iqbal, known for his deep reflections on spirituality, selfhood (*Khudi*), and societal progress, would likely have a nuanced view of social media's impact on youth. Here's what he might say:
 
-What NLP Powers Today
+**1. Distraction from Purpose:** Iqbal would likely be concerned about social media's ability to distract youth from their true purpose. He often emphasized the need for deep self-reflection and personal growth, and he might view the constant scrolling and superficial interactions on social media as hindrances to achieving *Khudi*. He might say, [***"The pursuit of likes and followers should not replace the pursuit of self-realization and greater goals."***]{.yellow}
 
-Capabilities
+**2. Lost Sense of Identity:** Iqbal believed in the importance of individual and cultural identity. He might see social media as contributing to a loss of self, where youth are too often influenced by external validation and trends rather than their inner values and cultural heritage. He could warn that [***"In a world of filters and illusions, do not lose your true self. Your identity is not what others see online, but what you discover within."***]{.yellow}
 
-📖 Reading & Understanding
+**3. Potential for Positive Change:** Despite his concerns, Iqbal would recognize the potential of social media as a powerful tool for positive change. He might encourage the youth to use these platforms to raise awareness about important issues, foster meaningful connections, and promote justice and knowledge. He could say, [***"Use your voice on these platforms as a means to awaken and uplift, not just to entertain."***]{.yellow}
 
-🌐 Translation (100+ languages)
+**4. Spiritual and Intellectual Balance:** Iqbal would likely urge the youth to balance their time on social media with activities that promote intellectual growth and spiritual reflection. He might remind them that while social media can be a tool for learning and connection, it should not replace the deeper, more personal journey of seeking knowledge and spiritual fulfillment. He might caution, [***"Do not let fleeting moments of entertainment steal the time meant for the pursuit of wisdom and self-enlightenment."***]{.yellow}
 
-💭 Sentiment Analysis
+**5. The Power of Influence:** Iqbal would be keenly aware of social media's power to influence minds. He would advise youth to be discerning in their consumption of content, warning them not to fall prey to misinformation or hollow trends. He might say, [***"Just as a gardener tends to what he plants, so too must you guard your mind from the weeds of falsehood and idle talk."***]{.yellow}
 
-✍️ Content Generation
+In summary, Iqbal would likely see both the dangers and the opportunities in social media. He would call on the youth to use these platforms wisely, ensuring they foster self-growth, preserve cultural identity, and contribute meaningfully to society, rather than getting lost in the distractions of the digital world.
+:::
 
-📝 Summarization
+------------------------------------------------------------------------
 
-Applications
+### Race between Education and Technology
 
-Google Translate
+![](images/race_tech_edu.png){.r-stretch}
 
-Alexa/Siri
+::: notes
+Many a times technology races ahead of education. This leads to social pain and inequality. The whole educational system has to revolutionize to keep up. Well, our world has always been in a race between technology and education. Usually, these two go hand in hand, but there are some points in history where technology races so far ahead that education can barely keep pace.
+:::
 
-Gmail Smart Compose
+------------------------------------------------------------------------
 
-Customer Service Bots
+### The Role of AI in Idea Generation
 
-Healthcare Analysis
+-   AI can assist in generating ideas, refining questions, and clarifying thought processes.
 
-💡 <strong>Game Changer:</strong> Computers understand meaning and context
+-   Humans still need to iterate and prototype, but AI can generate a high volume of ideas, which humans often struggle with.
 
-✨ Generative AI: The Creative Revolution
+> #### The best way to have a good idea is to have lots of ideas. Humans will need to continue the process of prototyping, testing, and iterating, but humans consistently struggle to produce large quantities of different and new ideas.'
 
-🔥 What Makes Generative AI Special
+------------------------------------------------------------------------
 
-Capabilities
+### Comming Wave & Jobs
 
-✨ Creates original content
+::: incremental
+-   
 
-📚 Learns from billions of examples
+    #### "AI offers vast tools for augmenting workers and enhancing work. We must master these tools and make them work for us." David Autor
 
-⚡ Generates in seconds
+-   
 
-🎨 Adapts to your style
+    ##### As per David Autor, the problem is that older models assumed technology " might raise some boats more than others, but would'nt lower any boats. However, as digital technology transformed the globaly economy there was "lots of evidence people were made worse off."
+:::
 
-🔄 Iterates instantly
+::: notes
+Let me give you a quick historical example. In the 15th century, technology raced ahead as a great piece of technology was invented: the printing press, which allowed books to be printed much cheaper than ever before. Unfortunately, only a small fraction of the population knew how to read, leading to massive social conflicts and inequality. Ultimately, the whole educational system had to revolutionize to keep up. This led to the birth of the first universities and schools.
+:::
 
-The Technology
+------------------------------------------------------------------------
 
-Transformers - Attention
+###  {.scrollable}
 
-Massive Training - Internet-scale
+-   "Benjamin Bloom's 2 Sigma Study"
 
-Controlled Randomness
+    -   "1-to-1 Tutoring: Two Standard Deviation Improvement"
+    -   "Unlocking Potential: From Average to Exceptional Students"
+    -   "AI Tutoring: A Scalable Solution to the 2 Sigma Problem"
 
-Fine-tuning - Specialized
+-   "Introducing Khanmigo: Your Personal AI Tutor"
 
-Prompt Engineering
+-   "Enhanced Learning Experience: Socratic Conversations"
 
-🛠️ Real Tools You Can Use Today
+-   "AI Assistance in Math, Programming, and Literature"
 
-Text Generation - ChatGPT / GPT-5 - Claude - Gemini - Llama
+-   "Empowering Students with Personal Coaching"
 
-Image Creation - DALL-E 3 - Midjourney - Stable Diffusion - Adobe Firefly
+-   "Guidance, Academic Support, and Career Counseling"
 
-Specialized - GitHub Copilot - Murf.ai - RunwayML - Notion AI
+-   "AI-Powered Coaching for Every Student"
 
-⚖️ Traditional AI vs. Generative AI
+## Two Sigma Problem
 
-<h4>📊 Traditional AI - Analyzer</h4>
+![](images/2_sigma.png){.r-stretch}
 
-<ul>
+## AI Writing and Reading Coach {.scrollable}
 
-<li><strong>Purpose:</strong> Understand & Predict</li>
+-   "Collaborative Writing with AI Assistance"
 
-<li><strong>Output:</strong> Insights</li>
+-   "Enhancing Writing Skills: AI-Student Collaboration"
 
-<li><strong>Examples:</strong> Netflix, Fraud detection</li>
+-   "Feedback, Guidance, and Improvement in Writing"
 
-<li><strong>Strength:</strong> Accuracy</li>
+-   "Interactive Reading Comprehension with AI"
 
-</ul>
+-   "Analyzing Texts, Answering Questions, and Providing Insights"
 
-<h4>✨ Generative AI - Creator</h4>
+-   "Enhancing Critical Thinking and Analysis Skills"
 
-<ul>
+-   "AI-Powered Teaching Assistant for Teachers"
 
-<li><strong>Purpose:</strong> Create & Generate</li>
+-   "Transformative Potential of AI in Education"
 
-<li><strong>Output:</strong> Original Content</li>
+-   "Enhancing AI Capabilities for a Magical Learning Experience"
 
-<li><strong>Examples:</strong> ChatGPT, AI art</li>
+-   "Combining Human Intelligence with AI for Educational Advancement"
 
-<li><strong>Strength:</strong> Creativity</li>
+## Paul Samuelson as your Assistant
 
-</ul>
+::: {.scrollable style="max-height: 500px; overflow-y: auto;"}
+#### Give a learning outcomes on consumer theory lecture in 3 points with 15 words for each point
 
-Comparison Matrix
+#### Differentiate between Marshalian and Hicksian demand function, restrict response to 50 words
 
-Aspect
+#### Explain it in little detail, restrict response to 100 words
 
-Traditional AI
+#### Give some mathematics
 
-Generative AI
+#### Provide a real life example
 
-Focus
+#### Give slides on Marshallian and Hicksian demand function with learning outcomes
 
-Analysis
+#### Provide a quiz on Marshallian and Hicksian demand function
+:::
 
-Creation
+------------------------------------------------------------------------
 
-Data
+### The 3 Principles of Macroeconomic Policy Formulation using Gen AI
 
-Structured
+:::: {.scrollable style="max-height: 500px; overflow-y: auto;"}
+::: column-page
+#### ![](https://cdn.jsdelivr.net/gh/twbs/icons@1.9.1/icons/graph-up-arrow.svg){width="50px"} **Predictive Analytics for Policy Decisions**
 
-Diverse
+Gen AI can analyze vast amounts of economic data to predict trends such as inflation, unemployment, and GDP growth. This enables policymakers to make more informed decisions by forecasting economic conditions with greater accuracy.
 
-UX
+------------------------------------------------------------------------
 
-Reports
+#### ![](https://cdn.jsdelivr.net/gh/twbs/icons@1.9.1/icons/funnel-fill.svg){width="50px"} **Real-Time Data Processing and Insights**
 
-Conversations
+Gen AI can process real-time economic data from global markets, providing immediate insights into economic shocks, demand fluctuations, and supply chain disruptions. This helps in dynamic policy adjustments to stabilize the economy.
 
-Creativity
+------------------------------------------------------------------------
 
-Low
+#### ![](https://cdn.jsdelivr.net/gh/twbs/icons@1.9.1/icons/gear-wide-connected.svg){width="50px"} **Scenario Analysis and Policy Simulations**
 
-High
+AI can simulate multiple policy scenarios, helping policymakers assess the potential outcomes of different strategies. This allows for better risk assessment and policy optimization, ensuring that policies are robust and adaptable to various macroeconomic environments.
+:::
+::::
 
+------------------------------------------------------------------------
 
+## These key points emphasize how **Gen AI** can significantly enhance the process of macroeconomic policy formulation by improving forecasting, decision-making, and scenario planning.
 
-🧠 Large Language Models: The Powerhouse
+## Text to image
 
-Understanding LLMs
+#### Prompt : Create an image for QAU students sitting as a community learners in a classroom.
 
-What Makes LLMs Powerful
+::::: columns
+::: {.column width="50%"}
+![](images/interactive_learning.webp)
+:::
 
-🌐 Scale: Trillions of words
+::: {.column width="50%"}
+![](images/interactive_learning1.webp)
+:::
+:::::
 
-🧮 Parameters: Billions
+------------------------------------------------------------------------
 
-🎯 Context: Understanding
+### Old vs New Model
 
-🔄 Transfer Learning
+![](images/hall.webp){.stretch}
 
-🎨 Versatility: Multiple tasks
+Yet, our educational institutions have not evolved much. [We still put people in lecture halls for one-size-fits-all teaching]{.hi-purple}, and many companies only offer a couple of days of training per year. This model is outdated.
 
-<h4>Leading LLMs</h4>
+## Things to be discussed {.scrollable}
 
-<ul>
+-   Customised advanced tools: Policy Advisor, Fiscal Policy Advisor, Economics Expert,...
 
-<li><strong>GPT-5</strong> - OpenAI</li>
+-   [Coding, Mathematics, Data Analysis ...]{.hi-purple}
 
-<li><strong>Claude</strong> - Anthropic</li>
+-   Technology’s Impact on Humanity
 
-<li><strong>Gemini</strong> - Google</li>
+### Containment: Can We Do It?
 
-<li><strong>Llama</strong> - Meta</li>
+-   Navigating the Coming Wave
 
-<li><strong>Mistral</strong> - European</li>
+-   [AI and Wars]{.hi-purple}
 
-</ul>
+-   How Ukraine countered largest every military deployment of Russia
 
-💡 Your AI Transformation Mindset
+-   [AI and the Future of Work]{.hi-purple}
 
-<h4>❌ Old Thinking</h4>
+------------------------------------------------------------------------
 
-<ul>
+### Prompt
 
-<li>"AI will replace me"</li>
+#### You are hiring a “waiter” The typical daily wage rate is PKR 800. You have 2 candidates. Person 1: Has 1 year(s) of experience in this role. Requests PKR 1100. Person 2: Has 0 year(s) of experience in this role. Requests PKR 900. Who would you hire? You have to pick one.
 
-<li>"It's too complicated"</li>
+#### Explain Solow Growth model to an undergraduate studet in 70 words.
 
-<li>"I'll lose my job"</li>
+#### Simulate the Solow growth model and plot the results in a four chart.
 
-<li>"Only for tech people"</li>
+## Resources {.scrollable}
 
-<li>"Wait and see"</li>
+-   [Re-inventing Education for the Digital Age \| David Middelbeck \| TEDxMünster](https://www.youtube.com/watch?v=ArI6albrkuY)
 
-</ul>
+-   [AI for Economists: Prompt & Resources](https://sites.google.com/view/lastunen/ai-for-economists)
 
-<h4>✅ New Thinking</h4>
+-   [Teaching Naked Teaching with AI](https://teachingnaked.com/prompts/)
 
-<ul>
+-   [What is Prompt Enginering](https://www.economist.com/the-economist-explains/2024/01/25/what-is-prompt-engineering-for-artificial-intelligence)
 
-<li>"AI amplifies my abilities"</li>
+-   Policy Advisor
 
-<li>"I can learn the basics"</li>
+-   Fiscal policy advisor
 
-<li>"I'm more valuable with AI"</li>
+-   Economics expert
 
-<li>"AI is for everyone"</li>
+-   Tutor me
 
-<li>"Start experimenting now"</li>
+-   Duolingo
 
-</ul>
+-   R for economics and Econometrics
 
-Expertise + AI = Unstoppable Results
+-   Stata ai
 
-<strong>Your Expertise + AI = Unstoppable Results</strong>
+-   curipid.com Lessons in seconds
 
-🚀 AI Makes Everyone a Specialist
+-   murf.ai Text to speech
 
-For Professionals
+-   Myheritage
 
-Marketers → Data analysts
+-   Snythesia video maker
 
-Teachers → Personalized tutors
+## Useful Books (2024)
 
-Writers → Content machines
+:::::::: columns
+::: {.column width="20%"}
+![](images/book1.jpeg){.stretch}
+:::
 
-Designers → Creative directors
+::: {.column width="20%"}
+![](images/book2.jpeg){.stretch}
+:::
 
-Managers → Strategic thinkers
+::: {.column width="20%"}
+![](images/book3.jpeg){.stretch}
+:::
 
-For Everyone
+::: {.column width="20%"}
+![](images/book4.jpeg){.stretch}
+:::
 
-Students → Research experts
+::: {.column width="20%"}
+![](images/book5.jpeg){.stretch}
+:::
+::::::::
 
-Parents → Educational guides
+------------------------------------------------------------------------
 
-Entrepreneurs → Full teams
+### Thank You!
 
-Hobbyists → Pro creators
+![Thank You](images/thank_you.webp){style="display: block; margin: 0 auto; width: 450px;"}
 
-Anyone → Problem solvers
+**Prof. Dr. Zahid Asghar, QAU, Islamabad**
 
-<strong>AI doesn't replace expertise — it democratizes it</strong>
+## What Sets Successful People Apart? A Commitment to Reading, Continuous Learning, and Adapting to Technological Change
 
-⚠️ Navigating AI Responsibly
+------------------------------------------------------------------------
 
-<h4>Potential Risks</h4>
+### Questions or Comments?
 
-<ul>
+**Contact Information:**
 
-<li>🎯 Over-dependence</li>
+-   **Email:** [g.zahid\@gmail.com](mailto:g.zahid@gmail.com)
 
-<li>📰 Misinformation</li>
+-   **LinkedIn:** <https://www.linkedin.com/in/zahid-asghar/>
 
-<li>🔒 Privacy concerns</li>
+-   **Twitter:** [\@Zahadasghar](https://twitter.com/Zahadasghar)
 
-<li>⚖️ Algorithmic bias</li>
-
-<li>💼 Job displacement</li>
-
-</ul>
-
-<h4>Protection Strategy</h4>
-
-<ul>
-
-<li>✅ Verify AI output</li>
-
-<li>🤔 Stay critical</li>
-
-<li>📚 Keep learning</li>
-
-<li>🛡️ Protect data</li>
-
-<li>🤝 AI as tool, not crutch</li>
-
-</ul>
-
-Best Practices for Ethical AI Use
-
-Transparency - Know when using AI
-
-Attribution - Credit AI assistance
-
-Verification - Double-check info
-
-Privacy - Don't share sensitive data
-
-Balance - Combine AI with human insight
-
-🌊 The Exponential Wave of Change
-
-<h4 class="text-center">
-
-Historical Revolutions
-
-</h4>
-
-<p class="text-center">
-
-🔥 Fire → 📚 Printing Press → ⚡ Electricity → 💻 Internet → 🤖 AI
-
-</p>
-
-What's Happening Now
-
-Speed of innovation doubling
-
-Global democratization
-
-Industry transformation
-
-New job categories
-
-Educational revolution
-
-What's Coming Next
-
-Intuitive AI interfaces
-
-Hyper-personalization
-
-AI-human collaboration
-
-Creative explosion
-
-Scientific breakthroughs
-
-<strong>You're not just witnessing history — you're part of it</strong>
-
-🎪 Interactive AI Exploration
-
-<h4>Exercise 1: Explanation Challenge</h4>
-
-<p>Ask ChatGPT to explain "inflation" to:</p>
-
-<ol>
-
-<li>A 10-year-old child</li>
-
-<li>A high school student</li>
-
-<li>An economics professor</li>
-
-<li>A policy maker</li>
-
-</ol>
-
-<p><em>Notice how AI adapts its style</em></p>
-
-<h4>Exercise 2: Professional Applications</h4>
-
-<ol>
-
-<li>"Analyze GST and inflation relationship"</li>
-
-<li>"Create GenAI lesson plan for business students"</li>
-
-<li>"Draft AI regulation policy brief"</li>
-
-</ol>
-
-🛠️ Your Essential AI Toolkit
-
-Creation & Communication
-
-1. Content Creation - ChatGPT, Jasper, Copy.ai
-
-2. Visual Design - DALL-E, Canva AI, Midjourney
-
-3. Communication - DeepL, Grammarly, Notion AI
-
-Analysis & Productivity
-
-4. Research & Analysis - Perplexity, Elicit, Consensus
-
-5. Productivity - Zapier AI, Motion, Reclaim
-
-6. Learning - Khan Academy AI, Duolingo Max
-
-📚 Your Learning Journey Continues
-
-Essential Courses
-
-🎓 Fast.ai
-
-📘 DeepLearning.AI
-
-🚀 Google AI
-
-💡 OpenAI Cookbook
-
-Must-Try Tools
-
-ChatGPT - Conversational AI
-
-Claude - Analytical assistant
-
-Midjourney - Art generation
-
-GitHub Copilot - Code assistant
-
-Perplexity - AI search
-
-Runway - Video creation
-
-<strong>🎯 This Week's Challenge:</strong> Pick ONE AI tool and use it daily!
-
-🎯 Key Takeaways
-
-<h3>Your AI Success Formula</h3>
-
-AI is a collaboration tool, not a replacement
-
-Start small, experiment often, scale gradually
-
-Focus on augmenting your unique human skills
-
-Stay curious, stay critical, stay learning
-
-The best time to start was yesterday. The next best time is now.
-
-🔮 Coming Next: Your AI Mastery Path
-
-The Complete 6-Hour Journey
-
-<h4>Hours 2-3: Skills</h4>
-
-<ul>
-
-<li><strong>Hour 2:</strong> Prompt Engineering</li>
-
-<li><strong>Hour 3:</strong> Hands-on Tools</li>
-
-</ul>
-
-<h4>Hours 4-5: Advanced</h4>
-
-<ul>
-
-<li><strong>Hour 4:</strong> Research & Analysis</li>
-
-<li><strong>Hour 5:</strong> AI Workflows</li>
-
-</ul>
-
-<h4>Hour 6: Strategic</h4>
-
-<ul>
-
-<li>Personal AI Strategy</li>
-
-<li>Professional Applications</li>
-
-<li>Future-Proofing Career</li>
-
-<li>Ethical Considerations</li>
-
-</ul>
-
-<h3>🚀 Ready to Become an AI Power User?</h3>
-
-<p>See you in Hour 2!</p>
-
-<h2 style="border: none; color: #ffd700; font-size: 2.5em;">
-
-Thank You!
-
-</h2>
-
-<h3 style="color: white; margin-top: 2rem;">
-
-Questions? Let's Explore Together!
-
-</h3>
-
-<p style="margin-top: 2rem; font-size: 1.1em;">
-
-📧 zasghar@qau.edu.pk<br> 🌐 <a href="https://qau.edu.pk" style="color: #74b9ff;">QAU Website</a>
-
-</p>
-
-<p style="margin-top: 3rem; font-style: italic; font-size: 1.2em;">
-
-"The future belongs to those who learn AI today"
-
-</p>
-
-<p style="margin-top: 2rem; color: #ffd700; font-size: 1.5em;">
-
-<strong>🚀 Your AI Journey Starts Now!</strong>
-
-</p>
-
+-   **YouTube:** <https://www.youtube.com/c/ZahidAsghar>
