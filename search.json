@@ -797,126 +797,126 @@
   {
     "objectID": "slides/ai_intro.html#section",
     "href": "slides/ai_intro.html#section",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "",
     "text": "Always embrace the unexpected\nComfortable being uncomfortable\n\n\nEmbracing AI in Daily Office Work\nZahid Asghar, QAU"
   },
   {
     "objectID": "slides/ai_intro.html#what-is-ai",
     "href": "slides/ai_intro.html#what-is-ai",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "What is AI?",
     "text": "What is AI?\nArtificial Intelligence (AI):\n\nThe broad concept where machines simulate human intelligence.\nAI allows machines to perform tasks like decision-making, speech recognition, and problem-solving.\n\nExamples:\n\nSelf-driving cars\nVirtual assistants like Siri or Alexa"
   },
   {
     "objectID": "slides/ai_intro.html#what-is-machine-learning-ml",
     "href": "slides/ai_intro.html#what-is-machine-learning-ml",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "What is Machine Learning (ML)?",
     "text": "What is Machine Learning (ML)?\nMachine Learning (ML):\n\nA subset of AI that enables machines to learn from data and improve performance over time.\nML doesn’t require explicit programming for each task.\n\nTypes of ML:\n\nSupervised Learning: Uses labeled data.\nUnsupervised Learning: Finds hidden patterns in unlabeled data.\nReinforcement Learning: Learns through rewards and penalties.\n\nExamples: - Netflix recommendation system - Spam filters in email"
   },
   {
     "objectID": "slides/ai_intro.html#what-is-natural-language-processing-nlp",
     "href": "slides/ai_intro.html#what-is-natural-language-processing-nlp",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "What is Natural Language Processing (NLP)?",
     "text": "What is Natural Language Processing (NLP)?\nNatural Language Processing (NLP):\n\nA branch of AI focused on the interaction between computers and human (natural) languages.\nHelps machines understand, interpret, and respond to human language.\n\nApplications: - Sentiment analysis (understanding opinions) - Chatbots and language translation tools\nExamples: - Google Translate - Virtual Assistants"
   },
   {
     "objectID": "slides/ai_intro.html#generative-ai",
     "href": "slides/ai_intro.html#generative-ai",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "Generative AI",
     "text": "Generative AI\nGenerative AI:\n\nA form of AI that creates new content—whether it’s text, images, music, or other media—by learning from patterns in existing data.\nUses deep learning models such as transformers (like GPT) and GANs (Generative Adversarial Networks).\n\nExamples: - GPT-4o for text generation - DALL-E for creating images from text descriptions - AI-generated music or art"
   },
   {
     "objectID": "slides/ai_intro.html#traditional-ai-vs.-generative-ai",
     "href": "slides/ai_intro.html#traditional-ai-vs.-generative-ai",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "Traditional AI vs. Generative AI",
     "text": "Traditional AI vs. Generative AI\nTraditional AI\nDefinition:\n\nAnalyzes existing data to uncover patterns, trends, or insights.\n\nPurpose: - Understand and summarize what’s already there.\nTechniques: - Statistical analysis, clustering, classification.\nExamples: - Business reports summarizing sales performance. - Tools like Google Analytics offering insights based on historical data."
   },
   {
     "objectID": "slides/ai_intro.html#generative-ai-1",
     "href": "slides/ai_intro.html#generative-ai-1",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "Generative AI",
     "text": "Generative AI\nDefinition: - Focuses on creating new content by learning from existing patterns.\nPurpose: - To generate something new—whether it’s text, art, or even videos.\nTechniques: - Deep learning models, transformers.\nExamples: - GPT generating essays, DALL-E creating new images, AI composing music."
   },
   {
     "objectID": "slides/ai_intro.html#generative-ai-in-a-nutshell-1",
     "href": "slides/ai_intro.html#generative-ai-in-a-nutshell-1",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "Generative AI in a Nutshell",
     "text": "Generative AI in a Nutshell\n\n\n\n\n\n\n\n## Traditional AI vs. Generative AI (Comparison){.scrollable}\n\n\n\n\n\n## Key Takeaway\n\n\n- Artificial Intelligence (AI) is the broad field enabling machines to mimic human intelligence.\n\n\n- Machine Learning (ML) is a technique within AI, focused on learning from data.\n\n\n- NLP allows AI to understand and interact with human language.\n\n\n- Generative AI creates new, original content based on learned patterns.\n\n\n- Traditional AI analyzes existing data to provide insights, while Generative AI creates something entirely new.\n\n\n### New Wave of Technology\n\n\n- What does the wave of technology mean for humanity?\n\n\n- Historical discoveries: Fire, the wheel, printing press, steel, harnessing electricity\n\n\n- Transformation of human civilization through technological advancements\n\n\n### Advanced AI and biotechnology\n\n\n- Benefits: Unlock secrets of the universe , Cure diseases, Create a healthier, sustainable world\n\n\n\nThe Dangers\n\nManipulating DNA: implications for individuals and ecosystems\nChoice: Unparalleled possibilities vs. unimaginable perils\nExponential speed of change in technology (e.g., LLMs)\n\nThe Rise of AI\n\nFour years ago, no one believed in LLMs, now everyone talks about them\nFuture: Superintelligence in the next decade?\nQuestion: How do we respond?"
   },
   {
     "objectID": "slides/ai_intro.html#what-will-iqbal-say-to-youth-about-use-of-social-media",
     "href": "slides/ai_intro.html#what-will-iqbal-say-to-youth-about-use-of-social-media",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "What will Iqbal say to youth about use of Social Media",
     "text": "What will Iqbal say to youth about use of Social Media\n\nAllama Iqbal, known for his deep reflections on spirituality, selfhood (Khudi), and societal progress, would likely have a nuanced view of social media’s impact on youth. Here’s what he might say:\n1. Distraction from Purpose: Iqbal would likely be concerned about social media’s ability to distract youth from their true purpose. He often emphasized the need for deep self-reflection and personal growth, and he might view the constant scrolling and superficial interactions on social media as hindrances to achieving Khudi. He might say, “The pursuit of likes and followers should not replace the pursuit of self-realization and greater goals.”\n2. Lost Sense of Identity: Iqbal believed in the importance of individual and cultural identity. He might see social media as contributing to a loss of self, where youth are too often influenced by external validation and trends rather than their inner values and cultural heritage. He could warn that “In a world of filters and illusions, do not lose your true self. Your identity is not what others see online, but what you discover within.”\n3. Potential for Positive Change: Despite his concerns, Iqbal would recognize the potential of social media as a powerful tool for positive change. He might encourage the youth to use these platforms to raise awareness about important issues, foster meaningful connections, and promote justice and knowledge. He could say, “Use your voice on these platforms as a means to awaken and uplift, not just to entertain.”\n4. Spiritual and Intellectual Balance: Iqbal would likely urge the youth to balance their time on social media with activities that promote intellectual growth and spiritual reflection. He might remind them that while social media can be a tool for learning and connection, it should not replace the deeper, more personal journey of seeking knowledge and spiritual fulfillment. He might caution, “Do not let fleeting moments of entertainment steal the time meant for the pursuit of wisdom and self-enlightenment.”\n5. The Power of Influence: Iqbal would be keenly aware of social media’s power to influence minds. He would advise youth to be discerning in their consumption of content, warning them not to fall prey to misinformation or hollow trends. He might say, “Just as a gardener tends to what he plants, so too must you guard your mind from the weeds of falsehood and idle talk.”\nIn summary, Iqbal would likely see both the dangers and the opportunities in social media. He would call on the youth to use these platforms wisely, ensuring they foster self-growth, preserve cultural identity, and contribute meaningfully to society, rather than getting lost in the distractions of the digital world."
   },
   {
     "objectID": "slides/ai_intro.html#two-sigma-problem",
     "href": "slides/ai_intro.html#two-sigma-problem",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "Two Sigma Problem",
     "text": "Two Sigma Problem"
   },
   {
     "objectID": "slides/ai_intro.html#ai-writing-and-reading-coach",
     "href": "slides/ai_intro.html#ai-writing-and-reading-coach",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "AI Writing and Reading Coach",
     "text": "AI Writing and Reading Coach\n\n“Collaborative Writing with AI Assistance”\n“Enhancing Writing Skills: AI-Student Collaboration”\n“Feedback, Guidance, and Improvement in Writing”\n“Interactive Reading Comprehension with AI”\n“Analyzing Texts, Answering Questions, and Providing Insights”\n“Enhancing Critical Thinking and Analysis Skills”\n“AI-Powered Teaching Assistant for Teachers”\n“Transformative Potential of AI in Education”\n“Enhancing AI Capabilities for a Magical Learning Experience”\n“Combining Human Intelligence with AI for Educational Advancement”"
   },
   {
     "objectID": "slides/ai_intro.html#paul-samuelson-as-your-assistant",
     "href": "slides/ai_intro.html#paul-samuelson-as-your-assistant",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "Paul Samuelson as your Assistant",
     "text": "Paul Samuelson as your Assistant\n\nGive a learning outcomes on consumer theory lecture in 3 points with 15 words for each point\nDifferentiate between Marshalian and Hicksian demand function, restrict response to 50 words\nExplain it in little detail, restrict response to 100 words\nGive some mathematics\nProvide a real life example\nGive slides on Marshallian and Hicksian demand function with learning outcomes\nProvide a quiz on Marshallian and Hicksian demand function"
   },
   {
     "objectID": "slides/ai_intro.html#these-key-points-emphasize-how-gen-ai-can-significantly-enhance-the-process-of-macroeconomic-policy-formulation-by-improving-forecasting-decision-making-and-scenario-planning.",
     "href": "slides/ai_intro.html#these-key-points-emphasize-how-gen-ai-can-significantly-enhance-the-process-of-macroeconomic-policy-formulation-by-improving-forecasting-decision-making-and-scenario-planning.",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "These key points emphasize how Gen AI can significantly enhance the process of macroeconomic policy formulation by improving forecasting, decision-making, and scenario planning.",
     "text": "These key points emphasize how Gen AI can significantly enhance the process of macroeconomic policy formulation by improving forecasting, decision-making, and scenario planning."
   },
   {
     "objectID": "slides/ai_intro.html#text-to-image",
     "href": "slides/ai_intro.html#text-to-image",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "Text to image",
     "text": "Text to image\nPrompt : Create an image for QAU students sitting as a community learners in a classroom."
   },
   {
     "objectID": "slides/ai_intro.html#things-to-be-discussed",
     "href": "slides/ai_intro.html#things-to-be-discussed",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "Things to be discussed",
     "text": "Things to be discussed\n\nCustomised advanced tools: Policy Advisor, Fiscal Policy Advisor, Economics Expert,…\nCoding, Mathematics, Data Analysis …\nTechnology’s Impact on Humanity\n\nContainment: Can We Do It?\n\nNavigating the Coming Wave\nAI and Wars\nHow Ukraine countered largest every military deployment of Russia\nAI and the Future of Work"
   },
   {
     "objectID": "slides/ai_intro.html#resources",
     "href": "slides/ai_intro.html#resources",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "Resources",
     "text": "Resources\n\nRe-inventing Education for the Digital Age | David Middelbeck | TEDxMünster\nAI for Economists: Prompt & Resources\nTeaching Naked Teaching with AI\nWhat is Prompt Enginering\nPolicy Advisor\nFiscal policy advisor\nEconomics expert\nTutor me\nDuolingo\nR for economics and Econometrics\nStata ai\ncuripid.com Lessons in seconds\nmurf.ai Text to speech\nMyheritage\nSnythesia video maker"
   },
   {
     "objectID": "slides/ai_intro.html#useful-books-2024",
     "href": "slides/ai_intro.html#useful-books-2024",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "Useful Books (2024)",
     "text": "Useful Books (2024)"
   },
   {
     "objectID": "slides/ai_intro.html#what-sets-successful-people-apart-a-commitment-to-reading-continuous-learning-and-adapting-to-technological-change",
     "href": "slides/ai_intro.html#what-sets-successful-people-apart-a-commitment-to-reading-continuous-learning-and-adapting-to-technological-change",
-    "title": "AI for Public Professionals",
+    "title": "AI for Public Sector Professionals",
     "section": "What Sets Successful People Apart? A Commitment to Reading, Continuous Learning, and Adapting to Technological Change",
     "text": "What Sets Successful People Apart? A Commitment to Reading, Continuous Learning, and Adapting to Technological Change"
   },
@@ -3386,6 +3386,258 @@
       "GitHub",
       "👨‍🏫 Teaching with AI",
       "Teaching & Research Overview"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#section",
+    "href": "ai_intro.html#section",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "",
+    "text": "Always embrace the unexpected\nComfortable being uncomfortable\n\n\nAI in University Offices: From Paperwork to Productivity\n\nFrom overloaded staff to optimized systems—AI is the silent reformer.",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#the-impact-of-ai-on-creative-work",
+    "href": "ai_intro.html#the-impact-of-ai-on-creative-work",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "The Impact of AI on Creative Work",
+    "text": "The Impact of AI on Creative Work\n\n\n\n“Once people experience smarter ways of working, they don’t want to return to old habits.”\n\n\n\n“frees up the time that creatives need to be creative”\n\n\n\nPlanning: emails, budget spreadsheets, meeting notes, etc\n\nIdeating and visualizing in the room with a client\n\nTurning a few lines of text into a full proposal\n\nIterating a lot faster\n\nOffice hours where people share tricks",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#dont-ask-ai-to-do-your-work-ask-it-to-help-you-do-your-work",
+    "href": "ai_intro.html#dont-ask-ai-to-do-your-work-ask-it-to-help-you-do-your-work",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Dont Ask AI to do your work, ask it to help you do your work",
+    "text": "Dont Ask AI to do your work, ask it to help you do your work\nYou’re an AI expert. Please ask me questions to understand my workflows and suggest uses.",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#what-is-ai",
+    "href": "ai_intro.html#what-is-ai",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "What Is AI?",
+    "text": "What Is AI?\n\nThe broad concept where machines simulate human intelligence.\nRooted in philosophy & economics—what it means “to do the right thing.”\nAI allows machines to perform tasks like decision-making, speech recognition, and problem-solving.",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#agentic-ai",
+    "href": "ai_intro.html#agentic-ai",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Agentic AI",
+    "text": "Agentic AI",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#what-is-machine-learning-ml",
+    "href": "ai_intro.html#what-is-machine-learning-ml",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "What is Machine Learning (ML)?",
+    "text": "What is Machine Learning (ML)?\nMachine Learning (ML):\n\nA subset of AI that enables machines to learn from data and improve performance over time.\nML doesn’t require explicit programming for each task.\n\nTypes of ML:\n\nSupervised Learning: Uses labeled data.\nUnsupervised Learning: Finds hidden patterns in unlabeled data.\nReinforcement Learning: Learns through rewards and penalties.\n\nExamples: - Netflix recommendation system - Spam filters in email",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#what-is-natural-language-processing-nlp",
+    "href": "ai_intro.html#what-is-natural-language-processing-nlp",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "What is Natural Language Processing (NLP)?",
+    "text": "What is Natural Language Processing (NLP)?\nNatural Language Processing (NLP):\n\nA branch of AI focused on the interaction between computers and human (natural) languages.\nHelps machines understand, interpret, and respond to human language.\n\nApplications: - Sentiment analysis (understanding opinions) - Chatbots and language translation tools\nExamples: - Google Translate - Virtual Assistants",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#generative-ai",
+    "href": "ai_intro.html#generative-ai",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Generative AI",
+    "text": "Generative AI\nGenerative AI:\n\nA form of AI that creates new content—whether it’s text, images, music, or other media—by learning from patterns in existing data.\nUses deep learning models such as transformers (like GPT) and GANs (Generative Adversarial Networks).\n\nExamples: - GPT-4o for text generation - DALL-E for creating images from text descriptions - AI-generated music or art",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#traditional-ai-vs.-generative-ai",
+    "href": "ai_intro.html#traditional-ai-vs.-generative-ai",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Traditional AI vs. Generative AI",
+    "text": "Traditional AI vs. Generative AI\nTraditional AI\nDefinition:\n\nAnalyzes existing data to uncover patterns, trends, or insights.\n\nPurpose: - Understand and summarize what’s already there.\nTechniques: - Statistical analysis, clustering, classification.\nExamples: - Business reports summarizing sales performance. - Tools like Google Analytics offering insights based on historical data.",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#generative-ai-1",
+    "href": "ai_intro.html#generative-ai-1",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Generative AI",
+    "text": "Generative AI\nDefinition: - Focuses on creating new content by learning from existing patterns.\nPurpose: - To generate something new—whether it’s text, art, or even videos.\nTechniques: - Deep learning models, transformers.\nExamples: - GPT generating essays, DALL-E creating new images, AI composing music.",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#generative-ai-in-a-nutshell-1",
+    "href": "ai_intro.html#generative-ai-in-a-nutshell-1",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Generative AI in a Nutshell",
+    "text": "Generative AI in a Nutshell\n\n\n\n\n\n\n\n## Traditional AI vs. Generative AI (Comparison){.scrollable}\n\n\n\n\n\n## Key Takeaway\n\n\n- Artificial Intelligence (AI) is the broad field enabling machines to mimic human intelligence.\n\n\n- Machine Learning (ML) is a technique within AI, focused on learning from data.\n\n\n- NLP allows AI to understand and interact with human language.\n\n\n- Generative AI creates new, original content based on learned patterns.\n\n\n- Traditional AI analyzes existing data to provide insights, while Generative AI creates something entirely new.\n\n\n### New Wave of Technology\n\n\n- What does the wave of technology mean for humanity?\n\n\n- Historical discoveries: Fire, the wheel, printing press, steel, harnessing electricity\n\n\n- Transformation of human civilization through technological advancements\n\n\n### Advanced AI and biotechnology\n\n\n- Benefits: Unlock secrets of the universe , Cure diseases, Create a healthier, sustainable world\n\n\n\nThe Dangers\n\nManipulating DNA: implications for individuals and ecosystems\nChoice: Unparalleled possibilities vs. unimaginable perils\nExponential speed of change in technology (e.g., LLMs)\n\nThe Rise of AI\n\nFour years ago, no one believed in LLMs, now everyone talks about them\nFuture: Superintelligence in the next decade?\nQuestion: How do we respond?",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#what-will-iqbal-say-to-youth-about-use-of-social-media",
+    "href": "ai_intro.html#what-will-iqbal-say-to-youth-about-use-of-social-media",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "What will Iqbal say to youth about use of Social Media",
+    "text": "What will Iqbal say to youth about use of Social Media\n\nAllama Iqbal, known for his deep reflections on spirituality, selfhood (Khudi), and societal progress, would likely have a nuanced view of social media’s impact on youth. Here’s what he might say:\n1. Distraction from Purpose: Iqbal would likely be concerned about social media’s ability to distract youth from their true purpose. He often emphasized the need for deep self-reflection and personal growth, and he might view the constant scrolling and superficial interactions on social media as hindrances to achieving Khudi. He might say, “The pursuit of likes and followers should not replace the pursuit of self-realization and greater goals.”\n2. Lost Sense of Identity: Iqbal believed in the importance of individual and cultural identity. He might see social media as contributing to a loss of self, where youth are too often influenced by external validation and trends rather than their inner values and cultural heritage. He could warn that “In a world of filters and illusions, do not lose your true self. Your identity is not what others see online, but what you discover within.”\n3. Potential for Positive Change: Despite his concerns, Iqbal would recognize the potential of social media as a powerful tool for positive change. He might encourage the youth to use these platforms to raise awareness about important issues, foster meaningful connections, and promote justice and knowledge. He could say, “Use your voice on these platforms as a means to awaken and uplift, not just to entertain.”\n4. Spiritual and Intellectual Balance: Iqbal would likely urge the youth to balance their time on social media with activities that promote intellectual growth and spiritual reflection. He might remind them that while social media can be a tool for learning and connection, it should not replace the deeper, more personal journey of seeking knowledge and spiritual fulfillment. He might caution, “Do not let fleeting moments of entertainment steal the time meant for the pursuit of wisdom and self-enlightenment.”\n5. The Power of Influence: Iqbal would be keenly aware of social media’s power to influence minds. He would advise youth to be discerning in their consumption of content, warning them not to fall prey to misinformation or hollow trends. He might say, “Just as a gardener tends to what he plants, so too must you guard your mind from the weeds of falsehood and idle talk.”\nIn summary, Iqbal would likely see both the dangers and the opportunities in social media. He would call on the youth to use these platforms wisely, ensuring they foster self-growth, preserve cultural identity, and contribute meaningfully to society, rather than getting lost in the distractions of the digital world.",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#two-sigma-problem",
+    "href": "ai_intro.html#two-sigma-problem",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Two Sigma Problem",
+    "text": "Two Sigma Problem",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#ai-writing-and-reading-coach",
+    "href": "ai_intro.html#ai-writing-and-reading-coach",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "AI Writing and Reading Coach",
+    "text": "AI Writing and Reading Coach\n\n“Collaborative Writing with AI Assistance”\n“Enhancing Writing Skills: AI-Student Collaboration”\n“Feedback, Guidance, and Improvement in Writing”\n“Interactive Reading Comprehension with AI”\n“Analyzing Texts, Answering Questions, and Providing Insights”\n“Enhancing Critical Thinking and Analysis Skills”\n“AI-Powered Teaching Assistant for Teachers”\n“Transformative Potential of AI in Education”\n“Enhancing AI Capabilities for a Magical Learning Experience”\n“Combining Human Intelligence with AI for Educational Advancement”",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#paul-samuelson-as-your-assistant",
+    "href": "ai_intro.html#paul-samuelson-as-your-assistant",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Paul Samuelson as your Assistant",
+    "text": "Paul Samuelson as your Assistant\n\nGive a learning outcomes on consumer theory lecture in 3 points with 15 words for each point\nDifferentiate between Marshalian and Hicksian demand function, restrict response to 50 words\nExplain it in little detail, restrict response to 100 words\nGive some mathematics\nProvide a real life example\nGive slides on Marshallian and Hicksian demand function with learning outcomes\nProvide a quiz on Marshallian and Hicksian demand function",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#these-key-points-emphasize-how-gen-ai-can-significantly-enhance-the-process-of-macroeconomic-policy-formulation-by-improving-forecasting-decision-making-and-scenario-planning.",
+    "href": "ai_intro.html#these-key-points-emphasize-how-gen-ai-can-significantly-enhance-the-process-of-macroeconomic-policy-formulation-by-improving-forecasting-decision-making-and-scenario-planning.",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "These key points emphasize how Gen AI can significantly enhance the process of macroeconomic policy formulation by improving forecasting, decision-making, and scenario planning.",
+    "text": "These key points emphasize how Gen AI can significantly enhance the process of macroeconomic policy formulation by improving forecasting, decision-making, and scenario planning.",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#text-to-image",
+    "href": "ai_intro.html#text-to-image",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Text to image",
+    "text": "Text to image\nPrompt : Create an image for QAU students sitting as a community learners in a classroom.",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#things-to-be-discussed",
+    "href": "ai_intro.html#things-to-be-discussed",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Things to be discussed",
+    "text": "Things to be discussed\n\nCustomised advanced tools: Policy Advisor, Fiscal Policy Advisor, Economics Expert,…\nCoding, Mathematics, Data Analysis …\nTechnology’s Impact on Humanity\n\nContainment: Can We Do It?\n\nNavigating the Coming Wave\nAI and Wars\nHow Ukraine countered largest every military deployment of Russia\nAI and the Future of Work",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#resources",
+    "href": "ai_intro.html#resources",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Resources",
+    "text": "Resources\n\nRe-inventing Education for the Digital Age | David Middelbeck | TEDxMünster\nAI for Economists: Prompt & Resources\nTeaching Naked Teaching with AI\nWhat is Prompt Enginering\nPolicy Advisor\nFiscal policy advisor\nEconomics expert\nTutor me\nDuolingo\nR for economics and Econometrics\nStata ai\ncuripid.com Lessons in seconds\nmurf.ai Text to speech\nMyheritage\nSnythesia video maker",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#useful-books-2024",
+    "href": "ai_intro.html#useful-books-2024",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "Useful Books (2024)",
+    "text": "Useful Books (2024)",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
+    ]
+  },
+  {
+    "objectID": "ai_intro.html#what-sets-successful-people-apart-a-commitment-to-reading-continuous-learning-and-adapting-to-technological-change",
+    "href": "ai_intro.html#what-sets-successful-people-apart-a-commitment-to-reading-continuous-learning-and-adapting-to-technological-change",
+    "title": "Co-Working with AI for Public Sector Employees",
+    "section": "What Sets Successful People Apart? A Commitment to Reading, Continuous Learning, and Adapting to Technological Change",
+    "text": "What Sets Successful People Apart? A Commitment to Reading, Continuous Learning, and Adapting to Technological Change",
+    "crumbs": [
+      "GitHub",
+      "👨‍🏫 Teaching with AI",
+      "Introduction to Gen AI"
     ]
   },
   {
